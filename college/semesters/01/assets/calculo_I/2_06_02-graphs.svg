@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="chart" width="100%" height="100%">
+  <line x1="-25" y1="350" x2="425" y2="350" stroke="black" />
+  <line x1="200" y1="350" x2="200" y2="-25" stroke="black" />
+  <g transform="translate(0,350)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+    <path class="domain" stroke="currentColor" d="M50.5,6V0.5H350.5V6" />
+    <g class="tick" opacity="1" transform="translate(50.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">−2</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(125.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">−1</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(200.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">0</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(275.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">1</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(350.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">2</text>
+    </g>
+  </g>
+  <g transform="translate(200, 0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+    <path class="domain" stroke="currentColor" d="M-6,350.5H0.5V50.5H-6" />
+    <g class="tick" opacity="1" transform="translate(0,350.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">0</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,275.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">5</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,200.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">10</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,125.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">15</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,50.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">20</text>
+    </g>
+  </g>
+  <line x1="450" y1="350" x2="750" y2="350" stroke="black" />
+  <line x1="600" y1="350" x2="600" y2="50" stroke="black" />
+  <g transform="translate(0,350)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+    <path class="domain" stroke="currentColor" d="M450.5,6V0.5H750.5V6" />
+    <g class="tick" opacity="1" transform="translate(450.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">−3</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(500.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">−2</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(550.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">−1</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(600.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">0</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(650.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">1</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(700.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">2</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(750.5,0)">
+      <line stroke="currentColor" y2="6" />
+      <text fill="currentColor" y="9" dy="0.71em">3</text>
+    </g>
+  </g>
+  <g transform="translate(600, 0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+    <path class="domain" stroke="currentColor" d="M-6,350.5H0.5V50.5H-6" />
+    <g class="tick" opacity="1" transform="translate(0,350.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">0</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,290.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">5</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,230.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">10</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,170.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">15</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,110.49999999999999)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">20</text>
+    </g>
+    <g class="tick" opacity="1" transform="translate(0,50.5)">
+      <line stroke="currentColor" x2="-6" />
+      <text fill="currentColor" x="-9" dy="0.32em">25</text>
+    </g>
+  </g>
+  <path fill="none" stroke="blue" stroke-width="2" d="M-25,348.889L-17.5,348.76L-10,348.616L-2.5,348.455L5,348.276L12.5,348.075L20,347.852L27.5,347.603L35,347.324L42.5,347.013L50,346.667L57.5,346.28L65,345.848L72.5,345.365L80,344.827L87.5,344.226L95,343.556L102.5,342.808L110,341.973L117.5,341.04L125,340L132.5,338.839L140,337.543L147.5,336.096L155,334.482L162.5,332.679L170,330.668L177.5,328.423L185,325.918L192.5,323.121L200,320L207.5,316.516L215,312.628L222.5,308.288L230,303.445L237.5,298.038L245,292.005L252.5,285.27L260,277.753L267.5,269.364L275,260L282.5,249.549L290,237.884L297.5,224.865L305,210.334L312.5,194.115L320,176.014L327.5,155.81L335,133.26L342.5,108.091L350,80L357.5,48.647L365,13.653L372.5,-25.405L380,-68.998L387.5,-117.654L395,-171.959L402.5,-232.571L410,-300.221L417.5,-375.726L425,-460" />
+  <path fill="none" stroke="red" stroke-width="2" d="M450,62L455,81.286L460,99.281L465,116.071L470,131.737L475,146.353L480,159.991L485,172.715L490,184.587L495,195.665L500,206L505,215.643L510,224.641L515,233.036L520,240.868L525,248.177L530,254.995L535,261.358L540,267.294L545,272.832L550,278L555,282.822L560,287.32L565,291.518L570,295.434L575,299.088L580,302.498L585,305.679L590,308.647L595,311.416L600,314L605,316.411L610,318.66L615,320.759L620,322.717L625,324.544L630,326.249L635,327.839L640,329.323L645,330.708L650,332L655,333.205L660,334.33L665,335.379L670,336.359L675,337.272L680,338.124L685,338.92L690,339.662L695,340.354L700,341L705,341.603L710,342.165L715,342.69L720,343.179L725,343.636L730,344.062L735,344.46L740,344.831L745,345.177L750,345.5" />
+  <circle cx="200" cy="320" r="4" fill="black" />
+  <text x="205" y="315" font-size="12px" fill="black">(0, 2.0)</text>
+  <circle cx="275" cy="260" r="4" fill="black" />
+  <text x="280" y="255" font-size="12px" fill="black">(1, 6.0)</text>
+  <circle cx="550" cy="278" r="4" fill="black" />
+  <text x="555" y="273" font-size="12px" fill="black">(-1, 6.0)</text>
+  <circle cx="650" cy="332" r="4" fill="black" />
+  <text x="655" y="327" font-size="12px" fill="black">(1, 1.5)</text>
+</svg>

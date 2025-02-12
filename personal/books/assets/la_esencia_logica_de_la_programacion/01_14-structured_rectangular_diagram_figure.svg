@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100%"
+   height="auto"
+   viewBox="0 0 63.956066 25.539766"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="01_14-structured_rectangular_diagram_figure.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="false"
+     showgrid="true"
+     inkscape:zoom="0.84974494"
+     inkscape:cx="374.22994"
+     inkscape:cy="437.19001"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid8"
+       units="px"
+       originx="-108.43392"
+       originy="-47.226543"
+       spacingx="0.26458333"
+       spacingy="0.26458334"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="layer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-108.43391,-47.226545)">
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       x="129.25238"
+       y="55.493572"
+       id="text1"
+       inkscape:label="condicion"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CaskaydiaCove Nerd Font';-inkscape-font-specification:'CaskaydiaCove Nerd Font';fill:#404040;fill-opacity:1;stroke-width:0.264583"
+         x="129.25238"
+         y="55.493572">condición</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       x="110.72252"
+       y="69.562469"
+       id="text1-28"
+       inkscape:label="instruccion"><tspan
+         sodipodi:role="line"
+         id="tspan1-79"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CaskaydiaCove Nerd Font';-inkscape-font-specification:'CaskaydiaCove Nerd Font';fill:#404040;fill-opacity:1;stroke-width:0.264583"
+         x="110.72252"
+         y="69.562469">instrucción</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23332px;fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264582"
+       x="142.48448"
+       y="69.562447"
+       id="text1-28-3"
+       inkscape:label="instruccion"><tspan
+         sodipodi:role="line"
+         id="tspan1-79-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23332px;font-family:'CaskaydiaCove Nerd Font';-inkscape-font-specification:'CaskaydiaCove Nerd Font';fill:#404040;fill-opacity:1;stroke-width:0.264582"
+         x="142.48448"
+         y="69.562447">instrucción</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       x="117.43204"
+       y="60.906361"
+       id="text1-2"
+       inkscape:label="v"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CaskaydiaCove Nerd Font';-inkscape-font-specification:'CaskaydiaCove Nerd Font';fill:#404040;fill-opacity:1;stroke-width:0.264583"
+         x="117.43204"
+         y="60.906361">v</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       x="160.86559"
+       y="61.857201"
+       id="text1-2-7"
+       inkscape:label="f"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CaskaydiaCove Nerd Font';-inkscape-font-specification:'CaskaydiaCove Nerd Font';fill:#404040;fill-opacity:1;stroke-width:0.264583"
+         x="160.86559"
+         y="61.857201">f</tspan></text>
+    <path
+       style="fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.21961"
+       d="M 108.56619,47.226545 V 70.130941"
+       id="path1" />
+    <path
+       style="fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.225824"
+       d="m 172.1704,47.257688 v 24.21874"
+       id="path1-0" />
+    <path
+       style="fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       d="m 108.43391,49.758507 h 63.84941"
+       id="path2" />
+    <path
+       style="fill:#404040;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       d="m 108.43391,63.519155 h 63.84941"
+       id="path4" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       d="m 108.544,50.088762 31.70453,13.375349 32.08984,-13.595519"
+       id="path6" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583"
+       d="m 140.24853,63.62924 v 9.137071"
+       id="path7" />
+  </g>
+</svg>
