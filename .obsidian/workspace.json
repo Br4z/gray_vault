@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "872f60123642fd02",
-        "type": "split",
+        "id": "fe3af5ebf5086b5b",
+        "type": "tabs",
         "children": [
           {
-            "id": "a0a8b1a97f6f462f",
-            "type": "tabs",
-            "dimension": 50,
-            "children": [
-              {
-                "id": "1af681981f74e6a4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "personal/math/error_and_uncertainty.md",
-                    "mode": "source",
-                    "source": true
-                  },
-                  "icon": "lucide-file",
-                  "title": "error_and_uncertainty"
-                }
-              }
-            ]
-          },
-          {
-            "id": "494d199e17fa07b9",
-            "type": "tabs",
-            "dimension": 50,
-            "children": [
-              {
-                "id": "d6d86acd346f047f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "personal/math/error_and_uncertainty.md",
-                    "mode": "preview",
-                    "source": true
-                  },
-                  "icon": "lucide-file",
-                  "title": "error_and_uncertainty"
-                }
-              }
-            ]
+            "id": "e9100ca8ccb0fca3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "01-GitHub_Copilot_presentation"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 296.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -205,45 +176,45 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6d86acd346f047f",
+  "active": "e9100ca8ccb0fca3",
   "lastOpenFiles": [
-    "personal/math/logarithm/properties.md",
     "personal/math/error_and_uncertainty.md",
-    "personal/computer_science/programming_languajes/C_plus_plus/pointer.md",
-    "personal/computer_science/programming_languajes/C_plus_plus/namespace.md",
-    "personal/computer_science/algorithms/sorting/bubble.md",
-    "personal/math/logarithm/definition.md",
-    "personal/math/sequence/types.md",
-    "personal/math/003-logarithm.md",
-    "personal/math/serie/properties.md",
-    "personal/math/sequence/definition.md",
-    "personal/math/logarithm",
+    "personal/math/Taylor_serie.md",
+    "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
+    "college/ASES/reports.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-longest_common_subsequence.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
     "pending_stuff.md",
-    "to_export.md",
-    "personal/math/serie/proofs.md",
-    "personal/math/002-sequence.md",
-    "personal/math/serie/definition.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-motivation.md",
+    "personal/computer_science/problems/Fibonacci_sequence.md",
+    "personal/computer_science/programming_languajes/C_plus_plus/namespace.md",
+    "personal/computer_science/Git_and_GitHub.md",
+    "personal/computer_science/algorithms/sorting/bubble.md",
+    "personal/computer_science/machine_learning/confusion_matrix.md",
+    "personal/computer_science/problems/coin_change.md",
+    "college/ASES/archived/Gabriela/05-building_a_container_from_scratch.md",
+    "college/ASES/archived/Gabriela/04-mixing_problem_differential_equations.md",
+    "college/ASES/archived/Gabriela/03-Linux_applications_installation.md",
+    "college/ASES/archived/Gabriela/02-how_to_format_code_in_LaTeX.md",
+    "college/ASES/archived/Gabriela/01-Scala_setup_for_vscode.md",
+    "college/ASES/archived/Gabriela",
+    "college/ASES/meetings.md",
+    "college/semesters/08/introduccion_a_la_ciencia_de_datos/07-data_mining-association_rules.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes",
+    "personal/computer_science/machine_learning/definition.md",
+    "personal/computer_science/problems",
+    "README.md",
+    "personal/math/logarithm/properties.md",
+    "personal/computer_science/programming_languajes/C_plus_plus/pointer.md",
+    "personal/math/logarithm/definition.md",
+    "personal/math/logarithm",
     "personal/math/sequence",
-    "personal/math/serie.md",
     "personal/math/serie",
-    "personal/math/finite_differences.md",
-    "personal/math/function/odd.md",
-    "personal/math/function/even.md",
-    "personal/math/function/domain.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/02-second_exam.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/01-first_exam.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/homework/02-error.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/homework/01-differential_equations.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/classes/12-Splines.md",
-    "college/semesters/08/simulacion_y_computacion_numerica/classes/11-interpolation_functions.md",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "personal/math/assets/imaginary_number",
     "personal/math/assets/New folder",
     "personal/math/assets",
     "personal/math/New folder",
-    "personal/math/imaginary_number",
-    "personal/math/number_theory",
-    "personal/math/relation",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",
     "college/ASES/assets/Jairo/01_03-acceleration_graph.jpg",

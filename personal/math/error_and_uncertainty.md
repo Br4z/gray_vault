@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-02-10"
+reviewed_on: "2025-02-12"
 author: NA
 language: English
 source: https://www.physics.columbia.edu/sites/default/files/content/Lab%20Resources/Lab%20Guide%201_%20Introduction%20to%20Error%20and%20Uncertainty.pdf
@@ -28,7 +28,7 @@ In contrast to systematic uncertainties, random uncertainties are an unavoidable
 An important distinction in physics is the difference between the **accuracy** and the **precision** of a measurement. Accuracy refers to the closeness of a measured value to
 a standard or known value...
 
-Precision refers to the closeness of two or more measurements to each other...Precision is independent of accuracy. You can be very precise but inaccurate, as described above. You can also be accurate but imprecise.
+**Precision** refers to the closeness of two or more measurements to each other...Precision is independent of accuracy. You can be very precise but inaccurate, as described above. You can also be accurate but imprecise.
 
 ### Propagation of uncertainties
 

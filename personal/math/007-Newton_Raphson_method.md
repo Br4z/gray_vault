@@ -18,7 +18,7 @@ $$
 
 ## Demonstration
 
-Developing the [Taylor serie](./006-Taylor_serie.md) of $f$ around $x_n$.
+Developing the [Taylor serie](personal/math/Taylor_serie.md) of $f$ around $x_n$.
 
 $$
 f(x) = f(x_n) + f'(x_n) (x - x_n) + \frac{ f''(x_n) }{ 2! } (x - x_n)^2 + \dots
