@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fe3af5ebf5086b5b",
+        "id": "1d6dacf579dca30a",
         "type": "tabs",
         "children": [
           {
-            "id": "e9100ca8ccb0fca3",
+            "id": "79d622091a2b5949",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
+                "file": "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/03-kick_off_preparation.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01-GitHub_Copilot_presentation"
+              "title": "03-kick_off_preparation"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 283.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -176,45 +176,45 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e9100ca8ccb0fca3",
+  "active": "79d622091a2b5949",
   "lastOpenFiles": [
-    "personal/math/error_and_uncertainty.md",
-    "personal/math/Taylor_serie.md",
-    "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
-    "college/ASES/reports.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-longest_common_subsequence.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
-    "pending_stuff.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-motivation.md",
-    "personal/computer_science/problems/Fibonacci_sequence.md",
-    "personal/computer_science/programming_languajes/C_plus_plus/namespace.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/02-agile_vs_traditional_frameworks.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/03-kick_off_preparation.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/01-basics_concepts.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/05-matrix_multiplication.md",
+    "personal/to_buy.md",
+    "personal/Duolingo/stage_2.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software",
+    "personal/Duolingo",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/04-longest_common_subsequence.md",
+    "personal/computer_science/problems/matrix_chain_multiplication.md",
+    "personal/computer_science/problems/knapsack.md",
+    "personal/computer_science/problems/longest_common_subsequence.md",
     "personal/computer_science/Git_and_GitHub.md",
-    "personal/computer_science/algorithms/sorting/bubble.md",
-    "personal/computer_science/machine_learning/confusion_matrix.md",
+    "college/ASES/reports.md",
+    "college/ASES/Grosman/03-entity-relationship_problems.md",
+    "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-knapsack_problem.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
     "personal/computer_science/problems/coin_change.md",
-    "college/ASES/archived/Gabriela/05-building_a_container_from_scratch.md",
-    "college/ASES/archived/Gabriela/04-mixing_problem_differential_equations.md",
-    "college/ASES/archived/Gabriela/03-Linux_applications_installation.md",
-    "college/ASES/archived/Gabriela/02-how_to_format_code_in_LaTeX.md",
-    "college/ASES/archived/Gabriela/01-Scala_setup_for_vscode.md",
+    "personal/computer_science/problems/Fibonacci_sequence.md",
+    "pending_stuff.md",
+    "to_export.md",
+    "college/semesters/09/ciberseguridad/homework/01-IP_routing.md",
+    "personal/courses/introduccion_al_Hacking/01-conceptos_basicos.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-motivation.md",
+    "college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/01-introduction.md",
+    "college/semesters/09/ciberseguridad/homework",
+    "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/homework/01-workshop.md",
+    "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/homework",
+    "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/classes",
+    "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion",
+    "college/semesters/06",
+    "college/ASES/Grosman/02-object_oriented_programming_midterm.md",
     "college/ASES/archived/Gabriela",
-    "college/ASES/meetings.md",
-    "college/semesters/08/introduccion_a_la_ciencia_de_datos/07-data_mining-association_rules.md",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes",
-    "personal/computer_science/machine_learning/definition.md",
     "personal/computer_science/problems",
-    "README.md",
-    "personal/math/logarithm/properties.md",
-    "personal/computer_science/programming_languajes/C_plus_plus/pointer.md",
-    "personal/math/logarithm/definition.md",
-    "personal/math/logarithm",
-    "personal/math/sequence",
-    "personal/math/serie",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
-    "personal/math/assets/imaginary_number",
-    "personal/math/assets/New folder",
-    "personal/math/assets",
-    "personal/math/New folder",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",
     "college/ASES/assets/Jairo/01_03-acceleration_graph.jpg",

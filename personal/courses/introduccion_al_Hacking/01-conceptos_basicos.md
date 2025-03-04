@@ -174,6 +174,8 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 
 - Broadcast address: by putting the host bits as 1 and retaining the network bits as in the IP address (the network address used to send packets to all hosts on the subnet).
 
+	TODO: maybe instead of IP address is network address.
+
 - Number of hosts per subnet: $2^{ 32 – \text{ given bits for mask } } – 2$.
 
 - First Host ID : $\text{ subnet address } + 1$ (adding one to the binary representation of the subnet address).

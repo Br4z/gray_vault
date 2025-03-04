@@ -4,13 +4,13 @@ reviewed_on: "2025-02-15"
 
 # Introduction to dynamic programming - Fibonacci succession
 
-## 10 dynamic programming
+## 10 Dynamic programming
 
 Dynamic programming combines the best of both worlds. It gives us a way to design custom algorithms that systematically search all possibilities (thus guaranteeing **correctness**) while storing intermediate results to avoid recomputing (thus providing **efficiency**)...
 
 Dynamic programming is a technique for efficiently implementing a recursive algorithm by storing partial results. It requires seeing that a naive recursive algorithm computes the same subproblems over and over and over again. In such a situation, storing the answer for each subproblem in a table to look up instead of recompute can lead to an efficient algorithm. Dynamic programming starts with a recursive algorithm or definition. Only after we have a correct recursive algorithm can we worry about speeding it up by using a results matrix.
 
-### 10.1 caching vs. computation
+### 10.1 Caching vs. computation
 
 Dynamic programming is essentially a tradeoff of space for time...
 
@@ -65,7 +65,7 @@ int Fibonacci(int position) {
 
 It computes $F(n)$ in linear time ($O(n)$) because the recursive function `Fibonacci_helper` is called at most twice for each value $k$ where $0 \leq k \leq n -1$.
 
-#### 10.1.3 Fibonacci numbers by dynamic programming 
+#### 10.1.3 Fibonacci numbers by dynamic programming
 
 In the **bottom-up** approach, also known as **tabulation**, we start with the smallest subproblems and gradually build up to the final solution.
 
@@ -117,4 +117,4 @@ int Fibonacci(int position) {
 }
 ```
 
-This new version now has a space complexity of $O(1)$. 
+This new version now has a space complexity of $O(1)$.

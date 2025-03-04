@@ -1,7 +1,7 @@
 {
   "baseFontSize": 18,
   "interfaceFontFamily": "",
-  "textFontFamily": "Cascadia Mono",
+  "textFontFamily": "Inconsolata Nerd Font Mono",
   "monospaceFontFamily": "Inconsolata Nerd Font Mono",
   "cssTheme": "Minimal",
   "theme": "moonstone"
