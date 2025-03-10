@@ -1,7 +1,7 @@
 # To buy
 
-1. Ryzen 5 5700x or Ryzen 5 5700x3D processor.
+1. Ryzen 5 5700x.
 
-2. GPU card.
+2. Radeon RX 9070XT.
 
 3. Mousepad.

@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-03-03"
+reviewed_on: "2025-03-09"
 ---
 
 # Stage 2
@@ -12,11 +12,11 @@ En español decimos "Soy médico", pero en inglés necesitas agregar `a` o `an` 
 
 Muchas palabras en español empiezan con es + una consonante, por ejemplo, estudiante, español y escuela.
 
-En inglés es más común que las palabras empiecen solamente con `s` + una consonante, como student, Spanish y school.
+En inglés es más común que las palabras empiecen solamente con `s` + una consonante, como "student", "Spanish" y "school".
 
 ## 8 - Habla de viajes
 
-Los nombres de los países no son los únicos que se escriben con mayúscula en inglés. ¡Los **idiomas** y las **nacionalidades** también!
+Los nombres de los países no son los únicos que se escriben con mayúscula en inglés. ¡Los idiomas y las nacionalidades también!
 
 ## 9 - Pide favores, usa el tiempo presente
 
@@ -32,7 +32,7 @@ Pero si la palabra termina con `s`, `x`, `ch` o `sh`, necesitas agregar `es`.
 
 En inglés es importante pronunciar por completo las consonantes como `b`, `d` y `g`, independientemente de dónde se encuentren dentro de la palabra.
 
-Sin embargo, ¡debes notar que en las palabras que terminan en `ing`, como  morning y evening, el sonido de la `g` al final no es fuerte!
+Sin embargo, ¡debes notar que en las palabras que terminan en `ing`, como "morning" y "evening", el sonido de la `g` al final no es fuerte!
 
 ## 16 - Habla de tecnología
 
@@ -48,6 +48,16 @@ Para hablar de los hábitos y de la rutina, usa la forma del tiempo presente que
 
 ## 18 - Platica con los demás
 
-Ya hemos visto que cuando hablamos de he o she necesitamos agregarle `s` al verbo.
+Ya hemos visto que cuando hablamos de "he" o "she" necesitamos agregarle `s` al verbo.
 
 Pero si el verbo termina con `o`, `ch` o `sh`, necesitas agregarle `es`.
+
+## 22 - Haz planes con amigos
+
+¿Tienes sed? En español preguntamos ¿Me puede dar una bebida?, pero en inglés dirías "Can I have a drink?"
+
+Otra manera de pedir algo es "I would like", que es una forma más cortés de decir "I want".
+
+## 24 - Describe personas
+
+Para decir que algo es "más" que otra cosa. Modificamos el adjetivo, si la palabra ya termina con `e` (como "nice"), solo necesitas agregarle `r`.

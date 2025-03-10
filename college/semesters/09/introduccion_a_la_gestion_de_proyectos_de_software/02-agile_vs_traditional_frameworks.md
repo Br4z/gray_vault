@@ -68,35 +68,35 @@ Cinco grupos de procesos, que constituyen etapas secuenciales y lógicas por las
 
 1. Inicio: definir y autorizar formalmente el proyecto o una fase del mismo.
 
-	 - Identifica stakeholders.
+	- Identifica stakeholders.
 
-	 - Acta de constitución del proyecto.
+	- Acta de constitución del proyecto.
 
-	 - Identifica riesgos iniciales.
+	- Identifica riesgos iniciales.
 
 	- Elección del director del proyecto.
 
 2. Planificación: plan detallado del proyecto que guiará la ejecución y monitoreo y control del mismo.
 
-	 - Definición del alcance, cronograma, presupuesto y calidad.
+	- Definición del alcance, cronograma, presupuesto y calidad.
 
-	 - Planificación de recursos humanos, comunicaciones, riesgos y adquisiciones.
+	- Planificación de recursos humanos, comunicaciones, riesgos y adquisiciones.
 
 3. Ejecución: coordinar y dirigir los recursos para implementar el plan del proyecto.
 
-	 - Coordinación y dirección de recursos.
+	- Coordinación y dirección de recursos.
 
-	 - Implementación del plan y aseguramiento de la calidad.
+	- Implementación del plan y aseguramiento de la calidad.
 
 4. Monitoreo y control: medir el desempeño y progreso del proyecto para asegurar el cumplimiento de objetivos.
 
-	 - Seguimiento del desempeño y progreso.
+	- Seguimiento del desempeño y progreso.
 
-	 - Gestión de cambios, riesgos y control de costos.
+	- Gestión de cambios, riesgos y control de costos.
 
 5. Cierre: formalizar la aceptación del proyecto y cerrar actividades.
 
-	 Documentación de lecciones aprendidas y cierre administrativo.
+	Documentación de lecciones aprendidas y cierre administrativo.
 
 > Aunque se presentan de forma secuencial, estos procesos pueden iterar según las necesidades del proyecto.
 
@@ -104,7 +104,7 @@ Cinco grupos de procesos, que constituyen etapas secuenciales y lógicas por las
 
 ### Product Owner
 
-Define qué se debe hacer y en qué orden. Actúa como la voz del cliente, asegurando que el trabajo pendiente sea claro y priorizado, por tal razon debe tener habilidades de negociación, abstracción, facilitación, influencia y comunicación.
+Define qué se debe hacer y en qué orden. Actúa como la voz del cliente, asegurando que el trabajo pendiente sea claro y priorizado, por tal razón debe tener habilidades de negociación, abstracción, facilitación, influencia y comunicación.
 
 ### Scrum Master
 
@@ -122,4 +122,4 @@ El Product Manager se encarga de la estrategia global del producto, la definici�
 
 ### Product Owner y Business Analyst
 
-El Business Analyst suele enfocarse en el análisis detallado de requerimientos, la documentación de procesos y la definición de soluciones técnicas y de negocio. El Product Owner, en cambio, asume la responsabilidad de priorizar el backlog, asegurando que el equipo trabaje en lo más valioso para el producto. Aunque ambos roles requieren habilidades de análisis y comunicación, el Product Owner actúa como la voz del cliente y toma decisiones finales sobre qué y cuándo se construye, mientras que el business analyst brinda soporte analítico y facilita la claridad en los requerimientos.
+El Business Analyst suele enfocarse en el análisis detallado de requerimientos, la documentación de procesos y la definición de soluciones técnicas y de negocio. El Product Owner, en cambio, asume la responsabilidad de priorizar el backlog, asegurando que el equipo trabaje en lo más valioso para el producto. Aunque ambos roles requieren habilidades de análisis y comunicación, el Product Owner actúa como la voz del cliente y toma decisiones finales sobre qué y cuándo se construye, mientras que el Business Analyst brinda soporte analítico y facilita la claridad en los requerimientos.

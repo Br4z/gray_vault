@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1d6dacf579dca30a",
+        "id": "eb2bd11cbd82e115",
         "type": "tabs",
         "children": [
           {
-            "id": "79d622091a2b5949",
+            "id": "37d49d1c53a10aae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/03-kick_off_preparation.md",
+                "file": "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/01-principles_of_content_design.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "03-kick_off_preparation"
+              "title": "01-principles_of_content_design"
             }
           }
         ]
@@ -164,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,44 +177,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "79d622091a2b5949",
+  "active": "37d49d1c53a10aae",
   "lastOpenFiles": [
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/02-agile_vs_traditional_frameworks.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/04-innovation_and_design_thinking.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/01-principles_of_content_design.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario",
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/03-kick_off_preparation.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/01-basics_concepts.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/05-matrix_multiplication.md",
-    "personal/to_buy.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/03-project_initiation_act.md",
+    "college/semesters/09/proyecto_integrador_II/03-kick_off_.md",
+    "college/semesters/09/proyecto_integrador_II/02-app_presentation.md",
+    "personal/courses/introduccion_al_Hacking/01-conceptos_basicos.md",
+    "personal/Duolingo/stage_4.md",
+    "personal/Duolingo/stage_3.md",
     "personal/Duolingo/stage_2.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software",
-    "personal/Duolingo",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/04-longest_common_subsequence.md",
-    "personal/computer_science/problems/matrix_chain_multiplication.md",
-    "personal/computer_science/problems/knapsack.md",
-    "personal/computer_science/problems/longest_common_subsequence.md",
-    "personal/computer_science/Git_and_GitHub.md",
-    "college/ASES/reports.md",
-    "college/ASES/Grosman/03-entity-relationship_problems.md",
-    "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-knapsack_problem.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
-    "personal/computer_science/problems/coin_change.md",
-    "personal/computer_science/problems/Fibonacci_sequence.md",
     "pending_stuff.md",
     "to_export.md",
+    "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
+    "college/semesters/09/ciberseguridad/homework/03-2024_cyber_attacks.md",
+    "personal/to_buy.md",
+    "college/semesters/09/ciberseguridad/classes/02-introduction.md",
+    "college/ASES/reports.md",
     "college/semesters/09/ciberseguridad/homework/01-IP_routing.md",
-    "personal/courses/introduccion_al_Hacking/01-conceptos_basicos.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-motivation.md",
-    "college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/01-introduction.md",
+    "college/semesters/09/ciberseguridad/classes",
+    "college/semesters/index.md",
+    "college/semesters/09/ciberseguridad/homework/02-the_art_of_war.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/05-matrix_multiplication.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/04-longest_common_subsequence.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/02-agile_vs_traditional_frameworks.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/01-basics_concepts.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software",
+    "personal/Duolingo",
+    "personal/computer_science/problems/matrix_chain_multiplication.md",
+    "personal/computer_science/problems/knapsack.md",
     "college/semesters/09/ciberseguridad/homework",
-    "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/homework/01-workshop.md",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/homework",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/classes",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion",
     "college/semesters/06",
-    "college/ASES/Grosman/02-object_oriented_programming_midterm.md",
     "college/ASES/archived/Gabriela",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes",
-    "personal/computer_science/problems",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",
