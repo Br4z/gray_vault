@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/01-principles_of_content_design.md",
+                "file": "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/01-Sena_app_analysis.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01-principles_of_content_design"
+              "title": "01-Sena_app_analysis"
             }
           }
         ]
@@ -179,6 +179,15 @@
   },
   "active": "37d49d1c53a10aae",
   "lastOpenFiles": [
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/classes/03-basic_rules_and_guidelines.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/01-Sena_app_analysis.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/classes/01-principles_of_content_design.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/03-basic_rules_and_guidelines.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/classes/02-building_digital_narrative-tools_and_methodologies.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/classes",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/02-building_digital_narrative-tools_and_methodologies.md",
+    "to_export.md",
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/04-innovation_and_design_thinking.md",
     "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/01-principles_of_content_design.md",
     "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario",
@@ -191,7 +200,6 @@
     "personal/Duolingo/stage_3.md",
     "personal/Duolingo/stage_2.md",
     "pending_stuff.md",
-    "to_export.md",
     "college/semesters/09/proyecto_integrador_II/01-GitHub_Copilot_presentation.md",
     "college/semesters/09/ciberseguridad/homework/03-2024_cyber_attacks.md",
     "personal/to_buy.md",
@@ -201,20 +209,12 @@
     "college/semesters/09/ciberseguridad/classes",
     "college/semesters/index.md",
     "college/semesters/09/ciberseguridad/homework/02-the_art_of_war.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/05-matrix_multiplication.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/04-longest_common_subsequence.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/02-agile_vs_traditional_frameworks.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/01-basics_concepts.md",
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software",
     "personal/Duolingo",
-    "personal/computer_science/problems/matrix_chain_multiplication.md",
-    "personal/computer_science/problems/knapsack.md",
     "college/semesters/09/ciberseguridad/homework",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/homework",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion/classes",
     "college/semesters/06/fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion",
-    "college/semesters/06",
-    "college/ASES/archived/Gabriela",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",
