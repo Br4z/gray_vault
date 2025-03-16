@@ -57,7 +57,7 @@ Se encarga de verificar la identidad de los usuarios, dispositivos o sistemas, g
 
 Implica que todas las acciones y transacciones dentro de un sistema sean atribuibles a una entidad o usuario específico. La trazabilidad y la auditoría de las actividades permiten identificar responsabilidades en caso de incidentes de seguridad.
 
-## ¿Qué Es la tríada CID?
+## ¿Qué es la tríada CID?
 
 Las tres letras de la "tríada de la CID" significan confidencialidad, integridad y disponibilidad. La tríada de la CID es un modelo común que constituye la base para el desarrollo de sistemas de seguridad. Se utilizan para encontrar vulnerabilidades y métodos para crear soluciones.
 

@@ -61,4 +61,3 @@ Eso es porque en inglés las palabras como "me", "te" o "lo" ¡siempre van despu
 ## 13 - Expresa tu opinión
 
 Ya vimos que para los adjetivos que tienen más de una sílaba, como "expensive", usarías "more expensive" para decir más caro. De manera parecida, para decir cosas como el más caro puedes usar "the most" más el adjetivo.
-

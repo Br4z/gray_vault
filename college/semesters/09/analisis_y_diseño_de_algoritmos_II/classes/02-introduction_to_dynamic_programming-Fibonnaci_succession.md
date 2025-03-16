@@ -6,9 +6,7 @@ reviewed_on: "2025-02-15"
 
 ## 10 Dynamic programming
 
-Dynamic programming combines the best of both worlds. It gives us a way to design custom algorithms that systematically search all possibilities (thus guaranteeing **correctness**) while storing intermediate results to avoid recomputing (thus providing **efficiency**)...
-
-Dynamic programming is a technique for efficiently implementing a recursive algorithm by storing partial results. It requires seeing that a naive recursive algorithm computes the same subproblems over and over and over again. In such a situation, storing the answer for each subproblem in a table to look up instead of recompute can lead to an efficient algorithm. Dynamic programming starts with a recursive algorithm or definition. Only after we have a correct recursive algorithm can we worry about speeding it up by using a results matrix.
+![[personal/computer_science/algorithms/dynamic_programming|Dynamic programming]]
 
 ### 10.1 Caching vs. computation
 
@@ -33,11 +31,7 @@ int Fibonacci(int position) {
 
 #### 10.1.2 Fibonacci numbers by caching
 
-In the **top-down** approach, also known as **memoization**, we keep the solution recursive and add a memoization table to avoid repeated calls of same subproblems.
-
-1. Before making any recursive call, we first check if the memoization table already has a solution for it.
-
-2. After the recursive call is over, we store the solution in the memoization table.
+This is the **top-down** approach:
 
 ```cpp
 #define MAX 92 // largest n for which F(n) fits in a long
@@ -67,13 +61,7 @@ It computes $F(n)$ in linear time ($O(n)$) because the recursive function `Fibon
 
 #### 10.1.3 Fibonacci numbers by dynamic programming
 
-In the **bottom-up** approach, also known as **tabulation**, we start with the smallest subproblems and gradually build up to the final solution.
-
-1. We write an iterative solution and build the solution in bottom-up manner.
-
-2. We use a dynamic programming table where we first fill the solution for base cases and then fill the remaining entries of the table using recursive formula.
-
-3. We only use recursive formula on table entries and do not make recursive calls.
+This is the **bottom-up** approach:
 
 ```cpp
 #define MAX 92 // largest n for which F(n) fits in a long
