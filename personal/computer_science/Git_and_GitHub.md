@@ -26,15 +26,15 @@ git stash
 
 1. The stashed will be removed after you apply them to the code you are working on.
 
-    ```BASH
-    git stash pop
-    ```
+	```BASH
+	git stash pop
+	```
 
 2. The stashed will not be removed after you apply them to the code you are working on.
 
-    ```BASH
-    git stash apply
-    ```
+	```BASH
+	git stash apply
+	```
 
 ## Delete files from the staging area without deleting them from the workspace
 

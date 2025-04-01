@@ -21,7 +21,7 @@ Sea $m[i,j]$ el mínimo número de multiplicaciones necesarias para calcular $A_
 $$
 m[i,j] = \begin{cases}
 		0                                                                 & i = j \\
-		\min_{ i \leq k < j}\{m[i,k] + m[k + 1,j] + p_{ i - 1 } p_k p_j\} & i < j
+		\min_{ i \leq k < j }\{m[i,k] + m[k + 1,j] + p_{ i - 1 } p_k p_j\} & i < j
 	\end{cases}
 $$
 
@@ -37,4 +37,4 @@ Mientras calculamos la matriz del paso $3$ podemos ir llenando una matriz auxili
 
 El costo temporal es la multiplicación de todos los elementos y lo que cuesta calcular cada uno $O(n^3)$ y el costo espacial es $O(n^2)$.
 
-> Siendo más estricto, el costo temporal es $O \left (\frac{n (n - 1) }{ 2 } * n \right )$
+> Siendo más estricto, el costo temporal es $O \left (\frac{ n (n - 1) }{ 2 } * n \right )$
