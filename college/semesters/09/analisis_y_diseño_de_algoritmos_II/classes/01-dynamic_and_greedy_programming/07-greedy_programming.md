@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-03-14"
+reviewed_on: "2025-04-07"
 ---
 
 # Greedy programming
@@ -31,7 +31,7 @@ C[i,j] = \begin{cases}
 	\end{cases}
 $$
 
-### Enfoque voraz
+### Enfoque voraz (problema de selección de actividades)
 
 1. Se elige la actividad que termina primero, pues esto maximiza el tiempo disponible para programar las siguientes.
 
@@ -41,16 +41,14 @@ $$
 
 > Si es necesario, se ordenan todas las actividades según su hora de finalización.
 
-## Algorithm (Greedy Approach)
+## Problema de la mochila $0$-$1$
 
-1. **Sort** the activities by their **finish time**.
-2. **Select** the first activity and add it to **S**.
-3. **Iterate** through the remaining activities:
-   - Add an activity **a_j** to **S** **only if** it **starts after** the last selected activity finishes.
-4. **Repeat** until all activities are considered.
+![[personal/computer_science/problems/knapsack|knapsack|Problema de la mochila]]
 
-## Complexity Analysis
+### Enfoque voraz (problema de la mochila $0$-$1$)
 
-- **Sorting** the activities by finish time: **O(n log n)**
-- **Iterating** through activities: **O(n)**
-- **Total Complexity**: **O(n log n)**
+1. Ordenar los ítems según su ratio beneficio/peso ($\frac{ b_i }{ w_i } }$) de mayor a menor.
+
+2. Seleccionar ítems en ese orden, añadiéndolos a la mochila si el peso acumulado no excede $M$.
+
+Este enfoque no garantiza optimalidad, una elección localmente óptima (mayor ratio) puede bloquear combinaciones globalmente mejores. Esto no ocurre en el problema de mochila fraccionario porque se puede tomar fracciones de ítems, evitando el **desperdicio de capacidad**.

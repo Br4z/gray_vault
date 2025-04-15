@@ -2,7 +2,7 @@
 reviewed_on: "2025-03-10"
 ---
 
-# Sena app analysis
+# SENA app analysis
 
 ## Funcionalidad escogida
 

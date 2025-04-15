@@ -8,7 +8,9 @@
     "pt": "pt-PT",
     "ca": "ca-ES"
   },
-  "dictionary": [],
+  "dictionary": [
+    "reunion"
+  ],
   "syncDictionary": false,
   "remoteDictionary": [],
   "pickyMode": false,

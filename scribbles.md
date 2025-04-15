@@ -21,7 +21,9 @@ Whatever you are going to answer, please keep in mind the following:
 
 	- If you are going to write mathematics, please use `$` instead of `$(` or `$)`.
 
-	- Do not use capital letters unless you are typing a name.
+	- Do not use capital letters unless you are writing a name or are orthographically correct.
+
+		> For example the text after a dot or company's name.
 
 
 ## Programas

@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "aef48873e5d050ca",
-        "type": "tabs",
+        "id": "64e1520366a99067",
+        "type": "split",
         "children": [
           {
-            "id": "ba43347f209ebf5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "college/semesters/09/proyecto_integrador_II/homework/03-Play_HT_presentation.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "03-Play_HT_presentation"
-            }
+            "id": "2297e7b60b8e4c30",
+            "type": "tabs",
+            "dimension": 63.01652892561983,
+            "children": [
+              {
+                "id": "d43844f3de3c5453",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/04-lineal_programming-standard_form_and_slack.md",
+                    "mode": "source",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "04-lineal_programming-standard_form_and_slack"
+                }
+              }
+            ]
+          },
+          {
+            "id": "2c107494cdab5489",
+            "type": "tabs",
+            "dimension": 36.98347107438016,
+            "children": [
+              {
+                "id": "c59f4960aaab23f1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/02-lineal_programming.md",
+                    "mode": "preview",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "02-lineal_programming"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -177,44 +206,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ba43347f209ebf5f",
+  "active": "d43844f3de3c5453",
   "lastOpenFiles": [
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/02-lineal_programming.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/04-lineal_programming-standard_form_and_slack.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/01-introduction.md",
     "scribbles.md",
-    "college/semesters/09/proyecto_integrador_II/homework/03-Play_HT_presentation.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/homework/1-moderating_internal_conflict_of_opinion_in_a_social_network.md",
-    "college/semesters/09/proyecto_integrador_II/classes/03-speech_recognition.md",
-    "college/semesters/09/proyecto_integrador_II/classes/02-AI_enhanced_software_engineering.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/07-greedy_programming.md",
-    "to_export.md",
+    "Untitled.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/08-coin_change_problem.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/New folder",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/07-greedy_programming.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/05-matrix_multiplication.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/04-longest_common_subsequence.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/03-knapsack_problem.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/01-motivation.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming",
+    "college/semesters/09/ciberseguridad/classes/03-cryptography.md",
+    "college/semesters/09/ciberseguridad/classes/02-introduction.md",
     "college/ASES/reports.md",
-    "college/semesters/index.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/homework/01-Gemelos_GMS.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/01-basics_concepts.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/04-longest_common_subsequence.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/homework",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/04-innovation_and_design_thinking.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/03-project_initiation_act.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/03-kick_off_preparation.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-introduction_to_dynamic_programming-Fibonnaci_succession.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/05-matrix_multiplication.md",
+    "personal/Duolingo/stage_2.md",
+    "personal/Duolingo/stage_4.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-SENA_style_guide.md",
+    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/01-SENA_app_analysis.md",
+    "personal/computer_science/problems/minimum_spanning_tree.md",
+    "personal/computer_science/algorithms/Dijkstra.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/08-coin_change_problem.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/07-greedy_programming.md",
+    "personal/computer_science/problems/knapsack.md",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-knapsack_problem.md",
     "personal/computer_science/problems/activity_selection_problem.md",
-    "personal/computer_science/problems/coin_change.md",
-    "personal/computer_science/algorithms/greedy_algorithm.md",
-    "personal/computer_science/programming_languajes/C_plus_plus/namespace.md",
-    "personal/computer_science/algorithms/dynamic_programming.md",
-    "personal/to_buy.md",
-    "personal/courses/aprende_Docker_ahora.md",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/homework",
+    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/homework",
     "college/semesters/09/proyecto_integrador_II/homework",
     "college/semesters/09/proyecto_integrador_II/classes",
     "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework",
     "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/classes",
-    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario",
-    "college/semesters/09/ciberseguridad/classes",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",

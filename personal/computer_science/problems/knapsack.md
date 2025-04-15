@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-02-19"
+reviewed_on: "2025-04-07"
 ---
 
 # Knapsack
@@ -16,7 +16,7 @@ Given a set of items, each with a weight and a benefit, and a knapsack with a ma
 
 	- A benefit $b_i$
 
-- A knapsack with a maximum weight capacity $m$.
+- A knapsack with a maximum weight capacity $M$.
 
 ## Output
 
@@ -27,7 +27,7 @@ A binary vector $(x_1,x_2,\dots,x_n)$ where:
 - The total weight of the selected items must not exceed the knapsack's capacity:
 
 	$$
-	\sum_{ i = 1 }^n { w_i x_i } \leq m
+	\sum_{ i = 1 }^n { w_i x_i } \leq M
 	$$
 
 - The total benefit is maximized:
