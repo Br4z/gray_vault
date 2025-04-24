@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
-author: Geeks for Geeks
-source: https://www.geeksforgeeks.org/generators-in-python
-source_language: English
+sources:
+  - author: NA
+    url: https://www.geeksforgeeks.org/generators-in-python
+    language: English
 ---
 
 # Generator
@@ -51,6 +52,6 @@ print(next(generator_object)) # 1
 print(next(generator_object)) # 2
 print(next(generator_object)) # 3
 
-for i in fib(5): # 0 1 1 2 3 
+for i in fib(5): # 0 1 1 2 3
 	print(i, end=" ")
 ```

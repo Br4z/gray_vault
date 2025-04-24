@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-09"
+reviewed_on: "2025-04-23"
 ---
 
 # Counting
@@ -18,7 +18,7 @@ reviewed_on: "2025-01-09"
 
 	where $N$ and $M$ are the size of the input and frequencies arrays respectively.
 
-## C++ Implementation
+## C++ implementation
 
 ```c++
 template <class T>

@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-30"
-author: GitKraken
-source: https://www.gitkraken.com/learn/git/git-flow
-source_language: English
+sources:
+  - author: NA
+    url: https://www.gitkraken.com/learn/git/git-flow
+    language: English
 ---
 
 # GitFlow

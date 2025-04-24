@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-03-18"
-author: Geeks for Geeks
-language: English
-source: https://www.geeksforgeeks.org/introduction-to-greedy-algorithm-data-structures-and-algorithm-tutorials/
+sources:
+  - author: NA
+    url: https://www.geeksforgeeks.org/introduction-to-greedy-algorithm-data-structures-and-algorithm-tutorials/
+    language: English
 ---
 
 # Greedy Algorithm

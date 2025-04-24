@@ -6,7 +6,6 @@
 
 ## Prompt
 
-
 Whatever you are going to answer, please keep in mind the following:
 
 - If I ask you to fix something, please respond to the specific section I have asked you to fix.
@@ -15,16 +14,19 @@ Whatever you are going to answer, please keep in mind the following:
 
 	- Give me the content in a code block so I can copy and paste it.
 
-	- Between the items in the list, leave an empty line.
+	- Between the items in a list, leave an empty line.
 
-	- Do not abuse `**` in list items.
+	- Do not abuse of `**` in list items.
 
 	- If you are going to write mathematics, please use `$` instead of `$(` or `$)`.
 
-	- Do not use capital letters unless you are writing a name or are orthographically correct.
+	- Do not use capital letters unless you are writing a name or it is orthographically correct:
 
-		> For example the text after a dot or company's name.
+		- After a dot.
 
+		- Starting a paragraph.
+
+		- Starting a list element.
 
 ## Programas
 
@@ -144,11 +146,17 @@ Whatever you are going to answer, please keep in mind the following:
 
 - [Daz studio course](https://www.daz3d.com/community/masterclass).
 
-	- [Character](https://www.renderhub.com/rdaughterdaz/cici-for-genesis-9)
-
-	- [Hair](https://www.daz3d.com/alo-phyllis-hair-for-genesis-9-8-and-81-female)
-
 - Finish the habitica terminal client.
+
+- Program the classic games.
+
+	- Pacman.
+
+	- Tetris.
+
+	- Sudoku.
+
+	- Hangman.
 
 ## Shopping
 
@@ -157,9 +165,3 @@ Whatever you are going to answer, please keep in mind the following:
 2. Radeon RX 9070XT.
 
 3. Mousepad.
-
----
-
-- Complementa el registro de usuario, permitiendo a los usuarios acceder a sus cuentas. Depende de la implementación de la autenticación.
-
-- Complementa las listas de películas, permitiendo a los usuarios interactuar con el contenido. Depende de la implementación de la base de datos.

@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-02-15"
-author: NA
-language: English
-source: https://en.wikipedia.org/wiki/Fibonacci_sequence
+sources:
+  - author: NA
+    url: https://en.wikipedia.org/wiki/Fibonacci_sequence
+    language: English
 ---
 
 # Fibonacci sequence

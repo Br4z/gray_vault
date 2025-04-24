@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
-author: Geeks for Geeks
-source: https://www.geeksforgeeks.org/python-lambda
-source_language: English
+sources:
+  - author: NA
+    url: https://www.geeksforgeeks.org/python-lambda
+    language: English
 ---
 
 # `lambda`

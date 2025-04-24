@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-12"
-author: Geeks for Geeks
-language: English
-source: https://www.geeksforgeeks.org/cpp-pointers
+sources:
+  - author: NA
+    url: https://www.geeksforgeeks.org/cpp-pointers
+    language: English
 ---
 
 # Pointer

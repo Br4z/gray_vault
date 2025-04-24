@@ -48,7 +48,7 @@ La voz del SENA debe ser reconocible, cercana y orientada a inspirar confianza. 
 
 El tono es la manifestación emocional de la voz y debe adaptarse a los distintos momentos del viaje del usuario en la plataforma, sin perder la coherencia con la identidad institucional. Se sugiere lo siguiente:
 
-1. Inspirador desde el primer contacto: en el mensaje de bienvenida y en la etapa inicial del descubrimiento (por ejemplo, “Bienvenido a SENA Sofía Plus, el punto de partida hacia tu futuro profesional”), el tono debe ser alentador, acogedor y lleno de optimismo, invitando al usuario a embarcarse en su propio viaje de aprendizaje.
+1. Inspirador desde el primer contacto: en el mensaje de bienvenida y en la etapa inicial del descubrimiento (por ejemplo, "Bienvenido a SENA Sofía Plus, el punto de partida hacia tu futuro profesional"), el tono debe ser alentador, acogedor y lleno de optimismo, invitando al usuario a embarcarse en su propio viaje de aprendizaje.
 
 2. Cálido y cercano en la exploración: durante la fase de búsqueda y descubrimiento, el tono debe ser empático y orientado a guiar al usuario. Se pueden incluir micro testimonios y ejemplos reales que refuercen la idea de que cada formación es parte de un camino lleno de posibilidades.
 

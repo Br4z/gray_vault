@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-09"
+reviewed_on: "2025-04-23"
 ---
 
 # Bubble
@@ -18,7 +18,7 @@ reviewed_on: "2025-01-09"
 
 - All cases: $O(n^2)$.
 
-## C++ Implementation
+## C++ implementation
 
 ```c++
 template <class T>

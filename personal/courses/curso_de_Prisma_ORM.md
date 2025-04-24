@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-03-18"
-author: Fazt Code
-language: Spanish
-source: https://www.youtube.com/watch?v=N5dkg28jRF0
+sources:
+  - author: Fazt Code
+    url: https://www.youtube.com/watch?v=N5dkg28jRF0
+    language: Spanish
 ---
 
 # Curso de Prisma ORM

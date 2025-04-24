@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-09"
+reviewed_on: "2025-04-23"
 ---
 
 # Quick
@@ -24,7 +24,7 @@ reviewed_on: "2025-01-09"
 
 - Average case: $O(n \log n)$.
 
-## C++ Implementation
+## C++ implementation
 
 ```c++
 template <class T>

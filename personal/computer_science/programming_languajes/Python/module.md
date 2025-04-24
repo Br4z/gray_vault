@@ -1,12 +1,12 @@
 ---
 reviewed_on: "2025-01-10"
-author: Daniel Marcial
-source: https://www.freecodecamp.org/news/build-your-first-python-package
-source_language: English
-
-author: Geeks for Geeks
-source: https://www.geeksforgeeks.org/python-modules
-source_language: English
+sources:
+  - author: Daniel Marcial
+    url: https://www.freecodecamp.org/news/build-your-first-python-package
+    language: English
+  - author: Geeks for Geeks
+    url: https://www.geeksforgeeks.org/python-modules
+    language: English
 ---
 
 # Module

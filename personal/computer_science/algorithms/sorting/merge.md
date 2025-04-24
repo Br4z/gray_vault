@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-09"
+reviewed_on: "2025-04-23"
 ---
 
 # Merge
@@ -30,7 +30,7 @@ $$
 
 - All cases: $O(n \log_2 n) = O(n \log n)$.
 
-## C++ Implementation
+## C++ implementation
 
 ```c++
 template <class T>

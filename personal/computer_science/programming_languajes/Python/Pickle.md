@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
-author: Davide Mastromatteo
-source: https://realpython.com/python-pickle-module
-source_language: English
+sources:
+  - author: Davide Mastromatteo
+    url: https://realpython.com/python-pickle-module
+    language: English
 ---
 
 # Pickle

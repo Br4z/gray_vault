@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
-author: Python
-source: https://docs.python.org/3/library/pydoc.html
-source_language: English
+sources:
+  - author: NA
+    url: https://docs.python.org/3/library/pydoc.html
+    language: English
 ---
 
 # `pydoc`

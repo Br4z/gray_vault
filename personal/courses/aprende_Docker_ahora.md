@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-03-18"
-author: HolaMundo
-language: Spanish
-source: https://www.youtube.com/watch?v=4Dko5W96WHg&t
+sources:
+  - author: HolaMundo
+    url: https://www.youtube.com/watch?v=4Dko5W96WHg
+    language: Spanish
 ---
 
 # Aprende Docker ahora

@@ -1,8 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
-author: Geeks for Geeks
-source: https://www.geeksforgeeks.org/testing-in-python-using-doctest-module
-source_language: English
+sources:
+  - author: NA
+    url: https://www.geeksforgeeks.org/testing-in-python-using-doctest-module
+    language: English
 ---
 
 # Doctest
