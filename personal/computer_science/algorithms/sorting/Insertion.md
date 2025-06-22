@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-05"
 ---
 
 # Insertion
@@ -27,8 +27,11 @@ reviewed_on: "2025-04-23"
 ## C++ Implementation
 
 ```c++
+#include <vector>
+
+
 template <class T>
-void insertion_sort(T* input, int input_length) {
+void insertion_sort(std::vector <T> &input, int input_length) {
 	for (int i = 1; i < input_length; i++) {
 		T element = input[i];
 		int j = i - 1;

@@ -4,11 +4,6 @@ reviewed_on: "2025-02-07"
 
 # Gradient descent
 
-$$
-\newcommand \norm[1]{ \left \lVert #1 \right \rVert }
-\newcommand \abs[1]{ \left \lvert #1 \right \rvert }
-$$
-
 $A x = b$, número de condición, $\rho = \frac{ \lambda_{ \text{max} } }{ \lambda_{ \text{min} } }$, $\lambda \in \text{valores propios de } A$.
 
 Si $\rho$ es muy grande, el sistema es mal condicionado, lo que significa que la solución es sensible a pequeñas perturbaciones y el método de gradiente conjugado puede converger lentamente.

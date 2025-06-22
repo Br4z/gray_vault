@@ -4,10 +4,6 @@ reviewed_on: "2025-02-08"
 
 # Conjugate gradient
 
-$$
-\newcommand \norm[1]{ \left \lVert #1 \right \rVert }
-$$
-
 ## Método general
 
 - $\vec{ d_i }$: dirección de descenso.

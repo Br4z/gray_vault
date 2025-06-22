@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-05"
 ---
 
 # Bubble
@@ -21,16 +21,20 @@ reviewed_on: "2025-04-23"
 ## C++ implementation
 
 ```c++
+#include <vector>
+
+
 template <class T>
-void swap(T* input, int i, int j) {
-	int temp = input[i];
+void swap(std::vector <T> &input, int i, int j) {
+	T temp = input[i];
 	input[i] = input[j];
 	input[j] = temp;
 }
 
 template <class T>
-void bubble_sort(T* input, int input_length) {
+void bubble_sort(std::vector <T> &input) {
 	bool swapped;
+	int input_length = input.size();
 
 	for (int i = 0; i < input_length - 1; i++) { // n - 1 passes
 		swapped = false;

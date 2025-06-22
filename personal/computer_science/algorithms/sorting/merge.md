@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-05"
 ---
 
 # Merge
@@ -33,19 +33,16 @@ $$
 ## C++ implementation
 
 ```c++
+#include <vector>
+
+
 template <class T>
-void merge(T* input, int left, int middle, int right) {
+void merge(std::vector <T> &input, int left, int middle, int right) {
 	int n_1 = middle - left + 1;
 	int n_2 = right - middle;
 
-	T* array_1 = new T[n_1];
-	T* array_2 = new T[n_2];
-
-	for (int i = 0; i < n_1; i++)
-		array_1[i] = input[left + i];
-
-	for (int i = 0; i < n_2; i++)
-		array_2[i] = input[middle + 1 + i];
+	std::vector <T> array_1(input.begin() + left, input.begin() + middle + 1);
+	std::vector <T> array_2(input.begin() + middle + 1, input.begin() + right + 1);
 
 	int i = 0, j = 0, k = left;
 
@@ -61,13 +58,10 @@ void merge(T* input, int left, int middle, int right) {
 
 	while (j < n_2)
 		input[k++] = array_2[j++];
-
-	delete[] array_1;
-	delete[] array_2;
 }
 
 template <class T>
-void merge_sort(T* input, int left, int right) {
+void merge_sort(std::vector <T> &input, int left, int right) {
 	if (left < right) {
 		int middle = (left + right) / 2;
 		merge_sort(input, left, middle);

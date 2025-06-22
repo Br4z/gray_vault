@@ -2,31 +2,11 @@
 ( {2,})|(\d[a-zA-Z])|(\{[^ a])|([^  n]\})|(^\s+$)
 ```
 
+```
+’|“|”|‘|’
+```
+
 # Scribbles
-
-## Prompt
-
-Whatever you are going to answer, please keep in mind the following:
-
-- If I ask you to fix something, please respond to the specific section I have asked you to fix.
-
-- If that involves making content for my notes, please follow the instructions below:
-
-	- Give me the content in a code block so I can copy and paste it.
-
-	- Between the items in a list, leave an empty line.
-
-	- Do not abuse of `**` in list items.
-
-	- If you are going to write mathematics, please use `$` instead of `$(` or `$)`.
-
-	- Do not use capital letters unless you are writing a name or it is orthographically correct:
-
-		- After a dot.
-
-		- Starting a paragraph.
-
-		- Starting a list element.
 
 ## Programas
 
@@ -60,12 +40,6 @@ Whatever you are going to answer, please keep in mind the following:
 	(for\()|(while\()|(switch\()|(if\()|(\}else)|(\)\{)
 	```
 
-## Regex for checking notes
-
-```
-([^\.:\]?]$)|(^(?! ).* {2,})|(\{[^\s])|([^\s]\})
-```
-
 ## Useful commands
 
 - Convert PNG to JPG: `magick mogrify -format jpg <PNG file>`.
@@ -85,11 +59,18 @@ Whatever you are going to answer, please keep in mind the following:
 	scala -classpath .\out\ .\Main.scala
 	```
 
-- Compile C++ programs: `find . -name "*.cpp" -type f -print0 | xargs -0 g++`.
-
 - Paint image in white: `convert input.png -fill white -colorize 100% output.png`.
 
-- `convert images/*.png output.pdf`
+- `convert images/*.png output.pdf`.
+
+- Compile and run JavaFX programs.
+
+	```powershell
+	javac -d out --module-path <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml YourApp.java
+ $(Get-ChildItem -Filter "*.java" -Recurse)
+	cp src/main/resources/* out
+	java -cp out --module-path  <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml <main>
+	```
 
 ## Plex
 
@@ -114,11 +95,6 @@ Whatever you are going to answer, please keep in mind the following:
 - `D:\VFX_resources`.
 
 ---
-
-```
-‘’
-“”
-```
 
 ## Someday
 
@@ -160,7 +136,7 @@ Whatever you are going to answer, please keep in mind the following:
 
 ## Shopping
 
-1. Ryzen 5 5700x.
+1. Ryzen 5 9600x.
 
 2. Radeon RX 9070XT.
 

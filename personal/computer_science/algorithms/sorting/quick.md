@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-05"
 ---
 
 # Quick
@@ -27,16 +27,19 @@ reviewed_on: "2025-04-23"
 ## C++ implementation
 
 ```c++
+#include <vector>
+
+
 template <class T>
-void swap(T* input, int i, int j) {
-	int temp = input[i];
+void swap(std::vector <T> &input, int i, int j) {
+	T temp = input[i];
 	input[i] = input[j];
 	input[j] = temp;
 }
 
 template <class T>
-int partition(T* input, int left, int right) {
-/*  int pivot = input[left];
+int partition(std::vector <T> &input, int left, int right) {
+/*  T pivot = input[left];
 	int i = left;
 
 	for (int j = left + 1; j <= right; j++)
@@ -48,8 +51,7 @@ int partition(T* input, int left, int right) {
 	swap(input, i, left);
 
 	return i; */
-
-	int pivot = input[right];
+	T pivot = input[right];
 	int i = left - 1;
 
 	for (int j = left; j <= right - 1; j++)
@@ -64,7 +66,7 @@ int partition(T* input, int left, int right) {
 }
 
 template <class T>
-void quick_sort(T* input, int left, int right) {
+void quick_sort(std::vector <T> &input, int left, int right) {
 	if (left < right) {
 		int pivot = partition(input, left, right);
 

@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-15"
+reviewed_on: "2025-04-29"
 ---
 
 # Lineal programming: standard form and slack
@@ -102,8 +102,8 @@ es convertida a restricciones
 
 $$
 \begin{align}
-	& x_{ n + 1 } = b_i - \sum_{ j = 1 }^n a_{ ij } * x_j \\
-	& x_{ n + 1 } \geq 0
+	& x_{ n + i } = b_i - \sum_{ j = 1 }^n a_{ ij } * x_j \\
+	& x_{ n + i } \geq 0
 \end{align}
 $$
 
@@ -121,21 +121,21 @@ Las formas son equivalentes porque representan la misma condición de manera alg
 
 2. Introducción de la variable de holgura.
 
-	Para convertirla en igualdad, se agrega una variable no negativa $x_{ n + 1 }$ (llamada **holgura**).
+	Para convertirla en igualdad, se agrega una variable no negativa $x_{ n + i }$ (llamada **holgura**).
 
 	$$ 
-	\sum_{ j = 1 }^n a_{ ij } x_j + x_{ n + 1 } = b_i \quad x_{ n + 1 } \geq 0
+	\sum_{ j = 1 }^n a_{ ij } x_j + x_{ n + i } = b_i \quad x_{ n + i } \geq 0
 	$$
 
 3. Equivalencia lógica.
 
-	- Si en la desigualdad original se cumple $\sum a_{ ij } x_j \leq b_i$, entonces existe un valor $x_{ n + 1 } \geq 0$ que "compensa" la diferencia.
+	- Si en la desigualdad original se cumple $\sum a_{ ij } x_j \leq b_i$, entonces existe un valor $x_{ n + i } \geq 0$ que "compensa" la diferencia.
 
 		$$ 
-		x_{ n + 1 } = b_i - \sum a_{ ij } x_j
+		x_{ n + i } = b_i - \sum a_{ ij } x_j
 		$$
 
-	- Inversamente, si la ecuación $\sum a_{ ij } x_j + x_{ n + 1 } = b_i$ se cumple con $x_{ n + 1 } \geq 0$, entonces $\sum a_{ ij } x_j \leq b_i$ es cierto.
+	- Inversamente, si la ecuación $\sum a_{ ij } x_j + x_{ n + i } = b_i$ se cumple con $x_{ n + i } \geq 0$, entonces $\sum a_{ ij } x_j \leq b_i$ es cierto.
 
 La variable de holgura actúa como un "marcador" no negativo que absorbe la diferencia entre el lado izquierdo de la desigualdad y $b_i$. Esto garantiza que ambas formas representen exactamente el mismo conjunto de soluciones posibles.
 

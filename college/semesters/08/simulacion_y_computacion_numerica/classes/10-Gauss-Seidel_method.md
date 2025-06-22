@@ -4,11 +4,6 @@ reviewed_on: "2025-02-08"
 
 # Gauss-Seidel method
 
-$$
-\newcommand \norm[1]{ \left \lVert #1 \right \rVert }
-\newcommand \abs[1]{ \left \lvert #1 \right \rvert }
-$$
-
 Este método es un procedimiento iterativo utilizado para resolver sistemas de ecuaciones lineales de la forma $A x = b$. Es especialmente útil para sistemas grandes y dispersos.
 
 > Un sistema disperso (también conocido como sistema ralo o de matriz dispersa) es aquel en el que la mayoría de los elementos de la matriz asociada al sistema de ecuaciones son cero. Es decir, solo una pequeña fracción de los elementos de la matriz son diferentes de cero.

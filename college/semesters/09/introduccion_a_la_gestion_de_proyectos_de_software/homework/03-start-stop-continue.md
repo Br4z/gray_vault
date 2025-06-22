@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-02"
 ---
 
 # Start-stop-continue
@@ -24,7 +24,7 @@ El verdadero poder de Start–Stop–Continue aparece cuando el equipo revisita 
 
 3. Puesta en común y agrupación de ideas: invita a todos a compartir sus anotaciones en voz alta. Observa cómo surgen temas similares y se agrupan de forma natural, revelando los puntos recurrentes más relevantes.
 
-4. Discusión colectiva para priorizar: organiza un breve debate en equipo para aclarar cuáles son las acciones más urgentes o de mayor impacto en cada categoría (Start, Stop, Continue).
+4. Discusión colectiva para priorizar: organiza un breve debate en equipo para aclarar cuáles son las acciones más urgentes o de mayor impacto en cada categoría (start, stop, continue).
 
 5. Asignación de responsables y plazos: conviene definir quién se encargará de cada acción y en qué fecha debe estar implementada, de modo que las ideas se traduzcan en iniciativas concretas.
 

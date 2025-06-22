@@ -28,7 +28,7 @@ Although the Copilot ecosystem goes beyond the Visual Studio Code extension, thi
 
 	2. Run the test, which should fail because the program lacks that feature.
 
-	3. Write “just enough” code, the simplest possible, to make the test pass.
+	3. Write "just enough" code, the simplest possible, to make the test pass.
 
 	4. "refactor" the code until it conforms to the **simplicity criteria**.
 

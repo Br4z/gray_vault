@@ -26,7 +26,7 @@ La búsqueda de tu próxima formación académica es una aventura emocionante qu
 
 3. Decisión y empoderamiento.
 
-	A medida que el usuario refina su búsqueda, aparecen pequeñas cápsulas de contenido (como micro testimonios o logros de antiguos estudiantes) que humanizan la experiencia. Estos relatos breves le recuerdan que detrás de cada programa hay personas que ya recorrieron el “viaje”, haciendo que la búsqueda se sienta más cercana y real. Por ejemplo:
+	A medida que el usuario refina su búsqueda, aparecen pequeñas cápsulas de contenido (como micro testimonios o logros de antiguos estudiantes) que humanizan la experiencia. Estos relatos breves le recuerdan que detrás de cada programa hay personas que ya recorrieron el "viaje", haciendo que la búsqueda se sienta más cercana y real. Por ejemplo:
 
 	"José Hernando Mendoza Jiménez, un joven de 29 años originario de Soledad, Atlántico, se ha destacado en Canadá gracias a su formación en soldadura adquirida en el SENA. Tras graduarse como tecnólogo en Supervisión de Soldadura en el Centro Nacional Colombo Alemán, Mendoza emigró hace dos años a la provincia de Quebec, donde su talento y habilidades técnicas le han permitido sobresalir en su campo. Este logro resalta la calidad de la formación brindada por el SENA y cómo sus egresados pueden alcanzar el éxito a nivel internacional".
 

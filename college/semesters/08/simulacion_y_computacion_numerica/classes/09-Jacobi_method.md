@@ -4,11 +4,6 @@ reviewed_on: "2024-12-12"
 
 # Jacobi's method
 
-$$
-\newcommand \norm[1]{ \left \lVert #1 \right \rVert }
-\newcommand \abs[1]{ \left \lvert #1 \right \rvert }
-$$
-
 Este método es un procedimiento iterativo utilizado para resolver sistemas de ecuaciones lineales de la forma $A x = b$.
 
 1. Planteamiento del sistema de ecuaciones.

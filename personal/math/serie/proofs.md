@@ -4,9 +4,9 @@ reviewed_on: "2025-02-09"
 
 # Proofs
 
-## $\forall{ n } \in \mathbb{ N }^*$ satisfied that $\sum_{ i = 0 }^n { 2^i } = 2^{ n - 1 } - 1$
+## $\forall{ n } \in \mathbb{ N }^*$ satisfied that $\sum_{ i = 0 }^n { 2^i } = 2^{ n + 1 } - 1$
 
-### Base case ($\sum_{ i = 0 }^n { 2^i } = 2^{ n - 1 } - 1$)
+### Base case ($\sum_{ i = 0 }^n { 2^i } = 2^{ n + 1 } - 1$)
 
 $$
 \begin{align}
@@ -16,7 +16,7 @@ $$
 \end{align}
 $$
 
-### Induction case ($\sum_{ i = 0 }^n { 2^i } = 2^{ n - 1 } - 1$)
+### Induction case ($\sum_{ i = 0 }^n { 2^i } = 2^{ n + 1 } - 1$)
 
 $$
 \begin{align}

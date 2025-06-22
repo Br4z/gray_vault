@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-23"
+reviewed_on: "2025-05-05"
 ---
 
 # Counting
@@ -21,40 +21,44 @@ reviewed_on: "2025-04-23"
 ## C++ implementation
 
 ```c++
+#include <vector>
+#include <stdexcept>
+#include <type_traits>
+
+
 template <class T>
 int get_number_representation(T element) {
-	if constexpr (std::is_integral <T>::value || std::is_floating_point <T>::value)
+	if constexpr (std::is_integral<T>::value || std::is_floating_point<T>::value)
 		return element;
 	else
 		throw std::runtime_error("Error: unsupported type");
 }
 
 template <class T>
-T* counting_sort(T* input, int input_length) {
+std::vector <T> counting_sort(const std::vector <T> &input) {
 	int max = 0;
 
-	for (int i = 0; i < input_length; i++) {
+	for (int i = 0; i < (int) input.size(); i++) {
 		int number_representation = get_number_representation(input[i]);
 		if (number_representation > max)
 			max = number_representation;
 	}
 
-	int* relative_frequencies = new int[max + 1]();
+	std::vector <int> relative_frequencies(max + 1, 0);
 
-	for (int i = 0; i < input_length; i++)
-		relative_frequencies[input[i]]++;
+	for (int i = 0; i < (int) input.size(); i++)
+		relative_frequencies[get_number_representation(input[i])]++;
 
 	for (int i = 1; i <= max; i++)
 		relative_frequencies[i] += relative_frequencies[i - 1];
 
-	T* output = new T[input_length];
-	for (int i = input_length - 1; i >= 0; i--) {
-		int number_representation = get_number_representation(input[i])
+	std::vector <T> output(input.size());
+	for (int i = input.size() - 1; i >= 0; i--) {
+		int number_representation = get_number_representation(input[i]);
 		output[relative_frequencies[number_representation] - 1] = input[i];
 		relative_frequencies[number_representation]--;
 	}
 
-	delete[] relative_frequencies;
 	return output;
 }
 ```

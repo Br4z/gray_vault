@@ -12,6 +12,12 @@
 
 - Language: Spanish.
 
+## [[personal/books/enfocate|enfócate]]
+
+- Author: Cal Newport.
+
+- Language: Spanish.
+
 ## [[personal/books/el_hombre_en_busca_de_sentido|El hombre en busca de sentido]]
 
 - Author: Viktor Frankl.

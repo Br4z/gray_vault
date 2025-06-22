@@ -73,7 +73,7 @@ It's also possible to add files to our current editing session.
 
 ### Inserting an entire file into another
 
-It’s also possible to insert an entire file into one we are editing.
+It's also possible to insert an entire file into one we are editing.
 
 ```
 :r file

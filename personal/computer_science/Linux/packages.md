@@ -68,4 +68,4 @@ Is a packaging format developed by Canonical, the company behind the Ubuntu Linu
 
 ### AppImage
 
-AppImage is a packaging format that packs the whole application, including its dependencies, into a single file. This means there’s no installation of the AppImage package in the traditional sense. In other words, the AppImage package on Linux is akin to the portable `.exe` on Windows.
+AppImage is a packaging format that packs the whole application, including its dependencies, into a single file. This means there's no installation of the AppImage package in the traditional sense. In other words, the AppImage package on Linux is akin to the portable `.exe` on Windows.
