@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-12-27"
+reviewed_on: "2025-06-30"
 ---
 
 # Seeing the world as the shell sees it
@@ -8,7 +8,7 @@ reviewed_on: "2024-12-27"
 
 ## Expansion
 
-...With expansion, we enter something, and it is expanded into something else before the shell acts upon it...
+...With **expansion**, we enter something, and it is expanded into something else before the shell acts upon it...
 
 ```bash
 echo this is a test
@@ -22,9 +22,9 @@ echo *
 Desktop Documents ls-output.txt Music Pictures Public Templates Videos
 ```
 
-> The "*" character means match any character in a file name.
+> The "\*" character means match any character in a filename.
 
-When `ENTER` is pressed, the shell automatically expands any qualifying characters on the command line before the command is carried out, so `echo` never saw the `*`, only its expanded result...
+...When `ENTER` is pressed, the shell automatically expands any qualifying characters on the command line before the command is carried out, so `echo` never saw the `*`, only its expanded result...
 
 ### Pathname expansion
 
@@ -71,14 +71,14 @@ echo $((2 + 2))
 
 Arithmetic expansion supports only integers...
 
-| operator |               description               |
-|:--------:|:---------------------------------------:|
-|   `+`    |                addition.                |
-|   `-`    |              subtraction.               |
-|   `*`    |             multiplication              |
-|   `/`    |    division (results are integers).     |
+| operator | description                             |
+|:--------:|:--------------------------------------- |
+|   `+`    | addition.                               |
+|   `-`    | subtraction.                            |
+|   `*`    | multiplication                          |
+|   `/`    | division (results are integers).        |
 |   `%`    | modulo, which simply means "remainder". |
-|   `**`   |             exponentiation.             |
+|   `**`   | exponentiation.                         |
 
 Spaces are not significant in arithmetic expressions, and expressions may be nested...
 
@@ -183,7 +183,7 @@ ls -l $(which cp)
 ## Quoting
 
 ```bash
-echo this is a      test # word splitting by the shell removed extra whitespace
+echo this is a      test # word-splitting by the shell removed extra whitespace
 
 # this is a test
 
@@ -204,18 +204,22 @@ If we place text inside double quotes, all the special characters used by the sh
 
 - `\` (backslash).
 
-- `\`` (backtick).
+- `` ` `` (backtick).
 
 This means that word-splitting, pathname expansion, tilde expansion, and brace expansion are suppressed, but parameter expansion, arithmetic expansion, and command substitution are still carried out...
 
 By default, word splitting looks for the presence of spaces, tabs, and newlines (line feed characters) and treats them as **delimiters** between words...
 
 ```bash
-echo $(cal)
+echo $(df -h)
 
-# February 2020 Su Mo Tu We Th Fr Sa 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+# Filesystem Size Used Avail Use% Mounted on tmpfs 1.6G 2.0M 1.6G 1% 
+# /run /dev/sda2 94G 19G 71G 21% / tmpfs 7.8G 0 7.8G 0% /dev/shm tmpfs 
+# 5.0M 4.0K 5.0M 1% /run/lock /dev/sda1 975M 6.1M 969M 1% /boot/efi 
+# /dev/sdb1 907G 574G 287G 67% /home tmpfs 1.6G 1.8M 1.6G 1% 
+# /run/user/1000
 
-echo "$(cal)" # Well display calendar
+echo "$(df -h)" # Well display output
 ```
 
 ### Single quotes
@@ -235,17 +239,19 @@ echo "text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"
 
 # ----------------------------------------------------------------------- #
 
-echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
+echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
 
 # text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
 ```
 
-### Escaping Characters
+### Escaping characters
 
 To **escape a character**, we can precede that character with a backslash.
 
 ```bash
 echo "The balance for user $USER is: \$5.00"
+
+# The balance for user me is: $5.00
 ```
 
 It is possible to use characters in filenames that normally have special meaning to the shell. These would include `$`, `!`, `&`, spaces, and others. To include a special character in a filename, we can do this:
@@ -256,17 +262,19 @@ mv bas\&filename good_filename
 
 To allow a backslash character to appear, escape it by typing `\\`. Note that within single quotes, the backslash loses its special meaning and is treated as an ordinary character.
 
-### Backslash escape sequences
+Another use of the backslash escape is suppressing aliases.
 
-In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first 32 characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
+#### Backslash escape sequences
 
-| escape sequence |                          meaning                          |
-|:---------------:|:---------------------------------------------------------:|
-|      `\a`       |     bell (an alert that causes the computer to beep).     |
-|      `\b`       |                         backspace                         |
+In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first $32$ characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
+
+| escape sequence | meaning                                                   |
+|:---------------:|:--------------------------------------------------------- |
+|      `\a`       | bell (an alert that causes the computer to beep).         |
+|      `\b`       | backspace.                                                |
 |      `\n`       | newline; on Unix-like systems, this produces a line feed. |
-|      `\r`       |                     carriage return.                      |
-|      `\t`       |                            tab                            |
+|      `\r`       | carriage return.                                          |
+|      `\t`       | tab.                                                      |
 
 Adding the `-e` option to echo will enable interpretation of escape sequences. You can also place them inside `$' '`.
 

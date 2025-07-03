@@ -366,7 +366,7 @@ The Linux/Unix file system hierarchy base begins at the root, and everything sta
 
 		- `d`: directory.
 
-	- `-name pattern`: base of file name (the path with the leading directories removed) matches shell pattern "pattern".
+	- `-name pattern`: base of filename (the path with the leading directories removed) matches shell pattern "pattern".
 
 		> `-iname pattern` like `-name`, but the match is case insensitive.
 

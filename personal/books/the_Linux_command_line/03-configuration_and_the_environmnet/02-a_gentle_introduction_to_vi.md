@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-12"
+reviewed_on: "2025-06-30"
 ---
 
 # A gentle introduction to vi
@@ -8,7 +8,7 @@ reviewed_on: "2025-01-12"
 
 ### Deleting text
 
-First, the `x` will delete a character at the cursor location. `x` may be preceded by a number specifying how many characters are to be deleted. The `d` is more general purpose. Like `x`, it may be preceded by a number specifying the number of times the deletion is to be performed. In addition, d is always followed by a movement command that controls the size of the deletion.
+...First, the `x` will delete a character at the cursor location. `x` may be preceded by a number specifying how many characters are to be deleted. The `d` is more general purpose. Like `x`, it may be preceded by a number specifying the number of times the deletion is to be performed. In addition, `d` is always followed by a movement command that controls the size of the deletion.
 
 ### Joining lines
 
@@ -16,7 +16,7 @@ First, the `x` will delete a character at the cursor location. `x` may be preced
 
 ## Search-and-replace
 
-### Global Search-and-Replace
+### Global search-and-replace
 
 `vi` uses an ex command to perform search-and-replace operations (called **substitution** in `vi`) over a range of lines or the entire file...
 
@@ -50,7 +50,7 @@ replace with Line (y/n/a/q/l/^E/^Y)?
 
 ## Editing multiple files
 
-```BASH
+```bash
 vi file1 file2 file3...
 ```
 
@@ -65,7 +65,7 @@ vi file1 file2 file3...
 
 ### Opening additional files for editing
 
-It's also possible to add files to our current editing session.
+It is also possible to add files to our current editing session.
 
 ```
 :e file
@@ -73,10 +73,26 @@ It's also possible to add files to our current editing session.
 
 ### Inserting an entire file into another
 
-It's also possible to insert an entire file into one we are editing.
+It is also possible to insert an entire file into one we are editing.
 
 ```
 :r file
 ```
 
 > It inserts the specified file below the cursor position.
+
+## Saving our work
+
+In normal mode, typing `Z`Z will save the current file and exit `vi`...
+
+The `:w` command may also specify an optional filename. This acts like "save as".
+
+> While this command saves the file under a new name, it does not change the name of the file we are editing.
+
+## `bash` does `vi` too
+
+...bash also supports vi-style command line editing too. This feature is easily activated  with the following command:
+
+```bash
+set -o vi
+```

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "394395c1795c8b8e",
+        "id": "15ce3d30f917b806",
         "type": "tabs",
         "children": [
           {
-            "id": "3cb3374326b5913d",
+            "id": "0380cc00941a33fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "college/semesters/07/inteligencia_artificial/01-artificial_intelligence_history.md",
+                "file": "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01-artificial_intelligence_history"
+              "title": "05-archiving_and_backup"
             }
           }
         ]
@@ -58,7 +58,7 @@
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-search",
               "title": "Search"
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.5
+    "width": 319.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/math/LaTeX_cheatsheet.md",
+                "file": "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LaTeX_cheatsheet"
+              "title": "Outline of 09-permissions"
             }
           },
           {
@@ -161,11 +161,31 @@
           }
         ],
         "currentTab": 4
+      },
+      {
+        "id": "6b1f7004b16de97a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11df9bb225de1063",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 05-archiving_and_backup"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,34 +197,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3cb3374326b5913d",
+  "active": "0380cc00941a33fa",
   "lastOpenFiles": [
-    "personal/books/enfocate.md",
-    "personal/post_like/Arch_Linux_installation.md",
-    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-SENA_style_guide.md",
-    "personal/post_like/windows_manager_setup.md",
-    "personal/prompts.md",
-    "Untitled.md",
-    "scribbles.md",
-    "personal/post_like/Minecraft survival tweaks.md",
-    "personal/post_like/compile_and_run_C++_programs.md",
-    "personal/post_like/basic_Visual_Studio_Code_configuration.md",
-    "personal/post_like/connection_to_GitHub_via_SSH.md",
-    "personal/post_like/tmux.md",
-    "personal/computer_science/Linux/packages.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/04-searching_for_files.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/03-networking.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/02-storage_media.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/01-package_management.md",
+    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/03-customizing_the_prompt.md",
     "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/02-a_gentle_introduction_to_vi.md",
-    "college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/01-SENA_app_analysis.md",
-    "college/semesters/09/proyecto_integrador_II/homework/01-GitHub_Copilot_presentation.md",
-    "personal/math/LaTeX_cheatsheet.md",
-    "college/ASES/reports.md",
-    "personal/books/el_señor_de_las_moscas.md",
-    "personal/books/juventud_en_extasis.md",
+    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/01-the_environment.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/08-advanced_keyboard_tricks.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/06-redirection.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/05-working_with_commands.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipuling_files_and_directories.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/03-exploring_the_system.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/02-navigation.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/01-what_is_the_shell.md",
+    "personal/books/the_Linux_command_line/01-introduction.md",
+    "personal/courses/introduccion_a_Linux/01-temario.md",
+    "personal/books/algebra_3o_y_4o_enseñanza_media.md",
+    "personal/courses/aprende_Docker_ahora.md",
+    "personal/books/enfocate.md",
+    "personal/books/deja_de_ser_tu.md",
     "personal/books/la_esencia_logica_de_la_programacion.md",
     "personal/books/nunca_me_abandones.md",
-    "personal/books/tu_cerebro_en_el_porno.md",
-    "personal/books/un_mundo_feliz.md",
-    "personal/books/index.md",
-    "personal/computer_science/programming_languajes/Python/decorator.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools",
+    "test32",
     "preamble.sty",
     "New Text Document.txt",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization",
@@ -213,8 +235,6 @@
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/homework",
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/homework",
-    "college/semesters/09/proyecto_integrador_II/homework",
-    "college/semesters/09/proyecto_integrador_II/classes",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",

@@ -931,7 +931,7 @@ $$
 
 ### Números complejos
 
-La solución general de la ecuación cuadrática $a x^2 + b x + c$ es $m \pm n \sqrt{ p }$, en que tanto $m$, $n$ como $p$ son números reales en cualquier caso, $\sqrt{ p }$ será un número imaginario si $p$ es una cantidad negativa. Por tanto, es necesario tener números de la forma $m + n i$... A esta combinación de números reales con imaginarios se da el nombre de números complejos.
+La solución general de la ecuación cuadrática $a x^2 + b x + c$ es $m \pm n \sqrt{ p }$, en que tanto $m$, $n$ como $p$ son números reales en cualquier caso, $\sqrt{ p }$ será un número imaginario si $p$ es una cantidad negativa. Por tanto, es necesario tener números de la forma $m + n i$...A esta combinación de números reales con imaginarios se da el nombre de números complejos.
 
 Dos números complejos son conjugados cuando sus partes reales son iguales y sus partes imaginarias son conjugadas...
 

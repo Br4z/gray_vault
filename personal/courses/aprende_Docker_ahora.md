@@ -61,7 +61,7 @@ Haciendo referencia a como el hardware del **anfitrión** se conecta con el del 
 
 - Permite acceder al sistema de archivos y a la red (tanto interna como externa).
 
-- Docker Compose, CLI (commend line interface) ... otras herramientas.
+- Docker Compose, CLI (commend line interface)...otras herramientas.
 
 - Corre de forma nativa en Windows WSL 2.
 

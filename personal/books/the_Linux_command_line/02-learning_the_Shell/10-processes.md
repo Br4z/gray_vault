@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-03"
+reviewed_on: "2025-06-30"
 ---
 
 # Processes
@@ -8,7 +8,7 @@ reviewed_on: "2025-01-03"
 
 - `top`: display tasks.
 
-- `jobs`: list active jobs
+- `jobs`: list active jobs.
 
 - `bg`: place a job in the background.
 
@@ -18,11 +18,21 @@ reviewed_on: "2025-01-03"
 
 - `killall`: kill processes by name.
 
+- `nice`: run a program with modified scheduling priority.
+
+- `renice`: alter priority of running processes.
+
+- `nohup`: run a command line immune to hang ups.
+
+- `halt/poweroff/reboot`: halt, power-off, or reboot the system.
+
 - `shutdwon`: shut down or reboot the system.
 
 ## How a process works
 
-When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called `init`. `init`, in turn, runs a series of shell scripts (located in `/etc`) called **init scripts**, which start all the system services...
+When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called "init". `init`, in turn, starts `systemd` which starts all the system services...
+
+The fact that a program can launch other programs is expressed in the process scheme as a **parent process** producing a **child process**.
 
 ...Like files, processes also have owners and user IDs, effective user IDs, and so on.
 
@@ -31,7 +41,7 @@ When a system starts up, the kernel initiates a few of its own activities as pro
 ```bash
 ps # Show the processes associated with the current terminal session
 
-ps x # show the list of processes you own
+ps x # Show the list of processes you own, regardless of whether they have a controlling terminal.
 ```
 
 With the `x` option, a new column called `STAT` is added.
@@ -73,9 +83,9 @@ top
 # Swap: 875500k total, 149128k used, 726372k free, 114676k cach
 ```
 
-`top` displays a continuously updating (by default, every three seconds) display of the system processes listed in order of process activity. The `top` display consists of two parts: a system summary at the top of the display, followed by a table of processes sorted by CPU activity.
+`top` displays a continuously updating (by default, every three seconds) display of the system processes listed in order of process activity...The `top` display consists of two parts: a system summary at the top of the display, followed by a table of processes sorted by CPU activity.
 
-| row |      Field      | Meaning                                                                 |
+| row |      field      | meaning                                                                 |
 |:---:|:---------------:|:----------------------------------------------------------------------- |
 |  1  |      `top`      | name of the program.                                                    |
 |     |   `14:59:20`    | current time of day.                                                    |
@@ -83,11 +93,11 @@ top
 |     |    `2 users`    | users logged in.                                                        |
 |     | `load average:` | it refers to the number of processes that are waiting to run.           |
 |  2  |    `Tasks:`     | summary of processes and their status.                                  |
-|     |    `0.7%us`     | 7% of the CPU is being used for **user** processes.                     |
-|     |    `1.0%sys`    | 1% of the CPU is being used for **system** (kernel) processes.          |
-|     |    `0.0%ni`     | 0% of the CPU is being used by "nice" (low-priority) processes.         |
-|     |    `98.3%id`    | 98.3% of the CPU is idle                                                |
-|     |    `0.0%id`     | 0% of the CPU is waiting for I/O.                                       |
+|     |    `0.7%us`     | $7\%$ of the CPU is being used for **user** processes.                  |
+|     |    `1.0%sy`    | $1\%$ of the CPU is being used for **system** (kernel) processes.       |
+|     |    `0.0%ni`     | $0\%$ of the CPU is being used by "nice" (low-priority) processes.      |
+|     |    `98.3%id`    | $98.3\%$ of the CPU is idle                                             |
+|     |    `0.0%wa`     | $0\%$ of the CPU is waiting for I/O.                                    |
 |  4  |     `Mem:`      | RAM usage description.                                                  |
 |  5  |     `Swap:`     | swap space (virtual memory) usage description.                          |
 
@@ -159,7 +169,7 @@ xlogo
 
 # ----------------------------------------------------------------------- #
 
-bg %1
+bg %1 # Resume the pro­gram's execution in the background
 
 # [1]+ xlogo &
 ```
@@ -171,6 +181,22 @@ Why would we want to launch a graphical program from the command line? There are
 - The program you want to run might not be listed on the window manager's menus.
 
 - By launching a program from the command line, you might be able to see error messages that would otherwise be invisible if the program were launched graphically...
+
+### Changing process priority
+
+Niceness can be ad­justed with the `nice` and `renice`. It is important to remember that only the superuser may increase the priority of a process and that regular users may only decrease the priority of processes that they own.
+
+`nice` launches a process with a specified niceness. Niceness adjustments are expressed from $-20$ (the most favorable) to $19$ (the least favorable) with a default of value of zero (no adjustment).
+
+```bash
+nice -n 10 cpu-hog
+```
+
+`renice` adjusts the priority of a running process.
+
+```bash
+renice -n 19 379215
+```
 
 ## Signals
 
@@ -190,7 +216,7 @@ kill 28401
 
 > The PID or jobspec can be used to refer to a process.
 
-The kill command does not exactly "kill" processes; rather, it sends them **signals**. Signals are one of several ways that the operating system communicates with programs...
+...`kill` does not exactly "kill" processes; rather, it sends them **signals**. Signals are one of several ways that the operating system communicates with programs...
 
 - `CTRL + c`: sent a signal called INT (interrupt).
 
@@ -200,15 +226,15 @@ The kill command does not exactly "kill" processes; rather, it sends them **sign
 
 ### Sending signals to processes with `kill`
 
-```bash
-# kill [-signal] PID...
+```
+kill [-SIGNAL] PID...
 ```
 
 If no signal is specified on the command line, then the TERM (terminate) signal is sent by default...
 
 | number | name  | meaning                                                                          |
 |:------:|:-----:|:-------------------------------------------------------------------------------- |
-|  $1$   |  HUP  | hangup.                                                                          |
+|  $1$   |  HUP  | hang up.                                                                         |
 |  $2$   |  INT  | interrupt.                                                                       |
 |  $3$   | QUIT  |                                                                                  |
 |  $9$   | KILL  | signal send to the kernel to immediately terminates the process.                 |
@@ -223,6 +249,8 @@ If no signal is specified on the command line, then the TERM (terminate) signal 
 
 ...Note that signals may be specified either by number or by name, including the name prefixed with the letters `SIG`.
 
+Processes, like files, have owners, and you must be the owner of a process (or the supe­ruser) to send it signals with `kill`.
+
 ```bash
 kill -SIGINT 28401
 
@@ -231,12 +259,20 @@ kill -SIGINT 28401
 
 Processes, like files, have owners, and you must be the owner of a process (or the superuser) to send it signals with `kill`.
 
+### Making a process hang up proof
+
+Many command line programs will respond to the `HUP` by terminating when its controlling terminal "hangs up" (i.e. closes or disconnects). To prevent his behavior, we can launch the program with `nohup`.
+
+```bash
+nohup xlogo
+```
+
 ### Sending signals to multiple processes with `killall`
 
 It is also possible to send signals to multiple processes matching a specified program or username by using the `killall` command...
 
 ```bash
-# killall [-u user] [-signal] name...
+# killall [-u USER] [-SIGNAL] name...
 
 xlogo &
 
@@ -251,6 +287,8 @@ killall xlogo
 # [1]- Terminated xlogo
 # [2]+ Terminated xlogo
 ```
+
+> Remember, as with `kill`, we must have superuser privileges to send signals to processes that do not belong to us.
 
 ## Shutting down the system
 

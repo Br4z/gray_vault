@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-12-25"
+reviewed_on: "2025-06-30"
 ---
 
 # Redirection
@@ -29,7 +29,7 @@ Keeping with the Unix theme of "everything is a file", programs such as `ls` act
 I/O redirection allows us to redefine where standard output goes. To redirect standard output to another file instead of the screen, we use the `>` redirection operator followed by the name of the file...
 
 ```bash
-# <command> > <existing file>
+# <command> > <filename>
 
 ls -l /usr/bin > ls-output.txt
 ```
@@ -52,6 +52,16 @@ The reason why it displays an error message instead of saving it to the file is 
 
 If we want to append redirected output to a file instead of overwriting the file from the beginning, we use the `>>` redirection operator.
 
+## Group commands
+
+If we want to treat a sequence of commands as a single entity, we can do so by creating a **group command**. To do this, we surround the sequence with braces.
+
+```
+{ command_1; command_2; command_3; } > logfile.txt
+````
+
+This way the shell will consider it as a single command in terms of redirection.
+
 ## Redirecting standard error
 
 Redirecting standard error lacks the ease of a dedicated redirection operator. To redirect to standard error, we must refer to its **file descriptor**. A program can produce output on any of several numbered file streams...
@@ -63,33 +73,33 @@ Redirecting standard error lacks the ease of a dedicated redirection operator. T
 - `2`: standard error.
 
 ```bash
-# <command> <file stream>> <file name>
+# <command> <file stream>> <name>
 
 ls -l /bin/usr 2> ls-error.txt
 ```
 
 ### Redirecting standard output and standard error to one file
 
-```bash
-# <command> > <file name> 2>&1
-# <command> >> <file name> 2>&1
+```
+<command> > <filename> 2>&1
+<command> >> <filename> 2>&1
 ```
 
 > The order of the redirections is significant.
 
-Recent versions of `bash` provide a second, more streamlined method for performing this combined redirection, shown here:
+Recent versions of `bash` provide a second, more streamlined method for performing this combined redirection.
 
-```bash
-# <command> &> <file name>
-# <command> &>> <file name>
+```
+<command> &> <filename>
+<command> &>> <filename>
 ```
 
 ### Disposing of unwanted output
 
 ...The system provides a way to do this by redirecting output to a special file called `/dev/null`. This file is a system, often referred to as a **bit bucket**, which accepts input and does nothing with it. To suppress error messages from a command, we do this:
 
-```bash
-# <command> 2> /dev/null
+```
+<command> 2> /dev/null
 ```
 
 ## Redirecting standard input
@@ -98,8 +108,8 @@ Recent versions of `bash` provide a second, more streamlined method for performi
 
 `cat` reads one or more files and copies them to standard output.
 
-```bash
-# cat [file...]
+```  
+cat [FILE...]
 ```
 
 ---
@@ -146,8 +156,8 @@ ls -l /usr/bin | less
 
 ### Filters
 
-```bash
-# <command> | <filters> | <command>
+```
+<command> | <filters> | <command>
 ```
 
 ...Filters take input, change it somehow, and then output it...
@@ -160,7 +170,7 @@ ls /bin /usr/bin | sort | less
 
 The command above is to make a combined list of all the executable programs in `/bin` and `/usr/bin`, put them in sorted order, and view the resulting list.
 
-#### `uniq`
+#### `uniq` Report or omit repeated lines
 
 ...It accepts a **sorted** list of data from either standard input or a single filename argument and, by default, removes any duplicates from the list...
 
@@ -174,7 +184,7 @@ ls /bin /usr/bin | sort | uniq | less    # See the uniques elements
 ls /bin /usr/bin | sort | uniq -d | less # See the duplicates elements
 ```
 
-#### `wc`
+#### `wc` Print line, word, and byte counts
 
 It is used to display the number of lines, words, and bytes contained in files.
 
@@ -190,10 +200,10 @@ In this case, it prints out three numbers: lines, words, and bytes contained in 
 ls /bin /usr/bin | sort | uniq | wc -l # See the number of items we have in our sorted list
 ```
 
-#### `grep`
+#### `grep` Print lines matching a pattern
 
-```bash
-grep <pattern> <filename>
+```
+grep pattern [file...]
 ```
 
 When `grep` encounters a "pattern" in the file, it prints out the lines containing it...
@@ -218,21 +228,27 @@ There are a couple of handy options for `grep`:
 
 - `-i`: perform the search in a no case sensitive way.
 
+- `l`: only output the names of the files containing text that matches the pattern.
+
 - `-v`: print only those lines that do not match the pattern.
 
-#### `head` And `tail`
+- `w`: only match whole words.
+
+#### `head` / `tail` Print first / last part of files
 
 The `head` command prints the first $10$ lines of a file, and the `tail` command prints the last $10$ lines.
 
 > The number of lines can be adjusted with the `-n` option.
 
+The `-n` option when used with head allows a negative value which causes all but the last $n$ lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first $n$ lines to be output.
+
 `tail` has an option that allows you to view the file in real time (`-f`). This is incredibly useful when you are monitoring log files.
 
 > The prompt will not be available until you press `CTRL + c`.
 
-### `tea`
+### `tea` Read from stdin and output to stdout and files
 
-The `tea` program reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing.
+...`tea` reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing.
 
 ```bash
 ls /usr/bin | tee ls.txt | grep zip

@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-12-31"
+reviewed_on: "2025-06-30"
 ---
 
 # What is the shell?
@@ -10,7 +10,7 @@ When using a graphical user interface (GUI), we need another program called a **
 
 ## Making your first keystrokes
 
-```bash
+```
 [me@linuxbox ~]$
 ```
 
@@ -20,13 +20,15 @@ This is called a **shell prompt**, and it will appear whenever the shell is read
 
 ### Command history
 
-...Most Linux distributions remember the last 1,000 commands by default...
+...Most Linux distributions remember the last $1,000$ commands by default...
 
 ## Try some simple commands
 
 - `date`.
 
 - `cal`: display the calendar of the current month.
+
+- `uptime`: displays how long the system has been run­ning and the average number of processes running over various periods of time.
 
 - `df`: display the current amount of free space on our disk drives.
 

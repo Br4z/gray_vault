@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-12-28"
+reviewed_on: "2025-06-30"
 ---
 
 # Permissions
@@ -18,11 +18,15 @@ reviewed_on: "2024-12-28"
 
 - `chgrp`: change a file's group ownership.
 
+- `addgroup`: add a user or a group to the system.
+
+- `usermod`: modify a user account.
+
 - `passwd`: change a user's password.
 
-## Owners, group Members, and everybody else
+## Owners, group members, and everybody else
 
-In the Unix security model, a user may own files and directories. When a user **owns** a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the **world**. To find out information about your identity, use the `id` command.
+In the Unix security model, a user may **own** files and directories. When a user **owns** a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the **world**. To find out information about your identity, use the `id` command.
 
 ```bash
 id
@@ -32,7 +36,7 @@ id
 
 ...When user accounts are created, users are assigned a number called a **user ID** (**uid**), which is then, for the sake of the humans, mapped to a username. The user is assigned a **primary group ID** (**gid**) and may belong to additional groups...
 
-...User accounts are defined in the `/etc/passwd` file, and groups are defined in the `/etc/group` file. When user accounts and groups are created, these files are modified along with `/etc/shadow`, which holds information about the user's password. For each user account, the `/etc/passwd` file defines the:
+...User accounts are defined in `/etc/passwd`, and groups are defined in `/etc/group`. When user accounts and groups are created, these files are modified along with `/etc/shadow`, which holds information about the user's password. For each user account, the `/etc/passwd` file defines the:
 
 - user (login) name.
 
@@ -59,23 +63,23 @@ ls -l foo.txt
 
 The first $10$ characters of the listing are the **file attributes**. The first of these characters is the **file type**...
 
-| attribute |          file type          |
-|:---------:|:---------------------------:|
-|    `-`    |        regular file         |
-|    `d`    |          directory          |
-|    `l`    |       symbolic link.        |
-|    `c`    | **character special file**. |
-|    `b`    |   **block special file**.   |
+| attribute | file type                  |
+|:---------:|:-------------------------- |
+|    `-`    | regular file               |
+|    `d`    | directory                  |
+|    `l`    | symbolic link              |
+|    `c`    | **character special file** |
+|    `b`    | **block special file**     |
 
 The remaining $9$ characters of the file attributes, called the **file mode**, represent the read, write, and execute permissions for the file's owner, the file's group owner, and everybody else.
 
-| attribute |                                                                                               file                                                                                               |                                                directories                                                |
-|:---------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|
-|    `r`    |                                                                               allows a file to be opened and read.                                                                               |             allows a directory's contents to be listed if the execute attribute is also set.              |
-|    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted, and renamed if the execute attribute is also set. |
-|    `x`    |                                                                      allows a file to be treated as a program and executed.                                                                      |                                     allows a directory to be entered.                                     |
+| attribute | file                                                                                                                                                                                             | directories                                                                                                                |
+|:---------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------------------------------------------------------------------------------------------- |
+|    `r`    | allows a file to be opened and read.                                                                                                                                                             | allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set. |
+|    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.                  |
+|    `x`    | allows a file to be treated as a program and executed.                                                                                                                                           | allows a directory to be entered.                                                                                          |
 
-### `chmod`
+### `chmod` Change file mode
 
 It is used to change the mode (permissions) of a file or directory, it supports two distinct ways of specifying mode changes: octal number representation, or symbolic representation.
 
@@ -83,14 +87,14 @@ It is used to change the mode (permissions) of a file or directory, it supports 
 
 | octal | binary | file mode |
 |:-----:|:------:|:---------:|
-|   0   |  000   |   `---`   |
-|   1   |  001   |   `--x`   |
-|   2   |  010   |   `-w-`   |
-|   3   |  011   |   `-wx`   |
-|   4   |  100   |   `r--`   |
-|   5   |  101   |   `r-x`   |
-|   6   |  110   |   `rw-`   |
-|   7   |  111   |   `rwx`   |
+|   0   | $000$  |   `---`   |
+|   1   | $001$  |   `--x`   |
+|   2   | $010$  |   `-w-`   |
+|   3   | $011$  |   `-wx`   |
+|   4   | $100$  |   `r--`   |
+|   5   | $101$  |   `r-x`   |
+|   6   | $110$  |   `rw-`   |
+|   7   | $111$  |   `rwx`   |
 
 By using three octal digits, we can set the file mode for the owner, group owner, and world.
 
@@ -109,11 +113,11 @@ ls -l foo.txt
 
 - What permission will be set.
 
-| symbol |                           meaning                            |
-|:------:|:------------------------------------------------------------:|
-|  `u`   |   short for "user" but means the file or directory owner.    |
-|  `g`   |                         group owner.                         |
-|  `o`   |             short for "others" but means world.              |
+| symbol | meaning                                                      |
+|:------:|:------------------------------------------------------------ |
+|  `u`   | short for "user" but means the file or directory owner.      |
+|  `g`   | group owner.                                                 |
+|  `o`   | short for "others" but means world.                          |
 |  `a`   | short for "all". This is a combination of `u`, `g`, and `o`. |
 
 If no character is specified, "all" will be assumed. The operation may be `a+` indicating that a permission is to be added, `a-` indicating that a permission is to be taken away, or `a=` indicating that only the specified permissions are to be applied and that all others are to be removed.
@@ -121,21 +125,21 @@ If no character is specified, "all" will be assumed. The operation may be `a+` i
 Permissions are specified with the "r", "w", and "x" characters...
 
 ```bash
-chmod u+x,go=rw <file>
+chmod u+x,go=rw file
 ```
 
 Symbolic notation does offer the advantage of allowing you to set a single attribute without disturbing any of the others (in octal you must specify all permissions).
 
 An option of caution is `--recursive`: it acts on both files and directories, so it is not as useful as we would hope since we rarely want files and directories to have the same permissions.
 
-### `umask`
+### `umask` Set default permissions
 
 It controls the default permissions given to a file when it is created. It uses octal notation to express a **mask** of bits to be removed from a file's mode attributes.
 
 ```bash
 umask
 
-# 0002 rw- for owner, r-- for group and r-- for
+# 0002 rw- for owner, r-- for group and r-- for others
 
 # ----------------------------------------------------------------------- #
 
@@ -145,7 +149,7 @@ ls -l foo.txt
 # -rw-rw-r-- 1 me    me   0 2018-03-06 14:53 foo.txt
 ```
 
-|                    |    permissions    |
+|    description     |    permissions    |
 |:------------------:|:-----------------:|
 | original file mode | `--- rw- rw- rw-` |
 |        mask        | `000 000 000 010` |
@@ -153,32 +157,32 @@ ls -l foo.txt
 
 A AND operation is performed between the "original file mode" and NOT "mask" (wildcard).
 
-### Some special permissions
+#### Some special permissions
 
 ...in addition to read, write, and execute permissions, there are some other, less used, permissions settings.
 
-- setuid bit (octal 4000): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
+- setuid bit (octal $4000$): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
 
-	- This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
+	This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
 
-	- Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
+	Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
 
-- setgid bit (octal 2000): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
+- setgid bit (octal $2000$): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
 
-	- If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
+	If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
 
-	- This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
+	This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
 
-	- sticky bit (octal 1000): this is a holdover from ancient Unix, where it was possible to mark an executable file as "not swappable".
+- sticky bit (octal $1000$): this is a holdover from ancient Unix, where it was possible to mark an executable file as "not swappable".
 
-	- Linux ignores the sticky bit, but if applied to a directory, it prevents users from deleting or renaming files unless the user is either the owner of the directory, the owner of the file, or the superuser.
+	Linux ignores the sticky bit, but if applied to a directory, it prevents users from deleting or renaming files unless the user is either the owner of the directory, the owner of the file, or the superuser.
 
-		> This is often used to control access to a shared directory, such as `/tmp`.
+	> This is often used to control access to a shared directory, such as `/tmp`.
 
 ```bash
-chmod u+s <program> # Assigning setuid to a file (-rwsr-xr-x)
+chmod u+s <program>   # Assigning setuid to a file (-rwsr-xr-x)
 chmod g+s <directory> # Assigning setgid to a directory (drwxrwsr-x)
-chmod +t <directory> # Assigning the sticky bit to a directory (drwxrwxrwt)
+chmod +t <directory>  # Assigning the sticky bit to a directory (drwxrwxrwt)
 ```
 
 ## Changing identities
@@ -191,12 +195,12 @@ chmod +t <directory> # Assigning the sticky bit to a directory (drwxrwxrwt)
 
 - Use `sudo`.
 
-### `su` (run A shell with substitute user and groups IDs)
+### `su` Run a shell with substitute user and groups IDs
 
 The `su` command is used to start a shell as another user.
 
-```bash
-# su [-[l]] <user?>
+```
+su [-[l]] [USER]
 ```
 
 If the `-l` option is included, the resulting shell session is a **login shell** for the specified user. This means the user's environment is loaded, and the working directory is changed to the user's home directory...If the user is not specified, the superuser is assumed.
@@ -218,9 +222,9 @@ su -c 'ls -l /root/*'
 
 Using this form, a single command line is passed to the new shell for execution. It is important to enclose the command in quotes, as we do not want expansion to occur in our shell, but rather in the new shell.
 
-### `sudo` (execute A command as another user)
+### `sudo` Execute a command as another user
 
-...The administrator can configure sudo to allow an ordinary user to execute commands as a different user in a controlled way. The use of sudo does not require access to the superuser's password... To authenticating using `sudo`, requires the user's own password.
+...The administrator can configure sudo to allow an ordinary user to execute commands as a different user in a controlled way. The use of sudo does not require access to the superuser's password...authenticating using `sudo`, requires the user's own password.
 
 ...One important difference between `su` and `sudo` is that `sudo` does not start a new shell, nor does it load another user's environment. This means that commands do not need to be quoted any differently than they would be without using `sudo`...
 
@@ -235,12 +239,13 @@ sudo -l # See what privileges are granted by sudo (in the current user)
 #     (ALL : ALL) ALL
 ```
 
-### `chown` (change File owner and group)
+### `chown` Change file owner and group
+
 
 It is used to change the owner and group owner of a file or directory.
 
-```bash
-# chown [owner][:[group]] <file>
+```
+chown [OWNER][:[GROUP]] FILE
 ```
 
 ## Exercising our privileges
@@ -307,3 +312,23 @@ ls -l /usr/local/share/Music
 ```
 
 The one remaining issue is umask. The necessary setting lasts only until the end of session and must be reset.
+
+## Changing your password
+
+To set or change a password, `passwd` is used.
+
+```
+passwd [USER]
+```
+
+`passwd`, `addgroup`, and `usermod` are part of a suite of commands in the shadow-utils package.
+
+|  command   | description                                                    |
+|:----------:|:-------------------------------------------------------------- |
+| `lastlog`  | reports the most recent login of all users or of a given user. |
+| `useradd`  | create a new user or update default new user information.      |
+| `userdel`  | delete a user account and related files.                       |
+| `usermod`  | modify a user account.                                         |
+| `groupadd` | create a new group.                                            |
+| `groupdel` | delete a group.                                                |
+| `groupmod` | modify a group on the system.                                  |

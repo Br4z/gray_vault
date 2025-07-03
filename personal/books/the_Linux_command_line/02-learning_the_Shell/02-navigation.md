@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-09-25"
+reviewed_on: "2025-06-30"
 ---
 
 # Navigation
@@ -48,10 +48,10 @@ The `.` notation refers to the working directory, and the `..` notation refers t
 
 On Linux systems, files are named in a manner similar to that of other systems such as Windows, but there are some important differences.
 
-1. Filenames that begin with a period character are hidden. This only means that ls will not list them unless you say `ls -a`...
+1. Filenames that begin with a period character are hidden. This only means that `ls` will not list them unless you say `ls -a`...
 
-2. Filenames and commands on Linux, like Unix, are case-sensitive...
+2. Filenames and commands on Linux, like Unix, are case sensitive...
 
 3. Linux has no concept of a "file extension" like some other operating systems...Although Unix-like operating systems do not use file extensions to determine the contents/purpose of files, many application programs do.
 
-4. Though Linux supports long filenames that may contain embedded spaces and punctuation characters, limit the punctuation characters in the names of files you create to period, dash, and underscore.
+4. Though Linux supports long filenames that may contain embedded spaces and punctuation characters, limit the punctuation characters in the names of files you create to period, dash, and underscore...

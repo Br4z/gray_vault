@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2024-12-31"
+reviewed_on: "2025-06-30"
 ---
 
 # Working with commands
@@ -8,7 +8,7 @@ reviewed_on: "2024-12-31"
 
 - `which`: display which executable program will be executed.
 
-- `help`: get help for shell builtins.
+- `help`: get help for shell built-ins.
 
 - `man`: display a command's manual page.
 
@@ -26,21 +26,21 @@ reviewed_on: "2024-12-31"
 
 A command can be one of four different things.
 
-- An executable program.
+1. An executable program.
 
-- A command built into the shell itself.
+2. A command built into the shell itself.
 
 	> Like `cd` command.
 
-- A shell function.
+3. A shell function.
 
-- An alias.
+4. An alias.
 
 ## Identifying commands
 
-### `type`
+### `type` Display a command's type
 
-Shell builtin that displays the kind of command the shell will execute, given a particular command name.
+It is a shell built-in that displays the kind of command the shell will execute, given a particular command name.
 
 ```bash
 # type <command>
@@ -64,7 +64,7 @@ type cp
 # cp is /bin/cp
 ```
 
-### `which`
+### `which` Display an executable's location
 
 It is used to determine the exact location of a given executable.
 
@@ -74,11 +74,11 @@ which ls
 /bin/ls
 ```
 
-`which` only works for executable programs, not builtins or aliases that are substitutes for actual executable programs...
+`which` only works for executable programs, not built-ins or aliases that are substitutes for actual executable programs...
 
 ## Getting a command's documentation
 
-### `help` (get Help for shell builtins)
+### `help` Get help for shell built-ins
 
 ```bash
 # help <command>
@@ -90,9 +90,11 @@ help cd
 # cd: cd [-L|[-P [-e]] [-@]] [dir]...
 ```
 
-> When square brackets appear in the description of a command's syntax, they indicate optional items. A vertical bar character indicates mutually exclusive items.
+When square brackets appear in the description of a command's syntax, they indicate optional items. A vertical bar character indicates mutually exclusive items.
 
-### `--help` (display Usage information)
+> With `-m`, `help` will display its output in an alternate format.
+
+### `--help` Display usage information
 
 Many executable programs support a `--help` option that displays a description of the command's supported syntax and options...
 
@@ -103,16 +105,16 @@ Many executable programs support a `--help` option that displays a description o
 
 mkdir --help
 
-# Usage: mkdir [OPTION] DIRECTORY...
-# Create the DIRECTORY(ies), if they do not already exist. ...
+# Usage: mkdir [OPTION] DIRECTORY
+# Create the DIRECTORY(ies), if they do not already exist.
 ```
 
-### `man`: (display a program's manual page)
+### `man` Display a program's manual page
 
 Most executable programs intended for command line use provide a formal piece of documentation called a **manual** or **man page**. A special paging program called "man" is used to view them...
 
-```bash
-# man <command>
+```
+man <command>
 ```
 
 Man pages vary somewhat in format, but generally contain the following:
@@ -130,7 +132,7 @@ Man pages vary somewhat in format, but generally contain the following:
 The "manual" that `man` displays is broken into sections and covers not only user commands...
 
 | section | contents                                        |
-|:-------:|-------------------------------------------------|
+|:-------:|:----------------------------------------------- |
 |   $1$   | user commands.                                  |
 |   $2$   | programming interfaces for kernel system calls. |
 |   $3$   | programming interfaces to the C library.        |
@@ -142,7 +144,7 @@ The "manual" that `man` displays is broken into sections and covers not only use
 
 Sometimes we need to refer to a specific section of the manual to find what we are looking for...
 
-### `apropos`
+### `apropos` Display appropriate commands
 
 It is also possible to search the list of man pages for possible matches based on a search term...
 
@@ -153,17 +155,19 @@ It is also possible to search the list of man pages for possible matches based o
 
 apropos partition
 
-# addpart (8) - tell the kernel about the existence of a partition...
+# addpart (8) - tell the kernel about the existence of a partition
 # ...
 ```
 
-The first field in each line of output is the name of the man page, and the second field shows the section...
+The first field in each line of output is the name of the man page, and the second field shows the section. Note that `man` with the `-k` option performs the same function as `apropos`.
 
-> The `man` command with the `-k` option performs the same function as `apropos`.
-
-### `whatis`
+### `whatis` Display one-line manual page descriptions
 
 Displays the name and a one-line description of a man page matching a specified keyword.
+
+```
+whatis <term>
+```
 
 #### The most brutal man page of them all
 
@@ -171,20 +175,18 @@ As we have seen, the manual pages supplied with Linux and other Unix-like system
 
 On the other hand, it is very accurate and concise, as well as being extremely complete...
 
-### `info`
+### `info` Display a program's info entry
 
-The GNU Project provides an alternative to man pages for their programs, called "info". Info manuals are displayed with a reader program named, appropriately enough, "info"...
-
-> Info pages are **hyperlinked** much like web pages.
+The GNU Project provides an alternative to man pages for their programs, called "info". Info manuals are displayed with a reader program named, appropriately enough, "info". Info pages are **hyperlinked** much like web pages.
 
 `info` reads **info files**, which are tree structured into individual **nodes**, each containing a single topic. Info files contain hyperlinks that can move you from node to node. A hyperlink can be identified by its leading asterisk and is activated by placing the cursor upon it and pressing `ENTER`.
 
-```bash
-# info <command>
+```
+info <command>
 ```
 
 |          command          | action                                                                   |
-|:-------------------------:|--------------------------------------------------------------------------|
+|:-------------------------:|:------------------------------------------------------------------------ |
 |            `?`            | display command help.                                                    |
 | `PAGE UP` or `BACKSPACE`  | display previous page.                                                   |
 | `PAGE DOWN` or `SPACEBAR` | display next page.                                                       |
@@ -213,43 +215,43 @@ cd /usr; ls; cd -
 1. Name availability verification.
 
 	```bash
-    type test
-
-    # test is a shell builtin
-
-    # ----------------------------------------------------------------------- #
-
-    type foo
-
-    # bash: type: foo: not found
-    ```
+	type test
+	
+	# test is a shell builtin
+	
+	# ----------------------------------------------------------------------- #
+	
+	type foo
+	
+	# bash: type: foo: not found
+	```
 
 2. Alias creation.
 
 	```bash
-    # alias <name>='<string>'
-
-    # ----------------------------------------------------------------------- #
-
-    alias foo='cd /usr; ls; cd -'
-
-    # ----------------------------------------------------------------------- #
-
-    type foo
-
-    # foo is aliased to `cd /usr; ls; cd -'
+	# alias <name>='<string>'
+	
+	# ----------------------------------------------------------------------- #
+	
+	alias foo='cd /usr; ls; cd -'
+	
+	# ----------------------------------------------------------------------- #
+	
+	type foo
+	
+	# foo is aliased to `cd /usr; ls; cd -'
     ```
 
 3. Alias removal.
 
 	```bash
-    unalias foo
-
-    # ----------------------------------------------------------------------- #
-
-    type foo
-
-    bash: type: foo: not found
+	unalias foo
+	
+	# ----------------------------------------------------------------------- #
+	
+	type foo
+	
+	bash: type: foo: not found
     ```
 
 While we purposefully avoided naming our alias with an existing command name, it is not uncommon to do so. This is often done to apply a commonly desired option to each invocation of a common command...
