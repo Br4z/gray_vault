@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-05-16"
+reviewed_on: "2025-07-04"
 ---
 
 # Binary and mixed integer programming
@@ -28,24 +28,51 @@ donde $M$ es un número constante grande (big M). De esta forma "activamos" una 
 
 ## Satisfacción de $k$ de $p$ restricciones
 
-Dadas $p$ restricciones de desigualdad.
+Sea un conjunto de $p$ inecuaciones lineales (o no lineales).
 
 $$
 g_1(x) \leq 0,g_2(x) \leq 0,\dots,g_p(x) \leq 0, x \in \mathbb{ R }^n
 $$
 
-Se requiere que $p$ restricciones $g_i$ sean satisfechas. Esto se puede formular como
+Queremos que **al menos** $k$ (con $1 \leq k \leq p$) de esas restricciones se cumpla.
+
+### $y_i = 1$ viola la restricción
 
 $$
 \begin{align}
-	& g_1(x) \leq M * y_1 \\
-	& g_2(x) \leq M * y_2 \\
-	& \vdots \\
-	& g_p(x) \leq M * y_p \\
-	& y_1 + y_2 + \dots + y_p \leq k \\
-	& y_i \in \{0,1\}, i = 1,2,\dots,p
+	& g_i(x) \leq M * y_i \quad i = 1,\dots,p \\
+	& \sum_{ i = 1 }^p y_i \leq p - k \\
+	& y_i \in \{0,1\}
 \end{align}
 $$
+
+- $y_i = 0$: **apaga** el término $M * y_i$; la restricción $g_i(x) \leq 0$ debe cumplirse.
+
+- $y_i = 1$: **relaja** la inecuación (añadimos $M$), permitiendo violarla hasta $M$.
+
+Como a lo sumo $p - k$ variables binarias pueden ser $1$, **al menos** $k$ restricciones originales permanecen activas.
+
+### $y_i = 1$ cumple la restricción
+
+$$
+\begin{align}
+	& g_i(x) \leq M (1 - y_i) \quad i = 1,\dots,p \\
+	& \sum_{ i = 1 }^p y_i \geq k \\
+	& y_i \in \{0,1\}
+\end{align}
+$$
+
+- $y_i = 0$: desactiva la restricción con el término $M$.
+
+- $y_i = 1$: obliga $g_i(x) \leq 0$ (porque $M (1 - y_i) = 0$).
+
+Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ restricciones.
+
+---
+
+- En inecuaciones de tipo $\geq$ se resta $M$ en lugar de sumarlo.
+
+- Las igualdades $g_i(x) = 0$ se sustituyen por dos inecuaciones $\leq$ y $\geq$.
 
 ## Condiciones lógicas en MIP
 

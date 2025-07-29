@@ -79,7 +79,7 @@ The remaining $9$ characters of the file attributes, called the **file mode**, r
 |    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.                  |
 |    `x`    | allows a file to be treated as a program and executed.                                                                                                                                           | allows a directory to be entered.                                                                                          |
 
-### `chmod` Change file mode
+### `chmod` change file mode
 
 It is used to change the mode (permissions) of a file or directory, it supports two distinct ways of specifying mode changes: octal number representation, or symbolic representation.
 
@@ -132,7 +132,7 @@ Symbolic notation does offer the advantage of allowing you to set a single attri
 
 An option of caution is `--recursive`: it acts on both files and directories, so it is not as useful as we would hope since we rarely want files and directories to have the same permissions.
 
-### `umask` Set default permissions
+### `umask` set default permissions
 
 It controls the default permissions given to a file when it is created. It uses octal notation to express a **mask** of bits to be removed from a file's mode attributes.
 
@@ -195,9 +195,9 @@ chmod +t <directory>  # Assigning the sticky bit to a directory (drwxrwxrwt)
 
 - Use `sudo`.
 
-### `su` Run a shell with substitute user and groups IDs
+### `su` run a shell with substitute user and groups IDs
 
-The `su` command is used to start a shell as another user.
+It is used to start a shell as another user.
 
 ```
 su [-[l]] [USER]
@@ -222,7 +222,7 @@ su -c 'ls -l /root/*'
 
 Using this form, a single command line is passed to the new shell for execution. It is important to enclose the command in quotes, as we do not want expansion to occur in our shell, but rather in the new shell.
 
-### `sudo` Execute a command as another user
+### `sudo` execute a command as another user
 
 ...The administrator can configure sudo to allow an ordinary user to execute commands as a different user in a controlled way. The use of sudo does not require access to the superuser's password...authenticating using `sudo`, requires the user's own password.
 
@@ -239,7 +239,7 @@ sudo -l # See what privileges are granted by sudo (in the current user)
 #     (ALL : ALL) ALL
 ```
 
-### `chown` Change file owner and group
+### `chown` change file owner and group
 
 
 It is used to change the owner and group owner of a file or directory.

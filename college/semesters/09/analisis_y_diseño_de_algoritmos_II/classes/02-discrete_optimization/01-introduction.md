@@ -88,7 +88,7 @@ Dependiendo de las restricciones, los problemas pueden clasificarse en:
 
 - Programación entera (IP): LP donde todas las variables de decisión son enteras.
 
-- Programación binaria: un caso especial de IP,
+- Programación binaria: un caso especial de IP.
 
 - Programación entera mixta (MIP): algunas variables son enteras y otras continuas.
 

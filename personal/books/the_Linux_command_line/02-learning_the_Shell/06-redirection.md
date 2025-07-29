@@ -106,7 +106,7 @@ Recent versions of `bash` provide a second, more streamlined method for performi
 
 ### `cat`
 
-`cat` reads one or more files and copies them to standard output.
+It reads one or more files and copies them to standard output.
 
 ```  
 cat [FILE...]
@@ -170,7 +170,7 @@ ls /bin /usr/bin | sort | less
 
 The command above is to make a combined list of all the executable programs in `/bin` and `/usr/bin`, put them in sorted order, and view the resulting list.
 
-#### `uniq` Report or omit repeated lines
+#### `uniq` report or omit repeated lines
 
 ...It accepts a **sorted** list of data from either standard input or a single filename argument and, by default, removes any duplicates from the list...
 
@@ -184,7 +184,7 @@ ls /bin /usr/bin | sort | uniq | less    # See the uniques elements
 ls /bin /usr/bin | sort | uniq -d | less # See the duplicates elements
 ```
 
-#### `wc` Print line, word, and byte counts
+#### `wc` print line, word, and byte counts
 
 It is used to display the number of lines, words, and bytes contained in files.
 
@@ -200,7 +200,7 @@ In this case, it prints out three numbers: lines, words, and bytes contained in 
 ls /bin /usr/bin | sort | uniq | wc -l # See the number of items we have in our sorted list
 ```
 
-#### `grep` Print lines matching a pattern
+#### `grep` print lines matching a pattern
 
 ```
 grep pattern [file...]
@@ -234,7 +234,7 @@ There are a couple of handy options for `grep`:
 
 - `w`: only match whole words.
 
-#### `head` / `tail` Print first / last part of files
+#### `head` / `tail` print first / last part of files
 
 The `head` command prints the first $10$ lines of a file, and the `tail` command prints the last $10$ lines.
 
@@ -246,9 +246,9 @@ The `-n` option when used with head allows a negative value which causes all but
 
 > The prompt will not be available until you press `CTRL + c`.
 
-### `tea` Read from stdin and output to stdout and files
+### `tea` read from stdin and output to stdout and files
 
-...`tea` reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing.
+It reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing.
 
 ```bash
 ls /usr/bin | tee ls.txt | grep zip

@@ -28,7 +28,7 @@ Since the shell uses filenames so much, it provides special characters to help u
 |   `[:lower:]`   | any lowercase letter.       |
 |   `[:upper:]`   | any uppercase letter.       |
 
-## `cp` (copy Files and directories)
+## `cp` (copy files and directories)
 
 ```bash
 cp item_1 item_2     # Copies the single file or directory item1 to the file or directory item2
@@ -45,7 +45,7 @@ cp item... directory # Copies multiple items (either files or directories) into 
 |   `-u`, `--update`    | when copying files from one directory to another, only copy files that either do not exist or are newer than the existing corresponding files in the destination directory. |
 |   `-v`, `--verbose`   | display informative messages as the copy is performed.                                                                                                                      |
 
-## `mv` (move And rename files)
+## `mv` (move and rename files)
 
 ```bash
 mv item1 item2         # Move or rename the file or directory item1 to item2
@@ -60,7 +60,7 @@ mv item... <directory> # Move one or more items from one directory to another.
 |   `-u`, `--update`    | when moving files from one directory to another, only move files that either do not exist or are newer than the existing corresponding files in the destination directory. |
 |   `-v`, `--verbose`   | display informative messages as the move is performed.                                                                                                                     |
 
-## `rm` (remove Files and directories)
+## `rm` (remove files and directories)
 
 ### Useful options (`rm`)
 

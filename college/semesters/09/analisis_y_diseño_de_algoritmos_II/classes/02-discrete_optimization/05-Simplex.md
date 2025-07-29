@@ -81,7 +81,7 @@ Es posible utilizar un tablero para facilitar el procedimiento
 $$
 \begin{array}{c|c|c|c|c|c}
 	\text{variable básica} & z & x_1  & \dots    & x_n    & \text{RHS} \\
-	z                      & 1 & c_1  & \dots    & c_n    & 0 \\
+	z                      & 1 & c_1  & \dots    & c_n    & b_0 \\
 	x_{ n + 1 }            & a_{ 10 } & a_{ 11 } & \dots  & a_{ 1n } & b_1 \\
 	\vdots                 & \vdots   & \vdots   & \vdots & \vdots & \vdots \\
 	x_{ n + m }            & a_{ m0 } & a_{ m1 } & \dots  & a_{ mn } & b_m

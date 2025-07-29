@@ -38,7 +38,7 @@ A command can be one of four different things.
 
 ## Identifying commands
 
-### `type` Display a command's type
+### `type` display a command's type
 
 It is a shell built-in that displays the kind of command the shell will execute, given a particular command name.
 
@@ -64,7 +64,7 @@ type cp
 # cp is /bin/cp
 ```
 
-### `which` Display an executable's location
+### `which` display an executable's location
 
 It is used to determine the exact location of a given executable.
 
@@ -78,7 +78,7 @@ which ls
 
 ## Getting a command's documentation
 
-### `help` Get help for shell built-ins
+### `help` get help for shell built-ins
 
 ```bash
 # help <command>
@@ -94,7 +94,7 @@ When square brackets appear in the description of a command's syntax, they indic
 
 > With `-m`, `help` will display its output in an alternate format.
 
-### `--help` Display usage information
+### `--help` display usage information
 
 Many executable programs support a `--help` option that displays a description of the command's supported syntax and options...
 
@@ -109,7 +109,7 @@ mkdir --help
 # Create the DIRECTORY(ies), if they do not already exist.
 ```
 
-### `man` Display a program's manual page
+### `man` display a program's manual page
 
 Most executable programs intended for command line use provide a formal piece of documentation called a **manual** or **man page**. A special paging program called "man" is used to view them...
 
@@ -144,7 +144,7 @@ The "manual" that `man` displays is broken into sections and covers not only use
 
 Sometimes we need to refer to a specific section of the manual to find what we are looking for...
 
-### `apropos` Display appropriate commands
+### `apropos` display appropriate commands
 
 It is also possible to search the list of man pages for possible matches based on a search term...
 
@@ -161,9 +161,9 @@ apropos partition
 
 The first field in each line of output is the name of the man page, and the second field shows the section. Note that `man` with the `-k` option performs the same function as `apropos`.
 
-### `whatis` Display one-line manual page descriptions
+### `whatis` display one-line manual page descriptions
 
-Displays the name and a one-line description of a man page matching a specified keyword.
+It displays the name and a one-line description of a man page matching a specified keyword.
 
 ```
 whatis <term>
@@ -175,7 +175,7 @@ As we have seen, the manual pages supplied with Linux and other Unix-like system
 
 On the other hand, it is very accurate and concise, as well as being extremely complete...
 
-### `info` Display a program's info entry
+### `info` display a program's info entry
 
 The GNU Project provides an alternative to man pages for their programs, called "info". Info manuals are displayed with a reader program named, appropriately enough, "info". Info pages are **hyperlinked** much like web pages.
 

@@ -4,24 +4,51 @@
     "type": "split",
     "children": [
       {
-        "id": "15ce3d30f917b806",
-        "type": "tabs",
+        "id": "4ce037a92a61b457",
+        "type": "split",
         "children": [
           {
-            "id": "0380cc00941a33fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "05-archiving_and_backup"
-            }
+            "id": "a9470d0ae612bd5a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d396a1c1baf1f680",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+                    "mode": "source",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "01-classification_of_computational_problems"
+                }
+              }
+            ]
+          },
+          {
+            "id": "215fc7f5be130352",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "edb5f2b5211a3d51",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+                    "mode": "preview",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "01-classification_of_computational_problems"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -78,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 262.5,
+    "collapsed": true
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -140,27 +168,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
+                "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 09-permissions"
-            }
-          },
-          {
-            "id": "410fae223fcab8e4",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "title": "Outline of 01-classification_of_computational_problems"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "6b1f7004b16de97a",
@@ -172,20 +190,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
+                "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 05-archiving_and_backup"
+              "title": "Outline of 01-classification_of_computational_problems"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,34 +216,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0380cc00941a33fa",
+  "active": "edb5f2b5211a3d51",
   "lastOpenFiles": [
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/04-searching_for_files.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/01-introduction.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/05-reading_keyboard_input.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/04-flow_control-branching_with_if.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/02-starting_a_project.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/03-top-down_design.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
+    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/01-the_environment.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipuling_files_and_directories.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/07-text_processing.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/06-redirection.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/01-writing_your_first_script.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/10-compiling_programs.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/09-printing.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/02-lineal_programming.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/08-formatting_output.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/06-branch_and_bound.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/04-lineal_programming-standard_form_and_slack.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/06-regular_expressions.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/04-searching_for_files.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/03-networking.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/02-storage_media.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/01-package_management.md",
     "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/03-customizing_the_prompt.md",
     "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/02-a_gentle_introduction_to_vi.md",
-    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/01-the_environment.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/08-advanced_keyboard_tricks.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/06-redirection.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/05-working_with_commands.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipuling_files_and_directories.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/03-exploring_the_system.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/02-navigation.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/01-what_is_the_shell.md",
-    "personal/books/the_Linux_command_line/01-introduction.md",
-    "personal/courses/introduccion_a_Linux/01-temario.md",
-    "personal/books/algebra_3o_y_4o_enseñanza_media.md",
-    "personal/courses/aprende_Docker_ahora.md",
-    "personal/books/enfocate.md",
-    "personal/books/deja_de_ser_tu.md",
-    "personal/books/la_esencia_logica_de_la_programacion.md",
-    "personal/books/nunca_me_abandones.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools",
     "test32",
     "preamble.sty",
@@ -233,8 +254,6 @@
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/New folder",
     "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming",
     "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/homework",
-    "college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/homework",
     "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",

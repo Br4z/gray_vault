@@ -24,17 +24,17 @@ reviewed_on: "2025-07-02"
 
 ### `ping`
 
-...`ping` sends a special network packet called an ICMP ECHO_REQUEST to a specified host. Most network devices receiving this packet will reply to it, allowing the network connection to be verified.
+It sends a special network packet called an ICMP ECHO_REQUEST to a specified host. Most network devices receiving this packet will reply to it, allowing the network connection to be verified.
 
 > It is possible to configure most network devices (including Linux hosts) to ignore these packets. This is usually done for security reasons, to partially obscure a host from a potential attacker. It is also common for firewalls to be configured to block ICMP traffic.
 
 ### `traceroute`
 
-`traceroute` lists all the "hops" network traffic takes to get from the local system to a specified host.
+It lists all the "hops" network traffic takes to get from the local system to a specified host.
 
 ### `ip`
 
-`ip` is a multi-purpose network configuration tool that makes use of the full range of networking features available in modern Linux kernels.
+It is a multi-purpose network configuration tool that makes use of the full range of networking features available in modern Linux kernels.
 
 - `ip address show` or `ip a`: examine system's network interfaces.
 
@@ -54,7 +54,7 @@ FTP (in its original form) is not secure because it sends account names and pass
 
 ### `lftp` a better `ftp`
 
-`lftp` works much like the traditional ftp program but has many additional convenience features including multiple-protocol support (including HTTP), automatic retry on failed downloads, background processes, tab completion of path names, and many more.
+It works much like the traditional ftp program but has many additional convenience features including multiple-protocol support (including HTTP), automatic retry on failed downloads, background processes, tab completion of path names, and many more.
 
 ### `curl` transfer a URL
 
@@ -74,9 +74,9 @@ We specify a URL and `curl` downloads the first page of the URL and outputs it t
 | `-u`, `--proxy-user`  `<user>:<password>` | specify a user name/password  combination.                              |
 |             `-v`, `--verbose`             | display verbose messages as it  executes.                               |
 
-### `wget` n on-interactive network downloader
+### `wget` non-interactive network downloader
 
-`wget` is useful for downloading content from both web and FTP sites. Single files, multiple files, and even entire sites can be downloaded.
+It is useful for downloading content from both web and FTP sites. Single files, multiple files, and even entire sites can be downloaded.
 
 ```
 wget [OPTION]... URL [URL]...

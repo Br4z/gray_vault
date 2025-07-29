@@ -1,13 +1,8 @@
 [
-  "obsidian-linter",
-  "table-editor-obsidian",
-  "show-whitespace-cm6",
-  "languagetool",
-  "obsidian-wakatime",
   "obsidian-discordrpc",
-  "obsidian-icon-folder",
-  "obsidian-minimal-settings",
+  "obsidian-wakatime",
   "obsidian-relative-line-numbers",
-  "obsidian-latex-suite",
-  "obsidian-latex"
+  "obsidian-minimal-settings",
+  "table-editor-obsidian",
+  "obsidian-linter"
 ]
