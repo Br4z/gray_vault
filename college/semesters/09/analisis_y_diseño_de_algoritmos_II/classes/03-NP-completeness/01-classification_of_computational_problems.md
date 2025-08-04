@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-07-29"
+reviewed_on: "2025-07-31"
 ---
 
 # Classification of computational problems
@@ -62,52 +62,54 @@ Para clasificar formalmente los problemas, especialmente los intratables, se uti
 
 Contiene todos los problemas de decisión que pueden ser **resueltos** en tiempo polinomial por una máquina de Turing **determinista** (el modelo computacional estándar). Estos problemas son considerados **tratables**.
 
-## Clase $NP$ (polinomial no determinista)
+## Clase $\mathrm{NP}$ (polinomial no determinista)
 
 Contiene los problemas que pueden ser **resueltos** en tiempo polinomial por una máquina de Turing **no determinista**.
 
-Un problema está en $NP$ si, dada una posible solución (un **certificado**), podemos **verificar** si es correcta en tiempo **polinomial**.
+Un problema está en $\mathrm{NP}$ si, dada una posible solución (un **certificado**), podemos **verificar** si es correcta en tiempo **polinomial**.
 
-Es claro que $P \subseteq NP$, ya que si un problema se puede resolver rápidamente, también se puede verificar rápidamente.
+> Un certificado es una asignación de valores de verdad (verdadero/falso) a las variables.
 
-## ¿$P = NP$?
+Es claro que $\mathrm{P} \subseteq \mathrm{NP}$, ya que si un problema se puede resolver rápidamente, también se puede verificar rápidamente.
 
-La pregunta de si la clase $P$ es igual a la clase $NP$ es uno de los problemas abiertos más importantes de las ciencias de la computación.
+## ¿$\mathrm{P} = \mathrm{NP}$?
 
-Si $P = NP$, significaría que muchos problemas considerados intratables podrían resolverse eficientemente.
+La pregunta de si la clase $P$ es igual a la clase $\mathrm{NP}$ es uno de los problemas abiertos más importantes de las ciencias de la computación.
 
-> La creencia general es que $P \neq NP$.
+Si $\mathrm{P} = \mathrm{NP}$, significaría que muchos problemas considerados intratables podrían resolverse eficientemente.
 
-### Clase $NP$-hard
+> La creencia general es que $\mathrm{P} \neq \mathrm{NP}$.
 
-Es un problema que es al menos tan difícil como cualquier problema en la clase $NP$. Formalmente, esto significa que todo problema $A$ en $NP$ puede ser **reducido** en tiempo polinomial a un problema $NP$-hard $B$ ($A \preceq_p B$).
+### Clase $\mathrm{P} = \mathrm{NP}\text{-hard}$
 
-La característica principal que diferencia un problema $NP$-hard de uno $NP$-complete es que un problema $NP$-hard **no necesita pertenecer a la clase $NP$**. Es decir, puede que no sea posible verificar una solución para él en tiempo polinomial
+Es un problema que es al menos tan difícil como cualquier problema en la clase $\mathrm{NP}$. Formalmente, esto significa que todo problema $A$ en $\mathrm{NP}$ puede ser **reducido** en tiempo polinomial a un problema $\mathrm{NP}\text{-hard}$ $B$ ($A \preceq_p B$).
 
-### Clase $NP$-complete ($NPC$)
+La característica principal que diferencia un problema $\mathrm{NP}\text{-hard}$ de uno $\mathrm{NP}\text{-complete}$ es que un problema $\mathrm{NP}\text{-hard}$ **no necesita pertenecer a la clase $\mathrm{NP}$**. Es decir, puede que no sea posible verificar una solución para él en tiempo polinomial
 
-Estos problemas son, informalmente, los problemas **más difíciles** dentro de la clase $NP$.
+### Clase $\mathrm{NP}\text{-complete}$ ($NPC$)
 
-Un problema $B$ es $NP$-completo si cumple dos condiciones:
+Estos problemas son, informalmente, los problemas **más difíciles** dentro de la clase $\mathrm{NP}$.
+
+Un problema $B$ es $\mathrm{NP}$-completo si cumple dos condiciones:
 
 1. $B \in NP$: el problema puede ser verificado en tiempo polinomial.
 
-2. $B$ es $NP$-hard: todo problema $A$ en la clase $NP$ puede ser reducido a $B$ en tiempo polinomial ($A \preceq_p B$), esto significa que $B$ es "al menos tan difícil" como cualquier otro problema en NP.
+2. $B$ es $\mathrm{NP}\text{-hard}$: todo problema $A$ en la clase $\mathrm{NP}$ puede ser reducido a $B$ en tiempo polinomial ($A \preceq_p B$), esto significa que $B$ es "al menos tan difícil" como cualquier otro problema en NP.
 
 ## Reducción polinomial ($A \preceq_p B$)
 
-La reducción es una herramienta fundamental para probar la $NP$-completeness. Una reducción transforma una instancia $\alpha$ de un problema $A$ en una instancia $\beta$ de un problema $B$ en tiempo polinomial.
+La reducción es una herramienta fundamental para probar la $\mathrm{NP}\text{-complete}$ness. Una reducción transforma una instancia $\alpha$ de un problema $A$ en una instancia $\beta$ de un problema $B$ en tiempo polinomial.
 
 La transformación debe ser tal que la respuesta para $\alpha$ sea "sí" si y solo si la respuesta para $\beta$ es "sí".
 
-Si podemos reducir un problema $C$ que ya sabemos que es $NP$-complete a un nuevo problema $B$ (y $B$ está en $NP$), entonces hemos demostrado que **$B$ también es $NP$-complete**.
+Si podemos reducir un problema $C$ que ya sabemos que es $\mathrm{NP}\text{-complete}$ a un nuevo problema $B$ (y $B$ está en $\mathrm{NP}$), entonces hemos demostrado que **$B$ también es $\mathrm{NP}\text{-complete}$**.
 
 ## El problema de satisfactibilidad (SAT)
 
-También conocido como el problema de satisfactibilidad booleana, fue el **primer problema que se demostró ser $NP$-complete**. Esta demostración fue realizada por Stephen Cook en $1971$.
+También conocido como el problema de satisfactibilidad booleana, fue el **primer problema que se demostró ser $\mathrm{NP}\text{-complete}$**. Esta demostración fue realizada por Stephen Cook en $1971$.
 
 ### Definición
 
 El problema consiste en un conjunto $V$ de $n$ variables booleanas $v_1,v_2,\dots,v_n$ y un conjunto $C$ de $m$ cláusulas $c_1,c_2,\dots,c_m$ en **forma normal conjuntiva (FNC)**. Se busca si existen valores de las variables que hagan que la expresión sea verdadera.
 
-Gracias a la demostración de Cook, podemos usarlo como "semilla" para probar otros problemas que también son $NP$-complete, usando la técnica de reducción.
+Gracias a la demostración de Cook, podemos usarlo como "semilla" para probar otros problemas que también son $\mathrm{NP}\text{-complete}$, usando la técnica de reducción.

@@ -2,7 +2,7 @@
 reviewed_on: "2025-04-29"
 ---
 
-# Lineal programming: standard form and slack
+# Linear programming: standard form and slack
 
 ## Generalidades
 

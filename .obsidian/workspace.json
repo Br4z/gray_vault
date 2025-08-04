@@ -4,45 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "4ce037a92a61b457",
+        "id": "7c0491b4a1b3fd6c",
         "type": "split",
         "children": [
           {
-            "id": "a9470d0ae612bd5a",
+            "id": "3a45fc4eb6ea4bb9",
             "type": "tabs",
             "children": [
               {
-                "id": "d396a1c1baf1f680",
+                "id": "18bf8089ce2011fe",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/02-SAT_and_3-SAT.md",
                     "mode": "source",
                     "source": true
                   },
                   "icon": "lucide-file",
-                  "title": "01-classification_of_computational_problems"
+                  "title": "02-SAT_and_3-SAT"
                 }
               }
             ]
           },
           {
-            "id": "215fc7f5be130352",
+            "id": "e05477a17f9dffe3",
             "type": "tabs",
             "children": [
               {
-                "id": "edb5f2b5211a3d51",
+                "id": "f022b5f8169b2f5e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
-                    "mode": "preview",
+                    "file": "personal/computer_science/problems/knapsack.md",
+                    "mode": "source",
                     "source": true
                   },
                   "icon": "lucide-file",
-                  "title": "01-classification_of_computational_problems"
+                  "title": "knapsack"
                 }
               }
             ]
@@ -80,8 +80,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "path:\"personal/books/the_Linux_command_line/\"  expansion",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -105,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5,
-    "collapsed": true
+    "width": 383.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -168,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+                "file": "personal/computer_science/problems/knapsack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01-classification_of_computational_problems"
+              "title": "Outline of knapsack"
             }
           }
         ],
@@ -190,21 +189,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
+                "file": "personal/computer_science/problems/knapsack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01-classification_of_computational_problems"
+              "title": "Outline of knapsack"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,36 +214,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "edb5f2b5211a3d51",
+  "active": "f022b5f8169b2f5e",
   "lastOpenFiles": [
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/01-introduction.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/05-reading_keyboard_input.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/04-flow_control-branching_with_if.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/02-starting_a_project.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/03-top-down_design.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
-    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/01-the_environment.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/04-linear_programming-standard_form_and_slack.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/02-linear_programming.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/01-dynamic_and_greedy_programming/02-introduction_to_dynamic_programming-Fibonacci_sequence.md",
+    "personal/computer_science/problems/SAT.md",
+    "personal/computer_science/problems/knapsack.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/02-SAT_and_3-SAT.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/09-positional_parameters.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/08-flow_control-branching_with_case.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it.md",
     "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipuling_files_and_directories.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/07-text_processing.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/06-redirection.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/01-writing_your_first_script.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/10-compiling_programs.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/06-flow_control-looping_with_while-until.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/05-reading_keyboard_input.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/04-flow_control-branching_with_if.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/07-troubleshooting.md",
+    "personal/Duolingo/stage_5.md",
+    "personal/Duolingo/stage_4.md",
+    "personal/computer_science/problems/subset_sum.md",
+    "personal/computer_science/problems/vertex_cover.md",
+    "personal/computer_science/problems/minimum_spanning_tree.md",
+    "personal/computer_science/problems/longest_common_subsequence.md",
+    "personal/computer_science/problems/matrix_chain_multiplication.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/06-subset_sum.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/05-maximal_clique.md",
+    "personal/math/LaTeX_cheatsheet.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/03-top-down_design.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/04-vertex_cover.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness",
     "personal/books/the_Linux_command_line/05-writing_shell_scripts",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/09-printing.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/02-lineal_programming.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/08-formatting_output.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/06-branch_and_bound.md",
-    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/02-discrete_optimization/04-lineal_programming-standard_form_and_slack.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/06-regular_expressions.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/05-archiving_and_backup.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/04-searching_for_files.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/03-networking.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/02-storage_media.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/01-package_management.md",
-    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/03-customizing_the_prompt.md",
-    "personal/books/the_Linux_command_line/03-configuration_and_the_environmnet/02-a_gentle_introduction_to_vi.md",
     "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools",
     "test32",
     "preamble.sty",
