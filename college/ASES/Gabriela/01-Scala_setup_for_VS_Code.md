@@ -1,8 +1,8 @@
 ---
-reviewed_on: "2025-02-01"
+reviewed_on: "2025-08-08"
 ---
 
-# Scala setup for vscode
+# Scala setup for VS Code
 
 ## Scala setup
 
@@ -12,7 +12,7 @@ reviewed_on: "2025-02-01"
 
 	> Make sure to add the binaries to the PATH.
 
-3. Download the Scala extensions to your vscode.
+3. Download the Scala extensions to your VS Code.
 
 	- [Scala syntax](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala).
 
@@ -20,9 +20,9 @@ reviewed_on: "2025-02-01"
 
 4. Type the following command to create a Scala project: `sbt new scala/scala3.g8`.
 
-5. Open the project folder with vscode and press yes when the Metals extension asks you to import the `build.sbt`.
+5. Open the project folder with VS Code and press yes when the Metals extension asks you to import the `build.sbt`.
 
-6. Run the project through the Metals extension or the sbt utility:
+6. Run the project through the Metals extension or the `sbt` utility:
 
 	- Metal extension: press run in the context menu it adds to a main method (in the text file).
 

@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-02-01"
+reviewed_on: "2025-08-08"
 ---
 
 # How to format code in LaTeX
@@ -132,7 +132,7 @@ It is done through the `\lstdefinestyle` command.
 
 - `frame`: showing frame outside code.
 
-	> none/leftline/topline/bottomline/lines/single/shadowbox
+	> none/leftline/topline/bottomline/lines/single/shadowbox.
 
 - `breakatwhitespace`: sets if automatic breaks should only happen at whitespaces.
 

@@ -1,3 +1,7 @@
+---
+reviewed_on: "2025-08-08"
+---
+
 # Discrete math exercises
 
 1. Represente en lógica de predicados.
@@ -39,7 +43,7 @@
 				$$
 				\begin{array}{lr}
 					(C \land Q) \implies P \\
-					\lnot (C \land Q) \lor P    & \text{definicion condicional} \\
+					\lnot (C \land Q) \lor P    & \text{definición condicional} \\
 					\lnot C \lor \lnot Q \lor P & \text{ley de Morgan}
 				\end{array}
 				$$
@@ -49,7 +53,7 @@
 				$$
 				\begin{array}{lr}
 					(\lnot Q \implies \lnot O) \land (\lnot Q \implies M) & \\
-					(Q \lor \lnot O) \land (Q \lor M)                     & \text{definicion condicional} \\
+					(Q \lor \lnot O) \land (Q \lor M)                     & \text{definición condicional} \\
 				\end{array}
 				$$
 
@@ -60,7 +64,7 @@
 				$$
 					\begin{array}{lr}
 						E \implies (O \land \lnot M) \\
-						\lnot E \lor (O \land \lnot M)                &\text{definicion condicional} \\
+						\lnot E \lor (O \land \lnot M)                &\text{definición condicional} \\
 						(\lnot E \lor O) \land (\lnot E \lor \lnot M) & \text{ley distributiva}
 					\end{array}
 				$$

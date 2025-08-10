@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-02-01"
+reviewed_on: "2025-08-08"
 ---
 
 # Building a container from scratch
@@ -18,7 +18,7 @@ reviewed_on: "2025-02-01"
 
 2. Create a PID namespace for the shell (isolate the process inside the container).
 
-	```BASH
+	```bash
 	sudo unshare -p -f --mount-proc=$PWD/rootfs/proc \
 		chroot rootfs /bin/bash
 	```
@@ -35,16 +35,16 @@ reviewed_on: "2025-02-01"
 
 3. Share a PID namespace with the shell.
 
-	```BASH
-	sudo nsenter --pid=/proc/<shell from the setp 2 PID>/ns/pid \
+	```bash
+	sudo nsenter --pid=/proc/<shell from the step 2 PID>/ns/pid \
 		unshare -f --mount-proc=$PWD/rootfs/proc \
 		chroot rootfs /bin/bash
 	```
 
-	```BASH
+	```bash
 	sudo nsenter --pid=/proc/2334/ns/pid \
-	unshare -f --mount-proc=$PWD/rootfs/proc \
-	chroot rootfs /bin/bash
+		unshare -f --mount-proc=$PWD/rootfs/proc \
+		chroot rootfs /bin/bash
 	```
 
 	- `nsenter`: run a program with the namespaces of other processes.
