@@ -19,7 +19,7 @@ reviewed_on: "2025-07-02"
 `locate` performs a rapid database search of pathnames, and the outputs ever name that matches a given substring.
 
 ```
-locate pattern [pattern...]
+locate PATTERN [PATTERN...]
 ```
 
 `locate` has been around for a number of years, and there are several variants in common use. The two most common ones found in modern Linux distributions are `plocate` and `mlocate`, though they are usually accessed by a symbolic link named locate. The different versions of locate have overlapping options sets. Some versions include regular expression matching and wildcard support.
@@ -33,7 +33,7 @@ locate pattern [pattern...]
 ...`find` searches a given directory (and its subdirectories) for files based on a variety of atributes...
 
 ```
-find [directory...] [expression]
+find [DIRECTORY...] [EXPRESSION]
 ```
 
 ### Tests
@@ -69,7 +69,7 @@ Some of the **tests** that support this command are:
 |        `-empty`        | empty files and directories.                                                                               |
 | `-group <name or GID>` | files or directories belonging to `<name or GID>` group.                                                   |
 |   `-iname <pattern>`   | like `-name` but case-insensitive.                                                                         |
-|       `inum <n>`       | files with inode number $n$.                                                                               |
+|       `inum <n>`       | files with inode number *n*.                                                                               |
 |      `-mmin <n>`       | files or directories whose contents were last modifies $n \text{minutes}$ ago.                             |
 |    `-name <patter>`    | Match files and directories with the specified wildcard  `<pattern>`.                                      |
 |    `-newer <file>`     | files and directories whose contents were modified  more recently than the specified `<file>`.             |
@@ -79,13 +79,13 @@ Some of the **tests** that support this command are:
 |   `-samefile <file>`   | similar to the `-inum`. Match files that share the same inode number as `<file>`.                          |
 |     `-user <name>`     | files or directories belonging to user `<name>.                                                            |
 
-A numeric argument $n$ can be specified to tests (like `-amin`, `-mtime`, `-gid`, `-inum`, `-links`, `-size`, `-uid` and `-used`) as
+A numeric argument *n* can be specified to tests (like `-amin`, `-mtime`, `-gid`, `-inum`, `-links`, `-size`, `-uid` and `-used`) as
 
-- `+n` for greater than $n$.
+- `+n` for greater than *n*.
 
-- `-n` for less than $n$.
+- `-n` for less than *n*.
 
-- `n` for exactly $n$.
+- `n` for exactly *n*.
 
 ### Operators
 
@@ -97,7 +97,7 @@ A numeric argument $n$ can be specified to tests (like `-amin`, `-mtime`, `-gid`
 | `(` `)`  | groups tests and operators together to form larger  expressions. This is used to control the precedence of the  logical evaluations.... Note that since  the parentheses have special meaning to the shell, they  must be quoted when using them on the command line to  allow them to be passed as arguments to `find`. |
 
 ```bash
-find ~ \( -type f -not -perm 0600 \) -or \( -type d  -not -perm 0700 \) 
+find ~ \( -type f -not -perm 0600 \) -or \( -type d  -not -perm 0700 \)
 ```
 
 > The below command determines whether all the files and subdirectories in a directory had secure permissions.

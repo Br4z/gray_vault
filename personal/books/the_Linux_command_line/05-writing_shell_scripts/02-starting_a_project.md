@@ -30,7 +30,7 @@ Variables are assigned values this way:
 <variable>=<value>
 ```
 
-Where $\text{variable}$ is the name of the variable and $\text{value}$ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. You can force the shell to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
+Where *variable* is the name of the variable and *value* is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. You can force the shell to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
 
 Multiple variable assignments may be done on a single line.
 
@@ -60,7 +60,7 @@ A **here document** or **here script** is an additional form of I/O redirection 
 <token>
 ```
 
-where $\text{token}$ is a string used to indicate the end of the embedded text.
+where *token* is a string used to indicate the end of the embedded text.
 
 A common convention is to use `_EOF_` (meaning **end of file**) as token. Note that the token mush appear alone and that there must not be trailing spaces on the line.
 
@@ -82,6 +82,7 @@ If we change the redirection operator from `<<` to `<<-`, the shell will ignore 
 
 ```bash
 #!/bin/bash
+
 
 TITLE="System Information Report For $HOSTNAME"
 CURRENT_TIME="$(date +"%x %r %Z")"

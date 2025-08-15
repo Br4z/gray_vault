@@ -94,7 +94,7 @@ top
 |     | `load average:` | it refers to the number of processes that are waiting to run.           |
 |  2  |    `Tasks:`     | summary of processes and their status.                                  |
 |     |    `0.7%us`     | $7\%$ of the CPU is being used for **user** processes.                  |
-|     |    `1.0%sy`    | $1\%$ of the CPU is being used for **system** (kernel) processes.       |
+|     |    `1.0%sy`    | $1\%$ of the CPU is being used for **system** (kernel) processes.        |
 |     |    `0.0%ni`     | $0\%$ of the CPU is being used by "nice" (low-priority) processes.      |
 |     |    `98.3%id`    | $98.3\%$ of the CPU is idle                                             |
 |     |    `0.0%wa`     | $0\%$ of the CPU is waiting for I/O.                                    |

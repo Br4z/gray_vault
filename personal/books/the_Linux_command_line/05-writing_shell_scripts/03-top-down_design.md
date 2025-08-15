@@ -57,6 +57,7 @@ A **stub** function is simply a **placeholder function**, an empty (or nearly em
 ```bash
 #!/bin/bash
 
+
 TITLE="System Information Report For $HOSTNAME"
 CURRENT_TIME="$(date +"%x %r %Z")"
 TIMESTAMP="Generated $CURRENT_TIME, by $USER"

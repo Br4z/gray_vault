@@ -16,18 +16,18 @@ read [-OPTIONS] [VARIABLE...]
 
 If `read` receive fewer than the expected number, the extra variables are empty, while an excessive amount of input results in the final variable containing all of the extra input.
 
-| option            | description                                                                                                                 |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `-a <array_name>` | assign the input into an array $\text{array\_name}$.                                                                        |
-| `-d <delimiter>`  | the first character in the string $\text{delimiter}$ is used to indicate the end of input, rather than a newline character. |
-| `-e`              | use Readline to handle input. This permits input editing in the same manner as the command line.                            |
-| `-i <string>`     | use $\text{string}$ as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |
-| `-n <n>`          | read $n$ character of input, rather than an entire line.                                                                    |
-| `-p <prompt>`     | display a prompt of input using the string $\text{prompt}$.                                                                 |
-| `-r`              | raw mode. Do not interpret backslash characters as escapes.                                                                 |
-| `-s`              | silent mode. Do not echo characters to display as they are typed.                                                           |
-| `-t <n>`          | timeout. Terminate the input after $n$ seconds. `read` return a non-zero exit status if an input times out.                 |
-| `-u <fd>`         | use input from file descriptor $\text{fd}$, rather than standard input.                                                     |
+| option            | description                                                                                                          |
+| ----------------- |:-------------------------------------------------------------------------------------------------------------------- |
+| `-a <array_name>` | assign the input into an array *array_name*.                                                                         |
+| `-d <delimiter>`  | the first character in the string *delimiter* is used to indicate the end of input, rather than a newline character. |
+| `-e`              | use Readline to handle input. This permits input editing in the same manner as the command line.                     |
+| `-i <string>`     | use *string* as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |
+| `-n <n>`          | read *n* character of input, rather than an entire line.                                                             |
+| `-p <prompt>`     | display a prompt of input using the string *prompt*.                                                                 |
+| `-r`              | raw mode. Do not interpret backslash characters as escapes.                                                          |
+| `-s`              | silent mode. Do not echo characters to display as they are typed.                                                    |
+| `-t <n>`          | timeout. Terminate the input after *n* seconds. `read` return a non-zero exit status if an input times out.          |
+| `-u <fd>`         | use input from file descriptor *fd*, rather than standard input.                                                     |
 
 ### `IFS`
 
@@ -35,6 +35,7 @@ Normally, the shell performs word splitting on the input provided to `read`...Th
 
 ```bash
 #!/bin/bash
+
 
 FILE=/etc/passwd
 

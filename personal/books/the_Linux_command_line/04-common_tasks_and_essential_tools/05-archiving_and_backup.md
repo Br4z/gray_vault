@@ -43,7 +43,7 @@ ls -l foo.*
 ```
 
 | option |          long option           | description                                                                                                                                                                                                            |
-|:------ |:------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:------ |:------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-c`   |   `--stdout`, `--to-stdout`    | write output to standard output and keep the original files.                                                                                                                                                           |
 | `-d`   | `--decompress`, `--uncompress` | causes `gzip` to act like `gunzip`.                                                                                                                                                                                    |
 | `-f`   |           `--force`            | force compression even if a compressed version of the original file already exists.                                                                                                                                    |
@@ -52,7 +52,7 @@ ls -l foo.*
 | `-r`   |         `--recursive`          | if one or more arguments on the command line is a directory, recursively compress files contained within them.                                                                                                         |
 | `-t`   |            `--test`            | test the integrity of a compressed file.                                                                                                                                                                               |
 | `-v`   |          `--verbose`           | display verbose messages while compressing.                                                                                                                                                                            |
-| `-<n>` |                                | set amount of compression. $n$ is an integer in the range of $1$ (fastest, least compression) to $9$ (slowest, most compression). The values $1$ and $9$ may also be expressed as `--fast` and `--best`, respectively. |
+| `-<n>` |                                | set amount of compression. *n* is an integer in the range of $1$ (fastest, least compression) to $9$ (slowest, most compression). The values $1$ and $9$ may also be expressed as `--fast` and `--best`, respectively. |
 
 
 `gunzip` assumes that filenames end in the extension `.gz`, so it is not necessary to specify it, as long as the specified name is not in conflict with an existing uncompressed file.

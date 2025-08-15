@@ -32,17 +32,17 @@ It is rather arcane tool used to perform a simple task. It numbers lines. In its
 
 Each of the markup elements must appear alone on its own line. After processing a markup element, `nl` deletes it from the text stream.
 
-|    option     | meaning                                                                                                                                                                                                                                                                        |
-|:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `-b <style>`  | set body numbering to $\text{style}$, where $\text{style}$ is one of the following:<br>`a` = number all lines.<br>`t` = number only non-blank line. This is the default.<br>`n` = none.<br>`<p<regexp>` = number only lines matching basic regular expression $\text{regexp}$. |
-| `-f <style>`  | set footer numbering to $\text{style}$. The default is `n` (none).                                                                                                                                                                                                             |
-| `-h <style>`  | set header numbering to $\text{style}$. The default is `n` (none).                                                                                                                                                                                                             |
-|   `-i <n>`    | set numbering increment to $n$. The default is one.                                                                                                                                                                                                                            |
-| `-n <format>` | set numbering format to $\text{format}$, where $\text{format}$ is one of the following:<br>`ln` = left justified, without leading zeros.<br>`rn` = right justified, without leading zeros. This is the default.<br>`rz` = right justified, with leading zeros.                |
-|     `-p`      | do not reset page numbering at the beginning of each logical page.                                                                                                                                                                                                             |
-| `-s <string>` | add $\text{string}$ to the end of each line number to create a separator. The default is a single tab character.                                                                                                                                                               |
-|   `-v <n>`    | set first line number of each logical page to $n$. The default is one.                                                                                                                                                                                                         |
-|   `-w <n>`    | set the width of the line number field to $n$. The default is $6$.                                                                                                                                                                                                             |
+|    option     | meaning                                                                                                                                                                                                                                                   |
+|:-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-b <style>`  | set body numbering to *style*, where *style* is one of the following:<br>`a` = number all lines.<br>`t` = number only non-blank line. This is the default.<br>`n` = none.<br>`<p<regexp>` = number only lines matching basic regular expression *regexp*. |
+| `-f <style>`  | set footer numbering to *style*. The default is `n` (none).                                                                                                                                                                                               |
+| `-h <style>`  | set header numbering to *style*. The default is `n` (none).                                                                                                                                                                                               |
+|   `-i <n>`    | set numbering increment to *n*. The default is one.                                                                                                                                                                                                       |
+| `-n <format>` | set numbering format to *format*, where *format* is one of the following:<br>`ln` = left justified, without leading zeros.<br>`rn` = right justified, without leading zeros. This is the default.<br>`rz` = right justified, with leading zeros.          |
+|     `-p`      | do not reset page numbering at the beginning of each logical page.                                                                                                                                                                                        |
+| `-s <string>` | add *string* to the end of each line number to create a separator. The default is a single tab character.                                                                                                                                                 |
+|   `-v <n>`    | set first line number of each logical page to *n*. The default is one.                                                                                                                                                                                    |
+|   `-w <n>`    | set the width of the line number field to *n*. The default is $6$.                                                                                                                                                                                        |
 
 ```bash
 echo "SUSE    10.2   12/07/2006
@@ -84,7 +84,7 @@ sort -k 1,1 -k 2,2n distros.txt | sed -f distros_nl.sed | nl
 
 |  option  | meaning                                                                      |
 |:--------:|:---------------------------------------------------------------------------- |
-| `-w <n>` | break the input into segments of width $\text{n}$.                           |
+| `-w <n>` | break the input into segments of width *n*.                                  |
 |   `-s`   | break the line at the last available space before the line width is reached. |
 
 ### `fmt` a simple text formatter
@@ -98,10 +98,10 @@ By default, blank lines, spaces between words, and indentation are preserved in 
 |    option     | description                                                                                                                                                              |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |     `-c`      | operate in **crown margin mode**. This preserves the indentation of the first two lines of a paragraph. Subsequent line are aligned with indentation of the second line. |
-| `-p <string>` | format only those lines beginning with the prefix $\text{string}$. After formatting, the contents of $\text{string}$ are prefixed to each reformatted line.              |
+| `-p <string>` | format only those lines beginning with the prefix *string*. After formatting, the contents of *string* are prefixed to each reformatted line.                            |
 |     `-s`      | split-only mode. In this mode, lines will only be split to fit the specified column width. Short lines will not be joined to fill lines.                                 |
 |     `-u`      | perform uniform spacing. This will apply traditional "typewriter-style" formatting to text. This means a single space between words and two spaces between sentences.    |
-|   `-w <n>`    | format text to fit within a column $n$ characters wide.                                                                                                           |
+|   `-w <n>`    | format text to fit within a column *n* characters wide.                                                                                                                  |
 
 ### `pr` format text for printing
 
@@ -109,15 +109,15 @@ It is used to **paginate** text. When printing text, it is often desirable to se
 
 |  option  | meaning                     |
 |:--------:|:--------------------------- |
-| `-l <n>` | set the page length to $n$. |
-| `-w <n>` | set the page width to $n$.  |
+| `-l <n>` | set the page length to *n*. |
+| `-w <n>` | set the page width to *n*.  |
 
 ### `printf` format and print data
 
 It is not used for pipelines (it does not accept standard input) nor does it find frequent application directly on the command line (it is mostly used in scripts).
 
 ```
-print f [-v VAR] <string> <arguments>
+print f [-v VAR] STRING ARGUMENTS
 ```
 
 The formatted result is sent to standard output unless `-v` is specified in which case the formatted result is stored in a variable.

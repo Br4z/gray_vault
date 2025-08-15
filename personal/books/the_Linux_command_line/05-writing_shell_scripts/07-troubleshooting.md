@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-08-03"
+reviewed_on: "2025-08-04"
 ---
 
 # Troubleshooting
@@ -37,16 +37,16 @@ Place the following commands near the beginning of the script:
 
 - `set -u`: causes a script to terminate if there is an uninitialized variable.
 
-- `set -o PIPEFAIL`: causes a script to terminate if the final element in a pipeline fails.
+- `set -o pipefail`: causes a script to terminate if the final element in a pipeline fails.
 
 Using this features is not recommended. It is better to design proper error handling and not rely on `set -e` as a substitute for good coding practices.
 
-## ShellCheck is Your Friend
+## ShellCheck is your friend
 
 `shellcheck` performs analysis of shell scripts and will detect many kinds of faults and poor scripting practices.
 
 ```
-shellcheck <script>
+shellcheck SCRIPT
 ```
 
 It will automatically detect which shell dialect to use base on the shebang.

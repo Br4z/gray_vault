@@ -115,9 +115,9 @@ When given a sorted file (or standard input), it removes any duplicate lines and
 |:--------:|:-------------------:|:---------------------------------------------------------------------------------------------------------------------- |
 |   `-c`   |      `--count`      | output a list of duplicate lines preceded by the number of time the line occurs.                                       |
 |   `-d`   |    `--repeated`     | output only repeated lines, rather than unique lines.                                                                  |
-| `-f <n>` | `--skip-fileds=<n>` | ignore $n$ leading fields in each file. Unlike `sort`, `uniq` has no option for setting an alternate fields separator. |
+| `-f <n>` | `--skip-fileds=<n>` | ignore *n* leading fields in each file. Unlike `sort`, `uniq` has no option for setting an alternate fields separator. |
 |   `-i`   |   `--ignore-case`   |                                                                                                                        |
-| `-s <n>` | `--skip-chars=<n>`  | skip (ignore) the leading $n$ characters of each line.                                                                 |
+| `-s <n>` | `--skip-chars=<n>`  | skip (ignore) the leading *n* characters of each line.                                                                 |
 |   `-u`   |     `--unique`      | output only unique lines.                                                                                              |
 
 ## Slicing and dicing
@@ -126,12 +126,12 @@ When given a sorted file (or standard input), it removes any duplicate lines and
 
 It is used to extract a section of text from a line and output the extracted section to standard output.
 
-|   option    |      long option      | description                                                                                                                                  |
-|:-----------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-c <list>` | `--characters=<list>` | extract the portion of the line defined by $\text{list}$. The list may consist of one or more comma-separated numerical ranges.              |
-| `-f <list>` |   `--fields=<list>`   | extract one or more fields from the line as defined by $\text{list}$. The list may contain one or more fields ranges separated by commas.    |
-| `-d <char>` | `--delimiter=<char>`  | when `-f` is specified, use $\text{char}$ as the field delimiting character. By default, fields must be separated by a single tab character. |
-|             |    `--complement`     | extract the entire line of text, except for those portions specified by `-c` and/or `-f`.                                                    |
+|   option    |      long option      | description                                                                                                                           |
+|:-----------:|:---------------------:|:------------------------------------------------------------------------------------------------------------------------------------- |
+| `-c <list>` | `--characters=<list>` | extract the portion of the line defined by *list*. The list may consist of one or more comma-separated numerical ranges.              |
+| `-f <list>` |   `--fields=<list>`   | extract one or more fields from the line as defined by *list*. The list may contain one or more fields ranges separated by commas.    |
+| `-d <char>` | `--delimiter=<char>`  | when `-f` is specified, use *char* as the field delimiting character. By default, fields must be separated by a single tab character. |
+|             |    `--complement`     | extract the entire line of text, except for those portions specified by `-c` and/or `-f`.                                             |
 
 ```bash
 echo "SUSE	10.2	12/07/2006
@@ -208,12 +208,12 @@ tail /var/log/backup.log | rev | cut -c 2- | rev
 It compares two text files and displays the lines that are unique to each one and the line they have in common.
 
 ```
-comm <file> <file>
+comm FILE FILE
 ```
 
 It produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the line unique to the second file argument, and the third column contains the lines shred by both files.
 
-`-<n>` can be provide to suppress the $n$ column.
+`-<n>` can be provide to suppress the *n* column.
 
 > Multiple columns can be specified in one option.
 
@@ -222,7 +222,7 @@ It produces three columns of output. The first column contains lines unique to t
 Like `comm`, `diff` is used to detect the differences between files. However, `diff` is much more complex tool, supporting many outputs formats and the ability to process large collections if text files at once...
 
 ```
-diff <file> <file>
+diff FILE FILE
 ```
 
 ```bash
@@ -240,26 +240,26 @@ In the default output format, each group of changes is preceded by a **change co
 
 |    change     | description                                                                                                        |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------ |
-| `<r_1>a<r_2>` | append the lines at the position $r_2$ in the second file to the position $r_1$ in the first file.                 |
-| `<r_1>c<r_2>` | change (replace) the lines at position $r_1$ with the lines at the position $r_2$ in the second file.              |
-| `<r_1>d<r_2>` | delete the lines in the first file at position $r_1$, which would have appeared at range $r_2$ in the second file. |
+| `<r_1>a<r_2>` | append the lines at the position *r_2* in the second file to the position *r_1* in the first file.                 |
+| `<r_1>c<r_2>` | change (replace) the lines at position *r_1* with the lines at the position *r_2* in the second file.              |
+| `<r_1>d<r_2>` | delete the lines in the first file at position *r_1*, which would have appeared at range *r_2* in the second file. |
 
 When using **context** format (`-c`), we will se this:
 
 ```bash
 diff -c file_1.txt file_2.txt
-# *** file_1.txt2025-12-23 06:40:13.000000000 -0500 
-# --- file_2.txt2025-12-23 06:40:34.000000000 -0500 
-# *************** 
-# *** 1,4 **** 
-# - a 
-#   b 
-#   c 
-#   d 
-# --- 1,4 ---- 
-#   b 
-#   c 
-#   d 
+# *** file_1.txt2025-12-23 06:40:13.000000000 -0500
+# --- file_2.txt2025-12-23 06:40:34.000000000 -0500
+# ***************
+# *** 1,4 ****
+# - a
+#   b
+#   c
+#   d
+# --- 1,4 ----
+#   b
+#   c
+#   d
 # + e
 ```
 
@@ -274,13 +274,13 @@ The unified format is similar to the context format but is more concise. It is s
 
 ```bash
 diff -u file_1.txt file_2.txt
-# --- file_1.txt2008-12-23 06:40:13.000000000 -0500 
-# +++ file_2.txt2008-12-23 06:40:34.000000000 -0500 
-# @@ -1,4 +1,4 @@ 
-# -a 
-#  b 
-#  c 
-#  d 
+# --- file_1.txt2008-12-23 06:40:13.000000000 -0500
+# +++ file_2.txt2008-12-23 06:40:34.000000000 -0500
+# @@ -1,4 +1,4 @@
+# -a
+#  b
+#  c
+#  d
 # +e
 ```
 
@@ -360,39 +360,39 @@ Most commands in `sed` may be preceded by an **address**, which specifies which 
 
 |       address       | description                                                                                                                                                                                                                 |
 |:-------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|        `<n>`        | a line number where $n$ is a positive integer.                                                                                                                                                                              |
+|        `<n>`        | a line number where *n* is a positive integer.                                                                                                                                                                              |
 |         `$`         | the last line.                                                                                                                                                                                                              |
-|    `/<regexp>/`     | lines matching a POSIX basic regular expression. Optionally, the regular expression may be delimited by and alternate character, by specifying the expression with `\<c><regexp><c>`, where $c$ is the alternate character. |
-| `<addr_1>,<addr_2>` | a range of line from $\text{addr}_1$ to $\text{addr}_2$, inclusive.                                                                                                                                                         |
-|  `<first>~<step>`   | match the line represented by the number $\text{first}$, then each subsequent line at $\text{step}$ intervals.                                                                                                              |
-|   `<addr_1>,+<n>`   | math $\text{addr}_1$ an the following $n$ lines.                                                                                                                                                                            |
-|      `<addr>!`      | match all lines except $\text{addr}$.                                                                                                                                                                                       |
+|    `/<regexp>/`     | lines matching a POSIX basic regular expression. Optionally, the regular expression may be delimited by and alternate character, by specifying the expression with `\<c><regexp><c>`, where *c* is the alternate character. |
+| `<addr_1>,<addr_2>` | a range of line from *addr_1* to *addr_2*, inclusive.                                                                                                                                                                       |
+|  `<first>~<step>`   | match the line represented by the number *first*, then each subsequent line at *step* intervals.                                                                                                                            |
+|   `<addr_1>,+<n>`   | math *addr_1* an the following *n* lines.                                                                                                                                                                                   |
+|      `<addr>!`      | match all lines except *addr*.                                                                                                                                                                                              |
 
 `-n` (no auto-print) causes `sed` not to print every line which is the default.
 
-|          command           | description                                                                                                                                                                 |
-|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|            `=`             | output the current line number.                                                                                                                                             |
-|            `a`             | append text after the current line.                                                                                                                                         |
-|            `d`             | delete the current line.                                                                                                                                                    |
-|            `i`             | insert text in front of the current line.                                                                                                                                   |
-|            `p`             | print the current line.                                                                                                                                                     |
-|            `q`             | exit `sed` without processing any more lines. If the `-n` is not specified, output the current line.                                                                        |
-|            `Q`             | exit `sed` without processing any more lines.                                                                                                                               |
-| `s/<regex>/<replacement>/` | substitute the contents of $\text{replacement}$ wherever $\text{regexp}$ is found.                                                                                          |
-|    `y/<set_1>/<set_2>`     | perform transliteration by converting character from $\text{set}_1$ to the corresponding characters in $\text{set_2}$. `sed` requires that both sets be of the same length. |
+|          command           | description                                                                                                                                                   |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|            `=`             | output the current line number.                                                                                                                               |
+|            `a`             | append text after the current line.                                                                                                                           |
+|            `d`             | delete the current line.                                                                                                                                      |
+|            `i`             | insert text in front of the current line.                                                                                                                     |
+|            `p`             | print the current line.                                                                                                                                       |
+|            `q`             | exit `sed` without processing any more lines. If the `-n` is not specified, output the current line.                                                          |
+|            `Q`             | exit `sed` without processing any more lines.                                                                                                                 |
+| `s/<regex>/<replacement>/` | substitute the contents of *replacement* wherever *regexp* is found.                                                                                          |
+|    `y/<set_1>/<set_2>`     | perform transliteration by converting character from *set_1* to the corresponding characters in *set_2*. `sed` requires that both sets be of the same length. |
 
 ```bash
 sed 's/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/' distros.txt # Convert date from MM/DD/YYYY to YYYY-MM-DD format
 ```
 
 ```bash
-echo '# sed script to produce Linux distributions report 
+echo '# sed script to produce Linux distributions report
 1 i\
 \
 Linux distributions report\
 
-s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/ 
+s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/
 y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/' > distros.sed
 sed -f distros.sed distros.txt
 ```
@@ -400,7 +400,7 @@ sed -f distros.sed distros.txt
 ### `aspell`
 
 ```
-aspell check <text file>
+aspell check TEXT_FILE
 ```
 
 `aspell` is interactive in the check mode. At the top of the display, we see our text with a suspiciously spelled word highlighted. In the middle, we see ten spelling suggestions numbered zero through nine, followed by a list of other possible actions. Finally, at the bottom, we see a prompt ready to accept our choice.

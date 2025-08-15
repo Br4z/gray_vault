@@ -44,12 +44,12 @@ The formatting of the listing is as follows `<device> on <mount point> type <fil
 After inserting a $4 \text{GB}$ flash drive in a Ubuntu 22.04 system.
 
 ```bash
-mount | grep /dev/sd 
+mount | grep /dev/sd
 
 # dev/sda2 on / type ext4 (rw,relatime,errors=remount-ro)
 # /dev/sda1 on /boot/efi type vfat  (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso88591,shortname=mixed,errors=remount-ro)
 # /dev/sdb1 on /home type ext4 (rw,relatime)
-# /dev/sdc on /media/me/C911-C314 type vfat (rw,nosuid,nodev,relatime,  uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso885 9-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro) 
+# /dev/sdc on /media/me/C911-C314 type vfat (rw,nosuid,nodev,relatime,  uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso885 9-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro)
 ```
 
 The disk has been mounted on `/media/me/C911-C314`, path that can be change with the following commands:
@@ -78,7 +78,7 @@ Unmounting a device entails writing all the remaining data to the device so that
 | `/dev/fd*` | Floppy disk drives.                                                                         |
 | `/dev/hd*` | IDE (PATA) disks on older systems.                                                          |
 | `/dev/lp*` | printers.                                                                                   |
-| `/dev/sd*` | SCSI disks. On modern Linux systems, the kernel treats all disk-like devices as this type. |
+| `/dev/sd*` | SCSI disks. On modern Linux systems, the kernel treats all disk-like devices as this type.  |
 | `/dev/sr*` | optical drives (CD/DVD readers and burners).                                                |
 
 Using `tail -f` to monitor the `/var/log/messages` or `/var/log/syslog` file, we can know the name of a removable device when it is attached.

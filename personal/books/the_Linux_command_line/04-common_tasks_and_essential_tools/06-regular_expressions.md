@@ -222,10 +222,10 @@ The `{` and `}` metacharacters are used to express minimum and maximum numbers o
 
 |  specifier  | meaning                                                                               |
 |:-----------:|:------------------------------------------------------------------------------------- |
-|   `{<n>}`   | math the preceding element if it occurs exactly $n$ times.                            |
-| `{<n>,<m>}` | math the preceding element if it occurs at least $n$ time but no more than $m$ times. |
-|  `{<n>,}`   | match the preceding element if it occurs $n$ or more times.                           |
-|  `{,<m>}`   | math the preceding element if it occur no more than $m$ times.                        |
+|   `{<n>}`   | math the preceding element if it occurs exactly *n* times.                            |
+| `{<n>,<m>}` | math the preceding element if it occurs at least *n* time but no more than *m* times. |
+|  `{<n>,}`   | match the preceding element if it occurs *n* or more times.                           |
+|  `{,<m>}`   | math the preceding element if it occur no more than *m* times.                        |
 
 ```
 ^\(?[0-9][0-9][0-9]\)?  [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$

@@ -108,7 +108,7 @@ Recent versions of `bash` provide a second, more streamlined method for performi
 
 It reads one or more files and copies them to standard output.
 
-```  
+```
 cat [FILE...]
 ```
 
@@ -203,7 +203,7 @@ ls /bin /usr/bin | sort | uniq | wc -l # See the number of items we have in our 
 #### `grep` print lines matching a pattern
 
 ```
-grep pattern [file...]
+grep PATTERN [FILE...]
 ```
 
 When `grep` encounters a "pattern" in the file, it prints out the lines containing it...
@@ -240,7 +240,7 @@ The `head` command prints the first $10$ lines of a file, and the `tail` command
 
 > The number of lines can be adjusted with the `-n` option.
 
-The `-n` option when used with head allows a negative value which causes all but the last $n$ lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first $n$ lines to be output.
+The `-n` option when used with head allows a negative value which causes all but the last *n* lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first *n* lines to be output.
 
 `tail` has an option that allows you to view the file in real time (`-f`). This is incredibly useful when you are monitoring log files.
 
