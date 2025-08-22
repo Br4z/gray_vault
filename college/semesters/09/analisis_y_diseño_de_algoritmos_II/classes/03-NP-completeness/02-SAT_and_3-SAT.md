@@ -1,12 +1,12 @@
 ---
-reviewed_on: "2025-07-31"
+reviewed_on: "2025-08-03"
 ---
 
 # $\text{SAT}$ and $\text{3-SAT}$
 
 ## $\text{3-SAT}$
 
-La definición de este problema es parecida a la de [[college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/01-classification_of_computational_problems#Definición|SAT]], solo que las cláusula de una instancia de $\text{3-SAT}$ contienen exactamente $3$ literales.
+![[personal/computer_science/problems/SAT#Special case $3$-SAT|$3$-SAT]]
 
 ## $\text{3-SAT} \in \mathrm{NP}$
 

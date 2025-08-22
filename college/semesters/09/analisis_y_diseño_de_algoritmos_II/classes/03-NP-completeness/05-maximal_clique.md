@@ -1,14 +1,10 @@
 ---
-reviewed_on: "2025-07-31"
+reviewed_on: "2025-08-03"
 ---
 
 # Maximal clique
 
-## Definición (clique máximo)
-
-Un clique es un subconjunto de vértices de un grafo en el que cada par de vértices está conectado por una arista (un subgrafo completo).
-
-Formalmente, la entrada es un grafo no dirigido $G = (V,E)$ y un entero $j \leq \card{ V }$ y su salida es $1$ si existe un subconjunto $V^\prime$ de $V$ tal que $\card{ V^\prime } = j$ y $\forall u,v \in V^\prime,u \neq v \implies e(u,v) \in E$.
+![[personal/computer_science/problems/maximal_clique|Maximal clique]]
 
 ## $\text{MC} \in \mathrm{NP}$
 

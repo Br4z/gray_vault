@@ -47,8 +47,6 @@ $$
 
 	$$
 
-
-
 ## 2
 
 Halle dos funciones lineales cuyas gráficas se interceptan perpendicularmente en el punto $P(-3,2)$, tal que una de ellas pase por el punto $Q(1,1)$.
@@ -218,7 +216,6 @@ $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
 
 2. Si el turista desea recorrer $20 \text{km}$, ¿qué empresa le convendría más?
 
-
 	Suponiendo que dicha distancia se recorre en un dia.
 
 	$$
@@ -257,7 +254,7 @@ $$
 $$
 \begin{align}
 	& 2,000 = 35 x + 40 y \\
-	& y = \frac{ 2,000 - 35 x} { 40 } \\
+	& y = \frac{ 2,000 - 35 x } { 40 } \\
 	& x = 50 - \frac{ 7 }{ 8 } y
 \end{align}
 $$

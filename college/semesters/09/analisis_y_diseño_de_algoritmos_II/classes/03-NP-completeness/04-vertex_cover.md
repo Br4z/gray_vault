@@ -1,14 +1,10 @@
 ---
-reviewed_on: "2025-07-31"
+reviewed_on: "2025-08-03"
 ---
 
 # Vertex cover
 
-## Definición (vertex cover)
-
-Una instancia es un grafo $G = (V,E)$ y un entero $k \leq \card{ V }$. La idea es encontrar el subconjunto de a lo sumo $k$ vértices, donde cada arista $e \in E$ tiene al menos uno de sus vertices en el subconjunto.
-
-Formalmente, la entrada es un grafo no dirigido $G = (V,E)$ y un entero $k \leq \card{ V }$ y su salida es $1$ si existe un subconjunto $V^\prime$ de $V$ tal que $\card{ V^\prime } \leq k$ y $\forall e(u,v) \in E$ ($u \in V^\prime \lor v \in V^\prime$)
+![[personal/computer_science/problems/vertex_cover|Vertex over]]
 
 ## $\text{VC} \in \mathrm{NP}$
 

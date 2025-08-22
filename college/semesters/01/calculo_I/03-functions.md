@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-19"
+reviewed_on: "2025-08-15"
 ---
 
 # Functions
@@ -8,7 +8,7 @@ reviewed_on: "2025-01-19"
 
 Considere las gráficas de las funciones $f$ y $g$.
 
-![graphs](../assets/calculo_I/2_03_01-graphs.jpg)
+![graphs](college/semesters/01/assets/calculo_I/2_03_01-graphs.jpg)
 
 1. Determine él
 
@@ -208,7 +208,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
 	$$
 
 	$$
-	g^{ -1 }(x) = \frac{ x^2 + 1 }{ 2 } \quad x \in \mathbb{R}
+	g^{ -1 }(x) = \frac{ x^2 + 1 }{ 2 } \quad x \in \mathbb{ R }
 	$$
 
 ## 5
@@ -226,10 +226,8 @@ Sea $f(x) = \frac{ x^2 }{ x - 2 }$ y $g(x) = \frac{ x^2 - 4 }{ x^2 + 2 }$. Deter
 	$$
 
 	$$
-		x \in (\mathbb{R} - \{2\})
+		x \in (\mathbb{ R } - \{2\})
 		$$
-
-
 
 2. $f o f$.
 
@@ -253,7 +251,7 @@ Sea $f(x) = \frac{ x^2 }{ x - 2 }$ y $g(x) = \frac{ x^2 - 4 }{ x^2 + 2 }$. Deter
 	$$
 
 	$$
-	x \in \mathbb{R} - \{2\}
+	x \in \mathbb{ R } - \{2\}
 	$$
 
 ## 6
@@ -313,7 +311,7 @@ Se dispone de $1,000$ metros de cerca para construir un corral rectangular, part
 
 TODO: redo the image.
 
-![corral](../assets/calculo_I/2_03_02-corral.jpg)
+![corral](college/semesters/01/assets/calculo_I/2_03_02-corral.jpg)
 
 $$
 \begin{align}

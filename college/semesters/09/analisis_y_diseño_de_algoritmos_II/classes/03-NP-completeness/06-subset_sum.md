@@ -4,11 +4,7 @@ reviewed_on: "2025-08-02"
 
 # Subset sum
 
-## Definición
-
-Una instancia de este problema consiste en un conjunto $S$ de números naturales y un valor objetivo $t$. El problema de decisión pregunta si existe un subconjunto $S^\prime \subseteq S$ cuyos elementos sumen exactamente $t$.
-
-Formalmente, la entrada en un conjunto $S \subseteq \mathbb{ N }$ y un número $t \in \mathbb{ N }$ y la salida es $1$ (verdadero) si existe un subconjunto $S^\prime \subseteq S$ tal que $\sum_{ s \in S^\prime } s = t$, y $0$ (falso) en caso contrario.
+![[personal/computer_science/problems/subset_sum|Subset sum]]
 
 ## $\text{SS} \in \mathrm{NP}$
 

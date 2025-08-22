@@ -42,9 +42,9 @@ Podemos encontrarnos tres casos:
 
 1. $\theta \to 0$: $\cos(\theta) \to 1$ (vectores similares).
 
-2. $\theta \to 90\degree$: $\cos(\theta) \to 0$ (vectores ortogonales).
+2. $\theta \to 90 \degree$: $\cos(\theta) \to 0$ (vectores ortogonales).
 
-3. $\theta \to 180\degree$: $\cos(\theta) \to -1$ (vectores opuestos).
+3. $\theta \to 180 \degree$: $\cos(\theta) \to -1$ (vectores opuestos).
 
 ## Tipos
 

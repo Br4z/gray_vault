@@ -136,7 +136,7 @@ Resuelva las siguientes ecuaciones:
 		\begin{align}
 			& x \geq -2         & x \geq 4 \\
 			& x \in [-2,\infty) & x \in [4,\infty) \\
-			x \in [4,\infty) \\
+			& x \in [4,\infty)
 		\end{align}
 		$$
 
@@ -156,7 +156,7 @@ Resuelva las siguientes ecuaciones:
 		\begin{align}
 			& x < -2             & x < 4 \\
 			& x \in (-\infty,-2) & x \in (-\infty,4) \\
-			x \in [-\infty,-2) \\
+			& x \in [-\infty,-2) \\
 		\end{align}
 		$$
 
@@ -176,7 +176,7 @@ Resuelva las siguientes ecuaciones:
 		\begin{align}
 			& x \geq -2         & x < 4 \\
 			& x \in [-2,\infty) & x \in (-\infty,4) \\
-			x \in [-2,4)
+			& x \in [-2,4)
 		\end{align}
 		$$
 
@@ -225,7 +225,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& x - 5 < 0 & x + 3 > 0 \\
 			& x < 5     & x > -3 \\
-			x \in (-3,5) 
+			& x \in (-3,5) 
 		\end{align}
 		$$
 
@@ -235,7 +235,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& x - 5 > 0 & x + 3 < 0 \\
 			& x > 5     & x < -3 \\
-			x \in \emptyset
+			& x \in \emptyset
 		\end{align}
 		$$
 
@@ -259,7 +259,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& -x + 15 \geq 0 & x - 4 > 0 \\
 			& x \leq 15      & x > 4 \\
-			x \in (4,15]
+			& x \in (4,15]
 		\end{align}
 		$$
 
@@ -269,7 +269,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& -x + 15 < 0 & x - 4 < 0 \\
 			& x > 15      & x < 4 \\
-			x \in \emptyset
+			& x \in \emptyset
 		\end{align}
 		$$
 
@@ -322,7 +322,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& x \geq -3         & x \geq 1 \\
 			& x \in [-3,\infty) & x \in [1,\infty) \\
-			x \in [1,\infty)
+			& x \in [1,\infty)
 		\end{align}
 		 \\[10 pt]
 		$$
@@ -343,8 +343,8 @@ Resuelva las siguientes inecuaciones:
 		$$
 		\begin{align}
 			& 3 x < -3             & x < 1 \\
-			& x \in (-\infty,-3) & x \in (-\infty, 1) \\
-			x \in (-\infty,-3)
+			& x \in (-\infty,-3)   & x \in (-\infty, 1) \\
+			& x \in (-\infty,-3)
 		\end{align}
 		$$
 
@@ -365,7 +365,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& x \geq -3         & x < 1 \\
 			& x \in [-3,\infty) & x \in (-\infty,1) \\
-			x \in [-3,1)
+			& x \in [-3,1)
 		\end{align}
 		$$
 

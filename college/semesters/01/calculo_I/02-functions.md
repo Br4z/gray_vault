@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-01-19"
+reviewed_on: "2025-08-15"
 ---
 
 # Functions
@@ -36,8 +36,7 @@ Determine el dominio de las siguientes funciones:
 		\begin{align}
 			& y^2 + 2 y - 3 \quad y = x^2 \\
 			& (y + 3) (y - 1) \neq 0 \\
-			& (x^2 + 3) (x^2 - 1) \neq 0 \\
-			
+			& (x^2 + 3) (x^2 - 1) \neq 0
 		\end{align}
 		$$
 
@@ -77,7 +76,7 @@ Determine el dominio de las siguientes funciones:
 			\begin{align}
 				& x > 3            & x < \frac{ 1 }{ 2 } \\
 				& x \in (3,\infty) & x \in \left (-\infty,\frac{ 1 }{ 2 } \right ) \\
-				x \in \emptyset
+				& x \in \emptyset
 			\end{align}
 			$$
 
@@ -87,7 +86,7 @@ Determine el dominio de las siguientes funciones:
 			\begin{align}
 				& x < 3             & x > \frac{ 1 }{ 2 } \\
 				& x \in (-\infty,3) & x \in \left (\frac{ 1 }{ 2 },\infty \right ) \\
-				x \in \left (\frac{ 1 }{ 2 },3 \right )
+				& x \in \left (\frac{ 1 }{ 2 },3 \right )
 			\end{align}
 			$$
 
@@ -295,7 +294,7 @@ Determine el rango de las siguientes funciones:
 		\begin{align}
 			& x \leq 0          & x \geq 6 \\
 			& x \in [-\infty,0] & x \in [6,\infty) \\
-			x \in \emptyset
+			& x \in \emptyset
 		\end{align}
 		$$
 
@@ -337,18 +336,19 @@ Podemos usar el criterio de la línea vertical para determinar si la gráfica co
 
 > Un $x$ no puede tener más de una imagen asociada a él.
 
-![graphs](../assets/calculo_I/2_02_01-graphs.jpg)
+![graphs](college/semesters/01/assets/calculo_I/2_02_01-graphs.jpg)
 
 ## 6
 
 Dada la función $f$.
 
 $$
-f(x) = \begin{cases}
-	x^2 - 4 & -2 \leq x < -1 \\
-	\frac{ 1 }{ x } & 0 < x < 3 \\
-	\sqrt{ x + 1 }  & x \geq 3
-\end{cases}
+f(x) = 
+	\begin{cases}
+		x^2 - 4         & -2 \leq x < -1 \\
+		\frac{ 1 }{ x } & 0 < x < 3 \\
+		\sqrt{ x + 1 }  & x \geq 3
+	\end{cases}
 $$
 
 1. Determine el dominio y rango de $f$.
@@ -423,13 +423,13 @@ $$
 
 3. Grafique $f(x)$.
 
-	![graph](../assets/calculo_I/2_02_02-graph.svg)
+	![graph](college/semesters/01/assets/calculo_I/2_02_02-graph.svg)
 
 ## 7
 
 Un recipiente rectangular sin tapa tiene volumen de $20 \text{m}^3$, la longitud de su base es el doble de su ancho. El material para la base cuesta $6$ dólares por metro cuadrado y para las caras $4$ dólares. Exprese el costo del material como función del ancho de la base. Indique el dominio de la función.
 
-![rectangular container](../assets/calculo_I/2_02_03-rectangular_container.svg)
+![rectangular container](college/semesters/01/assets/calculo_I/2_02_03-rectangular_container.svg)
 
 $$
 a = a \quad b = 2 a
@@ -456,7 +456,7 @@ $$
 
 Se debe construir una caja abierta a partir de un trozo rectangular de cartón, de $12$ pulgadas de ancho y $20$ pulgadas de largo, recortando cuadrados de lados iguales $x$ en cada una de las esquinas y doblando los lados. Exprese el volumen de la caja en función de $x$, indicando su dominio.
 
-![problem](../assets/calculo_I/2_02_04-figure.svg)
+![problem](college/semesters/01/assets/calculo_I/2_02_04-figure.svg)
 
 $$
 \text{volumen} = a l h = v \quad h = x
@@ -520,7 +520,7 @@ $$
 
 Un cilindro circular recto de radio $r$ está inscrito en una esfera de radio $2 r$. Determine una fórmula para el volumen $V$ del cilindro en términos de $r$.
 
-![problem](../assets/calculo_I/2_02_05-figure.svg)
+![problem](college/semesters/01/assets/calculo_I/2_02_05-figure.svg)
 
 $$
 \text{volumen} = \pi r^2 h = v \quad (1) \\
@@ -544,7 +544,7 @@ $$
 
 Uno de los catetos de un triángulo rectángulo tiene longitud $6 \text{cm}$. Exprese la longitud de la altura perpendicular a la hipotenusa como función de la longitud de la hipotenusa.
 
-![problem](../assets/calculo_I/2_02_06-figure.svg)
+![problem](college/semesters/01/assets/calculo_I/2_02_06-figure.svg)
 
 $$
 \begin{align}

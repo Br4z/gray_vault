@@ -108,8 +108,4 @@ Si podemos reducir un problema $C$ que ya sabemos que es $\mathrm{NP}\text{-comp
 
 También conocido como el problema de satisfactibilidad booleana, fue el **primer problema que se demostró ser $\mathrm{NP}\text{-complete}$**. Esta demostración fue realizada por Stephen Cook en $1971$.
 
-### Definición
-
-El problema consiste en un conjunto $V$ de $n$ variables booleanas $v_1,v_2,\dots,v_n$ y un conjunto $C$ de $m$ cláusulas $c_1,c_2,\dots,c_m$ en **forma normal conjuntiva (FNC)**. Se busca si existen valores de las variables que hagan que la expresión sea verdadera.
-
-Gracias a la demostración de Cook, podemos usarlo como "semilla" para probar otros problemas que también son $\mathrm{NP}\text{-complete}$, usando la técnica de reducción.
+![[personal/computer_science/problems/SAT|SAT]]
