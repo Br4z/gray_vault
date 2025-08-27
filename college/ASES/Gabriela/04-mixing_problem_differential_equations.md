@@ -4,7 +4,7 @@ reviewed_on: "2025-02-01"
 
 # Mixing problem differential equations
 
-In a room containing $50 \text{m}^3$ of air with a CO content of $0.2\%$, pure air is made to flow in at a rate of $2 \text{m}^3$ per minute. The well-mixed air flows out of the room at the same rate of $2 \text{m}^3$ per minute. If $x(t)$ is the amount of CO in cubic meters after $t$ minutes, after how many minutes will the amount of CO in the room have been reduced to half?
+In a room containing $50$ cubic meters of air with a CO content of $0.2\%$, pure air is made to flow in at a rate of $2$ cubic meters per minute. The well-mixed air flows out of the room at the same rate of $2$ cubic meters per minute. If $x(t)$ is the amount of CO in cubic meters after $t$ minutes, after how many minutes will the amount of CO in the room have been reduced to half?
 
 ---
 
@@ -90,6 +90,6 @@ $$
 	& \frac{ 1 }{ 10 } e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 20 } \\
 	& e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 2 } \\
 	& -\frac{ 1 }{ 25 } t = \ln \frac{ 1 }{ 2 } \\
-	& t = -25 \ln \frac{ 1 }{ 2 } \approx 17.33 \text{ min }
+	& t = -25 \ln \frac{ 1 }{ 2 } \approx 17.33 \; \text{min}
 \end{align}
 $$

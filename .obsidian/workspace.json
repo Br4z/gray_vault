@@ -4,16 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "634b2f954a217d2d",
+        "id": "d2244f9a527d802d",
         "type": "split",
         "children": [
           {
-            "id": "7d6842208f2b8d3d",
+            "id": "af5b9543e216d6d3",
             "type": "tabs",
-            "dimension": 53.160919540229884,
             "children": [
               {
-                "id": "3902bf823152142f",
+                "id": "70c04c36a93e8490",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -29,12 +28,11 @@
             ]
           },
           {
-            "id": "049a3f86ecce5189",
+            "id": "678d154e0ed33207",
             "type": "tabs",
-            "dimension": 46.839080459770116,
             "children": [
               {
-                "id": "6761c02ba3fd0ecf",
+                "id": "1b82e1ba73eeaae3",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -229,10 +227,27 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3902bf823152142f",
+  "active": "70c04c36a93e8490",
   "lastOpenFiles": [
-    "college/thesis/initial_proposal.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/04-searching_for_files.md",
     "college/semesters/01/calculo_I/07-trigonometric_functions.md",
+    "college/semesters/01/assets/calculo_I/2_07_02-problem.jpg",
+    "college/semesters/01/assets/calculo_I/2_07_02-graph.jpg",
+    "college/semesters/01/assets/calculo_I/Screenshot 2025-08-26 190650.jpg",
+    "college/semesters/01/calculo_I/Screenshot 2025-08-26 190650.jpg",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/07-text_processing.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-strings_and_numbers.md.md",
+    "personal/books/the_Linux_command_line/03-configuration_and_the_environment/03-customizing_the_prompt.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/04-flow_control-branching_with_if.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/03-top-down_design.md",
+    "personal/books/the_Linux_command_line/05-writing_shell_scripts/10-flow_control-looping_with_for.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipulating_files_and_directories.md.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/03-exploring_the_system.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it.md",
+    "personal/post_like/Arch_Linux_installation.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
+    "personal/post_like/connection_to_GitHub_via_SSH.md",
+    "college/thesis/initial_proposal.md",
     "college/thesis",
     "college/semesters/01/calculo_I/06-exponential_and_logarithmic_function.md",
     "journal.md",
@@ -247,21 +262,8 @@
     "personal/math/functions/properties.md",
     "college/semesters/01/calculo_I/03-functions.md",
     "college/semesters/01/calculo_I/04-linear_and_quadratic_function.md",
-    "college/semesters/01/calculo_I/05-polynomial_functions.md",
     "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_06_01-graph.svg",
-    "college/semesters/01/calculo_I/02-functions.md",
-    "college/semesters/index.md",
-    "college/semesters/01/calculo_I/01-real_numbers.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-strings_and_numbers.md.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/04-manipulating_files_and_directories.md.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/13-exotica.md",
-    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/06-regular_expressions.md",
-    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/02-storage_media.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/02-starting_a_project.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/08-flow_control-branching_with_case.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/12-arrays.md",
     "college/ASES/assets/Sara/matematicas_basicas/03_02-problem.png",
     "college/ASES/assets/Sara/matematicas_basicas/03_01-problem.png",
     "college/ASES/assets/Sara/matematicas_basicas",
@@ -272,10 +274,6 @@
     "college/ASES/Hector",
     "college/ASES/Juan",
     "college/ASES/Gabriela",
-    "college/ASES/assets/Jairo/01_01-velocity_graph.jpg",
-    "college/ASES/assets/archived/Sara/matematicas_basicas/03_02-problem.png",
-    "college/ASES/assets/archived/Sara/matematicas_basicas/03_01-problem.png",
-    "personal/math/assets/imaginary_number/rotations_on_the_complex_plane.svg",
-    "college/ASES/assets/Jairo/01_03-acceleration_graph.jpg"
+    "college/ASES/assets/Jairo/01_01-velocity_graph.jpg"
   ]
 }

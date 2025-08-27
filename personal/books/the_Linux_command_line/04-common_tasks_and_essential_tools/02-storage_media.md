@@ -41,7 +41,7 @@ The formatting of the listing is as follows `<device> on <mount point> type <fil
 
 ---
 
-After inserting a $4 \text{GB}$ flash drive in a Ubuntu 22.04 system.
+After inserting a $4$ GB flash drive in a Ubuntu 22.04 system.
 
 ```bash
 mount | grep /dev/sd

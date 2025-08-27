@@ -16,8 +16,8 @@ La idea clave es representar las relaciones de incidencia ($\text{vértices} \ti
 
 $$
 M[v,e] = \begin{cases}
-	& 1 & \text{ si el vértice $v$ es incidente con la arista $e$} \\
-	& 0 & \text{ si el vértice $v$ no es incidente con la arista $e$}
+	& 1 & \text{si el vértice $v$ es incidente con la arista $e$} \\
+	& 0 & \text{si el vértice $v$ no es incidente con la arista $e$}
 	\end{cases}
 $$
 
@@ -30,7 +30,7 @@ Agregamos una fila por cada arista, con $1$'s en la diagonal (sin tener en cuent
 $$
 \begin{array}{|l|c|c|c|c|}
 	\hline \\
-	             & e_1    & e_2    & \dots  & e_\card{ E } \\ 
+	             & e_1    & e_2    & \dots  & e_\card{ E } \\
 	\hline \\
 	v_1          & M[1,1]              & M[1,2]                       & \dots  & M[1,\card{ E }] \\
 	v_2          & M[2,1]              & M[2,2]              & \dots  & M[2,\card{ E }] \\
@@ -41,7 +41,7 @@ $$
 	e_2          & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + 2,\card{ E }] \\
 	\vdots       & \vdots              & \vdots              & \vdots & \vdots \\
 	e_\card{ E } & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + \card{ E },\card{ E }] \\
-	             & 2                   & 2                   & \dots  & 2 \\ 
+	             & 2                   & 2                   & \dots  & 2 \\
 	\hline
 \end{array}
 $$

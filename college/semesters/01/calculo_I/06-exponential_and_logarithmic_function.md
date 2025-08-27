@@ -72,7 +72,7 @@ Halle el dominio y rango de las siguientes funciones:
 1. $f(x) = -3 + 2^{ x + 1 }$.
 
 	$$
-	D_f \in \mathbb{R}
+	D_f \in \mathbb{ R }
 	$$
 
 	$$
@@ -86,7 +86,7 @@ Halle el dominio y rango de las siguientes funciones:
 2. $f(x) = -2 + \left ( \frac{ 1 }{ 3 } \right )^{ x + 1 }$.
 
 	$$
-	D_f \in \mathbb{R}
+	D_f \in \mathbb{ R }
 	$$
 
 	$$
@@ -149,7 +149,7 @@ Calcule el valor de las siguientes expresiones:
 
 	$$
 	\begin{align}
-		& = (9^{-2})^{ \log_9 2 } \\
+		& = (9^{ -2 })^{ \log_9 2 } \\
 		& = 9^{ -2 \log_9 2 } \\
 		& = 9^{ \log_9 2^{ -2 } } \\
 		& = 2^{ -2 }
@@ -182,7 +182,7 @@ Calcule el valor de las siguientes expresiones:
 Simplifique al máximo la siguiente expresión:
 
 $$
-\log 2 + 16 \log \frac{ 16 }{ 15 } + 12 \log \frac{ 25 }{ 24 } + 7 \log \frac{ 81 }{ 82 } 
+\log 2 + 16 \log \frac{ 16 }{ 15 } + 12 \log \frac{ 25 }{ 24 } + 7 \log \frac{ 81 }{ 82 }
 $$
 
 $$
@@ -212,7 +212,7 @@ Escriba las siguientes expresiones como un solo logaritmo:
 	$$
 	\begin{align}
 		& = \ln 2^x + \ln (x - 1)^5 + \ln (x - 3)^{ -2 } \\
-		& = \ln {2^x (x - 1)^5 (x - 3)^{ -2 } }
+		& = \ln{ 2^x (x - 1)^5 (x - 3)^{ -2 } }
 	\end{align}
 	$$
 
@@ -306,7 +306,7 @@ Resuelva las siguientes ecuaciones:
 		& (w - 7) (w + 2) = 0 \quad w_1 = 7 \; w_2 = -2 \\
 		& w_1 \quad 7 = e^x \\
 		& \ln 7 = x \\
-		& w_2 \quad -2 = e^x \text{ algo imposible}
+		& w_2 \quad -2 = e^x \; \text{algo imposible}
 	\end{align}
 	$$
 
@@ -358,7 +358,7 @@ Resuelva las siguientes ecuaciones:
 		& x^2 + 4 = 10^3 (x^2 - 4) \\
 		& x^2 = \frac{ 4006 }{ 999 } \\
 		& x = \pm \sqrt{ \frac{ 4006 }{ 999 } } \\
-		& x = \sqrt{ \frac{ 4006 }{ 999 } } \text{ por la condición inicial}
+		& x = \sqrt{ \frac{ 4006 }{ 999 } } \; \text{por la condición inicial}
 	\end{align}
 	$$
 
@@ -480,7 +480,7 @@ $$
 3. ¿Cuántas bacterias existen después de $40$ minutos?
 
 	$$
-	40 \text{ minutos} = \frac{ 2 }{ 3 } \text{ horas}
+	40 \; \text{minutos} = \frac{ 2 }{ 3 } \; \text{horas}
 	$$
 
 	$$

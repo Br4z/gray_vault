@@ -128,9 +128,9 @@ $$
 
 ## 7
 
-Debe seleccionar la medición más confiable de una pieza de metal que idealmente debería tener $100 \text{cm}$ de longitud. Cada medición se realizó con un instrumento diferente con distintos niveles de incertidumbre. A continuación se presentan las mediciones de la pieza de metal junto con el instrumento utilizado para cada una:
+Debe seleccionar la medición más confiable de una pieza de metal que idealmente debería tener $100$ centímetros de longitud. Cada medición se realizó con un instrumento diferente con distintos niveles de incertidumbre. A continuación se presentan las mediciones de la pieza de metal junto con el instrumento utilizado para cada una:
 
-### $99.7 \pm 0.1 \text{cm}$
+### $99.7 \pm 0.1$ centímetros
 
 $$
 99.6 \leq V_r \leq 99.8 \\[10 pt]
@@ -140,7 +140,7 @@ $$
 2 * 10^{ -3 } \leq E_r \leq 4 * 10^{ -3 }
 $$
 
-### $100.2 \pm 0.05 \text{cm}$
+### $100.2 \pm 0.05$ centímetros
 
 $$
 100.15 \leq V_r \leq 100.25 \\[10 pt]
@@ -150,7 +150,7 @@ $$
 1.5 * 10^{ -3 } \leq E_r \leq 2.5 * 10^{ -3 }
 $$
 
-### $100.0 \pm 0.02 \text{cm}$
+### $100.0 \pm 0.02$ centímetros
 
 $$
 99.98 \leq V_r \leq 100.02 \\[10 pt]
@@ -158,7 +158,7 @@ $$
 E_a = 0.02 \quad E_r = 2 * 10^{ -4 }
 $$
 
-### $99.9 \pm 0.03 \text{cm}$
+### $99.9 \pm 0.03$ centímetros
 
 $$
 99.87 \leq V_r \leq 99.93 \\[10 pt]
@@ -168,7 +168,7 @@ $$
 7 * 10^{ -4 } \leq E_r \leq 1.3 * 10^{ -3 }
 $$
 
-### $100.1 \pm 0.01 \text{cm}$
+### $100.1 \pm 0.01$ centímetros
 
 $$
 100.09 \leq V_r \leq 100.11 \\[10 pt]
@@ -184,7 +184,7 @@ La mejor medida es la $3$, pues se tiene certeza de su $E_a$ y $E_r$, además de
 
 ## 8
 
-Un paralelepípedo rectangular tiene dimensiones de $3 \text{cm}$, $4 \text{cm}$ y $5 \text{cm}$, medidas con una precisión de $\pm 0.5 \text{cm}$. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo?  ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
+Un paralelepípedo rectangular tiene dimensiones de $3$ centímetros, $4$ centímetros y $5$ centímetros, medidas con una precisión de $\pm 0.5$ centímetros. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo?  ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
 
 $$
 V = l * w * h \quad A = 2 (l w + l h + w h)

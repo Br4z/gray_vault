@@ -47,7 +47,7 @@ Esta estrategia es **completa** y **óptima** si se cumple que la heurística $h
 > Las heurísticas admisibles se conocen como heurísticas **optimistas**.
 
 $$
-h(n) \leq \text{ costo real }(n)
+h(n) \leq \text{costo real}(n)
 $$
 
 - Completitud: sí.

@@ -28,7 +28,7 @@ $$
 60 \times 80 = 4,800 \text{bytes}
 $$
 
-In comparison, a $300 \text{DPI}$ (dot per inch) laser printer requires (assuming an $8$ by $10$ inch print area)
+In comparison, a $300$ DPI (dot per inch) laser printer requires (assuming an $8$ by $10$ inch print area)
 
 $$
 (8 \times 300) \times (10 \times 300)  = 900,000 \text{bytes}

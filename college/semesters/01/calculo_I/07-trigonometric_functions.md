@@ -79,9 +79,9 @@ TODO: create a standard angle link.
 
 $$
 \begin{align}
-	& P(x,-4 x)
-	x = \pcos{ \theta } = x
-	y = \psin{ \theta } = -4 x
+	& P(x,-4 x) \\
+	& x = \pcos{ \theta } = x \\
+	& y = \psin{ \theta } = -4 x
 \end{align}
 $$
 
@@ -91,7 +91,7 @@ $$
 	& x^2 + (-4 x)^2 = 1 \\
 	& 17 x^2 = 1 \\
 	& x = \pm \frac{ 1 }{ \sqrt{ 17 } } \\
-	& x = -\frac{ 1 }{ \sqrt{ 17 } } \text{ es negativo por estar en el segundo cuadrante}
+	& x = -\frac{ 1 }{ \sqrt{ 17 } } \; \text{es negativo por estar en el segundo cuadrante}
 \end{align}
 $$
 
@@ -114,7 +114,7 @@ $$
 	& 8 = \frac{ 2 \pi (3) }{ 360 } * \alpha \\
 	& \alpha = \frac{ 2880 }{ 6 \pi } \\
 	& = { \frac{ 480 }{ \pi } }^\degree \\
-	& \approx 152.79^\degree 
+	& \approx 152.79^\degree
 \end{align}
 $$
 
@@ -122,7 +122,7 @@ $$
 \begin{align}
 	& \alpha = { \frac{ 480 }{ \pi } }^\degree \\
 	& = \frac{ 480 }{ \pi } \frac{ \pi }{ 180 } \\
-	& = \frac{ 8 }{ 3 } \text{ rad}
+	& = \frac{ 8 }{ 3 } \; \text{rad}
 \end{align}
 $$
 
@@ -130,7 +130,7 @@ $$
 
 Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del triangulo
 
-1. $b = 10$, $c = 5$ y $\gamma = 30^\degree$
+1. $b = 10$, $c = 5$ y $\gamma = 30^\degree$.
 
 	$$
 	\begin{align}
@@ -220,7 +220,7 @@ Evalué:
 2. $\parcsin{ \psin{ \frac{ 2 \pi }{ 3 } } }$.
 
 	$$
-	x \in \left [-\frac{ \pi }{ 2 },\frac{ \pi }{ 2 }\right ] 
+	x \in \left [-\frac{ \pi }{ 2 },\frac{ \pi }{ 2 }\right ]
 	$$
 
 	$$
@@ -233,7 +233,7 @@ Evalué:
 3. $\pcos{ \parcsec{ \frac{ 4 }{ 3 } } - \parccos{ \frac{ 2 }{ 5 } } }$.
 
 	$$
-	x \in \left [0,\frac{ \pi }{ 2 }\right ] 
+	x \in \left [0,\frac{ \pi }{ 2 }\right ]
 	$$
 
 	$$
@@ -407,7 +407,7 @@ Resuelva las siguientes ecuaciones:
 	$$
 	\begin{align}
 		& \psin{ \theta } = 1 \quad \pcos{ \theta } = 0 \quad (1) \\
-		& \psin{ \theta } = 0 \quad \pcos{ \theta } = \quad (2) 
+		& \psin{ \theta } = 0 \quad \pcos{ \theta } = 1 \quad (2)
 	\end{align}
 	$$
 
@@ -424,3 +424,174 @@ Resuelva las siguientes ecuaciones:
 	$$
 
 2. $3 \psin{ x }^2 - 5 \psin{ x } + 2 = 0$.
+
+	$$
+	\begin{align}
+		& (3 \psin{ x } - 2) (\psin{ x } - 1) \\
+		&
+			\begin{array}{lr}
+				3 \psin{ x } = 2             & \psin{ x } = 1 \\
+				\psin{ x } = \frac{ 2 }{ 3 } & x = \frac{ \pi }{ 2 } + 2 \pi k \; k \in \mathbb{ Z }
+			\end{array} \\
+		& x = \parcsin{ \frac{ 2 }{ 3 } } + \frac{ \pi }{ 2 } + 2 \pi
+	\end{align}
+	$$
+
+3. $\pcos{ 2 x } = 1 + 4 \psin{ x }$.
+
+	$$
+	\begin{align}
+		& \pcos{ 2 x } = \pcos{ x + x } \\
+		& = \pcos{ x }^2 - \psin{ x }^2 \\
+		& = (1 - \psin{ x }^2) - \psin{ x }^2 \\
+		& = 1 - 2 \psin{ x }^2
+	\end{align}
+
+	$$
+
+	$$
+	\begin{align}
+		& 1 - 2 \psin{ x }^2 = 1 + 4 \psin{ x } \\
+		& - 2 \psin{ x }^2 - 4 \psin{ x } = 0 \\
+		& -2 (\psin{ x }^2 + 2 \psin{ x }) = 0 \\
+		& \psin{ x }^2 + 2 \psin{ x } = 0 \\
+	\end{align}
+	$$
+
+	Solo hay una forma de que eso se cumpla:
+
+	$$
+	\begin{align}
+		& \psin{ x }^2 = 0 \quad 2 \psin{ x } = 0 \\
+		& x = 2 \pi k \; k \in \mathbb{ Z }
+	\end{align}
+	$$
+
+4. $2 \pcos{ x }^2 + 5 \psin{ x } + 1 = 0$, $x \in [0, 2 \pi]$.
+
+	$$
+	\pcos{ x }^2 = 1 - \psin{ x }^2
+	$$
+
+	$$
+	\begin{align}
+		& 2 (1 - \psin{ x }^2 ) + 5 \psin{ x } + 1 = 0 \\
+		& -2 \psin{ x }^2 + 5 \psin{ x } + 3 = 0 \\
+		& -2 y^2 + 5 y + 3 = 0 \quad y = \psin{ x } \\
+		& y = \frac{ -(5) \pm \sqrt{ (5)^2 - 4 (-2) (3) } }{ 2 (-2) } \\
+		& = \frac{ -5 \pm \sqrt{ 25 + 24 } }{ -4 } \\
+		& = \frac{ 5 \pm \sqrt{ 49 } }{ 4 } \\
+		& y_1 = \frac{ 5 + 7 }{ 4 } = 3 \quad y_2 = \frac{ 5 - 7 }{ 4 } = -\frac{ 1 }{ 2 } \\
+		& \psin{ x_1 } = 3 \quad \psin{ x_2 } = -\frac{ 1 }{ 2 } \\
+		& \psin{ x } = -\frac{ 1 }{ 2 } \\
+		& x = \parcsin{ -\frac{ 1 }{ 2 } }
+	\end{align}
+	$$
+
+5. $\pcsc{ 2 x }^4 - 4 = 0$.
+
+	$$
+	\pcsc{ x } = \frac{ 1 }{ \psin{ x } }
+	$$
+
+	$$
+	\begin{align}
+		& \sqrt[4]{ \pcsc{ 2 x }^4 } = \sqrt[4]{ 4 } \\
+		& \pcsc{ 2 x } = \pm\sqrt{ 2 } \\
+		& \frac{ 1 }{ \psin{ 2 x } } = \pm\sqrt{ 2 } \\
+		& \psin{ 2 x } = \pm\frac{ 1 }{ \sqrt{ 2 } }
+	\end{align}
+	$$
+
+	Los ángulos cuyo seno es $\frac{ \sqrt{ 2 } }{ 2 }$ o $-\frac{ \sqrt{ 2 } }{ 2 }$ son los de $45 \degree$ ($\frac{ \pi }{ 4 }$) en los cuatro cuadrantes (es decir, cada $\frac{ \pi }{ 2 }$).
+
+	$$
+	\begin{align}
+		& 2 x = \frac{ \pi }{ 4 } + \frac{ k \pi }{ 2 } \; k \in \mathbb{ Z } \\
+		& x = \frac{ \pi }{ 8 } + \frac{ k \pi }{ 4 }
+	\end{align}
+	$$
+
+6. $\ptan{ \theta } + \psec{ \theta } = 1$.
+
+	Conociendo los rangos de las funciones, podemos decir que existen dos casos:
+
+	$$
+	\begin{align}
+		& \ptan{ \theta } = 1 \quad \psec{ \theta } = 0 \quad (1) \\
+		& \ptan{ \theta } = 0 \quad \psec{ \theta } = 1 \quad (2)
+	\end{align}
+	$$
+
+	$$
+	\begin{align}
+		& \ptan{ x } = \frac{ \psin{ x } }{ \pcos{ x } } \\
+		& \psec{ x } = \frac{ 1 }{ \pcos{ x } }
+	\end{align}
+	$$
+
+	Para el primer caso:
+
+	$$
+	\theta = 2 \pi k \; k \in \mathbb{ Z }
+	$$
+
+	Para el segundo caso:
+
+	$$
+	\begin{align}
+		& \frac{ \psin{ x } }{ \pcos{ x } } = 1 \quad x = \frac{ \pi }{ 4 } + k \pi \; k \in \mathbb{ Z } \\
+		& \frac{ 1 }{ \pcos{ x } } = 0 \quad \nexists x
+	\end{align}
+	$$
+
+7. $\pcot{ \theta } + \ptan{ \theta } = \pcsc{ \theta } \psec{ \theta }$.
+
+	$$
+	\begin{align}
+		& \pcot{ x } = \frac{ \pcos{ x } }{ \psin{ x } } \\
+		& \ptan{ x } = \frac{ \psin{ x } }{ \pcos{ x } } \\
+		& \pcsc{ x } = \frac{ 1 }{ \psin{ x } } \\
+		& \psec{ x } = \frac{ 1 }{ \pcos{ x } }
+	\end{align}
+	$$
+
+	$$
+	\begin{align}
+		& \frac{ \pcos{ x } }{ \psin{ x } } + \frac{ \psin{ x } }{ \pcos{ x } } = \frac{ 1 }{ \psin{ x } } \frac{ 1 }{ \pcos{ x } } \\
+		& \frac{ \pcos{ x }^2 + \psin{ x }^2 }{ \psin{ x } + \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } } \\
+		& \frac{ 1 }{ \psin{ x } + \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } }
+	\end{align}
+	$$
+
+10. Desde la punta de un edificio que ve hacia el mar, una persona observa un bote que navega directamente hacia ella. Si se encuentra a $100$ pies sobre el nivel del mar y el ángulo de depresión del bote cambia de $25 \degree$ a $40 \degree$ durante el periodo de observación, hallar la distancia aproximada que ha recorrido el bote durante ese tiempo.
+
+	![problem](college/semesters/01/assets/calculo_I/2_07_02-problem.jpg) TODO
+
+	Del primer triangulo, sabemos que:
+
+	$$
+	\begin{align}
+		& \ptan{ 25 \degree } = \frac{ 100 }{ x + y } \\
+		& x = \frac{ 100 }{ \ptan{ 25 \degree } } - y \quad (1)
+	\end{align}
+	$$
+
+	Del primer triangulo, sabemos que:
+
+	$$
+	\begin{align}
+		& \ptan{ 40 \degree } = \frac{ 100 }{ x } \\
+		& x = \frac{ 100 }{ \ptan{ 40 \degree } } \quad (2)
+	\end{align}
+	$$
+
+	Igualando $(1)$ y $(2)$:
+
+	$$
+	\begin{align}
+		& \frac{ 100 }{ \ptan{ 25 \degree } } - y = \frac{ 100 }{ \ptan{ 40 \degree } } \\
+		& y = \frac{ 100 \ptan{ 40 \degree } - 100 \ptan{ 25 \degree } }{ \ptan{ 25 \degree } \ptan{ 40 \degree } } \\
+		& y \approx 95.27 \; \text{ft}
+	\end{align}
+	$$

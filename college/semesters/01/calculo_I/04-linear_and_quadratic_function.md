@@ -27,7 +27,7 @@ $$
 		& \frac{ k^2 - 3 k - 1 }{ k + 2 } = 3 \\
 		& k^2 - 6 k - 7 = 0 \\
 		& (k - 7) (k + 1) = 0 \\
-		& k_1 = 7 \quad k_2 = -1 
+		& k_1 = 7 \quad k_2 = -1
 	\end{align}
 	$$
 
@@ -201,7 +201,7 @@ $$
 
 $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
 
-1. Si el turista desea recorrer $71 \text{km}$, ¿qué empresa le convendría más?
+1. Si el turista desea recorrer $71$ kilómetros, ¿qué empresa le convendría más?
 
 	Suponiendo que dicha distancia se recorre en un dia.
 
@@ -214,7 +214,7 @@ $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
 
 	Le conviene mas la empresa $B$.
 
-2. Si el turista desea recorrer $20 \text{km}$, ¿qué empresa le convendría más?
+2. Si el turista desea recorrer $20$ kilómetros, ¿qué empresa le convendría más?
 
 	Suponiendo que dicha distancia se recorre en un dia.
 
@@ -271,7 +271,7 @@ Sabemos que el punto máximo de la ecuación que modela el área es el vértice 
 $$
 \begin{align}
 	& h = -\frac{ 50 }{ 2 \left (-\frac{ 7 }{ 8 } \right ) } \\
-	& = \frac{ 200 }{ 7 } 
+	& = \frac{ 200 }{ 7 }
 \end{align}
 $$
 
@@ -326,7 +326,7 @@ Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno d
 
 ## 8
 
-Una pieza de alambre de $100 \text{cm}$ de largo se corta en dos partes, para formar con cada una de ellas un cuadrado. ¿Dónde se debe hacer el corte para minimizar la suma de las áreas de los cuadrados?
+Una pieza de alambre de $100$ centímetros de largo se corta en dos partes, para formar con cada una de ellas un cuadrado. ¿Dónde se debe hacer el corte para minimizar la suma de las áreas de los cuadrados?
 
 $$
 \begin{align}
@@ -362,7 +362,7 @@ La pieza de alambre deber ser cortada a la mitad para maximizar la suma de las �
 
 ## 9
 
-En un partido entre el Everton y Nápoles la trayectoria que describe la pelota en un momento del juego es parabólica. La distancia en línea recta desde donde James patea la pelota hasta donde cae en el suelo es de $26 \text{m}$, el arquero Juan David Ospina no la ataja y cuando llega a él está a $18 \text{m}$ del punto inicial, la altura máxima que alcanza la pelota es de $4 \text{m}$. Halle la función que modela la situación. ¿A qué altura del suelo Juan David Ospina intenta atajar la pelota?
+En un partido entre el Everton y Nápoles la trayectoria que describe la pelota en un momento del juego es parabólica. La distancia en línea recta desde donde James patea la pelota hasta donde cae en el suelo es de $26$ metros, el arquero Juan David Ospina no la ataja y cuando llega a él está a $18$ metros del punto inicial, la altura máxima que alcanza la pelota es de $4$ metros. Halle la función que modela la situación. ¿A qué altura del suelo Juan David Ospina intenta atajar la pelota?
 
 Las raíces de la función que modela esta situación están en las coordenadas:
 
@@ -370,7 +370,7 @@ $$
 A(0,0) \quad B(26,0)
 $$
 
-El vértice de la parábola siempre está en la mitad de las raíces y además sabemos que la altura máxima es $4 \text{m}$, entonces:
+El vértice de la parábola siempre está en la mitad de las raíces y además sabemos que la altura máxima es $4$ metros, entonces:
 
 $$
 \begin{align}
@@ -401,4 +401,4 @@ $$
 \end{align}
 $$
 
-Juan David Ospina estaba $\frac{ 656 }{ 169 } \text{m}$ a cuando intento atajar la pelota.
+Juan David Ospina estaba $\frac{ 656 }{ 169 }$ metros a cuando intento atajar la pelota.

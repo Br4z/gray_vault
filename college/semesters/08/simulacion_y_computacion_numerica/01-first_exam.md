@@ -36,7 +36,7 @@ $$
 
 ## 3
 
-Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de $30 \text{m}$, valor real $120 \text{m}$, y en el segundo escenario obtuvo un error de $50 \text{cm}$, valor real $500 \text{cm}$ ¿Dónde se cometió un mayor error?
+Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de $30$ metros, valor real $120$ metros, y en el segundo escenario obtuvo un error de $50$ centímetros, valor real $500$ centímetros ¿Dónde se cometió un mayor error?
 
 $$
 \begin{align}

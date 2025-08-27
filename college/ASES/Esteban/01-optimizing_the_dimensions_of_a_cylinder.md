@@ -8,9 +8,9 @@ Un recipiente cilíndrico sin tapa debe almacenar un volumen $v$. El material de
 
 $$
 \begin{align}
-	& \text{ area fondo } = r^2 \pi \quad \text{ lado curvo } = 2 r \pi h \\
+	& \text{area fondo} = r^2 \pi \quad \text{lado curvo} = 2 r \pi h \\
 	& r^2 \pi h = v \quad h = \frac{ v }{ r^2 \pi } \\
-	& f(r) = \text{ costo del recipiente } \\
+	& f(r) = \text{costo del recipiente} \\
 	& f(r) = c_1 r^2 \pi + 2 c_2 r \pi h \\
 	& = c_1 r^2 \pi + 2 c_2 r \pi \left ( \frac{ v }{ r^2 \pi } \right ) \\
 	& = c_1 r^2 \pi + \frac{ 2 c_2 v }{ r } \\

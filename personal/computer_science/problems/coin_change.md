@@ -12,8 +12,8 @@ Given a set of coin denominations **A** and a target amount **P**, the goal is t
 
 - A sorted set of $n$ coin denominations.
 
-	$$ 
-	A = \{a_1,a_2,\dots,a_n\}, \quad \text{where } a_i \in \mathbb{N} \text{ and } a_1 < a_2 < \dots < a_n
+	$$
+	A = \{a_1,a_2,\dots,a_n\}, \quad \text{where} \; a_i \in \mathbb{ N } \land a_1 < a_2 < \dots < a_n
 	$$
 
 - A target amount $P$ (a natural number).
@@ -26,12 +26,12 @@ A tuple $(m_1,m_2,\dots,m_n)$ where:
 
 - The total value of the selected coins must equal $P$:
 
-	$$ 
+	$$
 	\sum_{ i = 1 }^n m_i a_i = P
 	$$
 
 - The total number of coins used is minimized:
 
 	$$
-	\sum_{ i = 1 }^n m_i \text{ is minimal}
+	\sum_{ i = 1 }^n m_i \; \text{is minimal}
 	$$

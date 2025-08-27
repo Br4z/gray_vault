@@ -939,7 +939,7 @@ Based on the values specified for each of the components above, complex schedule
         done
         ```
 
-		> This solution will take $10000 * 0,75 = 7500 \text{ s } = 125 \text{ m }$.
+		> This solution will take $10000 * 0,75 = 7500 \; \text{s} = 125 \; \text{m}$.
 
 	- Indirect.
 

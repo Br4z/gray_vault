@@ -225,7 +225,7 @@ Resuelva las siguientes inecuaciones:
 		\begin{align}
 			& x - 5 < 0 & x + 3 > 0 \\
 			& x < 5     & x > -3 \\
-			& x \in (-3,5) 
+			& x \in (-3,5)
 		\end{align}
 		$$
 
@@ -304,7 +304,7 @@ Resuelva las siguientes inecuaciones:
 		$$
 		\begin{align}
 			& -(5 x - 2) \geq 4 \\
-			& x \leq -\frac{ 2 }{ 5 } 
+			& x \leq -\frac{ 2 }{ 5 }
 		\end{align}
 		$$
 
@@ -402,7 +402,7 @@ Resuelva las siguientes inecuaciones:
 
 ## 6
 
-El perímetro de un terreno rectangular es $58 \text{m}$. Si el largo aumenta en $2 \text{m}$ y el ancho se disminuye en $2 \text{m}$, el área se disminuye en $40 \text{m}^2$. Halle las dimensiones del terreno.
+El perímetro de un terreno rectangular es $58$ metros. Si el largo aumenta en $2$ metros y el ancho se disminuye en $2$ metros, el área se disminuye en $40$ metros cuadrados. Halle las dimensiones del terreno.
 
 Sí tenemos un rectángulo de medidas $a * b$.
 

@@ -67,7 +67,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
     $$
     f(7) = -0.7857 + 1.0714 (7) \approx 6.7143 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 8 - 6.7143 }{ 8 } } * 100\% \approx 16.07\%
+    \text{error relativo porcentual} = \abs{ \frac{ 8 - 6.7143 }{ 8 } } * 100\% \approx 16.07\%
     $$
 
 2. Encuentre el polinomio llevando a cabo Interpolación de Newton.
@@ -110,7 +110,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
     $$
     P(7) = 8.068 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 8 - 8.068 }{ 8 } } * 100\% = 0.0085\%
+    \text{error relativo porcentual} = \abs{ \frac{ 8 - 8.068 }{ 8 } } * 100\% = 0.0085\%
     $$
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
@@ -140,7 +140,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
     $$
     P(7) = 8 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 8 - 8 }{ 8 } } * 100\% = 0\%
+    \text{error relativo porcentual} = \abs{ \frac{ 8 - 8 }{ 8 } } * 100\% = 0\%
     $$
 
 ## 2
@@ -247,7 +247,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ co
     $$
     P(12.5) = 5.1 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 5.2 - 5.1 }{ 5.2 } } * 100\% \approx 1.9\%
+    \text{error relativo porcentual} = \abs{ \frac{ 5.2 - 5.1 }{ 5.2 } } * 100\% \approx 1.9\%
     $$
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
@@ -265,7 +265,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ co
     $$
 
     $$
-    \text{ error relativo porcentual } = \abs{ \frac{ 5.2 - 5.2 }{ 5.2 } } * 100\% = 0\%
+    \text{error relativo porcentual} = \abs{ \frac{ 5.2 - 5.2 }{ 5.2 } } * 100\% = 0\%
     $$
 
 ## 3
@@ -330,7 +330,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
     $$
     f(12) = 2.2918 + 0.1367 * 12 \approx 3.9322 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 4.6 - 3.9322 }{ 4.6 } } * 100\% \approx 14.5\%
+    \text{error relativo porcentual} = \abs{ \frac{ 4.6 - 3.9322 }{ 4.6 } } * 100\% \approx 14.5\%
     $$
 
 2. Encuentre el polinomio llevando a cabo Interpolación de Newton.
@@ -376,7 +376,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
     $$
     P(12) = 4.848 \\[10 pt]
 
-    \text{ error relativo porcentual } = \abs{ \frac{ 4.6 - }{ 4.6 } } * 100\% \approx 1.9\%
+    \text{error relativo porcentual} = \abs{ \frac{ 4.6 - }{ 4.6 } } * 100\% \approx 1.9\%
     $$
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
@@ -394,7 +394,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
     $$
 
     $$
-    \text{ error relativo porcentual } = \abs{ \frac{ 4.6 - 4.6 }{ 4.6 } } * 100\% = 0\%
+    \text{error relativo porcentual} = \abs{ \frac{ 4.6 - 4.6 }{ 4.6 } } * 100\% = 0\%
     $$
 
 ## 9

@@ -168,7 +168,7 @@ Since there are these problems, Classful networking was replaced by Classless In
 
 To reduce the waste of IP addresses in a block, we use sub-netting. What we do is use host id bits as net id bits of a classful IP address. We give the IP address and define the number of bits for the mask along with it (usually followed by a `/`).
 
-- Number of subnets : $2^{ \text{ given bits for mask } – \text{ No. of bits in default mask } }$.
+- Number of subnets : $2^{ \text{given bits for mask} – \text{No. of bits in default mask} }$.
 
 - Subnet address: AND result of subnet mask and the given IP address.
 
@@ -176,11 +176,11 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 
 	TODO: maybe instead of IP address is network address.
 
-- Number of hosts per subnet: $2^{ 32 – \text{ given bits for mask } } – 2$.
+- Number of hosts per subnet: $2^{ 32 – \text{given bits for mask} } – 2$.
 
-- First Host ID : $\text{ subnet address } + 1$ (adding one to the binary representation of the subnet address).
+- First Host ID : $\text{subnet address} + 1$ (adding one to the binary representation of the subnet address).
 
-- Last Host ID : $\text{ subnet address } + \text{ number of hosts }$.
+- Last Host ID : $\text{subnet address} + \text{number of hosts}$.
 
 > Also know as CIDR (Classless Inter Domain Routing)
 

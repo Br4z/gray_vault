@@ -116,7 +116,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
 	2. $f \left (\frac{ 3 }{ 2 } \right )$.
 
 		$$
-		\frac{ \frac{ 3 }{ 2 } + 1 }{ \frac{ 3 }{ 2 } - 1 } = \frac{ 10 }{ 2 } = 5 
+		\frac{ \frac{ 3 }{ 2 } + 1 }{ \frac{ 3 }{ 2 } - 1 } = \frac{ 10 }{ 2 } = 5
 		$$
 
 		$$
@@ -210,7 +210,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
 		$$
 
 	2. $f(x) = \sqrt{ x + 1 }$.
-	
+
 		$$
 		\begin{align}
 			& x + 1 \geq 0 \\
@@ -311,7 +311,7 @@ Determine el rango de las siguientes funciones:
 	$$
 	\begin{align}
 		& x \in \emptyset \cup [0,6] \\
-		& x \in [0,6] 
+		& x \in [0,6]
 	\end{align}
 	$$
 
@@ -320,7 +320,7 @@ Determine el rango de las siguientes funciones:
 	$$
 	\begin{align}
 		& y_{ \text{min} } = f(0) = f(6) = \sqrt{ 0 } = 0 \\
-		& y_{ \text{max} } = f(3) = \sqrt{ -(3)^2 + 6 (3) } = 3 
+		& y_{ \text{max} } = f(3) = \sqrt{ -(3)^2 + 6 (3) } = 3
 	\end{align}
 	$$
 
@@ -343,7 +343,7 @@ Podemos usar el criterio de la línea vertical para determinar si la gráfica co
 Dada la función $f$.
 
 $$
-f(x) = 
+f(x) =
 	\begin{cases}
 		x^2 - 4         & -2 \leq x < -1 \\
 		\frac{ 1 }{ x } & 0 < x < 3 \\
@@ -427,7 +427,7 @@ $$
 
 ## 7
 
-Un recipiente rectangular sin tapa tiene volumen de $20 \text{m}^3$, la longitud de su base es el doble de su ancho. El material para la base cuesta $6$ dólares por metro cuadrado y para las caras $4$ dólares. Exprese el costo del material como función del ancho de la base. Indique el dominio de la función.
+Un recipiente rectangular sin tapa tiene volumen de $20$ metros cubicos, la longitud de su base es el doble de su ancho. El material para la base cuesta $6$ dólares por metro cuadrado y para las caras $4$ dólares. Exprese el costo del material como función del ancho de la base. Indique el dominio de la función.
 
 ![rectangular container](college/semesters/01/assets/calculo_I/2_02_03-rectangular_container.svg)
 
@@ -469,7 +469,7 @@ $$
 $$
 \begin{align}
 	v & = (12 - 2 x) (20 - 2 x) x
-	  & = 4 x^3 - 64 x^2 + 240 x 
+	  & = 4 x^3 - 64 x^2 + 240 x
 \end{align}
 $$
 
@@ -530,7 +530,7 @@ $$
 \begin{align}
 	& h^2 = (4 r)^2 - (2 r)^2 \\
 	& h = \sqrt{ 12 r^2 } \\
-	& = 4 \sqrt{ 3 r^2 } 
+	& = 4 \sqrt{ 3 r^2 }
 \end{align}
 $$
 
@@ -542,14 +542,14 @@ $$
 
 ## 10
 
-Uno de los catetos de un triángulo rectángulo tiene longitud $6 \text{cm}$. Exprese la longitud de la altura perpendicular a la hipotenusa como función de la longitud de la hipotenusa.
+Uno de los catetos de un triángulo rectángulo tiene longitud $6$ centímetros. Exprese la longitud de la altura perpendicular a la hipotenusa como función de la longitud de la hipotenusa.
 
 ![problem](college/semesters/01/assets/calculo_I/2_02_06-figure.svg)
 
 $$
 \begin{align}
 	& A = \frac{ 1 }{ 2 } 6 b \\
-	& = \frac{ 1 }{ 2 } c h 
+	& = \frac{ 1 }{ 2 } c h
 \end{align}
 $$
 

@@ -104,13 +104,13 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 - Grado absoluto: es la suma de los exponentes de los factores literales.
 
 	$$
-	5 a^3 b^2 \quad \text{ grado $5$ }
+	5 a^3 b^2 \quad \text{grado $5$}
 	$$
 
 - Grado relativo: con respecto a una letra es el exponente de dicha letra.
 
 	$$
-	5 a^3 b^2 \quad \text{ grado $3$ con respecto a $a$ }
+	5 a^3 b^2 \quad \text{grado $3$ con respecto a $a$}
 	$$
 
 ### Grado de un polinomio
@@ -118,13 +118,13 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 - Grado absoluto: es igual al grado del término que tenga mayor grado.
 
 	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{ grado $6$ }
+	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado $6$}
 	$$
 
 - Grado relativo: con respecto a una letra es al mayor exponente que tenga dicha letra en el polinomio.
 
 	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{ grado $4$ con respecto a $x$  }
+	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado $4$ con respecto a $x$}
 	$$
 
 ## Unidad VI (adicción y sustracción de expresiones algebraicas. Ecuaciones. Inecuaciones)
@@ -153,7 +153,7 @@ Según lo anterior podemos afirmar que toda identidad y ecuación es una igualda
 Lo determina el término en que la suma de los exponentes de las incógnitas sea máxima.
 
 $$
-a^4 x^3 + 2 b x = c \quad \text{ grado $3$ }
+a^4 x^3 + 2 b x = c \quad \text{grado $3$}
 $$
 
 ### Principios generales de las ecuaciones
@@ -231,7 +231,7 @@ Hay ciertos productos que por su simplicidad y por obedecer a reglas fijas se ll
 	$$
 	\begin{align}
 		(x - y)^2 & = (x - y) (x - y) \\
-		          & = x^2 - x y - x y + y^2 \\ 
+		          & = x^2 - x y - x y + y^2 \\
 		          & = x^2 - 2 x y + y^2
 	\end{align}
 	$$

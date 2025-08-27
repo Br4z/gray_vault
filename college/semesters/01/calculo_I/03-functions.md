@@ -101,7 +101,7 @@ f(x) = 0
 $$
 
 $$
-f(x) = f(-x)\quad 0 = 0
+f(x) = f(-x) \quad 0 = 0
 $$
 
 $$
@@ -195,7 +195,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
 		& \sqrt{ 2 x_1 - 1 } = \sqrt{ 2 x_2 - 1 } \\
 		& 2 x_1 - 1 = 2 x_2 - 1 \\
 		& 2 x_1 = 2 x_2 \\
-		& x_1 = x_2 
+		& x_1 = x_2
 	\end{align}
 	$$
 

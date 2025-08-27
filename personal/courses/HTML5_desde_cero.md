@@ -365,7 +365,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
 			- `max`: $100$.
 
-			- `value`: $\frac{ \text{ min } + ( \text{ max } - \text{ min }) }{ 2 }$, o $\text{ min }$ si $\text{ max }$ es menor que $\text{ min }$.
+			- `value`: $\frac{ \text{min} + ( \text{max} - \text{min}) }{ 2 }$, o $\text{min}$ si $\text{max}$ es menor que $\text{min}$.
 
 			- `step`: $1$.
 

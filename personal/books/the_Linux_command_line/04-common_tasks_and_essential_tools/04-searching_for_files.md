@@ -42,24 +42,24 @@ Some of the **tests** that support this command are:
 
 - `-type`.
 
-	| file type | description |
+	| file type |          description          |
 	|:---------:|:-----------------------------:|
-	| `b` |   block special device file |
-	| `c` | character special device file |
-	| `d` |           directory |
-	| `f` |         regular file |
-	| `l` |         symbolic link |
+	|    `b`    |   block special device file   |
+	|    `c`    | character special device file |
+	|    `d`    |           directory           |
+	|    `f`    |         regular file          |
+	|    `l`    |         symbolic link         |
 
 - `size`.
 
-	| character | unit |
-	|:---------:|:------------------------------------------------------------- |
-	| `b` | 512-byte blocks. This is the default if no unit is specified. |
-	| `c` | Bytes. |
-	| `w` | 2-byte words. |
-	| `k` | Kilobytes (units of $1024 \text{bytes}$). |
-	| `M` | Megabytes (units of $1048576 \text{bytes}$) |
-	| `G` | Gigabytes (units of $1073741824 \text{bytes}$) |
+	| character |                             unit                              |
+	|:---------:|:-------------------------------------------------------------:|
+	|    `b`    | 512-byte blocks. This is the default if no unit is specified. |
+	|    `c`    |                            Bytes.                             |
+	|    `w`    |                         2-byte words.                         |
+	|    `k`    |              Kilobytes (units of $1024$ bytes).               |
+	|    `M`    |             Megabytes (units of $1048576$ bytes).             |
+	|    `G`    |           Gigabytes (units of $1073741824$ bytes).            |
 
 |          test          | description                                                                                                |
 |:----------------------:|:---------------------------------------------------------------------------------------------------------- |
