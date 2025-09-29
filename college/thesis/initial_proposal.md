@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-08-21"
+reviewed_on: "2025-08-28"
 ---
 
 # Initial proposal
@@ -12,18 +12,18 @@ La ausencia de una especificación formal e inequívoca condujo directamente a u
 
 ## Problema
 
-La mayoría de los formateadores, incluido Prettier, tienen reglas codificadas con muy pocas opciones de configuración. Esta postura "dogmática" es una elección de diseño deliberada para eliminar el debate, pero carece de flexibilidad.  Otros sistemas, como el ecosistema de plugins de remark, permiten la extensibilidad, pero esto requiere escribir código imperativo (p. ej., JavaScript) para recorrer y manipular el AST. Este enfoque es potente pero tiene una curva de aprendizaje pronunciada y desdibuja la línea entre una regla simple y un programa complejo. Existe un vacío para un sistema que sea a la vez extensible y fácil de usar.
+En la ingeniería de software, la documentación es un pilar fundamental. Sin embargo, su calidad y consistencia a menudo se ven comprometidas, especialmente en proyectos donde se le asigna una prioridad secundaria durante las fases iniciales de desarrollo. El formato Markdown, aunque omnipresente por su simplicidad, agrava este problema debido a su falta de estandarización, lo que resulta en inconsistencias en el renderizado del contenido entre distintas plataformas y herramientas.
 
-## Un análisis comparativo de las arquitecturas de análisis sintáctico
+Para mitigar esto, los equipos de desarrollo recurren a soluciones existentes, las cuales presentan limitaciones significativas:
 
-### Expresiones regulares
+1. Formateadores dogmáticos: Herramientas como Prettier imponen un conjunto de reglas de estilo rígidamente codificadas con opciones de configuración mínimas. Si bien esta filosofía de diseño es deliberada —busca eliminar el debate sobre el estilo—, su inflexibilidad impide que los equipos adapten las reglas a las necesidades específicas de su proyecto o a sus guías de estilo internas.
 
-### Máquinas de estado
+2. Sistemas extensibles complejos: ecosistemas como los plugins de remark ofrecen una potente capacidad de extensión. No obstante, esta flexibilidad tiene un costo elevado: requiere que los desarrolladores escriban código imperativo (generalmente en JavaScript) para recorrer y manipular el Árbol de Sintaxis Abstracta (AST). Este enfoque no solo posee una curva de aprendizaje pronunciada, sino que también desdibuja la frontera entre una simple regla de formato y un programa complejo, introduciendo una carga de mantenimiento adicional.
 
-### Flujos de tokens basados en reglas
-
-### Síntesis y recomendación arquitectónica
+Actualmente, **existe un vacío para una herramienta que ofrezca un equilibrio entre extensibilidad y facilidad de uso**. Se necesita un sistema que permita a los desarrolladores definir reglas de formato y estilo de manera declarativa, sin requerir conocimientos avanzados de programación ni verse limitados por un conjunto de reglas predefinidas e inalterables.
 
 ## Solución
 
-La solución propuesta es diseñar e implementar una arquitectura basada en plugins donde las reglas de formato y linter no se escriben en un lenguaje de programación de propósito general, sino que se definen en un formato simple y declarativo, como YAML o un Lenguaje Específico de Dominio (DSL) personalizado. El núcleo de la tesis sería el diseño de este lenguaje declarativo y el motor que lo interpreta.
+La solución propuesta es el diseño y desarrollo de una aplicación de escritorio con una Interfaz Gráfica de Usuario (GUI) que permita a los usuarios configurar un linter de Markdown de manera completamente visual e intuitiva. El enfoque central abandona la complejidad de los lenguajes de scripting o los archivos de configuración manual, presentando en su lugar un sistema de reglas predefinidas y contextuales.
+
+El funcionamiento se basará en una interacción simple: el usuario seleccionará un elemento estructural de Markdown de un menú (p. ej., "encabezados", "listas", "bloques de código"). A continuación, la interfaz presentará un catálogo de reglas comunes y aplicables para ese elemento específico, que el usuario podrá activar y configurar con simples controles gráficos (como casillas de verificación o menús desplegables). De esta forma, se abstrae por completo la lógica de programación, permitiendo que cualquier usuario pueda ensamblar un perfil de validación robusto y a medida, simplemente tomando decisiones sobre el estilo de formato deseado.

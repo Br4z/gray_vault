@@ -20,7 +20,7 @@ reviewed_on: "2025-02-03"
 
 ### Árboles de decisión
 
-![[personal/computer_science/machine_learning/classification_techniques/decision_trees|árboles de decisión]]
+![[personal/computer_science/machine_learning/algorithms/supervised_learning/decision_trees|árboles de decisión]]
 
 ### Clasificación Naïve Bayes
 

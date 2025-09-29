@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-08-22"
+reviewed_on: "2025-08-26"
 ---
 
 # Trigonometric functions

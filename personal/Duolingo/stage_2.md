@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-03-09"
+reviewed_on: "2025-09-06"
 ---
 
 # Stage 2
@@ -40,7 +40,7 @@ A veces cuando le agregas `ing` a un verbo, la ortografía cambia.
 
 Normalmente, si el verbo termina en `e`, ¡la `e` desaparece!
 
-Si un verbo solo tiene una sílaba y termina con consonante‑vocal‑consonante, debes duplicar la última consonante.
+Si un verbo solo tiene una sílaba y termina con consonante-vocal-consonante, debes duplicar la última consonante.
 
 ## 17 - Habla del tiempo libre, usa el tiempo presente
 

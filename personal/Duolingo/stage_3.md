@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-03-09"
+reviewed_on: "2025-09-06"
 ---
 
 # Stage 3
@@ -12,7 +12,7 @@ En cambio, para hablar de hábitos y rutinas dirías solo "I eat" o "I play".
 
 ## 2 - Haz descripciones
 
-...si una palabra de una sílaba termina con consonante‑vocal‑consonante, necesitarás duplicar la última letra antes de agregar `er`.
+...si una palabra de una sílaba termina con consonante-vocal-consonante, necesitarás duplicar la última letra antes de agregar `er`.
 
 ¡La regla que vimos en la que la `y` se cambia a `i` también aplica aquí!
 
@@ -42,13 +42,13 @@ Para decir que tienes que hacer algo en inglés, usa "to have to" + el verbo en 
 
 ---
 
-Tienes que usar la forma de objeto del pronombre cuando se usa después de palabras como "to", "for", "with" y más.​
+Tienes que usar la forma de objeto del pronombre cuando se usa después de palabras como "to", "for", "with" y más.
 
 ## 9 - Haz comparaciones
 
 Cuando agregas `est`, la ortografía puede cambiar como cuando agregas `er`. Si la palabra ya termina con `e`, solo necesitas agregar `st`.
 
-Si una palabra termina con consonante‑vocal‑consonante, duplica la última letra.
+Si una palabra termina con consonante-vocal-consonante, duplica la última letra.
 
 Por último, si una palabra termina con `y`, ¡cambia la `y` por una `i` antes de agregarle `est`!
 

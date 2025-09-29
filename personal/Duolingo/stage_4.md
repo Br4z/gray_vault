@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-04-07"
+reviewed_on: "2025-09-06"
 ---
 
 # Stage 4
@@ -10,9 +10,9 @@ Usa "on" con los días de la semana y las fechas, usa "in" con los meses y cuand
 
 ---
 
-¡Hablemos del Presente Perfecto!​
+¡Hablemos del Presente Perfecto!
 
-Para decir cosas como "he hablado", usa una forma de "have" con un verbo en el pasado.​
+Para decir cosas como "he hablado", usa una forma de "have" con un verbo en el pasado.
 
 ## 2 - Habla de naturaleza
 
@@ -28,7 +28,7 @@ Los verbos "hear" y "see" se refieren a cosas que percibimos, ¡pero "look" y "l
 
 ## 7 - Habla de quehaceres
 
-...si estás hablando de algo que pasará "next Tuesday", por ejemplo, no tienes que añadir "on" antes del día de la semana.​
+...si estás hablando de algo que pasará "next Tuesday", por ejemplo, no tienes que añadir "on" antes del día de la semana.
 
 ## 8 - Habla de tus estudios
 
@@ -40,11 +40,11 @@ El sonido de la vocal en `ould` es la "oo" corta (al igual que en "good" o "book
 
 ## 15 - Charla de asuntos ajenos
 
-Recuerda que "could" se usa para preguntas amables o para decir "can" cuando hablamos del pasado.​
+Recuerda que "could" se usa para preguntas amables o para decir "can" cuando hablamos del pasado.
 
 ---
 
-¡Para decir en inglés "Ella dijo que…" o "Yo creo que...", di "She said that..." o "I think that..."!
+¡Para decir en inglés "Ella dijo que..." o "Yo creo que...", di "She said that..." o "I think that..."!
 
 Pero "that" es una palabra opcional en inglés. ¡Puedes omitirla si quieres!
 
@@ -52,7 +52,7 @@ Pero "that" es una palabra opcional en inglés. ¡Puedes omitirla si quieres!
 
 ## 16 - Habla de tus logros, formula el tiempo pasado
 
-Los verbos que terminan en `y`, en el pasado terminan en `ied`.​​
+Los verbos que terminan en `y`, en el pasado terminan en `ied`.
 
 ## 17 - Indica cantidades
 
@@ -66,7 +66,7 @@ Si quieres contar lo incontable (¡guau!), puedes usar frases como "slice of", "
 
 ## 19 - Da consejos
 
-El infinitivo es la forma más básica de un verbo. ¡Tener y caminar son infinitivos en español! En inglés, los infinitivos generalmente incluyen "to" antes del verbo, como en "to have" o "to walk".​
+El infinitivo es la forma más básica de un verbo. ¡Tener y caminar son infinitivos en español! En inglés, los infinitivos generalmente incluyen "to" antes del verbo, como en "to have" o "to walk".
 
 En inglés necesitas usar los infinitivos en ciertas situaciones, como cuando estás dando consejos (por ejemplo, "It is important to save money").
 
@@ -89,11 +89,11 @@ En inglés necesitas usar los infinitivos en ciertas situaciones, como cuando es
 
 ## 31 - Prepara un viaje, usa verbos modales
 
-En lugar de decir "his" o "her", o incluso "his or her", puedes decir "their", ¡que es neutro y se puede referir a cualquier género!​
+En lugar de decir "his" o "her", o incluso "his or her", puedes decir "their", ¡que es neutro y se puede referir a cualquier género!
 
 ## 33 - Confirma información
 
-Algunas veces no estás seguro de algo y necesitas hacer una pequeña pregunta al final de tu oración para asegurarte, ¿verdad?​
+Algunas veces no estás seguro de algo y necesitas hacer una pequeña pregunta al final de tu oración para asegurarte, ¿verdad?
 
 En inglés puedes hacer esto agregándole "not" al verbo ¡y revirtiendo el orden de las palabras de la manera que lo harías en una pregunta!
 
@@ -113,9 +113,9 @@ Claro, aquí tienes las notas formateadas directamente en el mismo estilo que la
 
 ## 38 - Comenta sobre deportes
 
-​¡También puedes usar "which" para decir *que* y agregar más información acerca de algo!
+¡También puedes usar "which" para decir *que* y agregar más información acerca de algo!
 
-> Truco extra: "which" a menudo se usa después de una coma.​
+> Truco extra: "which" a menudo se usa después de una coma.
 
 ## 44 - Relata hechos pasados
 
@@ -125,14 +125,14 @@ Claro, aquí tienes las notas formateadas directamente en el mismo estilo que la
 
 Hemos visto que algunos verbos en inglés están formados por dos palabras, como "put on" o "take off". Con estos verbos, puedes mantener las dos palabras juntas o separarlas...
 
-Pero si sustituyes el objeto que recibe la acción (como "your hat" o "this form") con "it", ¡entonces debes poner "it" entre las dos palabras!​
+Pero si sustituyes el objeto que recibe la acción (como "your hat" o "this form") con "it", ¡entonces debes poner "it" entre las dos palabras!
 
 ## 47 - Habla de negocios, usa verbos frasales
 
-Algunos verbos están formados por dos palabras. La segunda palabra puede cambiar el significado del verbo completamente.​​
+Algunos verbos están formados por dos palabras. La segunda palabra puede cambiar el significado del verbo completamente.
 
-En algunos verbos de dos palabras, las palabras se pueden separar. Si estás reemplazando un sustantivo con una palabra como "it", "him", etc., ¡esta tiene que estar entre las dos partes del verbo!​​
+En algunos verbos de dos palabras, las palabras se pueden separar. Si estás reemplazando un sustantivo con una palabra como "it", "him", etc., ¡esta tiene que estar entre las dos partes del verbo!
 
-​​¡Otros verbos de dos palabras no se separan nunca!
+¡Otros verbos de dos palabras no se separan nunca!
 
 > Como "look after".

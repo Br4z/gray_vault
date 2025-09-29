@@ -12,62 +12,53 @@ A continuación se presentan la grafica de las funciones $f_1(x) = 2^x$, $f_2(x)
 
 ## 2
 
-A continuación se dan las gráficas de dos funciones de tipo exponencial de la forma $C a^x$, donde $C$ es una constante. Halle las funciones $f$ y $g$ indicando su dominio y rango en cada caso.
+A continuación se dan las gráficas de dos funciones de tipo exponencial de la forma $Ca^x$, donde $C$ es una constante. Halle las funciones $f$ y $g$ indicando su dominio y rango.
 
 ![graphs](college/semesters/01/assets/calculo_I/2_06_02-graphs.svg)
 
 $$
 \begin{align}
 	& f(0) = C a^0 = 2 \\
-	& C = 2
+	& C = 2 \\
+	& f(1) = (2) a^1 = 6 \\
+	& a = 3 \\
+	& f(x) = (2) (3)^x
 \end{align}
-$$
-
-$$
-\begin{align}
-	& f(1) = 2 a^1 = 6 \\
-	& C = 3
-\end{align}
-$$
-
-$$
-f(x) = 2 * 3^x
 $$
 
 $$
 \begin{align}
 	& g(-1) = C a^{ -1 } = 6 \\
 	& \frac{ C }{ a } = 6 \\
-	& C = 6 a \quad (1)
+	& C = 6 a \quad (1) \\
+	& g(1) = C a = \frac{ 3 }{ 2 } \\
+	& C = \frac{ 3 }{ 2 a } \quad (2)
 \end{align}
 $$
 
+Igualando $(1)$ y $(2)$.
+
 $$
 \begin{align}
-	& g(1) = (6 a) a^1 = \frac{ 3 }{ 2 } \\
-	& a^2 = \frac{ 3 }{ 12 } \\
+	& 6 a = \frac{ 3 }{ 2 a } \\
+	& 12 a^2 = 3 \\
 	& a = \pm \sqrt{ \frac{ 3 }{ 12 } } \\
-	& = \pm \frac{ \sqrt{ 3 } }{ 2 \sqrt{ 3 } } \\
-	& = \pm \frac{ 1 }{ 2 }
+	& = \pm \sqrt{ \frac{ 1 }{ 4 } } \\
+	& = \pm \frac{ 1 }{ 2 } \\
+	& a = \frac{ 1 }{ 2 }
 \end{align}
 $$
-
-Reemplazando en $(1)$.
 
 $$
 \begin{align}
-	& C = 6 \left (\frac{ 1 }{ 2 } \right) \\
-	& C = 3
+	& C = 6 \left (\frac{ 1 }{ 2 } \right ) = 3 \\
+	& g(x) = (3) \left (\frac{ 1 }{ 2 } \right )^x
 \end{align}
-$$
-
-$$
-g(x) = 3 \left (\frac{ 1 }{ 2 } \right)^x
 $$
 
 ## 3
 
-Halle el dominio y rango de las siguientes funciones:
+Halle el dominio y rango de estas funciones:
 
 1. $f(x) = -3 + 2^{ x + 1 }$.
 
@@ -77,13 +68,18 @@ Halle el dominio y rango de las siguientes funciones:
 
 	$$
 	\begin{align}
-		& \lim_{ x \to \infty } { -3 + 2^{ x + 1 } } = \infty \\
-		& \lim_{ x \to -\infty } { -3 + 2^{ x + 1 } } = -3 \\
-		& R_f \in (-3,\infty)
+		& -3 + 2^{ x + 1 } = y \\
+		& 2^{ x + 1 } = y + 3 \\
+		& x + 1 = \log_2{ y + 3 } \\
+		& x = \log_2{ y + 3 } - 1
 	\end{align}
 	$$
 
-2. $f(x) = -2 + \left ( \frac{ 1 }{ 3 } \right )^{ x + 1 }$.
+	$$
+	y \in (3,\infty)
+	$$
+
+2. $g(x) = -2 + \left (\frac{ 1 }{ 3 } \right )^{ x + 1 }$.
 
 	$$
 	D_f \in \mathbb{ R }
@@ -91,10 +87,15 @@ Halle el dominio y rango de las siguientes funciones:
 
 	$$
 	\begin{align}
-		& \lim_{ x \to \infty } { -2 + \left ( \frac{ 1 }{ 3 } \right )^{ x + 1 } } = -2 \\
-		& \lim_{ x \to -\infty } { -2 + \left ( \frac{ 1 }{ 3 } \right )^{ x + 1 } } = \infty \\
-		& R_f \in (-2,\infty)
+		& -2 + \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y \\
+		& \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y + 2 \\
+		& (x + 1) \ln{ \frac{ 1 }{ 3 } } = \ln{ y + 2 } \\
+		& x = \frac{ \ln{ y + 2 } }{ \ln{ \frac{ 1 }{ 3 } } } - 1 \\
 	\end{align}
+	$$
+
+	$$
+	y \in (2,\infty)
 	$$
 
 ## 4
