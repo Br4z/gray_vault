@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-09-28"
+reviewed_on: "2025-10-13"
 ---
 
 # Reference framework
@@ -14,6 +14,6 @@ The purpose of this section is to define any specialized terminology, acronyms, 
 
 This is a critical literature review in which existing projects, research papers, and solutions that are similar to the project or have tried to solve the same problem are analyzed. The goal is to show what has already been done.
 
-## Theorical framework
+## Theoretical framework
 
-While the **state of art** looks at **other projects**, the **theorical framework** described the foundational concepts, models, and technologies that **will be use** to **build the solution**.
+While the **state of art** looks at **other projects**, the **theoretical framework** described the foundational concepts, models, and technologies that **will be use** to **build the solution**.

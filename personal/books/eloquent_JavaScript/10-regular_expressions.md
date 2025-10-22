@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-09-26"
+reviewed_on: "2025-10-02"
 ---
 
 # Regular expressions
@@ -24,11 +24,13 @@ let re_2 = /abc/
 Regular expression objects have a number of methods. The simplest one is `test`. If you pass it a string, it will return a Boolean telling you whether the string contains a match of the pattern in the expression.
 
 ```javascript
-console.log(/abc/.test("abcde")) //  true
-console.log(/abc/.test("abxde")) //  false
+console.log(/abc/.test("abcde")) // true
+console.log(/abc/.test("abxde")) // false
 ```
 
 ## Sets of characters
+
+In a regular expression, putting a set of characters between square brackets makes that part of the expression match any of the characters between the brackets.
 
 A number of common character groups have their own built-in shortcuts.
 
@@ -50,7 +52,7 @@ To **invert** a set of characters (that is, to express that you want to match an
 
 ## Matches and groups
 
-`test`  is the absolute simplest way to match a regular expression. It tells you only whether it matched and nothing else. Regular expressions also have an `exec` (execute) that will return `null` if no match was found and return an object with information about the match otherwise.
+`test` is the absolute simplest way to match a regular expression. It tells you only whether it matched and nothing else. Regular expressions also have an `exec` (execute) that will return `null` if no match was found and return an object with information about the match otherwise.
 
 ```javascript
 let match = /\d+/.exec("one two 100")
@@ -66,7 +68,7 @@ If you want to use parentheses purely for grouping, without having them show up 
 console.log(/(?:na)+/.exec("banana")) // ["nana"]
 ```
 
-## The Date class
+## The `Date` class
 
 ```javascript
 console.log(new Date()) // Fri Feb 02 2024 18:03:06 GMT+0100 (CET)
@@ -80,7 +82,11 @@ Timestamps are stored as the number of milliseconds since the start of $1970$, i
 
 ## Boundaries and look-ahead
 
-Look-ahead tests do something similar (like boundary markers, which do not match any actual characters, they just enforce that a given condition holds at the place where it appears in the pattern). They provide a pattern and will make the match fail if the input does not match that pattern, but they do not actually move the match position forward. They are written between (`?=` and `?!`).
+There is also a `\b` marker that matches **word boundaries**, positions that have a word character on one side, and a nonword character on the other. Unfortunately, these use the same simplistic concept of word characters as \w and are therefore not very reliable.
+
+Note that these boundary markers do not match any actual characters. They just enforce that a given condition holds at the place where it appears in the pattern.
+
+**Look-ahead** tests do something similar. They provide a pattern and will make the match fail if the input does not match that pattern, but they do not actually move the match position forward. They are written between (`?=` and `?!`).
 
 - `?=`: matches a group after the main expression without including it in the result.
 
@@ -91,13 +97,9 @@ console.log(/a(?=e)/.exec("braeburn")) // ["a"]
 console.log(/a(?! )/.exec("a b")) // null
 ```
 
-## Choice patterns
+## The mechanics of matching
 
-We can see the regular expression `\d+ (pig|cow|chicken)s?` like the following diagram:
-
-![regular expression diagram](./assets/10_1-regular_expression_diagram.svg)
-
-If we can find a path from the left side of the diagram to the right side, our expression matches...
+Conceptually, when you use `exec` or `test`, the regular expression engine looks for a match in your string by trying to match the expression first from the start of the string, then from the second character, and so on until it finds a match or reaches the end of the string. It will either return the first match that can be found or fail to find any match at all.
 
 ## Backtracking
 
@@ -109,8 +111,8 @@ The real power of using regular expressions with replace comes from the fact tha
 
 ```javascript
 console.log(
-    "Liskov, Barbara\nMcCarthy, John\nMilner, Robin"
-        .replace(/(\p{L}+), (\p{L}+)/gu, "$2 $1")
+	"Liskov, Barbara\nMcCarthy, John\nMilner, Robin"
+		.replace(/(\p{L}+), (\p{L}+)/gu, "$2 $1")
 )
 // Barbara Liskov
 // John McCarthy
@@ -121,19 +123,9 @@ console.log(
 
 ## Greed
 
-```javascript
-function strip_comments(code) {
-    return code.replace(/\/\/.*|\/\*[^]*\*\//g, "")
-}
-
-console.log(strip_comments("1 + /* 2 */3")) // 1 + 3
-console.log(strip_comments("x = 10 // ten!")) // x = 10
-console.log(strip_comments("1 /* a */+/* b */ 1")) // 1  1
-```
-
 We say the repetition operators (`+`, `*`, `?`, and `{}`) are **greedy**, meaning they match as much as they can and backtrack from there. If you put a question mark after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching as little as possible, matching more only when the remaining pattern does not fit the smaller match.
 
-## The lastIndex property
+## The `lastIndex` property
 
 Regular expression objects have properties. One is `source`, which contains the string that expression was created from. Another is `lastIndex`, which controls, in some limited circumstances, where the next match will start.
 
@@ -163,7 +155,7 @@ When using a shared regular expression value for multiple `exec` calls, these au
 
 ## Parsing an INI file
 
-The exact rules for this format (which is a widely used file format, usually called an INI file) are as follows:
+The exact rules for the INI format are as follows:
 
 - Blank lines and lines starting with semicolons are ignored.
 

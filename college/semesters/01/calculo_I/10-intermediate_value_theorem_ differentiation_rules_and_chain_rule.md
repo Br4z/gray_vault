@@ -1,3 +1,7 @@
+---
+reviewed_on: "2025-09-29"
+---
+
 # Intermediate value theorem, differentiation rules, and chain rule
 
 ## 1
@@ -128,7 +132,7 @@ Halle $f^\prime$ si:
 
 	$$
 	\begin{align}
-		& f^\prime(x) = \frac{ (x^4 + 2)^\prime (x - 1) - (x^4 + 2) (x - 1)^\prime}{ (x - 1)^2 } \\
+		& f^\prime(x) = \frac{ (x^4 + 2)^\prime (x - 1) - (x^4 + 2) (x - 1)^\prime }{ (x - 1)^2 } \\
 		& = \frac{ (4 x^3) (x - 1) - (x^4 + 2) (1)}{ (x - 1)^2 } \\
 		& = \frac{ 4 x^4 - 4 x^3 - x^4 - 2 }{ (x - 1)^2 } \\
 		& = \frac{ 3 x^4 - 4 x^3 - 2 }{ (x - 1)^2 }
@@ -441,3 +445,182 @@ Halle $\frac{ dy }{ dx }$ si:
 	$$
 
 2. $y = \sqrt{ x^4 - 3 x^2 + x }$.
+
+	$$
+	\begin{align}
+		& \frac{ 1 }{ 2 \sqrt{ x^4 - 3 x^2 + x } } (x^4 - 3 x^2 + x)^\prime \\
+		& = \frac{ 4 x^3 - 6 x + 1 }{ 2 \sqrt{ x^4 - 3 x^2 + x } }
+	\end{align}
+	$$
+
+3. $y = (3 x^4 - x)^3 (2 x + 1)^5$.
+
+	$$
+	\begin{align}
+		& \left ((3 x^4 - x)^3 \right )^\prime (2 x + 1)^5 + (3 x^4 - x)^3 \left ((2 x + 1)^5 \right )^\prime \\
+		& = (x^4 - x)^2 (36 x^3 - 3) (2 x + 1)^5 + 10 (3 x^4 - x)^3 (2 x + 1)^4
+	\end{align}
+	$$
+
+4. $y = \frac{ 1 }{ x^5 } + \frac{ x + 1 }{ \sqrt{ 2 x } }$.
+
+	$$
+	\begin{align}
+		& -\frac{ 5 }{ x^6 } + \frac{ (x + 1)^\prime \sqrt{ 2 x } - (x + 1) (\sqrt{ 2 x })^\prime }{ 2 x } \\
+		& = -\frac{ 5 }{ x^6 } + \frac{ \sqrt{ 2 x } - \frac{ x + 1 }{ \sqrt{ 2 x } } }{ 2 x } \\
+		= -\frac{ 5 }{ x^6 } + \frac{ x - 1 }{ 2 x \sqrt{ 2 x } }
+	\end{align}
+	$$
+
+5. $y = \frac{ (3 x - 1)^2 }{ \ptan{ x }^2 }$.
+
+	$$
+	\begin{align}
+		& \frac{ \left ((3 x - 1)^2 \right )^\prime \ptan{ x }^2 - (3 x - 1)^2 \ptan{ x }^\prime }{ \ptan{ x }^4 } \\
+		& = \frac{ (18 x - 6) \ptan{ x }^2 - 2 (3 x - 1)^2 \ptan{ x } \psec{ x }^2 }{ \ptan{ x }^4 }
+	\end{align}
+	$$
+
+6. $y = x \sqrt{ (x^2 - 3)^3 }$.
+
+	$$
+	\begin{align}
+		& x^\prime \sqrt{ (x^2 - 3)^3 } + x \left (\sqrt{ (x^2 - 3)^3 } \right )^\prime \\
+		& = \sqrt{ (x^2 - 3)^3 } + \frac{ 3 x^4 - 9 x^2 }{ \sqrt{ (x^2 - 3)^3 } }
+	\end{align}
+	$$
+
+7. $y = \psin{ 5 x - 2 }^3$.
+
+	$$
+	\begin{align}
+		& 3 \psin{ 5 x - 2 }^2 (\psin{ 5 x - 2 })^\prime \\
+		& = 3 \psin{ 5 x - 2 }^2 \pcos{ 5 x - 2 } (5 x - 2)^\prime \\
+		& = 15 \psin{ 5 x - 2 }^2 \pcos{ 5 x - 2  }
+	\end{align}
+	$$
+
+8. $y = \psec{ 1 - 2 x }^2$.
+
+	$$
+	\begin{align}
+		& 2 \psec{ 1 - 2 x } (\psec{ 1 - 2 x })^\prime \\
+		& = 2 \psec{ 1 - 2 x } \psec{ 1 - 2 x } \ptan{ 1 - 2 x } (1 - 2 x)^\prime \\
+		& = -4 \psec{ 1 - 2 x }^2 \ptan{ 1 - 2 x } \\
+		& = \frac{ -4 \psin{ 1 - 2 x } }{ \pcos{ 1 - 2 x }^3 }
+	\end{align}
+	$$
+
+## 8
+
+Sea $y = u^{ 15 } - 2 u$ y $u = x^3 - 2$. Halle $\frac{ dy }{ dx }$ en $x = 1$.
+
+$$
+\frac{ dy }{ dx } = \frac{ dy }{ du } * \frac{ du }{ dx }
+$$
+
+$$
+\begin{align}
+	& \frac{ dy }{ dx } = (15 u^{ 14 } - 2) (3 x^2) \\
+	& (15 (-1)^{ 14 } - 2) (3) \quad x = 1 \quad u(1) = -1 \\
+	& = 39
+\end{align}
+$$
+
+## 9
+
+Sea $g$ una función derivable. Halle $f^\prime(x)$ si:
+
+1. $f(x) = x g^2(x^3 - 1)$.
+
+	$$
+	\begin{align}
+		& x^\prime g^2(x^3 - 1) + x (g^2(x^3 - 1))^\prime \\
+		& = g^2(x^3 - 1) + 6 x^2 g(x^3 - 1) g^\prime(x^3 - 1) 
+	\end{align}
+	$$
+
+2. $f(x) = \sqrt{ 1 + g(2 x) }$.
+
+	$$
+	\begin{align}
+		& \frac{ 1 }{ 2 \sqrt{ 1 + g(2 x) } } (1 + g(2 x))^\prime \\
+		& = \frac{ 2 g^\prime(2 x) }{ 2 \sqrt{ 1 + g(2 x) } } \\
+		& = \frac{ g^\prime(2 x) }{ \sqrt{ 1 + g(2 x) } }
+	\end{align}
+	$$
+
+## 10
+
+Si $f$ y $g$ son funciones diferenciables tales que $f(t) = (g^2(-t) - 3 t)^4$, $g(-1) = \sqrt{ 2 }$ y $g^\prime(-1) = -\sqrt{ 2 }$. Calcule $f^\prime(1)$.
+
+$$
+\begin{align}
+	& f^\prime(t) = 4 (g^2(-t) - 3 t)^3 (-2 g(-t) g^\prime(-t) - 3) \\
+	& f^\prime(1) = 4 (g^2(-1) - 3)^3 (-2 g(-1) g^\prime(-1) - 3) \\
+	& = 4 (-1) (1) \\
+	& = 4
+\end{align}
+$$
+
+## 11
+
+Encuentre los puntos sobre la gráfica de $f(x) = \sqrt{ 2 x + 4 }$, donde la recta tangente es paralela a la recta $x - 4 y - 3 = 0$.
+
+$$
+y = \frac{ 1 }{ 4 } x - \frac{ 3 }{ 4 } \quad m = \frac{ 1 }{ 4 }
+$$
+
+$$
+\begin{align}
+	& f^\prime(x) = \frac{ x }{ \sqrt{ 2 x + 4 } } \\
+	& \frac{ 1 }{ \sqrt{ 2 x + 4 } } = \frac{ 1 }{ 4 } \\
+	& 4 = \sqrt{ 2 x + 4 } \\
+	& 2 x + 4 = 16 \\
+	& x = 6
+\end{align}
+$$
+
+$$
+\begin{align}
+	& f(6) = \sqrt{ 2 (6) + 4 } \\
+	& = \sqrt{ 16 } \\
+	& = 4
+\end{align}
+$$
+
+$$
+P(6,4)
+$$
+
+## 12
+
+Pruebe que la derivada de una función par es impar y que la derivada de una función impar es par.
+
+Sea $f(x)$ una función par. Por definición, esto significa que:
+
+$$
+f(-x) = f(x)
+$$
+
+$$
+\begin{align}
+	& f(-x)^\prime = f(x)^\prime \\
+	& -f^\prime(-x) = f(x)^\prime \\
+	& f^\prime(-x) = -f(x)^\prime
+\end{align}
+$$
+
+Sea $h(x)$ una función impar. Por definición, esto significa que:
+
+$$
+g(-x) = -g(x)
+$$
+
+$$
+\begin{align}
+	& g(-x)^\prime = -g(x)^\prime \\
+	& -g^\prime(-x) = -g(x)^\prime \\
+	& g^\prime(-x) = g(x)^\prime
+\end{align}
+$$

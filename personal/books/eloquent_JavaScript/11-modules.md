@@ -1,3 +1,7 @@
+---
+reviewed_on: "2025-10-02"
+---
+
 # Modules
 
 > "Write code that is easy to delete, not easy to extend." - Tef, Programming is Terrible.
@@ -12,28 +16,28 @@ Module interfaces have a lot in common with object interfaces...They make part o
 
 Since ECMAScript $2015$, JavaScript supports two different types of programs. Scripts behave in the old way: their bindings are defined in the global scope, and they have no way to directly reference other scripts. **Modules** get their own separate scope and support the `import` and `export`, which are not available in scripts, to declare their dependencies and interface...
 
-...Imported bindings can be renamed to give them a new local name using as after their name.
+...Imported bindings can be renamed to give them a new local name using `as` after their name.
 
-```JS
+```javascript
 import { day_name as nom_de_jour } from "./day_name.js"
 console.log(nom_de_jour(3)) // Wednesday
 ```
 
 A module may also have a special export named default, which is often used for modules that only export a single binding...
 
-```JS
+```javascript
 export default ["Winter", "Spring", "Summer", "Autumn"]
 ```
 
 Such a binding is imported by omitting the braces around the name of the import.
 
-```JS
+```javascript
 import season_names from "./season_names.js";
 ```
 
 To import all bindings from a module at the same time, you can use import `*`...
 
-```JS
+```javascript
 import * as day_name from "./day_name.js";
 console.log(day_name.dayName(3)) // Wednesday
 ```
@@ -54,20 +58,20 @@ A CommonJS module looks like a regular script, but it has access to two bindings
 
 CommonJS is implemented with a module loader that, when loading a module, wraps its code in a function (giving it its own local scope) and passes the require and exports bindings to that function as arguments.
 
-```JS
+```javascript
 function require(name) {
-    if (!(name in require.cache)) {
-        let code = read_file(name)
-        let exports = require.cache[name] = {}
-        let wrapper = Function("require, exports", code)
-        wrapper(require, exports)
-    }
-    return require.cache[name];
+	if (!(name in require.cache)) {
+		let code = read_file(name)
+		let exports = require.cache[name] = {}
+		let wrapper = Function("require, exports", code)
+		wrapper(require, exports)
+	}
+	return require.cache[name];
 }
 require.cache = Object.create(null);
 ```
 
-An important difference between this system and ES modules is that ES module imports happen before a module's script starts running, whereas `require` is a normal function, invoked when the module is already running. Unlike `import`, `require` calls can appear inside functions, and the name of the dependency can be any expression that evaluates to a string, whereas import allows only plain quoted strings.
+An important difference between this system and ES modules is that ES module imports happen before a module's script starts running, whereas `require` is a normal function, invoked when the module is already running. Unlike `import`, `require` calls can appear inside functions, and the name of the dependency can be any expression that evaluates to a string, whereas `import` allows only plain quoted strings.
 
 ## Building and bundling
 

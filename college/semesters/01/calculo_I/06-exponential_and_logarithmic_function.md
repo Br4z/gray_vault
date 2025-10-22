@@ -6,7 +6,7 @@ reviewed_on: "2025-08-17"
 
 ## 1
 
-A continuación se presentan la grafica de las funciones $f_1(x) = 2^x$, $f_2(x) = 3^x$, $f_3(x) = 4^x$, $f_4(x) = \left (\frac{ 1 }{ 4 } \right )^x$, $f_5(x) = \left (\frac{ 1 }{ 2 } \right )^x$ y $f_6(x) = \left (\frac{ 3 }{ 4 } \right )^x$. Identifique cada una.
+A continuación se presentan la gráfica de las funciones $f_1(x) = 2^x$, $f_2(x) = 3^x$, $f_3(x) = 4^x$, $f_4(x) = \left (\frac{ 1 }{ 4 } \right )^x$, $f_5(x) = \left (\frac{ 1 }{ 2 } \right )^x$ y $f_6(x) = \left (\frac{ 3 }{ 4 } \right )^x$. Identifique cada una.
 
 ![graph](college/semesters/01/assets/calculo_I/2_06_01-graph.svg)
 
@@ -70,8 +70,8 @@ Halle el dominio y rango de estas funciones:
 	\begin{align}
 		& -3 + 2^{ x + 1 } = y \\
 		& 2^{ x + 1 } = y + 3 \\
-		& x + 1 = \log_2{ y + 3 } \\
-		& x = \log_2{ y + 3 } - 1
+		& x + 1 = \plog[2]{ y + 3 } \\
+		& x = \plog[2]{ y + 3 } - 1
 	\end{align}
 	$$
 
@@ -89,8 +89,8 @@ Halle el dominio y rango de estas funciones:
 	\begin{align}
 		& -2 + \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y \\
 		& \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y + 2 \\
-		& (x + 1) \ln{ \frac{ 1 }{ 3 } } = \ln{ y + 2 } \\
-		& x = \frac{ \ln{ y + 2 } }{ \ln{ \frac{ 1 }{ 3 } } } - 1 \\
+		& (x + 1) \pln{ \frac{ 1 }{ 3 } } = \pln{ y + 2 } \\
+		& x = \frac{ \pln{ y + 2 } }{ \pln{ \frac{ 1 }{ 3 } } } - 1 \\
 	\end{align}
 	$$
 
@@ -102,78 +102,78 @@ Halle el dominio y rango de estas funciones:
 
 Calcule el valor de las siguientes expresiones:
 
-1. $\log_3 729$.
+1. $\plog[3]{ 729 }$.
 
 	$$
-	= \log_3 3^6 = 6
+	= \plog[3]{ 3^6 } = 6
 	$$
 
-2. $\log_5 \sqrt[7]{ 5 }$.
+2. $\plog[5]{ \sqrt[7]{ 5 } }$.
 
 	$$
-	= \log_5 5^\frac{ 1 }{ 7 } = \frac{ 1 }{ 7 }
+	= \plog[5]{ 5^\frac{ 1 }{ 7 } } = \frac{ 1 }{ 7 }
 	$$
 
-3. $\log_\sqrt{ 2 } 16$.
+3. $\plog[\sqrt{ 2 }]{ 16 }$.
 
 	$$
 	\begin{align}
-		& = \log_{ 2^\frac{ 1 }{ 2 } } 16 \\
-		& = 2 \log_2 16 \\
-		& = 2 \log_2 2^4 \\
+		& = \plog[ 2^\frac{ 1 }{ 2 } ]{ 16 } \\
+		& = 2 \plog[2]{ 16 } \\
+		& = 2 \plog[2]{ 2^4 } \\
 		& = 2 * 4 \\
 		& = 8
 	\end{align}
 	$$
 
-4. $\log_8 16^p$.
+4. $\plog[8]{ 16^p }$.
 
 	$$
 	\begin{align}
-		& = \log_{ 2^3 } 2^{ 4 p } \\
+		& = \plog[ 2^3 ]{ 2^{ 4 p } } \\
 		& = \frac{ 4 p }{ 3 }
 	\end{align}
 	$$
 
-5. $4^{ \log_{ \frac{ 1 }{ 4 } } 3 }$.
+5. $4^{ \plog[ \frac{ 1 }{ 4 } ]{ 3 } }$.
 
 	$$
 	\begin{align}
-		& = \left (\left (\frac{ 1 }{ 4 } \right )^{ -1 } \right )^{ \log_{ \frac{ 1 }{ 4 } } 3 } \\
-		& = \left (\frac{ 1 }{ 4 } \right )^{ -\log_{ \frac{ 1 }{ 4 } } 3 } \\
-		& = \left (\frac{ 1 }{ 4 } \right )^{ \log_{ \frac{ 1 }{ 4 } } 3^{ -1 } } \\
+		& = \left (\left (\frac{ 1 }{ 4 } \right )^{ -1 } \right )^{ \plog[ \frac{ 1 }{ 4 } ]{ 3 } } \\
+		& = \left (\frac{ 1 }{ 4 } \right )^{ -\plog[ \frac{ 1 }{ 4 } ]{ 3 } } \\
+		& = \left (\frac{ 1 }{ 4 } \right )^{ \plog[ \frac{ 1 }{ 4 } ]{ 3^{ -1 } } } \\
 		& = 3^{ -1 }
 	\end{align}
 	$$
 
-6. $3^{ \log_9 2 }$.
+6. $3^{ \plog[9]{ 2 } }$.
 
 	$$
 	\begin{align}
-		& = (9^{ -2 })^{ \log_9 2 } \\
-		& = 9^{ -2 \log_9 2 } \\
-		& = 9^{ \log_9 2^{ -2 } } \\
+		& = (9^{ -2 })^{ \plog[9]{ 2 } } \\
+		& = 9^{ -2 \plog[9]{ 2 } } \\
+		& = 9^{ \plog[9]{ 2^{ -2 } } } \\
 		& = 2^{ -2 }
 	\end{align}
 	$$
 
-7. $\log_{ \frac{ 1 }{ 2 } } 64$.
+7. $\plog[ \frac{ 1 }{ 2 } ]{ 64 }$.
 
 	$$
 	\begin{align}
-		& = \log_{ 2^{ -1 } } 2^6 \\
-		& = 6 \log_{ 2^{ -1 } } 2 \\
-		& = 6 \log_{ 2^{ -1 } } (2^{ -1 })^{ -1 } \\
+		& = \plog[ 2^{ -1 } ]{ 2^6 } \\
+		& = 6 \plog[ 2^{ -1 } ]{ 2 } \\
+		& = 6 \plog[ 2^{ -1 } ]{ (2^{ -1 })^{ -1 } } \\
 		& = -6
 	\end{align}
 	$$
 
-8. $\log_{ \frac{ 1 }{ 81 } } 3$.
+8. $\plog[ \frac{ 1 }{ 81 } ]{ 3 }$.
 
 	$$
 	\begin{align}
-	& = \log_{ 3^{ -4 } } 3 \\
-	& = \log_{ 3^{ -4 } } (3^{ -4 })^{ -\frac{ 1 }{ 4 } } \\
+	& = \plog[ 3^{ -4 } ]{ 3 } \\
+	& = \plog[ 3^{ -4 } ]{ (3^{ -4 })^{ -\frac{ 1 }{ 4 } } } \\
 	& = -\frac{ 1 }{ 4 }
 	\end{align}
 	$$
@@ -183,24 +183,24 @@ Calcule el valor de las siguientes expresiones:
 Simplifique al máximo la siguiente expresión:
 
 $$
-\log 2 + 16 \log \frac{ 16 }{ 15 } + 12 \log \frac{ 25 }{ 24 } + 7 \log \frac{ 81 }{ 82 }
+\plog{ 2 } + 16 \plog{ \frac{ 16 }{ 15 } } + 12 \plog{ \frac{ 25 }{ 24 } } + 7 \plog{ \frac{ 81 }{ 82 } }
 $$
 
 $$
 \begin{align}
-	& = \log{ 2 \left (\frac{ 16 }{ 15 } \right )^{ 16 } \left (\frac{ 25 }{ 24 } \right )^{ 12 } \left (\frac{ 81 }{ 80 } \right )^7 } \\
-	& = \log{ 2 * \frac{ { 2^4 }^{ 16 } }{ 15^{ 16 } } * \frac{ 25^{ 12 } }{ 24^{ 12 } } * \frac{ { 3^4 }^7 }{ 80^7 } } \\
-	& = \log{ \frac{ 2^{ 65 } }{ 3^{ 16 } * 5^{ 16 } } * \frac{ 5^{ 24 } }{ 3^{ 12 } * 8^{ 12 } } * \frac{ 3^{ 28 } }{ 2^7 * 40^7 } } \\
-	& = \log{ \frac{ 2^{ 65 } }{ 3^{ 16 } * 5^{ 16 } } * \frac{ 5^{ 24 } }{ 3^{ 12 } * 2^{ 36 } } * \frac{ 3^{ 28 } }{ 2^{ 28 } * 5^7 } } \\
-	& = \log \frac{ 2^{ 65 } * 3^{ 28 } * 5^{ 24 } }{ 2^{ 64 } * 3^{ 28 } * 5^{ 23 } } \\
-	& = \log 2 * 5 \\
+	& = \plog{ 2 \left (\frac{ 16 }{ 15 } \right )^{ 16 } \left (\frac{ 25 }{ 24 } \right )^{ 12 } \left (\frac{ 81 }{ 80 } \right )^7 } \\
+	& = \plog{ 2 * \frac{ { 2^4 }^{ 16 } }{ 15^{ 16 } } * \frac{ 25^{ 12 } }{ 24^{ 12 } } * \frac{ { 3^4 }^7 }{ 80^7 } } \\
+	& = \plog{ \frac{ 2^{ 65 } }{ 3^{ 16 } * 5^{ 16 } } * \frac{ 5^{ 24 } }{ 3^{ 12 } * 8^{ 12 } } * \frac{ 3^{ 28 } }{ 2^7 * 40^7 } } \\
+	& = \plog{ \frac{ 2^{ 65 } }{ 3^{ 16 } * 5^{ 16 } } * \frac{ 5^{ 24 } }{ 3^{ 12 } * 2^{ 36 } } * \frac{ 3^{ 28 } }{ 2^{ 28 } * 5^7 } } \\
+	& = \plog{ \frac{ 2^{ 65 } * 3^{ 28 } * 5^{ 24 } }{ 2^{ 64 } * 3^{ 28 } * 5^{ 23 } } } \\
+	& = \plog{ 2 * 5 } \\
 	& = 1
 \end{align}
 $$
 
 ## 6
 
-A continuación se presentan la grafica de las funciones $f_1(x) = \log_2 x$, $f_2(x) = \log_3 x$, $f_3(x) = \log_4 x$, $f_4(x) = \log_{ \frac{ 1 }{ 4 } } x$, $f_5(x) = \log_{ \frac{ 1 }{ 2 } } x$ y $f_6(x) = \log_{ \frac{ 3 }{ 4 } } x$. Identifique cada una.
+A continuación se presentan la grafica de las funciones $f_1(x) = \plog[2]{ x }$, $f_2(x) = \plog[3]{ x }$, $f_3(x) = \plog[4]{ x }$, $f_4(x) = \plog[ \rac{ 1 }{ 4 } ]{ x }$, $f_5(x) = \plog[ \rac{ 1 }{ 2 } ]{ x }$ y $f_6(x) = \plog[ \rac{ 3 }{ 4 } ]{ x }$. Identifique cada una.
 
 ![graph](college/semesters/01/assets/calculo_I/2_06_03-graphs.svg)
 
@@ -208,23 +208,23 @@ A continuación se presentan la grafica de las funciones $f_1(x) = \log_2 x$, $f
 
 Escriba las siguientes expresiones como un solo logaritmo:
 
-1. $x \ln 2 + 5 \ln{ x - 1 } - 2 \ln{ x - 3 }$.
+1. $x \pln{ 2 } + 5 \pln{ x - 1 } - 2 \pln{ x - 3 }$.
 
 	$$
 	\begin{align}
-		& = \ln 2^x + \ln (x - 1)^5 + \ln (x - 3)^{ -2 } \\
-		& = \ln{ 2^x (x - 1)^5 (x - 3)^{ -2 } }
+		& = \pln{ 2^x } + \pln{ x - 1 }^5 + \pln{ x - 3 }^{ -2 } \\
+		& = \pln{ 2^x (x - 1)^5 (x - 3)^{ -2 } }
 	\end{align}
 	$$
 
-2. $2 \log_a \frac{ y^3 }{ x } - 3 \log_a y + \frac{ 1 }{ 2 } \log_a { x^4 y^2 }$.
+2. $2 \plog[a]{ \frac{ y^3 }{ x } } - 3 \plog[a]{ y } + \frac{ 1 }{ 2 } \plog[a]{ x^4 y^2 }$.
 
 	$$
 	\begin{align}
-		& = \log_a \left ( \frac{ y^3 }{ x } \right )^2 + \log_a y^{ -3 } + \log_a (x^4 y^2)^\frac{ 1 }{ 2 } \\
-		& = \log_a { \left ( \frac{ y^3 }{ x } \right )^2 y^{ -3 } (x^4 y^2)^\frac{ 1 }{ 2 } } \\
-		& = \log_a { \frac{ y^6 }{ x^2 y^3 } x^2 y } \\
-		& = \log_a y^4
+			& = \plog[a]{ \left ( \frac{ y^3 }{ x } \right )^2 } + \plog[a]{ y^{ -3 } } + \plog[a]{ (x^4 y^2)^\frac{ 1 }{ 2 } } \\
+			& = \plog[a]{ \left ( \frac{ y^3 }{ x } \right )^2 y^{ -3 } (x^4 y^2)^\frac{ 1 }{ 2 } } \\
+			& = \plog[a]{ \frac{ y^6 }{ x^2 y^3 } x^2 y } \\
+			& = \plog[a]{ y^4 }
 	\end{align}
 	$$
 
@@ -232,7 +232,7 @@ Escriba las siguientes expresiones como un solo logaritmo:
 
 Determine para que valores de $x$ se cumple la igualdad:
 
-1. $\log(x + 5) = \log x + \log 5$.
+1. $\plog{ x + 5 } = \plog{ x } + \plog{ 5 }$.
 
 	$$
 	\begin{align}
@@ -241,18 +241,18 @@ Determine para que valores de $x$ se cumple la igualdad:
 	\end{align}
 	$$
 
-2. $(\ln 3)^3 = 3 \ln x$.
+2. $\pln{ 3 }^3 = 3 \pln x$.
 
 	$$
 	x > 0
 	$$
 
-3. $(\log x)^3 + (\log x)^2 - 4 (\log x) - 4 = 0$.
+3. $(\plog{ x })^3 + (\plog{ x })^2 - 4 (\plog{ x }) - 4 = 0$.
 
 	$$
 	\begin{align}
-		& = \log{ x^3 x^2 x^{ -4 } } \\
-		& = \log{ x } = 4 \\
+		& = \plog{ x^3 x^2 x^{ -4 } } \\
+		& = \plog{ x } = 4 \\
 		& x = 10^4
 	\end{align}
 	$$
@@ -265,7 +265,7 @@ Resuelva las siguientes ecuaciones:
 
 	$$
 	\begin{align}
-		& = \log_3 3^{ 2 x + 1 } = \log_3 3^{ \pi x + 4 } \\
+		& = \plog[3]{ 3^{ 2 x + 1 } } = \plog[3]{ 3^{ \pi x + 4 } } \\
 		& = 2 x + 1 = \pi x + 4 \\
 		& = 2 x - \pi x = 3 \\
 		& x = \frac{ 3 }{ 2 - \pi }
@@ -276,11 +276,11 @@ Resuelva las siguientes ecuaciones:
 
 	$$
 	\begin{align}
-		& = \ln e^{ 4 x - 2 } = \ln 2^{ x + 3 } \\
-		& 4 x - 2 = (x + 3) \ln 2 \\
-		& 4 x - 2 = x \ln 2 + 3 \ln 2 \\
-		& 4 x - x \ln 2 = 3 \ln 2 + 2 \\
-		& x = \frac{ 3 \ln 2 + 2 }{ 4 - \ln 2 }
+		& = \pln{ e^{ 4 x - 2 } } = \pln{ 2^{ x + 3 } } \\
+		& 4 x - 2 = (x + 3) \pln 2 \\
+		& 4 x - 2 = x \pln 2 + 3 \pln 2 \\
+		& 4 x - x \pln 2 = 3 \pln 2 + 2 \\
+		& x = \frac{ 3 \pln 2 + 2 }{ 4 - \pln 2 }
 	\end{align}
 	$$
 
@@ -288,9 +288,9 @@ Resuelva las siguientes ecuaciones:
 
 	$$
 	\begin{align}
-		& \log_2 2^{ x - 1 } = \log_2 \left ( \frac{ 1 }{ 16 } \right )^{ 4 x } \\
-		& x - 1 = 4 x \log_2 \frac{ 1 }{ 16 } \\
-		& x - 1 = 4 x \log_2 2^{ -4 } \\
+		& \plog[2]{ 2^{ x - 1 } } = \plog[2]{ \left ( \frac{ 1 }{ 16 } \right )^{ 4 x } } \\
+		& x - 1 = 4 x \plog[2]{ \frac{ 1 }{ 16 } } \\
+		& x - 1 = 4 x \plog[2]{ 2^{ -4 } } \\
 		& x - 1 = 4 x (-4) \\
 		& x = \frac{ 1 }{ 17 }
 	\end{align}
@@ -306,12 +306,12 @@ Resuelva las siguientes ecuaciones:
 		& w^2 - 5 w - 14 = 0 \\
 		& (w - 7) (w + 2) = 0 \quad w_1 = 7 \; w_2 = -2 \\
 		& w_1 \quad 7 = e^x \\
-		& \ln 7 = x \\
+		& \pln 7 = x \\
 		& w_2 \quad -2 = e^x \; \text{algo imposible}
 	\end{align}
 	$$
 
-5. $\log \abs{ 3 x - 1 } = 2$.
+5. $\plog{ \abs{ 3 x - 1 } } = 2$.
 
 	Tenemos dos casos:
 
@@ -323,8 +323,8 @@ Resuelva las siguientes ecuaciones:
 
 		$$
 		\begin{align}
-			& \log{ -3 x + 1 } = 2 \\
-			& \log{ -3 x + 1 } = \log 10^2 \\
+			& \plog{ -3 x + 1 } = 2 \\
+			& \plog{ -3 x + 1 } = \plog{ 10^2 } \\
 			& -3 x + 1 = 100 \\
 			& x = \frac{ 99 }{ -3 } = -33
 		\end{align}
@@ -338,14 +338,14 @@ Resuelva las siguientes ecuaciones:
 
 		$$
 		\begin{align}
-			& \log{ 3 x - 1 } = 2 \\
-			& \log{ 3 x - 1 } = \log 10^2 \\
+			& \plog{ 3 x - 1 } = 2 \\
+			& \plog{ 3 x - 1 } = \plog{ 10^2 } \\
 			& 3 x - 1 = 100 \\
 			& x = \frac{ 101 }{ 3 }
 		\end{align}
 		$$
 
-6. $\log{ x^2 + 4 } - \log{ x + 2 } = 3 + \log{ x - 2 }$.
+6. $\plog{ x^2 + 4 } - \plog{ x + 2 } = 3 + \plog{ x - 2 }$.
 
 	$$
 	x > 2
@@ -353,8 +353,8 @@ Resuelva las siguientes ecuaciones:
 
 	$$
 	\begin{align}
-		& \log \frac{ x^2 + 4 }{ x + 2 } = \log 10^3 + \log{ x - 2 } \\
-		& \log \frac{ x^2 + 4 }{ x + 2 } = \log{ 10^3 (x - 2) } \\
+			& \plog{ \frac{ x^2 + 4 }{ x + 2 } } = \plog{ 10^3 } + \plog{ x - 2 } \\
+			& \plog{ \frac{ x^2 + 4 }{ x + 2 } } = \plog{ 10^3 (x - 2) } \\
 		& \frac{ x^2 + 4 }{ x + 2 } = 10^3 (x - 2) \\
 		& x^2 + 4 = 10^3 (x^2 - 4) \\
 		& x^2 = \frac{ 4006 }{ 999 } \\
@@ -363,23 +363,23 @@ Resuelva las siguientes ecuaciones:
 	\end{align}
 	$$
 
-7. $x^\sqrt{ \log x } = 10^8$.
+7. $x^\sqrt{ \plog{ x } } = 10^8$.
 
 	$$
 	x \geq 1
 	$$
 
 	$$
-	\begin{align}
-		& \log_x x^\sqrt{ \log x } = \log 10^8 \\
-		& \sqrt{ \log x } = 8 \log_x 10 \\
-		& \log x = 64 (\log_x 10)^2 \\
-		& \log_x 10 = \frac{ \log 10 }{ \log x } \\
-		& \log x = 64 \left (\frac{ \log 10 }{ \log x } \right)^2 \\
-		& w = 64 \frac{ 1 }{ w^2 } \quad w = \log x \\
+		\begin{align}
+			& \plog[x]{ x^\sqrt{ \plog{ x } } } = \plog{ 10^8 } \\
+			& \sqrt{ \plog{ x } } = 8 \plog[x]{ 10 } \\
+			& \plog{ x } = 64 (\plog[x]{ 10 })^2 \\
+			& \plog[x]{ 10 } = \frac{ \plog{ 10 } }{ \plog{ x } } \\
+			& \plog{ x } = 64 \left (\frac{ \plog{ 10 } }{ \plog{ x } } \right)^2 \\
+			& w = 64 \frac{ 1 }{ w^2 } \quad w = \plog{ x } \\
 		& w^3 = 64 \\
 		& w = 4 \\
-		& \log x = 4 \\
+			& \plog{ x } = 4 \\
 		& x = 10^4
 	\end{align}
 	$$
@@ -391,7 +391,7 @@ Con cada una de las siguientes funciones
 $$
 \begin{align}
 	& f_1(x) = 1 + e^{ -x } \\
-	& f_2(x) = 3 + \log_5{ x + 4 }
+	& f_2(x) = 3 + \plog[5]{ x + 4 }
 \end{align}
 $$
 
@@ -404,8 +404,8 @@ $$
 		$$
 		\begin{align}
 			& e^{ -x } = y - 1 \\
-			& -x = \ln{ y - 1 } \\
-			& x = -\ln{ y - 1 } \\
+			& -x = \pln{ y - 1 } \\
+			& x = -\pln{ y - 1 } \\
 			& y \in (1,\infty)
 		\end{align}
 		$$
@@ -416,7 +416,7 @@ $$
 
 		$$
 		\begin{align}
-			& \log_5{ x + 4 } = y - 3 \\
+			& \plog[5]{ x + 4 } = y - 3 \\
 			& x + 4 = 5^{ y - 3 } \\
 			& x = 5^{ y - 3 } - 4 \\
 			& y \in (-\infty,\infty)
@@ -440,8 +440,8 @@ $$
 
 		$$
 		\begin{align}
-			& 3 + \log_5{ x_1 + 4 } = 3 + \log_5{ x_2 + 4 } \\
-			& \log_5{ x_1 + 4 } = \log_5{ x_2 + 4 } \\
+			& 3 + \plog[5]{ x_1 + 4 } = 3 + \plog[5]{ x_2 + 4 } \\
+			& \plog[5]{ x_1 + 4 } = \plog[5]{ x_2 + 4 } \\
 			& x_1 + 4 = x_2 + 4 \\
 			& x_1 = x_2
 		\end{align}
@@ -461,9 +461,9 @@ $$
 	\begin{align}
 		& B(3) = 180 e^{ 3 k } = 360 \\
 		& e^{ 3 k } = 2 \\
-		& 3 k = \ln 2 \\
-		& k = \frac{ \ln 2 }{ 3 } \\
-		& B(t) = 180 e^{ \frac{ \ln 2 }{ 3 } t }
+		& 3 k = \pln 2 \\
+		& k = \frac{ \pln 2 }{ 3 } \\
+		& B(t) = 180 e^{ \frac{ \pln 2 }{ 3 } t }
 	\end{align}
 	$$
 
@@ -471,8 +471,8 @@ $$
 
 	$$
 	\begin{align}
-		& B(6) = 180 e^{ \frac{ \ln 2 }{ 3 } 6 } \\
-		& = 180 e^{ 2 \ln 2 } \\
+		& B(6) = 180 e^{ \frac{ \pln 2 }{ 3 } 6 } \\
+		& = 180 e^{ 2 \pln 2 } \\
 		& = 180 * 4 \\
 		& = 720
 	\end{align}
@@ -486,8 +486,8 @@ $$
 
 	$$
 	\begin{align}
-		& B \left (\frac{ 2 }{ 3 } \right ) = 180 e^{ \frac{ \ln 2 }{ 3 } * \frac{ 2 }{ 3 } } \\
-		& = 180 e^{ \frac{ 2 \ln 2 }{ 9 } } \\
+		& B \left (\frac{ 2 }{ 3 } \right ) = 180 e^{ \frac{ \pln 2 }{ 3 } * \frac{ 2 }{ 3 } } \\
+		& = 180 e^{ \frac{ 2 \pln 2 }{ 9 } } \\
 		& = 180 * 2^\frac{ 2 }{ 9 } \\
 	\end{align}
 	$$
@@ -496,12 +496,12 @@ $$
 
 	$$
 	\begin{align}
-		& B(t) = 180 e^{ \frac{ \ln 2 }{ 3 } t } = 1,000 \\
-		& 18 e^{ \frac{ \ln 2 }{ 3 } t } = 100 \\
+		& B(t) = 180 e^{ \frac{ \pln 2 }{ 3 } t } = 1,000 \\
+		& 18 e^{ \frac{ \pln 2 }{ 3 } t } = 100 \\
 		& 18 * 2^\frac{ t }{ 3 } = 100 \\
 		& 2^\frac{ t }{ 3 } = \frac{ 50 }{ 9 } \\
-		& \frac{ t }{ 3 } = \log_2 \frac{ 50 }{ 9 } \\
-		& t = \log_2 \left ( \frac{ 50 }{ 9 } \right )^3
+		& \frac{ t }{ 3 } = \plog[2]{ \frac{ 50 }{ 9 } } \\
+		& t = \plog[2]{ \left ( \frac{ 50 }{ 9 } \right )^3 }
 	\end{align}
 	$$
 

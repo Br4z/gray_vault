@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7fcc48330d02abe4",
+        "id": "7ca9f17172eca424",
         "type": "tabs",
         "children": [
           {
-            "id": "b1ad4b51497f40d5",
+            "id": "b5ddca0a8908b069",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "college/semesters/10/seminario_de_trabajo_de_grado/10-budget.md",
+                "file": "college/semesters/10/seminario_de_trabajo_de_grado/04-problem_justification.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "10-budget"
+              "title": "04-problem_justification"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 325.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -174,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "college/semesters/10/seminario_de_trabajo_de_grado/10-budget.md",
+                "file": "college/semesters/10/seminario_de_trabajo_de_grado/04-problem_justification.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 10-budget"
+              "title": "Outline of 04-problem_justification"
             }
           }
         ]
@@ -200,53 +200,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b1ad4b51497f40d5",
+  "active": "b5ddca0a8908b069",
   "lastOpenFiles": [
-    "college/semesters/10/seminario_de_trabajo_de_grado/09-project_development_and_implementation.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/02-introduction.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/08-methodology.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/07-reference_framework.md",
     "college/semesters/10/seminario_de_trabajo_de_grado/06-project_scope.md",
+    "college/semesters/10/seminario_de_trabajo_de_grado/04-problem_justification.md",
+    "college/semesters/10/innovation_and_entrepreneurship/classes/05-prototype_evolution_and_evaluation.md",
+    "college/semesters/10/innovation_and_entrepreneurship/classes/04-proof_of_concept_and_minimum_viable_model.md",
+    "college/semesters/10/innovation_and_entrepreneurship/classes/03-get_to_know_the_client.md",
+    "college/semesters/10/innovation_and_entrepreneurship/classes/02-the_entrepreneur.md",
+    "college/semesters/10/innovation_and_entrepreneurship/homework/01-leader-soft_skills.md",
+    "college/semesters/10/game_development/05-creating_elements_in_video_games.md",
+    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+    "college/semesters/01/calculo_I/11-implicit_differentiation_and_related_rates.md",
+    "Pasted image 20251016143124.png",
+    "college/semesters/10/seminario_de_trabajo_de_grado/07-reference_framework.md",
+    "college/semesters/10/game_development/02-game_design.md",
+    "college/semesters/10/game_development/07-game_programming.md",
+    "college/semesters/10/game_development/06-3D_modeling.md",
+    "college/semesters/10/game_development/01-introduction.md",
+    "college/semesters/10/game_development/loose_concepts.md",
+    "college/semesters/01/calculo_I/06-exponential_and_logarithmic_function.md",
+    "college/thesis/Youtube_data_extraction.md",
+    "college/semesters/10/game_development",
+    "college/thesis/application_architecture.md",
+    "personal/books/eloquent_JavaScript/13-project-a_programming_language.md",
+    "personal/books/eloquent_JavaScript/12-asynchronous_programming.md",
+    "personal/books/eloquent_JavaScript/11-modules.md",
     "personal/books/eloquent_JavaScript/10-regular_expressions.md",
-    "personal/books/eloquent_JavaScript/09-bugs_and_errors.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/10-budget.md",
+    "college/semesters/10/seminario_de_trabajo_de_grado/03-problem_statement.md",
     "college/semesters/10/seminario_de_trabajo_de_grado/05-objectives.md",
     "personal/post_like/connection_to_GitHub_via_SSH.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/04-problem_justification.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/03-problem_statement.md",
-    "college/semesters/10/seminario_de_trabajo_de_grado/01-abstract.md",
-    "college/semesters/10/innovation_and_entrepreneurship/homework/01-leader-soft_skills.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "personal/books/eloquent_JavaScript",
     "college/semesters/10/seminario_de_trabajo_de_grado",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/04-flow_control-branching_with_if.md",
-    "personal/books/the_Linux_command_line/05-writing_shell_scripts/03-top-down_design.md",
     "Pasted image 20250915184915.png",
     "Pasted image 20250915184849.png",
-    "personal/books/eloquent_JavaScript/08-project-a_robot.md",
-    "personal/books/eloquent_JavaScript/07-the_secret_life_of_objects.md",
     "college/semesters/10/innovation_and_entrepreneurship/homework/01-leader-soft_skills.md~",
     "college/semesters/10/innovation_and_entrepreneurship/homework/4913",
-    "college/semesters/01/calculo_I/09-limits_and_continuity.md",
-    "college/semesters/01/calculo_I/10-intermediate_value_theorem_ differentiation_rules_and_chain_rule.md",
     "college/semesters/10/innovation_and_entrepreneurship/homework",
     "college/semesters/10/innovation_and_entrepreneurship/classes",
     "college/semesters/10/innovation_and_entrepreneurship",
-    "college/semesters/10",
-    "personal/Duolingo/stage_4.md",
-    "personal/Duolingo/stage_5.md",
-    "college/thesis/initial_proposal.md",
-    "personal/Duolingo/stage_2.md",
-    "personal/Duolingo/stage_3.md",
-    "personal/books/eloquent_JavaScript/06-higher-order_functions.md",
-    "personal/computer_science/machine_learning/algorithms/supervised_learning",
-    "personal/math/derivates",
     "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_06_04-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_08_02-graphs.svg",
     "college/semesters/01/assets/calculo_I/exponential_side_by_side.svg",
     "college/semesters/01/assets/calculo_I/2_08_01-graph.jpg",
-    "personal/books/eloquent_JavaScript",
-    "college/semesters/01/assets/calculo_I/2_07_02-problem.jpg",
-    "college/semesters/01/assets/calculo_I/2_07_02-graph.jpg"
+    "college/semesters/01/assets/calculo_I/2_07_02-problem.jpg"
   ]
 }
