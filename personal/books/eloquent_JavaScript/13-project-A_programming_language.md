@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2025-10-07"
+reviewed_on: "2025-10-28"
 ---
 
 # Project: a Programming Language
@@ -10,33 +10,37 @@ reviewed_on: "2025-10-07"
 
 ## Parsing
 
-The most immediately visible part of a programming language is its **syntax**, or notation. A **parser** is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text. If the text does not form a valid program, the parser should point out the error.
-
-The data structure that the parser will use to describe a program consists of expression objects, each of which has a `type` property indicating the kind of expression it is and other properties to describe its content.
+The most immediately visible part of a programming language is its **syntax**, or notation. A **parser** is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text...
 
 ```
 do(define(x, 10),
-   if(>(x, 5),
-        print("large"),
-        print("small")))
+	if(>(x, 5),
+		print("large"),
+		print("small")))
 ```
+
+The data structure that the parser will use to describe a program consists of expression objects, each of which has a `type` property indicating the kind of expression it is and other properties to describe its content.
 
 The `>(x, 5)` part of the previous program would be represented like this:
 
-```JSON
+```json
 {
-    "type": "apply",
-    "operator": { "type": "word", "name": ">" },
-    "args": [
-        { "type": "word", "name": "x" },
-        { "type": "value", "value": 5 }
-    ]
+	"type": "apply",
+	"operator": { "type": "word", "name": ">" },
+	"args": [
+		{ "type": "word", "name": "x" },
+		{ "type": "value", "value": 5 }
+	]
 }
 ```
 
 Such a data structure is called a **syntax tree**. If you imagine the objects as dots and the links between them as lines between those dots, as shown in the following diagram, the structure has a treelike shape. The fact that expressions contain other expressions, which in turn might contain more expressions, is similar to the way tree branches split and split again.
 
-![syntaxt tree example](./assets/13_1-syntax_tree_example.svg)
+![syntax tree example](personal/books/assets/eloquent_JavaScript/13_01-syntax_tree_example.svg)
+
+## Special forms
+
+The reason we need to represent `if` as a special form rather than a regular function is that all arguments to functions are evaluated before the function is called, whereas `if` should evaluate only **either** its second or its third argument, depending on the value of the first.
 
 ## Compilation
 
