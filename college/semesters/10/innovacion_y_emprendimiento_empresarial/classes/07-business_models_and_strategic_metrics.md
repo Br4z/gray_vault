@@ -42,7 +42,7 @@ La estructura de costos debe coincidir con la propuesta de **valor**:
 
 ### Tamaño de mercado
 
-> Formalización de lo visto en [[college/semesters/10/innovation_and_entrepreneurship/classes/06-financial_structure-construction_and_validation#Cantidad y niveles de mercado|cantidad y niveles de mercado]].
+> Formalización de lo visto en [[college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/06-financial_structure-construction_and_validation#Cantidad y niveles de mercado|cantidad y niveles de mercado]].
 
 - TAM (mercado total disponible): demanda global del producto.
 

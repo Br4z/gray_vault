@@ -50,3 +50,36 @@ Develop a comprehensive web application that automates the extraction, processin
 
 - Visualization: creation of interactive charts, and dashboards to represent analytical findings in an accessible format.
 
+## Feedback
+
+### El cumplimiento de los objetivos específicos asegura el logro del objetivo general
+
+"Falta que en los objetivos específicos se definan mejor las tareas y ser más puntuales en cuento a las tareas de PLN,. Especialmente en el uso de los LLMs. Por la complejidad del manejo de los datos que son multimodales, hay que definir un objetivo de entrenamiento con LLMs multimodales como mistral, QWen, Llama4), porque no hay interfaces basadas en LLMs propias".
+
+Regarding the feedback on the use of multimodal LLMs and model training, I believe there is a misunderstanding of the defined scope. As stated in the Exclusions section (5.2), this project is limited to processing textual metadata and explicitly excludes the training or fine-tuning of models.
+
+The NLP implementation is confined to the Data Collection Module (Specific Objective 2), where a pre-trained model (via API) will act solely as a query translator (Natural Language -> YouTube API params). It will not analyze video or audio content, rendering multimodal models unnecessary for this specific architecture.
+
+> I included the definition of "Multimodal Data" in the theoretical framework (6.3.1) to provide a complete characterization of the YouTube ecosystem as part of the broader research context. However, the scope of this specific software development thesis is strictly defined as the Data Collection and User Interface Layer, leaving multimodal content analysis for future phases of the research group's work.
+
+#### Proposed fix (el cumplimiento de los objetivos específicos asegura el logro del objetivo general)
+
+I will refine Specific Objective 2 to explicitly detail the query translation tasks, clarifying that the LLM's role is strictly for interface command processing rather than multimodal content analysis.
+
+## Se reportan antecedentes claves relacionados con el objeto de estudio y con la estrategia propuesta
+
+"No veo antecedentes directos que sustenten la propuesta. Importante que se hable con más profundidad del tema del uso de los LLMs mutimodales para establecer un mejor alcance".
+
+I interpret this observation as referring specifically to the technical strategy of using LLMs for query generation, rather than the general validity of a YouTube social listening tool (which is supported by the comparison with commercial tools like Talkwalker in Section 6.2).
+
+Regarding the mention of "multimodal LLMs," I reiterate the clarification made in the previous point: the scope is strictly limited to text-based processing. However, I acknowledge that the current document lacks direct academic precedents supporting the specific architecture of "LLM as a Natural Language Interface (NLI) for APIs."
+
+#### Proposed fix (se reportan antecedentes claves relacionados con el objeto de estudio y con la estrategia propuesta)
+
+I will expand the State of the Art (Section 6.2) to include a subsection on "LLM-based Query Generation." This section will cite precedents in Text-to-SQL and Text-to-API research (e.g., studies where LLMs translate user intent into structured queries). This will provide the "direct precedents" required to sustain the proposed technical architecture, validating the decision to use a text-only LLM as a translation layer.
+
+
+"To implement a data collection module featuring a Natural Language Interface (NLI) that utilizes a pre-trained Large Language Model (LLM) to validate and translate user requests into structured YouTube Data API query parameters".
+
+
+> It processes informal natural language user queries, extracts search parameters (keywords, date ranges, content filters), validates extracted parameters against YouTube API constraints, and generates well-formed YouTube Data API queries.

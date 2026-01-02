@@ -8,6 +8,8 @@
 
 # Scribbles
 
+- [Books](https://premium.redusers.com/library).
+
 ## Programas
 
 - [VisiPics](http://www.visipics.info/index.php?title=Download): para eliminar imágenes duplicadas (o parecidas).
@@ -18,7 +20,7 @@
 
 - Regex for deleting block comments in Java: `/\*\*[\s\S\n]*?\*/`.
 
-- Regex for lines ending witouth a finald dot: `[^\.$:\]?]$`.
+- Regex for lines ending without a final dot: `[^\.$:\]?]$`.
 
 - Regex for comments without the beginning space: `[^\s]\\\\`
 

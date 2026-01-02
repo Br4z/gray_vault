@@ -48,7 +48,7 @@ Es crucial seguir validando las ideas con consumidores reales y diversas perspec
 
 ### Aspectos clave para validar un prototipo
 
-1. Definir el público objetivo: asegurarse de que el grupo de personas con quienes se valida el prototipo represente fielmente el segmento de clientes objetivo. La muestra debe reflejar las [[college/semesters/10/innovation_and_entrepreneurship/classes/03-get_to_know_the_client#Características del consumidor|características]] del consumidor ideal para obtener retroalimentación relevante y aplicable.
+1. Definir el público objetivo: asegurarse de que el grupo de personas con quienes se valida el prototipo represente fielmente el segmento de clientes objetivo. La muestra debe reflejar las [[college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/03-get_to_know_the_client#Características del consumidor|características]] del consumidor ideal para obtener retroalimentación relevante y aplicable.
 
 2. Sitio y momento adecuados: verificar que el lugar y el momento de la validación coincidan con el entorno y las circunstancias reales del segmento esperado. Las condiciones de prueba deben simular el contexto natural en el que los clientes utilizarían el producto o servicio para obtener resultados auténticos.
 

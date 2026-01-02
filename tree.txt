@@ -1,0 +1,685 @@
+Folder PATH listing for volume FILES
+Volume serial number is A625-503A
+D:.
+¦   .gitignore
+¦   journal.md
+¦   preamble.sty
+¦   README.md
+¦   scribbles.md
+¦   to_export.md
+¦   tree.txt
+¦   
++---.obsidian
+¦   ¦   app.json
+¦   ¦   appearance.json
+¦   ¦   community-plugins.json
+¦   ¦   core-plugins.json
+¦   ¦   graph.json
+¦   ¦   hotkeys.json
+¦   ¦   workspace.json
+¦   ¦   
+¦   +---icons
+¦   +---plugins
+¦   ¦   +---obsidian-discordrpc
+¦   ¦   ¦       data.json
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       
+¦   ¦   +---obsidian-latex
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       
+¦   ¦   +---obsidian-latex-suite
+¦   ¦   ¦       data.json
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---obsidian-linter
+¦   ¦   ¦       data.json
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---obsidian-minimal-settings
+¦   ¦   ¦       data.json
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       
+¦   ¦   +---obsidian-relative-line-numbers
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---obsidian-wakatime
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---show-whitespace-cm6
+¦   ¦   ¦       data.json
+¦   ¦   ¦       main.js
+¦   ¦   ¦       manifest.json
+¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---table-editor-obsidian
+¦   ¦           data.json
+¦   ¦           main.js
+¦   ¦           manifest.json
+¦   ¦           styles.css
+¦   ¦           
+¦   +---themes
+¦       +---Minimal
+¦               manifest.json
+¦               theme.css
+¦               
++---college
+¦   +---ASES
+¦   ¦   +---assets
+¦   ¦   ¦   +---Jairo
+¦   ¦   ¦   ¦       01_01-velocity_graph.jpg
+¦   ¦   ¦   ¦       01_02-distance_graph.jpg
+¦   ¦   ¦   ¦       01_03-acceleration_graph.jpg
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---Sara
+¦   ¦   ¦       +---matematicas_basicas
+¦   ¦   ¦               03_01-problem.png
+¦   ¦   ¦               03_02-problem.png
+¦   ¦   ¦               
+¦   ¦   +---Esteban
+¦   ¦   ¦       01-optimizing_the_dimensions_of_a_cylinder.md
+¦   ¦   ¦       02-suggested_solution_for_Sum_of_Multiples_problem.md
+¦   ¦   ¦       03-yt-dlp.md
+¦   ¦   ¦       
+¦   ¦   +---Gabriela
+¦   ¦   ¦       01-Scala_setup_for_VS_Code.md
+¦   ¦   ¦       02-how_to_format_code_in_LaTeX.md
+¦   ¦   ¦       03-Linux_applications_installation.md
+¦   ¦   ¦       04-mixing_problem_differential_equations.md
+¦   ¦   ¦       05-building_a_container_from_scratch.md
+¦   ¦   ¦       
+¦   ¦   +---Grosman
+¦   ¦   ¦       01-regular_expression.md
+¦   ¦   ¦       02-object_oriented_programming_midterm.md
+¦   ¦   ¦       03-entity-relationship_problems.md
+¦   ¦   ¦       general_questions.md
+¦   ¦   ¦       
+¦   ¦   +---Hector
+¦   ¦   ¦   ¦   01-first_calculus_midterm.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---matematicas_discretas_I
+¦   ¦   ¦           01-predicate_logic_exercises.md
+¦   ¦   ¦           02-functions.md
+¦   ¦   ¦           03-relations.md
+¦   ¦   ¦           
+¦   ¦   +---Jairo
+¦   ¦   ¦       01-physics_problem.md
+¦   ¦   ¦       02-process_instructions_exercises.md
+¦   ¦   ¦       
+¦   ¦   +---Juan
+¦   ¦   ¦       01-GitFlow_practice.md
+¦   ¦   ¦       02-trigonometric_substitution_integral.md
+¦   ¦   ¦       
+¦   ¦   +---Manuela
+¦   ¦   ¦       01-discrete_math_exercise.md
+¦   ¦   ¦       02-letters_game.md
+¦   ¦   ¦       
+¦   ¦   +---Sara
+¦   ¦       +---matematicas_basicas
+¦   ¦               01-first_quiz.md
+¦   ¦               02-review_midterm.md
+¦   ¦               03-first_midterm.md
+¦   ¦               
+¦   +---semesters
+¦   ¦   ¦   index.md
+¦   ¦   ¦   
+¦   ¦   +---01
+¦   ¦   ¦   +---assets
+¦   ¦   ¦   ¦   +---calculo_I
+¦   ¦   ¦   ¦           2_02_01-graphs.jpg
+¦   ¦   ¦   ¦           2_02_02-graph.svg
+¦   ¦   ¦   ¦           2_02_03-rectangular_container.svg
+¦   ¦   ¦   ¦           2_02_04-figure.svg
+¦   ¦   ¦   ¦           2_02_05-figure.svg
+¦   ¦   ¦   ¦           2_02_06-figure.svg
+¦   ¦   ¦   ¦           2_03_01-graphs.jpg
+¦   ¦   ¦   ¦           2_03_02-corral.jpg
+¦   ¦   ¦   ¦           2_04_01-corral.jpg
+¦   ¦   ¦   ¦           2_06_01-graph.svg
+¦   ¦   ¦   ¦           2_06_02-graphs.svg
+¦   ¦   ¦   ¦           2_06_03-graphs.svg
+¦   ¦   ¦   ¦           2_07_01-graph.svg
+¦   ¦   ¦   ¦           2_07_02-problem.jpg
+¦   ¦   ¦   ¦           2_08_01-graph.jpg
+¦   ¦   ¦   ¦           2_12_01-graph.jpg
+¦   ¦   ¦   ¦           2_12_02-graph.jpg.jpg
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---calculo_I
+¦   ¦   ¦   ¦       01-real_numbers.md
+¦   ¦   ¦   ¦       02-functions.md
+¦   ¦   ¦   ¦       03-functions.md
+¦   ¦   ¦   ¦       04-linear_and_quadratic_function.md
+¦   ¦   ¦   ¦       05-polynomial_functions.md
+¦   ¦   ¦   ¦       06-exponential_and_logarithmic_function.md
+¦   ¦   ¦   ¦       07-trigonometric_functions.md
+¦   ¦   ¦   ¦       08-limits.md
+¦   ¦   ¦   ¦       09-limits_and_continuity.md
+¦   ¦   ¦   ¦       10-intermediate_value_theorem_ differentiation_rules_and_chain_rule.md
+¦   ¦   ¦   ¦       11-implicit_differentiation_and_related_rates.md
+¦   ¦   ¦   ¦       12-extremes_in_a_closed_interval.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---fundamentos_de_programacion
+¦   ¦   ¦           01-abstraction.md
+¦   ¦   ¦           02-generative_recursion_and_accumulative_functions.md
+¦   ¦   ¦           
+¦   ¦   +---06
+¦   ¦   ¦   +---fundamentos_de_interpretacion_y_compilacion_de_lenguajes_de_programacion
+¦   ¦   ¦       +---classes
+¦   ¦   ¦       +---homework
+¦   ¦   ¦               01-workshop.md
+¦   ¦   ¦               
+¦   ¦   +---07
+¦   ¦   ¦   +---inteligencia_artificial
+¦   ¦   ¦           01-artificial_intelligence_history.md
+¦   ¦   ¦           02-fundamentals_of_artificial_intelligence.md
+¦   ¦   ¦           03-agents.md
+¦   ¦   ¦           04-uninformed_search.md
+¦   ¦   ¦           05-informed_search.md
+¦   ¦   ¦           06-minimax_and_games_with_imperfect_decisions.md
+¦   ¦   ¦           07-machine_learning.md
+¦   ¦   ¦           08-decision_trees.md
+¦   ¦   ¦           
+¦   ¦   +---08
+¦   ¦   ¦   +---assets
+¦   ¦   ¦   ¦   +---desarrollo_de_aplicaciones_para_dispositivos_moviles
+¦   ¦   ¦   ¦   ¦       01_01-life_cycle_of_an_activity.svg
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---impactos_ambientales
+¦   ¦   ¦   ¦   ¦       02_01-culture_as_a_system.svg
+¦   ¦   ¦   ¦   ¦       02_02-sustainable_development_venn_diagram.svg
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---introduccion_a_la_ciencia_de_datos
+¦   ¦   ¦   ¦   ¦       01_01-data_science_venn_diagram.png
+¦   ¦   ¦   ¦   ¦       01_02-CRISP-DM_diagram.png
+¦   ¦   ¦   ¦   ¦       05_01-machine_learning.svg
+¦   ¦   ¦   ¦   ¦       08_01-K-means_algorithm.svg
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---simulacion_y_computacion_numerica
+¦   ¦   ¦   ¦           01_01_01-neuron_structure.svg
+¦   ¦   ¦   ¦           03_01_01-neural_network_diagram.svg
+¦   ¦   ¦   ¦           03_01_02-bar.svg
+¦   ¦   ¦   ¦           03_02_01-neural_network_diagram.svg
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---desarrollo_de_aplicaciones_para_dispositivos_moviles
+¦   ¦   ¦   ¦       01-introduction.md
+¦   ¦   ¦   ¦       02-UI_and_UX.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---impactos_ambientales
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦       01-general_system_theory.md
+¦   ¦   ¦   ¦   ¦       02-environmental_issues_and_sustainable_development.md
+¦   ¦   ¦   ¦   ¦       03-regulations_and_environmental_impact_study.md
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---homework
+¦   ¦   ¦   ¦           01-environmental_impact_of_cryptocurrencies.md
+¦   ¦   ¦   ¦           02-systems_and_essays.md
+¦   ¦   ¦   ¦           03-system.md
+¦   ¦   ¦   ¦           04-summary_of_chapter.md
+¦   ¦   ¦   ¦           05-evolution_and_reflections_about_the_development_and_his_relationship_with_the_territory.md
+¦   ¦   ¦   ¦           06-social_and_economic_components_of_an_environmental_impact_study.md
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---introduccion_a_la_ciencia_de_datos
+¦   ¦   ¦   ¦       01-introduction.md
+¦   ¦   ¦   ¦       02-multidimensional_model.md
+¦   ¦   ¦   ¦       03-types_of_facts.md
+¦   ¦   ¦   ¦       04-type_of_dimensions.md
+¦   ¦   ¦   ¦       05-data_mining.md
+¦   ¦   ¦   ¦       06-data_mining-clasification.md
+¦   ¦   ¦   ¦       07-data_mining-association_rules.md
+¦   ¦   ¦   ¦       08-data_mining-clustering.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---simulacion_y_computacion_numerica
+¦   ¦   ¦       ¦   01-first_exam.md
+¦   ¦   ¦       ¦   02-second_exam.md
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---classes
+¦   ¦   ¦       ¦       01-brief_biological_introduction.md
+¦   ¦   ¦       ¦       02-error.md
+¦   ¦   ¦       ¦       03-Newton_Raphson_method.md
+¦   ¦   ¦       ¦       04-Newton_Raphson_on_nonlinear_functions.md
+¦   ¦   ¦       ¦       05-calculation_of_roots_of_polynomials.md
+¦   ¦   ¦       ¦       06-Bairstows_method.md
+¦   ¦   ¦       ¦       07-gradient_descent.md
+¦   ¦   ¦       ¦       08-conjugate_gradient.md
+¦   ¦   ¦       ¦       09-Jacobi_method.md
+¦   ¦   ¦       ¦       10-Gauss-Seidel_method.md
+¦   ¦   ¦       ¦       11-interpolation_functions.md
+¦   ¦   ¦       ¦       12-Splines.md
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---homework
+¦   ¦   ¦               01-differential_equations.md
+¦   ¦   ¦               02-error.md
+¦   ¦   ¦               03-Taylor_serie.md
+¦   ¦   ¦               04-iterative_methods-linear_equation_systems.md
+¦   ¦   ¦               05-regression_interpolation_and_natural_spline.md
+¦   ¦   ¦               
+¦   ¦   +---09
+¦   ¦   ¦   +---analisis_y_diseño_de_algoritmos_II
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   +---01-dynamic_and_greedy_programming
+¦   ¦   ¦   ¦   ¦   ¦       01-motivation.md
+¦   ¦   ¦   ¦   ¦   ¦       02-introduction_to_dynamic_programming-Fibonacci_sequence.md
+¦   ¦   ¦   ¦   ¦   ¦       03-knapsack_problem.md
+¦   ¦   ¦   ¦   ¦   ¦       04-longest_common_subsequence.md
+¦   ¦   ¦   ¦   ¦   ¦       05-matrix_multiplication.md
+¦   ¦   ¦   ¦   ¦   ¦       07-greedy_programming.md
+¦   ¦   ¦   ¦   ¦   ¦       08-coin_change_problem.md
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---02-discrete_optimization
+¦   ¦   ¦   ¦   ¦   ¦       01-introduction.md
+¦   ¦   ¦   ¦   ¦   ¦       02-linear_programming.md
+¦   ¦   ¦   ¦   ¦   ¦       04-linear_programming-standard_form_and_slack.md
+¦   ¦   ¦   ¦   ¦   ¦       05-Simplex.md
+¦   ¦   ¦   ¦   ¦   ¦       06-branch_and_bound.md
+¦   ¦   ¦   ¦   ¦   ¦       08-binary_and_mixed_integer_programming.md
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---03-NP-completeness
+¦   ¦   ¦   ¦   ¦           01-classification_of_computational_problems.md
+¦   ¦   ¦   ¦   ¦           02-SAT_and_3-SAT.md
+¦   ¦   ¦   ¦   ¦           03-integer_programming.md
+¦   ¦   ¦   ¦   ¦           04-vertex_cover.md
+¦   ¦   ¦   ¦   ¦           05-maximal_clique.md
+¦   ¦   ¦   ¦   ¦           06-subset_sum.md
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---homework
+¦   ¦   ¦   ¦           01-moderating_internal_conflict_of_opinion_in_a_social_network.md
+¦   ¦   ¦   ¦           02-moderating_internal_conflict_of_opinion_in_a_social_network_presentation.md
+¦   ¦   ¦   ¦           03-minimizing_the_extremism_present_in_a_population.md
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---ciberseguridad
+¦   ¦   ¦   ¦   ¦   01-quiz.md
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦       02-introduction.md
+¦   ¦   ¦   ¦   ¦       03-cryptography.md
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---homework
+¦   ¦   ¦   ¦           01-IP_routing.md
+¦   ¦   ¦   ¦           02-the_art_of_war.md
+¦   ¦   ¦   ¦           03-2024_cyber_attacks.md
+¦   ¦   ¦   ¦           04-digital_signature.md
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---diseño_de_contenido_de_interfaces_de_usuario
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦       01-principles_of_content_design.md
+¦   ¦   ¦   ¦   ¦       02-building_digital_narrative-tools_and_methodologies.md
+¦   ¦   ¦   ¦   ¦       03-basic_rules_and_guidelines.md
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---homework
+¦   ¦   ¦   ¦           01-SENA_app_analysis.md
+¦   ¦   ¦   ¦           02-SENA_style_guide.md
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---introduccion_a_la_gestion_de_proyectos_de_software
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦       01-basics_concepts.md
+¦   ¦   ¦   ¦   ¦       02-agile_vs_traditional_frameworks.md
+¦   ¦   ¦   ¦   ¦       03-kick_off_preparation.md
+¦   ¦   ¦   ¦   ¦       03-project_initiation_act.md
+¦   ¦   ¦   ¦   ¦       04-innovation_and_design_thinking.md
+¦   ¦   ¦   ¦   ¦       05-requirements_engineering.md
+¦   ¦   ¦   ¦   ¦       06-estimations.md
+¦   ¦   ¦   ¦   ¦       06-requirements_engineering.md
+¦   ¦   ¦   ¦   ¦       07-estimations.md
+¦   ¦   ¦   ¦   ¦       07-risk_management.md
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---homework
+¦   ¦   ¦   ¦           01-Gemelos_GMS.md
+¦   ¦   ¦   ¦           02-Gemelos_GMS_database_model.md
+¦   ¦   ¦   ¦           03-start-stop-continue.md
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---proyecto_integrador_II
+¦   ¦   ¦       +---classes
+¦   ¦   ¦       ¦       01-course_presentation.md
+¦   ¦   ¦       ¦       02-AI_enhanced_software_engineering.md
+¦   ¦   ¦       ¦       03-speech_recognition.md
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---homework
+¦   ¦   ¦               01-GitHub_Copilot_presentation.md
+¦   ¦   ¦               02-app_presentation.md
+¦   ¦   ¦               03-Play_HT.md
+¦   ¦   ¦               04-Roboflow.md
+¦   ¦   ¦               
+¦   ¦   +---10
+¦   ¦       +---desarrollo_de_videojuegos
+¦   ¦       ¦   +---classes
+¦   ¦       ¦           01-introduction.md
+¦   ¦       ¦           02-game_design.md
+¦   ¦       ¦           05-creating_elements_in_video_games.md
+¦   ¦       ¦           06-3D_modeling.md
+¦   ¦       ¦           07-game_programming.md
+¦   ¦       ¦           
+¦   ¦       +---innovacion_y_emprendimiento_empresarial
+¦   ¦       ¦   +---classes
+¦   ¦       ¦   ¦       02-the_entrepreneur.md
+¦   ¦       ¦   ¦       03-get_to_know_the_client.md
+¦   ¦       ¦   ¦       04-proof_of_concept_and_minimum_viable_model.md
+¦   ¦       ¦   ¦       05-prototype_evolution_and_evaluation.md
+¦   ¦       ¦   ¦       06-financial_structure-construction_and_validation.md
+¦   ¦       ¦   ¦       07-business_models_and_strategic_metrics.md
+¦   ¦       ¦   ¦       08-elevator_pitch.md
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---homework
+¦   ¦       ¦           01-leader-soft_skills.md
+¦   ¦       ¦           
+¦   ¦       +---seminario_de_trabajo_de_grado
+¦   ¦               01-abstract.md
+¦   ¦               02-introduction.md
+¦   ¦               03-problem_statement.md
+¦   ¦               04-problem_justification.md
+¦   ¦               05-objectives.md
+¦   ¦               06-project_scope.md
+¦   ¦               07-reference_framework.md
+¦   ¦               08-methodology.md
+¦   ¦               09-project_development_and_implementation.md
+¦   ¦               10-budget.md
+¦   ¦               
+¦   +---thesis
+¦           application_architecture.md
+¦           Youtube_data_extraction.md
+¦           
++---personal
+¦   ¦   general_job_interview_preparation.md
+¦   ¦   prompts.md
+¦   ¦   
+¦   +---books
+¦   ¦   ¦   algebra_3o_y_4o_enseñanza_media.md
+¦   ¦   ¦   deja_de_ser_tu.md
+¦   ¦   ¦   el_hombre_en_busca_de_sentido.md
+¦   ¦   ¦   el_señor_de_las_moscas.md
+¦   ¦   ¦   enfocate.md
+¦   ¦   ¦   habitos_atomicos.md
+¦   ¦   ¦   index.md
+¦   ¦   ¦   juventud_en_extasis.md
+¦   ¦   ¦   la_esencia_logica_de_la_programacion.md
+¦   ¦   ¦   nunca_me_abandones.md
+¦   ¦   ¦   tu_cerebro_en_el_porno.md
+¦   ¦   ¦   un_mundo_feliz.md
+¦   ¦   ¦   
+¦   ¦   +---assets
+¦   ¦   ¦   +---algebra_3o_y_4o_enseñanza_media
+¦   ¦   ¦   ¦       01-numerical_sets.jpg
+¦   ¦   ¦   ¦       02-epresentacion_grafica_de_un_punto_en_el_espacio.svg
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---eloquent_JavaScript
+¦   ¦   ¦   ¦       13_01-syntax_tree_example.svg
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---la_esencia_logica_de_la_programacion
+¦   ¦   ¦           01_01-flow_diagram_figure.svg
+¦   ¦   ¦           01_02-flow_diagram_figure.svg
+¦   ¦   ¦           01_03-flow_diagram_figure.svg
+¦   ¦   ¦           01_04-flow_diagram_figure.svg
+¦   ¦   ¦           01_05-flow_diagram_figure.svg
+¦   ¦   ¦           01_06-flow_diagram_figure.svg
+¦   ¦   ¦           01_07-flow_diagram_figure.svg
+¦   ¦   ¦           01_08-flow_diagram_figure.svg
+¦   ¦   ¦           01_09-flow_diagram_figure.svg
+¦   ¦   ¦           01_10-flow_diagram_figure.svg
+¦   ¦   ¦           01_11-flow_diagram_figure.svg
+¦   ¦   ¦           01_12-flow_diagram_figure.svg
+¦   ¦   ¦           01_13-structured_rectangular_diagram_figure.svg
+¦   ¦   ¦           01_14-structured_rectangular_diagram_figure.svg
+¦   ¦   ¦           01_15-structured_rectangular_diagram_figure.svg
+¦   ¦   ¦           
+¦   ¦   +---eloquent_JavaScript
+¦   ¦   ¦       01-introduction.md
+¦   ¦   ¦       02-values_types_and_operators.md
+¦   ¦   ¦       03-program_structure.md
+¦   ¦   ¦       04-functions.md
+¦   ¦   ¦       05-data_structures.md
+¦   ¦   ¦       06-higher-order_functions.md
+¦   ¦   ¦       07-the_secret_life_of_objects.md
+¦   ¦   ¦       08-project-a_robot.md
+¦   ¦   ¦       09-bugs_and_errors.md
+¦   ¦   ¦       10-regular_expressions.md
+¦   ¦   ¦       11-modules.md
+¦   ¦   ¦       12-asynchronous_programming.md
+¦   ¦   ¦       13-project-a_programming_language.md
+¦   ¦   ¦       14-JavaScript_and_the_browser.md
+¦   ¦   ¦       15-the_document_object_model.md
+¦   ¦   ¦       16-handling_events.md
+¦   ¦   ¦       
+¦   ¦   +---the_Linux_command_line
+¦   ¦       ¦   01-introduction.md
+¦   ¦       ¦   
+¦   ¦       +---02-learning_the_Shell
+¦   ¦       ¦       01-what_is_the_shell.md
+¦   ¦       ¦       02-navigation.md
+¦   ¦       ¦       03-exploring_the_system.md
+¦   ¦       ¦       04-manipulating_files_and_directories.md.md
+¦   ¦       ¦       05-working_with_commands.md
+¦   ¦       ¦       06-redirection.md
+¦   ¦       ¦       07-seeing_the_world_as_the_shell_sees_it.md
+¦   ¦       ¦       08-advanced_keyboard_tricks.md
+¦   ¦       ¦       09-permissions.md
+¦   ¦       ¦       10-processes.md
+¦   ¦       ¦       
+¦   ¦       +---03-configuration_and_the_environment
+¦   ¦       ¦       01-the_environment.md
+¦   ¦       ¦       02-a_gentle_introduction_to_vi.md
+¦   ¦       ¦       03-customizing_the_prompt.md
+¦   ¦       ¦       
+¦   ¦       +---04-common_tasks_and_essential_tools
+¦   ¦       ¦       01-package_management.md
+¦   ¦       ¦       02-storage_media.md
+¦   ¦       ¦       03-networking.md
+¦   ¦       ¦       04-searching_for_files.md
+¦   ¦       ¦       05-archiving_and_backup.md
+¦   ¦       ¦       06-regular_expressions.md
+¦   ¦       ¦       07-text_processing.md
+¦   ¦       ¦       08-formatting_output.md
+¦   ¦       ¦       09-printing.md
+¦   ¦       ¦       10-compiling_programs.md
+¦   ¦       ¦       
+¦   ¦       +---05-writing_shell_scripts
+¦   ¦               01-writing_your_first_script.md
+¦   ¦               02-starting_a_project.md
+¦   ¦               03-top-down_design.md
+¦   ¦               04-flow_control-branching_with_if.md
+¦   ¦               05-reading_keyboard_input.md
+¦   ¦               06-flow_control-looping_with_while-until.md
+¦   ¦               07-troubleshooting.md
+¦   ¦               08-flow_control-branching_with_case.md
+¦   ¦               09-positional_parameters.md
+¦   ¦               10-flow_control-looping_with_for.md
+¦   ¦               11-strings_and_numbers.md.md
+¦   ¦               12-arrays.md
+¦   ¦               13-exotica.md
+¦   ¦               
+¦   +---computer_science
+¦   ¦   ¦   Class_Diagram-Mermaid.md
+¦   ¦   ¦   Entity_Relation_Diagram-Mermaid.md
+¦   ¦   ¦   Git_and_GitHub.md
+¦   ¦   ¦   index.md
+¦   ¦   ¦   Kubernetes.md
+¦   ¦   ¦   LaTeX_cheatsheet.md
+¦   ¦   ¦   
+¦   ¦   +---algorithms
+¦   ¦   ¦   ¦   Dijkstra.md
+¦   ¦   ¦   ¦   dynamic_programming.md
+¦   ¦   ¦   ¦   greedy_algorithm.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---graphs
+¦   ¦   ¦   +---sorting
+¦   ¦   ¦           bubble.md
+¦   ¦   ¦           counting.md
+¦   ¦   ¦           insertion.md
+¦   ¦   ¦           merge.md
+¦   ¦   ¦           quick.md
+¦   ¦   ¦           
+¦   ¦   +---assets
+¦   ¦   +---Git_and_Github
+¦   ¦   ¦       GitFlow.md
+¦   ¦   ¦       
+¦   ¦   +---Linux
+¦   ¦   ¦       packages.md
+¦   ¦   ¦       useful_commands_for_creating_scripts.md
+¦   ¦   ¦       
+¦   ¦   +---machine_learning
+¦   ¦   ¦   ¦   classification.md
+¦   ¦   ¦   ¦   confusion_matrix.md
+¦   ¦   ¦   ¦   definition.md
+¦   ¦   ¦   ¦   metrics.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---algorithms
+¦   ¦   ¦       +---supervised_learning
+¦   ¦   ¦               decision_trees.md
+¦   ¦   ¦               
+¦   ¦   +---problems
+¦   ¦   ¦       activity_selection_problem.md
+¦   ¦   ¦       coin_change.md
+¦   ¦   ¦       Fibonacci_sequence.md
+¦   ¦   ¦       knapsack.md
+¦   ¦   ¦       longest_common_subsequence.md
+¦   ¦   ¦       matrix_chain_multiplication.md
+¦   ¦   ¦       maximal_clique.md
+¦   ¦   ¦       minimum_spanning_tree.md
+¦   ¦   ¦       SAT.md
+¦   ¦   ¦       subset_sum.md
+¦   ¦   ¦       vertex_cover.md
+¦   ¦   ¦       
+¦   ¦   +---programming_languajes
+¦   ¦       ¦   paradigms.md
+¦   ¦       ¦   
+¦   ¦       +---C_plus_plus
+¦   ¦       ¦       namespace.md
+¦   ¦       ¦       pointer.md
+¦   ¦       ¦       
+¦   ¦       +---Python
+¦   ¦               decorator.md
+¦   ¦               docstring.md
+¦   ¦               doctest.md
+¦   ¦               filter.md
+¦   ¦               generator.md
+¦   ¦               lambda.md
+¦   ¦               map.md
+¦   ¦               module.md
+¦   ¦               Pickle.md
+¦   ¦               pydoc.md
+¦   ¦               RegEx.md
+¦   ¦               unittest.md
+¦   ¦               
+¦   +---courses
+¦   ¦   ¦   aprende_a_programar_con_Processing.md
+¦   ¦   ¦   aprende_Docker_ahora.md
+¦   ¦   ¦   aprende_Git_y_GitHub.md
+¦   ¦   ¦   building_web_applications_in_Java_with_Spring_Boot_3.md
+¦   ¦   ¦   curso_de_Prisma_ORM.md
+¦   ¦   ¦   HTML5_desde_cero.md
+¦   ¦   ¦   index.md
+¦   ¦   ¦   Kubernetes.md
+¦   ¦   ¦   Linux_para_principiantes.md
+¦   ¦   ¦   Python_Django_full_course_for_beginners.md
+¦   ¦   ¦   
+¦   ¦   +---20_Things_JavaScript_Developers_Should_Know_but_Probably_Dont
+¦   ¦   ¦       01-inheritance_in_JavaScript-prototypal_inheritance_tutorial.md
+¦   ¦   ¦       
+¦   ¦   +---assets
+¦   ¦   ¦   +---courses
+¦   ¦   ¦       +---introduccion_a_Linux
+¦   ¦   ¦               01_01-Linux_directory_structure.png
+¦   ¦   ¦               
+¦   ¦   +---HCIA-Datacom
+¦   ¦   ¦   ¦   01-data_communication_network_basics.md
+¦   ¦   ¦   ¦   02-network-reference-model.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---assets
+¦   ¦   ¦           02_01-TCP_IP_reference_model.jpg
+¦   ¦   ¦           02_02-common_TCP_IP_protocols.jpg
+¦   ¦   ¦           02_03-TCP_and_UDP_header_formats.jpg
+¦   ¦   ¦           02_04-three-way_handshake_example.jpg
+¦   ¦   ¦           
+¦   ¦   +---introduccion_al_Hacking
+¦   ¦   ¦       01-conceptos_basicos.md
+¦   ¦   ¦       02-reconocimiento.md
+¦   ¦   ¦       
+¦   ¦   +---introduccion_a_Linux
+¦   ¦           01-temario.md
+¦   ¦           02-scripting_en_Bash.md
+¦   ¦           03-examen_final.md
+¦   ¦           
+¦   +---Duolingo
+¦   ¦       stage_2.md
+¦   ¦       stage_3.md
+¦   ¦       stage_4.md
+¦   ¦       stage_5.md
+¦   ¦       
+¦   +---math
+¦   ¦   ¦   007-Newton_Raphson_method.md
+¦   ¦   ¦   008-matrix_multiplication.md
+¦   ¦   ¦   error_and_uncertainty.md
+¦   ¦   ¦   finite_differences.md
+¦   ¦   ¦   fundamental_rules_of_propositional_logic.md
+¦   ¦   ¦   LaTeX_cheatsheet.md
+¦   ¦   ¦   remainder_theorem.md
+¦   ¦   ¦   Taylor_serie.md
+¦   ¦   ¦   
+¦   ¦   +---assets
+¦   ¦   ¦   +---imaginary_number
+¦   ¦   ¦           rotations_on_the_complex_plane.svg
+¦   ¦   ¦           
+¦   ¦   +---derivates
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       
+¦   ¦   +---functions
+¦   ¦   ¦       codomain.md
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       domain.md
+¦   ¦   ¦       even.md
+¦   ¦   ¦       odd.md
+¦   ¦   ¦       properties.md
+¦   ¦   ¦       range.md
+¦   ¦   ¦       vertex_form_of_a_quadratic_function.md
+¦   ¦   ¦       
+¦   ¦   +---imaginary_number
+¦   ¦   ¦       conjugate.md
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       geometrical_interpretation.md
+¦   ¦   ¦       operations.md
+¦   ¦   ¦       
+¦   ¦   +---logarithms
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       properties.md
+¦   ¦   ¦       
+¦   ¦   +---number_theory
+¦   ¦   ¦       congruence.md
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       divisibility.md
+¦   ¦   ¦       division_algorithm.md
+¦   ¦   ¦       euclidean_algorithm.md
+¦   ¦   ¦       fundamental_theorem_of_arithmetic.md
+¦   ¦   ¦       greatest_common_divisor.md
+¦   ¦   ¦       prime_number.md
+¦   ¦   ¦       relative prime.md
+¦   ¦   ¦       small_prime_divisor_theorem.md
+¦   ¦   ¦       
+¦   ¦   +---relations
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       properties.md
+¦   ¦   ¦       
+¦   ¦   +---sequences
+¦   ¦   ¦       definition.md
+¦   ¦   ¦       types.md
+¦   ¦   ¦       
+¦   ¦   +---series
+¦   ¦           definition.md
+¦   ¦           proofs.md
+¦   ¦           properties.md
+¦   ¦           
+¦   +---statistics
+¦           Bayes_theorem.md
+¦           
++---staging
+        base64_encryption_and_decryption.md
+        SOLID_principles.md
+        standard_angle.md
+        

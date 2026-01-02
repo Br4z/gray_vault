@@ -110,7 +110,7 @@ Halle $f^\prime$ si:
 	$$
 	\begin{align}
 		& f(x) = -6 x^7 + 15 x^4 - 4 x^4 + 10 x + 2 x^3 - 5 \\
-		& = -6 x^7 + 11 x^4 + 2 x^3 + 10 x - 5 
+		& = -6 x^7 + 11 x^4 + 2 x^3 + 10 x - 5
 	\end{align}
 	$$
 
@@ -438,7 +438,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& 2 \left ((x^3 + 2 x - 1)^{ 10 } \right )^\prime \\
+		& 2 \pprime{ (x^3 + 2 x - 1)^{ 10 } } \\
 		& = 2 \left (10 (x^3 + 2 x - 1)^9 (x^3 + 2 x - 1)^\prime \right ) \\
 		& = 20 (x^3 + 2 x - 1)^9 (3 x^2 + 2)
 	\end{align}
@@ -457,7 +457,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& \left ((3 x^4 - x)^3 \right )^\prime (2 x + 1)^5 + (3 x^4 - x)^3 \left ((2 x + 1)^5 \right )^\prime \\
+		& \pprime{ (3 x^4 - x)^3 } (2 x + 1)^5 + (3 x^4 - x)^3 \pprime{ (2 x + 1)^5 } \\
 		& = (x^4 - x)^2 (36 x^3 - 3) (2 x + 1)^5 + 10 (3 x^4 - x)^3 (2 x + 1)^4
 	\end{align}
 	$$
@@ -476,7 +476,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& \frac{ \left ((3 x - 1)^2 \right )^\prime \ptan{ x }^2 - (3 x - 1)^2 \ptan{ x }^\prime }{ \ptan{ x }^4 } \\
+		& \frac{ \pprime{ (3 x - 1)^2 } \ptan{ x }^2 - (3 x - 1)^2 \ptan{ x }^\prime }{ \ptan{ x }^4 } \\
 		& = \frac{ (18 x - 6) \ptan{ x }^2 - 2 (3 x - 1)^2 \ptan{ x } \psec{ x }^2 }{ \ptan{ x }^4 }
 	\end{align}
 	$$
@@ -485,7 +485,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& x^\prime \sqrt{ (x^2 - 3)^3 } + x \left (\sqrt{ (x^2 - 3)^3 } \right )^\prime \\
+		& x^\prime \sqrt{ (x^2 - 3)^3 } + x \pprime{ \sqrt{ (x^2 - 3)^3 } } \\
 		& = \sqrt{ (x^2 - 3)^3 } + \frac{ 3 x^4 - 9 x^2 }{ \sqrt{ (x^2 - 3)^3 } }
 	\end{align}
 	$$
@@ -536,7 +536,7 @@ Sea $g$ una función derivable. Halle $f^\prime(x)$ si:
 	$$
 	\begin{align}
 		& x^\prime g^2(x^3 - 1) + x (g^2(x^3 - 1))^\prime \\
-		& = g^2(x^3 - 1) + 6 x^2 g(x^3 - 1) g^\prime(x^3 - 1) 
+		& = g^2(x^3 - 1) + 6 x^2 g(x^3 - 1) g^\prime(x^3 - 1)
 	\end{align}
 	$$
 

@@ -20,7 +20,7 @@ It is the real-time rendering technique that converts 3D geometric primitives (t
 
 The rasterization process works by projecting 3D vertices onto a 2D plane (the screen), then filling in the pixels within each triangle using interpolation. The algorithm determines which pixels are covered by each polygon, calculates their colors based on lighting and textures, and writes them to the framebuffer.
 
-Unlike raytracing, rasterization does not simulate actual light physics—instead, it uses approximations and tricks (like shadow maps and reflection probes) to create realistic lighting effects quickly. The trade-off is speed for physical accuracy: rasterization renders scenes much faster but with less realistic lighting, reflections, and shadows compared to [[college/semesters/10/game_development/classes/07-game_programming#Raytracing|raytracing]].
+Unlike raytracing, rasterization does not simulate actual light physics—instead, it uses approximations and tricks (like shadow maps and reflection probes) to create realistic lighting effects quickly. The trade-off is speed for physical accuracy: rasterization renders scenes much faster but with less realistic lighting, reflections, and shadows compared to [[college/semesters/10/desarrollo_de_videojuegos/classes/07-game_programming#Raytracing|raytracing]].
 
 ### Raytracing
 

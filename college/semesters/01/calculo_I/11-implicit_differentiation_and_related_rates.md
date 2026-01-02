@@ -16,7 +16,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& x^\prime (x^2 - 3)^{ \frac{ 3 }{ 2 } } + x \left ((x^2 - 3)^{ \frac{ 3 }{ 2 } } \right )^\prime \\
+		& x^\prime (x^2 - 3)^{ \frac{ 3 }{ 2 } } + x \pprime{ (x^2 - 3)^{ \frac{ 3 }{ 2 } } }\\
 		& = (x^2 - 3)^{ \frac{ 3 }{ 2 } } + 3 x^2 (x^2 - 3)^{ \frac{ 1 }{ 2 } } \\
 		& = ((x^2 - 3) + 3 x^2) (x^2 - 3)^{ \frac{ 1 }{ 2 } } \\
 		& = (4 x^2 - 3) (x^2 - 3)^{ \frac{ 1 }{ 2 } }
@@ -72,8 +72,8 @@ Halle $\frac{ dy }{ dx }$ si:
 
 	$$
 	\begin{align}
-		& x^\prime \parcsec{ \frac{ 1 }{ x } } + x \left (\parcsec{ \frac{ 1 }{ x } } \right )^\prime \\
-		& = \parcsin{ \frac{ 1 }{ x } } + x \frac{ 1 }{ \frac{ 1 }{ x } \sqrt{ \left (\frac{ 1 }{ x } \right )^2 - 1 } } \left ( \frac{ 1 }{ x } \right )^\prime \\
+		& x^\prime \parcsec{ \frac{ 1 }{ x } } + x \pprime{ \parcsec{ \frac{ 1 }{ x } } } \\
+		& = \parcsin{ \frac{ 1 }{ x } } + x \frac{ 1 }{ \frac{ 1 }{ x } \sqrt{ \left (\frac{ 1 }{ x } \right )^2 - 1 } } \pprime{ \frac{ 1 }{ x } }\\
 		& = \parcsin{ \frac{ 1 }{ x } } - x \frac{ 1 }{ \frac{ x^2 }{ x } \sqrt{ \frac{ 1 - x^2 }{ x^2 } } } \\
 		& = \parcsin{ \frac{ 1 }{ x } } - \frac{ x }{ \frac{ x^2 }{ x^2 } \sqrt{ 1 - x^2  } } \\
 		& = \parcsin{ \frac{ 1 }{ x } } - \frac{ x }{ \sqrt{ 1 - x^2 } }
@@ -88,7 +88,7 @@ Usando la derivación implícita, halle $\frac{ dy }{ dx } si$:
 
 	$$
 	\begin{align}
-		& \left (x \pcos{ y } \right )^\prime + \left (y \pcos{ x } \right )^\prime = 0 \\
+		& \pprime{ \pcos{ y } } + \pprime{ y \pcos{ x } } = 0 \\
 		& \left (\pcos{ y } - x \psin{ y } \frac{ dy }{ dx } \right ) + \left (\pcos{ x } \frac{ dy }{ dx } - y \psin{ x } \right ) = 0 \\
 		& \pcos{ x } \frac{ dy }{ dx } - x \psin{ y } \frac{ dy }{ dx } =  y \psin{ x } - \pcos{ y } \\
 		& \frac{ dy }{ dx } (\pcos{ x } - x \psin{ y }) = y \psin{ x } - \pcos{ y } \\
@@ -345,7 +345,7 @@ Use la derivación logarítmica para hallar la derivada de la función
 		& \pln{ y }^\prime = \pprime{ \frac{ 3 }{ 4 } \pln{ x } + \frac{ 1 }{ 2 } \pln{ x^2 + 1 } - 5 \pln{ 3 x + 2 } } \\
 		& \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \\
 		& \frac{ dy }{ dx }  = y \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right ) \\
-		& \frac{ dy }{ dx }  = \frac{ x^\frac{ 3 }{ 4 } \sqrt{ x^2 + 1 } }{ (3 x + 2)^5 } \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right ) 
+		& \frac{ dy }{ dx }  = \frac{ x^\frac{ 3 }{ 4 } \sqrt{ x^2 + 1 } }{ (3 x + 2)^5 } \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right )
 	\end{align}
 	$$
 
