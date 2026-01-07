@@ -90,7 +90,7 @@ $$
 # 8
 
 $$
-n^{ \log_y x } = x^{ \log_y n } \quad \{n,x,y\} \in \mathbb{ N } \; \land \; y \neq 1
+n^{ \log_y x } = x^{ \log_y n } \quad \{n,x,y\} \in \mathbb{ N } \pand y \neq 1
 $$
 
 $$

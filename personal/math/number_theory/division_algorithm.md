@@ -21,5 +21,5 @@ $$
 This statement can also be written as:
 
 $$
-\forall n \in \mathbb{Z},\, d \in \mathbb{N}^+ \implies \exists ! q,r \in \mathbb{Z} : (0 \leq r < d) \; \land \; (n = d q + r)
+\forall n \in \mathbb{Z},\, d \in \mathbb{N}^+ \implies \exists ! q,r \in \mathbb{Z} : (0 \leq r < d) \pand (n = d q + r)
 $$

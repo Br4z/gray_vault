@@ -40,15 +40,15 @@ $$
 ### Transitivity
 
 $$
-\forall a,b,c,m \in \mathbb{Z} \; m > 0 \quad a \equiv b \pmod{ m } \; \land \; b \equiv c \pmod{ m } \implies a \equiv c \pmod{ m }
+\forall a,b,c,m \in \mathbb{Z} \; m > 0 \quad a \equiv b \pmod{ m } \pand b \equiv c \pmod{ m } \implies a \equiv c \pmod{ m }
 $$
 
 ## Theorem
 
 $$
 \begin{multline}
-	a \pmod{ m } = b \pmod{ m } \; \land \; c \pmod{ m } = d \pmod{ m } \implies \\
-	(a + c) \pmod{ m } = (b + d) \pmod{ m } \; \land \\
+	a \pmod{ m } = b \pmod{ m } \pand c \pmod{ m } = d \pmod{ m } \implies \\
+	(a + c) \pmod{ m } = (b + d) \pmod{ m } \; \pand \\
 	(a c) \pmod{ m } = (b d) \pmod{ m }
 \end{multline}
 $$

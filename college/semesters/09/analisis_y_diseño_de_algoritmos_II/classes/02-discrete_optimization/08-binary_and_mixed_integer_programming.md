@@ -76,7 +76,7 @@ Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ r
 
 ## Condiciones lógicas en MIP
 
-1. $x_1 \lor x_2 \implies x_3$.
+1. $x_1 \por x_2 \implies x_3$.
 
 	$$
 	\begin{align}
@@ -85,13 +85,13 @@ Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ r
 	\end{align}
 	$$
 
-2. $x_3 \implies x_1 \lor x_2$.
+2. $x_3 \implies x_1 \por x_2$.
 
 	$$
 	x_1 + x_2 \geq x_3
 	$$
 
-3. $x_1 \land x_2 \implies x_3$.
+3. $x_1 \pand x_2 \implies x_3$.
 
 	$$
 	1 + x_3 \geq x_1 + x_2
@@ -102,5 +102,5 @@ Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ r
 	> Recordando el [[personal/math/fundamental_rules_of_propositional_logic#Inverse conditional|condicional inverso]].
 
 	$$
-	\neg x_1 \lor x_2
+	\neg x_1 \por x_2
 	$$

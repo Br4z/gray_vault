@@ -84,7 +84,7 @@ reviewed_on: "2025-05-31"
 |    $\nexists$     | there is no.                              |
 |     $\forall$     | for all.                                  |
 |      $\neq$       | not (logical).                            |
-|      $\lor$       | or (logical).                             |
+|      $\por$       | or (logical).                             |
 |      $\div$       | division.                                 |
 |    $\implies$     | implies.                                  |
 |   $\Rightarrow$   | right implication (same as implies).      |

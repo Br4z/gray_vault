@@ -4,7 +4,7 @@ reviewed_on: "2025-03-31"
 
 # Moderating internal conflict of opinion in a social network
 
-Una red social $SN$ es una pareja $\langle SA,R_{ \max } \rangle$, donde $SA$ es una secuencia de grupo de agentes $SA = \langle a_0,\dots,a_{ n - 1 } \rangle$ y $R_{ \max } > 0 \land R_{ \max } \in \mathbb{ N }$ representa el valor entero máximo con el que se cuenta para moderar las opiniones de la red $SN$.
+Una red social $SN$ es una pareja $\langle SA,R_{ \max } \rangle$, donde $SA$ es una secuencia de grupo de agentes $SA = \langle a_0,\dots,a_{ n - 1 } \rangle$ y $R_{ \max } > 0 \pand R_{ \max } \in \mathbb{ N }$ representa el valor entero máximo con el que se cuenta para moderar las opiniones de la red $SN$.
 
 Un grupo de agentes $a_i$ es una tupla
 
@@ -18,11 +18,11 @@ donde:
 
 - $o_{ i,1 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación $1$.
 
-	> $-100 \leq o_{ i,1 } \leq 100 \land o_{ i,1 } \in \mathbb{ Z }$.
+	> $-100 \leq o_{ i,1 } \leq 100 \pand o_{ i,1 } \in \mathbb{ Z }$.
 
 - $o_{ i,2 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación $2$.
 
-	> $-100 \leq o_{ i,2 } \leq 100 \land o_{ i,2 } \in \mathbb{ Z }$.
+	> $-100 \leq o_{ i,2 } \leq 100 \pand o_{ i,2 } \in \mathbb{ Z }$.
 
 - $r_i$: representa el nivel de rigidez de cada agente del grupo $i$ ($0 \leq i < n$).
 

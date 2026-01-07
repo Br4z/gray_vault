@@ -7,7 +7,7 @@ reviewed_on: "2025-02-03"
 If $n$ is a composite number, then it has a prime divisor less than or equal to $\sqrt{ n }$.
 
 $$
-\forall n \in \mathbb{N} \; \land \; n > 1 \; \land \; n \notin \mathbb{P} \implies \exists p : p \in \mathbb{P} \; \land \; p \mid n \; \land \; p \leq \sqrt{ n }
+\forall n \in \mathbb{N} \pand n > 1 \pand n \notin \mathbb{P} \implies \exists p : p \in \mathbb{P} \pand p \mid n \pand p \leq \sqrt{ n }
 $$
 
 ## Proof

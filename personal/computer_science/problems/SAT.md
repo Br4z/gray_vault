@@ -15,7 +15,7 @@ Given a boolean formula in Conjunctive Normal Form (CNF), the goal is to determi
 - A set of $m$ clauses, $C = \{c_1,c_2,\dots,c_m\}$, where the overall formula is the conjunction of all clauses.
 
 	$$
-	c_1 \land c_2 \land \dots c_m
+	c_1 \pand c_2 \pand \dots c_m
 	$$
 
 - Each clause $c_i$ is a disjunction (OR) of one or more **literals**. A literal is a variable $x_j$ or its negation $\lnot x_j$.

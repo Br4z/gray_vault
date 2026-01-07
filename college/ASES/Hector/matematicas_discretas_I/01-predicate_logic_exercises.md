@@ -42,9 +42,9 @@ reviewed_on: "2025-08-08"
 
 				$$
 				\begin{array}{lr}
-					(C \land Q) \implies P \\
-					\lnot (C \land Q) \lor P    & \text{definición condicional} \\
-					\lnot C \lor \lnot Q \lor P & \text{ley de Morgan}
+					(C \pand Q) \implies P \\
+					\lnot (C \pand Q) \por P    & \text{definición condicional} \\
+					\lnot C \por \lnot Q \por P & \text{ley de Morgan}
 				\end{array}
 				$$
 
@@ -52,8 +52,8 @@ reviewed_on: "2025-08-08"
 
 				$$
 				\begin{array}{lr}
-					(\lnot Q \implies \lnot O) \land (\lnot Q \implies M) & \\
-					(Q \lor \lnot O) \land (Q \lor M)                     & \text{definición condicional} \\
+					(\lnot Q \implies \lnot O) \pand (\lnot Q \implies M) & \\
+					(Q \por \lnot O) \pand (Q \por M)                     & \text{definición condicional} \\
 				\end{array}
 				$$
 
@@ -63,33 +63,33 @@ reviewed_on: "2025-08-08"
 
 				$$
 					\begin{array}{lr}
-						E \implies (O \land \lnot M) \\
-						\lnot E \lor (O \land \lnot M)                &\text{definición condicional} \\
-						(\lnot E \lor O) \land (\lnot E \lor \lnot M) & \text{ley distributiva}
+						E \implies (O \pand \lnot M) \\
+						\lnot E \por (O \pand \lnot M)                &\text{definición condicional} \\
+						(\lnot E \por O) \pand (\lnot E \por \lnot M) & \text{ley distributiva}
 					\end{array}
 				$$
 
 		$$
 		\begin{align}
-			& (p_1 \land p_2 \land p_3 \land p_4) \implies \lnot E \\
-			& \lnot[(p_1 \land p_2 \land p_3 \land p_4) \implies \lnot E] \\
-			& (p_1 \land p_2 \land p_3 \land p_4) \land E \quad S = \{p_1,p_2,p_3,p_4,E\}
+			& (p_1 \pand p_2 \pand p_3 \pand p_4) \implies \lnot E \\
+			& \lnot[(p_1 \pand p_2 \pand p_3 \pand p_4) \implies \lnot E] \\
+			& (p_1 \pand p_2 \pand p_3 \pand p_4) \pand E \quad S = \{p_1,p_2,p_3,p_4,E\}
 		\end{align}
 		$$
 
 		> Se dividió el $p_2$ y $p_4$ en dos premisas.
 
-		1. $\lnot C \lor \lnot Q \lor P$.
+		1. $\lnot C \por \lnot Q \por P$.
 
-		2. $Q \lor \lnot O$.
+		2. $Q \por \lnot O$.
 
-		3. $Q \lor M$.
+		3. $Q \por M$.
 
 		4. $\lnot P$.
 
-		5. $\lnot E \lor O$.
+		5. $\lnot E \por O$.
 
-		6. $\lnot E \lor \lnot M$
+		6. $\lnot E \por \lnot M$
 
 		7. $E$.
 
@@ -97,7 +97,7 @@ reviewed_on: "2025-08-08"
 
 		9. $M$: resolvente $(6,7)$.
 
-		10. $\lnot O \lor M$: resolvente $(2,3)$.
+		10. $\lnot O \por M$: resolvente $(2,3)$.
 
 		11. $O$: resolvente $(9,10)$.
 
@@ -107,7 +107,7 @@ reviewed_on: "2025-08-08"
 
 3. Indique el valor de verdad de la expresión.
 
-	1. $\exists x \; \exists y \quad (x + y = 6 \land x - y = 5)$.
+	1. $\exists x \; \exists y \quad (x + y = 6 \pand x - y = 5)$.
 
 	2. $\forall x \; \exists y \quad (x^2 < y)$.
 

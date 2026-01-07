@@ -72,12 +72,12 @@ $$
 	& \quad L_1 \gets \{\mathrm{large~1-itemsets}\} \\
 	& \quad k \gets 2 \\
 	& \quad \textbf{while}~L_{ k - 1 } \neq \emptyset \\
-	& \quad \quad C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \land b \notin a\} - \{c \mid \{s \mid s \subseteq c \land |s| = k - 1\} \nsubseteq L_{ k - 1 }\} \\
+	& \quad \quad C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \pand b \notin a\} - \{c \mid \{s \mid s \subseteq c \pand |s| = k - 1\} \nsubseteq L_{ k - 1 }\} \\
 	& \quad \quad \textbf{for}~\text{transactions}~t \in T \\
-	& \quad \quad \quad C_t \gets \{c \mid c \in C_k \land c \subseteq t\} \\
+	& \quad \quad \quad C_t \gets \{c \mid c \in C_k \pand c \subseteq t\} \\
 	& \quad \quad \quad \textbf{for}~\text{candidates}~c \in C_t \\
 	& \quad \quad \quad \quad \mathit{count}[c] \gets \mathit{count}[c] + 1 \\
-	& \quad \quad L_k \gets \{c \mid c \in C_k \land \mathit{count}[c] \geq \epsilon\} \\
+	& \quad \quad L_k \gets \{c \mid c \in C_k \pand \mathit{count}[c] \geq \epsilon\} \\
 	& \quad \quad k \gets k + 1 \\
 	& \quad \textbf{return}~\bigcup_k L_k
 \end{align}
@@ -89,16 +89,16 @@ $$
 
 3. $\textbf{while}~L_{ k - 1 } \neq \emptyset$: continuamos mientras haya conjuntos frecuentes de tamaño $k - 1$.
 
-4. $C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \land b \notin a\} - \{c \mid \{s \mid s \subseteq c \land |s| = k - 1\} \nsubseteq L_{ k - 1 }\}$.
+4. $C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \pand b \notin a\} - \{c \mid \{s \mid s \subseteq c \pand |s| = k - 1\} \nsubseteq L_{ k - 1 }\}$.
 
-	- $C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \land b \notin a\}$: combina los conjuntos en $L_{ k - 1 }$ añadiendo un item que no este presente en el conjunto.
+	- $C_k \gets \{a \cup \{b\} \mid a \in L_{ k - 1 } \pand b \notin a\}$: combina los conjuntos en $L_{ k - 1 }$ añadiendo un item que no este presente en el conjunto.
 
-	- $- \{c \mid \{s \mid s \subseteq c \land |s| = k - 1\} \nsubseteq L_{ k - 1 }\}$: filtra aquellos candidatos cuyos subconjuntos no son frecuentes. Si un subconjunto de $c$ de tamaño $k - 1$ no está en $L_{ k - 1 }$, eliminamos $c$.
+	- $- \{c \mid \{s \mid s \subseteq c \pand |s| = k - 1\} \nsubseteq L_{ k - 1 }\}$: filtra aquellos candidatos cuyos subconjuntos no son frecuentes. Si un subconjunto de $c$ de tamaño $k - 1$ no está en $L_{ k - 1 }$, eliminamos $c$.
 
-5. $C_t \gets \{c \mid c \in C_k \land c \subseteq t\}$: conjunto de candidatos de tamaño $k$ que están contenidos en la transacción $t$.
+5. $C_t \gets \{c \mid c \in C_k \pand c \subseteq t\}$: conjunto de candidatos de tamaño $k$ que están contenidos en la transacción $t$.
 
 6. $\mathit{count}[c] \gets \mathit{count}[c] + 1$: incrementa el contador para cada candidato $c$ encontrado en $C_t$.
 
-7. $L_k \gets \{c \mid c \in C_k \land \mathit{count}[c] \geq \epsilon\}$: filtra de los conjuntos frecuentes de tamaño $k$.
+7. $L_k \gets \{c \mid c \in C_k \pand \mathit{count}[c] \geq \epsilon\}$: filtra de los conjuntos frecuentes de tamaño $k$.
 
 8. $k \gets k + 1$: incrementa el tamaño de los conjuntos para la próxima iteración.

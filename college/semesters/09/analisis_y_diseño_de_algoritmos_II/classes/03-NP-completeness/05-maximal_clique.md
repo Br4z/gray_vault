@@ -18,9 +18,9 @@ Además, $\card{ V \setminus V^\prime } = \card{ V } - k$.
 
 $$
 \begin{align}
-	\exists V^\prime \subseteq V : \card{ V^\prime } \leq k \land V^\prime \text{es cubrimiento de $G$} \\
+	\exists V^\prime \subseteq V : \card{ V^\prime } \leq k \pand V^\prime \text{es cubrimiento de $G$} \\
 	\equiv \\
-	\exists V^{ '' } \subseteq V : \card{ V^{ '' } } \geq \card{ V } - k \land V^{ '' } \text{es independiente de $G$}
+	\exists V^{ '' } \subseteq V : \card{ V^{ '' } } \geq \card{ V } - k \pand V^{ '' } \text{es independiente de $G$}
 \end{align}
 $$
 
@@ -34,9 +34,9 @@ Sea $\overline{ G } = (V,\overline{ E })$ el grafo no dirigido **complementario*
 
 $$
 \begin{align}
-	\exists V^\prime \subseteq V : \card{ V^\prime } \geq k \land V^\prime \text{es independiente en $G$} \\
+	\exists V^\prime \subseteq V : \card{ V^\prime } \geq k \pand V^\prime \text{es independiente en $G$} \\
 	\equiv \\
-	\exists V^\prime \subseteq V : \card{ V^\prime } \geq k \land V^\prime \text{es clique en $\overline{ G }$}
+	\exists V^\prime \subseteq V : \card{ V^\prime } \geq k \pand V^\prime \text{es clique en $\overline{ G }$}
 \end{align}
 $$
 
@@ -44,9 +44,9 @@ $$
 
 $$
 \begin{align}
-	\exists V^\prime \subseteq V : \card{ V^\prime } \leq k \land V^\prime \text{es cubrimiento de $G$} \\
+	\exists V^\prime \subseteq V : \card{ V^\prime } \leq k \pand V^\prime \text{es cubrimiento de $G$} \\
 	\equiv \\
-	\exists V^{ '' } \subseteq V : \card{ V^{ '' } } \geq \card{ V } - k \land V^{ '' } \text{es clique en $\overline{ G }$}
+	\exists V^{ '' } \subseteq V : \card{ V^{ '' } } \geq \card{ V } - k \pand V^{ '' } \text{es clique en $\overline{ G }$}
 \end{align}
 $$
 

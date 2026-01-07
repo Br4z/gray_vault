@@ -37,9 +37,9 @@ Sea $C[i,j]$ el valor (costo) de la solución óptima del problema $\operatornam
 $$
 \begin{align}
 	& C[i,j] = \begin{cases}
-			0                           & i = 0 \lor j = 0 \\
-			C[i - 1,j - 1] + 1          & x_i = y_j \land i, j > 0 \\
-			\max(C[i,j - 1],C[i - 1,j]) & x_i \neq y_j \land i,j > 0
+			0                           & i = 0 \por j = 0 \\
+			C[i - 1,j - 1] + 1          & x_i = y_j \pand i, j > 0 \\
+			\max(C[i,j - 1],C[i - 1,j]) & x_i \neq y_j \pand i,j > 0
 		\end{cases} \\
 	& 0 \leq i \leq n \quad 0 \leq j \leq m
 \end{align}
@@ -62,10 +62,10 @@ Mientras construimos la matriz del paso $3$, también podemos llenar una matriz 
 $$
 \begin{align}
 	& B[i,j] = \begin{cases}
-			-          & i = 0 \lor j = 0 \\
+			-          & i = 0 \por j = 0 \\
 			\nwarrow   & x_i = y_j \\
-			\uparrow   & x_i \neq y_j \land C[i - 1,j] \geq C[i,j - 1] \\
-			\leftarrow & x_i \neq y_j \land C[i - 1,j] < C[i,j - 1]
+			\uparrow   & x_i \neq y_j \pand C[i - 1,j] \geq C[i,j - 1] \\
+			\leftarrow & x_i \neq y_j \pand C[i - 1,j] < C[i,j - 1]
 		\end{cases} \\
 	& 0 \leq i \leq n \quad 0 \leq j \leq m
 \end{align}

@@ -35,7 +35,7 @@ A relation $R$ defined on the set $A$ is antisymmetric if:
 $$
 \begin{align}
 	& \forall a,b \quad ((a,b) \in R \implies (b,a) \notin R) \\
-	& \forall a,b \quad (((a,b) \in R \; \land \; (b,a) \in R) \implies a = b)
+	& \forall a,b \quad (((a,b) \in R \pand (b,a) \in R) \implies a = b)
 \end{align}
 $$
 
@@ -44,7 +44,7 @@ $$
 A relation $R$ defined on the set $A$ is transitive if:
 
 $$
-\forall a,b,c \quad (((a,b) \in R \; \land \; (b,c) \in R) \implies (a,c) \in R)
+\forall a,b,c \quad (((a,b) \in R \pand (b,c) \in R) \implies (a,c) \in R)
 $$
 
 ## Equivalence
@@ -53,8 +53,8 @@ A relation $R$ defined on the set $A$ is an equivalence relation if:
 
 $$
 \begin{multline}
-	(\forall a \in A \quad (a,a) \in R) \; \land \; (\forall a,b \quad ((a,b) \in R \implies (b,a) \in R)) \; \land \\
-	(\forall a,b,c \quad (((a,b) \in R \; \land \; (b,c) \in R) \implies (a,c) \in R))
+	(\forall a \in A \quad (a,a) \in R) \pand (\forall a,b \quad ((a,b) \in R \implies (b,a) \in R)) \; \pand \\
+	(\forall a,b,c \quad (((a,b) \in R \pand (b,c) \in R) \implies (a,c) \in R))
 \end{multline}
 $$
 
@@ -66,8 +66,8 @@ A relation $R$ defined on the set $A$ is a partial order if:
 
 $$
 \begin{multline}
-	(\forall a \in A \quad (a,a) \in R) \; \land \; (\forall a,b \quad ((a,b) \in R \implies (b,a) \notin R)) \; \land \\
-	(\forall a,b,c \quad (((a,b) \in R \; \land \; (b,c) \in R) \implies (a,c) \in R))
+	(\forall a \in A \quad (a,a) \in R) \pand (\forall a,b \quad ((a,b) \in R \implies (b,a) \notin R)) \; \pand \\
+	(\forall a,b,c \quad (((a,b) \in R \pand (b,c) \in R) \implies (a,c) \in R))
 \end{multline}
 $$
 

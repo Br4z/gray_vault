@@ -17,26 +17,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+                    "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
                     "mode": "source",
                     "source": true
                   },
                   "icon": "lucide-file",
-                  "title": "12-extremes_in_a_closed_interval"
-                }
-              },
-              {
-                "id": "27c5e578c1f45f4a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "college/semesters/01/calculo_I/10-intermediate_value_theorem_ differentiation_rules_and_chain_rule.md",
-                    "mode": "source",
-                    "source": true
-                  },
-                  "icon": "lucide-file",
-                  "title": "10-intermediate_value_theorem_ differentiation_rules_and_chain_rule"
+                  "title": "13-applications_of_the_derivative"
                 }
               }
             ]
@@ -51,12 +37,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+                    "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
                     "mode": "preview",
                     "source": true
                   },
                   "icon": "lucide-file",
-                  "title": "12-extremes_in_a_closed_interval"
+                  "title": "13-applications_of_the_derivative"
                 }
               }
             ]
@@ -216,13 +202,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+                "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 12-extremes_in_a_closed_interval"
+              "title": "Outline of 13-applications_of_the_derivative"
             }
           }
         ]
@@ -242,17 +228,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3a65bcec6e6ea233",
+  "active": "138ebf1511395e58",
   "lastOpenFiles": [
+    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+    "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+    "staging/SOLID_principles.md",
     "college/semesters/01/calculo_I/10-intermediate_value_theorem_ differentiation_rules_and_chain_rule.md",
     "college/semesters/01/calculo_I/02-functions.md",
     "college/semesters/01/calculo_I/03-functions.md",
-    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
     "tree.txt",
     "scribbles.md",
     "personal/books/eloquent_JavaScript/16-handling_events.md",
     "personal/prompts.md",
-    "staging/SOLID_principles.md",
     "to_export.md",
     "output.txt",
     "README.md",
@@ -283,7 +270,6 @@
     "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
     "personal/books/eloquent_JavaScript/15-the_document_object_model.md",
-    "personal/books/eloquent_JavaScript/14-JavaScript_and_the_browser.md",
     "personal/books/assets/eloquent_JavaScript/Unconfirmed 25929.crdownload",
     "personal/books/assets/eloquent_JavaScript",
     "college/semesters/10/desarrollo_de_videojuegos",

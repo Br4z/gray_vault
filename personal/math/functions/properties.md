@@ -32,5 +32,5 @@ $$
 A function $f$ is bijective if it is **injective** and **surjective**.
 
 $$
-(\forall a,b \quad (f(a) = f(b) \implies a = b)) \; \land \; (\forall y \; \exists x \; (f(x) = y))
+(\forall a,b \quad (f(a) = f(b) \implies a = b)) \pand (\forall y \; \exists x \; (f(x) = y))
 $$

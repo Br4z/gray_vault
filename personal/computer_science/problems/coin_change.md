@@ -13,7 +13,7 @@ Given a set of coin denominations **A** and a target amount **P**, the goal is t
 - A sorted set of $n$ coin denominations.
 
 	$$
-	A = \{a_1,a_2,\dots,a_n\}, \quad \text{where} \; a_i \in \mathbb{ N } \land a_1 < a_2 < \dots < a_n
+	A = \{a_1,a_2,\dots,a_n\}, \quad \text{where} \; a_i \in \mathbb{ N } \pand a_1 < a_2 < \dots < a_n
 	$$
 
 - A target amount $P$ (a natural number).

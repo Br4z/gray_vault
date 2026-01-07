@@ -6,21 +6,21 @@ reviewed_on: "2025-05-16"
 
 ## Identity
 
-- $p \land T \equiv p$.
+- $p \pand T \equiv p$.
 
-- $p \lor T \equiv p$.
+- $p \por T \equiv p$.
 
 ## Domination
 
-- $p \lor T \equiv T$.
+- $p \por T \equiv T$.
 
-- $p \land F \equiv F$.
+- $p \pand F \equiv F$.
 
 ## Idempotent
 
-- $p \land p \equiv p$.
+- $p \pand p \equiv p$.
 
-- $p \lor p \equiv p$.
+- $p \por p \equiv p$.
 
 ## Double negation
 
@@ -30,48 +30,48 @@ $$
 
 ## Commutative
 
-- $p \lor q \equiv q \lor p$.
+- $p \por q \equiv q \por p$.
 
-- $p \land q \equiv q \land p$.
+- $p \pand q \equiv q \pand p$.
 
 ## Associative
 
-- $(p \land q) \land r \equiv p \land (q \land r)$.
+- $(p \pand q) \pand r \equiv p \pand (q \pand r)$.
 
-- $(p \lor q) \lor r \equiv p \lor (q \lor r)$.
+- $(p \por q) \por r \equiv p \por (q \por r)$.
 
 ## Distributive
 
-- $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$.
+- $p \por (q \pand r) \equiv (p \por q) \pand (p \por r)$.
 
-- $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$.
+- $p \pand (q \por r) \equiv (p \pand q) \por (p \pand r)$.
 
 ## Absorption
 
-- $p \lor (p \land q) \equiv p$.
+- $p \por (p \pand q) \equiv p$.
 
-- $p \land (p \lor q) \equiv p$.
+- $p \pand (p \por q) \equiv p$.
 
 ## Morgan's
 
-- $\neg(p \land q) \equiv \neg p \lor \neg q$.
+- $\neg(p \pand q) \equiv \neg p \por \neg q$.
 
-- $\neg(p \lor q) \equiv \neg p \land \neg q$.
+- $\neg(p \por q) \equiv \neg p \pand \neg q$.
 
 ## Biconditional definition
 
 $$
-p \leftrightarrow q \equiv (p \implies q) \land (q \implies p)
+p \leftrightarrow q \equiv (p \implies q) \pand (q \implies p)
 $$
 
 ## Biconditional negation
 
 $$
-\neg(p \leftrightarrow q) \equiv (p \land \neg q) \lor (\neg p \land q)
+\neg(p \leftrightarrow q) \equiv (p \pand \neg q) \por (\neg p \pand q)
 $$
 
 ## Inverse conditional
 
 $$
-p \lor q \equiv \neg p \implies q
+p \por q \equiv \neg p \implies q
 $$

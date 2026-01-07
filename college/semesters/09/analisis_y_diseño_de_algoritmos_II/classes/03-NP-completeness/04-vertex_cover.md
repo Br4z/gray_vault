@@ -34,7 +34,7 @@ Con estas reglas podemos decir que las instancias positivas en $\text{3-SAT}$ se
 
 - Si $v$ es verdadero en $\text{3-SAT}$, entonces $v \in V^\prime$. En caso contrario $\lnot v \in V^\prime$.
 
-- Dada una cláusula $C_i = (l_{ i1 } \lor l_{ i2 } \lor l_{ i3 })$ en la instancia $\text{3-SAT}$. Suponga que $l_{ i1 }$ es el literal satisfecho por la asignación de verdad, entonces la arista $(l_{ i1 },v)$ estaría cubierta porque $v \in V^\prime$. Luego incluiríamos $l_{ i2 },l_{ i3 }$ en $V^\prime$.
+- Dada una cláusula $C_i = (l_{ i1 } \por l_{ i2 } \por l_{ i3 })$ en la instancia $\text{3-SAT}$. Suponga que $l_{ i1 }$ es el literal satisfecho por la asignación de verdad, entonces la arista $(l_{ i1 },v)$ estaría cubierta porque $v \in V^\prime$. Luego incluiríamos $l_{ i2 },l_{ i3 }$ en $V^\prime$.
 
 Podemos asegurar que escogiendo un vértice por cada variable y otros dos por cada clausula, logramos un recubrimiento con $\card{ V^\prime } = n + 2 * \card{ C }$.
 

@@ -9,7 +9,7 @@ Determine usando inferencia si la conclusión de la siguiente fórmula proposici
 > Restricción: para este ejercicio **no** puede hacer uso de las reglas de adición, ni silogismo disyuntivo y **solo** puede usar una vez la regla de resolución.
 
 $$
-[(p \implies q) \land (p \implies (q \implies r)) \land (q \implies (r \implies s))] \implies (p \implies s)
+[(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \implies (p \implies s)
 $$
 
 ## Negación de la fórmula
@@ -17,59 +17,59 @@ $$
 Queremos demostrar la validez por contradicción. Negamos la fórmula original.
 
 $$
-\neg \left( [(p \implies q) \land (p \implies (q \implies r)) \land (q \implies (r \implies s))] \implies (p \implies s) \right)
+\neg \left( [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \implies (p \implies s) \right)
 $$
 
 Aplicamos la negación al condicional.
 
 $$
-[(p \implies q) \land (p \implies (q \implies r)) \land (q \implies (r \implies s))] \land \neg(p \implies s)
+[(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \pand \neg(p \implies s)
 $$
 
 ## Simplificación de la negación del condicional
 
 $$
-\neg(p \implies s) \equiv p \land \neg s
+\neg(p \implies s) \equiv p \pand \neg s
 $$
 
 La fórmula resultante es
 
-$$ [(p \implies q) \land (p \implies (q \implies r)) \land (q \implies (r \implies s))] \land p \land \neg s
+$$ [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \pand p \pand \neg s
 $$
 
 ## Descomponiendo los condicionales
 
 Usamos las equivalencias para los condicionales:
 
-- $p \implies q \equiv \neg p \lor q$.
+- $p \implies q \equiv \neg p \por q$.
 
-- $p \implies (q \implies r) \equiv \neg p \lor (\neg q \lor r) \equiv \neg p \lor \neg q \lor r$.
+- $p \implies (q \implies r) \equiv \neg p \por (\neg q \por r) \equiv \neg p \por \neg q \por r$.
 
-- $q \implies (r \implies s) \equiv \neg q \lor (\neg r \lor s) \equiv \neg q \lor \neg r \lor s$.
+- $q \implies (r \implies s) \equiv \neg q \por (\neg r \por s) \equiv \neg q \por \neg r \por s$.
 
 La fórmula se transforma en
 
 $$
-(\neg p \lor q) \land (\neg p \lor \neg q \lor r) \land (\neg q \lor \neg r \lor s) \land p \land \neg s
+(\neg p \por q) \pand (\neg p \por \neg q \por r) \pand (\neg q \por \neg r \por s) \pand p \pand \neg s
 $$
 
 ## Listar las cláusulas y aplicar resolución
 
 Las cláusulas obtenidas son:
 
-1. $\neg p \lor q$.
+1. $\neg p \por q$.
 
-2. $\neg p \lor \neg q \lor r$.
+2. $\neg p \por \neg q \por r$.
 
-3. $\neg q \lor \neg r \lor s$.
+3. $\neg q \por \neg r \por s$.
 
 4. $p$.
 
 5. $\neg s$.
 
-6. $\neg q \lor \neg r$: resolvente $(3,5)$.
+6. $\neg q \por \neg r$: resolvente $(3,5)$.
 
-7. $\neg p \lor \neg q$: resolvente $(2,6)$.
+7. $\neg p \por \neg q$: resolvente $(2,6)$.
 
 8. $\neg q$: resolvente $(4,7)$.
 
@@ -87,22 +87,22 @@ Es **insatisfactible**, por lo tanto, la fórmula original es **válida**.
 
 3. $p \implies (r \implies s)$.
 
-4. $\neg p \lor \neg r \lor s$.
+4. $\neg p \por \neg r \por s$.
 
 5. $p \implies (q \implies r)$.
 
-6. $\neg p \lor \neg q \lor r$.
+6. $\neg p \por \neg q \por r$.
 
-7. $\neg p \lor \neg q \lor s$: resolvente $(4,6)$.
+7. $\neg p \por \neg q \por s$: resolvente $(4,6)$.
 
-8. $\neg q \lor (\neg p \lor s)$.
+8. $\neg q \por (\neg p \por s)$.
 
-9. $q \implies (p \lor s)$.
+9. $q \implies (p \por s)$.
 
-10. $p \implies (\neg p \lor s)$.
+10. $p \implies (\neg p \por s)$.
 
-11. $\neg p \lor \neg p \lor s$.
+11. $\neg p \por \neg p \por s$.
 
-12. $\neg p \lor s$.
+12. $\neg p \por s$.
 
 13. $p \implies s$.

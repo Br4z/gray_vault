@@ -36,7 +36,7 @@ Cada variable booleana $x$ en el problema $\text{3-SAT}$ está representada por 
 
 ### Simulación de cláusulas
 
-Cada cláusula $C_i = (l_{ i1 } \lor l_{ i2 } \lor l_{ i3 })$, se convierte en una única desigualdad lineal $l_1 + l_2 + l_3 \geq 1$. Esta desigualdad solo se satisface si al menos uno de los literales se le asigna el valor de $1$ (verdadero), imitando perfectamente el comportamiento de un OR lógico.
+Cada cláusula $C_i = (l_{ i1 } \por l_{ i2 } \por l_{ i3 })$, se convierte en una única desigualdad lineal $l_1 + l_2 + l_3 \geq 1$. Esta desigualdad solo se satisface si al menos uno de los literales se le asigna el valor de $1$ (verdadero), imitando perfectamente el comportamiento de un OR lógico.
 
 ### Función objetiva
 

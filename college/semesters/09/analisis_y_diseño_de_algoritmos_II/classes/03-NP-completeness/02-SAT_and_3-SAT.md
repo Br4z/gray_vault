@@ -23,35 +23,35 @@ La idea es transformar cada cláusula de una instancia de $\text{SAT}$ en una o 
 Se crean dos variables $v_1$, $v_2$ y cuatro clausulas.
 
 $$
-(v_1 \lor v_2 \lor z_1) \land (v_1 \lor \lnot v_2 \lor z_1) \land (\lnot v_1 \lor v_2 \lor z_1) \land (\lnot v_1 \lor \lnot v_2 \lor z_1)
+(v_1 \por v_2 \por z_1) \pand (v_1 \por \lnot v_2 \por z_1) \pand (\lnot v_1 \por v_2 \por z_1) \pand (\lnot v_1 \por \lnot v_2 \por z_1)
 $$
 
-### $k = 2$ ($z_1 \lor z_2$)
+### $k = 2$ ($z_1 \por z_2$)
 
 Se crea una nueva variable $v_1$ y dos cláusulas.
 
 $$
-(v_1 \lor z_1 \lor z_2) \land (\lnot v_1 \lor z_1 \lor z_2)
+(v_1 \por z_1 \por z_2) \pand (\lnot v_1 \por z_1 \por z_2)
 $$
 
-### $k = 2$ ($z_1 \lor z_2 \lor z_3$)
+### $k = 2$ ($z_1 \por z_2 \por z_3$)
 
 No se hace nada.
 
-### $k > 3$ ($z_1 \lor z_2 \lor \dots \lor z_k$)
+### $k > 3$ ($z_1 \por z_2 \por \dots \por z_k$)
 
 Se crean $k - 3$ variables y $k - 2$ cláusulas.
 
 $$
 \begin{align}
-	& (z_1 \lor z_2 \lor v_1) \\
-	& \land (\lnot v_1 \lor z_3 \lor v_2) \\
-	& \land (\lnot v_2 \lor z_4 \lor v_3) \\
-	& \land \dots \\
-	& \land (\lnot v_i \lor z_{ i + 2 } \lor v_{ i + 1 }) \\
-	& \land \dots \\
-	& \land (\lnot v_{ k - 4 } \lor z_{ k - 2 } \lor v_{ k - 3 }) \\
-	& \land (\lnot v_{ k - 3 } \lor z_{ k - 1 } \lor z_k)
+	& (z_1 \por z_2 \por v_1) \\
+	& \pand (\lnot v_1 \por z_3 \por v_2) \\
+	& \pand (\lnot v_2 \por z_4 \por v_3) \\
+	& \pand \dots \\
+	& \pand (\lnot v_i \por z_{ i + 2 } \por v_{ i + 1 }) \\
+	& \pand \dots \\
+	& \pand (\lnot v_{ k - 4 } \por z_{ k - 2 } \por v_{ k - 3 }) \\
+	& \pand (\lnot v_{ k - 3 } \por z_{ k - 1 } \por z_k)
 \end{align}
 $$
 
