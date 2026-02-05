@@ -17,12 +17,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+                    "file": "staging/Fortnite_controls.md",
                     "mode": "source",
                     "source": true
                   },
                   "icon": "lucide-file",
-                  "title": "13-applications_of_the_derivative"
+                  "title": "Fortnite_controls"
                 }
               }
             ]
@@ -215,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,17 +229,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "138ebf1511395e58",
+  "active": "3a65bcec6e6ea233",
   "lastOpenFiles": [
-    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
-    "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+    "personal/books/eloquent_JavaScript/17-project-a_platform_game.md",
+    "staging/Fortnite_controls.md",
+    "personal/books/eloquent_JavaScript/07-the_secret_life_of_objects.md",
+    "personal/books/eloquent_JavaScript/13-project-a_programming_language.md",
+    "personal/books/eloquent_JavaScript/15-the_document_object_model.md",
+    "personal/books/eloquent_JavaScript/16-handling_events.md",
+    "staging/programming_paradigms.md",
     "staging/SOLID_principles.md",
-    "college/semesters/01/calculo_I/10-intermediate_value_theorem_ differentiation_rules_and_chain_rule.md",
+    "college/semesters/01/calculo_I/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md",
+    "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+    "4913",
+    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
     "college/semesters/01/calculo_I/02-functions.md",
     "college/semesters/01/calculo_I/03-functions.md",
     "tree.txt",
     "scribbles.md",
-    "personal/books/eloquent_JavaScript/16-handling_events.md",
     "personal/prompts.md",
     "to_export.md",
     "output.txt",
@@ -253,12 +261,7 @@
     "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/05-prototype_evolution_and_evaluation.md",
     "college/semesters/10/game_development/project",
     "college/semesters/10/desarrollo_de_videojuegos/classes/01-introduction.md",
-    "college/semesters/10/game_development/project.md",
-    "college/semesters/10/desarrollo_de_videojuegos/classes/07-game_programming.md",
-    "college/semesters/10/desarrollo_de_videojuegos/classes/05-creating_elements_in_video_games.md",
-    "college/semesters/10/desarrollo_de_videojuegos/classes/06-3D_modeling.md",
     "college/semesters/10/desarrollo_de_videojuegos/classes",
-    "college/semesters/01/calculo_I/08-limits.md",
     "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_12_02-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_02_05-figure.svg",
@@ -269,12 +272,10 @@
     "college/semesters/01/assets/calculo_I/2_06_01-graph.svg",
     "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
     "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
-    "personal/books/eloquent_JavaScript/15-the_document_object_model.md",
     "personal/books/assets/eloquent_JavaScript/Unconfirmed 25929.crdownload",
     "personal/books/assets/eloquent_JavaScript",
     "college/semesters/10/desarrollo_de_videojuegos",
     "Untitled.base",
-    "Untitled 1.base",
-    "personal/books/eloquent_JavaScript"
+    "Untitled 1.base"
   ]
 }
