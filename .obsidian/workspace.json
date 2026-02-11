@@ -1,0 +1,290 @@
+{
+  "main": {
+    "id": "6b8033a662df3d56",
+    "type": "split",
+    "children": [
+      {
+        "id": "22f28ed70dff63cb",
+        "type": "split",
+        "children": [
+          {
+            "id": "0b95e64387a1ee9f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3a65bcec6e6ea233",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "personal/computer_science/Git_and_GitHub.md",
+                    "mode": "source",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "Git_and_GitHub"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6ee302201c9648ce",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "138ebf1511395e58",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+                    "mode": "preview",
+                    "source": true
+                  },
+                  "icon": "lucide-file",
+                  "title": "13-applications_of_the_derivative"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "177aa7bcd15e0e0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "eafc437b632ed172",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb158df9f3093a21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e70382106e2d1988",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "059edb7db0af0082",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 431.5
+  },
+  "right": {
+    "id": "68badef6621bbee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e8130332fa112fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2df295c8c2a994b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 11-string_and_numbers"
+            }
+          },
+          {
+            "id": "de17820865537010",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 11-string_and_numbers"
+            }
+          },
+          {
+            "id": "51086ca860b3682a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "22b1089aba09ad33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 11-string_and_numbers"
+            }
+          },
+          {
+            "id": "1a8ffcf2aa5a8d01",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "ad1d360cbc4fbef1",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "6b1f7004b16de97a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11df9bb225de1063",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "personal/computer_science/Git_and_GitHub.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Git_and_GitHub"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 324.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "ad1d360cbc4fbef1",
+  "lastOpenFiles": [
+    "personal/computer_science/Git_and_GitHub.md",
+    "scribbles.md",
+    "staging/Fortnite_controls.md",
+    "personal/books/eloquent_JavaScript/17-project-a_platform_game.md",
+    "personal/books/eloquent_JavaScript/07-the_secret_life_of_objects.md",
+    "personal/books/eloquent_JavaScript/13-project-a_programming_language.md",
+    "personal/books/eloquent_JavaScript/15-the_document_object_model.md",
+    "personal/books/eloquent_JavaScript/16-handling_events.md",
+    "staging/programming_paradigms.md",
+    "staging/SOLID_principles.md",
+    "college/semesters/01/calculo_I/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md",
+    "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+    "4913",
+    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
+    "college/semesters/01/calculo_I/02-functions.md",
+    "college/semesters/01/calculo_I/03-functions.md",
+    "tree.txt",
+    "personal/prompts.md",
+    "to_export.md",
+    "output.txt",
+    "README.md",
+    "college/thesis/Youtube_data_extraction.md",
+    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/06-financial_structure-construction_and_validation.md",
+    "personal/computer_science/programming_languajes/paradigms.md",
+    "personal/general_job_interview_preparation.md",
+    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/02-the_entrepreneur.md",
+    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/08-elevator_pitch.md",
+    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/07-business_models_and_strategic_metrics.md",
+    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/05-prototype_evolution_and_evaluation.md",
+    "college/semesters/10/game_development/project",
+    "college/semesters/10/desarrollo_de_videojuegos/classes",
+    "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
+    "college/semesters/01/assets/calculo_I/2_12_02-graph.jpg",
+    "college/semesters/01/assets/calculo_I/2_02_05-figure.svg",
+    "college/semesters/01/assets/calculo_I/2_02_06-figure.svg",
+    "college/semesters/01/assets/calculo_I/2_03_01-graphs.jpg",
+    "college/semesters/01/assets/calculo_I/2_03_02-corral.jpg",
+    "college/semesters/01/assets/calculo_I/2_04_01-corral.jpg",
+    "college/semesters/01/assets/calculo_I/2_06_01-graph.svg",
+    "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
+    "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
+    "personal/books/assets/eloquent_JavaScript/Unconfirmed 25929.crdownload",
+    "personal/books/assets/eloquent_JavaScript",
+    "college/semesters/10/desarrollo_de_videojuegos",
+    "Untitled.base",
+    "Untitled 1.base"
+  ]
+}
