@@ -4,51 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "22f28ed70dff63cb",
-        "type": "split",
+        "id": "0b95e64387a1ee9f",
+        "type": "tabs",
         "children": [
           {
-            "id": "0b95e64387a1ee9f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "3a65bcec6e6ea233",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "personal/computer_science/Git_and_GitHub.md",
-                    "mode": "source",
-                    "source": true
-                  },
-                  "icon": "lucide-file",
-                  "title": "Git_and_GitHub"
-                }
-              }
-            ]
+            "id": "3a65bcec6e6ea233",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "add_files_to_the_last_commit"
+            }
           },
           {
-            "id": "6ee302201c9648ce",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "138ebf1511395e58",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
-                    "mode": "preview",
-                    "source": true
-                  },
-                  "icon": "lucide-file",
-                  "title": "13-applications_of_the_derivative"
-                }
-              }
-            ]
+            "id": "966de81ddbbb45f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "personal/computer_science/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "delete_files_from_the_staging_area_without_deleting_them_from the_workspace"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 431.5
+    "width": 457.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -211,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/computer_science/Git_and_GitHub.md",
+                "file": "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git_and_GitHub"
+              "title": "Outline of add_files_to_the_last_commit"
             }
           }
         ]
@@ -238,9 +225,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad1d360cbc4fbef1",
+  "active": "3a65bcec6e6ea233",
   "lastOpenFiles": [
+    "personal/computer_science/Git_and_Github/deactivate_automatic_end-of-line_conversion.md",
+    "personal/computer_science/Git_and_Github/delete_commits_history.md",
+    "personal/computer_science/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
+    "personal/computer_science/Git_and_Github/GitFlow.md",
+    "personal/computer_science/Git_and_Github/pull_a_remote_branch.md",
+    "personal/computer_science/Git_and_Github/pull_a_remote_repository_by_overwriting_the_local_one.md",
+    "personal/computer_science/Git_and_Github/remove_directories_and_files_from_tracking.md",
+    "personal/computer_science/Git_and_Github/remove_files_from_the_staging_and_theworkspace.md",
+    "personal/computer_science/Git_and_Github/remove_files_from_the_staging_area_without_discarding_changes_from_the_workspace.md",
+    "personal/computer_science/Git_and_Github/replace_a_remote_branch_with_a_local_one.md",
+    "personal/computer_science/Git_and_Github/stash_changes.md",
+    "personal/computer_science/Git_and_Github/unstash_changes.md",
     "personal/computer_science/Git_and_GitHub.md",
+    "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
     "scribbles.md",
     "staging/Fortnite_controls.md",
     "personal/books/eloquent_JavaScript/17-project-a_platform_game.md",
@@ -254,21 +254,8 @@
     "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
     "4913",
     "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
-    "college/semesters/01/calculo_I/02-functions.md",
-    "college/semesters/01/calculo_I/03-functions.md",
     "tree.txt",
-    "personal/prompts.md",
-    "to_export.md",
     "output.txt",
-    "README.md",
-    "college/thesis/Youtube_data_extraction.md",
-    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/06-financial_structure-construction_and_validation.md",
-    "personal/computer_science/programming_languajes/paradigms.md",
-    "personal/general_job_interview_preparation.md",
-    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/02-the_entrepreneur.md",
-    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/08-elevator_pitch.md",
-    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/07-business_models_and_strategic_metrics.md",
-    "college/semesters/10/innovacion_y_emprendimiento_empresarial/classes/05-prototype_evolution_and_evaluation.md",
     "college/semesters/10/game_development/project",
     "college/semesters/10/desarrollo_de_videojuegos/classes",
     "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
