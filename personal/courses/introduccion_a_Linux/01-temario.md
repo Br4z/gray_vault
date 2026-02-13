@@ -582,7 +582,7 @@ It is an encoding scheme that converts binary data into text format so that enco
 
 ## 31 - Cifrado césar y uso de `tr` para la traducción de caracteres
 
-![`tr` description](../../computer_science/Linux/useful_commands_for_creating_scripts.md#tr)
+![`tr` description](personal/computer_science/fundametals/Linux/useful_commands_for_creating_scripts.md#tr)
 
 ### Bandit level 12
 

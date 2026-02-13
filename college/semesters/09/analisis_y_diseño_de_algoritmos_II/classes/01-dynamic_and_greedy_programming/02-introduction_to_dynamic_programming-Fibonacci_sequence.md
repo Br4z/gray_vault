@@ -6,7 +6,7 @@ reviewed_on: "2025-02-15"
 
 ## 10 Dynamic programming
 
-![[personal/computer_science/algorithms/dynamic_programming|Dynamic programming]]
+![[personal/computer_science/fundametals/algorithms/dynamic_programming|Dynamic programming]]
 
 ### 10.1 Caching vs. computation
 

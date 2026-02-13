@@ -92,7 +92,7 @@ Also known as knowledge discovery in data (KDD), is the process of **uncovering 
 
 Data warehousing technology and the adoption of data mining techniques assist companies by transforming their **raw data** into **useful knowledge**.
 
-[[personal/computer_science/machine_learning/definition|data mining process]].
+[[personal/computer_science/AI/machine_learning/definition|data mining process]].
 
 ## Metodología CRIPS-DM
 

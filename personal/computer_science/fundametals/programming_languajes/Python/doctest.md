@@ -8,7 +8,7 @@ sources:
 
 # Doctest
 
-[[docstring|Docstrings]] are used not only for the description of a class or a function to provide a better understanding of the code and its use but, also used for testing purposes. This module finds patterns in the docstring that look like interactive **shell commands**. The input and expected output are included in the docstring, then the doctest module uses this docstring for testing the processed output.
+[[personal/computer_science/fundametals/programming_languajes/Python/docstring|Docstrings]] are used not only for the description of a class or a function to provide a better understanding of the code and its use but, also used for testing purposes. This module finds patterns in the docstring that look like interactive **shell commands**. The input and expected output are included in the docstring, then the doctest module uses this docstring for testing the processed output.
 
 ## How to use `doctest`
 

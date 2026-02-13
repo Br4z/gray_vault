@@ -6,7 +6,7 @@ reviewed_on: "2025-04-07"
 
 La programación dinámica puede resultar costosa (pocos subproblemas repetidos), es aquí cuando podemos usar una **estrategia** voraz para resolver el problema.
 
-![[personal/computer_science/algorithms/greedy_algorithm|Algoritmo voraz]]
+![[personal/computer_science/fundametals/algorithms/greedy_algorithm|Algoritmo voraz]]
 
 ## Problema de selección de actividades
 

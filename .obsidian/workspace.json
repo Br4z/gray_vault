@@ -4,38 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "0b95e64387a1ee9f",
+        "id": "1e1e064475c10040",
         "type": "tabs",
         "children": [
           {
-            "id": "3a65bcec6e6ea233",
+            "id": "dd71f96b7e253e10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
+                "file": "personal/books/eloquent_JavaScript/01-introduction.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "add_files_to_the_last_commit"
+              "title": "01-introduction"
             }
           },
           {
-            "id": "966de81ddbbb45f2",
+            "id": "a756d109eaac58af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/computer_science/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
+                "file": "personal/computer_science/data/5Vs_of_big_data.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "delete_files_from_the_staging_area_without_deleting_them_from the_workspace"
+              "title": "5Vs_of_big_data"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "definition",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5
+    "width": 465.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -171,8 +172,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -198,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
+                "file": "personal/computer_science/data/5Vs_of_big_data.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of add_files_to_the_last_commit"
+              "title": "Outline of 5Vs_of_big_data"
             }
           }
         ]
@@ -225,39 +226,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a65bcec6e6ea233",
+  "active": "bb158df9f3093a21",
   "lastOpenFiles": [
-    "personal/computer_science/Git_and_Github/deactivate_automatic_end-of-line_conversion.md",
-    "personal/computer_science/Git_and_Github/delete_commits_history.md",
-    "personal/computer_science/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
-    "personal/computer_science/Git_and_Github/GitFlow.md",
-    "personal/computer_science/Git_and_Github/pull_a_remote_branch.md",
-    "personal/computer_science/Git_and_Github/pull_a_remote_repository_by_overwriting_the_local_one.md",
-    "personal/computer_science/Git_and_Github/remove_directories_and_files_from_tracking.md",
-    "personal/computer_science/Git_and_Github/remove_files_from_the_staging_and_theworkspace.md",
-    "personal/computer_science/Git_and_Github/remove_files_from_the_staging_area_without_discarding_changes_from_the_workspace.md",
-    "personal/computer_science/Git_and_Github/replace_a_remote_branch_with_a_local_one.md",
-    "personal/computer_science/Git_and_Github/stash_changes.md",
-    "personal/computer_science/Git_and_Github/unstash_changes.md",
-    "personal/computer_science/Git_and_GitHub.md",
-    "personal/computer_science/Git_and_Github/add_files_to_the_last_commit.md",
+    "personal/computer_science/data/security.md",
+    "personal/computer_science/data/privacy.md",
+    "personal/computer_science/data/5Vs_of_big_data.md",
+    "personal/computer_science/data/big_data.md",
+    "personal/computer_science/data/classification.md",
+    "personal/computer_science/data/definition.md",
+    "personal/prompts.md",
     "scribbles.md",
-    "staging/Fortnite_controls.md",
-    "personal/books/eloquent_JavaScript/17-project-a_platform_game.md",
-    "personal/books/eloquent_JavaScript/07-the_secret_life_of_objects.md",
-    "personal/books/eloquent_JavaScript/13-project-a_programming_language.md",
-    "personal/books/eloquent_JavaScript/15-the_document_object_model.md",
-    "personal/books/eloquent_JavaScript/16-handling_events.md",
-    "staging/programming_paradigms.md",
-    "staging/SOLID_principles.md",
-    "college/semesters/01/calculo_I/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md",
-    "college/semesters/01/calculo_I/13-applications_of_the_derivative.md",
+    "Untitled.base",
+    "personal/computer_science/AI/definition.md",
+    "personal/computer_science/AI/classification.md",
+    "personal/computer_science/data",
+    "personal/computer_science/fundametals",
+    "personal/computer_science/AI/machine_learning/classification.md",
+    "personal/computer_science/AI/machine_learning/definition.md",
+    "college/semesters/08/introduccion_a_la_ciencia_de_datos/01-introduction.md",
+    "personal/computer_science/fundametals/Linux/useful_commands_for_creating_scripts.md",
+    "work/internship/AI-native_foundations/01-introduction_to_AI.md",
+    "personal/computer_science/AI",
+    "personal/books/eloquent_JavaScript/01-introduction.md",
+    "work/internship/AI-native_foundations",
+    "work/internship",
+    "work",
+    "personal/computer_science/Entity_Relation_Diagram-Mermaid.md",
+    "personal/computer_science/index.md",
+    "personal/computer_science/Kubernetes.md",
+    "personal/computer_science/LaTeX_cheatsheet.md",
+    "personal/computer_science/fundametals/Git_and_Github/pull_a_remote_branch.md",
+    "personal/computer_science/fundametals/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
+    "personal/computer_science/fundametals/Git_and_Github/add_files_to_the_last_commit.md",
+    "personal/computer_science/fundametals/Git_and_Github/deactivate_automatic_end-of-line_conversion.md",
+    "personal/computer_science/fundametals/Git_and_Github/delete_commits_history.md",
+    "personal/computer_science/fundametals/Git_and_Github/GitFlow.md",
     "4913",
-    "college/semesters/01/calculo_I/12-extremes_in_a_closed_interval.md",
     "tree.txt",
     "output.txt",
-    "college/semesters/10/game_development/project",
-    "college/semesters/10/desarrollo_de_videojuegos/classes",
     "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_12_02-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_02_05-figure.svg",
@@ -267,11 +273,6 @@
     "college/semesters/01/assets/calculo_I/2_04_01-corral.jpg",
     "college/semesters/01/assets/calculo_I/2_06_01-graph.svg",
     "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
-    "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg",
-    "personal/books/assets/eloquent_JavaScript/Unconfirmed 25929.crdownload",
-    "personal/books/assets/eloquent_JavaScript",
-    "college/semesters/10/desarrollo_de_videojuegos",
-    "Untitled.base",
-    "Untitled 1.base"
+    "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg"
   ]
 }
