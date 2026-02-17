@@ -1,5 +1,5 @@
 ---
-reviewed_on: "2026-02-16"
+reviewed_on: "2026-02-17"
 ---
 
 # Sprint planning
@@ -8,7 +8,7 @@ It is the time-boxed event at the start of the sprint where the Scrum team agree
 
 Sprint planning addresses the following topics:
 
-1. Why is this sprint valuable?
+1. Why is this [[personal/systems_engineering/fundametals/scrum/events/sprint|sprint]] valuable?
 
 2. What can be done this sprint?
 
@@ -26,4 +26,5 @@ Sprint planning addresses the following topics:
 
 ## Output
 
-The result is a clear plan for the sprint (the [[personal/systems_engineering/fundametals/scrum/artifacts/sprint_backlog|**sprint backlog**]]).
+The result is a clear plan for the sprint (the [[personal/systems_engineering/fundametals/scrum/artifacts/sprint_backlog|**sprint backlog**]]) created by the entire Scrum team.
+

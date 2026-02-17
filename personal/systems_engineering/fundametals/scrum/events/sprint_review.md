@@ -1,10 +1,10 @@
 ---
-reviewed_on: "2026-02-16"
+reviewed_on: "2026-02-17"
 ---
 
 # Sprint review
 
-It is a meeting where the scrum team and stakeholders collaborate to review what was done during the sprint and see how the product was improved (new features/functionality).
+It is a meeting where the scrum team and stakeholders collaborate to review what was done during the [[personal/systems_engineering/fundametals/scrum/events/sprint|sprint]] and see how the product was improved (new features/functionality).
 
 ## Input
 
