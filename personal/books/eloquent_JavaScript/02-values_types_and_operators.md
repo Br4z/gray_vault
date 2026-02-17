@@ -8,7 +8,7 @@ reviewed_on: "2025-08-31"
 
 ## Numbers
 
-...Unfortunately, calculations with fractional numbers are generally not (precise). Just as $\pi$ (pi) cannot be precisely expressed by a finite number of decimal digits, many numbers lose some precision when only $64$ bits are available to store them. This is a shame, but it causes practical problems only in specific situations. The important thing is to be aware of it and treat fractional digital numbers as approximations, not as precise values.
+...Unfortunately, calculations with fractional numbers are generally not (precise). Just as $\pi$ (pi) cannot be precisely expressed by a finite number of decimal digits, many numbers lose some precision when only 64 bits are available to store them. This is a shame, but it causes practical problems only in specific situations. The important thing is to be aware of it and treat fractional digital numbers as approximations, not as precise values.
 
 ## Special numbers
 

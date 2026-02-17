@@ -72,7 +72,7 @@ $$
 P_n(x) = \sum_{ i = 0 }^n \frac{ x^i }{ i! }
 $$
 
-Usando el polinomio de grado $9$ y aritmética de $3$ cifras de redondeo, encuentre una aproximación para $e^{ -5 }$ mediante cada uno de los siguientes métodos:
+Usando el polinomio de grado 9 y aritmética de 3 cifras de redondeo, encuentre una aproximación para $e^{ -5 }$ mediante cada uno de los siguientes métodos:
 
 ### $e^{ -5 } \approx \sum_{ i = 0 }^9 \frac{ (-5)^i }{ i! } = \sum_{ i = 0 }^9 \frac{ (-1)^i 5^i }{ i! }$
 
@@ -218,7 +218,7 @@ $$
 C(q) = C_0 + C_1 q + C_2 q^2
 $$
 
-Desarrolle la serie de Taylor para $C(q)$ alrededor de una producción inicial $q_0 = 100 \text{unidades}$. Utilice la serie para proyectar el costo total si la producción aumenta ligeramente en $5$ unidades. ¿Cuál es el cambio en el costo total?
+Desarrolle la serie de Taylor para $C(q)$ alrededor de una producción inicial $q_0 = 100 \text{unidades}$. Utilice la serie para proyectar el costo total si la producción aumenta ligeramente en 5 unidades. ¿Cuál es el cambio en el costo total?
 
 $$
 C^{ ' } = C_1 + 2 C_2 q \\[10 pt]

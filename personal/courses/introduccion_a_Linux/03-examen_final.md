@@ -1,10 +1,10 @@
 # Examen Final
 
-1. Si quiero asignar el permiso $123$ en octal a un fichero, ¿cómo quedarán representados los permisos finales para este fichero?
+1. Si quiero asignar el permiso 123 en octal a un fichero, ¿cómo quedarán representados los permisos finales para este fichero?
 
 	- `.--x-w--wx`. pending
 
-2. Si quiero asignar el permiso $676$ en octal a un directorio, ¿cómo quedarán representados los permisos finales para este directorio?
+2. Si quiero asignar el permiso 676 en octal a un directorio, ¿cómo quedarán representados los permisos finales para este directorio?
 
 	- `drw-rwxrw-`.
 
@@ -22,7 +22,7 @@
     .rw-r--r-x
     ```
 
-	- $645$.
+	- 645.
 
 5. En consola, ¿cómo podemos autocompletar?
 
@@ -32,12 +32,12 @@
 
 	| octal |  permisos |
 	|:------:|:-----------:|
-	| $421$ | `r---w---x` |
-	| $167$ | `--xrw-rwx` |
-	| $761$ | `rwxrw---x` |
-	| $4400$ | `r-S------` |
-	| $7400$ | `r-S--S--T` |
-	| $6721$ | `rws-wS--x` |
+	| 421 | `r---w---x` |
+	| 167 | `--xrw-rwx` |
+	| 761 | `rwxrw---x` |
+	| 4400 | `r-S------` |
+	| 7400 | `r-S--S--T` |
+	| 6721 | `rws-wS--x` |
 
 7. ¿Con qué comando puedo cambiar el propietario de un archivo?
 
@@ -72,9 +72,9 @@
     .-w-rwx--x
     ```
 
-	- $271$.
+	- 271.
 
-13. ¿De qué forma puedo indicar que quiero ejecutar una tarea cron a las 02:10 AM, cada $2$ días de la semana?
+13. ¿De qué forma puedo indicar que quiero ejecutar una tarea cron a las 02:10 AM, cada 2 días de la semana?
 
 	- `10 2 */2 * *`. Pending
 
@@ -96,7 +96,7 @@
 
 	- `declare -a elementos=(a b c d e)`.
 
-17. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada minuto, cada $2$ horas?
+17. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada minuto, cada 2 horas?
 
 	- `* */2 * * *`.
 
@@ -189,11 +189,11 @@
 
 	- El stdout del comando "whoami".
 
-31. Si quiero asignar el permiso $432$ en octal a un directorio, ¿cómo quedará finalmente representado el permiso para dicho directorio?
+31. Si quiero asignar el permiso 432 en octal a un directorio, ¿cómo quedará finalmente representado el permiso para dicho directorio?
 
 	- `drw--wx-w-`.
 
-32. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada minuto, en el día $10$ del mes, cada $2$ meses?
+32. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada minuto, en el día 10 del mes, cada 2 meses?
 
 	- `* * 10 */2 *`.
 
@@ -246,7 +246,7 @@
 
 	- `pwd`.
 
-40. ¿Es posible que $2$ archivos o más posean la misma ruta absoluta?
+40. ¿Es posible que 2 archivos o más posean la misma ruta absoluta?
 
 	- No.
 
@@ -254,7 +254,7 @@
 
 	- `cat /etc/hosts | tail -n 3`.
 
-42. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada $3$ minutos?
+42. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada 3 minutos?
 
 	- `*/3 * * * *`.
 
@@ -274,7 +274,7 @@
     .--x-----x
     ```
 
-	- $101$.
+	- 101.
 
 45. ¿Con qué comando puedo traer un proceso en segundo plano al primer plano?
 
@@ -288,7 +288,7 @@
 
 	- El comando devolverá un error y mostrará la cadena "test2".
 
-47. ¿De qué forma puedo indicar que quiero ejecutar una tarea Cron cada minuto, cada $2$ horas, cada $3$ días, cada $4$ meses y también los días viernes?
+47. ¿De qué forma puedo indicar que quiero ejecutar una tarea Cron cada minuto, cada 2 horas, cada 3 días, cada 4 meses y también los días viernes?
 
 	- `* */2 */3 */4 5`.
 
@@ -312,12 +312,12 @@
 
 	| permisos | octal |
 	|:-----------:|:------:|
-	| `r--r-xr--` | $454$ |
-	| `----w---x` | $021$ |
-	| `r-x-w-r-x` | $525$ |
-	| `-w-r-x-w-` | $252$ |
-	| `rwsr--r-x` | $4745$ |
-	| `rwSr--r-x` | $4645$ |
+	| `r--r-xr--` | 454 |
+	| `----w---x` | 021 |
+	| `r-x-w-r-x` | 525 |
+	| `-w-r-x-w-` | 252 |
+	| `rwsr--r-x` | 4745 |
+	| `rwSr--r-x` | 4645 |
 
 52. ¿Qué comando puedo emplear para conocer el nombre de la máquina en la que estoy conectado?
 
@@ -364,4 +364,4 @@
 
 60. ¿Cada cuánto se ejecutaría la tarea Cron descrita por `* * */2 * *`?
 
-	- Cada minuto, cada $2$ días.
+	- Cada minuto, cada 2 días.

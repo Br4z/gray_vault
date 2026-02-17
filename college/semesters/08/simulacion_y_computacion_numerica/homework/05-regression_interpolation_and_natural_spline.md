@@ -12,15 +12,15 @@ $$
 
 Para el siguiente conjunto de datos:
 
-| $x$ |  $y$  |
-|:---:|:-----:|
-| $1$ |  $1$  |
-| $2$ | $1.5$ |
-| $3$ |  $2$  |
-| $4$ |  $3$  |
-| $5$ |  $4$  |
-| $6$ |  $5$  |
-| $7$ |  $8$  |
+| $x$ | $y$ |
+|:---:|:---:|
+|  1  |  1  |
+|  2  | 1.5 |
+|  3  |  2  |
+|  4  |  3  |
+|  5  |  4  |
+|  6  |  5  |
+|  7  |  8  |
 
 Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(x) = y$ en cada uno de los tres casos.
 
@@ -147,15 +147,15 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
 
 Para el siguiente conjunto de datos:
 
-|  $x$   |  $y$  |
-|:------:|:-----:|
-| $2.5$  | $13$  |
-| $3.5$  | $11$  |
-|  $5$   | $8.5$ |
-|  $6$   | $8.2$ |
-| $7.5$  |  $7$  |
-|  $10$  | $6.2$ |
-| $12.5$ | $5.2$ |
+| $x$  | $y$ |
+|:----:|:---:|
+| 2.5  | 13  |
+| 3.5  | 11  |
+|  5   | 8.5 |
+|  6   | 8.2 |
+| 7.5  |  7  |
+|  10  | 6.2 |
+| 12.5 | 5.2 |
 
 Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ con $f(x) = y$ en cada uno de los tres casos.
 
@@ -272,16 +272,16 @@ Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ co
 
 Para el siguiente conjunto de datos:
 
-| $x$  |  $y$  |
-|:----:|:-----:|
-| $3$  | $1.6$ |
-| $4$  | $3.6$ |
-| $5$  | $4.4$ |
-| $7$  | $3.4$ |
-| $8$  | $2.2$ |
-| $9$  | $2.8$ |
-| $11$ | $3.8$ |
-| $12$ | $4.6$ |
+| $x$ | $y$ |
+|:---:|:---:|
+|  3  | 1.6 |
+|  4  | 3.6 |
+|  5  | 4.4 |
+|  7  | 3.4 |
+|  8  | 2.2 |
+|  9  | 2.8 |
+| 11  | 3.8 |
+| 12  | 4.6 |
 
 Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con $f(x) = y$ en cada uno de los tres casos.
 
@@ -401,16 +401,16 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
 
 Use funciones de spline cúbico para generar la curva que pasa por los siguientes datos:
 
-| $x$ |  $y$  |
-|:---:|:-----:|
-| $0$ |  $1$  |
-| $1$ | $1.5$ |
-| $2$ | $1.6$ |
-| $3$ | $1.5$ |
-| $4$ | $0.9$ |
-| $5$ | $2.2$ |
-| $6$ | $2.8$ |
-| $7$ | $3.1$ |
+| $x$ | $y$ |
+|:---:|:---:|
+|  0  |  1  |
+|  1  | 1.5 |
+|  2  | 1.6 |
+|  3  | 1.5 |
+|  4  | 0.9 |
+|  5  | 2.2 |
+|  6  | 2.8 |
+|  7  | 3.1 |
 
 $$
 S(x) =

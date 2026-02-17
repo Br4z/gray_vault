@@ -81,21 +81,21 @@ ls /usr/sbin/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]*
 # /usr/sbin/NetworkManagerDispatcher
 # /usr/sbin/NetworkManager
 ls /usr/sbin/[A-Z]*
-# /usr/sbin/biosdecode 
-# /usr/sbin/chat 
-# /usr/sbin/chgpasswd 
-# /usr/sbin/chpasswd 
-# /usr/sbin/chroot 
-# /usr/sbin/cleanup-info 
-# /usr/sbin/complain 
-# /usr/sbin/console-kit-daemon 
+# /usr/sbin/biosdecode
+# /usr/sbin/chat
+# /usr/sbin/chgpasswd
+# /usr/sbin/chpasswd
+# /usr/sbin/chroot
+# /usr/sbin/cleanup-info
+# /usr/sbin/complain
+# /usr/sbin/console-kit-daemon
 ```
 
 Back when Unix was first developed, it knew only about ASCII characters
 
-- $0$-$31$ are control codes (things such as tabs, backspace and carriage returns).
+- 0-31 are control codes (things such as tabs, backspace and carriage returns).
 
-- $32$-$63$ contain printable characters, including most punctuation characters and the numerals $0$-$9$.
+- 32-63 contain printable characters, including most punctuation characters and the numerals 0-9.
 
 - $64-95$ contain the uppercase letters and a few more punctuation symbols.
 
@@ -111,7 +111,7 @@ This differs from proper dictionary order, which is like this:
 aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ
 ```
 
-As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters $128$-$255$, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a **locale**, which could be ad­justed to select the character set needed for a particular location.
+As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a **locale**, which could be ad­justed to select the character set needed for a particular location.
 
 ```bash
 echo $LANG
@@ -128,9 +128,9 @@ To partially work around this problem, the POSIX standard includes a number of c
 |   `[:word:]`    | the same as `[:alnum:]`, with the addition of the underscore (`_`) character.                                                               |
 |   `[:alpha:]`   | the alphabetic characters. In ASCII, equivalent to `[A-Za-z]`.                                                                              |
 |   `[:blank:]`   | includes the space and tab characters.                                                                                                      |
-|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters $0$ through $31$ and $127$.                                                              |
-|   `[:digit:]`   | the numerals $0$ through $9$.                                                                                                               |
-|   `[:graph:]`   | visible characters. In ASCII, it includes character $33$ through $126$.                                                                     |
+|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters 0 through 31 and 127.                                                              |
+|   `[:digit:]`   | the numerals 0 through 9.                                                                                                               |
+|   `[:graph:]`   | visible characters. In ASCII, it includes character 33 through 126.                                                                     |
 |   `[:lower:]`   | lowercase letters.                                                                                                                          |
 |   `[:punct:]`   | punctuation characters.                                                                                                                     |
 |   `[:print:]`   | printable characters. All the characters in `[:graph:]` plus the space character.                                                           |
@@ -241,7 +241,7 @@ for i in {1..10}; do echo "(${RANDOM:0:3}) ${RANDOM:0:3}-${RANDOM:0:4}" >> phone
 
 # ----------------------------------------------------------------------- #
 
-grep -Ev '^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$' 
+grep -Ev '^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$'
 ```
 
 ### Finding ugly filenames with `find`

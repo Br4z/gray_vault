@@ -46,9 +46,9 @@ When you compare objects with `==`, it compares by identity: it will produce `tr
 
 ## The lycanthrope's log
 
-...Correlation between variables is usually expressed as a value that ranges from $-1$ to $1$. Zero correlation means the variables are not related. A correlation of $1$ indicates that the two are perfectly related (if you know one, you also know the other). Negative $1$ also means that the variables are perfectly related but are opposites (when one is true, the other is false).
+...Correlation between variables is usually expressed as a value that ranges from $-1$ to 1. Zero correlation means the variables are not related. A correlation of 1 indicates that the two are perfectly related (if you know one, you also know the other). Negative 1 also means that the variables are perfectly related but are opposites (when one is true, the other is false).
 
-To compute the measure of correlation between two Boolean variables, we can use the **phi coefficient** ($\phi$). This is a formula whose input is a frequency table containing the number of times the different combinations of the variables were observed. The output of the formula is a number between $-1$ and $1$ that describes the correlation.
+To compute the measure of correlation between two Boolean variables, we can use the **phi coefficient** ($\phi$). This is a formula whose input is a frequency table containing the number of times the different combinations of the variables were observed. The output of the formula is a number between $-1$ and 1 that describes the correlation.
 
 $$
 \phi = \frac{ n_{ 11 } n_{ 00 } - n_{ 10 } n_{ 01 } }{ \sqrt{ n_{ 1\cdot } n_{ 0\cdot } n_{ \cdot 1 } n_{ \cdot 0 } } }

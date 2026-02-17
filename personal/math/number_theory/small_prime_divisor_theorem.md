@@ -12,7 +12,7 @@ $$
 
 ## Proof
 
-A composite number is a number that has at least one prime divisor other than itself and $1$. If $n$ is a composite number, then it has at least one pair of divisors, say $a$ and $b$, such that $n = a * b$.
+A composite number is a number that has at least one prime divisor other than itself and 1. If $n$ is a composite number, then it has at least one pair of divisors, say $a$ and $b$, such that $n = a * b$.
 
 If both $a$ and $b$ were greater than $\sqrt{ n }$, then $a * b$ would be greater than $n$, which is a contradiction. Similarly, if both $a$ and $b$ were less than $\sqrt{ n }$, then $a * b$ would be less than $n$, which is also a contradiction.
 

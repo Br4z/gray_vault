@@ -65,7 +65,7 @@ Using `./` will prevent a filename starting with a hyphen from being interpreted
 
 ### Portable filenames
 
-To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Porta­ble Filename Character Set that can be used to maximize the chances that a file­name will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the nu­merals $0$-$9$, period (`.`), hyphen (`-`), and underscore (`_`). The standard further sug­gests that filenames should not begin with a hyphen.
+To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Porta­ble Filename Character Set that can be used to maximize the chances that a file­name will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the nu­merals 0-9, period (`.`), hyphen (`-`), and underscore (`_`). The standard further sug­gests that filenames should not begin with a hyphen.
 
 ## Testing
 
@@ -81,6 +81,6 @@ Testing is an important step in every kind of software development, including sc
 #!/bin/bash -x
 ```
 
-With tracing enabled, we see the commands performed with expansions applied. The leading plus signs indicate the display of the trace to distinguish them from lines of regular output. The plus sign is the default character for trace input. It is contained in `PS4` (prompt string $4$) shell variable.
+With tracing enabled, we see the commands performed with expansions applied. The leading plus signs indicate the display of the trace to distinguish them from lines of regular output. The plus sign is the default character for trace input. It is contained in `PS4` (prompt string 4) shell variable.
 
 To perform a trace on a selected portion of a script, rather than the entire script, we can use `set`. With `-x` it activates tracing and with `+x` it deactivates tracing. This technique can be use to examine multiple portions of a troublesome script.

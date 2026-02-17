@@ -2,7 +2,7 @@
 
 ## 2025-05-22
 
-### How much memory is in $32$ bits
+### How much memory is in 32 bits
 
 To answer this questions we will use the following [[personal/math/serie/proofs#$ forall{ n } in mathbb{ N } *$ satisfied that $ sum_{ i = 0 } n { 2 i } = 2 { n + 1 } - 1$|instance of the geometry series]]
 

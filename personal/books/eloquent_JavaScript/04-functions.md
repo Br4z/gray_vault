@@ -12,7 +12,7 @@ reviewed_on: "2025-08-31"
 
 ## Bindings and scopes
 
-...In pre-$2015$ JavaScript, only functions created new scopes, so old-style bindings, created with `var`, are visible throughout the whole function in which they appear (or throughout the global scope, if they are not in a function).
+...In pre-2015 JavaScript, only functions created new scopes, so old-style bindings, created with `var`, are visible throughout the whole function in which they appear (or throughout the global scope, if they are not in a function).
 
 ```javascript
 let x = 10 // global

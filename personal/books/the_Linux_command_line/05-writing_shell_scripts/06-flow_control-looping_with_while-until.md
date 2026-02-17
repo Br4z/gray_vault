@@ -30,7 +30,7 @@ select VAR in [STRING.. ;] do COMMANDS; done
 
 where *var* is a variable and *string* is the text of a menu choice.
 
-When `select` executes, it displays the string(s) followed by the content of `PS3` (prompt string $3$) variable as a prompt for the user's input. Once a choice is made, it sets `REPLY` variable with the user's input and returns the string associated with the choice in the variable *var*. Once the values are set, commands are performed and the prompt is displayed again for another choice.
+When `select` executes, it displays the string(s) followed by the content of `PS3` (prompt string 3) variable as a prompt for the user's input. Once a choice is made, it sets `REPLY` variable with the user's input and returns the string associated with the choice in the variable *var*. Once the values are set, commands are performed and the prompt is displayed again for another choice.
 
 `select` will continue indefinitely until either a `break` is encountered or the user types `CTRL + d` to signal end-of-life.
 

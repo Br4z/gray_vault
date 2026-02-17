@@ -4,7 +4,7 @@ reviewed_on: "2025-03-02"
 
 # Longest common subsequence
 
-![[personal/computer_science/problems/longest_common_subsequence|longest common subsequence]]
+![[personal/systems_engineering/problems/longest_common_subsequence|longest common subsequence]]
 
 Al aplicar programación dinámica sobre un problema de optimización se siguen los siguientes pasos:
 
@@ -20,7 +20,7 @@ Al aplicar programación dinámica sobre un problema de optimización se siguen 
 
 La notación $\operatorname{LCS}(x_n,y_m)$ se usará para indicar el problema de la subsecuencia más larga sobre los primeros $n$ y $m$ elementos respectivamente ($\langle x_1,x_2,\dots,x_n \rangle$ y $\langle y_1,y_2,\dots,y_m \rangle$). El subproblema tendrá las mismas restricciones que el problema original.
 
-## Paso $1$
+## Paso 1
 
 - Si $x_n = y_m$ entonces la solución de $\operatorname{LCS}(x_n,y_m)$ es igual a la solución de $\operatorname{LCS}(x_{ n - 1 },y_{ m - 1 }) + x_n$.
 
@@ -30,7 +30,7 @@ La notación $\operatorname{LCS}(x_n,y_m)$ se usará para indicar el problema de
 
 > Suponiendo que la cadena $Z$ es la solución.
 
-## Paso $2$
+## Paso 2
 
 Sea $C[i,j]$ el valor (costo) de la solución óptima del problema $\operatorname{LCS}(x_i,y_j)$. Se tiene una función de costo que permite conocer la longitud (valor) de la solución óptima:
 
@@ -47,17 +47,17 @@ $$
 
 > La matriz $C$ es de dimensiones $(n + 1) \times (m + 1)$.
 
-## Paso $3$
+## Paso 3
 
-De forma similar al [[personal/computer_science/problems/knapsack|problema de la mochila]] podemos calcular la solución de dos formas:
+De forma similar al [[personal/systems_engineering/problems/knapsack|problema de la mochila]] podemos calcular la solución de dos formas:
 
 1. Bottom-up.
 
 2. Top-down.
 
-## Paso $4$
+## Paso 4
 
-Mientras construimos la matriz del paso $3$, también podemos llenar una matriz de **direcciones** ($B$).
+Mientras construimos la matriz del paso 3, también podemos llenar una matriz de **direcciones** ($B$).
 
 $$
 \begin{align}

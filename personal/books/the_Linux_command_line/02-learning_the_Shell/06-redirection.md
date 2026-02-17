@@ -236,7 +236,7 @@ There are a couple of handy options for `grep`:
 
 #### `head` / `tail` print first / last part of files
 
-The `head` command prints the first $10$ lines of a file, and the `tail` command prints the last $10$ lines.
+The `head` command prints the first 10 lines of a file, and the `tail` command prints the last 10 lines.
 
 > The number of lines can be adjusted with the `-n` option.
 

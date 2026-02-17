@@ -237,9 +237,9 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
 
 ## 3
 
-Sea $f(x) = 1 - \sqrt{ \frac{ 3 }{ x^2 } + 1 }$. Determine si $6$ y $-4$ están en el [[personal/math/function/range|rango]] de $f$.
+Sea $f(x) = 1 - \sqrt{ \frac{ 3 }{ x^2 } + 1 }$. Determine si 6 y $-4$ están en el [[personal/math/function/range|rango]] de $f$.
 
-- $6$.
+- 6.
 
 	$$
 	\begin{align}
@@ -427,7 +427,7 @@ $$
 
 ## 7
 
-Un recipiente rectangular sin tapa tiene volumen de $20$ metros cubicos, la longitud de su base es el doble de su ancho. El material para la base cuesta $6$ dólares por metro cuadrado y para las caras $4$ dólares. Exprese el costo del material como función del ancho de la base. Indique el dominio de la función.
+Un recipiente rectangular sin tapa tiene volumen de 20 metros cubicos, la longitud de su base es el doble de su ancho. El material para la base cuesta 6 dólares por metro cuadrado y para las caras 4 dólares. Exprese el costo del material como función del ancho de la base. Indique el dominio de la función.
 
 ![rectangular container](college/semesters/01/assets/calculo_I/2_02_03-rectangular_container.svg)
 
@@ -454,7 +454,7 @@ $$
 
 ## 8
 
-Se debe construir una caja abierta a partir de un trozo rectangular de cartón, de $12$ pulgadas de ancho y $20$ pulgadas de largo, recortando cuadrados de lados iguales $x$ en cada una de las esquinas y doblando los lados. Exprese el volumen de la caja en función de $x$, indicando su dominio.
+Se debe construir una caja abierta a partir de un trozo rectangular de cartón, de 12 pulgadas de ancho y 20 pulgadas de largo, recortando cuadrados de lados iguales $x$ en cada una de las esquinas y doblando los lados. Exprese el volumen de la caja en función de $x$, indicando su dominio.
 
 ![problem](college/semesters/01/assets/calculo_I/2_02_04-figure.svg)
 
@@ -542,7 +542,7 @@ $$
 
 ## 10
 
-Uno de los catetos de un triángulo rectángulo tiene longitud $6$ centímetros. Exprese la longitud de la altura perpendicular a la hipotenusa como función de la longitud de la hipotenusa.
+Uno de los catetos de un triángulo rectángulo tiene longitud 6 centímetros. Exprese la longitud de la altura perpendicular a la hipotenusa como función de la longitud de la hipotenusa.
 
 ![problem](college/semesters/01/assets/calculo_I/2_02_06-figure.svg)
 

@@ -6,7 +6,7 @@ reviewed_on: "2025-02-15"
 
 ## 10 Dynamic programming
 
-![[personal/computer_science/fundametals/algorithms/dynamic_programming|Dynamic programming]]
+![[personal/systems_engineering/fundametals/algorithms/dynamic_programming|Dynamic programming]]
 
 ### 10.1 Caching vs. computation
 
@@ -14,7 +14,7 @@ Dynamic programming is essentially a tradeoff of space for time...
 
 #### 10.1.1 Fibonacci numbers by recursion
 
-![[personal/computer_science/problems/Fibonacci_sequence|Fibonacci_sequence]]
+![[personal/systems_engineering/problems/Fibonacci_sequence|Fibonacci_sequence]]
 
 ```cpp
 int Fibonacci(int position) {
@@ -27,7 +27,7 @@ int Fibonacci(int position) {
 }
 ```
 
-...Since $\frac{ F_{ n + 1 } }{ F_n } \approx \frac{ 1 + \sqrt{ 5 } }{ 2 } = \phi$, this means that $F_n > \frac{ 1 + \sqrt{ 5 } }{ 2 } \approx { 1.6 }^n$ for sufficiently large $n$. Since our recursion tree has only $0$ and $1$ as leaves, summing them up to get such a large number means we must have at least ${ 1.6 }^n$ leaves or procedure calls...
+...Since $\frac{ F_{ n + 1 } }{ F_n } \approx \frac{ 1 + \sqrt{ 5 } }{ 2 } = \phi$, this means that $F_n > \frac{ 1 + \sqrt{ 5 } }{ 2 } \approx { 1.6 }^n$ for sufficiently large $n$. Since our recursion tree has only 0 and 1 as leaves, summing them up to get such a large number means we must have at least ${ 1.6 }^n$ leaves or procedure calls...
 
 #### 10.1.2 Fibonacci numbers by caching
 

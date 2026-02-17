@@ -172,7 +172,7 @@ $$
 
 ## 3
 
-Un reactor transforma plutonio $239$ en uranio $238$ que es relativamente estable para uso industrial. Después de $15$ años se determina que el $0.0043$ por ciento de la cantidad inicial $A_0$ de plutonio se ha desintegrado.
+Un reactor transforma plutonio 239 en uranio 238 que es relativamente estable para uso industrial. Después de 15 años se determina que el $0.0043$ por ciento de la cantidad inicial $A_0$ de plutonio se ha desintegrado.
 
 La ecuación que describe este proceso es:
 

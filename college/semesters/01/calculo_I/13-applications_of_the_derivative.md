@@ -139,7 +139,7 @@ Use el teorema del valor medio para determinar:
 	\end{align}
 	$$
 
-	El valor mas pequeño que puede tomar $f(4)$ es $16$.
+	El valor mas pequeño que puede tomar $f(4)$ es 16.
 
 ## 4
 
@@ -224,7 +224,7 @@ $$
 
 ## 6
 
-1. Encuentre el valor de las constantes $a$, $b$, $c$ y $d$ tal que la función $f(x) = a x^3 + b x^2 + c x + d$ tenga un máximo local igual a $5$ en $x = -3$ y un mínimo local igual a $0$ en $x = 2$.
+1. Encuentre el valor de las constantes $a$, $b$, $c$ y $d$ tal que la función $f(x) = a x^3 + b x^2 + c x + d$ tenga un máximo local igual a 5 en $x = -3$ y un mínimo local igual a 0 en $x = 2$.
 
 	$$
 	f^\prime(x) = 3 a x^2 + 2 b x + c
@@ -302,7 +302,7 @@ Elabora una gráfica aproximada de una función $y = f(x)$ que satisfaga:
 
 ## 8
 
-Una caja cerrada con base cuadrada tiene un volumen de $2,000$ pulgadas cúbicas. El material de la tapa y la base cuesta $3$ centavos la pulgada cuadrada, mientras que el material para los lados cuesta $1.5$ centavos la pulgada cuadrada. Encuentre las dimensiones de la caja de modo que el costo del material sea mínimo.
+Una caja cerrada con base cuadrada tiene un volumen de $2,000$ pulgadas cúbicas. El material de la tapa y la base cuesta 3 centavos la pulgada cuadrada, mientras que el material para los lados cuesta $1.5$ centavos la pulgada cuadrada. Encuentre las dimensiones de la caja de modo que el costo del material sea mínimo.
 
 $$
 \begin{align}

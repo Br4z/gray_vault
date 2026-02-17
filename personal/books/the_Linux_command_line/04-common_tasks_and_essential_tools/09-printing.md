@@ -18,17 +18,17 @@ reviewed_on: "2025-07-25"
 
 ### Character-based printers
 
-The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is $85$ characters wide and $66$ lines high. Taking into account a small margin on each side, $80$ characters was considered the maximum width of a print line. This ex­plains why terminal displays (and our terminal emulators) are normally $80$ characters wide. Using a monospaced font and and an $80$ character wide terminal provides a **what you see is what you g et** (**WYSIWYG**) view of printed output.
+The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This ex­plains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and and an 80 character wide terminal provides a **what you see is what you g et** (**WYSIWYG**) view of printed output.
 
 ### Graphical printers
 
-Moving rom a character-based scheme to a graphical scheme presented a formidable technical challenge. Assuming $60$ lines per page each containing $80$ characters, the number of bytes needed to fill a page using a character-based printer is
+Moving rom a character-based scheme to a graphical scheme presented a formidable technical challenge. Assuming 60 lines per page each containing 80 characters, the number of bytes needed to fill a page using a character-based printer is
 
 $$
 60 \times 80 = 4,800 \text{bytes}
 $$
 
-In comparison, a $300$ DPI (dot per inch) laser printer requires (assuming an $8$ by $10$ inch print area)
+In comparison, a 300 DPI (dot per inch) laser printer requires (assuming an 8 by 10 inch print area)
 
 $$
 (8 \times 300) \times (10 \times 300)  = 900,000 \text{bytes}
@@ -86,7 +86,7 @@ Like `lpr`, it accepts either files or standard input for printing.
 |                                                  `-n <n>`                                                  | set the number of copies to *n*.                                                                                                                                                  |
 |                                               `-o landscape`                                               | set output to landscape orientation.                                                                                                                                              |
 |                                                `-o fitplot`                                                | scale the file to fit the page.                                                                                                                                                   |
-|                                              `-o scaling=<n>`                                              | scale the file to *n*. The value of $100$ fills the page. Values less than $100$ are reduced, while values greater than $100$ cause the file to be printed across multiple pages. |
+|                                              `-o scaling=<n>`                                              | scale the file to *n*. The value of 100 fills the page. Values less than 100 are reduced, while values greater than 100 cause the file to be printed across multiple pages. |
 |                                                `-o cpi=<n>`                                                | set the output characters per inch to *n*.                                                                                                                                        |
 |                                                `-o lpi=<n>`                                                | set the output lines per inch to *n*.                                                                                                                                             |
 | `-o page-bottom=<points>`<br>`-o page-left=<points>`<br>`-o page-right=<points>`<br>`-o page-top=<points>` | set the page margins. Values are expresses in *points*, a unit of typographic measurement.                                                                                        |

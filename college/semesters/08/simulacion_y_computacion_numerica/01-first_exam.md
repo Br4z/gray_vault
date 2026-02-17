@@ -36,7 +36,7 @@ $$
 
 ## 3
 
-Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de $30$ metros, valor real $120$ metros, y en el segundo escenario obtuvo un error de $50$ centímetros, valor real $500$ centímetros ¿Dónde se cometió un mayor error?
+Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de 30 metros, valor real 120 metros, y en el segundo escenario obtuvo un error de 50 centímetros, valor real 500 centímetros ¿Dónde se cometió un mayor error?
 
 $$
 \begin{align}
@@ -117,7 +117,7 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
 
 ![bar](../assets/simulacion_y_computacion_numerica/03_01_02-bar.svg)
 
-Hay una fuente de calor en un extremo de una barra de ancho $1$ como se muestra a continuación:
+Hay una fuente de calor en un extremo de una barra de ancho 1 como se muestra a continuación:
 
 Resulta que la distribución de la temperatura está dada por la ecuación diferencial:
 
@@ -125,7 +125,7 @@ $$
 \frac{ \partial^2 u }{ dx^2 } = 0 \quad (1)
 $$
 
-Haga una discretización de diferencias finitas con el medio discreteado en $5$ partes y determine las ecuaciones resultantes.
+Haga una discretización de diferencias finitas con el medio discreteado en 5 partes y determine las ecuaciones resultantes.
 
 Para hacer la discretización vamos a usar este [[personal/math/finite_differences#Second derivate|resultado]] donde tenemos que la segunda derivada corresponde a:
 
@@ -139,7 +139,7 @@ $$
 { y'' }_i = \frac{ y_{ i + 1 } - 2 y_i + y_{ i - 1 } }{ \Delta{ x }^2 }
 $$
 
-Si la barra de ancho $1$ se divide en $5$ partes encontraremos que
+Si la barra de ancho 1 se divide en 5 partes encontraremos que
 
 $$
 \Delta{ x } = \frac{ 1 }{ 5 }

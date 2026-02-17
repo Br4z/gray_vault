@@ -124,7 +124,7 @@ Algunos de los principales atributos del cifrado simétrico incluyen:
 
 #### Algoritmo RSA
 
-RSA, llamado así por sus progenitores Rivest, Shamir y Adleman, es uno de los algoritmos de cifrado de clave pública más comunes. Este se desarrolló en $1977$.
+RSA, llamado así por sus progenitores Rivest, Shamir y Adleman, es uno de los algoritmos de cifrado de clave pública más comunes. Este se desarrolló en 1977.
 
 La seguridad de este algoritmo radica en el problema de la factorización de números enteros. Los mensajes enviados se representan mediante números, y el funcionamiento se basa en el producto, conocido, de dos números primos grandes elegidos al azar y mantenidos en secreto.
 

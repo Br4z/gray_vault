@@ -28,7 +28,7 @@ Para el desarrollo de este documento se toma como referencia la "Metodología Ge
 
 El uso de este marco metodológico garantiza que el análisis del componente socioeconómico se realice de manera sistemática y con base en criterios establecidos, promoviendo así una evaluación exhaustiva y ajustada a la normativa nacional. Esta metodología permite identificar, evaluar y mitigar los impactos sociales y económicos de los proyectos, apoyando un desarrollo que sea respetuoso tanto del medio ambiente como de las comunidades afectadas.
 
-El análisis de este medio tanto para la caracterización del área de estudio como para la del área de influencia se hace en $8$ apartados.
+El análisis de este medio tanto para la caracterización del área de estudio como para la del área de influencia se hace en 8 apartados.
 
 1. Demográfico.
 

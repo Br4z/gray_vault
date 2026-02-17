@@ -77,7 +77,7 @@ reviewed_on: "2025-03-16"
 
 	5. Si $x > 6$, $f$ es un parábola que tiene su vértice en el punto $(8,-1)$.
 
-		Recordando que $f$ tiene una discontinuidad removible en $x = 6$, esto significa que $\lim_{ x \to 6^- } = \lim_{ x \to 6^+ }$. $\lim_{ x \to 6^- }$ corresponde a la función anterior evaluada en $6$, es decir $f(6) = \frac{ 1 }{ 3 } (6) - 2 = 0$, es decir que la función que estamos hallando también debe pasar ese punto ($(6,0)$).
+		Recordando que $f$ tiene una discontinuidad removible en $x = 6$, esto significa que $\lim_{ x \to 6^- } = \lim_{ x \to 6^+ }$. $\lim_{ x \to 6^- }$ corresponde a la función anterior evaluada en 6, es decir $f(6) = \frac{ 1 }{ 3 } (6) - 2 = 0$, es decir que la función que estamos hallando también debe pasar ese punto ($(6,0)$).
 
 		Sabiendo que la forma canónica de una función cuadrática corresponde a
 
@@ -112,10 +112,10 @@ reviewed_on: "2025-03-16"
 	$$
 
 	```
-	f(x) = If(x < -3, -1, 
-		If(-3 < x < 3, (1/9)x^2 - (2/3)x, 
-		If(3 < x < 6, (1/3)x - 2, 
-		If(x > 6, (1/4)(x - 8)^2 - 1)))) 
+	f(x) = If(x < -3, -1,
+		If(-3 < x < 3, (1/9)x^2 - (2/3)x,
+		If(3 < x < 6, (1/3)x - 2,
+		If(x > 6, (1/4)(x - 8)^2 - 1))))
 	```
 
 	> Para la visualización, copia y pega esto en GeoGebra.

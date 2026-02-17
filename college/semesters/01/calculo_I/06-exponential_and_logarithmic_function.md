@@ -449,7 +449,7 @@ $$
 
 ## 12
 
-En condiciones ideales, se sabe que una población de bacterias se duplica cada tres horas. Suponga que la población inicial es de $180$ bacterias.
+En condiciones ideales, se sabe que una población de bacterias se duplica cada tres horas. Suponga que la población inicial es de 180 bacterias.
 
 $$
 B(t) = C e^{ k t }
@@ -467,7 +467,7 @@ $$
 	\end{align}
 	$$
 
-2. ¿Cuántas bacterias existen después de $6$ horas?
+2. ¿Cuántas bacterias existen después de 6 horas?
 
 	$$
 	\begin{align}
@@ -478,7 +478,7 @@ $$
 	\end{align}
 	$$
 
-3. ¿Cuántas bacterias existen después de $40$ minutos?
+3. ¿Cuántas bacterias existen después de 40 minutos?
 
 	$$
 	40 \; \text{minutos} = \frac{ 2 }{ 3 } \; \text{horas}
@@ -507,7 +507,7 @@ $$
 
 ## 13
 
-Suponga que se invierten $\$100,000$ a un tipo de interés anual de $5\%$. Calcule el sado después de $8$ años si el interés:
+Suponga que se invierten $\$100,000$ a un tipo de interés anual de $5\%$. Calcule el sado después de 8 años si el interés:
 
 1. es simple.
 

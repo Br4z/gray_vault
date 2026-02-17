@@ -14,7 +14,7 @@ Module interfaces have a lot in common with object interfaces...They make part o
 
 ## ES modules
 
-Since ECMAScript $2015$, JavaScript supports two different types of programs. Scripts behave in the old way: their bindings are defined in the global scope, and they have no way to directly reference other scripts. **Modules** get their own separate scope and support the `import` and `export`, which are not available in scripts, to declare their dependencies and interface...
+Since ECMAScript 2015, JavaScript supports two different types of programs. Scripts behave in the old way: their bindings are defined in the global scope, and they have no way to directly reference other scripts. **Modules** get their own separate scope and support the `import` and `export`, which are not available in scripts, to declare their dependencies and interface...
 
 ...Imported bindings can be renamed to give them a new local name using `as` after their name.
 

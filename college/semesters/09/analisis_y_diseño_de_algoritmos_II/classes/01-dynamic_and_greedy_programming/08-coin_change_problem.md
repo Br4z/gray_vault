@@ -4,7 +4,7 @@ reviewed_on: "2025-04-07"
 
 # Coin change problem
 
-![[personal/computer_science/problems/coin_change|Problema de cambio de monedas]]
+![[personal/systems_engineering/problems/coin_change|Problema de cambio de monedas]]
 
 ## Estrategia voraz
 

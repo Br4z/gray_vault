@@ -20,7 +20,7 @@ reviewed_on: "2025-03-10"
 
 - Involucrar a las personas de decisión en su desarrollo.
 
-- Debe ser corta, no más de $5$ hojas.
+- Debe ser corta, no más de 5 hojas.
 
 - Se puede incluir un glosario de términos.
 

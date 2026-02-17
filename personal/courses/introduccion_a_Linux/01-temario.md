@@ -78,7 +78,7 @@
 
 Often referred to as ENVs, are dynamic values that wield significant influence over the behavior of programs and processes in the Linux operating system.
 
-- `$?`: is used to store the exit status of the last command executed in a shell script or a terminal. The exit status is a number between $0$ and $255$ that indicates whether the command was completed successfully or failed.
+- `$?`: is used to store the exit status of the last command executed in a shell script or a terminal. The exit status is a number between 0 and 255 that indicates whether the command was completed successfully or failed.
 
 	> A value of 0 means success, while any other value means failure.
 
@@ -277,7 +277,7 @@ When a directory has the sticky bit set, its files can be deleted or renamed onl
 
 ## 13 - Capabilities (privilegios especiales)
 
-For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes (whose effective user ID is $0$, referred to as superuser or root), and unprivileged processes (whose effective UID is nonzero). Starting with Linux 2.2, Linux divides the privileges traditionally associated with the superuser into distinct units, known as **capabilities**, which can be independently enabled and disabled.
+For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes (whose effective user ID is 0, referred to as superuser or root), and unprivileged processes (whose effective UID is nonzero). Starting with Linux 2.2, Linux divides the privileges traditionally associated with the superuser into distinct units, known as **capabilities**, which can be independently enabled and disabled.
 
 ---
 
@@ -484,7 +484,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
 ### Bandit level 6
 
-1. `find inhere/ -type f -size 1033c -not -executable| xargs file`: find files that are $1033$ bytes in size and are not executable, to see which of those is human readable.
+1. `find inhere/ -type f -size 1033c -not -executable| xargs file`: find files that are 1033 bytes in size and are not executable, to see which of those is human readable.
 
 	> That file is `.file02`.
 
@@ -496,7 +496,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
 ### Bandit level 7
 
-1. `find / -type f -size 33c -user bandit7 -group bandit6 2> /dev/null | xargs file`: find files that have $33$ bytes, belonging to user "bandit7" and group "bandit6", to see which of them is human readable.
+1. `find / -type f -size 33c -user bandit7 -group bandit6 2> /dev/null | xargs file`: find files that have 33 bytes, belonging to user "bandit7" and group "bandit6", to see which of them is human readable.
 
 	> That file is `bandit7.password`.
 
@@ -582,7 +582,7 @@ It is an encoding scheme that converts binary data into text format so that enco
 
 ## 31 - Cifrado césar y uso de `tr` para la traducción de caracteres
 
-![`tr` description](personal/computer_science/fundametals/Linux/useful_commands_for_creating_scripts.md#tr)
+![`tr` description](personal/systems_engineering/fundametals/Linux/useful_commands_for_creating_scripts.md#tr)
 
 ### Bandit level 12
 
@@ -654,7 +654,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
 ### Bandit level 14
 
-1. `ssh -i sshkey.private bandit14@localhost -p 2220`: uses the private SSH key (`sshkey.private`) to connect to the "bandit14" user on the localhost (the machine you are currently working on) via SSH on port $2220$.
+1. `ssh -i sshkey.private bandit14@localhost -p 2220`: uses the private SSH key (`sshkey.private`) to connect to the "bandit14" user on the localhost (the machine you are currently working on) via SSH on port 2220.
 
 2. `cat /etc/bandit_pass/bandit14`.
 
@@ -692,7 +692,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
 ### Bandit level 15
 
-1. `nc localhost 30000`: connect to the localhost on port $30000$.
+1. `nc localhost 30000`: connect to the localhost on port 30000.
 
 	> The password for `bandit15` is `jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt`.
 
@@ -708,7 +708,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 ### Bandit level 16
 
-1. `openssl s_client -connect localhost:30001`: connect to the localhost on port $30001$ using the Secure Socket Layer (SSL) protocol.
+1. `openssl s_client -connect localhost:30001`: connect to the localhost on port 30001 using the Secure Socket Layer (SSL) protocol.
 
 	> The password for `bandit16` is `JQttfApK4SeyHwDlI9SXGR50qclOAil1`.
 
@@ -736,7 +736,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 5. In the previous temporary file, paste the private RSA key content.
 
-6. `ssh -i <temporary file> bandit16@localhost -p 2220`: uses the private RSA key to establish an SSH connection to the `bandit16` on the localhost via SSH on port $2220$.
+6. `ssh -i <temporary file> bandit16@localhost -p 2220`: uses the private RSA key to establish an SSH connection to the `bandit16` on the localhost via SSH on port 2220.
 
 7. `cat /etc/bandit_pass/bandit17`: displays the password for `bandit17`.
 
@@ -772,15 +772,15 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 ### Bandit level 21
 
-Having two terminals, in the first one we will have `nc` listening to port $4646$ (the port does not matter as long as it is available), and in the other one we will connect to that port using the `suconnect` binary provided.
+Having two terminals, in the first one we will have `nc` listening to port 4646 (the port does not matter as long as it is available), and in the other one we will connect to that port using the `suconnect` binary provided.
 
 1. First PC.
 
-	- `nc -lv localhost 4646`: starts to listenening on port $4646$, waiting for incoming connections.
+	- `nc -lv localhost 4646`: starts to listenening on port 4646, waiting for incoming connections.
 
 2. Second PC.
 
-	- `./suconnect 4646`: executes the provided `suconnect` binary to connect to the listening port $4646$. This creates a secure connection for transferring the password.
+	- `./suconnect 4646`: executes the provided `suconnect` binary to connect to the listening port 4646. This creates a secure connection for transferring the password.
 
 3. Fist PC.
 
@@ -990,7 +990,7 @@ Based on the values specified for each of the components above, complex schedule
     exit 0
     ```
 
-2. `ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220`: uses the `bandit26.sshkey` key to establish an SSH connection to the `bandit26` on the localhost via SSH on port $2220$.
+2. `ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220`: uses the `bandit26.sshkey` key to establish an SSH connection to the `bandit26` on the localhost via SSH on port 2220.
 
 3. Minimize the terminal sufficiently to trigger the More pager, which displays a banner.
 

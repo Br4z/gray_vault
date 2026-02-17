@@ -4,7 +4,7 @@
 
 Una heurística es una función que asigna a cada nodo un valor que corresponde al **costo estimado para llegar a la meta** estando en dicho nodo. Se denota por $h(n)$.
 
-La heurística $h(n)$ deber ser $0$ cuando $n$ es un nodo meta.
+La heurística $h(n)$ deber ser 0 cuando $n$ es un nodo meta.
 
 ---
 
@@ -70,7 +70,7 @@ $$
 1 + b^* + (b^*)^2 + \dots + (b^*)^d = N
 $$
 
-> En una heurística **bien** diseñada, **b\*** se aproxima a $1$.
+> En una heurística **bien** diseñada, **b\*** se aproxima a 1.
 
 ---
 

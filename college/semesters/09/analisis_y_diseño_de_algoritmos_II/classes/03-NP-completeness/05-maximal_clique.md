@@ -4,7 +4,7 @@ reviewed_on: "2025-08-03"
 
 # Maximal clique
 
-![[personal/computer_science/problems/maximal_clique|Maximal clique]]
+![[personal/systems_engineering/problems/maximal_clique|Maximal clique]]
 
 ## $\text{MC} \in \mathrm{NP}$
 
@@ -56,4 +56,4 @@ Un problema de encontrar una cobertura de tamaño $\leq k$ (vertex cover) se tra
 
 ## Complejidad
 
-Si se tienen $n$ vértices y $m$ aristas en $G$, se tiene el mismo número de vértices y $n^2 - m$ aristas en $\overline{ G }$. Esto se traduce en una complejidad temporal $O(n^2 + m)$. Por lo tanto, $\text{MC}$ está en $\mathrm{NP}$ y es $\mathrm{NP}\text{-hard}$, lo que lo hace $\mathrm{NP}\text{-complete}$.
+Si se tienen $n$ vértices y $m$ aristas en $G$, se tiene el mismo número de vértices y $n^2 - m$ aristas en $\overline{ G }$. Esto se traduce en una complejidad temporal $O(n^2 + m)$. Por lo tanto, MC está en $\mathrm{NP}$ y es $\mathrm{NP}\text{-hard}$, lo que lo hace $\mathrm{NP}\text{-complete}$.

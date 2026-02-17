@@ -76,7 +76,7 @@ function reduce(array, combine, start) {
 
 ## Strings and character codes
 
-...JavaScript strings are encoded as a sequence of $16$-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives you a little over $65,000$ characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-$16$, the format also used by JavaScript strings, was invented. It describes most common characters using a single $16$-bit code unit but uses a pair of two such units for others.
+...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives you a little over $65,000$ characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
 
 ## Summary
 

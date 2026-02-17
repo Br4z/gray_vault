@@ -16,7 +16,7 @@ You should imagine bindings as tentacles rather than boxes. They do not **contai
 
 The words "var" and "const" can also be used to create bindings, similarly to "let".
 
-The first of these, "var" (short for "variable"), is the way bindings were declared in pre-$2015$ JavaScript, when "let" did not exist yet...For now, remember that it mostly does the same thing...
+The first of these, "var" (short for "variable"), is the way bindings were declared in pre-2015 JavaScript, when "let" did not exist yet...For now, remember that it mostly does the same thing...
 
 ## The environment
 

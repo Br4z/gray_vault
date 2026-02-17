@@ -13,7 +13,7 @@ graph TD
 	subgraph "Frontend service"
 		F[Nginx Container :80]
 	end
-	
+
 	subgraph "Backend services"
 		D[Django container :8000]
 		P[PostgreSQL container :5432]
@@ -32,13 +32,13 @@ graph TD
 
 ## Frontend service
 
-- Nginx container: this container holds the static, built files from your React + Vite project. It runs a lightweight Nginx web server to efficiently send these files (HTML, CSS, JavaScript) to the user's browser when they visit your site. It listens on port $80$, the standard port for web traffic.
+- Nginx container: this container holds the static, built files from your React + Vite project. It runs a lightweight Nginx web server to efficiently send these files (HTML, CSS, JavaScript) to the user's browser when they visit your site. It listens on port 80, the standard port for web traffic.
 
 ## Backend services
 
-- Django container: this is the core of the application's logic. It runs your Python/Django code, exposes an API, and processes business logic. It listens on port $8000$ for API requests from the browser.
+- Django container: this is the core of the application's logic. It runs your Python/Django code, exposes an API, and processes business logic. It listens on port 8000 for API requests from the browser.
 
-- PostgreSQL container: this container runs the PostgreSQL database server. It is responsible for storing and retrieving all the application's data. It listens on port $5432$.
+- PostgreSQL container: this container runs the PostgreSQL database server. It is responsible for storing and retrieving all the application's data. It listens on port 5432.
 
 ## Communication flow
 

@@ -26,12 +26,12 @@ A file named `/etc/fstab` (short for "file system table") lists the devices (typ
 
 | field |     contents     | description                                                                              |
 |:-----:|:----------------:|:---------------------------------------------------------------------------------------- |
-|  $1$  |      device      | identifies what the file system to mount                                                 |
-|  $2$  |   mount point    | the directory where the device is attached to the file system tree.                      |
-|  $3$  | file system type | Linux allows many file system types to be mounted.                                       |
-|  $4$  |     options      |                                                                                          |
-|  $5$  |    frequency     | a single number that specifies if and when a file system is to be backed up with `dump`. |
-|  $6$  |      order       | a single number that specifies in what order file systems should be checked with `fsck`. |
+|   1   |      device      | identifies what the file system to mount                                                 |
+|   2   |   mount point    | the directory where the device is attached to the file system tree.                      |
+|   3   | file system type | Linux allows many file system types to be mounted.                                       |
+|   4   |     options      |                                                                                          |
+|   5   |    frequency     | a single number that specifies if and when a file system is to be backed up with `dump`. |
+|   6   |      order       | a single number that specifies in what order file systems should be checked with `fsck`. |
 
 ### Viewing a list of mounted file systems
 
@@ -41,7 +41,7 @@ The formatting of the listing is as follows `<device> on <mount point> type <fil
 
 ---
 
-After inserting a $4$ GB flash drive in a Ubuntu 22.04 system.
+After inserting a 4 GB flash drive in a Ubuntu 22.04 system.
 
 ```bash
 mount | grep /dev/sd

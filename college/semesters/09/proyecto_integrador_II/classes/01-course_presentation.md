@@ -14,7 +14,7 @@ Una aplicación inteligente
 
 - se considera "inteligente" debido a su capacidad para realizar funciones que tradicionalmente requerirían la comprensión o el razonamiento humano como tomar decisiones, aprender, razonar, definir planes de trabajo, procesamiento de texto y voz, reconocimiento de objetos, etc.
 
-### $3$ Características relevantes
+### 3 Características relevantes
 
 #### Aprendizaje automático
 

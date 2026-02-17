@@ -120,13 +120,13 @@ reviewed_on: "2025-02-01"
 
 	seleccione la afirmación que sea correcta.
 
-	1. En $1$ se crea un objeto estático de la clase `AnotherClass`, porque `AnotherClass` no es una clase abstracta.
+	1. En 1 se crea un objeto estático de la clase `AnotherClass`, porque `AnotherClass` no es una clase abstracta.
 
-	2. En $1$ se crea un objeto dinámico de la clase `AnotherClass`, porque `AnotherClass` no es una clase abstracta.
+	2. En 1 se crea un objeto dinámico de la clase `AnotherClass`, porque `AnotherClass` no es una clase abstracta.
 
-	3. En $1$ no se puede crear un objeto estático de la clase `AnotherClass` porque `AnotherClass` es una clase abstracta.
+	3. En 1 no se puede crear un objeto estático de la clase `AnotherClass` porque `AnotherClass` es una clase abstracta.
 
-	4. En $1$ no se puede crear un objeto dinámico de la clase `AnotherClass` porque `AnotherClass` es una clase abstracta.
+	4. En 1 no se puede crear un objeto dinámico de la clase `AnotherClass` porque `AnotherClass` es una clase abstracta.
 
 	5. **Ninguna de las anteriores.**
 
@@ -143,27 +143,27 @@ reviewed_on: "2025-02-01"
 
 	seleccione las afirmaciones que son correctas.
 
-	1. En $1$ se declara una dirección de memoria y en $2$ se le asigna al puntero la dirección de memoria de la variable.
+	1. En 1 se declara una dirección de memoria y en 2 se le asigna al puntero la dirección de memoria de la variable.
 
-	2. **En $1$ se declara un puntero y en $2$ se declara una variable.**
+	2. **En 1 se declara un puntero y en 2 se declara una variable.**
 
-	3. En $4$ se le asigna al puntero la dirección de memoria de `p`.
+	3. En 4 se le asigna al puntero la dirección de memoria de `p`.
 
-	4. En $4$ se le asigna al puntero el valor de `w`.
+	4. En 4 se le asigna al puntero el valor de `w`.
 
-	5. **En $4$ se le asigna al puntero la dirección de memoria de `w`.**
+	5. **En 4 se le asigna al puntero la dirección de memoria de `w`.**
 
-	6. En $5$ cambia el valor de `*pointer` por la dirección a la que está apuntando `p`.
+	6. En 5 cambia el valor de `*pointer` por la dirección a la que está apuntando `p`.
 
-	7. En $5$ se lanza un error porque no se puede hacer esa asignación.
+	7. En 5 se lanza un error porque no se puede hacer esa asignación.
 
-	8. **En $5$ se cambia el valor de `w` por el valor que tiene `p`.**
+	8. **En 5 se cambia el valor de `w` por el valor que tiene `p`.**
 
-	9. **En $3$ a `p` se le asigna el valor de `1`.**
+	9. **En 3 a `p` se le asigna el valor de `1`.**
 
-	10. En $3$ sale error porque no se puede asignar ese valor a `p`.
+	10. En 3 sale error porque no se puede asignar ese valor a `p`.
 
-	11. En $1$ se lanza un error porque `pointer` no puede tener de valor `nullptr`.
+	11. En 1 se lanza un error porque `pointer` no puede tener de valor `nullptr`.
 
 7. Con este extracto de código:
 
@@ -176,19 +176,19 @@ reviewed_on: "2025-02-01"
 
 	seleccione las afirmaciones que son correctas.
 
-	1. En $2$ se declara una dirección de memoria y se le asigna el valor de `v`.
+	1. En 2 se declara una dirección de memoria y se le asigna el valor de `v`.
 
-	2. En $2$ se crea un puntero de `v`.
+	2. En 2 se crea un puntero de `v`.
 
-	3. **En $2$ se crea una referencia de `v`.**
+	3. **En 2 se crea una referencia de `v`.**
 
-	4. En $4$ se imprime la dirección de memoria de `w` que es diferente a la dirección de `v`.
+	4. En 4 se imprime la dirección de memoria de `w` que es diferente a la dirección de `v`.
 
-	5. **En $4$ se imprime la dirección de memoria de `v`.**
+	5. **En 4 se imprime la dirección de memoria de `v`.**
 
-	6. En $4$ se imprime el valor que tiene asignado `w`.
+	6. En 4 se imprime el valor que tiene asignado `w`.
 
-	7. En $4$ se imprime el valor de `100`.
+	7. En 4 se imprime el valor de `100`.
 
 	8. El programa no ejecuta, sale error de compilación.
 
@@ -235,11 +235,11 @@ reviewed_on: "2025-02-01"
 
 	seleccione las afirmaciones que son correctas.
 
-	1. En $6$ se imprime `200`.
+	1. En 6 se imprime `200`.
 
-	2. En $6$ se imprime `600`.
+	2. En 6 se imprime `600`.
 
-	3. El programa si ejecuta, pero no se modifica `v` del main, porque se pasa parámetro por valor, entonces imprime `100` en $6$.
+	3. El programa si ejecuta, pero no se modifica `v` del main, porque se pasa parámetro por valor, entonces imprime `100` en 6.
 
 	4. **El programa no ejecuta, se genera un error de compilación porque no se puede hacer la instrucción `data = data * 4;` dentro de `function_1`.**
 

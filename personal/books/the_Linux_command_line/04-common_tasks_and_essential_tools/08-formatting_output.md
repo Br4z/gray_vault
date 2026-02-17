@@ -42,7 +42,7 @@ Each of the markup elements must appear alone on its own line. After processing 
 |     `-p`      | do not reset page numbering at the beginning of each logical page.                                                                                                                                                                                        |
 | `-s <string>` | add *string* to the end of each line number to create a separator. The default is a single tab character.                                                                                                                                                 |
 |   `-v <n>`    | set first line number of each logical page to *n*. The default is one.                                                                                                                                                                                    |
-|   `-w <n>`    | set the width of the line number field to *n*. The default is $6$.                                                                                                                                                                                        |
+|   `-w <n>`    | set the width of the line number field to *n*. The default is 6.                                                                                                                                                                                        |
 
 ```bash
 echo "SUSE    10.2   12/07/2006

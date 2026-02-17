@@ -94,7 +94,7 @@ top
 |     | `load average:` | it refers to the number of processes that are waiting to run.           |
 |  2  |    `Tasks:`     | summary of processes and their status.                                  |
 |     |    `0.7%us`     | $7\%$ of the CPU is being used for **user** processes.                  |
-|     |    `1.0%sy`    | $1\%$ of the CPU is being used for **system** (kernel) processes.        |
+|     |    `1.0%sy`     | $1\%$ of the CPU is being used for **system** (kernel) processes.       |
 |     |    `0.0%ni`     | $0\%$ of the CPU is being used by "nice" (low-priority) processes.      |
 |     |    `98.3%id`    | $98.3\%$ of the CPU is idle                                             |
 |     |    `0.0%wa`     | $0\%$ of the CPU is waiting for I/O.                                    |
@@ -119,7 +119,7 @@ xlogo &
 # [1] 28236
 ```
 
-The returned message is part of a shell feature called **job control**. With this message, the shell is telling us that we have started job number $1$ (`[1]`) and that it has PID $28236$.
+The returned message is part of a shell feature called **job control**. With this message, the shell is telling us that we have started job number 1 (`[1]`) and that it has PID 28236.
 
 ```bash
 ps
@@ -186,7 +186,7 @@ Why would we want to launch a graphical program from the command line? There are
 
 Niceness can be ad­justed with the `nice` and `renice`. It is important to remember that only the superuser may increase the priority of a process and that regular users may only decrease the priority of processes that they own.
 
-`nice` launches a process with a specified niceness. Niceness adjustments are expressed from $-20$ (the most favorable) to $19$ (the least favorable) with a default of value of zero (no adjustment).
+`nice` launches a process with a specified niceness. Niceness adjustments are expressed from $-20$ (the most favorable) to 19 (the least favorable) with a default of value of zero (no adjustment).
 
 ```bash
 nice -n 10 cpu-hog
@@ -234,16 +234,16 @@ If no signal is specified on the command line, then the TERM (terminate) signal 
 
 | number | name  | meaning                                                                          |
 |:------:|:-----:|:-------------------------------------------------------------------------------- |
-|  $1$   |  HUP  | hang up.                                                                         |
-|  $2$   |  INT  | interrupt.                                                                       |
-|  $3$   | QUIT  |                                                                                  |
-|  $9$   | KILL  | signal send to the kernel to immediately terminates the process.                 |
-|  $11$  | SEGV  | segmentation violation.                                                          |
-|  $15$  | TERM  | terminate.                                                                       |
-|  $18$  | CONT  | continue.                                                                        |
-|  $19$  | STOP  | signal send to the kernel to immediately pause the process without terminating.  |
-|  $20$  | TSTP  | terminal stop.                                                                   |
-|  $28$  | WINCH | window change. This is the signal sent by the system when a window changes size. |
+|   1    |  HUP  | hang up.                                                                         |
+|   2    |  INT  | interrupt.                                                                       |
+|   3    | QUIT  |                                                                                  |
+|   9    | KILL  | signal send to the kernel to immediately terminates the process.                 |
+|   11   | SEGV  | segmentation violation.                                                          |
+|   15   | TERM  | terminate.                                                                       |
+|   18   | CONT  | continue.                                                                        |
+|   19   | STOP  | signal send to the kernel to immediately pause the process without terminating.  |
+|   20   | TSTP  | terminal stop.                                                                   |
+|   28   | WINCH | window change. This is the signal sent by the system when a window changes size. |
 
 > The PID or jobspec can be used to refer to a process.
 

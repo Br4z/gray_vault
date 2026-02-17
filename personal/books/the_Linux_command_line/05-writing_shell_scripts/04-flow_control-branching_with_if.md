@@ -18,11 +18,11 @@ fi
 
 ## Exit status
 
-Commands (including the scripts and shell functions we write) issue a value to the system when they terminate, called an **exit status**. This value, which is an integer in the range of $0$ to $255$, indicates the success or failure of the command's execution. By convention, a value of zero indicates success and any other value indicates failure. The shell provides a parameter that we can use to examine a command's exit status (`$?`).
+Commands (including the scripts and shell functions we write) issue a value to the system when they terminate, called an **exit status**. This value, which is an integer in the range of 0 to 255, indicates the success or failure of the command's execution. By convention, a value of zero indicates success and any other value indicates failure. The shell provides a parameter that we can use to examine a command's exit status (`$?`).
 
-Some commands use a different exit status values to provide diagnostics for errors, while many commands simply exit with a value of $1$ when they fail. Man pages often include a section entitled "Exit Status", describing what codes are used.
+Some commands use a different exit status values to provide diagnostics for errors, while many commands simply exit with a value of 1 when they fail. Man pages often include a section entitled "Exit Status", describing what codes are used.
 
-The shell provides two extremely simple built-in commands that do nothing except terminate with either a $0$ (`true`) or $1$ (`false`) exit status.
+The shell provides two extremely simple built-in commands that do nothing except terminate with either a 0 (`true`) or 1 (`false`) exit status.
 
 What `if` really does is evaluate the success or failure of commands. If a list of commands follows `if`, the last command in the list is evaluated.
 
@@ -35,7 +35,7 @@ test EXPRESSION
 [ EXPRESSION ] # The most pupular
 ```
 
-where *expression* is an expression that is evaluated as either true or false. `test` returns an exit status of $0$ when the expression is true and a status of $1$ when the expression is false.
+where *expression* is an expression that is evaluated as either true or false. `test` returns an exit status of 0 when the expression is true and a status of 1 when the expression is false.
 
 It is interesting to note that both `test` and `[` are actually commands. In `bash` they are built-ins, but they also exists as programs in `/usr/bin` for use with other shells. The expression is actually just its arguments with the `[` command requiring that the `]` character be provided as its final argument.
 

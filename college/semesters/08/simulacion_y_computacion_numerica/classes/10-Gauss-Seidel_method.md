@@ -49,7 +49,7 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
 
 	Se repite el siguiente proceso hasta que los valores converjan según el criterio de parada elegido:
 
-	En la iteración $k + 1$, para cada $i = 1$ hasta $n$ calcular $x^{ (k + 1) }$ usando la fórmula del paso $3$.
+	En la iteración $k + 1$, para cada $i = 1$ hasta $n$ calcular $x^{ (k + 1) }$ usando la fórmula del paso 3.
 
 	Si el método se hace con **relajación**, se debe actualizar el $x^{ (k + 1) }$ con la siguiente fórmula:
 

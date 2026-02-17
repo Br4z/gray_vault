@@ -36,7 +36,7 @@ Con los siguientes datos:
 
 ## 2
 
-Solucione el sistema de ecuaciones y justifique la elección del método. Usé un límite de error de $\varepsilon = 5\%$ y un máximo de $3$ iteraciones.
+Solucione el sistema de ecuaciones y justifique la elección del método. Usé un límite de error de $\varepsilon = 5\%$ y un máximo de 3 iteraciones.
 
 $$
 \begin{cases}

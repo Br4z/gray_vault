@@ -40,7 +40,7 @@ reviewed_on: "2025-07-16"
 
 #### MS-DOS text vs. Unix text
 
-...Unix and DOS do not define the end of a line the same way in text files. Unix ends a line with a linefeed character (ASCII $10$) while MS- DOS and its derivatives use the sequence carriage return (ASCII $13$) and linefeed to terminate each line of text.
+...Unix and DOS do not define the end of a line the same way in text files. Unix ends a line with a linefeed character (ASCII 10) while MS- DOS and its derivatives use the sequence carriage return (ASCII 13) and linefeed to terminate each line of text.
 
 - `-n` or `--number`: number all output lines.
 

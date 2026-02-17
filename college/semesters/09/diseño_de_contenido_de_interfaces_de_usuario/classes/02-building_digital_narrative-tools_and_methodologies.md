@@ -64,7 +64,7 @@ Es una metodología que prioriza la creación de contenido antes de desarrollar 
 
 #### Fases
 
-#### Fase $1$: exploración
+#### Fase 1: exploración
 
 Las acciones que se hacen en esta fase son:
 
@@ -74,7 +74,7 @@ Las acciones que se hacen en esta fase son:
 
 - Analizar funnels de conversión, métricas de canal, matrices de negocio y feedback de áreas de servicio.
 
-#### Fase $2$: entendimiento
+#### Fase 2: entendimiento
 
 Las acciones que se hacen en esta fase son:
 
@@ -82,7 +82,7 @@ Las acciones que se hacen en esta fase son:
 
 - Organizar y analizar la información recopilada, investigar a la competencia y profundizar en el perfil de los usuarios.
 
-#### Fase $3$: storytelling y prototipo
+#### Fase 3: storytelling y prototipo
 
 Las acciones que se hacen en esta fase son:
 

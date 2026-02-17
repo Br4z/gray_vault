@@ -58,7 +58,7 @@ They achieve this goal through:
 
 - Implementing WAN access and network address translation.
 
-- Connecting Layer $2$ networks established through switches.
+- Connecting Layer 2 networks established through switches.
 
 #### Firewall
 

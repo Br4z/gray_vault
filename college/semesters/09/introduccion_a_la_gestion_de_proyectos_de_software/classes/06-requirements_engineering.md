@@ -140,7 +140,7 @@ Durante cada actividad de IR la priorización se puede utilizar para determinar 
 
 #### Ranking
 
-Se asigna un orden numérico único a cada requisito; el requisito más importante se posiciona en $1$, el segundo en $2$, y así sucesivamente. Generalmente, es aplicado por un **único** stakeholder o un **pequeño grupo**.
+Se asigna un orden numérico único a cada requisito; el requisito más importante se posiciona en 1, el segundo en 2, y así sucesivamente. Generalmente, es aplicado por un **único** stakeholder o un **pequeño grupo**.
 
 Requiere un esfuerzo **bajo**, es ideal tanto para escenarios con **muchos** o **pocos** requisitos con complejidad de priorización **baja**.
 

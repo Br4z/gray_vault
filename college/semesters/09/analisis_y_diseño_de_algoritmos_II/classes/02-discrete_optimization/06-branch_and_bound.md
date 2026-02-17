@@ -27,11 +27,11 @@ Este algoritmo sirve para resolver problemas de programación entera o mixta, do
 	Sea $x_i$ la variable que incumple la condición de integralidad con un valor $v$, los subproblemas que genera son dos, con las siguientes restricciones
 
 	$$
-	R_1 = x_i \leq \floor{ v } \quad R_2 = x_i \geq \ceil{ v } 
+	R_1 = x_i \leq \floor{ v } \quad R_2 = x_i \geq \ceil{ v }
 	$$
 
 5. Acotación (bounding).
 
-	Cada subproblema se resuelve como **relajación continua** (paso $1$), obteniendo nuevas cotas. Si la cota del subproblema no puede superar la mejor solución entera conocida o la relajación es **infactible**, se poda ese nodo (no es necesario explorar).
+	Cada subproblema se resuelve como **relajación continua** (paso 1), obteniendo nuevas cotas. Si la cota del subproblema no puede superar la mejor solución entera conocida o la relajación es **infactible**, se poda ese nodo (no es necesario explorar).
 
 Cuando no quedan nodos pendientes por explorar, el algoritmo finaliza.

@@ -48,7 +48,7 @@ Para asegurar la integridad, autenticidad y no repudio de un documento electrón
 
 3. Creación de la firma digital.
 
-	El resumen obtenido en el paso $1$ se cifra utilizando la **clave privada** del firmante. El resultado cifrado es la firma digital. Al adjuntar esta firma al documento junto con el certificado digital del firmante, se proporciona tanto la prueba de integridad (gracias al hash) como la garantía de identidad (gracias al certificado PKI).
+	El resumen obtenido en el paso 1 se cifra utilizando la **clave privada** del firmante. El resultado cifrado es la firma digital. Al adjuntar esta firma al documento junto con el certificado digital del firmante, se proporciona tanto la prueba de integridad (gracias al hash) como la garantía de identidad (gracias al certificado PKI).
 
 4. Verificación por el receptor.
 

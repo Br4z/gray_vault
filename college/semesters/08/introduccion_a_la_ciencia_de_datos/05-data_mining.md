@@ -12,7 +12,7 @@ La promesa del **data mining** es encontrar patrones en grandes volúmenes de in
 
 ![machine learning](college/semesters/08/assets/introduccion_a_la_ciencia_de_datos/05_01-machine_learning.svg)
 
-![[personal/computer_science/AI/machine_learning/definition|machine learning definition]]
+![[personal/systems_engineering/AI/machine_learning/definition|machine learning definition]]
 
 ### Aprendizaje supervisado (supervised learning)
 

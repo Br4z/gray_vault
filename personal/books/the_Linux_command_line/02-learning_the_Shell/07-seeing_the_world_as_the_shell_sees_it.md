@@ -213,10 +213,10 @@ By default, word splitting looks for the presence of spaces, tabs, and newlines 
 ```bash
 echo $(df -h)
 
-# Filesystem Size Used Avail Use% Mounted on tmpfs 1.6G 2.0M 1.6G 1% 
-# /run /dev/sda2 94G 19G 71G 21% / tmpfs 7.8G 0 7.8G 0% /dev/shm tmpfs 
-# 5.0M 4.0K 5.0M 1% /run/lock /dev/sda1 975M 6.1M 969M 1% /boot/efi 
-# /dev/sdb1 907G 574G 287G 67% /home tmpfs 1.6G 1.8M 1.6G 1% 
+# Filesystem Size Used Avail Use% Mounted on tmpfs 1.6G 2.0M 1.6G 1%
+# /run /dev/sda2 94G 19G 71G 21% / tmpfs 7.8G 0 7.8G 0% /dev/shm tmpfs
+# 5.0M 4.0K 5.0M 1% /run/lock /dev/sda1 975M 6.1M 969M 1% /boot/efi
+# /dev/sdb1 907G 574G 287G 67% /home tmpfs 1.6G 1.8M 1.6G 1%
 # /run/user/1000
 
 echo "$(df -h)" # Well display output
@@ -266,7 +266,7 @@ Another use of the backslash escape is suppressing aliases.
 
 #### Backslash escape sequences
 
-In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first $32$ characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
+In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first 32 characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
 
 | escape sequence | meaning                                                   |
 |:---------------:|:--------------------------------------------------------- |

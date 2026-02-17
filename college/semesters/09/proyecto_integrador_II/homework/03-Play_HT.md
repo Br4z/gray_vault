@@ -33,34 +33,34 @@ timeline
 
 > Más información en este enlace <https://en.wikipedia.org/wiki/Timeline_of_speech_and_voice_recognition>.
 
-- $1950$ Audrey (Bell Labs): reconocimiento de dígitos hablados.
+- 1950 Audrey (Bell Labs): reconocimiento de dígitos hablados.
 
 	Audrey fue desarrollado en Bell Labs para reconocer dígitos hablados. Este proyecto pionero sentó las bases del reconocimiento automático del habla, aunque estaba limitado a un conjunto reducido de dígitos y a condiciones muy controladas.
 
-- $1960$ IBM Shoebox: primeros sistemas de palabras.
+- 1960 IBM Shoebox: primeros sistemas de palabras.
 
 	El IBM Shoebox fue uno de los primeros dispositivos capaces de reconocer un conjunto limitado de palabras. Demostró el potencial de la tecnología para aplicaciones prácticas, pero requería que el usuario hablara de forma muy clara y pausada.
 
-- $1970$ HMMs y Harpy (CMU): reconocimiento con hasta 1,000 palabras.
+- 1970 HMMs y Harpy (CMU): reconocimiento con hasta 1,000 palabras.
 
 	En esta década se introdujeron los modelos ocultos de Márkov (HMM) para modelar el habla. El sistema Harpy, desarrollado en CMU, alcanzó la capacidad de reconocer hasta 1,000 palabras, marcando un avance importante en la complejidad y capacidad del reconocimiento de voz.
 
-- $1980$ algoritmos estadísticos: primeras aplicaciones comerciales.
+- 1980 algoritmos estadísticos: primeras aplicaciones comerciales.
 
-	Durante los $80$ se aplicaron algoritmos estadísticos que mejoraron la precisión del reconocimiento de voz. Esto permitió las primeras aplicaciones comerciales, aunque la tecnología seguía funcionando de forma óptima sólo en entornos muy controlados.
+	Durante los 80 se aplicaron algoritmos estadísticos que mejoraron la precisión del reconocimiento de voz. Esto permitió las primeras aplicaciones comerciales, aunque la tecnología seguía funcionando de forma óptima sólo en entornos muy controlados.
 
-- $1990$ Dragon NaturallySpeaking: dictado continuo y personalizado.
+- 1990 Dragon NaturallySpeaking: dictado continuo y personalizado.
 
 	Dragon NaturallySpeaking revolucionó el mercado al permitir el dictado continuo sin necesidad de pausas. Se adaptaba al habla individual mediante entrenamiento, aumentando la precisión y facilitando la redacción de textos largos de forma rápida y eficiente.
 
-- $2000$ integración en dispositivos móviles y sistemas PBX.
+- 2000 integración en dispositivos móviles y sistemas PBX.
 
-	En los $2000$ se inició la integración del reconocimiento de voz en dispositivos móviles y sistemas de telefonía (PBX). Esto abrió la puerta a aplicaciones en atención al cliente y comunicación en tiempo real, permitiendo el control por voz en entornos dinámicos.
+	En los 2000 se inició la integración del reconocimiento de voz en dispositivos móviles y sistemas de telefonía (PBX). Esto abrió la puerta a aplicaciones en atención al cliente y comunicación en tiempo real, permitiendo el control por voz en entornos dinámicos.
 
-- $2010$ asistentes virtuales (Siri, Google Assistant, Alexa): interacción a manos libres.
+- 2010 asistentes virtuales (Siri, Google Assistant, Alexa): interacción a manos libres.
 
 	La popularización de asistentes virtuales como Siri, Google Assistant y Alexa convirtió al reconocimiento de voz en una herramienta de uso cotidiano. Estos sistemas permitieron una interacción a manos libres, mejorando la experiencia del usuario en entornos móviles y domésticos.
 
-- $2020$ deep learning (Tacotron, WaveNet): síntesis natural, personalización y análisis emocional.
+- 2020 deep learning (Tacotron, WaveNet): síntesis natural, personalización y análisis emocional.
 
 	La aplicación de técnicas de deep learning, como Tacotron y Wavenet, ha permitido generar voces sintetizadas con una calidad muy natural. Estas tecnologías facilitan la personalización de la interacción y permiten analizar el estado emocional del usuario, abriendo nuevas oportunidades en aplicaciones avanzadas.

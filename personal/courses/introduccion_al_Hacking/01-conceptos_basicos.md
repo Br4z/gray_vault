@@ -8,17 +8,17 @@ IP is short for Internet Protocol, which is a protocol for the communication of 
 
 #### IPv4
 
-uses 32-bit (four octets of $8$ bits) addresses, which are written as four numbers separated by periods, such as `172.16.254.1`. Each number can range from $0$ to $255$ ($2^4$), which means there are $4.294.967.296$ ($2^{ 32 }$) possible IPv4 addresses.
+uses 32-bit (four octets of 8 bits) addresses, which are written as four numbers separated by periods, such as `172.16.254.1`. Each number can range from 0 to 255 ($2^4$), which means there are $4.294.967.296$ ($2^{ 32 }$) possible IPv4 addresses.
 
 #### IPv6
 
-uses 128-bit (which consists of eight groups of four hexadecimal digits) addresses, which are written as eigth numbers separated by colons, such as `3001:0da8:75a3:0000:0000:8a2e:0370:7334`. Each number can range from $0$ to $65535$ (`FFFF`), which means there are $40.282. 366.920.938.463.463.374.607.431.768.211.456$ ($2^{ 128 }$) possible IPv6 addresses.
+uses 128-bit (which consists of eight groups of four hexadecimal digits) addresses, which are written as eigth numbers separated by colons, such as `3001:0da8:75a3:0000:0000:8a2e:0370:7334`. Each number can range from 0 to 65535 (`FFFF`), which means there are $40.282. 366.920.938.463.463.374.607.431.768.211.456$ ($2^{ 128 }$) possible IPv6 addresses.
 
-> The ratio between a hexadecimal digit and a binary digit is $4$, so we can represent $2^{ 128 }$ ($2^{ 4 * 4 * 8 }$) addresses in IPv6, which is equal to $2^{ 96 } = \frac{ 2^{ 128 } }{ 2^{ 32 } }$ times IPv4.
+> The ratio between a hexadecimal digit and a binary digit is 4, so we can represent $2^{ 128 }$ ($2^{ 4 * 4 * 8 }$) addresses in IPv6, which is equal to $2^{ 96 } = \frac{ 2^{ 128 } }{ 2^{ 32 } }$ times IPv4.
 
 ## 2 - Direcciones MAC (OUI y NIC)
 
-A MAC address, which stands for Media Access Control Address, is a unique $48$-bit ($12$ hexadecimal numbers) hardware number of a computer that is embedded into a network card (known as a Network Interface Card) during manufacturing. The MAC Address is also known as the Physical Address of a network device.
+A MAC address, which stands for Media Access Control Address, is a unique 48-bit (12 hexadecimal numbers) hardware number of a computer that is embedded into a network card (known as a Network Interface Card) during manufacturing. The MAC Address is also known as the Physical Address of a network device.
 
 The First 6 digits of the MAC Address identify the manufacturer, called the OUI (Organizational Unique Identifier). The rightmost six digits represent the Network Interface Controller, which is assigned by the manufacturer.
 
@@ -315,7 +315,7 @@ Exercises
 
 	- Broadcast address: $192.168.1.00101111 = 192.168.1.47$.
 
-	- Number of hosts per subnet: $8$.
+	- Number of hosts per subnet: 8.
 
 	- First Host ID: $192.168.1.41$.
 

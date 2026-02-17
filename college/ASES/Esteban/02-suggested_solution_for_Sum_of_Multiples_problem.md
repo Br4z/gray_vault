@@ -12,7 +12,7 @@ The suggested solution is:
 	var all_multiples: Vector[Vector[Int]] = Vector()
 	```
 
-2. Iterate over the values of the magic item and get all its multiples from $1$ to `level`.
+2. Iterate over the values of the magic item and get all its multiples from 1 to `level`.
 
 	```scala
 	for (magic_item <- magic_items) {

@@ -365,7 +365,7 @@ $$
 
 ## 9
 
-La altura de un cilindro circular recto decrece a razón de $3 \frac{ \text{cm} }{ \text{s} }$, mientras que su radio aumenta a razón de $1 \frac{ \text{cm} }{ \text{s} }$. Si el radio mide $4$ cm y la altura $5$ cm, entonces, ¿qué pasa con el volumen del cilindro?
+La altura de un cilindro circular recto decrece a razón de $3 \frac{ \text{cm} }{ \text{s} }$, mientras que su radio aumenta a razón de $1 \frac{ \text{cm} }{ \text{s} }$. Si el radio mide 4 cm y la altura 5 cm, entonces, ¿qué pasa con el volumen del cilindro?
 
 $$
 \begin{align}
@@ -386,7 +386,7 @@ $$
 
 ## 10
 
-Un hombre se aleja de un edificio de $18$ metros de altura a una velocidad de $1.8 \frac{ \text{m} }{ \text{s} }$. Una persona en la azotea del edificio observa al hombre alejarse. ¿A qué razón varía el ángulo de depresión de la persona hacia el hombre, cuando este está a $24$ metros de la base de la torre?
+Un hombre se aleja de un edificio de 18 metros de altura a una velocidad de $1.8 \frac{ \text{m} }{ \text{s} }$. Una persona en la azotea del edificio observa al hombre alejarse. ¿A qué razón varía el ángulo de depresión de la persona hacia el hombre, cuando este está a 24 metros de la base de la torre?
 
 $$
 \begin{align}
@@ -435,7 +435,7 @@ $$
 
 ## 11
 
-Un abrevadero tiene una longitud de $5$ metros y sus extremos son triángulos isósceles con una altura de $1$ metro y $2$ metros de base, estando el vértice opuesto a la base hacia abajo. Se vierte agua en el abrevadero a razón de $2 \frac{ \text{m}^3 }{ \text{min} }$. ¿A qué velocidad aumenta el nivel del agua en el abrevadero cuando la profundidad del agua es de $0.4$ metros?
+Un abrevadero tiene una longitud de 5 metros y sus extremos son triángulos isósceles con una altura de 1 metro y 2 metros de base, estando el vértice opuesto a la base hacia abajo. Se vierte agua en el abrevadero a razón de $2 \frac{ \text{m}^3 }{ \text{min} }$. ¿A qué velocidad aumenta el nivel del agua en el abrevadero cuando la profundidad del agua es de $0.4$ metros?
 
 > El volumen del agua en el abrevadero (un prisma triangular) es el área de su sección transversal triangular multiplicada por su longitud.
 
@@ -453,7 +453,7 @@ $$
 
 Esta ecuación tiene dos variables, $b$ y $h$. Necesitamos expresar una en términos de la otra. Para ello, observamos la sección transversal del abrevadero y usamos triángulos semejantes.
 
-El triángulo grande (el abrevadero) tiene una base de $2$ metros y una altura de $1$ metro. El triángulo pequeño (el agua) tiene una base $b$ y una altura $h$. La relación entre la base y la altura es la misma para ambos.
+El triángulo grande (el abrevadero) tiene una base de 2 metros y una altura de 1 metro. El triángulo pequeño (el agua) tiene una base $b$ y una altura $h$. La relación entre la base y la altura es la misma para ambos.
 
 $$
 \begin{align}
@@ -480,7 +480,7 @@ $$
 
 ## 12
 
-Se tienen dos tanques llenos de agua, uno cónico invertido y uno cilíndrico con $3$ pies de radio en el círculo de la base y $5$ pies de altura. En el vértice del cono y en la base del cilindro hay una llave por donde salen $2 \frac{ \text{ft}^3 }{ \text{min} }$ de agua en cada caso. Calcule la rapidez de la variación de la altura en el momento en que $h = 2 \text{ft}$.
+Se tienen dos tanques llenos de agua, uno cónico invertido y uno cilíndrico con 3 pies de radio en el círculo de la base y 5 pies de altura. En el vértice del cono y en la base del cilindro hay una llave por donde salen $2 \frac{ \text{ft}^3 }{ \text{min} }$ de agua en cada caso. Calcule la rapidez de la variación de la altura en el momento en que $h = 2 \text{ft}$.
 
 ### Tanque cónico
 
@@ -546,7 +546,7 @@ $$
 
 ## 13
 
-Una escalera de $10$ pies de largo está apoyada contra una pared vertical, si el extremo inferior de la escalera resbala alejándose de la pared a razón de $1 \frac{ \text{ft} }{ \text{s} }$, ¿Con qué rapidez resbala hacia abajo su extremo superior cuando su extremo inferior está a $6$ pies de la pared?
+Una escalera de 10 pies de largo está apoyada contra una pared vertical, si el extremo inferior de la escalera resbala alejándose de la pared a razón de $1 \frac{ \text{ft} }{ \text{s} }$, ¿Con qué rapidez resbala hacia abajo su extremo superior cuando su extremo inferior está a 6 pies de la pared?
 
 $$
 \begin{align}

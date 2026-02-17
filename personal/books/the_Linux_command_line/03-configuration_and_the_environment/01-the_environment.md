@@ -48,7 +48,7 @@ One element of the environment that neither `set` nor `printenv` displays is ali
 | `OLDPWD`  | previos working directory.                                                                            |
 |  `PAGER`  | name of the program to be used for paging output.                                                     |
 |  `PATH`   | colon-separated list of directories that are searched when we enter the name of a executable program. |
-|   `PS1`   | stands for "prompt string $1$".                                                                       |
+|   `PS1`   | stands for "prompt string 1".                                                                       |
 |   `PWD`   | current working directory.                                                                            |
 |  `TERM`   | name of your terminal type.                                                                           |
 |   `TZ`    | specifies our time zone.                                                                              |
@@ -117,4 +117,4 @@ Another handy trick the shell provides is the ability to execute a command and g
 MANWIDTH=75 man ls
 ```
 
-> `man` output format with a maximum of $75$ characters wide.
+> `man` output format with a maximum of 75 characters wide.

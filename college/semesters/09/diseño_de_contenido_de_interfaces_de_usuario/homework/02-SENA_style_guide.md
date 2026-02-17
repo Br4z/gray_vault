@@ -6,7 +6,7 @@ reviewed_on: "2025-04-09"
 
 ## ¿Quién es el SENA?
 
-El Servicio Nacional de Aprendizaje (SENA) es una entidad pública colombiana, creada el $21$ de junio de $1957$ mediante el decreto ley $118$, con el propósito de invertir en el desarrollo social y técnico de los trabajadores del país. Ofrece formación profesional integral gratuita en programas técnicos, tecnológicos y complementarios, facilitando la incorporación de las personas en actividades productivas que contribuyen al desarrollo económico y tecnológico de Colombia.
+El Servicio Nacional de Aprendizaje (SENA) es una entidad pública colombiana, creada el 21 de junio de 1957 mediante el decreto ley 118, con el propósito de invertir en el desarrollo social y técnico de los trabajadores del país. Ofrece formación profesional integral gratuita en programas técnicos, tecnológicos y complementarios, facilitando la incorporación de las personas en actividades productivas que contribuyen al desarrollo económico y tecnológico de Colombia.
 
 ## Principios
 

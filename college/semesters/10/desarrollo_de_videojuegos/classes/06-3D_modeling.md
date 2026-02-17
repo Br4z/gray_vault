@@ -22,7 +22,7 @@ It refers to the strategic arrangement and direction of edges across a mesh, whi
 
 ### Face
 
-A face (also called a polygon) is a flat surface enclosed by three or more edges, forming the visible exterior of a 3D model. Faces are not visible in wireframe mode but become apparent when the model is shaded or rendered. The most common face types are triangles ($3$ edges) and quads ($4$ edges), with quads preferred for animation because they subdivide predictably and deform smoothly.
+A face (also called a polygon) is a flat surface enclosed by three or more edges, forming the visible exterior of a 3D model. Faces are not visible in wireframe mode but become apparent when the model is shaded or rendered. The most common face types are triangles (3 edges) and quads (4 edges), with quads preferred for animation because they subdivide predictably and deform smoothly.
 
 ### Polygon mesh
 

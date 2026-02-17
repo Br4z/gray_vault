@@ -4,7 +4,7 @@ reviewed_on: "2025-02-28"
 
 # Entity-relationship problems
 
-1. El gerente de la empresa Uber, una empresa proveedora de movilidad como servicio, le ha pedido que cree un diagrama usando el Modelo ER. Quieren gestionar los incidentes y siniestros de tránsito. Para esta empresa los conductores son propietarios de uno o más vehículos. Cada vehículo está asociado con cero ($0$) o más accidentes de tránsito del cual se obtiene un porcentaje de daño.
+1. El gerente de la empresa Uber, una empresa proveedora de movilidad como servicio, le ha pedido que cree un diagrama usando el Modelo ER. Quieren gestionar los incidentes y siniestros de tránsito. Para esta empresa los conductores son propietarios de uno o más vehículos. Cada vehículo está asociado con cero (0) o más accidentes de tránsito del cual se obtiene un porcentaje de daño.
 
 	```mermaid
 	erDiagram
@@ -183,7 +183,7 @@ reviewed_on: "2025-02-28"
 	PRODUCT ||--o{ TRANSACTION : sold_in
 	```
 
-	- Una **tienda** emplea muchos empleados (al menos $1$) y cada **empleado** trabaja en una sola **tienda**: $1:1 \dots N$.
+	- Una **tienda** emplea muchos empleados (al menos 1) y cada **empleado** trabaja en una sola **tienda**: $1:1 \dots N$.
 
 	- Una **tienda** tiene muchos productos en stock y un **producto** puede estar en varias tiendas: $M:N$.
 
@@ -235,7 +235,7 @@ reviewed_on: "2025-02-28"
 		int ID_employee FK
 		date date
 		time time
-		int barcode 
+		int barcode
 	}
 
 	STORE ||--|{ EMPLOYEE : employs
@@ -290,7 +290,7 @@ reviewed_on: "2025-02-28"
 		int ID_employee FK
 		date date
 		time time
-		int barcode 
+		int barcode
 	}
 
 	RETURN {
@@ -363,7 +363,7 @@ reviewed_on: "2025-02-28"
 		int ID_employee FK
 		date date
 		time time
-		int barcode 
+		int barcode
 	}
 
 	RETURN {

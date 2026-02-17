@@ -147,7 +147,7 @@ mapfile [-OPTIONS] ARRAY
 |:------------:| --------------------------------------------------------------------- |
 | `-d <delim>` | use *delim* to terminate lines rather than a newline.                 |
 |   `-n <n>`   | only read *n* lines.                                                  |
-| `-O <start>` | begin assigning array element at index *start* rather than index $0$. |
+| `-O <start>` | begin assigning array element at index *start* rather than index 0. |
 | `-s <count>` | skip *n* lines at the beginning of the file.                          |
 |     `-t`     | trim trailing delimiter from each line.                               |
 

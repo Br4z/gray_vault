@@ -6,7 +6,7 @@ reviewed_on: "2025-02-21"
 
 ## 1
 
-Write a function called "invert" that takes one argument: a list $l$. This list is composed of pairs $(x,y)$ (each pair itself being a list of size $2$). The function should return a list similar to $l$, but with each pair reversed.
+Write a function called "invert" that takes one argument: a list $l$. This list is composed of pairs $(x,y)$ (each pair itself being a list of size 2). The function should return a list similar to $l$, but with each pair reversed.
 
 ```racket
 ; invert: list -> list
@@ -74,7 +74,7 @@ Write a function called "filter_" that takes two arguments: a predicate $P$ and 
 
 ## 5
 
-Write a function called "find_index" that takes two arguments: a predicate $P$ and a list $l$. The function should return the index (starting from $0$) of the first element in $l$ that satisfies the predicate $P$. If no element satisfies the predicate, it should return `#f`.
+Write a function called "find_index" that takes two arguments: a predicate $P$ and a list $l$. The function should return the index (starting from 0) of the first element in $l$ that satisfies the predicate $P$. If no element satisfies the predicate, it should return `#f`.
 
 ```racket
 ; find_index: (any -> boolean) list -> integer or #f

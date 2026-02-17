@@ -133,14 +133,14 @@ The "manual" that `man` displays is broken into sections and covers not only use
 
 | section | contents                                        |
 |:-------:|:----------------------------------------------- |
-|   $1$   | user commands.                                  |
-|   $2$   | programming interfaces for kernel system calls. |
-|   $3$   | programming interfaces to the C library.        |
-|   $4$   | special files such as device nodes and drivers. |
-|   $5$   | file formats.                                   |
-|   $6$   | games and amusements such as screen savers.     |
-|   $7$   | miscellaneous.                                  |
-|   $8$   | system administration commands.                 |
+|    1    | user commands.                                  |
+|    2    | programming interfaces for kernel system calls. |
+|    3    | programming interfaces to the C library.        |
+|    4    | special files such as device nodes and drivers. |
+|    5    | file formats.                                   |
+|    6    | games and amusements such as screen savers.     |
+|    7    | miscellaneous.                                  |
+|    8    | system administration commands.                 |
 
 Sometimes we need to refer to a specific section of the manual to find what we are looking for...
 
@@ -171,7 +171,7 @@ whatis <term>
 
 #### The most brutal man page of them all
 
-As we have seen, the manual pages supplied with Linux and other Unix-like systems are intended as reference documentation and not as tutorials. Many man pages are hard to read, but I think the grand prize for difficulty has got to go to the man page for `bash`. As I was doing research for this book, I gave the `bash` man page careful review to ensure that I was covering most of its topics. When printed, it is more than $80$ pages long and extremely dense, and its structure makes absolutely no sense to a new user.
+As we have seen, the manual pages supplied with Linux and other Unix-like systems are intended as reference documentation and not as tutorials. Many man pages are hard to read, but I think the grand prize for difficulty has got to go to the man page for `bash`. As I was doing research for this book, I gave the `bash` man page careful review to ensure that I was covering most of its topics. When printed, it is more than 80 pages long and extremely dense, and its structure makes absolutely no sense to a new user.
 
 On the other hand, it is very accurate and concise, as well as being extremely complete...
 
@@ -216,13 +216,13 @@ cd /usr; ls; cd -
 
 	```bash
 	type test
-	
+
 	# test is a shell builtin
-	
+
 	# ----------------------------------------------------------------------- #
-	
+
 	type foo
-	
+
 	# bash: type: foo: not found
 	```
 
@@ -230,15 +230,15 @@ cd /usr; ls; cd -
 
 	```bash
 	# alias <name>='<string>'
-	
+
 	# ----------------------------------------------------------------------- #
-	
+
 	alias foo='cd /usr; ls; cd -'
-	
+
 	# ----------------------------------------------------------------------- #
-	
+
 	type foo
-	
+
 	# foo is aliased to `cd /usr; ls; cd -'
     ```
 
@@ -246,11 +246,11 @@ cd /usr; ls; cd -
 
 	```bash
 	unalias foo
-	
+
 	# ----------------------------------------------------------------------- #
-	
+
 	type foo
-	
+
 	bash: type: foo: not found
     ```
 

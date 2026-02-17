@@ -76,7 +76,7 @@ Los tipos de variables en problemas de optimización incluyen:
 
 - Continuas.
 
-- Binarias ($0$ o $1$).
+- Binarias (0 o 1).
 
 - Enteras.
 

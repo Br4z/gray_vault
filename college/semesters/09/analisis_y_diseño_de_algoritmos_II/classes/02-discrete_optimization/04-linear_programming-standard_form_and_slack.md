@@ -123,7 +123,7 @@ Las formas son equivalentes porque representan la misma condición de manera alg
 
 	Para convertirla en igualdad, se agrega una variable no negativa $x_{ n + i }$ (llamada **holgura**).
 
-	$$ 
+	$$
 	\sum_{ j = 1 }^n a_{ ij } x_j + x_{ n + i } = b_i \quad x_{ n + i } \geq 0
 	$$
 
@@ -131,7 +131,7 @@ Las formas son equivalentes porque representan la misma condición de manera alg
 
 	- Si en la desigualdad original se cumple $\sum a_{ ij } x_j \leq b_i$, entonces existe un valor $x_{ n + i } \geq 0$ que "compensa" la diferencia.
 
-		$$ 
+		$$
 		x_{ n + i } = b_i - \sum a_{ ij } x_j
 		$$
 
@@ -153,7 +153,7 @@ $$
 
 Si $b = 0$, se obtiene un hiperplano lineal, que pasa a través del origen.
 
-> No degenerada significa que toda $a_i$ son diferentes a $0$.
+> No degenerada significa que toda $a_i$ son diferentes a 0.
 
 Las dos mitades del espacio definidas por un hiperplano en espacios de n-dimensiones son:
 

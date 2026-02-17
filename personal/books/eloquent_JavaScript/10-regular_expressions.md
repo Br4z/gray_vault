@@ -48,7 +48,7 @@ To **invert** a set of characters (that is, to express that you want to match an
 
 ## International characters
 
-...as far as JavaScript's regular expressions are concerned, a "word character" is only one of the $26$ characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character.
+...as far as JavaScript's regular expressions are concerned, a "word character" is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character.
 
 ## Matches and groups
 
@@ -76,9 +76,9 @@ console.log(new Date(2009, 11, 9)) // Wed Dec 09 2009 00:00:00 GMT+0100 (CET)
 console.log(new Date(2009, 11, 9, 12, 59, 59, 999)) // Wed Dec 09 2009 12:59:59 GMT+0100 (CET)
 ```
 
-JavaScript uses a convention where month numbers start at zero (so December is $11$), yet day numbers start at one.
+JavaScript uses a convention where month numbers start at zero (so December is 11), yet day numbers start at one.
 
-Timestamps are stored as the number of milliseconds since the start of $1970$, in the UTC time zone. This follows a convention set by "Unix time", which was invented around that time. You can use negative numbers for times before $1970$.
+Timestamps are stored as the number of milliseconds since the start of 1970, in the UTC time zone. This follows a convention set by "Unix time", which was invented around that time. You can use negative numbers for times before 1970.
 
 ## Boundaries and look-ahead
 

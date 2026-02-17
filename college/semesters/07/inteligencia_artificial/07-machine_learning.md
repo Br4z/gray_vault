@@ -132,10 +132,10 @@ Es una herramienta utilizada en el análisis de clasificación para evaluar el r
 
 $$
 \begin{array}{c|cc}
-    & \text{negative ($0$)} & \text{positive ($1$)} \\
+    & \text{negative (0)} & \text{positive (1)} \\
     \hline
-    \text{negative ($0$)} & \text{TN (true negative)} & \text{FP (false positive)} \\
-    \text{positive ($1$)} & \text{FN (false negative)} & \text{TP (true positive)} \\
+    \text{negative (0)} & \text{TN (true negative)} & \text{FP (false positive)} \\
+    \text{positive (1)} & \text{FN (false negative)} & \text{TP (true positive)} \\
 \end{array}
 $$
 

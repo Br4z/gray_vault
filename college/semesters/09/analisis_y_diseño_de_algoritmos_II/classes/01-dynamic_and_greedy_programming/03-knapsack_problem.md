@@ -4,7 +4,7 @@ reviewed_on: "2025-02-24"
 
 # Knapsack problem
 
-![[personal/computer_science/problems/knapsack|knapsack]]
+![[personal/systems_engineering/problems/knapsack|knapsack]]
 
 La notación $\operatorname{knapsack}(k,l,p)$ se usará para indicar el problema de la mochila sobre los elementos $\langle x_k,x_{ k + 1 },\dots,x_l \rangle$, es decir, un subproblema. El subproblema tendrá las mismas restricciones que el problema original.
 
@@ -60,9 +60,9 @@ con el caso base $\operatorname{BMAX}(0,j) = 0$.
 
 2. Si llegamos a $\operatorname{BMAX}(i,1)$ significa que hemos llegado al primer ítem y su pertenencia a la solución depende de si $\operatorname{BMAX}(i,1) \neq 0$. Aquí el algoritmo termina.
 
-3. Si $\operatorname{BMAX}(i,j) = \operatorname{BMAX}(i,j - 1)$, entonces el ítem $j$ **no** fue incluido. Se repite el paso $1$ con $j - 1$ ($\operatorname{BMAX}(i,j - 1)$).
+3. Si $\operatorname{BMAX}(i,j) = \operatorname{BMAX}(i,j - 1)$, entonces el ítem $j$ **no** fue incluido. Se repite el paso 1 con $j - 1$ ($\operatorname{BMAX}(i,j - 1)$).
 
-4. En caso contrario, el ítem $j$ fue incluido. Se repite el paso $1$ con $i - w_j$ y $j - 1$ ($\operatorname{BMAX}(i - w_j,j - 1)$).
+4. En caso contrario, el ítem $j$ fue incluido. Se repite el paso 1 con $i - w_j$ y $j - 1$ ($\operatorname{BMAX}(i - w_j,j - 1)$).
 
 ## Complejidad
 

@@ -38,11 +38,11 @@ The shell provides two special parameters for this purpose.
 
 ### `$*`
 
-It expands into the list of positional parameters, starting with $1$. When surrounded by double quotes, it expands into a double-quoted string containing all of the positional parameters, each separated by the first character of `IEF` shell variable (by default a space character).
+It expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands into a double-quoted string containing all of the positional parameters, each separated by the first character of `IEF` shell variable (by default a space character).
 
 ### `$@`
 
-It expands into the list of positional parameters, starting with $1$. When surrounded by double quotes, it expands each positional parameter into a separate word as if it was surrounded by double quotes.
+It expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands each positional parameter into a separate word as if it was surrounded by double quotes.
 
 ```
 <script> <arg_1> <arg_2> ... <arg_n>

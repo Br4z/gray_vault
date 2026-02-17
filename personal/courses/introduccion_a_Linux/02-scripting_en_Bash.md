@@ -24,21 +24,21 @@ The Martingale system is a betting strategy based on recovering your losses. The
 
 1. Decide how much you would like to win, and split that number into smaller, random numbers.
 
-	For example, our $$10$ goal could become $1$, $2$, $4$, $1$, $2$.
+	For example, our $10 goal could become 1, 2, 4, 1, 2.
 
 2. Combine your numbers.
 
-	Take the furthest left number and the furthest right number from the sequence. In this example that would be $1$ and $2$. Combine these to make your first bet for $$3$.
+	Take the furthest left number and the furthest right number from the sequence. In this example that would be 1 and 2. Combine these to make your first bet for $3.
 
 3. Place your bet.
 
-	Place the bet on an even bet like red, black, odd, even, $1$-$18$ or $19$-$36$.
+	Place the bet on an even bet like red, black, odd, even, 1-18 or 19-36.
 
 4. Repeat the second step.
 
-	- If you win, you cross off the furthest left and furthest right numbers from your sequence. Here you would be left with $2$, $4$, $1$.
+	- If you win, you cross off the furthest left and furthest right numbers from your sequence. Here you would be left with 2, 4, 1.
 
-	- If you lose, do not cross off any numbers and add the bet you just made ($$3$) to the far right of your sequence. You should have $2$, $4$, $1$ and $3$ now.
+	- If you lose, do not cross off any numbers and add the bet you just made ($3) to the far right of your sequence. You should have 2, 4, 1 and 3 now.
 
 5. Repeat until you win.
 

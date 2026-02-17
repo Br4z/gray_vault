@@ -17,7 +17,7 @@ $$
 \end{align}
 $$
 
-1. Inicialmente, se busca una solución básica **factible**. En una solución básica se igualan todas las variables en la parte derecha de las ecuaciones (variables no-básicas) a $0$ y luego se calcula el valor de las variables en la parte izquierda (variables básicas).
+1. Inicialmente, se busca una solución básica **factible**. En una solución básica se igualan todas las variables en la parte derecha de las ecuaciones (variables no-básicas) a 0 y luego se calcula el valor de las variables en la parte izquierda (variables básicas).
 
 	$$
 	(x_1,x_2,\dots,x_n,{ x_1 }',{ x_2 }',\dots,{ x_m }') = (0_1,0_2,\dots,0_n,b_1,b_2,\dots,b_m)
@@ -27,7 +27,7 @@ $$
 
 	> La variable cuyo coeficiente positivo sea mayor al de las demás.
 
-3. Ahora es necesario seleccionar una variable no-básica para intercambiarla con $x_{ \max }$. Para esto, es necesario determinar cuál es el valor más alto que puede tomar $x_{ \max }$ sin violar las restricciones. Esto es, que la parte derecha de las restricciones alcance un valor mayor o igual a $0$.
+3. Ahora es necesario seleccionar una variable no-básica para intercambiarla con $x_{ \max }$. Para esto, es necesario determinar cuál es el valor más alto que puede tomar $x_{ \max }$ sin violar las restricciones. Esto es, que la parte derecha de las restricciones alcance un valor mayor o igual a 0.
 
 	$$
 	\begin{align}
@@ -70,7 +70,7 @@ $$
 ({ x_1 }',{ x_2 }',\dots,{ x_m }') = (a_{ 10 },a_{ 2,0 },\dots,a_{ m_0 })
 $$
 
-> Se asumen que las variables que no aparecen, valen $0$.
+> Se asumen que las variables que no aparecen, valen 0.
 
 es la óptima y su valor corresponde a $c_0$.
 
@@ -100,11 +100,11 @@ $$
 
 3. Selección de variable saliente y pivoteo.
 
-	Elegir la fila $i$ con la mínima $\theta$ positiva. Dividir la fila pivote por $a_{ ij }$ para obtener $1$, y luego anular ese coeficiente en las demás filas sumando múltiplos adecuados.
+	Elegir la fila $i$ con la mínima $\theta$ positiva. Dividir la fila pivote por $a_{ ij }$ para obtener 1, y luego anular ese coeficiente en las demás filas sumando múltiplos adecuados.
 
 4. Actualización y repetición.
 
-	La variable entrante se convierte en básica y se actualizan todas las ecuaciones. Repetir desde el paso $1$ hasta que no queden coeficientes negativos en la fila de $z$.
+	La variable entrante se convierte en básica y se actualizan todas las ecuaciones. Repetir desde el paso 1 hasta que no queden coeficientes negativos en la fila de $z$.
 
 5. Solución óptima.
 
@@ -120,7 +120,7 @@ $$
 
 no es factible. Para obtener una solución factible se recurre al **método de las variables artificiales**, habitualmente organizado en dos fases:
 
-### Fase $1$: minimizar la suma de variables artificiales
+### Fase 1: minimizar la suma de variables artificiales
 
 1. Introducción de variables artificiales.
 
@@ -148,7 +148,7 @@ no es factible. Para obtener una solución factible se recurre al **método de l
 	\end{align}
 	$$
 
-3. Tablero inicial de la fase $1$.
+3. Tablero inicial de la fase 1.
 
 	En el tablero se incluyen las columnas de las variables originales, de holgura y de las $a_i$, y la fila-objetivo corresponde a $-w$, expresado como
 
@@ -162,11 +162,11 @@ no es factible. Para obtener una solución factible se recurre al **método de l
 
 	Se aplica el método simplex para maximizar $-w$.
 
-5. Fin de la fase $1$.
+5. Fin de la fase 1.
 
 	Si al concluir $w^* = 0$, entonces $\sum_{ i = 1 }^m a_i = 0$, lo que obliga a cada $a_i = 0$; de ahi que la base resultante satisfaga todas las restricciones originales sin necesidad de artificiales.
 
-### Fase $2$: optimización del problema original
+### Fase 2: optimización del problema original
 
 1. Eliminación de variables artificiales.
 

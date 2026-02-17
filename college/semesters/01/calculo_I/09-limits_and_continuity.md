@@ -47,11 +47,11 @@ Calcule los siguiente limites si existen:
 	$$
 	\begin{align}
 		& = \frac{ 0 - 1 }{ 1 - 1 } \\
-		& = \frac{ -1 }{ 0 } \; \text{no es una forma indeterminada} 
+		& = \frac{ -1 }{ 0 } \; \text{no es una forma indeterminada}
 	\end{align}
 	$$
 
-	Para cualquier valor de $\theta$ muy cercano a $0$ (ya sea positivo o negativo), el valor de $\pcos{ \theta }$ es siempre un número ligeramente menor que $1$.
+	Para cualquier valor de $\theta$ muy cercano a 0 (ya sea positivo o negativo), el valor de $\pcos{ \theta }$ es siempre un número ligeramente menor que 1.
 
 	$$
 	\lim_{ \theta \to 0 }{ 1 - \pcos{ \theta } } = 0^+
@@ -437,7 +437,7 @@ $$
 \begin{align}
 	& \lim_{ h \to 0^- } f(0) \\
 	& = \frac{ -h }{ h } \\
-	& = -1 
+	& = -1
 \end{align}
 $$
 
@@ -445,7 +445,7 @@ $$
 \begin{align}
 	& \lim_{ h \to 0^+ } f^\prime(0) \\
 	& = \frac{ h }{ h } \\
-	& = 1 
+	& = 1
 \end{align}
 $$
 
@@ -479,7 +479,7 @@ Muestre que las siguientes funciones son continuas en $x = a$.
 	\begin{align}
 		& \lim_{ x \to 1^- } f(x) \\
 		& = (1)^2 + 1 \\
-		& = 2 
+		& = 2
 	\end{align}
 	$$
 
@@ -487,7 +487,7 @@ Muestre que las siguientes funciones son continuas en $x = a$.
 	\begin{align}
 		& \lim_{ x \to 1^+ } f(x) \\
 		& = (1)^2 + 1 \\
-		& = 2 
+		& = 2
 	\end{align}
 	$$
 

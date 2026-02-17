@@ -4,7 +4,7 @@ reviewed_on: "2025-02-14"
 
 # Motivation
 
-Considere el [[personal/computer_science/problems/coin_change|problema del cambio de monedas]] y las siguientes dos soluciones propuestas:
+Considere el [[personal/systems_engineering/problems/coin_change|problema del cambio de monedas]] y las siguientes dos soluciones propuestas:
 
 1. `fun approach_1(A, P)`.
 
@@ -91,6 +91,6 @@ Considere el [[personal/computer_science/problems/coin_change|problema del cambi
 
 	> La complejidad de esta implementación del algoritmo es $O((P + 1)^n)$
 
-Como se enuncia el problema, la única solución para el problema propuesto es aquella en la que se minimiza el número de monedas utilizadas. El primer enfoque `approach_1` puede llegar a "atascarse" si no hay una moneda de denominación $1$ y además no garantiza la solución óptima, en cambio, el segundo `approach_2` enfoque sí lo hace.
+Como se enuncia el problema, la única solución para el problema propuesto es aquella en la que se minimiza el número de monedas utilizadas. El primer enfoque `approach_1` puede llegar a "atascarse" si no hay una moneda de denominación 1 y además no garantiza la solución óptima, en cambio, el segundo `approach_2` enfoque sí lo hace.
 
 La complejidad del primer enfoque es $O(n)$ y la del segundo enfoque depende de su implementación, pero estaremos seguros de que es exponencial.

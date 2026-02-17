@@ -105,7 +105,7 @@ $$
 
 ## 4
 
-Un ángulo central intercepta un arco de $8$ cm de largo, en una circunferencia de $3$ cm de radio. Halle la medida del ángulo tanto en radianes, como en grados.
+Un ángulo central intercepta un arco de 8 cm de largo, en una circunferencia de 3 cm de radio. Halle la medida del ángulo tanto en radianes, como en grados.
 
 $2 \pi r$ que corresponde al perímetro de un circulo de radio $r$, es también el arco de un $\alpha = 360 \degree$.
 
@@ -183,7 +183,7 @@ Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del tri
 
 ## 6
 
-Los lados de un terreno triangular miden $350$, $300$ y $220$ pies de longitud. Encuentre el ángulo mas pequeño del terreno.
+Los lados de un terreno triangular miden 350, 300 y 220 pies de longitud. Encuentre el ángulo mas pequeño del terreno.
 
 > En cualquier triángulo, el ángulo más pequeño siempre está opuesto al lado más corto.
 
@@ -564,7 +564,7 @@ Resuelva las siguientes ecuaciones:
 	\end{align}
 	$$
 
-10. Desde la punta de un edificio que ve hacia el mar, una persona observa un bote que navega directamente hacia ella. Si se encuentra a $100$ pies sobre el nivel del mar y el ángulo de depresión del bote cambia de $25 \degree$ a $40 \degree$ durante el periodo de observación, hallar la distancia aproximada que ha recorrido el bote durante ese tiempo.
+10. Desde la punta de un edificio que ve hacia el mar, una persona observa un bote que navega directamente hacia ella. Si se encuentra a 100 pies sobre el nivel del mar y el ángulo de depresión del bote cambia de $25 \degree$ a $40 \degree$ durante el periodo de observación, hallar la distancia aproximada que ha recorrido el bote durante ese tiempo.
 
 	![problem](college/semesters/01/assets/calculo_I/2_07_02-problem.jpg) TODO
 

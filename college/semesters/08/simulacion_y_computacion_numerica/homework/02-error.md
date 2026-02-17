@@ -40,11 +40,11 @@ Determine:
 
 1. Resultado exacto.
 
-2. Resultado usando aritmética de $3$ dígitos con corte.
+2. Resultado usando aritmética de 3 dígitos con corte.
 
-3. Resultado usando aritmética de $3$ dígitos con redondeo.
+3. Resultado usando aritmética de 3 dígitos con redondeo.
 
-4. Calcule los errores relativos para los datos de los numerales $2$ y $3$.
+4. Calcule los errores relativos para los datos de los numerales 2 y 3.
 
 ### $\frac{ 4 }{ 5 } + \frac{ 1 }{ 3 }$
 
@@ -86,7 +86,7 @@ Determine:
 
 ## 5
 
-Utilice aritmética de $5$ dígitos para determinar las raíces de la siguiente ecuación:
+Utilice aritmética de 5 dígitos para determinar las raíces de la siguiente ecuación:
 
 $$
 x^2 - 5000.002 x + 10 = 0
@@ -116,7 +116,7 @@ x_0 - \frac{ (x_1 - x_0) y_0 }{ y_1 - y_0 } \quad \frac{ x_0 (y_1 - y_0) - (x_1 
 \frac{ x_0 y_1 - x_0 y_0 - x_1 y_0 + x_0 y_0 }{ y_1 - y_0 } = \frac{ x_0 y_1 - x_1 y_0 }{ y_1 - y_0 }
 $$
 
-### Use los datos $(x_0, y_0) = (1.32,3.24)$ y $(x_1, y_1) = (1.96,4.76)$ y aritmética de redondeo a $3$ dígitos para calcular la intersección en el eje x usando ambas fórmulas
+### Use los datos $(x_0, y_0) = (1.32,3.24)$ y $(x_1, y_1) = (1.96,4.76)$ y aritmética de redondeo a 3 dígitos para calcular la intersección en el eje x usando ambas fórmulas
 
 $$
 \frac{ 1.32 * 4.76 - 1.96 * 3.24 }{ 4.76 - 3.24 } = -\frac{ 0.0672 }{ 1.52 } \approx 4.42 * 10^{ -2 }
@@ -128,7 +128,7 @@ $$
 
 ## 7
 
-Debe seleccionar la medición más confiable de una pieza de metal que idealmente debería tener $100$ centímetros de longitud. Cada medición se realizó con un instrumento diferente con distintos niveles de incertidumbre. A continuación se presentan las mediciones de la pieza de metal junto con el instrumento utilizado para cada una:
+Debe seleccionar la medición más confiable de una pieza de metal que idealmente debería tener 100 centímetros de longitud. Cada medición se realizó con un instrumento diferente con distintos niveles de incertidumbre. A continuación se presentan las mediciones de la pieza de metal junto con el instrumento utilizado para cada una:
 
 ### $99.7 \pm 0.1$ centímetros
 
@@ -180,11 +180,11 @@ $$
 
 ---
 
-La mejor medida es la $3$, pues se tiene certeza de su $E_a$ y $E_r$, además de que son los valores más pequeños de todas las mediciones propuestas.
+La mejor medida es la 3, pues se tiene certeza de su $E_a$ y $E_r$, además de que son los valores más pequeños de todas las mediciones propuestas.
 
 ## 8
 
-Un paralelepípedo rectangular tiene dimensiones de $3$ centímetros, $4$ centímetros y $5$ centímetros, medidas con una precisión de $\pm 0.5$ centímetros. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo?  ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
+Un paralelepípedo rectangular tiene dimensiones de 3 centímetros, 4 centímetros y 5 centímetros, medidas con una precisión de $\pm 0.5$ centímetros. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo?  ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
 
 $$
 V = l * w * h \quad A = 2 (l w + l h + w h)

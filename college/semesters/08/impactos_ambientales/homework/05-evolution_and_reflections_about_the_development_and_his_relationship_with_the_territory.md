@@ -12,14 +12,14 @@ Trata sobre la evolución del concepto de desarrollo. Originalmente, el término
 
 Se describen cinco etapas clave del desarrollo en el siglo XX:
 
-- Posguerra ($1945$-$1960$): se vinculó el desarrollo con el bienestar, destacándose el Plan Marshall y la descolonización.
+- Posguerra (1945-1960): se vinculó el desarrollo con el bienestar, destacándose el Plan Marshall y la descolonización.
 
-- Radicalización y divergencias ($1960$-$1975$): los países del sur comenzaron a definir sus propios modelos de desarrollo.
+- Radicalización y divergencias (1960-1975): los países del sur comenzaron a definir sus propios modelos de desarrollo.
 
-- Normalización neoliberal ($1975$-$1990$): con la crisis del petróleo, los países del norte impulsaron la privatización y el ajuste estructural, afectando a los países del sur. Por otra parte, los países del norte también ejercían subversión a los países del sur por medio de las deudas que tenían con ellos.
+- Normalización neoliberal (1975-1990): con la crisis del petróleo, los países del norte impulsaron la privatización y el ajuste estructural, afectando a los países del sur. Por otra parte, los países del norte también ejercían subversión a los países del sur por medio de las deudas que tenían con ellos.
 
-- Apogeo del capitalismo ($1990$-$2000$): se asoció el desarrollo con la maximización de la producción y el libre mercado. Paralelamente, el programa de Naciones Unidas para el desarrollo (PNUD) introdujo el concepto de "desarrollo humano", orientado hacia el bienestar social, medido a través de indicadores como la salud, la educación y los ingresos.
+- Apogeo del capitalismo (1990-2000): se asoció el desarrollo con la maximización de la producción y el libre mercado. Paralelamente, el programa de Naciones Unidas para el desarrollo (PNUD) introdujo el concepto de "desarrollo humano", orientado hacia el bienestar social, medido a través de indicadores como la salud, la educación y los ingresos.
 
-- Gobernanza ($2000$-actualidad): el concepto de desarrollo muta, enfatizando la descentralización y la inclusión social.
+- Gobernanza (2000-actualidad): el concepto de desarrollo muta, enfatizando la descentralización y la inclusión social.
 
 Estas etapas muestran cómo el concepto ha evolucionado desde una visión simplista hacia enfoques más complejos y multidisciplinarios​.

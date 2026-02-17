@@ -6,7 +6,7 @@ reviewed_on: "2025-08-10"
 
 ![graph](college/ASES/assets/Jairo/01_01-velocity_graph.jpg)
 
-Podemos identificar $3$ momentos en la gráfica, el primero de $t = 0$ a $t = 2$, el segundo de $t = 2$ a $t = 6$ y el tercero de $t = 6$ a $t = 8$.
+Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2$, el segundo de $t = 2$ a $t = 6$ y el tercero de $t = 6$ a $t = 8$.
 
 1. Dibuje la gráfica posición-tiempo con valores numéricos.
 

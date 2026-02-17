@@ -6,11 +6,11 @@ reviewed_on: "2025-04-07"
 
 La programación dinámica puede resultar costosa (pocos subproblemas repetidos), es aquí cuando podemos usar una **estrategia** voraz para resolver el problema.
 
-![[personal/computer_science/fundametals/algorithms/greedy_algorithm|Algoritmo voraz]]
+![[personal/systems_engineering/fundametals/algorithms/greedy_algorithm|Algoritmo voraz]]
 
 ## Problema de selección de actividades
 
-![[personal/computer_science/problems/activity_selection_problem|Problema de selección de actividades]]
+![[personal/systems_engineering/problems/activity_selection_problem|Problema de selección de actividades]]
 
 ### Programación dinámica
 
@@ -41,11 +41,11 @@ $$
 
 > Si es necesario, se ordenan todas las actividades según su hora de finalización.
 
-## Problema de la mochila $0$-$1$
+## Problema de la mochila 0-1
 
-![[personal/computer_science/problems/knapsack|knapsack|Problema de la mochila]]
+![[personal/systems_engineering/problems/knapsack|knapsack|Problema de la mochila]]
 
-### Enfoque voraz (problema de la mochila $0$-$1$)
+### Enfoque voraz (problema de la mochila 0-1)
 
 1. Ordenar los ítems según su ratio beneficio/peso ($\frac{ b_i }{ w_i } }$) de mayor a menor.
 

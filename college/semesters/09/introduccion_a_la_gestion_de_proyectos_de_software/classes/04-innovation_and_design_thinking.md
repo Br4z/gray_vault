@@ -6,15 +6,15 @@ reviewed_on: "2025-03-10"
 
 ## Innovación
 
-- Desarrollo de nuevos **productos/servicios**, **métodos de producción**, **mercados**, **fuentes de aprovisionamiento** y **formas organizacionales** (Schumper, $1934$).
+- Desarrollo de nuevos **productos/servicios**, **métodos de producción**, **mercados**, **fuentes de aprovisionamiento** y **formas organizacionales** (Schumper, 1934).
 
-- Realización de **ideas originales** que crean nuevos productos, características, modelos de negocio o procesos, **generando valor para el cliente** (Schmuck & Benke, $2020$, p. $1259$).
+- Realización de **ideas originales** que crean nuevos productos, características, modelos de negocio o procesos, **generando valor para el cliente** (Schmuck & Benke, 2020, p. 1259).
 
-- Proceso de creación, mejora y puesta en el mercado de nuevos **productos/servicios/procesos** (Thornhill, $2006$).
+- Proceso de creación, mejora y puesta en el mercado de nuevos **productos/servicios/procesos** (Thornhill, 2006).
 
 ### Perspectiva psicológica
 
-La innovación puede manifestarse en un individuo o equipo de trabajo a partir del pensamiento creador, como la capacidad para establecer nuevas relaciones entre hechos o para integrarlos de una manera diferente a la habitual, original e innovadora. La innovación está relacionada con la creatividad, que implica elaborar algo nuevo, distinto y de cierto valor, a partir de las experiencias y conocimientos que posee un individuo (Vallejo-Nágera, $2002$)
+La innovación puede manifestarse en un individuo o equipo de trabajo a partir del pensamiento creador, como la capacidad para establecer nuevas relaciones entre hechos o para integrarlos de una manera diferente a la habitual, original e innovadora. La innovación está relacionada con la creatividad, que implica elaborar algo nuevo, distinto y de cierto valor, a partir de las experiencias y conocimientos que posee un individuo (Vallejo-Nágera, 2002)
 
 La creatividad consiste en **pensar** nuevas ideas, mientras que la innovación implica **implementarlas** para crear valor.
 

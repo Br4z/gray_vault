@@ -42,7 +42,7 @@
 	\end{align}
 	$$
 
-3. Cierta marca de tierra para macetas contiene $10\%$ de humus y otra marca contiene $30\%$. ¿Cuánto de cada tierra debe mezclarse para producir $2$ pies cúbicos de tierra para macetas compuesta por $25\%$ de humus?
+3. Cierta marca de tierra para macetas contiene $10\%$ de humus y otra marca contiene $30\%$. ¿Cuánto de cada tierra debe mezclarse para producir 2 pies cúbicos de tierra para macetas compuesta por $25\%$ de humus?
 
 	$$
 	\begin{align}
@@ -52,7 +52,7 @@
 	\end{align}
 	$$
 
-4. María tiene una hoja de cartulina con el largo igual al doble de su ancho. Si recorta un cuadrado de $3$ pulgadas de lado en cada esquina y dobla los lados hacia arriba para formar una caja sin tapa, tendrá una caja con un volumen de $140$ pulgadas cúbicas. Halle las dimensiones de la hoja de cartulina original.
+4. María tiene una hoja de cartulina con el largo igual al doble de su ancho. Si recorta un cuadrado de 3 pulgadas de lado en cada esquina y dobla los lados hacia arriba para formar una caja sin tapa, tendrá una caja con un volumen de 140 pulgadas cúbicas. Halle las dimensiones de la hoja de cartulina original.
 
 	![4th problem](college/ASES/assets/Sara/matematicas_basicas/03_01-problem.png)
 

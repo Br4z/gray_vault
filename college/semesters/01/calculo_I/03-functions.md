@@ -144,7 +144,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
 		\end{align}
 		$$
 
-2. ¿El número $1$ pertenece al rango de $f$?
+2. ¿El número 1 pertenece al rango de $f$?
 
 	$$
 	\begin{align}
@@ -162,7 +162,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
 	\end{align}
 	$$
 
-	Como $\sqrt{ \frac{ 4 }{ 1 } } \neq \pm \sqrt{ \frac{ 1 }{ 3 } }$, $1$ está en el rango de $f$.
+	Como $\sqrt{ \frac{ 4 }{ 1 } } \neq \pm \sqrt{ \frac{ 1 }{ 3 } }$, 1 está en el rango de $f$.
 
 3. Determine la función $f o g$, si existe, indique su dominio.
 

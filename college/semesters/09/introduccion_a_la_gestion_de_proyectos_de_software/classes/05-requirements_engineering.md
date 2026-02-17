@@ -8,13 +8,13 @@ reviewed_on: "2025-04-04"
 
 ### Citas
 
-- "Nunca sopla viento favorable para el que no sabe a dónde va" Seneca ($55$ a.C. - $39$ d.C.).
+- "Nunca sopla viento favorable para el que no sabe a dónde va" Seneca (55 a.C. - 39 d.C.).
 
-- "El **coste** de un cambio en los requisitos una vez entregado el producto, es entre $60$ y $100$ veces superior al coste que hubiera representado el mismo cambio durante las faces iniciales de desarrollo" (Pressman, $2002$).
+- "El **coste** de un cambio en los requisitos una vez entregado el producto, es entre 60 y 100 veces superior al coste que hubiera representado el mismo cambio durante las faces iniciales de desarrollo" (Pressman, 2002).
 
-- "La correcta **obtención de los requisitos** es uno de los aspectos más críticos de un proyecto de software, independientemente del tipo de proyecto que se trate, dado que una mala captura de los mismos es la causa de la mayor parte de los problemas que surgen a lo largo del ciclo de vida" (Johnson, $1995$).
+- "La correcta **obtención de los requisitos** es uno de los aspectos más críticos de un proyecto de software, independientemente del tipo de proyecto que se trate, dado que una mala captura de los mismos es la causa de la mayor parte de los problemas que surgen a lo largo del ciclo de vida" (Johnson, 1995).
 
-- "La parte más difícil de construir un sistema de software es decidir que construir,...Ninguna otra parte del trabajo afecta más negativamente al sistema final si se realiza de manera incorrecta. Ninguna otra parte es más difícil de rectificar después" (Brooks, $1995$).
+- "La parte más difícil de construir un sistema de software es decidir que construir,...Ninguna otra parte del trabajo afecta más negativamente al sistema final si se realiza de manera incorrecta. Ninguna otra parte es más difícil de rectificar después" (Brooks, 1995).
 
 ## Fundamentos de requerimientos de software
 

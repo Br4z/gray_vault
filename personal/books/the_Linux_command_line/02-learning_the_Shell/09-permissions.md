@@ -61,7 +61,7 @@ ls -l foo.txt
 # -rw-rw-r-- 1 me me 0 2018-03-06 14:52 foo.txt
 ```
 
-The first $10$ characters of the listing are the **file attributes**. The first of these characters is the **file type**...
+The first 10 characters of the listing are the **file attributes**. The first of these characters is the **file type**...
 
 | attribute | file type                  |
 |:---------:|:-------------------------- |
@@ -71,7 +71,7 @@ The first $10$ characters of the listing are the **file attributes**. The first 
 |    `c`    | **character special file** |
 |    `b`    | **block special file**     |
 
-The remaining $9$ characters of the file attributes, called the **file mode**, represent the read, write, and execute permissions for the file's owner, the file's group owner, and everybody else.
+The remaining 9 characters of the file attributes, called the **file mode**, represent the read, write, and execute permissions for the file's owner, the file's group owner, and everybody else.
 
 | attribute | file                                                                                                                                                                                             | directories                                                                                                                |
 |:---------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------------------------------------------------------------------------------------------- |
@@ -87,14 +87,14 @@ It is used to change the mode (permissions) of a file or directory, it supports 
 
 | octal | binary | file mode |
 |:-----:|:------:|:---------:|
-|   0   | $000$  |   `---`   |
-|   1   | $001$  |   `--x`   |
-|   2   | $010$  |   `-w-`   |
-|   3   | $011$  |   `-wx`   |
-|   4   | $100$  |   `r--`   |
-|   5   | $101$  |   `r-x`   |
-|   6   | $110$  |   `rw-`   |
-|   7   | $111$  |   `rwx`   |
+|   0   |  000   |   `---`   |
+|   1   |  001   |   `--x`   |
+|   2   |  010   |   `-w-`   |
+|   3   |  011   |   `-wx`   |
+|   4   |  100   |   `r--`   |
+|   5   |  101   |   `r-x`   |
+|   6   |  110   |   `rw-`   |
+|   7   |  111   |   `rwx`   |
 
 By using three octal digits, we can set the file mode for the owner, group owner, and world.
 
@@ -161,19 +161,19 @@ A AND operation is performed between the "original file mode" and NOT "mask" (wi
 
 ...in addition to read, write, and execute permissions, there are some other, less used, permissions settings.
 
-- setuid bit (octal $4000$): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
+- setuid bit (octal 4000): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
 
 	This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
 
 	Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
 
-- setgid bit (octal $2000$): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
+- setgid bit (octal 2000): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
 
 	If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
 
 	This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
 
-- sticky bit (octal $1000$): this is a holdover from ancient Unix, where it was possible to mark an executable file as "not swappable".
+- sticky bit (octal 1000): this is a holdover from ancient Unix, where it was possible to mark an executable file as "not swappable".
 
 	Linux ignores the sticky bit, but if applied to a directory, it prevents users from deleting or renaming files unless the user is either the owner of the directory, the owner of the file, or the superuser.
 

@@ -28,7 +28,7 @@ $$
 $$
 \begin{align}
 	& \norm{ x^{ (k) } - x } \leq \norm{ I - Q^{ -1 } A } \norm { x^{ (k - 1) } - x } \\
-	& \frac{ \norm{ x^{ (k) } - x } }{ \norm { x^{ (k - 1) } - x } } \leq \norm{ I - Q^{ -1 } A } 
+	& \frac{ \norm{ x^{ (k) } - x } }{ \norm { x^{ (k - 1) } - x } } \leq \norm{ I - Q^{ -1 } A }
 \end{align}
 $$
 
@@ -38,7 +38,7 @@ $$
 \norm{ I - Q^{ -1 } A } < 1
 $$
 
-Esta condición asegura que el método iterativo converge, ya que el factor de contracción $\norm{ I - Q^{ -1 } A }$ es menor que $1$, lo que implica que las iteraciones sucesivas se acercan cada vez más a la solución $x$.
+Esta condición asegura que el método iterativo converge, ya que el factor de contracción $\norm{ I - Q^{ -1 } A }$ es menor que 1, lo que implica que las iteraciones sucesivas se acercan cada vez más a la solución $x$.
 
 ## Suposiciones de $Q$
 
@@ -125,7 +125,7 @@ $$
 $$
 \begin{align}
 	& -\nabla q(x_i) = b - A x = r_i \\
-	& x_{ i + 1 } = x_i + \alpha_i r_i 
+	& x_{ i + 1 } = x_i + \alpha_i r_i
 \end{align}
 $$
 

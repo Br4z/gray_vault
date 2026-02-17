@@ -10,7 +10,7 @@ reviewed_on: "2026-01-01"
 
 	![graph](college/semesters/01/assets/calculo_I/2_12_01-graph.jpg)
 
-2.  Dibuje la gráfica de una función f que sea continua en el intervalo $[0,3]$ y tenga las propiedades dadas: mínimo absoluto en $0$, máximo absoluto en $2$, máximos locales en $1$ y $2$, mínimo local en $\frac{ 3 }{ 2 }$.
+2.  Dibuje la gráfica de una función f que sea continua en el intervalo $[0,3]$ y tenga las propiedades dadas: mínimo absoluto en 0, máximo absoluto en 2, máximos locales en 1 y 2, mínimo local en $\frac{ 3 }{ 2 }$.
 
 	![graph](college/semesters/01/assets/calculo_I/2_12_02-graph.jpg)
 
@@ -70,7 +70,7 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 	\end{align}
 	$$
 
-	- Máximo absoluto: el valor es $3$ y ocurre en $x = \frac{ \pi }{ 2 }$.
+	- Máximo absoluto: el valor es 3 y ocurre en $x = \frac{ \pi }{ 2 }$.
 
 	- Mínimo absoluto: el valor es $-\frac{ 3 }{ 2 }$ y ocurre en $x = \frac{ 7 \pi }{ 6 }$ y $x = \frac{ 11 \pi }{ 6 }$.
 
@@ -86,7 +86,7 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 
 	$$
 	\begin{align}
-		& f(-5) = 1 - (-5 - 3)^\frac{ 2 }{ 3 } \\ 
+		& f(-5) = 1 - (-5 - 3)^\frac{ 2 }{ 3 } \\
 		& = 1 - (-8)^\frac{ 2 }{ 3 } \\
 		& = 1 - 4 \\
 		& = -3 \\
@@ -99,7 +99,7 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 	\end{align}
 	$$
 
-	- Máximo absoluto: el valor es $1$ y ocurre en $x = 3$.
+	- Máximo absoluto: el valor es 1 y ocurre en $x = 3$.
 
 	- Mínimo absoluto: el valor es $-3$ (o $-\frac{ 3 }{ 2 }$) y ocurre en $x = -5$.
 
@@ -135,9 +135,9 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 	\end{align}
 	$$
 
-	- Máximo absoluto: el valor es $4$ y ocurre en $x = -2$ y $x = 2$.
+	- Máximo absoluto: el valor es 4 y ocurre en $x = -2$ y $x = 2$.
 
-	- Mínimo absoluto: el valor es $2$ y ocurre en todo el intervalo cerrado $[-1,1]$.
+	- Mínimo absoluto: el valor es 2 y ocurre en todo el intervalo cerrado $[-1,1]$.
 
 ## 3
 
@@ -149,7 +149,7 @@ $$
 	& V = x (18 - 2 x)^2 \quad 0 \leq x < 9 \\
 	& V^\prime = (18 - 2 x)^2 - 4 x (18 - 2 x) \\
 	& = 4 x^2 - 72 x + 324 - 72 x + 8 x^2 \\
-	& = 12 x^2 - 144 x + 324 
+	& = 12 x^2 - 144 x + 324
 \end{align}
 $$
 
@@ -163,7 +163,7 @@ $$
 \end{align}
 $$
 
-El volumen se maximiza con $x = 3$, la altura corresponde a $3$ pulgadas y el largo y el ancho a $18 - 2 (3) = 12$ pulgadas.
+El volumen se maximiza con $x = 3$, la altura corresponde a 3 pulgadas y el largo y el ancho a $18 - 2 (3) = 12$ pulgadas.
 
 ## 4
 
@@ -218,15 +218,15 @@ El ancho correspondería a $2 \left ( \frac{ \sqrt{ 2 } r }{ 2 } \right ) = \sqr
 
 ## 5
 
-Encuentre las dimensiones del rectángulo de mayor área que pueda inscribirse en un triángulo rectángulo de $80$ centímetros de base y $50$ centímetros de altura.
+Encuentre las dimensiones del rectángulo de mayor área que pueda inscribirse en un triángulo rectángulo de 80 centímetros de base y 50 centímetros de altura.
 
 El triángulo rectángulo está colocado en un plano cartesiano:
 
 - El ángulo recto está en el origen $(0,0)$.
 
-- La base de $80$ cm descansa sobre el eje $x$.
+- La base de 80 centímetros descansa sobre el eje $x$.
 
-- La altura $50$ descansa sobre el eje $y$.
+- La altura 50 descansa sobre el eje $y$.
 
 El triángulo inscrito tendrá:
 

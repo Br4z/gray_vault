@@ -50,7 +50,7 @@ Para restar un número de otro basta cambiar el signo al número que se va a res
 
 2. Ley asociativa: si $(a + b) + c = k$, también $a + (b + c) = k$ o $(a + b) + c = a + (b + c)$.
 
-3. Ley de identidad: para cualquier valor de $a$ hay un número y solo uno tal que $a + k = 0$. Tal número $k$ es $0$. Por esta razón, el $0$ recibe el nombre de módulo de la suma o elemento identidad.
+3. Ley de identidad: para cualquier valor de $a$ hay un número y solo uno tal que $a + k = 0$. Tal número $k$ es 0. Por esta razón, el 0 recibe el nombre de módulo de la suma o elemento identidad.
 
 ## Unidad III (multiplicación y división)
 
@@ -104,13 +104,13 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 - Grado absoluto: es la suma de los exponentes de los factores literales.
 
 	$$
-	5 a^3 b^2 \quad \text{grado $5$}
+	5 a^3 b^2 \quad \text{grado 5}
 	$$
 
 - Grado relativo: con respecto a una letra es el exponente de dicha letra.
 
 	$$
-	5 a^3 b^2 \quad \text{grado $3$ con respecto a $a$}
+	5 a^3 b^2 \quad \text{grado 3 con respecto a $a$}
 	$$
 
 ### Grado de un polinomio
@@ -118,13 +118,13 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 - Grado absoluto: es igual al grado del término que tenga mayor grado.
 
 	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado $6$}
+	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 6}
 	$$
 
 - Grado relativo: con respecto a una letra es al mayor exponente que tenga dicha letra en el polinomio.
 
 	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado $4$ con respecto a $x$}
+	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 4 con respecto a $x$}
 	$$
 
 ## Unidad VI (adicción y sustracción de expresiones algebraicas. Ecuaciones. Inecuaciones)
@@ -153,7 +153,7 @@ Según lo anterior podemos afirmar que toda identidad y ecuación es una igualda
 Lo determina el término en que la suma de los exponentes de las incógnitas sea máxima.
 
 $$
-a^4 x^3 + 2 b x = c \quad \text{grado $3$}
+a^4 x^3 + 2 b x = c \quad \text{grado 3}
 $$
 
 ### Principios generales de las ecuaciones
@@ -361,7 +361,7 @@ Tanto en el dividendo como en el cociente pueden no estar todas las potencias de
 
 - $x^n + a^n$ nunca es divisible por $x - a$.
 
-	No hay valor posible bajo ninguna circunstancia que haga que $x^n + a^n$ sea $0$.
+	No hay valor posible bajo ninguna circunstancia que haga que $x^n + a^n$ sea 0.
 
 	> Ni par, ni impar.
 
@@ -373,13 +373,13 @@ Sea un binomio de la forma $(a \pm b)^n$.
 
 1. El número de términos es igual al exponente más uno o $n + 1$.
 
-2. Los exponentes de $a$ van en orden descendente desde $n$ hasta $0$ y los de $b$ van en orden creciente desde $0$ hasta $n$.
+2. Los exponentes de $a$ van en orden descendente desde $n$ hasta 0 y los de $b$ van en orden creciente desde 0 hasta $n$.
 
 3. La suma de los exponentes de $a$ y $b$ en cualquier término es igual $n$.
 
-4. El coeficiente del primer término es $1$ y el del segundo término es igual al exponente del binomio.
+4. El coeficiente del primer término es 1 y el del segundo término es igual al exponente del binomio.
 
-5. Los demás coeficientes se obtienen multiplicando el coeficiente del término anterior por el exponente de $a$ en dicho término y dividiendo el producto por el exponente de $b$ en el mismo término aumentado en $1$.
+5. Los demás coeficientes se obtienen multiplicando el coeficiente del término anterior por el exponente de $a$ en dicho término y dividiendo el producto por el exponente de $b$ en el mismo término aumentado en 1.
 
 6. Todos los signos del desarrollo $(a + b)^n$ son positivos; el desarrollo de $(a - b)^n$ tiene signos alternados empezando por positivo.
 
@@ -847,7 +847,7 @@ $$
 4 y = 4 x^2 + 4 b x + 4 c + b^2 - b^2 \quad y = \frac{ 4 x^2 + 4 b x + 4 c + b^2 - b^2 }{ 4 } = \frac{ (2 x + b)^2 + 4 c - b^2 }{ 4 }
 $$
 
-El valor mínimo de la fracción depende del término $(2 x + b)^2$ donde aparece la variable $x$. $(2 x +b)^2$ no puede ser negativo, por tanto, su valor mínimo es $0$.
+El valor mínimo de la fracción depende del término $(2 x + b)^2$ donde aparece la variable $x$. $(2 x +b)^2$ no puede ser negativo, por tanto, su valor mínimo es 0.
 
 $$
 2 x + b = 0 \quad x = \frac{ -b }{ 2 }
@@ -1084,7 +1084,7 @@ Progresión geométrica es una serie de términos tales, que cada uno de ellos e
 
 El símbolo usado para designar las progresiones geométricas es $\div\div$; y entre los términos de la progresión se usa el símbolo $:$.
 
-Una progresión geométrica es creciente cuando el valor absoluto de la razón es mayor que $1$ y decreciente cuando el valor absoluto de la razón es menor que $1$.
+Una progresión geométrica es creciente cuando el valor absoluto de la razón es mayor que 1 y decreciente cuando el valor absoluto de la razón es menor que 1.
 
 ### Término cualquiera de una progresión geométrica
 
@@ -1234,7 +1234,7 @@ Logaritmo de un número es el exponente a que hay que elevar otro número llamad
 
 ### Logaritmos vulgares o de Briggs
 
-Siendo pues ilimite el sistema de números positivos, también lo es el número de sistemas de logaritmos. No obstante, los sistemas generalmente usados en matemáticas se reducen a dos: el vulgar, llamado también de Briggs, cuya base es $10$; y el sistema de logaritmos naturales o neperianos, cuya base es el número de Euler.
+Siendo pues ilimite el sistema de números positivos, también lo es el número de sistemas de logaritmos. No obstante, los sistemas generalmente usados en matemáticas se reducen a dos: el vulgar, llamado también de Briggs, cuya base es 10; y el sistema de logaritmos naturales o neperianos, cuya base es el número de Euler.
 
 ### Propiedades generales de los algoritmos
 
@@ -1242,11 +1242,11 @@ Siendo pues ilimite el sistema de números positivos, también lo es el número 
 
 2. Los números negativos no tienen logaritmo. Esto es una consecuencia de la propiedad anterior, pues siendo la base positiva todas sus potencias son positivas.
 
-3. En todo sistema de logaritmos, el logaritmo de $1$ es $0$...
+3. En todo sistema de logaritmos, el logaritmo de 1 es 0...
 
-4. En todo sistema de logaritmos, el logaritmo de la base es $1$.
+4. En todo sistema de logaritmos, el logaritmo de la base es 1.
 
-5. Como consecuencia de la propiedad $3$ los números mayores que $1$ tienen logaritmo positivo; y los números menores que $1$, tiene logaritmo negativo.
+5. Como consecuencia de la propiedad 3 los números mayores que 1 tienen logaritmo positivo; y los números menores que 1, tiene logaritmo negativo.
 
 ### Logaritmación de las operaciones indicadas
 

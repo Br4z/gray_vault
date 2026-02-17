@@ -57,9 +57,9 @@ Some of the **tests** that support this command are:
 	|    `b`    | 512-byte blocks. This is the default if no unit is specified. |
 	|    `c`    |                            Bytes.                             |
 	|    `w`    |                         2-byte words.                         |
-	|    `k`    |              Kilobytes (units of $1024$ bytes).               |
-	|    `M`    |             Megabytes (units of $1048576$ bytes).             |
-	|    `G`    |           Gigabytes (units of $1073741824$ bytes).            |
+	|    `k`    |              Kilobytes (units of 1024 bytes).               |
+	|    `M`    |             Megabytes (units of 1048576 bytes).             |
+	|    `G`    |           Gigabytes (units of 1073741824 bytes).            |
 
 |          test          | description                                                                                                |
 |:----------------------:|:---------------------------------------------------------------------------------------------------------- |
@@ -145,7 +145,7 @@ find ~ -type f -name "foo*" -print | xargs ls -l
 
 #### Dealing with funny filenames
 
-Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like `xargs` that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the result­ing command will interpret each space-separated word as a separate argument. To overcome this, `find` and `xargs` allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character repre­sented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number $32$). `find` provides the action `-print0`, which produces null-separated output, and `xargs` has the `--null` (or `-0`) option, which accepts null separated input.
+Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like `xargs` that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the result­ing command will interpret each space-separated word as a separate argument. To overcome this, `find` and `xargs` allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character repre­sented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number 32). `find` provides the action `-print0`, which produces null-separated output, and `xargs` has the `--null` (or `-0`) option, which accepts null separated input.
 
 ### Options
 

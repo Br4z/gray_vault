@@ -16,11 +16,11 @@ donde:
 
 - $n_i$: es el número de agentes que pertenecen al grupo de agentes $i$.
 
-- $o_{ i,1 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación $1$.
+- $o_{ i,1 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación 1.
 
 	> $-100 \leq o_{ i,1 } \leq 100 \pand o_{ i,1 } \in \mathbb{ Z }$.
 
-- $o_{ i,2 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación $2$.
+- $o_{ i,2 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación 2.
 
 	> $-100 \leq o_{ i,2 } \leq 100 \pand o_{ i,2 } \in \mathbb{ Z }$.
 
@@ -157,7 +157,7 @@ Sea $F(i,r)$ la suma total del conflicto acumulado en los $i$ primeros grupos.
 
 Ambas formulaciones calculan el mismo valor $\operatorname{ valueIC }(n,R_{ \max }) = \frac{ 1 }{ n } \sum_{ i = 0 }^{ n - 1 } \operatorname{ conflict }(i,k_i)$.
 
-- Caso base: para $i = 0$, ambas definiciones retornan $0$.
+- Caso base: para $i = 0$, ambas definiciones retornan 0.
 
 - Paso inductivo: supongamos que para $i - 1$, $\operatorname{ { recIC }_1 }(i,r') = \frac{ F(i - 1,r') }{ i - 1 }$ y $\operatorname{ { recIC }_2 }(i,r') =F(i - 1,r')$.
 

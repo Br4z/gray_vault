@@ -66,9 +66,9 @@ No hay caminos prioritarios y la única diferencia entre las técnicas es el ord
 
 ###### Preferente por amplitud
 
-1. Expandir el nodo raíz, esto genera nodos de profundidad $1$.
+1. Expandir el nodo raíz, esto genera nodos de profundidad 1.
 
-2. Expandir, de izquierda a derecha, cada nodo de profundidad $1$.
+2. Expandir, de izquierda a derecha, cada nodo de profundidad 1.
 
 3. Continuar expandiendo, de izquierda a derecha, cada uno de los nodos en la profundidad $d$ y luego los de profundidad $d + 1$.
 
@@ -182,7 +182,7 @@ Podríamos decir que este enfoque intenta tomar lo bueno de preferente por profu
 
 #### Por profundización iterativa
 
-Es igual a la limitada por profundidad, solo que este prueba todos los **límites** de profundidad posibles, inicialmente toma como límite $0$ y lleva a cabo una búsqueda limitada por profundidad, luego aumenta el límite en $1$ y realiza el mismo procedimiento, así hasta encontrar alguna solución.
+Es igual a la limitada por profundidad, solo que este prueba todos los **límites** de profundidad posibles, inicialmente toma como límite 0 y lleva a cabo una búsqueda limitada por profundidad, luego aumenta el límite en 1 y realiza el mismo procedimiento, así hasta encontrar alguna solución.
 
 ---
 

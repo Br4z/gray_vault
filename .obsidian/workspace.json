@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1e1e064475c10040",
+        "id": "7d95d6a9715ac834",
         "type": "tabs",
         "children": [
           {
-            "id": "dd71f96b7e253e10",
+            "id": "4d063044c7f5bea6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/books/eloquent_JavaScript/01-introduction.md",
+                "file": "personal/systems_engineering/fundametals/scrum/roles/developers.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01-introduction"
-            }
-          },
-          {
-            "id": "a756d109eaac58af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "personal/computer_science/data/5Vs_of_big_data.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "5Vs_of_big_data"
+              "title": "developers"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "definition",
+                "query": "02-storage_media.md",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 342.5
   },
   "right": {
     "id": "68badef6621bbee5",
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "file": "personal/systems_engineering/fundametals/scrum/roles/developers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 11-string_and_numbers"
+              "title": "Outline of developers"
             }
           },
           {
@@ -172,8 +157,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -187,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "6b1f7004b16de97a",
@@ -199,20 +184,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/computer_science/data/5Vs_of_big_data.md",
+                "file": "personal/systems_engineering/fundametals/scrum/roles/developers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 5Vs_of_big_data"
+              "title": "Outline of developers"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 328.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,44 +211,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bb158df9f3093a21",
+  "active": "4d063044c7f5bea6",
   "lastOpenFiles": [
-    "personal/computer_science/data/security.md",
-    "personal/computer_science/data/privacy.md",
-    "personal/computer_science/data/5Vs_of_big_data.md",
-    "personal/computer_science/data/big_data.md",
-    "personal/computer_science/data/classification.md",
-    "personal/computer_science/data/definition.md",
-    "personal/prompts.md",
-    "scribbles.md",
-    "Untitled.base",
-    "personal/computer_science/AI/definition.md",
-    "personal/computer_science/AI/classification.md",
-    "personal/computer_science/data",
-    "personal/computer_science/fundametals",
-    "personal/computer_science/AI/machine_learning/classification.md",
-    "personal/computer_science/AI/machine_learning/definition.md",
-    "college/semesters/08/introduccion_a_la_ciencia_de_datos/01-introduction.md",
-    "personal/computer_science/fundametals/Linux/useful_commands_for_creating_scripts.md",
-    "work/internship/AI-native_foundations/01-introduction_to_AI.md",
-    "personal/computer_science/AI",
-    "personal/books/eloquent_JavaScript/01-introduction.md",
-    "work/internship/AI-native_foundations",
-    "work/internship",
-    "work",
-    "personal/computer_science/Entity_Relation_Diagram-Mermaid.md",
-    "personal/computer_science/index.md",
-    "personal/computer_science/Kubernetes.md",
-    "personal/computer_science/LaTeX_cheatsheet.md",
-    "personal/computer_science/fundametals/Git_and_Github/pull_a_remote_branch.md",
-    "personal/computer_science/fundametals/Git_and_Github/delete_files_from_the_staging_area_without_deleting_them_from the_workspace.md",
-    "personal/computer_science/fundametals/Git_and_Github/add_files_to_the_last_commit.md",
-    "personal/computer_science/fundametals/Git_and_Github/deactivate_automatic_end-of-line_conversion.md",
-    "personal/computer_science/fundametals/Git_and_Github/delete_commits_history.md",
-    "personal/computer_science/fundametals/Git_and_Github/GitFlow.md",
-    "4913",
-    "tree.txt",
-    "output.txt",
+    "personal/systems_engineering/fundametals/scrum/roles/product_owner.md",
+    "personal/systems_engineering/fundametals/scrum/roles/developers.md",
+    "personal/systems_engineering/fundametals/scrum/roles/scrum_master.md",
+    "personal/systems_engineering/fundametals/scrum/definition.md",
+    "personal/systems_engineering/fundametals/scrum/artifacts/increment.md",
+    "personal/systems_engineering/fundametals/scrum/pillars.md",
+    "personal/systems_engineering/fundametals/scrum/values.md",
+    "personal/systems_engineering/fundametals/scrum/artifacts/product_backlog.md",
+    "personal/systems_engineering/fundametals/scrum/artifacts/sprint_backlog.md",
+    "personal/systems_engineering/fundametals/scrum/ceremonies/daily.md",
+    "personal/systems_engineering/fundametals/scrum/ceremonies/sprint.md",
+    "personal/systems_engineering/fundametals/scrum/ceremonies/sprint_planning.md",
+    "personal/systems_engineering/fundametals/scrum/ceremonies/sprint_retrospective.md",
+    "personal/systems_engineering/fundametals/scrum/ceremonies/sprint_review.md",
+    "personal/books/the_Linux_command_line/04-common_tasks_and_essential_tools/02-storage_media.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/10-processes.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/09-permissions.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it.md",
+    "personal/books/the_Linux_command_line/02-learning_the_Shell/05-working_with_commands.md",
+    "college/semesters/08/simulacion_y_computacion_numerica/homework/05-regression_interpolation_and_natural_spline.md",
+    "college/semesters/09/analisis_y_diseño_de_algoritmos_II/classes/03-NP-completeness/02-SAT_and_3-SAT.md",
+    "diff.txt",
+    "college/ASES/Jairo/01-physics_problem.md",
+    "personal/systems_engineering/fundametals/scrum/artifacts",
+    "personal/systems_engineering/fundametals/scrum/roles",
+    "personal/systems_engineering/fundametals/scrum/ceremonies",
+    "personal/systems_engineering/data/quality_dimensions.md",
+    "personal/systems_engineering/fundametals/scrum",
+    "personal/systems_engineering/fundametals/Git_and_Github/commit_message_naming_conventions.md",
+    "personal/systems_engineering/data/5Vs_of_big_data.md",
+    "personal/systems_engineering/data/big_data.md",
+    "personal/systems_engineering/fundametals/programming_languajes/Python",
+    "personal/systems_engineering/fundametals/programming_languajes/C_plus_plus",
+    "personal/systems_engineering/fundametals/algorithms/sorting",
+    "personal/systems_engineering/fundametals/programming_languajes",
+    "personal/systems_engineering/fundametals/Linux",
     "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_12_02-graph.jpg",
     "college/semesters/01/assets/calculo_I/2_02_05-figure.svg",

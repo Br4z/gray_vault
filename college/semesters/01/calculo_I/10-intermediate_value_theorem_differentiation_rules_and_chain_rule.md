@@ -89,7 +89,7 @@ $$
 g(0) \leq 0 \leq g(1)
 $$
 
-Como el número $0$ esta entre esos dos valores, debe existir al menos un número $c$ en el intervalo $[0,1]$ tal que:
+Como el número 0 esta entre esos dos valores, debe existir al menos un número $c$ en el intervalo $[0,1]$ tal que:
 
 $$
 g(c) = 0 \implies f(c) - c = 0 \quad f(c) = c

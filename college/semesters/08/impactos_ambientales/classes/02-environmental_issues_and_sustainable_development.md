@@ -89,11 +89,11 @@ Su nivel de dispersión geográfica es muy limitado, y concentran, por tanto, su
 
 ## Desarrollo sostenible (DS)
 
-### Ley $99$ de $1993$
+### Ley 99 de 1993
 
 #### Artículo 1: principios generales ambientales
 
-El proceso de desarrollo económico y social del país se orientará según los principios universales y del desarrollo sostenible contenidos en la declaración de Río de Janeiro de junio de $1992$ sobre medio ambiente y desarrollo. Las políticas tendrán en cuenta el derecho de los seres humanos a una vida saludable y productiva en armonía con la naturaleza.
+El proceso de desarrollo económico y social del país se orientará según los principios universales y del desarrollo sostenible contenidos en la declaración de Río de Janeiro de junio de 1992 sobre medio ambiente y desarrollo. Las políticas tendrán en cuenta el derecho de los seres humanos a una vida saludable y productiva en armonía con la naturaleza.
 
 #### Artículo 3: desarrollo sostenible
 

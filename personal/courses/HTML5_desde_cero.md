@@ -361,13 +361,13 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
 		- `range`: control para introducir un número cuyo valor exacto no es importante. Este control usa los siguientes valores predeterminados si no se especifica cada atributo:
 
-			- `min`: $0$.
+			- `min`: 0.
 
-			- `max`: $100$.
+			- `max`: 100.
 
 			- `value`: $\frac{ \text{min} + ( \text{max} - \text{min}) }{ 2 }$, o $\text{min}$ si $\text{max}$ es menor que $\text{min}$.
 
-			- `step`: $1$.
+			- `step`: 1.
 
 		- `reset`: botón que restaura los contenidos de un formulario a sus valores predeterminados.
 

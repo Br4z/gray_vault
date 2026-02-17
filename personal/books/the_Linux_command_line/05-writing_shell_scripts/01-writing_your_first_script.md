@@ -53,7 +53,7 @@ It can be achieved by using line continuations (backslash-linefeed sequences) an
 
 - `:set hlsearch`: turns on search highlighting.
 
-- `:set tabstop=4`: set the number of columns occupied by a tab character to $4$.
+- `:set tabstop=4`: set the number of columns occupied by a tab character to 4.
 
 - `:set autoindent`: turns on "auto indent" feature, this causes `vim` to indent a new line the same amount as the line just typed.
 

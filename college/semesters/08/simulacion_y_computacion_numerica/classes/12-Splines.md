@@ -121,7 +121,7 @@ Las características del spline de primer grado son:
 
 2. $S'$ es discontinua en los nodos $t_i$.
 
-3. Cada $S_i$ es un polinomio de grado $1$.
+3. Cada $S_i$ es un polinomio de grado 1.
 
 La condición de continuidad es:
 
@@ -159,7 +159,7 @@ Las características del spline de segundo grado son:
 
 3. $S''$ es discontinua en los nodos $t_i$.
 
-4. Cada $S_i$ es un polinomio de grado $2$.
+4. Cada $S_i$ es un polinomio de grado 2.
 
 La condición de continuidad es:
 
@@ -204,7 +204,7 @@ Las características del spline de segundo grado son:
 
 3. $S''$ es continua en el intervalo $[t_0,\dots,t_k]$.
 
-4. Cada $S_i$ es un polinomio de grado $3$.
+4. Cada $S_i$ es un polinomio de grado 3.
 
 La condición de continuidad es:
 
@@ -216,7 +216,7 @@ $$
 \end{align} \quad i = 1,2,\dots,k - 1
 $$
 
-Cada polinomio cúbico $S_i(x)$ tiene $4$ coeficientes. Hay $k$ polinomios, entonces en total hay $4 k$ incógnitas.
+Cada polinomio cúbico $S_i(x)$ tiene 4 coeficientes. Hay $k$ polinomios, entonces en total hay $4 k$ incógnitas.
 
 Para determinar unívocamente el spline cúbico, es necesario añadir dos condiciones adicionales en los extremos:
 
@@ -238,7 +238,7 @@ Para determinar unívocamente el spline cúbico, es necesario añadir dos condic
 
 	$S_{ i - 1 }''(t_i) = S_i''(t_i)$ (para $i = 1,2,\dots,k - 1$).
 
-4. Condiciones de frontera ($2$ ecuaciones):
+4. Condiciones de frontera (2 ecuaciones):
 
 	$S_0''(t_0) = 0$ y $S_{ k - 1 }''(t_k) = 0$
 

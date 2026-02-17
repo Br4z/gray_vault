@@ -36,5 +36,37 @@
       "key": "B"
     }
   ],
-  "editor:save-file": []
+  "editor:save-file": [],
+  "markdown:add-metadata-property": [],
+  "table-editor-obsidian:table-control-bar": [],
+  "file-explorer:new-file": [],
+  "file-explorer:new-file-in-new-pane": [],
+  "editor:delete-paragraph": [],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "workspace:previous-tab": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "workspace:goto-last-tab": [],
+  "graph:open": [],
+  "editor:insert-link": [],
+  "app:go-forward": [],
+  "app:go-back": [],
+  "editor:open-link-in-new-window": [],
+  "editor:open-link-in-new-split": [],
+  "app:open-settings": [],
+  "editor:toggle-checklist-status": [],
+  "markdown:toggle-preview": []
 }

@@ -50,7 +50,7 @@ $$
 
 - $y_i = 1$: **relaja** la inecuación (añadimos $M$), permitiendo violarla hasta $M$.
 
-Como a lo sumo $p - k$ variables binarias pueden ser $1$, **al menos** $k$ restricciones originales permanecen activas.
+Como a lo sumo $p - k$ variables binarias pueden ser 1, **al menos** $k$ restricciones originales permanecen activas.
 
 ### $y_i = 1$ cumple la restricción
 

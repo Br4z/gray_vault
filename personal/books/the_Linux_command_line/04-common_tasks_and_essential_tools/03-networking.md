@@ -92,7 +92,7 @@ SSH solves the two basic problems of secure communication with a remote host.
 
 2. It encrypts all of the communications between the local and remote hosts.
 
-SSH consists of two parts. An SSH server runs on the remote host, listening for incoming connections, by default, on port $22$, while an SSH client is used on the local system to communicate with the remote server.
+SSH consists of two parts. An SSH server runs on the remote host, listening for incoming connections, by default, on port 22, while an SSH client is used on the local system to communicate with the remote server.
 
 #### Tunneling with SSH
 

@@ -125,7 +125,7 @@ Halle los ceros de los siguientes polinomios y factorice en los números reales 
 
 ## 3
 
-1. Halle un polinomio cúbico de coeficientes reales que tenga entre sus raíces a $5$ y $3 + 2 i$.
+1. Halle un polinomio cúbico de coeficientes reales que tenga entre sus raíces a 5 y $3 + 2 i$.
 
 	$$
 	\begin{align}
@@ -139,7 +139,7 @@ Halle los ceros de los siguientes polinomios y factorice en los números reales 
 	\end{align}
 	$$
 
-2. Halle un polinomio de grado $5$ con coeficientes reales, que tenga entre sus raíces a $4$, $-3 i$ y $2 - i$, cuya grafica pase por el punto $P(-1,1)$.
+2. Halle un polinomio de grado 5 con coeficientes reales, que tenga entre sus raíces a 4, $-3 i$ y $2 - i$, cuya grafica pase por el punto $P(-1,1)$.
 
 	$$
 	\begin{align}
@@ -190,7 +190,7 @@ $$
 
 ## 5
 
-Halle la constante $k$ para que el residuo de dividir $f(x) = -x^3 - 2 x + k^2$ entre $x - 3$ sea igual a $16$.
+Halle la constante $k$ para que el residuo de dividir $f(x) = -x^3 - 2 x + k^2$ entre $x - 3$ sea igual a 16.
 
 $$
 \begin{align}

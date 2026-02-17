@@ -402,7 +402,7 @@ Resuelva las siguientes inecuaciones:
 
 ## 6
 
-El perímetro de un terreno rectangular es $58$ metros. Si el largo aumenta en $2$ metros y el ancho se disminuye en $2$ metros, el área se disminuye en $40$ metros cuadrados. Halle las dimensiones del terreno.
+El perímetro de un terreno rectangular es 58 metros. Si el largo aumenta en 2 metros y el ancho se disminuye en 2 metros, el área se disminuye en 40 metros cuadrados. Halle las dimensiones del terreno.
 
 Sí tenemos un rectángulo de medidas $a * b$.
 

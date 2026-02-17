@@ -14,7 +14,7 @@ reviewed_on: "2025-05-09"
 
 2. Caso base.
 
-	- Para $i = 0$ (cero grupos), el conflicto es $0$ para cualquier $r$.
+	- Para $i = 0$ (cero grupos), el conflicto es 0 para cualquier $r$.
 
 	- Para $i \geq 1$ inicialmente supongo un valor muy alto $\infty$.
 
@@ -34,7 +34,7 @@ reviewed_on: "2025-05-09"
 
 4. Explorar todas las posibilidades de moderar $k$ agentes.
 
-	Para cada posible nivel de esfuerzo $r$ desde $0$ hasta $r_{ \max }$, y para cada $k$ entre $0$ y $n_i$ (número de agentes que decido moderar en este grupo), hago:
+	Para cada posible nivel de esfuerzo $r$ desde 0 hasta $r_{ \max }$, y para cada $k$ entre 0 y $n_i$ (número de agentes que decido moderar en este grupo), hago:
 
 	1. $\text{required\_effort} = \ceil{ \text{effort\_per\_agent} \cdot k }$
 
