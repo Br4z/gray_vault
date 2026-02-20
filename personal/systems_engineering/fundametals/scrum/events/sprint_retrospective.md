@@ -4,7 +4,7 @@ reviewed_on: "2026-02-16"
 
 # Sprint retrospective
 
-It is the event where the scrum team **inspects how the last [[personal/systems_engineering/fundametals/scrum/events/sprint|sprint]] went** (people, relationships, process, tools, definition of done) and **creates a plan for improvements** to apply in the next sprint.
+It is the event where the scrum team **inspects how the last [[personal/systems_engineering/fundametals/scrum/events/sprint|sprint]] went** (people, relationships, process, tools, [[personal/systems_engineering/fundametals/scrum/definition_of_done|definition of done]]) and **creates a plan for improvements** to apply in the next sprint.
 
 ## Input
 

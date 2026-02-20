@@ -16,6 +16,10 @@ reviewed_on: "2026-01-13"
 
 **Subtypes must be substitutable for their base types**. If class B inherits from class A, an exchange can be performed without crashing the application or confusing the user.
 
+## Interface segregation
+
+**Clients should not be forced to depend on interfaces they do not use**. In other words, it is better to have several small, specific interfaces than one large, "fat" interface.
+
 ## Dependency inversion
 
 **Depend upon abstractions, not concretions**. High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces).
