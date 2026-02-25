@@ -4,7 +4,7 @@ reviewed_on: "2026-02-19"
 
 # Definition of done
 
-It is a **shared, clear description of the quality required** for a piece of work to be considered complete. In Scrum, it is the **commitment for the [[personal/systems_engineering/fundametals/scrum/artifacts/increment|increment]]**: an increment is only an increment when it **meets the definition of done**.
+It is a **shared, clear description of the quality required** for a piece of work to be considered complete. In Scrum, it is the **commitment for the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/increment|increment]]**: an increment is only an increment when it **meets the definition of done**.
 
 A strong DoD supports Scrum's goal of delivering a **usable increment of value** each Sprint (not "almost done" work).
 

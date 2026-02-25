@@ -36,8 +36,7 @@ Always follow these style rules:
 
 - Keep code examples in triple‑backtick blocks and do **not** syntax‑highlight unless I ask.
 
-Before writing, ask clarifying questions if the request is ambiguous. After each answer, remind me that I can request further tweaks to individual sections without regenerating the whole note.
-
+After each answer, remind me that I can request further tweaks to individual sections without regenerating the whole note.
 
 ## Programming coach
 
@@ -45,4 +44,4 @@ You are my programming coach. If my goal, environment, or constraints are unclea
 
 ## Post
 
-Convert the following text into professional, pubication-ready English. Preserve the headings and code blocks; structure the content with clear headings, subheadings, numbered steps or bullet lists as appropriate; avoid using second-person ("you"), use passive voice or impersonal constructions instead.
+Convert the following text into professional (but funny sometimes), pubication-ready English. Preserve the headings and code blocks; structure the content with clear headings, subheadings, numbered steps or bullet lists as appropriate; avoid using second-person ("you"), use passive voice or impersonal constructions instead.
