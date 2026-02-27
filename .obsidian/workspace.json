@@ -1,0 +1,289 @@
+{
+  "main": {
+    "id": "6b8033a662df3d56",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f33a5b182086848",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1786a049314a5df4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "solution_vs_project"
+            }
+          },
+          {
+            "id": "f12dd400db31eeef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "personal/prompts.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "prompts"
+            }
+          },
+          {
+            "id": "ffc7ccfac3e7d2d5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "177aa7bcd15e0e0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "eafc437b632ed172",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb158df9f3093a21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e70382106e2d1988",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "059edb7db0af0082",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 381.5
+  },
+  "right": {
+    "id": "68badef6621bbee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e8130332fa112fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2df295c8c2a994b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 11-string_and_numbers"
+            }
+          },
+          {
+            "id": "de17820865537010",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "personal/books/the_Linux_command_line/05-writing_shell_scripts/11-string_and_numbers.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 11-string_and_numbers"
+            }
+          },
+          {
+            "id": "51086ca860b3682a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "22b1089aba09ad33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "personal/systems_engineering/fundametals/SOLID_principles.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of SOLID_principles"
+            }
+          },
+          {
+            "id": "1a8ffcf2aa5a8d01",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "ad1d360cbc4fbef1",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "6b1f7004b16de97a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11df9bb225de1063",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of solution_vs_project"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 328.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "1786a049314a5df4",
+  "lastOpenFiles": [
+    "personal/prompts.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
+    "personal/systems_engineering/LaTeX_cheatsheet.md",
+    "personal/systems_engineering/entity_relation_diagram-Mermaid.md",
+    "personal/systems_engineering/class_diagram-Mermaid.md",
+    "personal/systems_engineering/fundametals/agile/collaboration.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development/loop.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development/gherkin.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development/drawbacks.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development/definiton.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development/benefits.md",
+    "personal/systems_engineering/fundametals/agile/test_driven_development/loop.md",
+    "to_export.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/What_is_NET_and_how_is_it_related_to C_sharp.md",
+    "staging/how_to_run_Visual_Studio_projects_in_Visual_Studio_Code.md",
+    "personal/systems_engineering/fundametals/SOLID_principles.md",
+    "personal/systems_engineering/fundametals/Git_and_Github/commit_message_naming_conventions.md",
+    "personal/systems_engineering/fundametals/agile/test_driven_development/drawbacks.md",
+    "personal/systems_engineering/fundametals/agile/behavior_driven_development",
+    "personal/systems_engineering/fundametals/agile/test_driven_development/benefits.md",
+    "personal/systems_engineering/fundametals/agile/test_driven_development/what_kind_of_testing_is_it.md",
+    "staging/unit_test.md",
+    "personal/systems_engineering/fundametals/agile/test_driven_development/definition.md",
+    "personal/systems_engineering/fundametals/agile/definition.md",
+    "personal/general_job_interview_preparation.md",
+    "personal/systems_engineering/fundametals/agile/test_driven_development",
+    "personal/systems_engineering/AI/prompts/what_is_it.md",
+    "personal/systems_engineering/AI/prompts/training_techniques.md",
+    "personal/systems_engineering/fundametals/agile",
+    "templates",
+    "personal/systems_engineering/AI/prompts",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp",
+    "personal/systems_engineering/fundametals/agile/scrum/events",
+    "personal/systems_engineering/fundametals/agile/scrum/accountabilities",
+    "diff.txt",
+    "personal/systems_engineering/fundametals/agile/scrum/artifacts",
+    "college/semesters/01/assets/calculo_I/2_12_01-graph.jpg",
+    "college/semesters/01/assets/calculo_I/2_12_02-graph.jpg",
+    "college/semesters/01/assets/calculo_I/2_02_05-figure.svg",
+    "college/semesters/01/assets/calculo_I/2_02_06-figure.svg",
+    "college/semesters/01/assets/calculo_I/2_03_01-graphs.jpg",
+    "college/semesters/01/assets/calculo_I/2_03_02-corral.jpg",
+    "college/semesters/01/assets/calculo_I/2_04_01-corral.jpg",
+    "college/semesters/01/assets/calculo_I/2_06_01-graph.svg",
+    "college/semesters/01/assets/calculo_I/2_06_02-graphs.svg",
+    "college/semesters/01/assets/calculo_I/2_06_03-graphs.svg"
+  ]
+}

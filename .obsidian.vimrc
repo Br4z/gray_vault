@@ -4,9 +4,15 @@ set clipboard=unnamed
 
 " Navigation
 nnoremap n h
-nnoremap e j
-nnoremap i k
+nnoremap e gj
+nnoremap i gk
 nnoremap o l
+
+nnoremap E j
+nnoremap I k
+
+nnoremap N g0
+nnoremap O g$
 
 " Insert
 nnoremap l i
@@ -28,9 +34,15 @@ nnoremap K N
 
 " Navigation
 vnoremap n h
-vnoremap e j
-vnoremap i k
+vnoremap e gj
+vnoremap i gk
 vnoremap o l
+
+vnoremap E j
+vnoremap I k
+
+vnoremap N g0
+vnoremap O g$
 
 " Inner text object
 vnoremap l i
@@ -52,11 +64,17 @@ vnoremap K N
 
 " Navigation
 onoremap n h
-onoremap e j
-onoremap i k
+onoremap e gj
+onoremap i gk
 onoremap o l
 
-" Inner text object (e.g., 'clw' becomes 'ciw')
+onoremap E j
+onoremap I k
+
+onoremap N g0
+onoremap O g$
+
+" Inner text object (e.g., "clw" becomes "ciw")
 onoremap l i
 onoremap L I
 
