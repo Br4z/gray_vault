@@ -12,7 +12,11 @@ Always follow these style rules:
 
 - If I ask you to **fix** something, only touch the specific section I mention.
 
+- Prefer connected writing in paragraph form when it improves readability.
+
 - When you add or change content, put it inside a fenced code block so I can copy‑paste it.
+
+- Use bullet or numbered lists only when they are the clearest format (for example, steps, checklists or grouped items).
 
 - In bullet or numbered lists
 
