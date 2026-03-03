@@ -46,9 +46,7 @@
 
 - Convert PNG to JPG: `magick mogrify -format jpg <PNG file>`.
 
-- Login error: `faillock --user <user> --reset`.
-
-- Find files except in a directory: `find . -name <dir> -type d -prune -o -type f -name <file pattern> -print`.
+- Find files except in a directory: `find . -name <dir> -type d -prune -o -type f -name <file_pattern> -print`.
 
 - Create symbolic links (PowerShell): `New-Item -ItemType SymbolicLink -Path <target> -Value <source>`.
 
@@ -74,14 +72,6 @@
 	java -cp out --module-path  <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml <main>
 	```
 
-## Plex
-
-- Start service: `sudo systemctl start plexmediaserver.service`.
-
-- Actual running config file: `/etc/systemd/system/plexmediaserver.service.d/override.conf`.
-
-- Edit service config: `sudo systemctl edit plexmediaserver.service`.
-
 ## Folders to check
 
 - `D:\education`.
@@ -104,25 +94,7 @@
 
 - Learn INKscape.
 
-- Complete the definitive BSPWM setup.
-
-	- File maganer.
-
-	- Music player.
-
-	- Video player.
-
-	- Browser.
-
-	- Image viewer.
-
-	- Document viewer.
-
-	- Font.
-
 - Learn Emmet.
-
-- [Daz studio course](https://www.daz3d.com/community/masterclass).
 
 - Finish the habitica terminal client.
 
@@ -136,10 +108,87 @@
 
 	- Hangman.
 
-## Shopping
 
-1. Ryzen 5 9600x.
+3) Classes, structs, records
 
-2. Radeon RX 9070XT.
+record / record struct (immutability-ish, value-like equality)
 
-3. Mousepad.
+Primary constructors (depending on C# version you use)
+
+init setters and immutability patterns
+
+4) Properties, fields, and encapsulation
+
+Auto-properties, getters/setters
+
+readonly, const
+
+Expression-bodied members
+
+5) Collections + LINQ (core workflow)
+
+List<T>, Dictionary<TKey,TValue>, HashSet<T>
+
+IEnumerable<T> vs ICollection<T> vs IQueryable<T> (basic differences)
+
+LINQ: Select, Where, Any, All, First/Single, GroupBy
+
+Deferred execution (super important)
+
+6) Exceptions and error patterns
+
+try/catch/finally, using / await using
+
+When to throw, custom exceptions
+
+“Result” style patterns (when you don’t want exceptions)
+
+7) Generics and constraints
+
+Generic methods/classes
+
+Constraints: where T : class, struct, new(), interface constraints
+
+Variance basics: out, in (useful with interfaces/delegates)
+
+8) Delegates, events, and lambdas
+
+Func<>, Action<>, custom delegates
+
+Events (event keyword), typical event pattern
+
+Lambdas, closures (common gotchas)
+
+9) Async/await (the modern C# must-have)
+
+Task / Task<T> / ValueTask (at least know it exists)
+
+async/await flow, exception behavior
+
+Cancellation: CancellationToken
+
+Common pitfall: blocking with .Result / .Wait()
+
+10) Interfaces, DI, and “how C# apps are structured”
+
+Interfaces + implementations
+
+Dependency Injection basics (especially in ASP.NET Core)
+
+Common lifetimes: transient/scoped/singleton (just concepts)
+
+11) Files, IDisposable, and using
+
+IDisposable and why it exists
+
+using statement vs using declaration
+
+Streams and basic file I/O
+
+12) NuGet + package management
+
+What NuGet is, adding packages
+
+Semantic versioning idea
+
+dotnet restore

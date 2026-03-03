@@ -4,45 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7f33a5b182086848",
+        "id": "78900cc6b25b2c8c",
         "type": "tabs",
         "children": [
           {
-            "id": "1786a049314a5df4",
+            "id": "4a299182c7b8bb37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
+                "file": "scribbles.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "solution_vs_project"
+              "title": "scribbles"
             }
           },
           {
-            "id": "f12dd400db31eeef",
+            "id": "7939f86a8f39d3ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/prompts.md",
+                "file": "personal/systems_engineering/fundametals/programming_languajes/C_sharp/record_and_record_struct.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "prompts"
-            }
-          },
-          {
-            "id": "ffc7ccfac3e7d2d5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "record_and_record_struct"
             }
           }
         ]
@@ -181,8 +171,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -191,8 +181,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "history",
-              "title": "History"
+              "icon": "lucide-ghost",
+              "title": "git-history-view"
             }
           }
         ],
@@ -208,13 +198,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of solution_vs_project"
+              "title": "Outline"
             }
           }
         ]
@@ -237,8 +226,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1786a049314a5df4",
+  "active": "4a299182c7b8bb37",
   "lastOpenFiles": [
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/style_conventions.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/record_and_record_struct.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/class_vs_struct.md",
+    "scribbles.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/pattern_matching.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/null_checks.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/value_types_vs_reference_types.md",
+    "to_export.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/namespaces.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_plus_plus/namespace.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/top-level_statements_vs_program-main.md",
     "personal/prompts.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
     "personal/systems_engineering/LaTeX_cheatsheet.md",
@@ -251,22 +251,11 @@
     "personal/systems_engineering/fundametals/agile/behavior_driven_development/definiton.md",
     "personal/systems_engineering/fundametals/agile/behavior_driven_development/benefits.md",
     "personal/systems_engineering/fundametals/agile/test_driven_development/loop.md",
-    "to_export.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/What_is_NET_and_how_is_it_related_to C_sharp.md",
     "staging/how_to_run_Visual_Studio_projects_in_Visual_Studio_Code.md",
     "personal/systems_engineering/fundametals/SOLID_principles.md",
-    "personal/systems_engineering/fundametals/Git_and_Github/commit_message_naming_conventions.md",
-    "personal/systems_engineering/fundametals/agile/test_driven_development/drawbacks.md",
     "personal/systems_engineering/fundametals/agile/behavior_driven_development",
-    "personal/systems_engineering/fundametals/agile/test_driven_development/benefits.md",
-    "personal/systems_engineering/fundametals/agile/test_driven_development/what_kind_of_testing_is_it.md",
-    "staging/unit_test.md",
-    "personal/systems_engineering/fundametals/agile/test_driven_development/definition.md",
-    "personal/systems_engineering/fundametals/agile/definition.md",
-    "personal/general_job_interview_preparation.md",
     "personal/systems_engineering/fundametals/agile/test_driven_development",
-    "personal/systems_engineering/AI/prompts/what_is_it.md",
-    "personal/systems_engineering/AI/prompts/training_techniques.md",
     "personal/systems_engineering/fundametals/agile",
     "templates",
     "personal/systems_engineering/AI/prompts",
