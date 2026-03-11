@@ -12,28 +12,28 @@ Two common namespace declaration styles exist.
 
 - File-scoped namespace.
 
-```c#
+```cs
 // block-scoped
 namespace myapp.data
 {
-	public class user_repository { }
+	public class UserRepository { }
 }
 
 // file-scoped
 namespace myapp.data;
 
-public class user_repository { }
+public class UserRepository { }
 ```
 
 Types are resolved by name lookup rules. When ambiguities occur, a fully qualified name can be used to select a specific type.
 
-```c#
+```cs
 var t = new system.text.stringbuilder();
 ```
 
 When a conflict exists with a local namespace or type name, the `global::` qualifier can be used to force resolution from the global namespace.
 
-```c#
+```cs
 var t = new global::system.text.stringbuilder();
 ```
 
@@ -41,15 +41,15 @@ var t = new global::system.text.stringbuilder();
 
 They imports a namespace (or a type) into the current scope so that types can be referenced without fully qualifying them. `using` directives are typically placed at the top of a file and they affect name resolution for the file (or for the containing scope, when used inside a namespace block).
 
-```c#
+```cs
 using system;
 using system.collections.generic;
 
 namespace myapp;
 
-public class demo
+public class Demo
 {
-	public list<int> values = new();
+	public list<int> Values = new();
 }
 ```
 
@@ -59,14 +59,14 @@ A few important variants exist.
 
 - Static import, used to reference static members without a type qualifier.
 
-```c#
+```cs
 using text = system.text;
 using static system.math;
 
 namespace myapp;
 
 
-public class demo
+public class Demo
 {
 	public text.stringbuilder sb = new();
 
@@ -85,15 +85,15 @@ using var stream = system.io.file.openread("data.bin");
 
 It applies to the entire compilation unit (the whole project) rather than a single file. it is commonly used for namespaces that appear across many files.
 
-```c#
+```cs
 global using system;
 global using system.collections.generic;
 
 namespace myapp;
 
-public class demo
+public class Demo
 {
-	public list<int> values = new();
+	public list<int> Values = new();
 }
 ```
 

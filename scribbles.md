@@ -111,10 +111,6 @@
 
 3) Classes, structs, records
 
-record / record struct (immutability-ish, value-like equality)
-
-Primary constructors (depending on C# version you use)
-
 init setters and immutability patterns
 
 4) Properties, fields, and encapsulation
