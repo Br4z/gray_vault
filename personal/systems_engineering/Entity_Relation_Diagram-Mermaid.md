@@ -1,4 +1,4 @@
-# Entity Relation Diagram with Mermaid
+# Entity relation diagram with Mermaid
 
 ## Entity definitions
 
