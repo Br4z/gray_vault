@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scribbles.md",
+                "file": "personal/prompts.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "scribbles"
+              "title": "prompts"
             }
           },
           {
@@ -228,18 +228,21 @@
   },
   "active": "4a299182c7b8bb37",
   "lastOpenFiles": [
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/style_conventions.md",
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/record_and_record_struct.md",
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/class_vs_struct.md",
-    "scribbles.md",
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/pattern_matching.md",
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/null_checks.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/value_types_vs_reference_types.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/pattern_matching.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/record_and_record_struct.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/null_checks.md",
+    "personal/systems_engineering/fundametals/algorithms/sorting/insertion.md",
+    "personal/books/index.md",
+    "personal/systems_engineering/fundametals/Git_and_Github/remove_directories_and_files_from_tracking.md",
+    "personal/prompts.md",
+    "scribbles.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/style_conventions.md",
+    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/class_vs_struct.md",
     "to_export.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/namespaces.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_plus_plus/namespace.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/top-level_statements_vs_program-main.md",
-    "personal/prompts.md",
     "personal/systems_engineering/fundametals/programming_languajes/C_sharp/solution_vs_project.md",
     "personal/systems_engineering/LaTeX_cheatsheet.md",
     "personal/systems_engineering/entity_relation_diagram-Mermaid.md",
@@ -251,9 +254,6 @@
     "personal/systems_engineering/fundametals/agile/behavior_driven_development/definiton.md",
     "personal/systems_engineering/fundametals/agile/behavior_driven_development/benefits.md",
     "personal/systems_engineering/fundametals/agile/test_driven_development/loop.md",
-    "personal/systems_engineering/fundametals/programming_languajes/C_sharp/What_is_NET_and_how_is_it_related_to C_sharp.md",
-    "staging/how_to_run_Visual_Studio_projects_in_Visual_Studio_Code.md",
-    "personal/systems_engineering/fundametals/SOLID_principles.md",
     "personal/systems_engineering/fundametals/agile/behavior_driven_development",
     "personal/systems_engineering/fundametals/agile/test_driven_development",
     "personal/systems_engineering/fundametals/agile",
