@@ -14,7 +14,7 @@ It stops evaluation when the left side is `null` and produces `null` instead of 
 
 This is useful for safe chaining.
 
-```c#
+```cs
 int? count = order?.Customer?.Addresses?.Count;
 ```
 
@@ -22,13 +22,13 @@ int? count = order?.Customer?.Addresses?.Count;
 
 It chooses a fallback when the left side is `null`.
 
-```c#
+```cs
 string display = nickname ?? "no nickname";
 ```
 
 A common pattern is combining `?.` and `??`.
 
-```c#
+```cs
 int len = name?.Length ?? 0;
 ```
 
@@ -36,14 +36,14 @@ int len = name?.Length ?? 0;
 
 It assigns only if the left side is `null`.
 
-```c#
+```cs
 cache ??= new Dictionary<string, string>();
 ```
 
 This is often used fo lazy initialization.
 
-```c#
-private List<int>? _items;
+```cs
+List<int>? _items;
 
-public List<int> items => _items ??= new List<int>();
+List<int> items => _items ??= new List<int>();
 ```

@@ -1,5 +1,5 @@
 ---
-reviewed_on: 2026-03-02
+reviewed_on: 2026-03-13
 ---
 
 # `class` vs `struct`
@@ -8,64 +8,42 @@ reviewed_on: 2026-03-02
 
 ## Copy semantics
 
-A `class` is a reference type. Assignment copies the reference, so multiple variables can point to the same instance.
+A `class` is a [[personal/systems_engineering/fundametals/programming_languajes/C_sharp/value_types_vs_reference_types#Reference types|reference type]]. Assignment copies the reference, so multiple variables can point to the same instance.
 
-```c#
+```cs
 class Counter
 {
-	public int value;
+	public int Value;
 }
 
-var a = new Counter { value = 1 };
+var a = new Counter { Value = 1 };
 var b = a;
 
 b.value = 5;
-Console.WriteLine(a.value) // 5
+Console.WriteLine(a.Value) // 5
 ```
 
-A `struct` is a value type. Assignment copies the data, so each variable gets its own copy.
+A `struct` is a [[personal/systems_engineering/fundametals/programming_languajes/C_sharp/value_types_vs_reference_types#Value types|value type]]. Assignment copies the data, so each variable gets its own copy.
 
-```c#
+```cs
 struct Counter
 {
-	public int value;
+	public int Value;
 }
 
-var a = new Counter { value = 1 };
+var a = new Counter { Value = 1 };
 var b = a;
 
 b.value = 5;
-Console.WriteLine(a.value) // 1
+Console.WriteLine(a.Value) // 1
 ```
 
 Passing to methods follows the same rule: structs are copied by default, classes are not. `ref`, `in`, and `out` can change that behavior for structs.
 
-```c#
+```cs
 static void increment(counter c) { c.value++; }
 static void incrementRef(ref counter c) { c.value++; }
 ```
-
-## Allocation and lifetime intuition
-
-Class instances are allocated separately from variables that reference them. Garbage collection later reclaims them when no references remain.
-
-Struct values are stored "inline" wherever the variable lives.
-
-> That means the struct's data is placed directly inside the memory location that holds the variable, instead of the variable holding a reference to a separate object elsewhere.
-
-- Local variables: stored with the method's locals.
-
-- Fields: stored inside the containing object (or inside another struct).
-
-- Array elements: stored inline in the array's backing memory.
-
-This "inline" behavior is a common reason structs can reduce allocations.
-
-## Performance implications
-
-Structs can be faster when they are small, immutable, and frequently created, because allocations and garbage collection pressure can be reduced.
-
-Structs can be slower when they are large or frequently passed around, because copying costs scale with size. in such cases, `in` parameters can reduce copying for read-only usage.
 
 ## When each is typically used
 

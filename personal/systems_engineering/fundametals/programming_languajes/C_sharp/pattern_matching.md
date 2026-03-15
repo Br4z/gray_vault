@@ -8,7 +8,7 @@ reviewed_on: 2026-03-02
 
 They allow both type check and a variable declaration in one step.
 
-```c#
+```cs
 object value = getValue();
 
 if (value is string text)
@@ -19,7 +19,7 @@ if (value is string text)
 
 Null patterns express null checks in a consistent form
 
-```c#
+```cs
 if (value is null)
 {
 	Console.WriteLine("missing");
@@ -33,7 +33,7 @@ if (value is not null)
 
 Nullable value types can be checked and unwrapped in one step.
 
-```c#
+```cs
 int? maybe = getNumber();
 
 if (maybe is int n)
@@ -46,7 +46,7 @@ if (maybe is int n)
 
 They match an exact value.
 
-```c#
+```cs
 if (status is 0)
 {
 	Console.WriteLine("ok");
@@ -57,7 +57,7 @@ if (status is 0)
 
 They match based on object properties, without manual null checks when combined with `is not null` or with nested patterns.
 
-```c#
+```cs
 order? order = getOrder();
 
 if (order is { Customer.Address.City: "bogota" })
@@ -70,7 +70,7 @@ if (order is { Customer.Address.City: "bogota" })
 
 A `switch` can be used to choose behavior based on patterns.
 
-```c#
+```cs
 object value = getValue();
 
 switch (value)
@@ -95,7 +95,7 @@ default:
 
 A `switch` expression produces a value and is often used for concise mappings.
 
-```c#
+```cs
 object value = getValue();
 
 string label = value switch
