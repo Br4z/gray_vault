@@ -4,57 +4,45 @@ reviewed_on: 2026-04-05
 
 # Notes about data model review
 
+- `is_active` is a frequent field across tables, so it need more information in the "notes" section to fit the meaning in each table.
+
 ## High-priority modeling concerns
 
 ### `indicators`
 
-- `module` should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text, because it is a core functional grouping used by the product.
+- `module` is constrained in the DDL, but not in the data dictionary.
 
-	> This was done in the DDL (with a `CHECK` to the 8 approved module values) but not in the documentation.
-
-- `measurement_unit` should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text.
+- `measurement_unit` should be constrained to "number" or "percentage".
 
 - `manual_commentary_required` needs business validation. In the schema it defaults to `true`, and the broader product/business material says expert interpretation remains manual at reporting cut points, so this may not be a real per-indicator distinction unless the business can clearly define exceptions.
 
-- `formula_expression` needs a precise definition: is it only descriptive metadata for documentation/traceability, or is it intended to be executable input for the indicator engine?
+- `formula_expression` needs a note in the data dictionary saying that it will be the textual formula of the Excel dashboard.
 
 ### `workers`
 
+- `discipline` should be constrained to the disciplines of the company.
+
+- `job_title` could also be constrained, but I am not sure.
+
 - Does `is_active` mean that the worker is currently hired or what?
 
-### Shared workforce / denominator modeling
-
-- It must be clearly defined what `workers` represents:
-
-	- The full workforce master.
-
-	- Only workers that appear in operational SST records.
-
-- If `workers` is only a partial operational registry, it cannot be used as the source of truth for headcount.
-
-- If `workers` is intended to represent the full workforce, then `is_active` alone is not enough for historical calculations (we should create more fields in the `indicator_results`).
-
-- The current v4 design already separates this concern through `workforce_snapshots`, which suggests the model is leaning toward **explicit monthly headcount snapshots** rather than deriving headcount from `workers`.
-
 ### Labor calendar
+
+Thinking deeper it does not make sense having this table, I know the this would be in most part for the absenteeism indicator, but the calculation of the days does not require two tables `labor_calendars` and `labor_calendar_days`.
 
 - Since the application scope is Colombia-only, `country_code` may be unnecessary over-modeling.
 
 	If `country_code` remains, the business reason for keeping it should be explicitly documented.
 
-- `source_type` should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text.
+- `source_type` is constrained in the DDL, but not in the data dictionary.
 
-	> This was done in the DDL (`API` or `MANUAL_LOAD`) but not in the documentation. Those options are still pending for validation.
+- `day_type` is constrained in the DDL, but not in the data dictionary.
 
-- `day_type` should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text.
-
-	> This was done in the DDL (`WORKING_DAY`, `HOLIDAY` or `NON_WORKING_DAY`) but not in the documentation.
-
-## Health cases module
+## Health cases
 
 ### `medical_evaluations`
 
-- `evaluation_type` should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text.
+- `evaluation_type` should be constrained.
 
 - The current design of `generates_restriction` and `generates_recommendation` may be too weak to actual store content/detail of the restriction.
 
@@ -62,11 +50,17 @@ reviewed_on: 2026-04-05
 
 ### `health_follow_up_cases`
 
-- `follow_up_status`: should ideally be modeled as a controlled catalog (lookup table / FK) instead of plain text.
+- This part of the model is still highly assumption-based.
 
-	> This was done in the DDL (`OPEN`, `IN_FOLLOW_UP` or `CLOSED`) but not in the documentation. Those options are still pending for validation.
+- `follow_up_status`: is constrained in the DDL, but not in the data dictionary.
 
 - This also needs role clarification: business notes indicate these cases are followed through a medical monitoring process where a doctor tracks the person's evolution, so it is still unclear how much of this process should be operated by SST users versus medical users.
+
+### `health_follow_up_events`
+
+- This part of the model is still highly assumption-based.
+
+- `status_after_follow_up`: is constrained in the DDL, but not in the data dictionary.
 
 ### `occupational_disease_cases`
 
@@ -82,6 +76,8 @@ reviewed_on: 2026-04-05
 
 - Business notes confirm that they currently do **not** have a real rehabilitation matrix because they have not had cases that required it.
 
+- `case_status`: is constrained in the DDL, but not in the data dictionary.
+
 - The expected future logic sounds closer to:
 
 	- One rehabilitation case.
@@ -90,19 +86,57 @@ reviewed_on: 2026-04-05
 
 	- Multiple activities/goals per case.
 
-- The current design with `source_case_type` plus two nullable foreign keys is not protected.
+- Validation of the `source_case_type` with `occupational_accident_id` and `occupational_disease_case_id` is done in the DDL, but not specified in the data dictionary.
 
-	> This was done in the DDL (`CHECK` that forces exactly one source link) but not in the documentation.
+### `rehabilitation_case_activities`
 
-- Even so, the design still deserves validation, because it solves the FK integrity problem but not necessarily possible invalid states.
+- This part of the model is still highly assumption-based.
+
+- `activity_status`: is constrained in the DDL, but not in the data dictionary.
+
+### `health_programs`
+
+- This table is not required for those indicators ("EEV" and "PVE"), they only require specific sections of the work plan.
+
+	- "Estilo de vida y entornos saludables".
+
+	- "Actividades de Promoción y Prevención en Salud".
+
+### `health_program_schedule_entries`
+
+- This table is not required for those indicators ("EEV" and "PVE"), they only require specific activities of the work plan.
+
+	- "Pausas activas".
+	.
+	.
+	.
+	- "Comunicación del material de Uso seguro de morrales".
+
+	- "Ergonomia para la vida (Pausas visuales)".
+
+	- "Entrevista caso centinela".
+	.
+	.
+	.
+	- "Análisis e informe de resultados".
+
+	- "Gestión del estres".
+
+	- "Adaptación al cambio".
+
+	- "Prevención de enfermedades de trasmisión sexual".
+
+	- "Salud visual - pasuas visuales".
+
+	- "Cuidao de tus ojos".
+
+	- "Cuidado de tu piel".
 
 ## Occupational accidents
 
 ### `occupational_accidents`
 
-- `hazard_origin_category` is already constrained in v4, so this note should be reframed as "validate the business categories", not "add restrictions".
-
-	> This was done in the DDL (`'BIOLOGICAL'`, `BIOMECHANICAL`...`OTHER`) but not in the documentation. Those options are still pending for validation.
+- `hazard_origin_category` is constrained in the DDL, but not in the data dictionary.
 
 - The fields `is_fatal`, `lost_days`, and `charged_days` should still be validated with the indicator owners, because the open issue is business relevance/usage, not data type.
 
@@ -120,7 +154,7 @@ reviewed_on: 2026-04-05
 
 - `subject_to_recovery` is a **derived field**, not a user-entered one: incapacities of 3 or more days go into the EPS validation/recovery flow, which supports deriving this flag from business rules rather than asking the user to enter it manually.
 
-	> This would be a annotation, not an error.
+	> This is a annotation, not an error.
 
 - `recovery_request_date` and `radicado_number` should remain open questions until it is confirmed that "FECHA SOLICITUD" and "RADICADO" always belong to the same recovery process being modeled here.
 
@@ -132,7 +166,13 @@ reviewed_on: 2026-04-05
 
 - What does it mean the `status` field exactly what options it can store?
 
+### `work_plan_sections`
+
+- If this models the "PDT" tab, it should also have an "activity" field.
+
 ### `work_plan_activities`
+
+- The activities in the "PDT" tab in Excel are different from those in the "CRON" tab; I think we should have a `work_plan_items` for the first ones, and the actual activities should be those in the "CRON" tab.
 
 - We need validation for the `activity_type`, in the Excel, there are three options:
 
@@ -147,6 +187,76 @@ reviewed_on: 2026-04-05
 - We need to validate the `responsible_party` field, maybe they are a fixed set.
 
 - Again what does `is_active` field mean?
+
+### `work_plan_activity_indicator_map`
+
+- "One activity can feed more than one indicator", that is true if we are talking about the "PDT", but it is false in the "CRON" tab. I think it is better if it represents the second case.
+
+- `contribution_type` is not necessary, all de activities are the same: they worth the same. We just talk in terms of:
+
+	- "No. actividades ejecutadas".
+
+	- "No. actividades programadas".
+
+	- "No. Trabajadores asistentes".
+
+	- "No. Trabajadores invitados".
+
+### `work_plan_schedule_entries`
+
+- If desired we can merge the fields of this table with the `work_plan_activity_indicator_map`, and change the name of the resulting table.
+
+## Continuous improvement and closure
+
+### `acp_findings` and `acp_actions`
+
+This part of the model is still highly assumption-based, but due to complexity I suggest to let this out of the scope (the calculation), we would be receiving the counts directly:
+
+- "No. de acciones preventivas, correctivas y de mejora cerradas".
+
+- "No. de acciones preventivas, correctivas o de mejora generadas".
+
+### `acp_findings`
+
+- `origin_type` and `finding_classification`: are constrained in the DDL, but not in the data dictionary.
+
+### `acp_actions`
+
+- `action_status` and `effectiveness_status`: is constrained in the DDL, but not in the data dictionary.
+
+### `deviation_records`
+
+This part of the model is still highly assumption-based, but due to complexity I suggest to let this out of the scope (the calculation), we would be receiving the counts directly:
+
+- "No. de acciones preventivas, correctivas y de mejora cerradas".
+
+- "No. de acciones preventivas, correctivas o de mejora generadas".
+
+### `change_records` and `change_record_actions`
+
+This part of the model is still highly assumption-based, but due to complexity I suggest to let this out of the scope (the calculation), we would be receiving the counts directly:
+
+- "No. ánálisis de cambios ejecutados".
+
+- "No. ánálisis de cambios generados".
+
+- "No. de actividades realizadas".
+
+- "No. de actividades propuestas".
+
+### `change_records`
+
+- `analysis_status` is constrained in the DDL, but not in the data dictionary.
+
+### `change_record_actions`
+
+- `action_status` is constrained in the DDL, but not in the data dictionary.
+
+## Contractors, providers and facilities
+
+### `contractor_provider_entities`
+
+- `entity_type` is constrained in the DDL, but not in the data dictionary.
 
 ### Additional observation
 

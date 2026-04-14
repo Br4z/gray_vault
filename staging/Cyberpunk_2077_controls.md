@@ -4,78 +4,182 @@ reviewed_on: 2026-03-30
 
 # Cyberpunk 2077 controls
 
-The following list includes the modified bindings; the default bindings are not listed here.
+## Exploration and combat
 
-## Movement
+- Move forward:
 
-- Left: `a`.
+- Move backward:
 
-- Backward: `r`.
+- Move left:
 
-- Right: `s`.
+- Move right:
 
-- Crouch (toggle): `ALT`.
+- Jump / surface:
 
-## Weapons
+- Sprint (hold) / fast swim:
 
-- Cycle weapon: `c`.
+- Sprint (toggle) / fast swim:
 
-- Next weapon: `MOUSE WHEEL UP`.
+- Toggle walking:
 
-- Previous weapon: `MOUSE WHEEL DOWN`.
+- Crouch (hold) / dive:
 
-- Select first weapon: `1`.
+- Crouch (toggle) / dive:
 
-- Select second weapon: `2`.
+## Combat / weapons
 
-- Select third weapon: `3`.
+- Dodge / dash:
 
-- Fist or melee: `4`.
+- Cycle weapon:
 
-- Quick attack: `q`.
+- Next weapon:
 
-- Reload: `TAB`.
+- Previous Weapon:
 
-- Use combat gadget `MMB`.
+- Holster / unholster Weapon:
 
-## UI
+- Select first weapon:
 
-- Cyberware systems: `f`.
+- Select Second Weapon:
 
-- Open phone: `b`.
+- Select third Weapon:
 
-- Skip dialogue: `j`
+- Fists / melee:
 
-- Open photo mode: `k`.
+- Shoot:
+
+- Aim:
+
+- Quick attack:
+
+## General actions
+
+- Drop:
+
+- Reload:
+
+- Cyberware systems:
+
+- Use combat gadget:
+
+- Use consumable:
+
+- Scan (hold):
+
+- Scan (toggle):
+
+- Open phone:
+
+- Radio:
+
+- Open notifications:
+
+- Skip dialogue:
+
+## Menus / UI
+
+- Open photo mode:
+
+- Open main menu:
+
+- Open map:
+
+- Open journal:
+
+- Open character Tab:
+
+- Open crafting Tab:
+
+- Open inventory:
+
+- Primary interaction:
 
 ## Vehicle
 
-- Call vehicle: `d`.
+- Accelerate:
 
-- Turn left: `a`
+- Brake:
 
-- Brake: `r`.
+- Turn left:
 
-- Turn right: `s`.
+- Turn right:
 
-- Exit vehicle: `t`.
+- Lean motorcycle forward / rock stuck vehicle:
 
-- Cycle lights: `d`.
+- Lean motorcycle back / rock stuck vehicle:
 
-- Radio `TAB`
+- Cycle camera:
 
-- Draw / withdraw weapon: `v`.
+- Reverse camera:
+
+- Reset camera:
+
+- Exit vehicle:
+
+- Cycle lights:
+
+- Handbrake:
+
+- Horn:
+
+- Radio:
+
+- Panzer (primary cannon):
+
+- Panzer (missile launcher):
+
+- Panzer (smokescreen):
+
+- Call vehicle:
+
+- CrystalCoat:
+
+- AutoDrive:
+
+## UI panels
+
+- Quickhack details:
+
+- Primary interaction:
+
+- Secondary interaction:
+
+- Previous item:
+
+- Next item:
+
+- Move up:
+
+- Move down:
+
+- Move left:
+
+- Move right:
+
+- Previous item (secondary):
+
+- Next item (secondary):
+
+- Move up (secondary):
+
+- Move down (secondary):
+
+- Move left (secondary):
+
+- Move right (secondary):
 
 ## Braindance
 
-- Fast-forward: `f`.
+- Pause (toggle):
 
-- Rewind: `q`.
+- Fast-forward:
 
-- Analysis mode: `p`.
+- Rewind:
 
-- Restart: `TAB`.
+- Change layer:
 
-## Other
+- Analysis mode:
 
-- Scan (hold): `p`.
+- Restart:
+
+- Exit:

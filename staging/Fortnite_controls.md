@@ -6,29 +6,23 @@ The following list includes the modified bindings; the default bindings are not 
 
 # Fortnite controls
 
-## Movement
+## Battle royale
+
+- Use: `y`.
+
+### Movement
 
 - Crouch: `ALT`.
 
-- Sprint: `SHIFT`.
-
 - Auto run: `z`.
 
-- Left: `a`.
-
-- Backward: `r`.
-
-- Right: `s`.
-
-## Weapon
-
-- Reload: `TAB`.
+### Weapon
 
 - Pickaxe: `MB4`.
 
 - Slot 1: `1`.
 
-- Slot 2: `MOUSE WHEEL UP`.
+- Slot 2: `TAB`.
 
 - Slot 3: `2`.
 
@@ -36,28 +30,46 @@ The following list includes the modified bindings; the default bindings are not 
 
 - Slot 5: `CTRL`.
 
-- Use: `p`.
-
-## Building
+### Building
 
 - Wall: `q`.
 
 - Floor: `c`.
 
-- Stairs: `t`.
+- Stairs: `f`.
 
 - Roof: `MB5`.
 
-- Trap: `4`.
+- Trap: `NUMPAD 5`.
 
-- Edit: `f`.
+- Edit: `e`.
 
-## Communication
+### Communication
 
-- Place marker: `v`.
+- Place marker: `b`.
 
-## Misc
+### Misc
+
+- Emote: `[`.
 
 - Toggle map: `x`.
 
-- Cursor mode: `d`.
+- Cursor mode: `v`.
+
+## Save the world
+
+### Weapon
+
+- Consumible slot: `CTRL`
+
+- Gadget slot 1: `4`.
+
+- Gadget slot 2: `5`.
+
+- Use: `y`.
+
+### Building
+
+- trap picker: `NUMPAD 5`.
+
+- repair / upgrade: `t`.
