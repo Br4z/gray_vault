@@ -96,13 +96,13 @@ reviewed_on: 2026-04-06
 
 8. [ ] Functional programming: Wed 3/11/2026.
 
-9. [ ] GoF design patterns part 1: Thu 3/12/2026.
+9. [x] GoF design patterns part 1: Thu 3/12/2026.
 
-10. [ ] Regular expressions: 
+10. [ ] Regular expressions: Thu 4/16/2026.
 
 11. [ ] UML and relations: Tue 3/24/2026.
 
-12. [ ] GoF design patterns part 2: .
+12. [ ] GoF design patterns part 2: Thu 4/9/2026.
 
 13. [ ] Architecture patterns: Tue 4/7/2026.
 
@@ -178,7 +178,7 @@ reviewed_on: 2026-04-06
 
 10. [x] Advanced concepts of React 19 part 2: Wed 3/25/2026.
 
-11. [ ] Advanced concepts of React 19 part 3: Wed 3/25/2026.
+11. [ ] Advanced concepts of React 19 part 3: Thu 4/16/2026.
 
 12. [ ] React introduction recap: Mon 4/13/2026.
 
@@ -191,4 +191,3 @@ reviewed_on: 2026-04-06
 2. [x] AI in testing, debugging and quality: Fri 3/20/2026.
 
 3. [ ] AI in architecture and production: Mon 4/6/2026.
-
