@@ -48,11 +48,23 @@ reviewed_on: 2026-04-06
 
 6. [ ] GCP: Mon 3/30/2026.
 
-7. [ ] AWS: .
+7. [ ] AWS: Tue 4/14/2026.
 
 8. [x] Docker advanced: Fri 3/27/2026.
 
 9. [x] Networking: Wed 4/1/2026.
+
+10. [ ] Containers orchestration: Tue 4/14/2026.
+
+11. [ ] Service Discovery: .
+
+12. [ ] K8s part 1: Wed 4/15/2026.
+
+13. [ ] Virtualization and containers: Wed 4/8/2026.
+
+14. [ ] K8s part 2: .
+
+15. [ ] CI/CD: Wed 4/15/2026.
 
 ## Quality engineering foundations
 
@@ -96,6 +108,10 @@ reviewed_on: 2026-04-06
 
 14. [ ] Concurrency and parallelism: Tue 4/7/2026.
 
+15. [x] Dynamic programming: Wed 4/8/2026.
+
+	> [snippet](https://codepen.io/carlosgarts/pen/azmjaKe).
+
 ## Backend engineering
 
 1. [x] .NET Versioning and behavior changes, and learning path context: Wed 2/18/2026.
@@ -132,6 +148,10 @@ reviewed_on: 2026-04-06
 
 11. [x] Synchronous vs asynchronous communication: Thu 3/26/2026.
 
+12. [x] Nugets and tools: Wed 4/8/2026.
+
+13. [ ] Asynchronous programing: Mon 4/13/2026.
+
 ## Frontend engineering
 
 1. [x] HTML: Mon 2/23/2026.
@@ -157,6 +177,12 @@ reviewed_on: 2026-04-06
 9. [x] Advanced concepts of React 19 part 1: Thu 3/26/2026.
 
 10. [x] Advanced concepts of React 19 part 2: Wed 3/25/2026.
+
+11. [ ] Advanced concepts of React 19 part 3: Wed 3/25/2026.
+
+12. [ ] React introduction recap: Mon 4/13/2026.
+
+	> [Online slides](https://slides.com/diegop-1/mfe-session-1#).
 
 ## AI applied to the engineering workflow
 
