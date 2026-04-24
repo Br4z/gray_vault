@@ -1,8 +1,8 @@
 ---
-reviewed_on: "2026-04-08"
+reviewed_on: "2026-04-21"
 ---
 
-# Undo last commit with reset
+# Undo last commit
 
 - `git reset --soft HEAD~1`: undo the last commit and keep the changes staged.
 
