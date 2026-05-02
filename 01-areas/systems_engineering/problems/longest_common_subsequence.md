@@ -40,15 +40,15 @@ Two sequences:
 
 1. Sequence $X$ of length $n$.
 
-	$$
-	X = \langle x_1,x_2,\dots,x_n \rangle
-	$$
+    $$
+    X = \langle x_1,x_2,\dots,x_n \rangle
+    $$
 
 2. Sequence $Y$ of length $m$.
 
-	$$
-	Y = \langle y_1,y_2,\dots,y_m \rangle
-	$$
+    $$
+    Y = \langle y_1,y_2,\dots,y_m \rangle
+    $$
 
 ## Output
 

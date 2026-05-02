@@ -33,8 +33,8 @@ It is used when fast lookup by key matters more than keeping items in a simple s
 ```cs
 var ages = new Dictionary<string, int>
 {
-	["ana"] = 20,
-	["luis"] = 25
+    ["ana"] = 20,
+    ["luis"] = 25
 };
 
 ages["maria"] = 22;
@@ -75,7 +75,7 @@ IEnumerable<int> values = new List<int> { 1, 2, 3 };
 
 foreach (var x in values)
 {
-	Console.WriteLine(x);
+    Console.WriteLine(x);
 }
 ```
 
@@ -115,10 +115,10 @@ public record Student(string Name, string City, int Score);
 
 var students = new List<Student>
 {
-	new("ana", "bogota", 90),
-	new("luis", "medellin", 75),
-	new("maria", "bogota", 82),
-	new("sofia", "cali", 95)
+    new("ana", "bogota", 90),
+    new("luis", "medellin", 75),
+    new("maria", "bogota", 82),
+    new("sofia", "cali", 95)
 };
 ```
 
@@ -189,12 +189,12 @@ var byCity = students.GroupBy(s => s.City);
 
 foreach (var group in byCity)
 {
-	Console.WriteLine(group.Key);
+    Console.WriteLine(group.Key);
 
-	foreach (var student in group)
-	{
-		Console.WriteLine(student.Name);
-	}
+    foreach (var student in group)
+    {
+        Console.WriteLine(student.Name);
+    }
 }
 ```
 
@@ -217,7 +217,7 @@ numbers.Add(4);
 
 foreach (var n in evens)
 {
-	Console.WriteLine(n);
+    Console.WriteLine(n);
 }
 // 2
 // 4
@@ -239,8 +239,8 @@ Common examples are:
 
 ```cs
 var snapshot = numbers
-	.Where(n => n % 2 == 0)
-	.ToList();
+    .Where(n => n % 2 == 0)
+    .ToList();
 ```
 
 After that, `snapshot` is an actual list containing the current results.

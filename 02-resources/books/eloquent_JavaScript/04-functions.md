@@ -15,10 +15,10 @@ reviewed_on: "2025-08-31"
 ...In pre-2015 JavaScript, only functions created new scopes, so old-style bindings, created with `var`, are visible throughout the whole function in which they appear (or throughout the global scope, if they are not in a function).
 
 ```javascript
-let x = 10 // global
+let x = 10; // global
 if (true) {
-	let y = 20 // local to block
-	var z = 30 // also global
+    let y = 20; // local to block
+    var z = 30; // also global
 }
 ```
 
@@ -27,10 +27,10 @@ Each scope can "look out" into the scope around it, so `x` is visible inside the
 ## Declaration notation
 
 ```javascript
-console.log("The future says:", future())
+console.log("The future says:", future());
 
 function future() {
-	return "You'll never have flying cars"
+    return "You'll never have flying cars";
 }
 ```
 

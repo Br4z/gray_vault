@@ -12,7 +12,7 @@ El precio debe basarse en el **valor**, no en el costo.
 
 - **No** se debe sumar solo un margen al costo, pues se podrían perder ganancias potenciales.
 
-	> Todo depende de cuánto el cliente esté **dispuesto** a pagar.
+    > Todo depende de cuánto el cliente esté **dispuesto** a pagar.
 
 ### Modelos de ingresos
 
@@ -56,7 +56,7 @@ La estructura de costos debe coincidir con la propuesta de **valor**:
 
 2. Activación: su primera experiencia positiva.
 
-	> **Percibe el valor real** del producto por primera vez.
+    > **Percibe el valor real** del producto por primera vez.
 
 3. Retención: ¿vuelven?
 

@@ -12,5 +12,6 @@
     "downscalePercent": 75
   },
   "newLinkFormat": "absolute",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "useTab": false
 }

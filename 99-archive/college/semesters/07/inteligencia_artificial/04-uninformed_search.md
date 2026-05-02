@@ -11,7 +11,6 @@
 ## Problemas bien definidos
 
 - Estados.
-
     - Como representa el estado actual.
 
     - Cuáles son los posibles estados.
@@ -23,7 +22,6 @@
 - Prueba de meta: permite saber si el estado actual es un estado meta.
 
 - Función costo de una ruta: le asigna un costo a una ruta determinada.
-
     - El costo es la suma de los costos de cada una de las acciones individuales a lo largo de una ruta.
 
     - Se denota por la letra $g$.

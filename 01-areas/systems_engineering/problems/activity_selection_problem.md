@@ -18,11 +18,11 @@ The activities are **sorted in ascending order** by their **finish time**.
 
 - A set of $n$ activities:
 
-	$$
-	S = \{(s_1,f_1),(s_2,f_2),\dots,(s_n,f_n)\}
-	$$
+    $$
+    S = \{(s_1,f_1),(s_2,f_2),\dots,(s_n,f_n)\}
+    $$
 
-	where $s_i$ and $f_i$ are natural numbers and the activities are sorted by $f_i$.
+    where $s_i$ and $f_i$ are natural numbers and the activities are sorted by $f_i$.
 
 ## Output
 

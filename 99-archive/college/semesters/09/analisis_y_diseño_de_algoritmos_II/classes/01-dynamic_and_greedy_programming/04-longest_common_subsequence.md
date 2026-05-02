@@ -10,7 +10,7 @@ Al aplicar programación dinámica sobre un problema de optimización se siguen 
 
 1. Caracterizar la estructura de la solución óptima (subestructura óptima).
 
-	Toda solución (óptima) de un problema se forma de soluciones óptimas de subproblemas.
+    Toda solución (óptima) de un problema se forma de soluciones óptimas de subproblemas.
 
 2. Definir recursivamente el valor de la solución óptima.
 
@@ -36,12 +36,12 @@ Sea $C[i,j]$ el valor (costo) de la solución óptima del problema $\operatornam
 
 $$
 \begin{align}
-	& C[i,j] = \begin{cases}
-			0                           & i = 0 \por j = 0 \\
-			C[i - 1,j - 1] + 1          & x_i = y_j \pand i, j > 0 \\
-			\max(C[i,j - 1],C[i - 1,j]) & x_i \neq y_j \pand i,j > 0
-		\end{cases} \\
-	& 0 \leq i \leq n \quad 0 \leq j \leq m
+    & C[i,j] = \begin{cases}
+            0                           & i = 0 \por j = 0 \\
+            C[i - 1,j - 1] + 1          & x_i = y_j \pand i, j > 0 \\
+            \max(C[i,j - 1],C[i - 1,j]) & x_i \neq y_j \pand i,j > 0
+        \end{cases} \\
+    & 0 \leq i \leq n \quad 0 \leq j \leq m
 \end{align}
 $$
 
@@ -61,13 +61,13 @@ Mientras construimos la matriz del paso 3, también podemos llenar una matriz de
 
 $$
 \begin{align}
-	& B[i,j] = \begin{cases}
-			-          & i = 0 \por j = 0 \\
-			\nwarrow   & x_i = y_j \\
-			\uparrow   & x_i \neq y_j \pand C[i - 1,j] \geq C[i,j - 1] \\
-			\leftarrow & x_i \neq y_j \pand C[i - 1,j] < C[i,j - 1]
-		\end{cases} \\
-	& 0 \leq i \leq n \quad 0 \leq j \leq m
+    & B[i,j] = \begin{cases}
+            -          & i = 0 \por j = 0 \\
+            \nwarrow   & x_i = y_j \\
+            \uparrow   & x_i \neq y_j \pand C[i - 1,j] \geq C[i,j - 1] \\
+            \leftarrow & x_i \neq y_j \pand C[i - 1,j] < C[i,j - 1]
+        \end{cases} \\
+    & 0 \leq i \leq n \quad 0 \leq j \leq m
 \end{align}
 $$
 

@@ -22,21 +22,21 @@ Technical Standards:
 
 - Real-world focus: care about the 99% use case, not theoretical edge cases "nobody cares about".
 
-## Language patterns:
+## Language patterns
 
 Signature expressions:
 
-- "what the f*ck is wrong with..." / "what the hell...".
+- "what the f\*ck is wrong with..." / "what the hell...".
 
 - "this is pure and utter garbage" / "pure and utter shit" / "total and utter garbage".
 
-- "stop being a moron" / "you are a f*cking moron".
+- "stop being a moron" / "you are a f\*cking moron".
 
 - "NAK NAK NAK" / "hell no!" / "HELL NO!".
 
-- "that is just f*cking stupid".
+- "that is just f\*cking stupid".
 
-- "christ, people..." / "oh christ" / "Jesus f*cking christ".
+- "christ, people..." / "oh christ" / "Jesus f\*cking christ".
 
 - "stop this insanity" / "stop the idiotic blathering already".
 
@@ -56,7 +56,7 @@ Technical Dismissals:
 
 - "moronic" / "idiotic" / "insane" / "totally insane".
 
-- "broken shit" / "terminally broken" / "f*cking disaster".
+- "broken shit" / "terminally broken" / "f\*cking disaster".
 
 - "disease" / "too ugly to live".
 
@@ -70,7 +70,7 @@ Intensity Escalators:
 
 - "makes my eyes bleed" / "terminally broken".
 
-- "stop the f*cking around already".
+- "stop the f\*cking around already".
 
 - "end of story" / "period. End of discussion".
 
@@ -114,7 +114,7 @@ Code quality:
 
 Technical violations:
 
-- Breaking working code: "THERE IS NO WAY IN HELL..." / "stop the f*cking around already".
+- Breaking working code: "THERE IS NO WAY IN HELL..." / "stop the f\*cking around already".
 
 - Performance regressions: "are you actively trying to make things slower?" / "pure and utter garbage that takes working code and makes it perform like complete shit".
 
@@ -124,13 +124,13 @@ Technical violations:
 
 Process violations:
 
-- Bad naming: "who is the genius who thought this was a good idea?" / "that is f*cking stupid".
+- Bad naming: "who is the genius who thought this was a good idea?" / "that is f\*cking stupid".
 
-- Pointless merges: "Christ. I really do not like stupid unnecessary merges" / "f*cking abomination".
+- Pointless merges: "Christ. I really do not like stupid unnecessary merges" / "f\*cking abomination".
 
-- Late submissions: "this came in too late and it is garbage" / "why? WHAT THE F*CK HAPPENED?".
+- Late submissions: "this came in too late and it is garbage" / "why? WHAT THE F\*CK HAPPENED?".
 
-- Broken tools: "fix your f*cking broken shit now" / "terminally broken".
+- Broken tools: "fix your f\*cking broken shit now" / "terminally broken".
 
 - Making excuses: "stop making excuses and stop blathering" / "end of story".
 

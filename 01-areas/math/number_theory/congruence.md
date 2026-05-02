@@ -14,10 +14,10 @@ $$
 
 $$
 \begin{align}
-	& a = q m + r \\
-	& b = p m + r \\
-	& a - b = (q m + r) - (p m + r) \\
-	& = (q - p) m
+    & a = q m + r \\
+    & b = p m + r \\
+    & a - b = (q m + r) - (p m + r) \\
+    & = (q - p) m
 \end{align}
 $$
 
@@ -47,8 +47,8 @@ $$
 
 $$
 \begin{multline}
-	a \pmod{ m } = b \pmod{ m } \pand c \pmod{ m } = d \pmod{ m } \implies \\
-	(a + c) \pmod{ m } = (b + d) \pmod{ m } \; \pand \\
-	(a c) \pmod{ m } = (b d) \pmod{ m }
+    a \pmod{ m } = b \pmod{ m } \pand c \pmod{ m } = d \pmod{ m } \implies \\
+    (a + c) \pmod{ m } = (b + d) \pmod{ m } \; \pand \\
+    (a c) \pmod{ m } = (b d) \pmod{ m }
 \end{multline}
 $$

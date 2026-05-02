@@ -26,8 +26,8 @@ Los puntos $t_i$ se llaman **nodos** o **nudos** del spline. El vector $\mathbf{
 
 $$
 \begin{align}
-	& [a,b] = [t_0,t_1) \cup [t_1,t_2) \cup \cdots \cup [t_{ k - 2 },t_{ k - 1 }) \cup [t_{ k - 1 },t_k] \\
-	& = \bigcup_{ i = 0 }^{ k - 1 } [t_i, t_{ i + 1 }]
+    & [a,b] = [t_0,t_1) \cup [t_1,t_2) \cup \cdots \cup [t_{ k - 2 },t_{ k - 1 }) \cup [t_{ k - 1 },t_k] \\
+    & = \bigcup_{ i = 0 }^{ k - 1 } [t_i, t_{ i + 1 }]
 \end{align}
 $$
 
@@ -35,12 +35,12 @@ En cada uno de estos intervalos $k$, queremos definir un polinomio, llamémoslo 
 
 $$
 S(t) =
-	\begin{cases}
-		P_0(t)         & t_0 \leq t \leq t_1 \\
-		P_1(t)         & t_1 \leq t \leq t_2 \\
-		\vdots         & \vdots \\
-		P_{ k - 1 }(t) & t_{ k - 1 } \leq t \leq t_k
-	\end{cases}
+    \begin{cases}
+        P_0(t)         & t_0 \leq t \leq t_1 \\
+        P_1(t)         & t_1 \leq t \leq t_2 \\
+        \vdots         & \vdots \\
+        P_{ k - 1 }(t) & t_{ k - 1 } \leq t \leq t_k
+    \end{cases}
 $$
 
 Para que $S(t)$ sea un spline de grado $n$, se requiere que:
@@ -55,47 +55,47 @@ Existen varios tipos de splines, y cada uno tiene su propio grado de continuidad
 
 1. Cero (escalonado): es el spline más sencillo y conecta los puntos sin suavidad; es decir, simplemente une cada punto con líneas planas o constantes.
 
-	> Funciones constantes por tramos, discontinuas en los nodos.
+    > Funciones constantes por tramos, discontinuas en los nodos.
 
 2. Primer (lineal): Conecta los puntos con segmentos de línea recta. Aunque es más suave que el spline de grado cero, su continuidad es solo en valor, sin suavidad en la pendiente (no es diferenciado).
 
-	> Funciones lineales por tramos, continuas en los nodos pero con derivadas discontinuas.
+    > Funciones lineales por tramos, continuas en los nodos pero con derivadas discontinuas.
 
 3. Segundo (cuadrático): conecta los puntos con curvas suaves que son continuas en valor y en pendiente, logrando un ajuste más preciso y visualmente más agradable.
 
-	> Funciones cuadráticas por tramos, continuas en los nodos con derivadas primeras continuas, pero derivadas segundas discontinuas.
+    > Funciones cuadráticas por tramos, continuas en los nodos con derivadas primeras continuas, pero derivadas segundas discontinuas.
 
 4. Tercer (cúbico): Conecta los puntos con polinomios cúbicos, proporcionando una mayor suavidad al garantizar la continuidad de la función y sus dos primeras derivadas en los nodos.
 
-	> Funciones cúbicas por tramos, continuas en los nodos con derivadas primeras y segundas continuas, pero derivadas terceras discontinuas.
+    > Funciones cúbicas por tramos, continuas en los nodos con derivadas primeras y segundas continuas, pero derivadas terceras discontinuas.
 
 ### Grado cero (escalonado)
 
 $$
 S(x) =
-	\begin{cases}
-		S_0(x) = C_0                 & x \in [t_0, t_1) \\
-		S_1(x) = C_1                 & x \in [t_1, t_2) \\
-		\vdots                       & \vdots \\
-		S_{ k - 1 }(x) = C_{ k - 1 } & x \in [t_{ k - 1 }, t_k]
-	\end{cases}
+    \begin{cases}
+        S_0(x) = C_0                 & x \in [t_0, t_1) \\
+        S_1(x) = C_1                 & x \in [t_1, t_2) \\
+        \vdots                       & \vdots \\
+        S_{ k - 1 }(x) = C_{ k - 1 } & x \in [t_{ k - 1 }, t_k]
+    \end{cases}
 $$
 
 Las características del spline de grado cero son:
 
-5. $S$ es una función constante por partes.
+1. $S$ es una función constante por partes.
 
-6. Discontinua en los nodos $t_i$.
+2. Discontinua en los nodos $t_i$.
 
-7. No tiene derivadas definidas en los nodos.
+3. No tiene derivadas definidas en los nodos.
 
 #### Número total de ecuaciones (grado cero)
 
-8. Interpolación en los nodos ($2 k$ ecuaciones):
+Interpolación en los nodos ($2 k$ ecuaciones):
 
-	1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
+1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
 
-	2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
+2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
 
 En total hay $2 k$ ecuaciones.
 
@@ -107,12 +107,12 @@ Tenemos entonces que el polinomio $S$ en este caso se define como:
 
 $$
 S(x) =
-	\begin{cases}
-		S_0(x) = a_0 + b_0 x                         & x \in [t_0, t_1) \\
-		S_1(x) = a_1 + b_1 x                         & x \in [t_1, t_2) \\
-		\vdots                                       & \vdots \\
-		S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x & x \in [t_{ k - 1 }, t_k]
-	\end{cases}
+    \begin{cases}
+        S_0(x) = a_0 + b_0 x                         & x \in [t_0, t_1) \\
+        S_1(x) = a_1 + b_1 x                         & x \in [t_1, t_2) \\
+        \vdots                                       & \vdots \\
+        S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x & x \in [t_{ k - 1 }, t_k]
+    \end{cases}
 $$
 
 Las características del spline de primer grado son:
@@ -132,10 +132,9 @@ $$
 #### Número total de ecuaciones (primer grado)
 
 - Interpolación en los nodos ($2 k$ ecuaciones):
+    1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
 
-	1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
-
-	2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
+    2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
 
 En total hay $2 k$ ecuaciones.
 
@@ -143,12 +142,12 @@ En total hay $2 k$ ecuaciones.
 
 $$
 S(x) =
-	\begin{cases}
-		S_0(x) = a_0 + b_0 x + c_0 x^2                                    & x \in [t_0, t_1) \\
-		S_1(x) = a_1 + b_1 x + c_1 x^2                                    & x \in [t_1, t_2) \\
-		\vdots                                                            & \vdots \\
-		S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x + c_{ k - 1 } x^2    & x \in [t_{ k - 1 }, t_k]
-	\end{cases}
+    \begin{cases}
+        S_0(x) = a_0 + b_0 x + c_0 x^2                                    & x \in [t_0, t_1) \\
+        S_1(x) = a_1 + b_1 x + c_1 x^2                                    & x \in [t_1, t_2) \\
+        \vdots                                                            & \vdots \\
+        S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x + c_{ k - 1 } x^2    & x \in [t_{ k - 1 }, t_k]
+    \end{cases}
 $$
 
 Las características del spline de segundo grado son:
@@ -165,22 +164,21 @@ La condición de continuidad es:
 
 $$
 \begin{align}
-	S_{ i - 1 }(t_i)       & = S_i(t_i), \\
-	{ S' }_{ i - 1 }(t_i)  & = { S' }_i(t_i)
+    S_{ i - 1 }(t_i)       & = S_i(t_i), \\
+    { S' }_{ i - 1 }(t_i)  & = { S' }_i(t_i)
 \end{align} \quad i = 1,2,\dots,k - 1
 $$
 
 #### Número total de ecuaciones (segundo grado)
 
 1. Interpolación en los nodos ($2 k$ ecuaciones):
+    1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
 
-	1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
-
-	2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
+    2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
 
 2. Continuidad de la primera derivada ($k - 1$ ecuaciones):
 
-	$S_{ i - 1 }'(t_i) = S_i'(t_i)$ (para $i = 1,2,\dots,k - 1$).
+    $S_{ i - 1 }'(t_i) = S_i'(t_i)$ (para $i = 1,2,\dots,k - 1$).
 
 En total hay $2 k + (k - 1) = 3 k - 1$ ecuaciones.
 
@@ -188,12 +186,12 @@ En total hay $2 k + (k - 1) = 3 k - 1$ ecuaciones.
 
 $$
 S(x) =
-	\begin{cases}
-		S_0(x) = a_0 + b_0 x + c_0 x^2 + d_0 x^3                                         & x \in [t_0, t_1) \\
-		S_1(x) = a_1 + b_1 x + c_1 x^2 + d_1 x^3                                         & x \in [t_1, t_2) \\
-		\vdots                                                                           & \vdots \\
-		S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x + c_{ k - 1 } x^2 + d_{ k - 1 } x^3 & x \in [t_{ k - 1 }, t_k]
-	\end{cases}
+    \begin{cases}
+        S_0(x) = a_0 + b_0 x + c_0 x^2 + d_0 x^3                                         & x \in [t_0, t_1) \\
+        S_1(x) = a_1 + b_1 x + c_1 x^2 + d_1 x^3                                         & x \in [t_1, t_2) \\
+        \vdots                                                                           & \vdots \\
+        S_{ k - 1 }(x) = a_{ k - 1 } + b_{ k - 1 } x + c_{ k - 1 } x^2 + d_{ k - 1 } x^3 & x \in [t_{ k - 1 }, t_k]
+    \end{cases}
 $$
 
 Las características del spline de segundo grado son:
@@ -210,9 +208,9 @@ La condición de continuidad es:
 
 $$
 \begin{align}
-	S_{ i - 1 }(t_i)       & = S_i(t_i), \\
-	{ S' }_{ i - 1 }(t_i)  & = { S' }_i(t_i), \\
-	{ S'' }_{ i - 1 }(t_i) & = { S'' }_i(t_i)
+    S_{ i - 1 }(t_i)       & = S_i(t_i), \\
+    { S' }_{ i - 1 }(t_i)  & = { S' }_i(t_i), \\
+    { S'' }_{ i - 1 }(t_i) & = { S'' }_i(t_i)
 \end{align} \quad i = 1,2,\dots,k - 1
 $$
 
@@ -225,21 +223,20 @@ Para determinar unívocamente el spline cúbico, es necesario añadir dos condic
 #### Número total de ecuaciones (tercer grado)
 
 1. Interpolación en los nodos ($2 k$ ecuaciones):
+    1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
 
-	1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
-
-	2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
+    2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
 
 2. Continuidad de la primera derivada ($k - 1$ ecuaciones):
 
-	$S_{ i - 1 }'(t_i) = S_i'(t_i)$ (para $i = 1,2,\dots,k - 1$).
+    $S_{ i - 1 }'(t_i) = S_i'(t_i)$ (para $i = 1,2,\dots,k - 1$).
 
 3. Continuidad de la segunda derivada ($k - 1$ ecuaciones):
 
-	$S_{ i - 1 }''(t_i) = S_i''(t_i)$ (para $i = 1,2,\dots,k - 1$).
+    $S_{ i - 1 }''(t_i) = S_i''(t_i)$ (para $i = 1,2,\dots,k - 1$).
 
 4. Condiciones de frontera (2 ecuaciones):
 
-	$S_0''(t_0) = 0$ y $S_{ k - 1 }''(t_k) = 0$
+    $S_0''(t_0) = 0$ y $S_{ k - 1 }''(t_k) = 0$
 
 En total hay $2 k + (k - 1) + (k - 1) + 2 = 4 k$ ecuaciones.

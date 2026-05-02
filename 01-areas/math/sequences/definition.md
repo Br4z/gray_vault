@@ -10,7 +10,7 @@ A numerical sequence is formalized as an application of the natural numbers on a
 
 $$
 \begin{array}{rccl}
-	a: & \mathbb { N } & \longrightarrow & X \\
-	   &  n            & \longmapsto     & a_{ n }
+    a: & \mathbb { N } & \longrightarrow & X \\
+       &  n            & \longmapsto     & a_{ n }
 \end{array}
 $$

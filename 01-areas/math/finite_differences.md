@@ -34,22 +34,22 @@ Let's expand the Taylor serie of $x_i \pm \Delta{ x }$ around $x_i$.
 
 - $y(x_i + \Delta{ x })$ $(1)$.
 
-	$$
-	y(x_i) + y'(x_i) \Delta{ x } + \frac{ y''(x_i) \Delta{ x }^2 }{ 2 } + \frac{ y'''(x_i) \Delta{ x }^3 }{ 3 } + \dots
-	$$
+    $$
+    y(x_i) + y'(x_i) \Delta{ x } + \frac{ y''(x_i) \Delta{ x }^2 }{ 2 } + \frac{ y'''(x_i) \Delta{ x }^3 }{ 3 } + \dots
+    $$
 
 - $y(x_i - \Delta{ x })$ $(2)$.
 
-	$$
-	y(x_i) - y'(x_i) \Delta{ x } + \frac{ y''(x_i) \Delta{ x }^2 }{ 2 } - \frac{ y'''(x_i) \Delta{ x }^3 }{ 3 } + \dots
-	$$
+    $$
+    y(x_i) - y'(x_i) \Delta{ x } + \frac{ y''(x_i) \Delta{ x }^2 }{ 2 } - \frac{ y'''(x_i) \Delta{ x }^3 }{ 3 } + \dots
+    $$
 
 Subtracting $(2)$ from $(1)$.
 
 $$
 \begin{align}
-	& y(x_i + \Delta{ x }) - y(x_i - \Delta{ x }) = 2 y'(x_i) \Delta{ x } + O(\Delta{ x }^3) \\
-	& y'(x_i) = \frac{ y(x_i + \Delta{ x }) - y(x_i - \Delta{ x }) }{ 2 \Delta{ x } }
+    & y(x_i + \Delta{ x }) - y(x_i - \Delta{ x }) = 2 y'(x_i) \Delta{ x } + O(\Delta{ x }^3) \\
+    & y'(x_i) = \frac{ y(x_i + \Delta{ x }) - y(x_i - \Delta{ x }) }{ 2 \Delta{ x } }
 \end{align}
 $$
 
@@ -59,7 +59,7 @@ Adding $(1)$ and $(2)$.
 
 $$
 \begin{align}
-	& y(x_i + \Delta{ x }) + y(x_i - \Delta{ x }) = 2 y(x_i) + y''(x_i) \Delta{ x }^2 + O(\Delta{ x }^3) \\
-	& y''(x_i) = \frac{ y(x_i + \Delta{ x }) - 2 y(x_i) + y(x_i - \Delta{ x }) }{ \Delta{ x }^2 }
+    & y(x_i + \Delta{ x }) + y(x_i - \Delta{ x }) = 2 y(x_i) + y''(x_i) \Delta{ x }^2 + O(\Delta{ x }^3) \\
+    & y''(x_i) = \frac{ y(x_i + \Delta{ x }) - 2 y(x_i) + y(x_i - \Delta{ x }) }{ \Delta{ x }^2 }
 \end{align}
 $$

@@ -16,9 +16,9 @@ La idea clave es representar las relaciones de incidencia ($\text{vértices} \ti
 
 $$
 M[v,e] = \begin{cases}
-	& 1 & \text{si el vértice $v$ es incidente con la arista $e$} \\
-	& 0 & \text{si el vértice $v$ no es incidente con la arista $e$}
-	\end{cases}
+    & 1 & \text{si el vértice $v$ es incidente con la arista $e$} \\
+    & 0 & \text{si el vértice $v$ no es incidente con la arista $e$}
+    \end{cases}
 $$
 
 En esta matriz de incidencia, el número de 1's en cada fila representa el grado del vértice y el número de 1's en cada columna es 2.
@@ -29,20 +29,20 @@ Agregamos una fila por cada arista, con 1's en la diagonal (sin tener en cuenta 
 
 $$
 \begin{array}{|l|c|c|c|c|}
-	\hline \\
-	             & e_1    & e_2    & \dots  & e_\card{ E } \\
-	\hline \\
-	v_1          & M[1,1]              & M[1,2]                       & \dots  & M[1,\card{ E }] \\
-	v_2          & M[2,1]              & M[2,2]              & \dots  & M[2,\card{ E }] \\
-	\vdots       & \vdots              & \vdots              & \vdots & \vdots \\
-	v_\card{ V } & M[2,1]              & M[2,2]              & \dots  & M[\card{ V },\card{ E }] \\
-	\hline \\
-	e_1          & M[\card{ V } + 1,1] & M[\card{ V } + 1,2] & \dots  & M[\card{ V } + 1,\card{ E }] \\
-	e_2          & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + 2,\card{ E }] \\
-	\vdots       & \vdots              & \vdots              & \vdots & \vdots \\
-	e_\card{ E } & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + \card{ E },\card{ E }] \\
-	             & 2                   & 2                   & \dots  & 2 \\
-	\hline
+    \hline \\
+                 & e_1    & e_2    & \dots  & e_\card{ E } \\
+    \hline \\
+    v_1          & M[1,1]              & M[1,2]                       & \dots  & M[1,\card{ E }] \\
+    v_2          & M[2,1]              & M[2,2]              & \dots  & M[2,\card{ E }] \\
+    \vdots       & \vdots              & \vdots              & \vdots & \vdots \\
+    v_\card{ V } & M[2,1]              & M[2,2]              & \dots  & M[\card{ V },\card{ E }] \\
+    \hline \\
+    e_1          & M[\card{ V } + 1,1] & M[\card{ V } + 1,2] & \dots  & M[\card{ V } + 1,\card{ E }] \\
+    e_2          & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + 2,\card{ E }] \\
+    \vdots       & \vdots              & \vdots              & \vdots & \vdots \\
+    e_\card{ E } & M[\card{ V } + 2,1] & M[\card{ V } + 2,2] & \dots  & M[\card{ V } + \card{ E },\card{ E }] \\
+                 & 2                   & 2                   & \dots  & 2 \\
+    \hline
 \end{array}
 $$
 
@@ -60,15 +60,15 @@ Todo lo descrito anteriormente es resumido en lo siguiente:
 
 1. Por cada vértice $v \in V$ creamos un $s_v \in S$, tal que
 
-	$$
-	s_v = 4^\card{ E } + \sum_{ i = 0 }^{ \card{ E } - 1 } 4^i * M[v,e_{ \card{ E } - i }]
-	$$
+    $$
+    s_v = 4^\card{ E } + \sum_{ i = 0 }^{ \card{ E } - 1 } 4^i * M[v,e_{ \card{ E } - i }]
+    $$
 
 2. Por cada arista $e_i \in E$ creamos un $s_{ e_i } \in S$ tal que
 
-	$$
-	s_{ e_i } = 4^{ i - 1}
-	$$
+    $$
+    s_{ e_i } = 4^{ i - 1}
+    $$
 
 Por lo tanto
 
@@ -78,11 +78,11 @@ $$
 
 - $k * 4^\card{ E }$: obligar a que cualquier posible solución se seleccione.
 
-	> Exactamente, $k$ número de vértices.
+    > Exactamente, $k$ número de vértices.
 
 - $\sum_{ i = 0 }^{ \card{ E } - 1 } 2 * 4^i$: garantiza que el conjunto de $k$ vértices elegidos sea un **cubrimiento** de vértices válido.
 
-	> Si una arista no estuviera cubierta por ningún vértice seleccionado, sería imposible que la suma de los dígitos en su columna llegara a 2.
+    > Si una arista no estuviera cubierta por ningún vértice seleccionado, sería imposible que la suma de los dígitos en su columna llegara a 2.
 
 ### Complejidad
 

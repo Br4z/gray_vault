@@ -38,10 +38,10 @@ Similarly, `clientWidth` and `clientHeight` give you the size of the space **ins
 
 $$
 \begin{align}
-	& \text{offsetWidth} = \text{content width} + \text{left/right padding} + \text{left/right border} \\
-	& \text{offsetHeight} = \text{content height} + \text{top/bottom padding} + \text{top/bottom border} \\
-	& \text{clientWidth} = \text{content width} + \text{left/right padding} \\
-	& \text{clientHeight} = \text{content height} + \text{top/bottom padding} 
+    & \text{offsetWidth} = \text{content width} + \text{left/right padding} + \text{left/right border} \\
+    & \text{offsetHeight} = \text{content height} + \text{top/bottom padding} + \text{top/bottom border} \\
+    & \text{clientWidth} = \text{content width} + \text{left/right padding} \\
+    & \text{clientHeight} = \text{content height} + \text{top/bottom padding}
 \end{align}
 $$
 

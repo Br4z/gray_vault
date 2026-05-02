@@ -14,9 +14,9 @@ $$
 
 $$
 \begin{align}
-	& \sum_{ k = 1 }^n (a_k + b_k) + \sum_{ k = 1 }^n c_k \\
-	& = \sum_{ k = 1 }^n a_k + \sum_{ k = 1 }^n (b_k + c_k) \\
-	& = \sum_{ k = 1 }^n (a_k + b_k + c_k)
+    & \sum_{ k = 1 }^n (a_k + b_k) + \sum_{ k = 1 }^n c_k \\
+    & = \sum_{ k = 1 }^n a_k + \sum_{ k = 1 }^n (b_k + c_k) \\
+    & = \sum_{ k = 1 }^n (a_k + b_k + c_k)
 \end{align}
 $$
 

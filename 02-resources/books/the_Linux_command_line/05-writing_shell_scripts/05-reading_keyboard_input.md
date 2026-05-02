@@ -8,7 +8,7 @@ reviewed_on: "2025-07-30"
 
 It is a built-in command used to read a single line of standard input. This command can be used to read keyboard input or, when redirection is employed, a line of data from a file.
 
-```
+```text
 read [-OPTIONS] [VARIABLE...]
 ```
 
@@ -17,17 +17,17 @@ read [-OPTIONS] [VARIABLE...]
 If `read` receive fewer than the expected number, the extra variables are empty, while an excessive amount of input results in the final variable containing all of the extra input.
 
 | option            | description                                                                                                          |
-| ----------------- |:-------------------------------------------------------------------------------------------------------------------- |
-| `-a <array_name>` | assign the input into an array *array_name*.                                                                         |
-| `-d <delimiter>`  | the first character in the string *delimiter* is used to indicate the end of input, rather than a newline character. |
+| ----------------- | :------------------------------------------------------------------------------------------------------------------- |
+| `-a <array_name>` | assign the input into an array _array_name_.                                                                         |
+| `-d <delimiter>`  | the first character in the string _delimiter_ is used to indicate the end of input, rather than a newline character. |
 | `-e`              | use Readline to handle input. This permits input editing in the same manner as the command line.                     |
-| `-i <string>`     | use *string* as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |
-| `-n <n>`          | read *n* character of input, rather than an entire line.                                                             |
-| `-p <prompt>`     | display a prompt of input using the string *prompt*.                                                                 |
+| `-i <string>`     | use _string_ as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |
+| `-n <n>`          | read _n_ character of input, rather than an entire line.                                                             |
+| `-p <prompt>`     | display a prompt of input using the string _prompt_.                                                                 |
 | `-r`              | raw mode. Do not interpret backslash characters as escapes.                                                          |
 | `-s`              | silent mode. Do not echo characters to display as they are typed.                                                    |
-| `-t <n>`          | timeout. Terminate the input after *n* seconds. `read` return a non-zero exit status if an input times out.          |
-| `-u <fd>`         | use input from file descriptor *fd*, rather than standard input.                                                     |
+| `-t <n>`          | timeout. Terminate the input after _n_ seconds. `read` return a non-zero exit status if an input times out.          |
+| `-u <fd>`         | use input from file descriptor _fd_, rather than standard input.                                                     |
 
 ### `IFS`
 
@@ -44,16 +44,16 @@ read -r -p "Enter a username > " user_name
 file_info="$(grep "^$user_name:" $FILE)"
 
 if [[ -n "$file_info" ]]; then
-	IFS=":" read -r user pw uid gid name home shell <<< "$file_info" 
-	echo "User =      \"$user\"" 
-	echo "UID =       \"$uid\"" 
-	echo "GID =       \"$gid\"" 
-	echo "Full name = \"$name\"" 
-	echo "Home dir. = \"$home\"" 
-	echo "Shell =     \"$shell\"" 
+    IFS=":" read -r user pw uid gid name home shell <<< "$file_info"
+    echo "User =      \"$user\""
+    echo "UID =       \"$uid\""
+    echo "GID =       \"$gid\""
+    echo "Full name = \"$name\""
+    echo "Home dir. = \"$home\""
+    echo "Shell =     \"$shell\""
 else
-	echo "Error: no such user \"$user_name\"" >&2
-	exit 1
+    echo "Error: no such user \"$user_name\"" >&2
+    exit 1
 fi
 ```
 
@@ -68,13 +68,13 @@ Subshell in Unix-like systems create copies of the environment for the process t
 ## Validating input
 
 ```bash
-#!/bin/bash 
+#!/bin/bash
 
-invalid_input () { 
-	echo "Error: invalid input \"$REPLY\"" >&2 
-	exit 1 
-} 
-read -r -p "Enter a single item > " 
+invalid_input () {
+    echo "Error: invalid input \"$REPLY\"" >&2
+    exit 1
+}
+read -r -p "Enter a single item > "
 ```
 
 ### Empty

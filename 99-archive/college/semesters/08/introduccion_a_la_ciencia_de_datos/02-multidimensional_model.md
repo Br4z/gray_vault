@@ -37,14 +37,14 @@ Contienen **atributos descriptivos** que proveen contexto para las mediciones al
 ### Operacional vs. dimensional
 
 |    característica     |      operacional       | business intelligence (dimensional) |
-|:---------------------:|:----------------------:|:------------------------------------:|
-|       enfoque.        |     actualización.     |              consulta.               |
-|     redundancia.      |         baja.          |                alta.                 |
-|   actualizaciones.    |     gran cantidad.     |            baja cantidad.            |
-|      estructura.      | altamente normalizada. |      altamente desnormalizada.       |
-| tiempos de respuesta. |  segundos o inferior.  |      segundos, minutos, horas.       |
-|   datos agregados.    |     baja cantidad.     |            gran cantidad.            |
-|   datos derivados.    |     baja cantidad.     |            gran cantidad.            |
+| :-------------------: | :--------------------: | :---------------------------------: |
+|       enfoque.        |     actualización.     |              consulta.              |
+|     redundancia.      |         baja.          |                alta.                |
+|   actualizaciones.    |     gran cantidad.     |           baja cantidad.            |
+|      estructura.      | altamente normalizada. |      altamente desnormalizada.      |
+| tiempos de respuesta. |  segundos o inferior.  |      segundos, minutos, horas.      |
+|   datos agregados.    |     baja cantidad.     |           gran cantidad.            |
+|   datos derivados.    |     baja cantidad.     |           gran cantidad.            |
 
 ### Surrogate keys (claves suplentes)
 

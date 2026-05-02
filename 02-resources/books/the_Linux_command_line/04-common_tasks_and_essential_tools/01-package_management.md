@@ -26,7 +26,7 @@ Programs are seldom "stand alone"; rather, they rely on the presence of other so
 ### High and low level package tools
 
 - Low-level tools: that handle tasks such as installing and removing
-package files.
+  package files.
 
 - High-level tools that perform metadata searching and dependency resolution.
 

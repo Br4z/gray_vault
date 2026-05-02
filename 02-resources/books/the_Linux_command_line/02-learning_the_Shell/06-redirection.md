@@ -56,9 +56,9 @@ If we want to append redirected output to a file instead of overwriting the file
 
 If we want to treat a sequence of commands as a single entity, we can do so by creating a **group command**. To do this, we surround the sequence with braces.
 
-```
+```bash
 { command_1; command_2; command_3; } > logfile.txt
-````
+```
 
 This way the shell will consider it as a single command in terms of redirection.
 
@@ -80,26 +80,26 @@ ls -l /bin/usr 2> ls-error.txt
 
 ### Redirecting standard output and standard error to one file
 
-```
-<command> > <filename> 2>&1
-<command> >> <filename> 2>&1
+```bash
+command > filename 2>&1
+command >> filename 2>&1
 ```
 
 > The order of the redirections is significant.
 
 Recent versions of `bash` provide a second, more streamlined method for performing this combined redirection.
 
-```
-<command> &> <filename>
-<command> &>> <filename>
+```bash
+command &> filename
+command &>> filename
 ```
 
 ### Disposing of unwanted output
 
 ...The system provides a way to do this by redirecting output to a special file called `/dev/null`. This file is a system, often referred to as a **bit bucket**, which accepts input and does nothing with it. To suppress error messages from a command, we do this:
 
-```
-<command> 2> /dev/null
+```bash
+command 2> /dev/null
 ```
 
 ## Redirecting standard input
@@ -108,7 +108,7 @@ Recent versions of `bash` provide a second, more streamlined method for performi
 
 It reads one or more files and copies them to standard output.
 
-```
+```text
 cat [FILE...]
 ```
 
@@ -156,8 +156,8 @@ ls -l /usr/bin | less
 
 ### Filters
 
-```
-<command> | <filters> | <command>
+```bash
+command | filters | command
 ```
 
 ...Filters take input, change it somehow, and then output it...
@@ -202,7 +202,7 @@ ls /bin /usr/bin | sort | uniq | wc -l # See the number of items we have in our 
 
 #### `grep` print lines matching a pattern
 
-```
+```text
 grep PATTERN [FILE...]
 ```
 
@@ -240,7 +240,7 @@ The `head` command prints the first 10 lines of a file, and the `tail` command p
 
 > The number of lines can be adjusted with the `-n` option.
 
-The `-n` option when used with head allows a negative value which causes all but the last *n* lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first *n* lines to be output.
+The `-n` option when used with head allows a negative value which causes all but the last _n_ lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first _n_ lines to be output.
 
 `tail` has an option that allows you to view the file in real time (`-f`). This is incredibly useful when you are monitoring log files.
 

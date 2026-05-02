@@ -29,7 +29,6 @@ var p1 = new Person("ana", 20);
 var p2 = p1 with { age = 21 }; // copy with one change
 ```
 
-
 This `with` expression creates a new record instance with selected properties changed, leaving the original unchanged.
 
 ## `record struct`

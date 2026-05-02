@@ -8,7 +8,7 @@ reviewed_on: "2025-07-10"
 
 The name "grep" is actually derived from the phrase "global regular expression print"...`grep` searches text files for the occurrence text matching a specified regular expression and outputs any line containing a match to standard output.
 
-```
+```text
 grep [OPTIONS] REGEX [FILE...]
 ```
 
@@ -101,13 +101,13 @@ Back when Unix was first developed, it knew only about ASCII characters
 
 Based on this arrangement, systems using ASCII used a **collation order** that looks like this:
 
-```
+```text
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 ```
 
 This differs from proper dictionary order, which is like this:
 
-```
+```text
 aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ
 ```
 
@@ -123,14 +123,14 @@ With this setting, POSIX-compliant applications will use a dictionary collation 
 To partially work around this problem, the POSIX standard includes a number of charac­ter classes that provide useful ranges of characters.
 
 | character class | description                                                                                                                                 |
-|:---------------:|:------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------: | :------------------------------------------------------------------------------------------------------------------------------------------ |
 |   `[:alnum:]`   | alphanumeric characters. In ASCII, equivalent to `[A-Za-z0-9]`.                                                                             |
 |   `[:word:]`    | the same as `[:alnum:]`, with the addition of the underscore (`_`) character.                                                               |
 |   `[:alpha:]`   | the alphabetic characters. In ASCII, equivalent to `[A-Za-z]`.                                                                              |
 |   `[:blank:]`   | includes the space and tab characters.                                                                                                      |
-|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters 0 through 31 and 127.                                                              |
-|   `[:digit:]`   | the numerals 0 through 9.                                                                                                               |
-|   `[:graph:]`   | visible characters. In ASCII, it includes character 33 through 126.                                                                     |
+|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters 0 through 31 and 127.                                                                    |
+|   `[:digit:]`   | the numerals 0 through 9.                                                                                                                   |
+|   `[:graph:]`   | visible characters. In ASCII, it includes character 33 through 126.                                                                         |
 |   `[:lower:]`   | lowercase letters.                                                                                                                          |
 |   `[:punct:]`   | punctuation characters.                                                                                                                     |
 |   `[:print:]`   | printable characters. All the characters in `[:graph:]` plus the space character.                                                           |
@@ -221,13 +221,13 @@ echo "abc  d" | grep -E '^([[:alpha:]]+ ?)+$'
 The `{` and `}` metacharacters are used to express minimum and maximum numbers of re­quired matches.
 
 |  specifier  | meaning                                                                               |
-|:-----------:|:------------------------------------------------------------------------------------- |
-|   `{<n>}`   | math the preceding element if it occurs exactly *n* times.                            |
-| `{<n>,<m>}` | math the preceding element if it occurs at least *n* time but no more than *m* times. |
-|  `{<n>,}`   | match the preceding element if it occurs *n* or more times.                           |
-|  `{,<m>}`   | math the preceding element if it occur no more than *m* times.                        |
+| :---------: | :------------------------------------------------------------------------------------ |
+|   `{<n>}`   | math the preceding element if it occurs exactly _n_ times.                            |
+| `{<n>,<m>}` | math the preceding element if it occurs at least _n_ time but no more than _m_ times. |
+|  `{<n>,}`   | match the preceding element if it occurs _n_ or more times.                           |
+|  `{,<m>}`   | math the preceding element if it occur no more than _m_ times.                        |
 
-```
+```text
 ^\(?[0-9][0-9][0-9]\)?  [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$
 ^\(?[0-9]{3}\)?  [0-9]{3}-[0-9]{4}$
 ```
@@ -262,7 +262,7 @@ find . -regex '.*[^-_./0-9a-zA-Z].*'
 
 `less` supports extended regular expressions, but `vim` does not.
 
-```
+```text
 ^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$
 /([0-9]\{3\}) [0-9]\{3\}-[0-9]\{4\}
 ```

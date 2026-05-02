@@ -34,15 +34,15 @@ $$
 
 - Maximum: when the probability of the two classes is the same.
 
-	$$
-	\text{entropy}_\text{max} = -0.5 \log_2 0.5 - (-0.5 \log_2 0.5) = 1
-	$$
+    $$
+    \text{entropy}_\text{max} = -0.5 \log_2 0.5 - (-0.5 \log_2 0.5) = 1
+    $$
 
 - Minimum (**pure node**): when all the probability is in one class.
 
-	$$
-	\text{entropy}_\text{min} = -1 \log_2 1 = 0
-	$$
+    $$
+    \text{entropy}_\text{min} = -1 \log_2 1 = 0
+    $$
 
 The optimal split is obtained by choosing the **feature** with **minimum entropy**.
 

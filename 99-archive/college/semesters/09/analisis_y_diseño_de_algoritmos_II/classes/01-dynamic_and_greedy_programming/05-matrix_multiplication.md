@@ -20,9 +20,9 @@ Sea $m[i,j]$ el mínimo número de multiplicaciones necesarias para calcular $A_
 
 $$
 m[i,j] = \begin{cases}
-		0                                                                 & i = j \\
-		\min_{ i \leq k < j }\{m[i,k] + m[k + 1,j] + p_{ i - 1 } p_k p_j\} & i < j
-	\end{cases}
+        0                                                                 & i = j \\
+        \min_{ i \leq k < j }\{m[i,k] + m[k + 1,j] + p_{ i - 1 } p_k p_j\} & i < j
+    \end{cases}
 $$
 
 ## Paso 3

@@ -64,7 +64,7 @@ ls -l foo.txt
 The first 10 characters of the listing are the **file attributes**. The first of these characters is the **file type**...
 
 | attribute | file type                  |
-|:---------:|:-------------------------- |
+| :-------: | :------------------------- |
 |    `-`    | regular file               |
 |    `d`    | directory                  |
 |    `l`    | symbolic link              |
@@ -74,7 +74,7 @@ The first 10 characters of the listing are the **file attributes**. The first of
 The remaining 9 characters of the file attributes, called the **file mode**, represent the read, write, and execute permissions for the file's owner, the file's group owner, and everybody else.
 
 | attribute | file                                                                                                                                                                                             | directories                                                                                                                |
-|:---------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------------------------------------------------------------------------------------------- |
+| :-------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 |    `r`    | allows a file to be opened and read.                                                                                                                                                             | allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set. |
 |    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.                  |
 |    `x`    | allows a file to be treated as a program and executed.                                                                                                                                           | allows a directory to be entered.                                                                                          |
@@ -86,7 +86,7 @@ It is used to change the mode (permissions) of a file or directory, it supports 
 > For obvious reasons, only the file's owner or the superuser can do this.
 
 | octal | binary | file mode |
-|:-----:|:------:|:---------:|
+| :---: | :----: | :-------: |
 |   0   |  000   |   `---`   |
 |   1   |  001   |   `--x`   |
 |   2   |  010   |   `-w-`   |
@@ -114,7 +114,7 @@ ls -l foo.txt
 - What permission will be set.
 
 | symbol | meaning                                                      |
-|:------:|:------------------------------------------------------------ |
+| :----: | :----------------------------------------------------------- |
 |  `u`   | short for "user" but means the file or directory owner.      |
 |  `g`   | group owner.                                                 |
 |  `o`   | short for "others" but means world.                          |
@@ -150,7 +150,7 @@ ls -l foo.txt
 ```
 
 |    description     |    permissions    |
-|:------------------:|:-----------------:|
+| :----------------: | :---------------: |
 | original file mode | `--- rw- rw- rw-` |
 |        mask        | `000 000 000 010` |
 |       result       | `--- rw- rw- r--` |
@@ -163,21 +163,21 @@ A AND operation is performed between the "original file mode" and NOT "mask" (wi
 
 - setuid bit (octal 4000): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
 
-	This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
+    This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
 
-	Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
+    Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
 
 - setgid bit (octal 2000): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
 
-	If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
+    If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
 
-	This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
+    This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
 
 - sticky bit (octal 1000): this is a holdover from ancient Unix, where it was possible to mark an executable file as "not swappable".
 
-	Linux ignores the sticky bit, but if applied to a directory, it prevents users from deleting or renaming files unless the user is either the owner of the directory, the owner of the file, or the superuser.
+    Linux ignores the sticky bit, but if applied to a directory, it prevents users from deleting or renaming files unless the user is either the owner of the directory, the owner of the file, or the superuser.
 
-	> This is often used to control access to a shared directory, such as `/tmp`.
+    > This is often used to control access to a shared directory, such as `/tmp`.
 
 ```bash
 chmod u+s <program>   # Assigning setuid to a file (-rwsr-xr-x)
@@ -199,7 +199,7 @@ chmod +t <directory>  # Assigning the sticky bit to a directory (drwxrwxrwt)
 
 It is used to start a shell as another user.
 
-```
+```text
 su [-[l]] [USER]
 ```
 
@@ -241,10 +241,9 @@ sudo -l # See what privileges are granted by sudo (in the current user)
 
 ### `chown` change file owner and group
 
-
 It is used to change the owner and group owner of a file or directory.
 
-```
+```text
 chown [OWNER][:[GROUP]] FILE
 ```
 
@@ -290,7 +289,7 @@ ls -l /usr/local/share/Music
 
 - The default umask on this system is `0022`, which prevents group members from writing files belonging to other members of the group.
 
-	> This would not be a problem if the shared directory contained only files, but because members of the group will need the ability to create files and directories inside directories created by other members it is.
+    > This would not be a problem if the shared directory contained only files, but because members of the group will need the ability to create files and directories inside directories created by other members it is.
 
 - Each file and directory created by one member will be set to the primary group of the user rather than the group music.
 
@@ -317,14 +316,14 @@ The one remaining issue is umask. The necessary setting lasts only until the end
 
 To set or change a password, `passwd` is used.
 
-```
+```text
 passwd [USER]
 ```
 
 `passwd`, `addgroup`, and `usermod` are part of a suite of commands in the shadow-utils package.
 
 |  command   | description                                                    |
-|:----------:|:-------------------------------------------------------------- |
+| :--------: | :------------------------------------------------------------- |
 | `lastlog`  | reports the most recent login of all users or of a given user. |
 | `useradd`  | create a new user or update default new user information.      |
 | `userdel`  | delete a user account and related files.                       |

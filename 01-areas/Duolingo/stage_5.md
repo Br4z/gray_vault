@@ -6,7 +6,7 @@ reviewed_on: "2025-09-06"
 
 ## 13 - Describe relaciones, usa el tiempo pasado
 
-Para hablar de algo que solías hacer en el pasado pero que ya no haces, usa "used to" seguido por la  forma base del verbo.
+Para hablar de algo que solías hacer en el pasado pero que ya no haces, usa "used to" seguido por la forma base del verbo.
 
 Para hablar de algo que empezó en el pasado y que todavía está pasando ahora, usa el presente perfecto con "have"/"has".
 

@@ -30,24 +30,24 @@ declare -a a
 
 Values may be assigned in one of two ways. Single values may be assigned using the following syntax:
 
-```
-<name>[<subscript>]=<value>
+```bash
+name[subscript]=value
 ```
 
-where *name* is the name of the array and *subscript* is an integer (or arithmetic expression) greater than or equal to zero. *value* is a string or integer assigned to the array element.
+where _name_ is the name of the array and _subscript_ is an integer (or arithmetic expression) greater than or equal to zero. _value_ is a string or integer assigned to the array element.
 
 Multiple values may be assigned using the following syntax:
 
-```
-<name>=(<value_1> <value_2> ... <value_n>)
+```bash
+name=(value_1 value_2 ... value_n)
 ```
 
-where *name* is the name of the array and *value* placeholders are values assigned sequentially to elements of the array.
+where _name_ is the name of the array and _value_ placeholders are values assigned sequentially to elements of the array.
 
 It is also possible to assign values to a specific element by specifying a subscript for each value.
 
-```
-<name>=([<subscript>]=<value>...)
+```bash
+name=([subscript]=value...)
 ```
 
 ## Accessing array elements
@@ -56,13 +56,13 @@ It is also possible to assign values to a specific element by specifying a subsc
 #/bin/bash
 
 usage () {
-	echo "usage: ${0##*/} directory" >&2
+    echo "usage: ${0##*/} directory" >&2
 }
 
 # Check the argument is a directory
 if [[ ! -d "$1" ]]; then
-	usage
-	exit 1
+    usage
+    exit 1
 fi
 
 # Initialize array
@@ -70,21 +70,21 @@ for i in {0..23}; do hours[i]=0; done
 
 # Collect data
 for i in $(stat -c %y "$1"/* | cut -c 12-13); do
-	j="${i#0}"
-	((hours[j]++))
-	((count++))
+    j="${i#0}"
+    ((hours[j]++))
+    ((count++))
 done
 
 # Display data
 echo -e "Hour\tFiles\tHour\tFiles"
 echo -e "----\t-----\t----\t-----"
 for i in {0..11}; do
-	j=$((i + 12))
-	printf "%02d\t%d\t%02d\t%d\n" \
-		"$i" \
-		"${hours[i]}" \
-		"$j" \
-		"${hours[j]}"
+    j=$((i + 12))
+    printf "%02d\t%d\t%02d\t%d\n" \
+        "$i" \
+        "${hours[i]}" \
+        "$j" \
+        "${hours[j]}"
 done
 
 printf "\nTotal files = %d\n" "$count"
@@ -96,26 +96,26 @@ printf "\nTotal files = %d\n" "$count"
 
 The subscripts `*` and `@` can be used to access every element in an array. As with [[02-resources/books/the_Linux_command_line/05-writing_shell_scripts/09-positional_parameters|positional parameters]], the `@` is the more useful of the two.
 
-```
-"${<array>[@]}"
+```bash
+"${array[@]}"
 ```
 
 ### Determining the number of array elements
 
-```
-${#<array>[@]} # Number of array elements
+```bash
+${#array[@]} # Number of array elements
 ```
 
 In `bash`, array elements exist only if they have been assigned a value regardless of their subscript.
 
 ### Finding the subscripts used by an array
 
-```
-${!<array>[*]}
-${!<array>[@]}
+```bash
+${!array[*]}
+${!array[@]}
 ```
 
-where *array* is the name of an array variable. Like the other expansions that use `*` and `@`, `@` enclosed with quotes is the most useful, as it expands into separate words.
+where _array_ is the name of an array variable. Like the other expansions that use `*` and `@`, `@` enclosed with quotes is the most useful, as it expands into separate words.
 
 ### Assigning array elements with `read -a`
 
@@ -139,17 +139,17 @@ foo+=(d e f)
 
 `mapfile` reads standard input directly into an indexed array.
 
-```
+```text
 mapfile [-OPTIONS] ARRAY
 ```
 
-|    option    | description                                                           |
-|:------------:| --------------------------------------------------------------------- |
-| `-d <delim>` | use *delim* to terminate lines rather than a newline.                 |
-|   `-n <n>`   | only read *n* lines.                                                  |
-| `-O <start>` | begin assigning array element at index *start* rather than index 0. |
-| `-s <count>` | skip *n* lines at the beginning of the file.                          |
-|     `-t`     | trim trailing delimiter from each line.                               |
+|    option    | description                                                         |
+| :----------: | ------------------------------------------------------------------- |
+| `-d <delim>` | use _delim_ to terminate lines rather than a newline.               |
+|   `-n <n>`   | only read _n_ lines.                                                |
+| `-O <start>` | begin assigning array element at index _start_ rather than index 0. |
+| `-s <count>` | skip _n_ lines at the beginning of the file.                        |
+|     `-t`     | trim trailing delimiter from each line.                             |
 
 ```bash
 #!/bin/bash
@@ -159,9 +159,9 @@ WORDLIST=~/wordlist.txt
 declare -a words
 
 if [[ ! -r "$WORDLIST" ]]; then
-	grep -v \' < "$DICTIONARY" \
-		| grep -v "[[:upper:]]" \
-		| shuf > "$WORDLIST"
+    grep -v \' < "$DICTIONARY" \
+        | grep -v "[[:upper:]]" \
+        | shuf > "$WORDLIST"
 fi
 
 # Read WORDLIST into array
@@ -169,13 +169,13 @@ mapfile -t -n 32767 words < "$WORDLIST"
 
 # Create four word passphrase
 while [[ -z "$REPLY" ]]; do
-	echo "${words[$RANDOM]}" \
-		"${words[$RANDOM]}" \
-		"${words[$RANDOM]}" \
-		"${words[$RANDOM]}"
-	echo
-	read -r -p "Enter to continue, q to quit > "
-	echo
+    echo "${words[$RANDOM]}" \
+        "${words[$RANDOM]}" \
+        "${words[$RANDOM]}" \
+        "${words[$RANDOM]}"
+    echo
+    read -r -p "Enter to continue, q to quit > "
+    echo
 done
 ```
 
@@ -183,11 +183,11 @@ done
 
 There is a form of [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Parameter expansion|parameter expansion]] we can use to extract a group of contiguous elements called a **slice** from an array.
 
-```
-${<array>[@]:<start_index>:<elements>} # This return a new array
+```bash
+${array[@]:start_index:elements} # This return a new array
 ```
 
-By specifying a negative *start_index* value we count from the end of the array rather than the beginning.
+By specifying a negative _start_index_ value we count from the end of the array rather than the beginning.
 
 > The minus sign requires a leading space.
 
@@ -209,14 +209,14 @@ echo "Sorted array: " "${a_sorted[@]}"
 
 To delete an array, `unset` is used.
 
-```
-unset <array>
+```bash
+unset array
 ```
 
 It is also used to delete single array elements.
 
-```
-unset '<array>[<subscript>]'
+```bash
+unset 'array[subscript]'
 ```
 
 Interestingly, the assignment of an empty value to an array does not empty its contents.
@@ -236,6 +236,6 @@ They use string rather than integers as array indexes thus creating key-value pa
 
 Unlike indexed arrays, which are created by merely referencing them, associative arrays must be explicitly created with `declare` using `-A`.
 
-```
-declare -A <associative_array>
+```bash
+declare -A associative_array
 ```

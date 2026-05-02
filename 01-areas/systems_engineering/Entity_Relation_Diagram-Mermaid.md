@@ -10,7 +10,7 @@ Each entity is defined by its name, typically in uppercase. It can have attribut
 
 Relationships are defined using the following structure:
 
-```
+```text
 <first-entity> [<relationship> <second entity> : <relationship label>]
 ```
 

@@ -19,14 +19,14 @@ Since ECMAScript 2015, JavaScript supports two different types of programs. Scri
 ...Imported bindings can be renamed to give them a new local name using `as` after their name.
 
 ```javascript
-import { day_name as nom_de_jour } from "./day_name.js"
-console.log(nom_de_jour(3)) // Wednesday
+import { day_name as nom_de_jour } from "./day_name.js";
+console.log(nom_de_jour(3)); // Wednesday
 ```
 
 A module may also have a special export named default, which is often used for modules that only export a single binding...
 
 ```javascript
-export default ["Winter", "Spring", "Summer", "Autumn"]
+export default ["Winter", "Spring", "Summer", "Autumn"];
 ```
 
 Such a binding is imported by omitting the braces around the name of the import.
@@ -39,7 +39,7 @@ To import all bindings from a module at the same time, you can use import `*`...
 
 ```javascript
 import * as day_name from "./day_name.js";
-console.log(day_name.dayName(3)) // Wednesday
+console.log(day_name.dayName(3)); // Wednesday
 ```
 
 ## Packages
@@ -60,13 +60,13 @@ CommonJS is implemented with a module loader that, when loading a module, wraps 
 
 ```javascript
 function require(name) {
-	if (!(name in require.cache)) {
-		let code = read_file(name)
-		let exports = require.cache[name] = {}
-		let wrapper = Function("require, exports", code)
-		wrapper(require, exports)
-	}
-	return require.cache[name];
+    if (!(name in require.cache)) {
+        let code = read_file(name);
+        let exports = (require.cache[name] = {});
+        let wrapper = Function("require, exports", code);
+        wrapper(require, exports);
+    }
+    return require.cache[name];
 }
 require.cache = Object.create(null);
 ```

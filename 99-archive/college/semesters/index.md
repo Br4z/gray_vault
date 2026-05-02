@@ -3,7 +3,7 @@
 ## 1st
 
 |  code   |                 subject                  | credits | grade |
-|:-------:|:----------------------------------------:|:-------:|:-----:|
+| :-----: | :--------------------------------------: | :-----: | :---: |
 | 111050M |                Cálculo I                 |    4    |  4.5  |
 | 204355M |  Inglés fines generales y académicos I   |    3    |  4.6  |
 | 730069M |  Medio ambiente y constitución política  |    3    |  4.4  |
@@ -14,7 +14,7 @@
 ## 2nd
 
 |  code   |                   subject                    | credits | grade |
-|:-------:|:--------------------------------------------:|:-------:|:-----:|
+| :-----: | :------------------------------------------: | :-----: | :---: |
 | 111048M |                Álgebra lineal                |    3    |  4.3  |
 | 701001C |      Inserción a la vida universitaria       |    2    |  4.4  |
 | 701002C |            Taller de ingeniería I            |    3    |  4.8  |
@@ -24,7 +24,7 @@
 ## 3rd
 
 |  code   |                   subject                    | credits | grade |
-|:-------:|:--------------------------------------------:|:-------:|:-----:|
+| :-----: | :------------------------------------------: | :-----: | :---: |
 | 106012C |            Física I + laboratorio            |    4    |   X   |
 | 111051M |                  Cálculo II                  |    3    |  4.9  |
 | 410029C |                  Hatha yoga                  |    3    |  4.0  |
@@ -34,7 +34,7 @@
 ## 4th
 
 |  code   |                       subject                       | credits | grade |
-|:-------:|:---------------------------------------------------:|:-------:|:-----:|
+| :-----: | :-------------------------------------------------: | :-----: | :---: |
 | 111026C |              Ecuaciones diferenciales               |    3    |  4.3  |
 | 204026C |       Inglés fines generales y académicos II        |    2    |  4.5  |
 | 750001C |                 Sistemas operativos                 |    4    |  4.9  |
@@ -45,7 +45,7 @@
 ## 5th
 
 |  code   |                    subject                    | credits | grade |
-|:-------:|:---------------------------------------------:|:-------:|:-----:|
+| :-----: | :-------------------------------------------: | :-----: | :---: |
 | 204161M | Comprensión y producción de textos académicos |    3    |  4.4  |
 | 404002C |                Deporte y salud                |    2    |  4.0  |
 | 750008C |       Análisis y diseño de algoritmos I       |    3    |  5.0  |
@@ -56,7 +56,7 @@
 ## 6th
 
 |  code   |                                 subject                                  | credits | grade |
-|:-------:|:------------------------------------------------------------------------:|:-------:|:-----:|
+| :-----: | :----------------------------------------------------------------------: | :-----: | :---: |
 | 106012C |                          Física I + laboratorio                          |    4    |  4.4  |
 | 204027C |                 Inglés fines generales y académicos III                  |    2    |  4.1  |
 | 405126M |                   Herramientas para hablar en público                    |    3    |  5.0  |
@@ -67,7 +67,7 @@
 ## 7th
 
 |  code   |                  subject                  | credits | grade |
-|:-------:|:-----------------------------------------:|:-------:|:-----:|
+| :-----: | :---------------------------------------: | :-----: | :---: |
 | 204028C |  Inglés fines generales y académicos IV   |    2    |  3.7  |
 | 750022C |          Inteligencia artificial          |    4    |  5.0  |
 | 750023C | Infraestructuras paralelas y distribuidas |    3    |  4.7  |
@@ -76,7 +76,7 @@
 ## 8th
 
 |  code   |                       subject                        | credits | grade |
-|:-------:|:----------------------------------------------------:|:-------:|:-----:|
+| :-----: | :--------------------------------------------------: | :-----: | :---: |
 | 730078C |                 Impactos ambientales                 |    3    |  4.0  |
 | 750016C |          Simulación y computación numérica           |    3    |  4.1  |
 | 750025C |        Introducción a la ciencia de los datos        |    3    |  4.2  |
@@ -85,7 +85,7 @@
 ## 9th
 
 |  code   |                   subject                    | credits | grade |
-|:-------:|:--------------------------------------------:|:-------:|:-----:|
+| :-----: | :------------------------------------------: | :-----: | :---: |
 | 750020C |      Análisis y diseño de algoritmos ii      |    3    |  4.9  |
 | 750024C |                Ciberseguridad                |    3    |  4.6  |
 | 750031C | Introducción a la gestión proyectos software |    3    |  4.2  |

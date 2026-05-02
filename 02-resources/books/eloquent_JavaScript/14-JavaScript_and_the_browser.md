@@ -10,7 +10,7 @@ reviewed_on: "2025-10-30"
 
 **The HyperText Transfer Protocol** (HTTP) is a protocol for retrieving named resources (chunks of information, such as web pages or pictures). It specifies that the side making the request should start with a line like this, naming the resource and the version of the protocol that it is trying to use:
 
-```
+```http
 GET /index.html HTTP/1.1
 ```
 
@@ -26,7 +26,7 @@ The World Wide Web (not to be confused with the internet as a whole) is a set of
 
 Each document on the web is named by a **uniform resource locator** (URL), which looks something like this:
 
-```
+```text
   http://eloquentjavascript.net/13_browser.html
  |      |                      |               |
  protocol       server               path

@@ -36,10 +36,10 @@ Es una representación abstracta que traduce las propiedades y comportamientos d
 
 $$
 \begin{align}
-	& \text{minimize}   && f(x) \\
-	& \text{subject to} && g_i(x) \leq 0 \quad i = 1,\dots,m \\
-	& \text{and}        && h_j(x) = 0 \quad j = 1,\dots,l \\
-	& \text{and}        && x^L \leq x \leq x^U
+    & \text{minimize}   && f(x) \\
+    & \text{subject to} && g_i(x) \leq 0 \quad i = 1,\dots,m \\
+    & \text{and}        && h_j(x) = 0 \quad j = 1,\dots,l \\
+    & \text{and}        && x^L \leq x \leq x^U
 \end{align}
 $$
 
@@ -49,8 +49,8 @@ donde $x = (x_1,x_2,\dots,x_n)^T$ es un vector columna de $n$ **variables de dec
 
 $$
 \begin{align}
-	& \text{minimize}   && f(x) \\
-	& \text{subject to} && x \in \Omega
+    & \text{minimize}   && f(x) \\
+    & \text{subject to} && x \in \Omega
 \end{align}
 $$
 
@@ -100,12 +100,12 @@ Dependiendo de las restricciones, los problemas pueden clasificarse en:
 
 $$
 \begin{align}
-	& \text{maximize} \quad c_1 x_1 + c_2 x_2 + c_3 x_3 + \dots + c_n x_n \\
-	& \text{subject to:} \\
-	& a_{ i1 } x_1 + a_{ i2 } x_2 + a_{ i3 } x_3 + \dots + a_{ in } x_n \leq b_i \\
-	& a_{ j1 } x_1 + a_{ j2 } x_2 + a_{ j3 } x_3 + \dots + a_{ jn } x_n \geq b_j \\
-	& a_{ k1 } x_1 + a_{ k2 } x_2 + a_{ k3 } x_3 + \dots + a_{ kn } x_n = b_k \\
-	& x_1 \geq 0,\ x_2 \geq 0,\ \dots,\ x_n \geq 0
+    & \text{maximize} \quad c_1 x_1 + c_2 x_2 + c_3 x_3 + \dots + c_n x_n \\
+    & \text{subject to:} \\
+    & a_{ i1 } x_1 + a_{ i2 } x_2 + a_{ i3 } x_3 + \dots + a_{ in } x_n \leq b_i \\
+    & a_{ j1 } x_1 + a_{ j2 } x_2 + a_{ j3 } x_3 + \dots + a_{ jn } x_n \geq b_j \\
+    & a_{ k1 } x_1 + a_{ k2 } x_2 + a_{ k3 } x_3 + \dots + a_{ kn } x_n = b_k \\
+    & x_1 \geq 0,\ x_2 \geq 0,\ \dots,\ x_n \geq 0
 \end{align}
 $$
 

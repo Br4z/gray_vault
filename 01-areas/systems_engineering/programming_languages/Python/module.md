@@ -1,12 +1,12 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: Daniel Marcial
-    url: https://www.freecodecamp.org/news/build-your-first-python-package
-    language: English
-  - author: Geeks for Geeks
-    url: https://www.geeksforgeeks.org/python-modules
-    language: English
+    - author: Daniel Marcial
+      url: https://www.freecodecamp.org/news/build-your-first-python-package
+      language: English
+    - author: Geeks for Geeks
+      url: https://www.geeksforgeeks.org/python-modules
+      language: English
 ---
 
 # Module
@@ -25,7 +25,7 @@ Whenever a module is imported, the interpreter looks for several locations. Firs
 
 2. Each directory in `PYTHONPATH`.
 
-	> The "PYTHONPATH" is an environment variable consisting of a list of directories.
+    > The "PYTHONPATH" is an environment variable consisting of a list of directories.
 
 3. The list of directories is configured at the time Python is installed.
 
@@ -38,5 +38,5 @@ In the `setup.py` we will store information about the package, namely the packag
 - `bdist_wheel`: generates a wheel distribution, commonly used for PyPi uploads.
 
 > To install `setuptool` we can do it through pip, using the command `pip install setuptools`.
-
+>
 > The `bdist_wheel` (provided by `wheel`) argument is only needed if we want to upload the package to PyPi.

@@ -48,7 +48,7 @@ Son problemas para los que no se conocen algoritmos eficientes (polinomiales).
 
 ### Indecidibles
 
-Son aquellos que no pueden resolverse mediante un algoritmo; no existe una máquina  de Turing (MT) que los pueda resolver. Un ejemplo famoso es el **problema de la parada (halting problem)**.
+Son aquellos que no pueden resolverse mediante un algoritmo; no existe una máquina de Turing (MT) que los pueda resolver. Un ejemplo famoso es el **problema de la parada (halting problem)**.
 
 ## Problemas de decisión
 

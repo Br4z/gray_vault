@@ -29,4 +29,3 @@ REST is usually described through several constraints:
 ## Resources and representations
 
 In REST, the client does not usually interact with the internal object itself, but with a representation of that resource. That representation is often returned as JSON or XML.
-

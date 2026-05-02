@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/testing-in-python-using-doctest-module
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/testing-in-python-using-doctest-module
+      language: English
 ---
 
 # Doctest
@@ -22,9 +22,9 @@ sources:
 
 5. Call `testmod` with the name of the function to test and set `verbose` to `True` as arguments.
 
-	> You can achieve a similar behavior using `-v` in the script execution.
-
-	> If `verbose` is set to `False` (default), output will be shown in case of failure only, not in case of success.
+    > You can achieve a similar behavior using `-v` in the script execution.
+    >
+    > If `verbose` is set to `False` (default), output will be shown in case of failure only, not in case of success.
 
 ## Limitations of `doctest`
 
@@ -38,35 +38,35 @@ sources:
 
 ```python
 def multiple_test_cases(number):
-	"""
-	This function checks multiple test cases for a given number.
-	Define input and expected output:
-	>>> multiple_test_cases(0)
-	"Zero"
-	>>> multiple_test_cases(5)
-	"Positive"
-	>>> multiple_test_cases(-5)
-	"Negative"
-	>>> multiple_test_cases(100)
-	"Large positive"
-	>>> multiple_test_cases(-100)
-	"Large negative"
-	"""
-	if number == 0:
-		return "Zero"
-	elif number > 0:
-		if number > 10:
-			return "large positive"
-		else:
-			return "positive"
-	else:
-		if number < -10:
-			return "large negative"
-		else:
-			return "negative"
+    """
+    This function checks multiple test cases for a given number.
+    Define input and expected output:
+    >>> multiple_test_cases(0)
+    "Zero"
+    >>> multiple_test_cases(5)
+    "Positive"
+    >>> multiple_test_cases(-5)
+    "Negative"
+    >>> multiple_test_cases(100)
+    "Large positive"
+    >>> multiple_test_cases(-100)
+    "Large negative"
+    """
+    if number == 0:
+        return "Zero"
+    elif number > 0:
+        if number > 10:
+            return "large positive"
+        else:
+            return "positive"
+    else:
+        if number < -10:
+            return "large negative"
+        else:
+            return "negative"
 
 
 if __name__ == "__main__":
-	import doctest
-	doctest.testmod(verbose=True)
+    import doctest
+    doctest.testmod(verbose=True)
 ```

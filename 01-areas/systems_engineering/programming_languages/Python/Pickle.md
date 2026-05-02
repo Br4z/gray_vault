@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: Davide Mastromatteo
-    url: https://realpython.com/python-pickle-module
-    language: English
+    - author: Davide Mastromatteo
+      url: https://realpython.com/python-pickle-module
+      language: English
 ---
 
 # Pickle
@@ -28,10 +28,10 @@ The Python pickle module basically consists of four methods:
 list = ["l", "i", "s", "t"]
 
 with open("file", "wb") as file:
-	pickle.dump(file, list)
+    pickle.dump(file, list)
 
 with open("file", "rb") as file:
-	list = pickle.load(file)
+    list = pickle.load(file)
 
 print(list)
 ```

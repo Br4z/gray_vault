@@ -18,17 +18,17 @@ Por el teorema de sistemas equivalentes, podemos expresar $A x = b$ como
 
 $$
 \begin{align}
-	& Q x = (Q - A) x + b \\
-	& x = (I - Q^{ -1 } A) x + Q^{ -1 } b \\
-	& x^{ (k) } = (I - Q^{ -1 } A) x^{ (k - 1) } + Q^{ -1 } b \\
-	& x^{ (k) } - x = (I - Q^{ -1 } A) (x^{ (k - 1) } - x)
+    & Q x = (Q - A) x + b \\
+    & x = (I - Q^{ -1 } A) x + Q^{ -1 } b \\
+    & x^{ (k) } = (I - Q^{ -1 } A) x^{ (k - 1) } + Q^{ -1 } b \\
+    & x^{ (k) } - x = (I - Q^{ -1 } A) (x^{ (k - 1) } - x)
 \end{align}
 $$
 
 $$
 \begin{align}
-	& \norm{ x^{ (k) } - x } \leq \norm{ I - Q^{ -1 } A } \norm { x^{ (k - 1) } - x } \\
-	& \frac{ \norm{ x^{ (k) } - x } }{ \norm { x^{ (k - 1) } - x } } \leq \norm{ I - Q^{ -1 } A }
+    & \norm{ x^{ (k) } - x } \leq \norm{ I - Q^{ -1 } A } \norm { x^{ (k - 1) } - x } \\
+    & \frac{ \norm{ x^{ (k) } - x } }{ \norm { x^{ (k - 1) } - x } } \leq \norm{ I - Q^{ -1 } A }
 \end{align}
 $$
 
@@ -72,8 +72,8 @@ $$
 
 $$
 \begin{align}
-	& q(x) = \frac{ 1 }{ 2 } x^T A x - b^T x + c \\
-	& \nabla q(x) = \frac{ 1 }{ 2 } A^T x + \frac{ 1 }{ 2 } A x - b
+    & q(x) = \frac{ 1 }{ 2 } x^T A x - b^T x + c \\
+    & \nabla q(x) = \frac{ 1 }{ 2 } A^T x + \frac{ 1 }{ 2 } A x - b
 \end{align}
 $$
 
@@ -107,9 +107,9 @@ Dado un vector no nulo $v$ y una matriz cuadrada $A$, el vector $v$ es un vector
 
 $$
 \begin{align}
-	& r_i = A x - A x_i \\
-	& = A (x - x_i) \\
-	& = -A e_i
+    & r_i = A x - A x_i \\
+    & = A (x - x_i) \\
+    & = -A e_i
 \end{align}
 $$
 
@@ -117,15 +117,15 @@ $$
 
 $$
 \begin{align}
-	& x_{ i + 1 } = x_i - \alpha_i \nabla q(x_i) \\
-	& x^{ (k + 1) } = x^{ (k) } + t_k v^{ (k) }
+    & x_{ i + 1 } = x_i - \alpha_i \nabla q(x_i) \\
+    & x^{ (k + 1) } = x^{ (k) } + t_k v^{ (k) }
 \end{align}
 $$
 
 $$
 \begin{align}
-	& -\nabla q(x_i) = b - A x = r_i \\
-	& x_{ i + 1 } = x_i + \alpha_i r_i
+    & -\nabla q(x_i) = b - A x = r_i \\
+    & x_{ i + 1 } = x_i + \alpha_i r_i
 \end{align}
 $$
 
@@ -133,17 +133,17 @@ El nuevo residuo $r_{ i + 1 }$ es ortogonal al residuo anterior $r_i$ (${ r_{ i 
 
 $$
 \begin{align}
-	& r_{ i + 1 } = b - A x_{ i + 1 } \\
-	& = b (x_i + \alpha_i r_i) \\
-	& = b - A x_i - \alpha_i A r_i \\
-	& = r_i - \alpha_i A r_i
+    & r_{ i + 1 } = b - A x_{ i + 1 } \\
+    & = b (x_i + \alpha_i r_i) \\
+    & = b - A x_i - \alpha_i A r_i \\
+    & = r_i - \alpha_i A r_i
 \end{align}
 $$
 
 $$
 \begin{align}
-	& { r_i }^T r_{ i + 1 } = { r_i }^T (r_i - \alpha_i A) \\
-	& 0 = { r_i }^T (r_i - \alpha_i A) \quad \alpha_i = \frac{ { r_i }^T r_i }{ { r_i }^T A r_i }
+    & { r_i }^T r_{ i + 1 } = { r_i }^T (r_i - \alpha_i A) \\
+    & 0 = { r_i }^T (r_i - \alpha_i A) \quad \alpha_i = \frac{ { r_i }^T r_i }{ { r_i }^T A r_i }
 \end{align}
 $$
 

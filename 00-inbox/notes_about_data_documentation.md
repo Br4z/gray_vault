@@ -32,7 +32,7 @@ Thinking deeper it does not make sense having this table, I know the this would 
 
 - Since the application scope is Colombia-only, `country_code` may be unnecessary over-modeling.
 
-	If `country_code` remains, the business reason for keeping it should be explicitly documented.
+    If `country_code` remains, the business reason for keeping it should be explicitly documented.
 
 - `source_type` is constrained in the DDL, but not in the data dictionary.
 
@@ -46,7 +46,7 @@ Thinking deeper it does not make sense having this table, I know the this would 
 
 - The current design of `generates_restriction` and `generates_recommendation` may be too weak to actual store content/detail of the restriction.
 
-	> I am assuming that the second field is related with the first one.
+    > I am assuming that the second field is related with the first one.
 
 ### `health_follow_up_cases`
 
@@ -79,12 +79,11 @@ Thinking deeper it does not make sense having this table, I know the this would 
 - `case_status`: is constrained in the DDL, but not in the data dictionary.
 
 - The expected future logic sounds closer to:
+    - One rehabilitation case.
 
-	- One rehabilitation case.
+    - One rehabilitation plan
 
-	- One rehabilitation plan
-
-	- Multiple activities/goals per case.
+    - Multiple activities/goals per case.
 
 - Validation of the `source_case_type` with `occupational_accident_id` and `occupational_disease_case_id` is done in the DDL, but not specified in the data dictionary.
 
@@ -97,40 +96,38 @@ Thinking deeper it does not make sense having this table, I know the this would 
 ### `health_programs`
 
 - This table is not required for those indicators ("EEV" and "PVE"), they only require specific sections of the work plan.
+    - "Estilo de vida y entornos saludables".
 
-	- "Estilo de vida y entornos saludables".
-
-	- "Actividades de Promoción y Prevención en Salud".
+    - "Actividades de Promoción y Prevención en Salud".
 
 ### `health_program_schedule_entries`
 
 - This table is not required for those indicators ("EEV" and "PVE"), they only require specific activities of the work plan.
+    - "Pausas activas".
+      .
+      .
+      .
+    - "Comunicación del material de Uso seguro de morrales".
 
-	- "Pausas activas".
-	.
-	.
-	.
-	- "Comunicación del material de Uso seguro de morrales".
+    - "Ergonomia para la vida (Pausas visuales)".
 
-	- "Ergonomia para la vida (Pausas visuales)".
+    - "Entrevista caso centinela".
+      .
+      .
+      .
+    - "Análisis e informe de resultados".
 
-	- "Entrevista caso centinela".
-	.
-	.
-	.
-	- "Análisis e informe de resultados".
+    - "Gestión del estres".
 
-	- "Gestión del estres".
+    - "Adaptación al cambio".
 
-	- "Adaptación al cambio".
+    - "Prevención de enfermedades de trasmisión sexual".
 
-	- "Prevención de enfermedades de trasmisión sexual".
+    - "Salud visual - pasuas visuales".
 
-	- "Salud visual - pasuas visuales".
+    - "Cuidao de tus ojos".
 
-	- "Cuidao de tus ojos".
-
-	- "Cuidado de tu piel".
+    - "Cuidado de tu piel".
 
 ## Occupational accidents
 
@@ -145,16 +142,15 @@ Thinking deeper it does not make sense having this table, I know the this would 
 ### `absence_cases`
 
 - `case_classification` should be constrained to predefined options. If this really refers to the recovery-cycle classification I suspect, then the likely options are something like:
+    - `INITIAL`.
 
-	- `INITIAL`.
+    - `EXTENSION` / `PRORROGA`.
 
-	- `EXTENSION` / `PRORROGA`.
-
-	But this must be confirmed with the business.
+    But this must be confirmed with the business.
 
 - `subject_to_recovery` is a **derived field**, not a user-entered one: incapacities of 3 or more days go into the EPS validation/recovery flow, which supports deriving this flag from business rules rather than asking the user to enter it manually.
 
-	> This is a annotation, not an error.
+    > This is a annotation, not an error.
 
 - `recovery_request_date` and `radicado_number` should remain open questions until it is confirmed that "FECHA SOLICITUD" and "RADICADO" always belong to the same recovery process being modeled here.
 
@@ -175,12 +171,11 @@ Thinking deeper it does not make sense having this table, I know the this would 
 - The activities in the "PDT" tab in Excel are different from those in the "CRON" tab; I think we should have a `work_plan_items` for the first ones, and the actual activities should be those in the "CRON" tab.
 
 - We need validation for the `activity_type`, in the Excel, there are three options:
+    - `Cap`.
 
-	- `Cap`.
+    - `Act`.
 
-	- `Act`.
-
-	- `Mat`.
+    - `Mat`.
 
 - The `frequency_label` should be in the `work_plan_sections`, that the way it is on the Excel.
 
@@ -193,14 +188,13 @@ Thinking deeper it does not make sense having this table, I know the this would 
 - "One activity can feed more than one indicator", that is true if we are talking about the "PDT", but it is false in the "CRON" tab. I think it is better if it represents the second case.
 
 - `contribution_type` is not necessary, all de activities are the same: they worth the same. We just talk in terms of:
+    - "No. actividades ejecutadas".
 
-	- "No. actividades ejecutadas".
+    - "No. actividades programadas".
 
-	- "No. actividades programadas".
+    - "No. Trabajadores asistentes".
 
-	- "No. Trabajadores asistentes".
-
-	- "No. Trabajadores invitados".
+    - "No. Trabajadores invitados".
 
 ### `work_plan_schedule_entries`
 
@@ -261,10 +255,9 @@ This part of the model is still highly assumption-based, but due to complexity I
 ### Additional observation
 
 - The current schema only validates that `recovery_request_date >= absence_start_date`. It does **not** validate internal consistency such as:
+    - If `subject_to_recovery = true`, then `recovery_request_date` should probably exist.
 
-	- If `subject_to_recovery = true`, then `recovery_request_date` should probably exist.
-
-	- If there is a `radicado_number`, it should likely imply a recovery workflow state
+    - If there is a `radicado_number`, it should likely imply a recovery workflow state
 
 ## Controlled vocabularies / fields that should be reviewed as option-based
 

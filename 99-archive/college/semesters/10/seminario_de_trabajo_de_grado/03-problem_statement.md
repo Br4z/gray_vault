@@ -15,10 +15,9 @@ A well-structured problem statement generally includes three parts to guide the 
 2. The gap: this is the core of the chapter. State the problem clearly and specifically. Describe the current situation ("what is") and contrast it with the desired situation ("what should be").
 
 3. The consequences: explain the negative impact of the problem. This part demonstrates the problem's significance and creates a sense of urgency.
+    - Who is affected by this problem?
 
-	- Who is affected by this problem?
-
-	- What are the tangible consequences?
+    - What are the tangible consequences?
 
 ## Problem formulation
 

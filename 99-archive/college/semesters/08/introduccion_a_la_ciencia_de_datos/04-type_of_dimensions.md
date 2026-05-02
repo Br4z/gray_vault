@@ -10,19 +10,19 @@ Las dimensiones pueden cambiar con el tiempo (son no estáticas). Si el valor de
 
 1. Sobreescribir el valor.
 
-	El dato reflejará el nuevo valor.
+    El dato reflejará el nuevo valor.
 
-	> Es fácil de implementar, pero no mantiene la historia de los cambios en los datos.
+    > Es fácil de implementar, pero no mantiene la historia de los cambios en los datos.
 
 2. Adicionar una nueva fila a la dimensión.
 
-	Esta opción es poderosa porque la nueva fila divide automáticamente la historia en la tabla de hechos, sin embargo, no permite asociar el nuevo valor del atributo con la historia de los hechos y viceversa.
+    Esta opción es poderosa porque la nueva fila divide automáticamente la historia en la tabla de hechos, sin embargo, no permite asociar el nuevo valor del atributo con la historia de los hechos y viceversa.
 
-	> Representa la historia correctamente.
+    > Representa la historia correctamente.
 
 3. Adicionar una columna o atributo a la dimensión.
 
-	Es apropiado cuando se necesita soportar dos vistas del mundo al mismo tiempo, pero es inapropiado si se desea hacer seguimiento de valores intermedios de los atributos.
+    Es apropiado cuando se necesita soportar dos vistas del mundo al mismo tiempo, pero es inapropiado si se desea hacer seguimiento de valores intermedios de los atributos.
 
 ## Dimensiones que cambian rápidamente
 
@@ -34,31 +34,31 @@ Un ejemplo de una dimensión que cambia rápidamente es la dimensión **cliente*
 
 ```mermaid
 erDiagram
-	FACT_TABLE {
-		int fact_key PK
-		int customer_key FK
-		int product_key FK
-		int quantity
-		int sales
-		int rapidly_changing_key FK
-	}
+    FACT_TABLE {
+        int fact_key PK
+        int customer_key FK
+        int product_key FK
+        int quantity
+        int sales
+        int rapidly_changing_key FK
+    }
 
-	CUSTOMER_DIMENSION {
-		int customer_key PK
-		string name
-		string address
-	}
+    CUSTOMER_DIMENSION {
+        int customer_key PK
+        string name
+        string address
+    }
 
-	RAPIDLY_CHANGING_DIMENSION {
-		int rapidly_changing_key PK
-		string email
-		string phoneNumber
-		date valid_from
-		date valid_to
-	}
+    RAPIDLY_CHANGING_DIMENSION {
+        int rapidly_changing_key PK
+        string email
+        string phoneNumber
+        date valid_from
+        date valid_to
+    }
 
-	FACT_TABLE ||--o{ CUSTOMER_DIMENSION : has
-	FACT_TABLE ||--o{ RAPIDLY_CHANGING_DIMENSION : tracks
+    FACT_TABLE ||--o{ CUSTOMER_DIMENSION : has
+    FACT_TABLE ||--o{ RAPIDLY_CHANGING_DIMENSION : tracks
 ```
 
 ## Dimensiones Junk

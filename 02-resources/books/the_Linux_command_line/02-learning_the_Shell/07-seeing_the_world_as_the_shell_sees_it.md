@@ -72,7 +72,7 @@ echo $((2 + 2))
 Arithmetic expansion supports only integers...
 
 | operator | description                             |
-|:--------:|:--------------------------------------- |
+| :------: | :-------------------------------------- |
 |   `+`    | addition.                               |
 |   `-`    | subtraction.                            |
 |   `*`    | multiplication                          |
@@ -269,7 +269,7 @@ Another use of the backslash escape is suppressing aliases.
 In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first 32 characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
 
 | escape sequence | meaning                                                   |
-|:---------------:|:--------------------------------------------------------- |
+| :-------------: | :-------------------------------------------------------- |
 |      `\a`       | bell (an alert that causes the computer to beep).         |
 |      `\b`       | backspace.                                                |
 |      `\n`       | newline; on Unix-like systems, this produces a line feed. |

@@ -14,9 +14,9 @@ Given a boolean formula in Conjunctive Normal Form (CNF), the goal is to determi
 
 - A set of $m$ clauses, $C = \{c_1,c_2,\dots,c_m\}$, where the overall formula is the conjunction of all clauses.
 
-	$$
-	c_1 \pand c_2 \pand \dots c_m
-	$$
+    $$
+    c_1 \pand c_2 \pand \dots c_m
+    $$
 
 - Each clause $c_i$ is a disjunction (OR) of one or more **literals**. A literal is a variable $x_j$ or its negation $\lnot x_j$.
 
@@ -27,4 +27,3 @@ A boolean indicating whether the formula is satisfiable. If satisfiable, an assi
 ## Special case: 3-SAT
 
 The 3-SAT problem is a constrained version of SAT. It only differs in the number of literals per clause; while in a SAT instance clauses can have any number of literals, in a 3-SAT instance each clause must contain **exactly three literals**.
-

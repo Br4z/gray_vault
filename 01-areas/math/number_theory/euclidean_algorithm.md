@@ -6,10 +6,10 @@ reviewed_on: "2025-02-03"
 
 $$
 \forall a,b \in \mathbb{Z} \quad \operatorname{ GCD }(a,b) =
-	\begin{cases}
-		a                          & b = 0 \\
-		\operatorname{ GCD }(b,a\%b) & b \neq 0
-	\end{cases}
+    \begin{cases}
+        a                          & b = 0 \\
+        \operatorname{ GCD }(b,a\%b) & b \neq 0
+    \end{cases}
 $$
 
 ## Theorem
@@ -24,13 +24,13 @@ That is, the greatest common divisor of two numbers can be expressed as a linear
 
 $$
 \begin{align}
-	& r_0 = a \quad r_1 = b \\
-	& r_0 = r_1 q_1 + r_2 \\
-	& r_1 = r_2 q_2 + r_3 \\
-	& \vdots \\
-	& r_{ n - 3 } = r_{ n - 2 } q_{ n - 2 } + r_{ n - 1 } \\
-	& r_{ n - 2 } = r_{ n - 1 } q_{ n - 1 } + r_n \\
-	& r_{ n - 1 } = q_n r_n + 0
+    & r_0 = a \quad r_1 = b \\
+    & r_0 = r_1 q_1 + r_2 \\
+    & r_1 = r_2 q_2 + r_3 \\
+    & \vdots \\
+    & r_{ n - 3 } = r_{ n - 2 } q_{ n - 2 } + r_{ n - 1 } \\
+    & r_{ n - 2 } = r_{ n - 1 } q_{ n - 1 } + r_n \\
+    & r_{ n - 1 } = q_n r_n + 0
 \end{align}
 
 $$

@@ -59,4 +59,4 @@ PEL and IEL do not have their own database; they are handled on demand.
 
 ## Main scope question
 
-My main question is whether, at least for absenteeism, the real scope of the project is to automate only the counting of days.  For now, that seems to be the case, because the other fields in the file belong to broader processes that, due to the project's current limitations, will probably not be integrated in this phase.
+My main question is whether, at least for absenteeism, the real scope of the project is to automate only the counting of days. For now, that seems to be the case, because the other fields in the file belong to broader processes that, due to the project's current limitations, will probably not be integrated in this phase.

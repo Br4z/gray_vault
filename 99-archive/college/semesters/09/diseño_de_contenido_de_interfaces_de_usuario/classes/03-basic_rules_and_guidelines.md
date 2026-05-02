@@ -51,20 +51,17 @@ Esto asegura que la narrativa sea obvia y no requiera un esfuerzo cognitivo extr
 ## Pilares del content design
 
 - Claridad.
+    - Eliminar palabras innecesarias y mensajes redundantes.
 
-	- Eliminar palabras innecesarias y mensajes redundantes.
-
-	- Priorizar la información esencial.
+    - Priorizar la información esencial.
 
 - Concisión.
+    - Proporcionar información relevante y oportuna.
 
-	- Proporcionar información relevante y oportuna.
-
-	- Anticipar las necesidades del usuario y ofrecer soluciones.
+    - Anticipar las necesidades del usuario y ofrecer soluciones.
 
 - Utilidad.
-
-	- El contenido debe ser fácil de consultar, ubicar y orientar a las personas.
+    - El contenido debe ser fácil de consultar, ubicar y orientar a las personas.
 
 ## Inclusión y accesibilidad
 

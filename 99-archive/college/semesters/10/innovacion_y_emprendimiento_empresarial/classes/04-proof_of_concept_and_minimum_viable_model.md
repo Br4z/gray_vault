@@ -22,7 +22,7 @@ Esta etapa es crucial para identificar desafíos técnicos importantes y asegura
 
 El producto mínimo viable es una versión del producto que incluye únicamente las funcionalidades esenciales por las cuales los clientes están dispuestos a pagar. A diferencia de la POC, el MVP debe ser totalmente funcional y está diseñado para ser lanzado al mercado con clientes reales.
 
-Su objetivo principal es validar la venta y obtener retroalimentación temprana del mercado sobre si las características incluidas son suficientes para generar valor percibido y disposición de compra. El MVP representa el conjunto mínimo de atributos que justifican una transacción económica, permitiendo al emprendedor confirmar la demanda real antes de invertir en desarrollar funcionalidades adicionales. 
+Su objetivo principal es validar la venta y obtener retroalimentación temprana del mercado sobre si las características incluidas son suficientes para generar valor percibido y disposición de compra. El MVP representa el conjunto mínimo de atributos que justifican una transacción económica, permitiendo al emprendedor confirmar la demanda real antes de invertir en desarrollar funcionalidades adicionales.
 
 Esta fase es fundamental para aprender qué aspectos del producto resuenan con los clientes y cuáles necesitan ajustes o eliminación.
 
@@ -30,7 +30,7 @@ Esta fase es fundamental para aprender qué aspectos del producto resuenan con l
 
 El prototipo es una herramienta de validación que permite la interacción directa con clientes reales para obtener retroalimentación auténtica sobre la propuesta de valor. Los prototipos tangibilizan la oferta del emprendimiento, mostrando a los consumidores una representación del producto o servicio y cómo resuelve sus problemas o satisface sus necesidades.
 
-Su propósito es: 
+Su propósito es:
 
 - validar supuestos específicos sobre el negocio.
 
@@ -62,8 +62,8 @@ El desarrollo de un producto tecnológico sigue una progresión lógica que util
 
 ```mermaid
 flowchart LR
-	POC --> MVP
-	MVP --> prototipo
+    POC --> MVP
+    MVP --> prototipo
 ```
 
 Esta progresión no es necesariamente lineal y puede involucrar iteraciones entre etapas. Por ejemplo, los aprendizajes obtenidos del prototipo pueden revelar necesidades de ajustes técnicos que requieran volver a una POC modificada. Lo crucial es que cada etapa tiene un propósito específico de validación que reduce la incertidumbre antes de comprometer mayores inversiones en la siguiente fase del desarrollo.

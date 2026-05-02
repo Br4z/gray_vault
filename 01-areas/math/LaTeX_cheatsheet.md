@@ -47,7 +47,7 @@ reviewed_on: "2025-05-31"
 ### Lowercase
 
 | letter  |     LaTex     |
-|:-------:|:-------------:|
+| :-----: | :-----------: |
 |  alpha  |   $\alpha$    |
 |  beta   |    $\beta$    |
 |  delta  |   $\delta$    |
@@ -68,7 +68,7 @@ reviewed_on: "2025-05-31"
 ### Uppercase
 
 | letter |   LaTex   |
-|:------:|:---------:|
+| :----: | :-------: |
 | lambda | $\Lambda$ |
 | omega  | $\Omega$  |
 |  phi   |  $\Phi$   |
@@ -78,7 +78,7 @@ reviewed_on: "2025-05-31"
 ## Logic
 
 |       LaTex       | description                               |
-|:-----------------:|:----------------------------------------- |
+| :---------------: | :---------------------------------------- |
 |     $\exists$     | there exists at least one.                |
 |    $\exists!$     | there exists one and only one.            |
 |    $\nexists$     | there is no.                              |
@@ -96,11 +96,10 @@ reviewed_on: "2025-05-31"
 |    $\because$     | because.                                  |
 |     $\oplus$      | logical XOR (exclusive or).               |
 
-
 ## Operators
 
 |   LaTex   | description           |
-|:---------:|:--------------------- |
+| :-------: | :-------------------- |
 |  $\sum$   | sum.                  |
 |  $\prod$  | product.              |
 |  $\int$   | int.                  |
@@ -110,7 +109,7 @@ reviewed_on: "2025-05-31"
 ## Set theory
 
 |    LaTex    | description           |
-|:-----------:|:--------------------- |
+| :---------: | :-------------------- |
 |    $\in$    | in.                   |
 |  $\notin$   | not in.               |
 |  $\subset$  | subset.               |

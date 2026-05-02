@@ -26,31 +26,31 @@ SOAP services are often described with WSDL, an XML language for describing web 
 
 ### Request
 
-```
+```xml
 <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"
-			xmlns:m="http://example.com/products">
-	<env:Header>
-		<m:authToken>abc123</m:authToken>
-	</env:Header>
-	<env:Body>
-		<m:getProductRequest>
-			<m:id>42</m:id>
-		</m:getProductRequest>
-	</env:Body>
+            xmlns:m="http://example.com/products">
+    <env:Header>
+        <m:authToken>abc123</m:authToken>
+    </env:Header>
+    <env:Body>
+        <m:getProductRequest>
+            <m:id>42</m:id>
+        </m:getProductRequest>
+    </env:Body>
 </env:Envelope>
 ```
 
 ### Response
 
-```
+```xml
 <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"
-			xmlns:m="http://example.com/products">
+            xmlns:m="http://example.com/products">
 <env:Body>
-	<m:getProductResponse>
-		<m:id>42</m:id>
-		<m:name>keyboard</m:name>
-		<m:price>49.99</m:price>
-	</m:getProductResponse>
+    <m:getProductResponse>
+        <m:id>42</m:id>
+        <m:name>keyboard</m:name>
+        <m:price>49.99</m:price>
+    </m:getProductResponse>
 </env:Body>
 </env:Envelope>
 ```

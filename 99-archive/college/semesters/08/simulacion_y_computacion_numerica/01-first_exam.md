@@ -20,17 +20,17 @@ El número $e$ puede ser definido como $e = \sum_{ i = 0 }^\infty \frac{ 1 }{ i!
 
 $$
 \begin{align}
-	& \sum_{ i = 0 }^2 \frac{ 1 }{ i! } \\
-	& \frac{ 1 }{ 0! } + \frac{ 1 }{ 1! } + \frac{ 1 }{ 2! } \\
-	& = \frac{ 5 }{ 2 }
+    & \sum_{ i = 0 }^2 \frac{ 1 }{ i! } \\
+    & \frac{ 1 }{ 0! } + \frac{ 1 }{ 1! } + \frac{ 1 }{ 2! } \\
+    & = \frac{ 5 }{ 2 }
 \end{align}
 $$
 
 $$
 \begin{align}
-	& E_r = \frac{ |e - \frac{ 5 }{ 2 }| }{ |e| } \\
-	& = \frac{ 2 e - 5 }{ 2 e } \\
-	& \approx 8 * 10^{ -2 }
+    & E_r = \frac{ |e - \frac{ 5 }{ 2 }| }{ |e| } \\
+    & = \frac{ 2 e - 5 }{ 2 e } \\
+    & \approx 8 * 10^{ -2 }
 \end{align}
 $$
 
@@ -40,11 +40,11 @@ Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el
 
 $$
 \begin{align}
-	& E_{ r_1 } = \frac{ 130 }{ 120 } \\
-	& = \frac{ 1 }{ 4 } \\
-	& E_{ r_2 } = \frac{ 50 }{ 500 } \\
-	& = \frac{ 1 }{ 10 } \\
-	& E_{ r_1 } > E_{ r_2 }
+    & E_{ r_1 } = \frac{ 130 }{ 120 } \\
+    & = \frac{ 1 }{ 4 } \\
+    & E_{ r_2 } = \frac{ 50 }{ 500 } \\
+    & = \frac{ 1 }{ 10 } \\
+    & E_{ r_1 } > E_{ r_2 }
 \end{align}
 $$
 
@@ -60,16 +60,16 @@ Por función de activación consideré la siguiente:
 
 $$
 myActivation(x) =
-	\begin{cases}
-		|x| & x > -1 \\
-		0   & x \leq -1
-	\end{cases}
+    \begin{cases}
+        |x| & x > -1 \\
+        0   & x \leq -1
+    \end{cases}
 $$
 
 Considere un dataset de prueba con los siguientes pacientes:
 
 | mayor_a_60 | sexo | letra_f | antecedentes_familiares | clase_real |
-|:----------:|:----:|:-------:|:-----------------------:|:----------:|
+| :--------: | :--: | :-----: | :---------------------: | :--------: |
 |     1      |  1   |    2    |            1            |     1      |
 |     0      |  0   |    7    |            0            |     0      |
 
@@ -77,41 +77,41 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
 
 1. .
 
-	$$
-	\begin{align}
-		& x_1 = 1 \quad x_2 = 1 \quad x_3 = 2 \quad x_4 = 1 \\
-		& 1 * 0.5 + 1 * 0.25 + 2 * 0.01 + 1 * 0.1 = 0.87
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        & x_1 = 1 \quad x_2 = 1 \quad x_3 = 2 \quad x_4 = 1 \\
+        & 1 * 0.5 + 1 * 0.25 + 2 * 0.01 + 1 * 0.1 = 0.87
+    \end{align}
+    $$
 
-	Ahora le aplicamos la función de activación.
+    Ahora le aplicamos la función de activación.
 
-	$$
-	myActivation(0.87) = 0.87
-	$$
+    $$
+    myActivation(0.87) = 0.87
+    $$
 
-	$$
-	E_a = |1 - 0.87| = 0.13
-	$$
+    $$
+    E_a = |1 - 0.87| = 0.13
+    $$
 
 2. .
 
-	$$
-	\begin{align}
-		& x_1 = 0 \quad x_2 = 0 \quad x_3 = 7 \quad x_4 = 0 \\
-		& 0 * 0.5 + 0 * 0.25 + 7 * 0.01 + 0 * 0.1 = 0.07
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        & x_1 = 0 \quad x_2 = 0 \quad x_3 = 7 \quad x_4 = 0 \\
+        & 0 * 0.5 + 0 * 0.25 + 7 * 0.01 + 0 * 0.1 = 0.07
+    \end{align}
+    $$
 
-	Ahora le aplicamos la función de activación.
+    Ahora le aplicamos la función de activación.
 
-	$$
-	myActivation(0.07) = 0.07
-	$$
+    $$
+    myActivation(0.07) = 0.07
+    $$
 
-	$$
-	E_a = |1 - 0.07| = 0.07
-	$$
+    $$
+    E_a = |1 - 0.07| = 0.07
+    $$
 
 ## 5
 
@@ -149,61 +149,61 @@ Ahora, aplicando estas igualdades a $(1)$.
 
 $$
 \begin{align}
-	& \frac{ y_{ i + 1 } - 2 y_i + y_{ i - 1 } }{ \Delta{ x }^2 } = 0 \\
-	& y_{ i + 1 } - 2 y_i + y_{ i - 1 } = 0
+    & \frac{ y_{ i + 1 } - 2 y_i + y_{ i - 1 } }{ \Delta{ x }^2 } = 0 \\
+    & y_{ i + 1 } - 2 y_i + y_{ i - 1 } = 0
 \end{align}
 $$
 
 1. $i = 2$.
 
-	$$
-	\begin{align}
-		& y_3 - 2 y_2 + y_1 = 0 \\
-		& y_3 - 2 y_2 = -10
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        & y_3 - 2 y_2 + y_1 = 0 \\
+        & y_3 - 2 y_2 = -10
+    \end{align}
+    $$
 
 2. $i = 3$.
 
-	$$
-	y_4 - 2 y_3 + y_2 = 0
-	$$
+    $$
+    y_4 - 2 y_3 + y_2 = 0
+    $$
 
 3. $i = 4$.
 
-	$$
-	y_5 - 2 y_4 + y_3 = 0
-	$$
+    $$
+    y_5 - 2 y_4 + y_3 = 0
+    $$
 
 4. $i = 5$.
 
-	$$
-	\begin{align}
-		& y_6 - 2 y_5 + y_4 = 0 \\
-		& y_4 - 2 y_5 = -100
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        & y_6 - 2 y_5 + y_4 = 0 \\
+        & y_4 - 2 y_5 = -100
+    \end{align}
+    $$
 
 Las ecuaciones en forma de matriz-vector son:
 
 $$
 \begin{pmatrix}
-	-2 & 1  & 0  & 0 \\
-	1  & -2 & 1  & 0 \\
-	0  & 1  & -2 & 1 \\
-	0  & 0  & 1  & -2
+    -2 & 1  & 0  & 0 \\
+    1  & -2 & 1  & 0 \\
+    0  & 1  & -2 & 1 \\
+    0  & 0  & 1  & -2
 \end{pmatrix}
 \begin{pmatrix}
-	y_2 \\
-	y_3 \\
-	y_4 \\
-	y_5
+    y_2 \\
+    y_3 \\
+    y_4 \\
+    y_5
 \end{pmatrix}
 =
 \begin{pmatrix}
-	-10 \\
-	0 \\
-	0 \\
-	-100
+    -10 \\
+    0 \\
+    0 \\
+    -100
 \end{pmatrix}
 $$

@@ -5,7 +5,7 @@
 ### `workers`
 
 |      column       |    type     | required |       default       | meaning                                                              | notes   |
-|:-----------------:|:-----------:|:--------:|:-------------------:|:-------------------------------------------------------------------- |:------- |
+| :---------------: | :---------: | :------: | :-----------------: | :------------------------------------------------------------------- | :------ |
 |    `worker_id`    |   `UUID`    |   yes    | `gen_random_UUID()` | -                                                                    | -       |
 | `document_number` |  `VARCHAR`  |   yes    |          -          | -                                                                    | Unique. |
 |   `discipline`    |  `VARCHAR`  |   yes    |          -          | Discipline, department, or business line associated with the worker. | -       |
@@ -15,13 +15,12 @@
 |   `created_at`    | `TIMESTAMP` |   yes    |       `now()`       | -                                                                    | —       |
 |   `updated_at`    | `TIMESTAMP` |   yes    |       `now()`       | -                                                                    | —       |
 
-
 TODO: consider constraining `discipline`, perhaps, the `gender` too.
 
 ### `workforce_snapshots`
 
 |         column          |    type     | required |       default       |                   meaning                    | notes                                 |
-|:-----------------------:|:-----------:|:--------:|:-------------------:|:--------------------------------------------:|:------------------------------------- |
+| :---------------------: | :---------: | :------: | :-----------------: | :------------------------------------------: | :------------------------------------ |
 | `workforce_snapshot_id` |   `UUID`    |   yes    | `gen_random_UUID()` |                      -                       | -                                     |
 |     `period_month`      |   `DATE`    |   yes    |          -          | Month represented by the workforce snapshot. | Stored as the first day of the month. |
 |     `total_workers`     |    `INT`    |   yes    |          -          |                      -                       | —                                     |
@@ -38,7 +37,7 @@ TODO: consider constraining `discipline`, perhaps, the `gender` too.
 ### `labor_calendars`
 
 |       column        |    type     | required |       default       | meaning | notes   |
-|:-------------------:|:-----------:|:--------:|:-------------------:|:------- |:------- |
+| :-----------------: | :---------: | :------: | :-----------------: | :------ | :------ |
 | `labor_calendar_id` |   `UUID`    |   yes    | `gen_random_UUID()` | -       | -       |
 |   `calendar_year`   |   `YEAR`    |   yes    |          -          | -       | Unique. |
 |    `created_at`     | `TIMESTAMP` |   yes    |       `now()`       | -       | —       |
@@ -47,7 +46,7 @@ TODO: consider constraining `discipline`, perhaps, the `gender` too.
 ### `labor_calendar_days`
 
 |         column          |    type     | required | default | meaning                                 | notes                                           |
-|:-----------------------:|:-----------:|:--------:|:-------:|:--------------------------------------- |:----------------------------------------------- |
+| :---------------------: | :---------: | :------: | :-----: | :-------------------------------------- | :---------------------------------------------- |
 | `labor_calendar_day_id` |   `UUID`    |   yes    |    -    | -                                       | -                                               |
 |   `labor_calendar_id`   |   `UUID`    |   yes    |    -    | -                                       | FK -> `labor_calendar.labor_calendar_id`.       |
 |     `calendar_date`     |   `DATE`    |   yes    |    -    | -                                       | -                                               |
@@ -63,7 +62,7 @@ TODO: validate is those are all the day types.
 ### `absence_cases`
 
 |         column          |    type     | required | default | meaning                                                             | notes                        |
-|:-----------------------:|:-----------:|:--------:|:-------:|:------------------------------------------------------------------- |:---------------------------- |
+| :---------------------: | :---------: | :------: | :-----: | :------------------------------------------------------------------ | :--------------------------- |
 |    `absence_case_id`    |   `UUID`    |   yes    |    -    | -                                                                   | -                            |
 |       `worker_id`       |   `UUID`    |   yes    |    -    | -                                                                   | FK -> `workers.worker_id`.   |
 |     `absence_type`      |  `VARCHAR`  |   yes    |    -    | -                                                                   | `CN`<br>`EG`<br>`LM`<br>`LP` |
@@ -96,7 +95,7 @@ TODO: are we going to do validate `diagnosis_code`? in the Excel file they used 
 ### `work_plans`
 
 |     column     |    type     | required |       default       | meaning                             | notes |
-|:--------------:|:-----------:|:--------:|:-------------------:|:----------------------------------- |:----- |
+| :------------: | :---------: | :------: | :-----------------: | :---------------------------------- | :---- |
 | `work_plan_id` |   `UUID`    |   yes    | `gen_random_uuid()` | -                                   | PK.   |
 |  `plan_year`   |   `YEAR`    |   yes    |          —          | Year that the work plan belongs to. | —     |
 |  `created_at`  | `TIMESTAMP` |   yes    |       `now()`       | -                                   | —     |
@@ -107,7 +106,7 @@ TODO: If we are not going to do computations with `plan_year`, consider change i
 ### `work_plan_sections`
 
 |         column         |    type     | required |       default       | meaning                                                             | notes                                   |
-|:----------------------:|:-----------:|:--------:|:-------------------:|:------------------------------------------------------------------- |:--------------------------------------- |
+| :--------------------: | :---------: | :------: | :-----------------: | :------------------------------------------------------------------ | :-------------------------------------- |
 | `work_plan_section_id` |   `UUID`    |   yes    | `gen_random_uuid()` | -                                                                   | PK.                                     |
 |     `work_plan_id`     |   `UUID`    |   yes    |          —          | Annual work plan that owns this section.                            | FK -> `work_plans.work_plan_id`.        |
 |        `topic`         |  `VARCHAR`  |   yes    |          —          | -                                                                   | —                                       |
@@ -130,7 +129,7 @@ TODO: are we really going to use `sort_order`.
 ### `work_plan_activities`
 
 |         column          |    type     | required |       default       | meaning                                                | notes                                            |
-|:-----------------------:|:-----------:|:--------:|:-------------------:|:------------------------------------------------------ |:------------------------------------------------ |
+| :---------------------: | :---------: | :------: | :-----------------: | :----------------------------------------------------- | :----------------------------------------------- |
 | `work_plan_activity_id` |   `UUID`    |   yes    | `gen_random_uuid()` | Identifier of the related work plan activity record.   | PK                                               |
 | `work_plan_section_id`  |   `UUID`    |   yes    |          —          | section that owns this activity.                       | FK -> `work_plan_sections.work_plan_section_id`. |
 |     `indicator_id`      |   `UUID`    |   yes    |          —          | Identifier of the indicator related to this activity.  | FK -> `catalog.indicators.indicator_id`.         |
@@ -145,7 +144,7 @@ TODO: ask about the meaning of the options in `activity_type`.
 ### `work_plan_schedule_entries`
 
 |            column             |    type     | required |       default       | meaning                                                 | notes                                               | -   |
-|:-----------------------------:|:-----------:|:--------:|:-------------------:|:------------------------------------------------------- |:--------------------------------------------------- | --- |
+| :---------------------------: | :---------: | :------: | :-----------------: | :------------------------------------------------------ | :-------------------------------------------------- | --- |
 | `work_plan_schedule_entry_id` |   `UUID`    |   yes    | `gen_random_uuid()` | -                                                       | PK.                                                 | -   |
 |    `work_plan_activity_id`    |   `UUID`    |   yes    |          —          | Work plan activity that this schedule entry belongs to. | FK -> `work_plan_activities.work_plan_activity_id`. | -   |
 |            `month`            |   `DATE`    |   yes    |          —          | Date when the activity occurrence was planned.          | Stored as the first day of the month.               | -   |
@@ -168,13 +167,13 @@ TODO: since we will have robust log management, I do not think `recorded_by` is 
 ### `aspnet_users`
 
 |         column         |    type     | required |       default       | meaning                                                                                   | notes   |
-|:----------------------:|:-----------:|:--------:|:-------------------:|:----------------------------------------------------------------------------------------- |:------- |
+| :--------------------: | :---------: | :------: | :-----------------: | :---------------------------------------------------------------------------------------- | :------ |
 |       `user_id`        |   `UUID`    |   yes    | `gen_random_uuid()` | -                                                                                         | PK      |
 |      `user_name`       |  `VARCHAR`  |   yes    |          —          | Login username.                                                                           | —       |
 | `normalized_user_name` |  `VARCHAR`  |   yes    |          —          | Upper/lowered normalized username used for lookup and uniqueness.                         | Unique. |
 |        `email`         |  `VARCHAR`  |    no    |          —          | Email associated with the user.                                                           | —       |
 |   `normalized_email`   |  `VARCHAR`  |    no    |          —          | normalized email used by Identity lookups.                                                | Unique. |
-|    `password_hash`     |   `text`    |    no    |          —          |  -                                                                                        | —       |
+|    `password_hash`     |   `text`    |    no    |          —          | -                                                                                         | —       |
 |     `display_name`     |  `VARCHAR`  |   yes    |          —          | Human-readable name shown in the application.                                             | -       |
 |  `is_shared_account`   |  `boolean`  |   yes    |       `false`       | Whether this user is the shared Health and Safety account rather than a personal account. | -       |
 |      `is_active`       |  `boolean`  |   yes    |       `true`        | Whether the account is active for product use.                                            | -       |
@@ -188,14 +187,14 @@ TODO: Verónica mentioned the "shared account" during the meetings, but I think 
 ### `aspnet_roles`
 
 |  column   |   type    | required |       default       | meaning | notes |
-|:---------:|:---------:|:--------:|:-------------------:|:------- |:----- |
+| :-------: | :-------: | :------: | :-----------------: | :------ | :---- |
 | `role_id` |  `UUID`   |   yes    | `gen_random_uuid()` | -       | PK.   |
 |  `name`   | `VARCHAR` |   yes    |          —          | -       | —     |
 
 ### `aspnet_user_roles`
 
 |     column     |    type     | required |       default       | meaning |             notes             |
-|:--------------:|:-----------:|:--------:|:-------------------:|:------- |:-----------------------------:|
+| :------------: | :---------: | :------: | :-----------------: | :------ | :---------------------------: |
 | `user_role_id` |   `UUID`    |   yes    | `gen_random_uuid()` | -       |              PK.              |
 |   `user_id`    |  `VARCHAR`  |   yes    |          —          | -       | FK -> `aspnet_users.user_id`. |
 |   `role_id`    |  `VARCHAR`  |   yes    |          —          | -       | FK -> `aspnet_roles.role_id`. |
@@ -213,7 +212,7 @@ TODO: Verónica mentioned the "shared account" during the meetings, but I think 
 ### `catalog.modules`
 
 |        column         |    type     | required |       default       | meaning | notes                                                                             |
-|:---------------------:|:-----------:|:--------:|:-------------------:|:------- |:--------------------------------------------------------------------------------- |
+| :-------------------: | :---------: | :------: | :-----------------: | :------ | :-------------------------------------------------------------------------------- |
 |      `module_id`      |   `UUID`    |   yes    | `gen_random_UUID()` | -       | PK.                                                                               |
 |        `name`         |  `VARCHAR`  |   yes    |          —          | -       | —                                                                                 |
 | `operational_pattern` |  `VARCHAR`  |    no    |          —          | -       | `CASE_MANAGEMENT`<br>`EVENT_REGISTRATION`<br>`PROGRAM_BOARD`<br>`MATRIX_TRACKING` |
@@ -226,7 +225,7 @@ TODO: we need to have documentation about `operational_pattern`.
 ### `catalog.objectives`
 
 |     column     |    type     | required |       default       | meaning                                    | notes |
-|:--------------:|:-----------:|:--------:|:-------------------:|:------------------------------------------ |:----- |
+| :------------: | :---------: | :------: | :-----------------: | :----------------------------------------- | :---- |
 | `objective_id` |   `UUID`    |   yes    | `gen_random_UUID()` | -                                          | PK.   |
 | `description`  |   `TEXT`    |    no    |          —          | -                                          | —     |
 |  `sort_order`  |    `INT`    |   yes    |          0          | Display order used in lists or UI layouts. | —     |
@@ -239,7 +238,7 @@ TODO: are we really going to use `sort_order`.
 ### `catalog.indicators`
 
 |          column           |    type     | required |       default       | meaning                                                                     | notes                                    |
-|:-------------------------:|:-----------:|:--------:|:-------------------:|:--------------------------------------------------------------------------- |:---------------------------------------- |
+| :-----------------------: | :---------: | :------: | :-----------------: | :-------------------------------------------------------------------------- | :--------------------------------------- |
 |      `indicator_id`       |   `UUID`    |   yes    | `gen_random_UUID()` | -                                                                           | PK                                       |
 |      `objective_id`       |   `UUID`    |   yes    |          —          | Objective related to this indicator                                         | FK -> `catalog.objectives.objective_id`. |
 |        `module_id`        |   `UUID`    |   yes    |          —          | Functional module of the app where this indicator is operated.              | FK -> `catalog.modules.module_id`.       |
@@ -265,7 +264,7 @@ TODO: `owner_area` confuses me with the application roles, are we just having it
 ### `catalog.indicator_targets`
 
 |              column               |    type     | required |       default       | meaning | notes                                                                        |
-|:---------------------------------:|:-----------:|:--------:|:-------------------:|:------- |:---------------------------------------------------------------------------- |
+| :-------------------------------: | :---------: | :------: | :-----------------: | :------ | :--------------------------------------------------------------------------- |
 |            `target_id`            |   `UUID`    |   yes    | `gen_random_UUID()` | -       | PK                                                                           |
 |          `indicator_id`           |   `UUID`    |   yes    |          -          | -       | FK -> `catalog.indicator.indicator_id`                                       |
 | `indicator_definition_version_id` |   `UUID`    |   yes    |          -          | -       | FK -> `engine.indicator_definition_versions.indicator_definition_version_id` |
@@ -290,9 +289,8 @@ This solves the problem with the current fixed model: today, the indicator has i
 
 It defines the **formula families that the engine allows**. It does not store a specific business formula yet; it stores the "template".
 
-
 |        column         |    type     | required |       default       | meaning                                      | notes   |
-|:---------------------:|:-----------:|:--------:|:-------------------:|:-------------------------------------------- |:------- |
+| :-------------------: | :---------: | :------: | :-----------------: | :------------------------------------------- | :------ |
 | `formula_template_id` |   `UUID`    |   yes    | `gen_random_uuid()` | -                                            | PK.     |
 |        `code`         |  `VARCHAR`  |   yes    |          -          | Código estable del template.                 | Unique. |
 |        `name`         |  `VARCHAR`  |   yes    |          -          | Nombre legible.                              | -       |
@@ -304,7 +302,7 @@ It defines the **formula families that the engine allows**. It does not store a 
 |     `updated_at`      | `TIMESTAMP` |   yes    |       `now()`       | -                                            | —       |
 
 |        `code`         | indicators            |
-|:---------------------:|:--------------------- |
+| :-------------------: | :-------------------- |
 |  `RATIO_PERCENTAGE`   | A, FA, PAT, COPASST   |
 |  `COMPOSITE_AVERAGE`  | PC, EEV, PVE          |
 |  `RATE_PER_WORKERS`   | FA, SA, PEL, IEL      |

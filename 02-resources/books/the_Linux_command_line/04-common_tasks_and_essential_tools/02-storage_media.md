@@ -25,7 +25,7 @@ The first step in managing a storage device is attaching the device to the file 
 A file named `/etc/fstab` (short for "file system table") lists the devices (typically hard disk partitions) that are to be mounted at boot time.
 
 | field |     contents     | description                                                                              |
-|:-----:|:----------------:|:---------------------------------------------------------------------------------------- |
+| :---: | :--------------: | :--------------------------------------------------------------------------------------- |
 |   1   |      device      | identifies what the file system to mount                                                 |
 |   2   |   mount point    | the directory where the device is attached to the file system tree.                      |
 |   3   | file system type | Linux allows many file system types to be mounted.                                       |
@@ -73,13 +73,13 @@ Unmounting a device entails writing all the remaining data to the device so that
 
 ### Determining device names
 
-|   patter   | device                                                                                      |
-|:----------:|:------------------------------------------------------------------------------------------- |
-| `/dev/fd*` | Floppy disk drives.                                                                         |
-| `/dev/hd*` | IDE (PATA) disks on older systems.                                                          |
-| `/dev/lp*` | printers.                                                                                   |
-| `/dev/sd*` | SCSI disks. On modern Linux systems, the kernel treats all disk-like devices as this type.  |
-| `/dev/sr*` | optical drives (CD/DVD readers and burners).                                                |
+|   patter   | device                                                                                     |
+| :--------: | :----------------------------------------------------------------------------------------- |
+| `/dev/fd*` | Floppy disk drives.                                                                        |
+| `/dev/hd*` | IDE (PATA) disks on older systems.                                                         |
+| `/dev/lp*` | printers.                                                                                  |
+| `/dev/sd*` | SCSI disks. On modern Linux systems, the kernel treats all disk-like devices as this type. |
+| `/dev/sr*` | optical drives (CD/DVD readers and burners).                                               |
 
 Using `tail -f` to monitor the `/var/log/messages` or `/var/log/syslog` file, we can know the name of a removable device when it is attached.
 

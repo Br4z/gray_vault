@@ -24,13 +24,13 @@ Son mensajes de correo electrónico, texto o voz que engañan a los usuarios par
 
 ```mermaid
 mindmap
-	root((seguridad de la información))
-		confidencialidad
-		integridad
-		disponibilidad
-		no repudio
-		autenticidad
-		rendición de cuentas
+    root((seguridad de la información))
+        confidencialidad
+        integridad
+        disponibilidad
+        no repudio
+        autenticidad
+        rendición de cuentas
 ```
 
 ### Confidencialidad
@@ -63,10 +63,10 @@ Las tres letras de la "tríada de la CID" significan confidencialidad, integrida
 
 ```mermaid
 mindmap
-	root((datos))
-		confidencialidad
-		integridad
-		disponibilidad
+    root((datos))
+        confidencialidad
+        integridad
+        disponibilidad
 ```
 
 ## Tipos de ciberseguridad

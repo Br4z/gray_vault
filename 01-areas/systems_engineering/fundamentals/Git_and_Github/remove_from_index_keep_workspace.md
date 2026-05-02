@@ -9,5 +9,5 @@ git rm --cached <file>
 ```
 
 > To discard all, use the wildcard `*`.
-
+>
 > Without the `--cached` would also remove the file from the workspace.

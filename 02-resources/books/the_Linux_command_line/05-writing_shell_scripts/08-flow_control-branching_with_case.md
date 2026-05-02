@@ -8,9 +8,9 @@ reviewed_on: "2025-08-03"
 
 In `bash`, the multiple-choice compound command is `case`. It has the following syntax:
 
-```
-case <word> in
-	[<pattern> [| <pattern>]...) <commands>;;]...
+```bash
+case word in
+    [pattern] [| pattern]...) commands;;]...
 esac
 ```
 
@@ -29,29 +29,29 @@ Please select:
 read -r -p "Enter selection [0-3] > "
 
 case "$REPLY" in
-	0)
-		echo "Exiting..."
-		exit
-		;;
-	1)
-		echo "Hostname: $HOSTNAME"
-		uptime;;
-	2)
-		df -h
-		;;
-	3)
-		if [[ "$(id -u)" -eq 0 ]]; then
-			echo "Home space utilization (all users)"
-			du -sh /home/*
-		else
-			echo "Home space utilization ($USER)"
-			du -sh $HOME
-		fi
-		;;
-	*)
-		echo "Error: invalid option" >&2
-		exit 1
-		;;
+    0)
+        echo "Exiting..."
+        exit
+        ;;
+    1)
+        echo "Hostname: $HOSTNAME"
+        uptime;;
+    2)
+        df -h
+        ;;
+    3)
+        if [[ "$(id -u)" -eq 0 ]]; then
+            echo "Home space utilization (all users)"
+            du -sh /home/*
+        else
+            echo "Home space utilization ($USER)"
+            du -sh $HOME
+        fi
+        ;;
+    *)
+        echo "Error: invalid option" >&2
+        exit 1
+        ;;
 esac
 ```
 

@@ -90,45 +90,45 @@ Busca confirmar que los requisitos especificados reflejan fielmente las necesida
 
 ```mermaid
 graph LR;
-	A[requerimientos del sistema] --> B[requerimientos de software];
-	A --> C[requerimientos de hardware];
-	B --> D[producto];
-	B --> E[proceso];
-	D --> F[funcionales];
-	D --> G[no funcionales];
+    A[requerimientos del sistema] --> B[requerimientos de software];
+    A --> C[requerimientos de hardware];
+    B --> D[producto];
+    B --> E[proceso];
+    D --> F[funcionales];
+    D --> G[no funcionales];
 ```
 
 ## Tipos de requisitos
 
 ```mermaid
 graph TD;
-	A[requisitos no funcionales] --> B[requisitos de producto];
-	A --> C[requisitos de organización];
-	A --> D[requisitos externos];
+    A[requisitos no funcionales] --> B[requisitos de producto];
+    A --> C[requisitos de organización];
+    A --> D[requisitos externos];
 
-	B --> B1[requisitos de usabilidad];
-	B --> B2[requisitos de portabilidad];
-	B --> B3[requisitos de fiabilidad];
-	B --> B4[requisitos de eficiencia];
-	B4 --> B5[requisitos de espacio];
-	B4 --> B6[requisitos de rendimiento];
+    B --> B1[requisitos de usabilidad];
+    B --> B2[requisitos de portabilidad];
+    B --> B3[requisitos de fiabilidad];
+    B --> B4[requisitos de eficiencia];
+    B4 --> B5[requisitos de espacio];
+    B4 --> B6[requisitos de rendimiento];
 
-	C --> C1[requisitos de entrega];
-	C --> C2[requisitos de estándares];
-	C --> C3[requisitos de implementación];
+    C --> C1[requisitos de entrega];
+    C --> C2[requisitos de estándares];
+    C --> C3[requisitos de implementación];
 
-	D --> D1[requisitos de interoperabilidad];
-	D --> D2[requisitos legislativos];
-	D --> D3[requisitos éticos];
+    D --> D1[requisitos de interoperabilidad];
+    D --> D2[requisitos legislativos];
+    D --> D3[requisitos éticos];
 
-	D2 --> D4[Requisitos de privacidad];
-	D2 --> D5[Requisitos de seguridad];
+    D2 --> D4[Requisitos de privacidad];
+    D2 --> D5[Requisitos de seguridad];
 ```
 
 ## Técnicas para educir requisitos
 
 |     técnica      |    esfuerzo    |         aplicabilidad         |
-|:----------------:|:--------------:|:-----------------------------:|
+| :--------------: | :------------: | :---------------------------: |
 |   entrevistas.   |  medio-alto.   | requisitos nuevos/existentes. |
 |    workshops.    | alto-muy alto. |     innovación y fuentes.     |
 |   prototipos.    |   variable.    |     validación temprana.      |

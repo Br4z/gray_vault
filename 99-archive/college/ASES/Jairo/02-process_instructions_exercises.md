@@ -11,7 +11,6 @@ reviewed_on: "2024-09-22"
 - `STR` (store): `STR M NULL NULL NULL` reads the value into the accumulator register and puts it into memory address `M`.
 
 - `ADD` (add).
-
     1. `ADD M NULL NULL NULL`: adds the value at memory address `M` to the value loaded into the accumulator register.
 
     2. `ADD M1 M2 NULL`: loads the value at memory address `M1` into the accumulator register and adds it to the value found at memory address `M2`.
@@ -19,7 +18,6 @@ reviewed_on: "2024-09-22"
     3. `ADD M1 M2 M3`: same as `ADD M1 M2 NULL` but puts the result in `M3`.
 
 - `SUB` (subtract).
-
     1. `SUB M NULL NULL NULL`: subtracts the value of memory address `M` from the value loaded in the accumulator register.
 
     2. `SUB M1 M2 NULL`: loads the value at memory address `M1` into the accumulator register and subtracts the value found at memory address `M2`.

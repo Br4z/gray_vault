@@ -50,18 +50,18 @@ Modern Linux systems employ two software suites to perform and manage printing. 
 ### `pr` convert text files for printing
 
 | option              | description                                                                                                 |
-|:------------------- |:----------------------------------------------------------------------------------------------------------- |
-| `+<first>[:<last>]` | output a range of pages starting with *first*, optionally, ending with *last*.                              |
-| `-<n>`              | organize the content of the page into the number of columns specified by *n*.                               |
+| :------------------ | :---------------------------------------------------------------------------------------------------------- |
+| `+<first>[:<last>]` | output a range of pages starting with _first_, optionally, ending with _last_.                              |
+| `-<n>`              | organize the content of the page into the number of columns specified by _n_.                               |
 | `-a`                | by default, multicolumn output is listed vertically. By adding this option, content is listed horizontally. |
 | `-d`                | double-space output.                                                                                        |
-| `-D <format>`       | format the date displayed in the page headers using *format*.                                               |
+| `-D <format>`       | format the date displayed in the page headers using _format_.                                               |
 | `-f`                | use form feeds rather than carriage returns to separate pages.                                              |
-| `-h "<string>"`     | in the center portion of the page header, use *string* rather than the name of the file being processed.    |
-| `-l <n>`            | set page length to *length*.                                                                                |
+| `-h "<string>"`     | in the center portion of the page header, use _string_ rather than the name of the file being processed.    |
+| `-l <n>`            | set page length to _length_.                                                                                |
 | `-n`                | number lines.                                                                                               |
-| `-o <n>`            | create a left margin *n* characters wide.                                                                   |
-| `-w <n>`            | set the page width to *n*.                                                                                  |
+| `-o <n>`            | create a left margin _n_ characters wide.                                                                   |
+| `-w <n>`            | set the page width to _n_.                                                                                  |
 
 ## Sending a print job to a printer
 
@@ -70,8 +70,8 @@ Modern Linux systems employ two software suites to perform and manage printing. 
 It can be used to send files to the printer. It may also be used in pipelines, as it accepts standard input.
 
 |     option     | description                                                                                                                                                     |
-|:--------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    `-# <n>`    | set number of copies to *n*.                                                                                                                                    |
+| :------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    `-# <n>`    | set number of copies to _n_.                                                                                                                                    |
 |      `-p`      | print each page with a shaded header with the date, time, job name, and page number. This so-called "pretty print" option can be used when printing text files. |
 | `-P <printer>` | specify the name of the printer used for output.                                                                                                                |
 |      `-r`      | delete files after printing.                                                                                                                                    |
@@ -80,17 +80,17 @@ It can be used to send files to the printer. It may also be used in pipelines, a
 
 Like `lpr`, it accepts either files or standard input for printing.
 
-|                                                   option                                                   | description                                                                                                                                                                       |
-|:----------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                               `-d <printer>`                                               | set the destination printer to *printer*.                                                                                                                                         |
-|                                                  `-n <n>`                                                  | set the number of copies to *n*.                                                                                                                                                  |
-|                                               `-o landscape`                                               | set output to landscape orientation.                                                                                                                                              |
-|                                                `-o fitplot`                                                | scale the file to fit the page.                                                                                                                                                   |
-|                                              `-o scaling=<n>`                                              | scale the file to *n*. The value of 100 fills the page. Values less than 100 are reduced, while values greater than 100 cause the file to be printed across multiple pages. |
-|                                                `-o cpi=<n>`                                                | set the output characters per inch to *n*.                                                                                                                                        |
-|                                                `-o lpi=<n>`                                                | set the output lines per inch to *n*.                                                                                                                                             |
-| `-o page-bottom=<points>`<br>`-o page-left=<points>`<br>`-o page-right=<points>`<br>`-o page-top=<points>` | set the page margins. Values are expresses in *points*, a unit of typographic measurement.                                                                                        |
-|                                                `-P <pages>`                                                | specify the list of pages. *pages* may be expressed as a comma-separated list and/or a range.                                                                                     |
+|                                                   option                                                   | description                                                                                                                                                                 |
+| :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                               `-d <printer>`                                               | set the destination printer to _printer_.                                                                                                                                   |
+|                                                  `-n <n>`                                                  | set the number of copies to _n_.                                                                                                                                            |
+|                                               `-o landscape`                                               | set output to landscape orientation.                                                                                                                                        |
+|                                                `-o fitplot`                                                | scale the file to fit the page.                                                                                                                                             |
+|                                              `-o scaling=<n>`                                              | scale the file to _n_. The value of 100 fills the page. Values less than 100 are reduced, while values greater than 100 cause the file to be printed across multiple pages. |
+|                                                `-o cpi=<n>`                                                | set the output characters per inch to _n_.                                                                                                                                  |
+|                                                `-o lpi=<n>`                                                | set the output lines per inch to _n_.                                                                                                                                       |
+| `-o page-bottom=<points>`<br>`-o page-left=<points>`<br>`-o page-right=<points>`<br>`-o page-top=<points>` | set the page margins. Values are expresses in _points_, a unit of typographic measurement.                                                                                  |
+|                                                `-P <pages>`                                                | specify the list of pages. _pages_ may be expressed as a comma-separated list and/or a range.                                                                               |
 
 ### Another option (`a2ps`)
 
@@ -99,32 +99,32 @@ Like `lpr`, it accepts either files or standard input for printing.
 ## `a2ps` Options
 
 |         option          | description                                                   |
-|:-----------------------:|:------------------------------------------------------------- |
-| `--center-title=<text>` | set center page title to *text*.                              |
-|     `--columns=<n>`     | arrange pages into *n* columns.                               |
-|    `--footer=<text>`    | set page footer to *text*.                                    |
+| :---------------------: | :------------------------------------------------------------ |
+| `--center-title=<text>` | set center page title to _text_.                              |
+|     `--columns=<n>`     | arrange pages into _n_ columns.                               |
+|    `--footer=<text>`    | set page footer to _text_.                                    |
 |        `--guess`        | report the types of files given as arguments.                 |
-| `--left-footer=<text>`  | set the left‑page footer to *text*.                           |
-|  `--left-title=<text>`  | set the left‑page title to *text*.                            |
-|  `--line-numbers=<n>`   | number lines of output every *n* lines.                       |
+| `--left-footer=<text>`  | set the left‑page footer to _text_.                           |
+|  `--left-title=<text>`  | set the left‑page title to _text_.                            |
+|  `--line-numbers=<n>`   | number lines of output every _n_ lines.                       |
 |    `--list=defaults`    | display default settings.                                     |
-|    `--pages=<range>`    | print pages in *range*.                                       |
-| `--right-footer=<text>` | set the right‑page footer to *text*.                          |
-| `--right-title=<text>`  | set the right‑page title to *text*.                           |
-|      `--rows=<n>`       | arrange pages into *n* rows.                                  |
+|    `--pages=<range>`    | print pages in _range_.                                       |
+| `--right-footer=<text>` | set the right‑page footer to _text_.                          |
+| `--right-title=<text>`  | set the right‑page title to _text_.                           |
+|      `--rows=<n>`       | arrange pages into _n_ rows.                                  |
 |          `-B`           | no page headers.                                              |
-|       `-b <text>`       | set the page header to *text*.                                |
-|       `-f <size>`       | use *size*‑point font.                                        |
-|        `-l <n>`         | set characters per line to *n*.                               |
-|        `-L <n>`         | set lines per page to *n*.                                    |
-|       `-M <name>`       | use media *text*.                                             |
-|        `-n <n>`         | output *n* copies of each page.                               |
-|       `-o <file>`       | send output to *file*. If *file* is `-`, use standard output. |
-|     `-P <printer>`      | use printer *printer*.                                        |
+|       `-b <text>`       | set the page header to _text_.                                |
+|       `-f <size>`       | use _size_‑point font.                                        |
+|        `-l <n>`         | set characters per line to _n_.                               |
+|        `-L <n>`         | set lines per page to _n_.                                    |
+|       `-M <name>`       | use media _text_.                                             |
+|        `-n <n>`         | output _n_ copies of each page.                               |
+|       `-o <file>`       | send output to _file_. If _file_ is `-`, use standard output. |
+|     `-P <printer>`      | use printer _printer_.                                        |
 |          `-R`           | portrait orientation.                                         |
 |          `-r`           | landscape orientation.                                        |
-|        `-T <n>`         | set tab stops every *n* characters.                           |
-|       `-u <text>`       | underlay (watermark) pages with *text*.                       |
+|        `-T <n>`         | set tab stops every _n_ characters.                           |
+|       `-u <text>`       | underlay (watermark) pages with _text_.                       |
 
 ## Monitoring and controlling print jobs
 
@@ -135,10 +135,10 @@ Each printer is given a **print queue**, where jobs are parked until they can be
 It is useful for determining the names and availability of printers on the system.
 
 |       option        | description                                           |
-|:-------------------:|:----------------------------------------------------- |
-| `-a [<printer>...]` | display the state of the printer queue for *printer*. |
+| :-----------------: | :---------------------------------------------------- |
+| `-a [<printer>...]` | display the state of the printer queue for _printer_. |
 |        `-d`         | display the name of the system's default printer.     |
-| `-p [<printer>...`  | display the status of *printer*.                      |
+| `-p [<printer>...`  | display the status of _printer_.                      |
 |        `-r`         | display the status of the print server                |
 |        `-s`         | display a status summary.                             |
 |        `-t`         | display a complete status report.                     |
@@ -151,6 +151,6 @@ It is used to see the status of a printer queue. A printer can be specified with
 
 CUPS supplies two programs used to terminate print jobs and remove them from the print queue. One is Berkely style (`lprm`) and the other is System V (`cancel`). They differ slightly in the options they support, but do basically the same thing.
 
-```
+```text
 cancel PRINT_JOB_NUMBER
 ```

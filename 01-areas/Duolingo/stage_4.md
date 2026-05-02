@@ -75,7 +75,7 @@ En inglés necesitas usar los infinitivos en ciertas situaciones, como cuando es
 ¡Aquí tienes una guía de algunos sustantivos que se usan para la ropa! ¡Observa que los sustantivos incontables algunas veces pueden escribirse en plural (con la terminación `s`)!
 
 | countable  | uncountable |
-|:----------:|:-----------:|
+| :--------: | :---------: |
 | "swimsuit" |  "jewelry"  |
 |  "shirt"   |  "clothes"  |
 |  "dress"   |   "jeans"   |
@@ -113,7 +113,7 @@ Claro, aquí tienes las notas formateadas directamente en el mismo estilo que la
 
 ## 38 - Comenta sobre deportes
 
-¡También puedes usar "which" para decir *que* y agregar más información acerca de algo!
+¡También puedes usar "which" para decir _que_ y agregar más información acerca de algo!
 
 > Truco extra: "which" a menudo se usa después de una coma.
 

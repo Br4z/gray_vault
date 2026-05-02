@@ -16,12 +16,11 @@ Often, however, your nonsense computation will merely produce `NaN` or an `undef
 
 ```javascript
 function can_you_spot_the_problem() {
-	"use strict"
-	for (counter = 0; counter < 10; counter++)
-		console.log("Happy happy")
+    "use strict";
+    for (counter = 0; counter < 10; counter++) console.log("Happy happy");
 }
 
-can_you_spot_the_problem() // ReferenceError: counter is not defined
+can_you_spot_the_problem(); // ReferenceError: counter is not defined
 ```
 
 Normally, when you forget to put `let` in front of your binding, as with `counter` in the example, JavaScript quietly creates a global binding and uses that. In strict mode, an error is reported instead....

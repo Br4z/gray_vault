@@ -5,7 +5,7 @@
 ### OSI reference model
 
 | layer |     name     |                                                                  description                                                                  |
-|:-----:|:------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|
+| :---: | :----------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
 |   7   | Application  |                                                     Provides interfaces for applications.                                                     |
 |   6   | Presentation | Translates data formats to ensure that the application-layer data of one system can be identified by the application layer of another system. |
 |   5   |   Session    |                                 Establishes, manages, and terminates sessions between communicating parties.                                  |

@@ -58,15 +58,15 @@ Para restar un número de otro basta cambiar el signo al número que se va a res
 
 - Ley conmutativa: el orden de los factores no altera el producto.
 
-	$$
-	a b = b a
-	$$
+    $$
+    a b = b a
+    $$
 
 - Ley asociativa: los factores de un producto pueden ser reagrupados de cualquier modo sin que se altere el producto.
 
-	$$
-	a b c = (a b) c = a (b c)
-	$$
+    $$
+    a b c = (a b) c = a (b c)
+    $$
 
 ## Unidad IV (potenciación y radicación de enteros)
 
@@ -76,12 +76,12 @@ Veamos como toda cantidad con exponente negativo es una fracción cuyo numerador
 
 $$
 \begin{align}
-		\frac{ x^m }{ x^{ m + n } } & = x^{ -n } \\
-		                            & = x^{ m + n } \\
-		                            & = x^m * x^n \\
-		                            & = \frac{ x^m }{ x^m * x^n } \\
-		                            & = \frac{ 1 }{ x^n } \\
-		                            & \therefore x^{ -n } = \frac{ 1 }{ x^n }
+        \frac{ x^m }{ x^{ m + n } } & = x^{ -n } \\
+                                    & = x^{ m + n } \\
+                                    & = x^m * x^n \\
+                                    & = \frac{ x^m }{ x^m * x^n } \\
+                                    & = \frac{ 1 }{ x^n } \\
+                                    & \therefore x^{ -n } = \frac{ 1 }{ x^n }
 \end{align}
 $$
 
@@ -95,37 +95,37 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 
 - Termino: es una expresión algebraica que consta de números y símbolos no separados por los signos $+$ o $-$.
 
-	$$
-	a \quad 2 a^2 \quad -12 a b
-	$$
+    $$
+    a \quad 2 a^2 \quad -12 a b
+    $$
 
 ### Grado de un término
 
 - Grado absoluto: es la suma de los exponentes de los factores literales.
 
-	$$
-	5 a^3 b^2 \quad \text{grado 5}
-	$$
+    $$
+    5 a^3 b^2 \quad \text{grado 5}
+    $$
 
 - Grado relativo: con respecto a una letra es el exponente de dicha letra.
 
-	$$
-	5 a^3 b^2 \quad \text{grado 3 con respecto a $a$}
-	$$
+    $$
+    5 a^3 b^2 \quad \text{grado 3 con respecto a $a$}
+    $$
 
 ### Grado de un polinomio
 
 - Grado absoluto: es igual al grado del término que tenga mayor grado.
 
-	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 6}
-	$$
+    $$
+    a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 6}
+    $$
 
 - Grado relativo: con respecto a una letra es al mayor exponente que tenga dicha letra en el polinomio.
 
-	$$
-	a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 4 con respecto a $x$}
-	$$
+    $$
+    a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 4 con respecto a $x$}
+    $$
 
 ## Unidad VI (adicción y sustracción de expresiones algebraicas. Ecuaciones. Inecuaciones)
 
@@ -135,12 +135,12 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 
 - Identidades: igualdad que contiene una o varias cantidades desconocidas llamadas incógnitas que se cumple para cualquier valor que se le dé a las letras.
 
-	$$
-	\begin{align}
-		a + b     & \equiv a + b \\
-		x^2 - y^2 & \equiv (x + y) (x - y)
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        a + b     & \equiv a + b \\
+        x^2 - y^2 & \equiv (x + y) (x - y)
+    \end{align}
+    $$
 
 - Ecuación: igualdad que contiene una o varias cantidades desconocidas llamadas incógnitas.
 
@@ -173,16 +173,14 @@ Llamamos como en las igualdades **primer miembro** a la expresión que está a l
 #### Propiedades de las desigualdades
 
 - La desigualdad no varía si a los dos miembros de la desigualdad se:
+    - suma o resta una misma cantidad.
 
-	- suma o resta una misma cantidad.
-
-	- multiplica o divide por una misma cantidad positiva.
+    - multiplica o divide por una misma cantidad positiva.
 
 - La desigualdad cambia de sentido si a los dos miembros de la desigualdad se:
+    - multiplica o divide por una misma cantidad negativa.
 
-	- multiplica o divide por una misma cantidad negativa.
-
-	- cambian por sus inversos.
+    - cambian por sus inversos.
 
 - Si los miembros de una desigualdad son positivos y se elevan a una misma potencia positiva, la desigualdad permanece.
 
@@ -218,32 +216,32 @@ Hay ciertos productos que por su simplicidad y por obedecer a reglas fijas se ll
 
 1. $(x + y)^2$.
 
-	$$
-	\begin{align}
-		(x - y)^2 & = (x + y) (x + y) \\
-		          & = x^2 + x y + x y + y^2 \\
-		          & = x^2 + 2 x y + y^2
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        (x - y)^2 & = (x + y) (x + y) \\
+                  & = x^2 + x y + x y + y^2 \\
+                  & = x^2 + 2 x y + y^2
+    \end{align}
+    $$
 
 2. $(x - y)^2$.
 
-	$$
-	\begin{align}
-		(x - y)^2 & = (x - y) (x - y) \\
-		          & = x^2 - x y - x y + y^2 \\
-		          & = x^2 - 2 x y + y^2
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        (x - y)^2 & = (x - y) (x - y) \\
+                  & = x^2 - x y - x y + y^2 \\
+                  & = x^2 - 2 x y + y^2
+    \end{align}
+    $$
 
 3. $(x + y) (x - y)$.
 
-	$$
-	\begin{align}
-	(x + y) (x - y) & = x^2 + x y - x y + y^2 \\
-	                & = x^2 - y^2
-	\end{align}
-	$$
+    $$
+    \begin{align}
+    (x + y) (x - y) & = x^2 + x y - x y + y^2 \\
+                    & = x^2 - y^2
+    \end{align}
+    $$
 
 ## Unidad VIII (división de expresiones algebraicas)
 
@@ -277,8 +275,8 @@ Reemplacemos $x$ por $a$.
 
 $$
 \begin{align}
-	a a^m + b a^{ m - 1 } + c a^{ m - 2 } + \dots & = (a - a) Q + R \\
-	a a^m + b a^{ m - 1 } + c a^{ m - 2 } + \dots & = R \\
+    a a^m + b a^{ m - 1 } + c a^{ m - 2 } + \dots & = (a - a) Q + R \\
+    a a^m + b a^{ m - 1 } + c a^{ m - 2 } + \dots & = R \\
 \end{align}
 $$
 
@@ -294,8 +292,8 @@ Si $b_1 x^3 + c_1 x^2 + d_1$ y $R$ son el cociente y el residuo respectivamente 
 
 $$
 \begin{align}
-	b x^3 + c x^2 + dx + e & = (b_1 x^3 + c_1 x^2 + d_1) (x - a) + R \\
-	                       & = b_1 x^3 + (c_1 a b_1) x^2 + (d_1 - a c_1) x - a d_1 + R
+    b x^3 + c x^2 + dx + e & = (b_1 x^3 + c_1 x^2 + d_1) (x - a) + R \\
+                           & = b_1 x^3 + (c_1 a b_1) x^2 + (d_1 - a c_1) x - a d_1 + R
 \end{align}
 $$
 
@@ -303,10 +301,10 @@ Para que la igualdad anterior sea válida es necesario que los coeficientes de l
 
 $$
 \begin{align}
-	b & = b_1 \\[5 pt]
-	c & = c_1 a b_1 \\[5 pt]
-	d & = d_1 - a c_1 \\[5 pt]
-	e & = -a d_1 + R
+    b & = b_1 \\[5 pt]
+    c & = c_1 a b_1 \\[5 pt]
+    d & = d_1 - a c_1 \\[5 pt]
+    e & = -a d_1 + R
 \end{align}
 $$
 
@@ -314,10 +312,10 @@ De aquí podemos despejar los coeficientes del cociente y el residuo.
 
 $$
 \begin{align}
-	b_1 & = b \\
-	c_1 & = c + a b_1 \\
-	d_1 & = d + a c_1 \\
-	R   & = e + a d_1
+    b_1 & = b \\
+    c_1 & = c + a b_1 \\
+    d_1 & = d + a c_1 \\
+    R   & = e + a d_1
 \end{align}
 $$
 
@@ -337,33 +335,33 @@ Tanto en el dividendo como en el cociente pueden no estar todas las potencias de
 
 - $x^n - a^n$ siempre es divisible por $x - a$.
 
-	Al reemplazar $x$ por $a$ se anula el polinomio.
+    Al reemplazar $x$ por $a$ se anula el polinomio.
 
-	$$
-	x^n - a^n = a^n - a^n = 0
-	$$
+    $$
+    x^n - a^n = a^n - a^n = 0
+    $$
 
 - $x^n - a^n$ es divisible por $x + a$ solo cuando $n$ es par.
 
-	Al reemplazar $x$ por $-a$.
+    Al reemplazar $x$ por $-a$.
 
-	$$
-	x^n - a^n = (-a)^n - a^n
-	$$
+    $$
+    x^n - a^n = (-a)^n - a^n
+    $$
 
 - $x^n + a^n$ es divisible por $x + a$ solo cuando $n$ es impar.
 
-	Al reemplazar $x$ por $-a$.
+    Al reemplazar $x$ por $-a$.
 
-	$$
-	x^n + a^n = (-a)^n + a^n
-	$$
+    $$
+    x^n + a^n = (-a)^n + a^n
+    $$
 
 - $x^n + a^n$ nunca es divisible por $x - a$.
 
-	No hay valor posible bajo ninguna circunstancia que haga que $x^n + a^n$ sea 0.
+    No hay valor posible bajo ninguna circunstancia que haga que $x^n + a^n$ sea 0.
 
-	> Ni par, ni impar.
+    > Ni par, ni impar.
 
 ## Unidad IX (potenciación)
 
@@ -423,11 +421,11 @@ $$
 
 $$
 \begin{array}{rcl}
-	a x^2 + b x + c & = & (d x + e) (f x + g) \\[5 pt]
+    a x^2 + b x + c & = & (d x + e) (f x + g) \\[5 pt]
 
-					& = & d f x^2 + d g x + e f x + e g \\[5 pt]
+                    & = & d f x^2 + d g x + e f x + e g \\[5 pt]
 
-					& = & d f x^2 + (d g + e f) x + e g \\[5 pt]
+                    & = & d f x^2 + (d g + e f) x + e g \\[5 pt]
 \end{array}
 $$
 
@@ -491,39 +489,39 @@ Se llama **proporción** a la igualdad de dos razones...
 
 1. En una proporción se puede sumar o restar a cada antecedente su consecuente sin que se altere la igualdad.
 
-	$$
-	\frac{ a }{ b } = \frac{ c }{ d } \implies \frac{ a \pm b }{ b } = \frac{ c a \pm d }{ d }
-	$$
+    $$
+    \frac{ a }{ b } = \frac{ c }{ d } \implies \frac{ a \pm b }{ b } = \frac{ c a \pm d }{ d }
+    $$
 
-	En efecto:
+    En efecto:
 
-	$$
-	\frac{ a }{ b } \pm 1 = \frac{ c }{ d } \pm 1 \quad \frac{ a \pm b }{ b } = \frac{ c a \pm d }{ d }
-	$$
+    $$
+    \frac{ a }{ b } \pm 1 = \frac{ c }{ d } \pm 1 \quad \frac{ a \pm b }{ b } = \frac{ c a \pm d }{ d }
+    $$
 
 2. Cuando se tienen dos o más razones iguales, la suma o la diferencia de los antecedentes dividida por la suma o diferencia de los consecuentes forma otra razón que es igual a las primeras.
 
-	$$
-	\frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g } = \frac{ a \pm c \pm f }{ b \pm d \pm g }
-	$$
+    $$
+    \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g } = \frac{ a \pm c \pm f }{ b \pm d \pm g }
+    $$
 
-	En efecto:
+    En efecto:
 
-	$$
-	\frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g } = k \\[10 pt]
+    $$
+    \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g } = k \\[10 pt]
 
-	a = b k \quad c = d k \quad f = g k \quad a \pm c \pm f = k (b \pm d \pm g) \\[10 pt]
+    a = b k \quad c = d k \quad f = g k \quad a \pm c \pm f = k (b \pm d \pm g) \\[10 pt]
 
-	\frac{ a \pm c \pm f }{ b \pm d \pm g } = k = \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g }
-	$$
+    \frac{ a \pm c \pm f }{ b \pm d \pm g } = k = \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g }
+    $$
 
 3. Cuando se tiene la igualdad de dos razones, la suma de los antecedentes dividida por la suma de los consecuentes es igual a la razón formada por las diferencias de los mismos.
 
-	$$
-	\frac{ a }{ b } = \frac{ c }{ d } \implies \frac{ a + c }{ b + d } = \frac{ a - c }{ b - d }
-	$$
+    $$
+    \frac{ a }{ b } = \frac{ c }{ d } \implies \frac{ a + c }{ b + d } = \frac{ a - c }{ b - d }
+    $$
 
-	> Usando la segunda propiedad se puede demostrar.
+    > Usando la segunda propiedad se puede demostrar.
 
 ## Unidad XIII (raíces y ecuaciones con radicales)
 
@@ -593,8 +591,8 @@ Sea el siguiente sistema de ecuaciones
 
 $$
 \begin{array}{cccc}
-	a_1 x + b_1 y & = & k_1 & (1) \\[5 pt]
-	a_2 x + b_2 y & = & k_2 & (2) \\[5 pt]
+    a_1 x + b_1 y & = & k_1 & (1) \\[5 pt]
+    a_2 x + b_2 y & = & k_2 & (2) \\[5 pt]
 \end{array}
 $$
 
@@ -602,8 +600,8 @@ Multipliquemos la ecuación $(1)$ por $b_2$ y la $(2)$ por $b_1$.
 
 $$
 \begin{array}{cccc}
-	a_1 b_2 x + b_1 b_2 y & = & b_2 k_1 & (3) \\[5 pt]
-	a_2 b_1 x + b_1 b_2 y & = & b_1 k_2 & (4) \\[5 pt]
+    a_1 b_2 x + b_1 b_2 y & = & b_2 k_1 & (3) \\[5 pt]
+    a_2 b_1 x + b_1 b_2 y & = & b_1 k_2 & (4) \\[5 pt]
 \end{array}
 $$
 
@@ -617,8 +615,8 @@ Multipliquemos ahora la ecuación $(1)$ por $a_2$ y la $(2)$ por $a_1$.
 
 $$
 \begin{array}{cccc}
-	a_1 a_2 x + a_2 b_1 y & = & a_2 k_1 & (5) \\[5 pt]
-	a_1 a_2 x + a_1 b_2 y & = & a_1 k_2 & (6) \\[5 pt]
+    a_1 a_2 x + a_2 b_1 y & = & a_2 k_1 & (5) \\[5 pt]
+    a_1 a_2 x + a_1 b_2 y & = & a_1 k_2 & (6) \\[5 pt]
 \end{array}
 $$
 
@@ -633,8 +631,8 @@ El denominador común de $x$ y de $y$ ($a_1 b_2 - a_2 b_1$), se puede escribir c
 $$
 a_1 b_2 - a_2 b_1 =
 \begin{vmatrix}
-	a_1 & b_1 \\[5 pt]
-	a_2 & b_2
+    a_1 & b_1 \\[5 pt]
+    a_2 & b_2
 \end{vmatrix}
 $$
 
@@ -646,30 +644,30 @@ Las soluciones de $x$ y $y$ pueden expresarse por medio de determinantes, así:
 
 $$
 x = \frac{
-		\begin{vmatrix}
-			k_1 & b_1 \\[5 pt]
-			k_2 & b_2
-		\end{vmatrix}
-	}
-	{
-		\begin{vmatrix}
-			a_1 & b_1 \\[5 pt]
-			a_2 & b_2
-		\end{vmatrix}
-	}
+        \begin{vmatrix}
+            k_1 & b_1 \\[5 pt]
+            k_2 & b_2
+        \end{vmatrix}
+    }
+    {
+        \begin{vmatrix}
+            a_1 & b_1 \\[5 pt]
+            a_2 & b_2
+        \end{vmatrix}
+    }
 \quad
 y = \frac{
-		\begin{vmatrix}
-			a_1 & k_1 \\[5 pt]
-			a_2 & k_2
-		\end{vmatrix}
-	}
-	{
-		\begin{vmatrix}
-			a_1 & b_1 \\[5 pt]
-			a_2 & b_2
-		\end{vmatrix}
-	}
+        \begin{vmatrix}
+            a_1 & k_1 \\[5 pt]
+            a_2 & k_2
+        \end{vmatrix}
+    }
+    {
+        \begin{vmatrix}
+            a_1 & b_1 \\[5 pt]
+            a_2 & b_2
+        \end{vmatrix}
+    }
 $$
 
 ### Determinantes de tercer orden y regla de Sarrus
@@ -678,9 +676,9 @@ Si tenemos un determinante de tercer orden de la forma:
 
 $$
 \begin{vmatrix}
-	a_1 & b_1 & c_1 \\[5 pt]
-	a_2 & b_2 & c_2 \\[5 pt]
-	a_3 & b_3 & c_3
+    a_1 & b_1 & c_1 \\[5 pt]
+    a_2 & b_2 & c_2 \\[5 pt]
+    a_3 & b_3 & c_3
 \end{vmatrix}
 $$
 
@@ -688,11 +686,11 @@ y queremos encontrar los productos formados por las diagonales, nos valemos de u
 
 $$
 \begin{vmatrix}
-	a_1 & b_1 & c_1 \\[5 pt]
-	a_2 & b_2 & c_2 \\[5 pt]
-	a_3 & b_3 & c_3 \\[5 pt]
-	a_1 & b_1 & c_1 \\[5 pt]
-	a_2 & b_2 & c_2
+    a_1 & b_1 & c_1 \\[5 pt]
+    a_2 & b_2 & c_2 \\[5 pt]
+    a_3 & b_3 & c_3 \\[5 pt]
+    a_1 & b_1 & c_1 \\[5 pt]
+    a_2 & b_2 & c_2
 \end{vmatrix}
 $$
 
@@ -708,9 +706,9 @@ Sea el siguiente sistema de ecuaciones:
 
 $$
 \begin{array}{ccc}
-	a_1 x + b_1 y + c_1 z & = & k_1 \\[5 pt]
-	a_2 x + b_2 y + c_2 z & = & k_2 \\[5 pt]
-	a_3 x + b_3 y + c_3 z & = & k_3
+    a_1 x + b_1 y + c_1 z & = & k_1 \\[5 pt]
+    a_2 x + b_2 y + c_2 z & = & k_2 \\[5 pt]
+    a_3 x + b_3 y + c_3 z & = & k_3
 \end{array}
 $$
 
@@ -718,49 +716,49 @@ la regla de Krames establece lo siguiente:
 
 $$
 x = \frac{
-		\begin{vmatrix}
-			k_1 & b_1 & c_1 \\[5 pt]
-			k_2 & b_2 & c_2 \\[5 pt]
-			k_3 & b_3 & c_3
-		\end{vmatrix}
-	}
-	{
-		\begin{vmatrix}
-			a_1 & b_1 & c_1 \\[5 pt]
-			a_2 & b_2 & c_2 \\[5 pt]
-			a_3 & b_3 & c_3
-		\end{vmatrix}
-	}
+        \begin{vmatrix}
+            k_1 & b_1 & c_1 \\[5 pt]
+            k_2 & b_2 & c_2 \\[5 pt]
+            k_3 & b_3 & c_3
+        \end{vmatrix}
+    }
+    {
+        \begin{vmatrix}
+            a_1 & b_1 & c_1 \\[5 pt]
+            a_2 & b_2 & c_2 \\[5 pt]
+            a_3 & b_3 & c_3
+        \end{vmatrix}
+    }
 \quad
 y = \frac{
-		\begin{vmatrix}
-			a_1 & k_1 & c_1 \\[5 pt]
-			a_2 & k_2 & c_2 \\[5 pt]
-			a_3 & k_3 & c_3
-		\end{vmatrix}
-	}
-	{
-		\begin{vmatrix}
-			a_1 & b_1 & c_1 \\[5 pt]
-			a_2 & b_2 & c_2 \\[5 pt]
-			a_3 & b_3 & c_3
-		\end{vmatrix}
-	}
+        \begin{vmatrix}
+            a_1 & k_1 & c_1 \\[5 pt]
+            a_2 & k_2 & c_2 \\[5 pt]
+            a_3 & k_3 & c_3
+        \end{vmatrix}
+    }
+    {
+        \begin{vmatrix}
+            a_1 & b_1 & c_1 \\[5 pt]
+            a_2 & b_2 & c_2 \\[5 pt]
+            a_3 & b_3 & c_3
+        \end{vmatrix}
+    }
 \quad
 z = \frac{
-		\begin{vmatrix}
-			a_1 & b_1 & k_1 \\[5 pt]
-			a_2 & b_2 & k_2 \\[5 pt]
-			a_3 & b_3 & k_3
-		\end{vmatrix}
-	}
-	{
-		\begin{vmatrix}
-			a_1 & b_1 & c_1 \\[5 pt]
-			a_2 & b_2 & c_2 \\[5 pt]
-			a_3 & b_3 & c_3
-		\end{vmatrix}
-	}
+        \begin{vmatrix}
+            a_1 & b_1 & k_1 \\[5 pt]
+            a_2 & b_2 & k_2 \\[5 pt]
+            a_3 & b_3 & k_3
+        \end{vmatrix}
+    }
+    {
+        \begin{vmatrix}
+            a_1 & b_1 & c_1 \\[5 pt]
+            a_2 & b_2 & c_2 \\[5 pt]
+            a_3 & b_3 & c_3
+        \end{vmatrix}
+    }
 $$
 
 ### Representación gráfica de un punto en el espacio
@@ -1007,9 +1005,9 @@ $$
 
 $$
 \begin{array}{lcr}
-	a_{ n_1 } + a_{ n_2 } & = & (a + (n_1 - 1) r) + (a + (n + 1 - n_1 - 1) r) \\[5 pt]
+    a_{ n_1 } + a_{ n_2 } & = & (a + (n_1 - 1) r) + (a + (n + 1 - n_1 - 1) r) \\[5 pt]
 
-						  & = & 2 a + (n - 1) r
+                          & = & 2 a + (n - 1) r
 \end{array}
 $$
 
@@ -1027,12 +1025,12 @@ La suma de los términos de una progresión aritmética limitada es igual al pro
 
 $$
 \begin{array}{lcr}
-	S   & = & a_1 + a_2 + \dots + a_n \\[5 pt]
+    S   & = & a_1 + a_2 + \dots + a_n \\[5 pt]
 
-	S   & = & a_n + a_{ n - 1 } + \dots + a_1 \\[5 pt]
-	\hline \\[5 pt]
+    S   & = & a_n + a_{ n - 1 } + \dots + a_1 \\[5 pt]
+    \hline \\[5 pt]
 
-	2 S & = & (a_1 + a_n) + (a_2 + a_{ n - 1 }) + \dots + (a_n + a_1)
+    2 S & = & (a_1 + a_n) + (a_2 + a_{ n - 1 }) + \dots + (a_n + a_1)
 \end{array}
 $$
 
@@ -1126,9 +1124,9 @@ $$
 
 $$
 \begin{array}{lcr}
-	 a_{ n_1 } * a_{ n_2 } & = & (a r^{ n_1 - 1 }) * (a r^{ n + 1 - n_1 - 1 }) \\[5 pt]
+     a_{ n_1 } * a_{ n_2 } & = & (a r^{ n_1 - 1 }) * (a r^{ n + 1 - n_1 - 1 }) \\[5 pt]
 
-						   & = & a^2 r^{ n - 1 }
+                           & = & a^2 r^{ n - 1 }
 \end{array}
 $$
 
@@ -1160,13 +1158,13 @@ Restamos $(2)$ con $(1)$.
 
 $$
 \begin{array}{lcr}
-	S r	 & = & a_1 r + a_2 r + \dots + a_n r \\[5 pt]
+    S r     & = & a_1 r + a_2 r + \dots + a_n r \\[5 pt]
 
-	S	   & = & a_1 + a_2 + \dots + a_n  \\[5 pt]
+    S       & = & a_1 + a_2 + \dots + a_n  \\[5 pt]
 
-	\hline \\[5 pt]
+    \hline \\[5 pt]
 
-	S r - S & = & a_n r - a
+    S r - S & = & a_n r - a
 \end{array}
 $$
 
@@ -1252,61 +1250,61 @@ Siendo pues ilimite el sistema de números positivos, también lo es el número 
 
 1. El logaritmo de un producto es igual a la suma de los logaritmos de sus factores.
 
-	$$
-	\log { A B } = \log A + \log B
-	$$
+    $$
+    \log { A B } = \log A + \log B
+    $$
 
-	En efecto; si
+    En efecto; si
 
-	$$
-	A = b^x \quad \log A = x \\[10 pt]
+    $$
+    A = b^x \quad \log A = x \\[10 pt]
 
-	B = b^y \quad \log B = y \\[10 pt]
-	$$
+    B = b^y \quad \log B = y \\[10 pt]
+    $$
 
-	$$
-	A B = b^x b^y = b^{ x + y } \\[10 pt]
+    $$
+    A B = b^x b^y = b^{ x + y } \\[10 pt]
 
-	\log { A B } = x + y = \log A + \log B
-	$$
+    \log { A B } = x + y = \log A + \log B
+    $$
 
 2. El logaritmo de un cociente es igual a la diferencia entre el logaritmo del dividiendo y el logaritmo del diviror.
 
-	$$
-	\log \frac{ A }{ B } = \log A - \log B
-	$$
+    $$
+    \log \frac{ A }{ B } = \log A - \log B
+    $$
 
-	En efecto; si
+    En efecto; si
 
-	$$
-	A = b^x \quad \log A = x \\[10 pt]
+    $$
+    A = b^x \quad \log A = x \\[10 pt]
 
-	B = b^y \quad \log B = y \\[10 pt]
-	$$
+    B = b^y \quad \log B = y \\[10 pt]
+    $$
 
-	$$
-	\frac{ A }{ B } = \frac{ b^x }{ b^y } = b^{ x - y }  \\[10 pt]
+    $$
+    \frac{ A }{ B } = \frac{ b^x }{ b^y } = b^{ x - y }  \\[10 pt]
 
-	\log \frac{ A }{ B } = x - y = \log A - \log B
-	$$
+    \log \frac{ A }{ B } = x - y = \log A - \log B
+    $$
 
 3. El logaritmo de una potencia es igual al producto del exponente por el logaritmo de la base.
 
-	$$
-	\log A^n = n \log A
-	$$
+    $$
+    \log A^n = n \log A
+    $$
 
-	En efecto; si
+    En efecto; si
 
-	$$
-	A = b^x \quad \log A = x \\[10 pt]
-	$$
+    $$
+    A = b^x \quad \log A = x \\[10 pt]
+    $$
 
-	$$
-	A^n = b^{ n x } \\[10 pt]
+    $$
+    A^n = b^{ n x } \\[10 pt]
 
-	\log A^n = n x = n \log A
-	$$
+    \log A^n = n x = n \log A
+    $$
 
 ### Cologaritmo
 

@@ -18,9 +18,9 @@ Se requiere que al menos una de las restricciones $g_i$ sea satisfecha. Esto se 
 
 $$
 \begin{align}
-	& g_1(x) \leq M * y \\
-	& g_2(x) \leq M * (1 - y) \\
-	& y \in \{0,1\}
+    & g_1(x) \leq M * y \\
+    & g_2(x) \leq M * (1 - y) \\
+    & y \in \{0,1\}
 \end{align}
 $$
 
@@ -40,9 +40,9 @@ Queremos que **al menos** $k$ (con $1 \leq k \leq p$) de esas restricciones se c
 
 $$
 \begin{align}
-	& g_i(x) \leq M * y_i \quad i = 1,\dots,p \\
-	& \sum_{ i = 1 }^p y_i \leq p - k \\
-	& y_i \in \{0,1\}
+    & g_i(x) \leq M * y_i \quad i = 1,\dots,p \\
+    & \sum_{ i = 1 }^p y_i \leq p - k \\
+    & y_i \in \{0,1\}
 \end{align}
 $$
 
@@ -56,9 +56,9 @@ Como a lo sumo $p - k$ variables binarias pueden ser 1, **al menos** $k$ restric
 
 $$
 \begin{align}
-	& g_i(x) \leq M (1 - y_i) \quad i = 1,\dots,p \\
-	& \sum_{ i = 1 }^p y_i \geq k \\
-	& y_i \in \{0,1\}
+    & g_i(x) \leq M (1 - y_i) \quad i = 1,\dots,p \\
+    & \sum_{ i = 1 }^p y_i \geq k \\
+    & y_i \in \{0,1\}
 \end{align}
 $$
 
@@ -78,29 +78,29 @@ Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ r
 
 1. $x_1 \por x_2 \implies x_3$.
 
-	$$
-	\begin{align}
-		& x_1 \leq x_3 \\
-		& x_2 \leq x_3
-	\end{align}
-	$$
+    $$
+    \begin{align}
+        & x_1 \leq x_3 \\
+        & x_2 \leq x_3
+    \end{align}
+    $$
 
 2. $x_3 \implies x_1 \por x_2$.
 
-	$$
-	x_1 + x_2 \geq x_3
-	$$
+    $$
+    x_1 + x_2 \geq x_3
+    $$
 
 3. $x_1 \pand x_2 \implies x_3$.
 
-	$$
-	1 + x_3 \geq x_1 + x_2
-	$$
+    $$
+    1 + x_3 \geq x_1 + x_2
+    $$
 
 4. $x_1 \implies x_2$.
 
-	> Recordando el [[01-areas/math/fundamental_rules_of_propositional_logic#Inverse conditional|condicional inverso]].
+    > Recordando el [[01-areas/math/fundamental_rules_of_propositional_logic#Inverse conditional|condicional inverso]].
 
-	$$
-	\neg x_1 \por x_2
-	$$
+    $$
+    \neg x_1 \por x_2
+    $$

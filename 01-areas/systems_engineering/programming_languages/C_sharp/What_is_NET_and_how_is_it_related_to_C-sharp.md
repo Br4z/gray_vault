@@ -29,10 +29,9 @@ Most of the time, you use C# **to build .NET applications**. So, C# is the used 
 3. The **.NET runtime** executes it (often using just-in-time compilation to machine code).
 
 4. While running, .NET also provides services like:
+    - **Garbage collection** (automatic memory management).
 
-	- **Garbage collection** (automatic memory management).
-
-	- Exception handling, threading, etc.
+    - Exception handling, threading, etc.
 
 ## All the ".NET things"
 

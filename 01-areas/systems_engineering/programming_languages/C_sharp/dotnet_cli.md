@@ -52,7 +52,7 @@ If shared code is intended, a class library project is usually the right shape, 
 
 Package references can be managed with:
 
-```
+```bash
 dotnet package add <package_name> --project <csproj_file>
 dotnet package add <package_name> --version <version> --project <csproj_file>
 dotnet package remove <package_name> --project <csproj_file>
@@ -70,7 +70,7 @@ dotnet package update --project <csproj_file> --vulnerable
 
 Common workflow commands:
 
-```
+```bash
 dotnet restore
 dotnet restore <project_or_solution_file>
 
@@ -98,7 +98,7 @@ In most cases, `dotnet restore` is implicit because `dotnet new`, `dotnet build`
 
 `dotnet run` runs from project source. To run a built framework-dependent application directly, the form is:
 
-```
+```bash
 dotnet <app.dll>
 ```
 
@@ -116,14 +116,14 @@ By default, restored packages are placed in the global NuGet cache under `.nuget
 
 NuGet sources can be inspected and configured with:
 
-```
+```bash
 dotnet nuget list source
 dotnet nuget add source <source_url> -n <name>
 ```
 
 Local tools can be handled with:
 
-```
+```bash
 dotnet new tool-manifest
 dotnet tool install <package_id>
 dotnet tool list --local

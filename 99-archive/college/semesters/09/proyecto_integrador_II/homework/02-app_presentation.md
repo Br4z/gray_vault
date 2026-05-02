@@ -35,71 +35,63 @@ Cult & Underground Movies es una red social diseñada para fanáticos del cine a
 Perfiles de usuarios: cada usuario tendrá un perfil personal donde podrá gestionar su actividad en la plataforma.
 
 - Sistemas de registro y login.
+    - Autenticación con email/contraseña y opciones de login con Google.
 
-	- Autenticación con email/contraseña y opciones de login con Google.
-
-	- Verificación opcional de cuenta para evitar spam.
+    - Verificación opcional de cuenta para evitar spam.
 
 - Personalización de perfiles.
+    - Foto de perfil, biografía y redes sociales.
 
-	- Foto de perfil, biografía y redes sociales.
+    - Configuración de privacidad (perfil público/privado).
 
-	- Configuración de privacidad (perfil público/privado).
-
-	- Selección de géneros favoritos para mejorar las recomendaciones.
+    - Selección de géneros favoritos para mejorar las recomendaciones.
 
 - Listas de películas.
+    - Vistas.
 
-	- Vistas.
+    - Pendientes.
 
-	- Pendientes.
-
-	- Listas personalizadas.
+    - Listas personalizadas.
 
 - Historial de actividad.
 
-	Registro de reseñas publicadas, interacciones en foros y películas agregadas a listas.
+    Registro de reseñas publicadas, interacciones en foros y películas agregadas a listas.
 
 ### Sistema de reseñas y calificaciones
 
 Cada película en la plataforma tendrá su propia página con información y una sección para interacciones.
 
 - Reseñas de usuarios.
+    - Espacio para que los usuarios escriban y publiquen sus opiniones.
 
-	- Espacio para que los usuarios escriban y publiquen sus opiniones.
-
-	- Formato con opción de reseñas breves o detalladas.
+    - Formato con opción de reseñas breves o detalladas.
 
 - Sistema de calificación.
+    - Valoración en estrellas (1 a 5) o sistema de pulgar arriba/abajo.
 
-	- Valoración en estrellas (1 a 5) o sistema de pulgar arriba/abajo.
+    - Promedio de calificación global basado en todas las reseñas.
 
-	- Promedio de calificación global basado en todas las reseñas.
-
-	- Sección de "críticas destacadas" con los comentarios más valorados por la comunidad.
+    - Sección de "críticas destacadas" con los comentarios más valorados por la comunidad.
 
 - Interacción con reseñas.
+    - Opción de comentar y reaccionar (me gusta, interesante, divertido, etc.).
 
-	- Opción de comentar y reaccionar (me gusta, interesante, divertido, etc.).
-
-	- Reporte de contenido inapropiado o spam.
+    - Reporte de contenido inapropiado o spam.
 
 ### Sección de discusión en cada película
 
 Cada película tendrá un espacio dedicado donde los usuarios podrán debatir sobre aspectos específicos de la obra.
 
 - Propuestas de temas de discusión.
+    - Los usuarios pueden crear hilos de conversación dentro de la página de cada película.
 
-	- Los usuarios pueden crear hilos de conversación dentro de la página de cada película.
+    - Cada hilo debe estar relacionado con la película en cuestión (ej. "El simbolismo en Eraserhead", "Final ambiguo de Donnie Darko").
 
-	- Cada hilo debe estar relacionado con la película en cuestión (ej. "El simbolismo en Eraserhead", "Final ambiguo de Donnie Darko").
-
-	- Posibilidad de agregar imágenes y videos para enriquecer la discusión.
+    - Posibilidad de agregar imágenes y videos para enriquecer la discusión.
 
 - Interacción en los debates.
+    - Otros usuarios pueden responder y reaccionar a los temas planteados.
 
-	- Otros usuarios pueden responder y reaccionar a los temas planteados.
+    - Función de votación para destacar las discusiones más relevantes.
 
-	- Función de votación para destacar las discusiones más relevantes.
-
-	- Menciones a otros usuarios y sistema de notificaciones para seguir respuestas.
+    - Menciones a otros usuarios y sistema de notificaciones para seguir respuestas.

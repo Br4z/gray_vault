@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/decorators-in-python
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/decorators-in-python
+      language: English
 ---
 
 # Decorator
@@ -19,14 +19,14 @@ In Decorators, functions are taken as arguments for another function and then ca
 ```python
 @my_decorator
 def my_function():
-	print("")
+    print("")
 ```
 
 The code above is equivalent to:
 
 ```python
 def my_function():
-	print("")
+    print("")
 
 my_function_decorator = my_decorator(my_function)
 ```
@@ -37,48 +37,48 @@ When you want to "decorate" a function that receives arguments, you can specify 
 
 1. Calculating the time of execution.
 
-	```python
-	import time
-	import math
+    ```python
+    import time
+    import math
 
 
-	def calculate_time(function):
-		def inner(*args, **kwargs):
-			begin = time.time()
-			function(*args, **kwargs)
-			end = time.time()
+    def calculate_time(function):
+        def inner(*args, **kwargs):
+            begin = time.time()
+            function(*args, **kwargs)
+            end = time.time()
 
-			print("Total time taken in : ", function.__name__, end - begin)
+            print("Total time taken in : ", function.__name__, end - begin)
 
-		return inner
+        return inner
 
-	@calculate_time
-	def factorial(number):
-		time.sleep(2)
-		print(math.factorial(number))
+    @calculate_time
+    def factorial(number):
+        time.sleep(2)
+        print(math.factorial(number))
 
-	factorial(10)
-	```
+    factorial(10)
+    ```
 
 2. Chaining decorators.
 
-	```python
-	def decorator_1(function):
-		def inner():
-			number = function()
-			return number * 10
-		return inner
+    ```python
+    def decorator_1(function):
+        def inner():
+            number = function()
+            return number * 10
+        return inner
 
-	def decorator_2(function):
-		def inner():
-			number = function()
-			return number ** 2
-		return inner
+    def decorator_2(function):
+        def inner():
+            number = function()
+            return number ** 2
+        return inner
 
-	@decorator_1
-	@decorator_2
-	def number():
-		return 5
+    @decorator_1
+    @decorator_2
+    def number():
+        return 5
 
-	print(number()) # 250
-	```
+    print(number()) # 250
+    ```

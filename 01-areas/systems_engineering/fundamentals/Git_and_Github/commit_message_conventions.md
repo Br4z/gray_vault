@@ -4,7 +4,7 @@ reviewed_on: "2026-04-08"
 
 # Commit message conventions
 
-```
+```text
 <type>[(<scope>)]: <short_summary>
 
 [<body>]
@@ -30,7 +30,7 @@ It says **what kind of change** it is:
 
 - `chore`: maintenance tasks. It does not add a user-facing feature (so not feat) nor does fix a user-facing bug (so no fix), It is usually **internal**.
 
-	> "Keeping the project healthy".
+    > "Keeping the project healthy".
 
 - `revert`: revert a commit.
 
@@ -42,15 +42,15 @@ It says **where the change happened**, while the type stays generic:
 
 - `api`: the "edge" of your app that receives requests and returns responses.
 
-	> Routes, controllers, request handlers and endpoint definitions.
+    > Routes, controllers, request handlers and endpoint definitions.
 
 - `service`: business logic orchestration, code that coordinates rules and calls other modules.
 
-	> Service classes/functions that call repositories and validators.
+    > Service classes/functions that call repositories and validators.
 
 - `core`: shared utilities used across many modules, not specific to one feature.
 
-	> Helpers, shared types and error classes.
+    > Helpers, shared types and error classes.
 
 - `config`: application configuration and environment setup.
 
@@ -58,7 +58,7 @@ It says **where the change happened**, while the type stays generic:
 
 - `auth`: login security rules and permission checks.
 
-	> Middleware/filters, token validation and roles/permissions.
+    > Middleware/filters, token validation and roles/permissions.
 
 - `ui`: frontend components and user interactions.
 

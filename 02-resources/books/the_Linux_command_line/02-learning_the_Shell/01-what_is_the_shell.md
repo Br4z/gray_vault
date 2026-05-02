@@ -10,7 +10,7 @@ When using a graphical user interface (GUI), we need another program called a **
 
 ## Making your first keystrokes
 
-```
+```text
 [me@linuxbox ~]$
 ```
 

@@ -1,15 +1,15 @@
 ---
 reviewed_on: "2025-08-31"
 sources:
-  - author: Geek for Geeks
-    url: https://www.geeksforgeeks.org/machine-learning/supervised-machine-learning
-    language: English
-  - author: Geek for Geeks
-    url: https://www.geeksforgeeks.org/machine-learning/unsupervised-learning
-    language: English
-  - author: Geek for Geeks
-    url: https://www.geeksforgeeks.org/machine-learning/what-is-reinforcement-learning
-    language: English
+    - author: Geek for Geeks
+      url: https://www.geeksforgeeks.org/machine-learning/supervised-machine-learning
+      language: English
+    - author: Geek for Geeks
+      url: https://www.geeksforgeeks.org/machine-learning/unsupervised-learning
+      language: English
+    - author: Geek for Geeks
+      url: https://www.geeksforgeeks.org/machine-learning/what-is-reinforcement-learning
+      language: English
 ---
 
 # Classification

@@ -8,7 +8,7 @@ It is a domain specific language for writing acceptance criteria. It is used to 
 
 ## Core structure
 
-Given a certain *scenario* (context), when an *action* takes place (event), then this should be the *outcome*.
+Given a certain _scenario_ (context), when an _action_ takes place (event), then this should be the _outcome_.
 
 > The **scenarios** should be specified in third person.
 

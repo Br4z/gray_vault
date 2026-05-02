@@ -10,80 +10,80 @@ reviewed_on: "2025-08-10"
 
 Several parameters expansions are intended to deal with nonexistent and empty variables. These expansions are handy for handling missing positional parameters and assigning default values to parameters.
 
-```
-${<parameter>:-<word>}
-```
-
-If *parameter* is unset or is empty, this expansion results in the value of *word*. If *parameter* is not empty, the expansion results in the value of *parameter*.
-
-```
-${<parameter>:=<word>}
+```bash
+${parameter:-word}
 ```
 
-If *parameter* is unset or is empty, this expansion results in the value of *word*. In addition the value of *word* is assigned to *parameter*. If *parameter* is not empty, the expansion results in the value of *parameter*.
+If _parameter_ is unset or is empty, this expansion results in the value of _word_. If _parameter_ is not empty, the expansion results in the value of _parameter_.
 
-```
-${<parameter>:?<word>}
-```
-
-If *parameter* is unset or is empty, this expansion causes the script to exit with an error, and the contents of *word* are sent to standard error. If *parameter* is not empty, the expansion results in the value of *parameter*.
-
-```
-${<parameter>:+<word>}
+```bash
+${parameter:=word}
 ```
 
-If *parameter* is unset or is empty, this expansion results in nothing. If *parameter* is not empty, the value of *word* is substituted for *parameter*; however, the value of *parameter* is not changed.
+If _parameter_ is unset or is empty, this expansion results in the value of _word_. In addition the value of _word_ is assigned to _parameter_. If _parameter_ is not empty, the expansion results in the value of _parameter_.
+
+```bash
+${parameter:?word}
+```
+
+If _parameter_ is unset or is empty, this expansion causes the script to exit with an error, and the contents of _word_ are sent to standard error. If _parameter_ is not empty, the expansion results in the value of _parameter_.
+
+```bash
+${parameter:+word}
+```
+
+If _parameter_ is unset or is empty, this expansion results in nothing. If _parameter_ is not empty, the value of _word_ is substituted for _parameter_; however, the value of _parameter_ is not changed.
 
 ### Expansions that return variable names
 
-```
-${!<prefix>*}
+```bash
+${!prefix*}
 ${!prefix@}
 ```
 
-This expansion returns the names of existing variables with names beginning with *prefix*, according to the `bash` documentation, both forms of this expansion perform identically.
+This expansion returns the names of existing variables with names beginning with _prefix_, according to the `bash` documentation, both forms of this expansion perform identically.
 
 ### String operations
 
-```
-${#<parameter>}
-```
-
-Expands into the length of the string contained by *parameter*. Normally, *parameter* is a string; however, if *parameter* is either `@` or `*`, then the expansion results in the number of positional parameters.
-
-```
-${<parameter>:<offset>}
-${parameter:<offset>:<length>}
+```bash
+${#parameter}
 ```
 
-These expansions are used to extract a portion of the string contained in *parameter*. The extraction begins at *offset* characters from the beginning of the string and continues until the end of the string, unless *length* is specified.
+Expands into the length of the string contained by _parameter_. Normally, _parameter_ is a string; however, if _parameter_ is either `@` or `*`, then the expansion results in the number of positional parameters.
 
-If the value of *offset* is negative, it is taken to mean it starts from the end of the string rather than the beginning. Note that negative values must be preceded by a space to prevent confusion with the `${<parameter>:-<word>}` expansion. *length*, if present, must not be less than zero.
-
-If *parameter* is `@`, the result of the expansion is *length* positional parameters, starting at *offset*.
-
-```
-${<parameter>#<pattern>}
-${<parameter>##<pattern>}
+```bash
+${parameter:offset}
+${parameter:offset:length}
 ```
 
-These expansions remove a leading portion of the string contained in *parameter* defined by *pattern*. *pattern* is a wildcard patter like those use in [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
+These expansions are used to extract a portion of the string contained in _parameter_. The extraction begins at _offset_ characters from the beginning of the string and continues until the end of the string, unless _length_ is specified.
 
-```
-${<parameter>%<pattern>}
-${<parameter>%%<pattern>}
-```
+If the value of _offset_ is negative, it is taken to mean it starts from the end of the string rather than the beginning. Note that negative values must be preceded by a space to prevent confusion with the `${<parameter>:-<word>}` expansion. _length_, if present, must not be less than zero.
 
-These expansions are the same as the previous `#` and `##` expansions, except they remove text from the end of the string contained in *parameter* rather than from the beginning.
+If _parameter_ is `@`, the result of the expansion is _length_ positional parameters, starting at _offset_.
 
-```
-${<parameter>/<pattern>/<string>}
-${<parameter>//<pattern>/<string>}
-${<parameter>/#<pattern>/<string>}
-${<parameter>/%<pattern>/<string>}
+```bash
+${parameter#pattern}
+${parameter##pattern}
 ```
 
-This expansion performs a search-and-replace operation upon the contents of *parameter*. If text is found matching wildcard *pattern*, it is replace with the contents of *string*. In the normal form, only the first occurrence of *pattern* is replaced. In the `//` form, all occurrences are replaced. The `/#` form requires that the match occur at the beginning of the string, and the `/%` form requires the match to occur at the end of the string. In every form, `/<string>` may be omitted, causing the text matched by *pattern* to be deleted.
+These expansions remove a leading portion of the string contained in _parameter_ defined by _pattern_. _pattern_ is a wildcard patter like those use in [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
+
+```bash
+${parameter%pattern}
+${parameter%%pattern}
+```
+
+These expansions are the same as the previous `#` and `##` expansions, except they remove text from the end of the string contained in _parameter_ rather than from the beginning.
+
+```bash
+${parameter/pattern/string}
+${parameter//pattern/string}
+${parameter/#pattern/string}
+${parameter/%pattern/string}
+```
+
+This expansion performs a search-and-replace operation upon the contents of _parameter_. If text is found matching wildcard _pattern_, it is replace with the contents of _string_. In the normal form, only the first occurrence of _pattern_ is replaced. In the `//` form, all occurrences are replaced. The `/#` form requires that the match occur at the beginning of the string, and the `/%` form requires the match to occur at the end of the string. In every form, `/<string>` may be omitted, causing the text matched by _pattern_ to be deleted.
 
 ### Case conversion
 
@@ -96,11 +96,11 @@ This expansion performs a search-and-replace operation upon the contents of *par
 In addition to `declare`, there are four parameter expansions that perform upper/lower-case conversion.
 
 |            format            | result                                                                                                                                    |
-|:----------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------- |
-| `${<parameter,,<?pattern>}`  | expand the value of *parameter* into all lowercase. *pattern* is an optional shell pattern that will limit which character are converted. |
-| `${<parameter>,<?pattern>}`  | expand the value of *parameter*, changing only the first character to lowercase.                                                          |
-| `${<parameter>^^<?pattern>}` | expand the value of *parameter* into all uppercase letters.                                                                               |
-|  `${<parameter>^<pattern>}`  | expand the value of *parameter*, changing only the first character to uppercase.                                                          |
+| :--------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `${<parameter,,<?pattern>}`  | expand the value of _parameter_ into all lowercase. _pattern_ is an optional shell pattern that will limit which character are converted. |
+| `${<parameter>,<?pattern>}`  | expand the value of _parameter_, changing only the first character to lowercase.                                                          |
+| `${<parameter>^^<?pattern>}` | expand the value of _parameter_ into all uppercase letters.                                                                               |
+|  `${<parameter>^<pattern>}`  | expand the value of _parameter_, changing only the first character to uppercase.                                                          |
 
 ## Arithmetic evaluation and expansion
 
@@ -109,11 +109,11 @@ In addition to `declare`, there are four parameter expansions that perform upper
 In arithmetic expressions, the shell supports integer constants in any base.
 
 |     notation      | description                 |
-|:-----------------:|:--------------------------- |
+| :---------------: | :-------------------------- |
 |    `<number>`     | decimal.                    |
 |    `0<number>`    | octal.                      |
 |   `0x<number>`    | hexadecimal.                |
-| `<base>#<number>` | *number* is in base *base*. |
+| `<base>#<number>` | _number_ is in base _base_. |
 
 ### Unary operators
 
@@ -122,7 +122,7 @@ There are two unary operator, `+` and `-`, which are used to indicate whether a 
 ### Simple arithmetic
 
 | operation |   description    |
-|:---------:|:----------------:|
+| :-------: | :--------------: |
 |    `+`    |     addition     |
 |    `-`    |   subtraction    |
 |    `/`    | integer division |
@@ -132,7 +132,7 @@ There are two unary operator, `+` and `-`, which are used to indicate whether a 
 ### Assignment
 
 |         notation         |       description       |
-|:------------------------:|:-----------------------:|
+| :----------------------: | :---------------------: |
 | `<parameter> = <value>`  |    simple assignment    |
 | `<parameter> += <value>` |        addition         |
 | `<parameter> -= <value>` |       subtraction       |
@@ -147,7 +147,7 @@ There are two unary operator, `+` and `-`, which are used to indicate whether a 
 ### Bit operations
 
 | operator |     description     |
-|:--------:|:-------------------:|
+| :------: | :-----------------: |
 |   `~`    |  bitwise negation   |
 |   `<<`   | left bitwise shift  |
 |   `>>`   | right bitwise shift |
@@ -162,7 +162,7 @@ Note that there are also corresponding assignment operators for all but bitwise 
 `(( ))` supports the following logic operators:
 
 |           operator           |   description    |
-|:----------------------------:|:----------------:|
+| :--------------------------: | :--------------: |
 |             `<=`             |                  |
 |             `>=`             |                  |
 |             `<`              |                  |
@@ -196,72 +196,72 @@ The ability to take standard input means that we can use **here documents**, **h
 PROGNAME="${0##*/}"
 
 is_a_valid_number() {
-	local number="$1"
-	if [[ !"$number" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
-		echo "Error: $number is not a valid number" >&2
-		exit 1
-	fi
+    local number="$1"
+    if [[ !"$number" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
+        echo "Error: $number is not a valid number" >&2
+        exit 1
+    fi
 }
 
 usage() {
-	cat <<- EOF
-	Usage: $PROGNAME [-i] [-h] [PRINCIPAL INTEREST MONTHS]
+    cat <<- EOF
+    Usage: $PROGNAME [-i] [-h] [PRINCIPAL INTEREST MONTHS]
 
-	This script calculates a monthly loan payment.
+    This script calculates a monthly loan payment.
 
-	OPTIONS:
-		-i   Interactive mode: prompt for values.
-		-h   Display this help message.
+    OPTIONS:
+        -i   Interactive mode: prompt for values.
+        -h   Display this help message.
 
-	ARGUMENTS (required unless in interactive mode):
-		PRINCIPAL  The total amount of the loan.
-		INTEREST   The annual percentage rate as a decimal (e.g., 7% = 0.07).
-		MONTHS     The term of the loan in months.
+    ARGUMENTS (required unless in interactive mode):
+        PRINCIPAL  The total amount of the loan.
+        INTEREST   The annual percentage rate as a decimal (e.g., 7% = 0.07).
+        MONTHS     The term of the loan in months.
 EOF
 }
 
 interactive=
 
 while getopts ":hi" opt; do
-	case "$opt" in
-		i) interactive=1 ;;
-		h) usage ;;
-		\?) echo "Error: option \"$OPTION\" is invalid" >$2 ;;
-		:) echo "Error: option \"$OPTION\" is missing an argument" >&2 ;;
-	esac
+    case "$opt" in
+        i) interactive=1 ;;
+        h) usage ;;
+        \?) echo "Error: option \"$OPTION\" is invalid" >$2 ;;
+        :) echo "Error: option \"$OPTION\" is missing an argument" >&2 ;;
+    esac
 done
 
 shift $((OPTIND - 1))
 
 if [[ -n "$interactive" ]]; then
-	read -r -p "Enter principal: " principal
-	is_a_valid_number "$principal"
-	read -r -p "Enter interests: " interests
-	is_a_valid_number "$interests"
-	read -r -p "Enter months: " months
-	is_a_valid_number "$months"
+    read -r -p "Enter principal: " principal
+    is_a_valid_number "$principal"
+    read -r -p "Enter interests: " interests
+    is_a_valid_number "$interests"
+    read -r -p "Enter months: " months
+    is_a_valid_number "$months"
 else
-	if (( $# != 3 )); then
-		usage
-		exit 1
-	fi
-	
-	for arg; do
-		is_a_valid_number "$arg"
-	done
-	principal=$1
-	interests=$2
-	months=$3
+    if (( $# != 3 )); then
+        usage
+        exit 1
+    fi
+
+    for arg; do
+        is_a_valid_number "$arg"
+    done
+    principal=$1
+    interests=$2
+    months=$3
 fi
 
 payment=$(bc <<- EOF
-	scale = 10
-	i = $interests / 12
-	p = $principal
-	n = $months
-	a = p * ((i * ((1 + i) ^ n)) / (((1 + i) ^ n) - 1))
-	print a, "\n"
-	a
+    scale = 10
+    i = $interests / 12
+    p = $principal
+    n = $months
+    a = p * ((i * ((1 + i) ^ n)) / (((1 + i) ^ n) - 1))
+    print a, "\n"
+    a
 EOF
 )
 

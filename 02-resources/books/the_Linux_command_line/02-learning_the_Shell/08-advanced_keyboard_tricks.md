@@ -13,7 +13,7 @@ reviewed_on: "2025-06-30"
 ### Cursor movement
 
 |    key     | action                                                          |
-|:----------:|:--------------------------------------------------------------- |
+| :--------: | :-------------------------------------------------------------- |
 | `CTRL + a` | move the cursor to the beginning of the line.                   |
 | `CTRL + e` | move the cursor to the end of the line.                         |
 | `CTRL + f` | move cursor forward one character; same as the right arrow key. |
@@ -25,7 +25,7 @@ reviewed_on: "2025-06-30"
 ### Modifying text
 
 |    key     | action                                                                               |
-|:----------:|:------------------------------------------------------------------------------------ |
+| :--------: | :----------------------------------------------------------------------------------- |
 | `CTRL + d` | delete the character at the cursor location.                                         |
 | `CTRL + t` | transpose the character at the cursor location with the one preceding it.            |
 | `ALT + t`  | transpose the word at the cursor location with the one preceding it.                 |
@@ -37,7 +37,7 @@ reviewed_on: "2025-06-30"
 The `readline` documentation uses the terms **killing** and **yanking** to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer called the **kill-ring**.
 
 |        key        | action                                                                                                                                        |
-|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 |    `CTRL + k`     | kill text from the cursor location to the end of line.                                                                                        |
 |    `CTRL + u`     | kill text from the cursor location to the beginning of the line.                                                                              |
 |     `ALT + d`     | kill text from the cursor location to the end of the current word.                                                                            |
@@ -57,7 +57,7 @@ If you venture into the Readline documentation, which can be found in the "READL
 ...completion will also work on variables (if the beginning of the word is a `$`), usernames (if the word begins with `~`), commands (if the word is the first word on the line), and hostnames (if the beginning of the word is `@`). Hostname completion only works for hostnames listed in `/etc/hosts`.
 
 |    key    | action                                                                                                                                       |
-|:---------:|:-------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------: | :------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ALT + ?` | display a list of possible completions. On most systems, you can also do this by pressing the `TAB` key a second time, which is much easier. |
 | `ALT + *` | insert all possible completions.                                                                                                             |
 
@@ -88,7 +88,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 `bash` also provides the ability to search the history list incrementally. This means we can tell bash to search the history list as we enter characters, with each additional character further refining our search. To start incremental search, press `CTRL + r` followed by the text you are looking for. When you find it, you can either press `ENTER` to execute the command or press `CTRL + j` to copy the line from the history list to the current command line. To find the next occurrence of the text (moving "up" the history list), press `CTRL + r` again. To quit searching, press either `CTRL + g` or `CTRL + c`.
 
 |    key     | action                                                                    |
-|:----------:|:------------------------------------------------------------------------- |
+| :--------: | :------------------------------------------------------------------------ |
 | `CTRL + p` | move to the previous history entry.                                       |
 | `CTRL + n` | move to the next history entry.                                           |
 | `ALT + <`  | move to the beginning (top) of the history list.                          |
@@ -100,11 +100,11 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 ### History expansion
 
 |     key      | action                                                |
-|:------------:|:----------------------------------------------------- |
+| :----------: | :---------------------------------------------------- |
 |     `!!`     | repeat the last command.                              |
-| `!<number>`  | repeat history list item *number*.                    |
-| `!<string>`  | repeat last history list item starting with *string*. |
-| `!?<string>` | repeat last history list item containing *string*.    |
+| `!<number>`  | repeat history list item _number_.                    |
+| `!<string>`  | repeat last history list item starting with _string_. |
+| `!?<string>` | repeat last history list item containing _string_.    |
 
 Use caution with the `!string` and `!?string` forms unless you are absolutely sure of the contents of the history list items. We can mitigate this problem somewhat by ap­ pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
 
@@ -112,8 +112,8 @@ Use caution with the `!string` and `!?string` forms unless you are absolutely su
 
 In addition to the command history feature in bash, most Linux distributions include a program called script that can be used to record an entire shell session and store it in a file.
 
-```
-# script <filename>
+```bash
+script filename
 ```
 
 If no file is specified, the name "typescript" is used.

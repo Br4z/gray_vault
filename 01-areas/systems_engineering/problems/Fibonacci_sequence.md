@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-02-15"
 sources:
-  - author: NA
-    url: https://en.wikipedia.org/wiki/Fibonacci_sequence
-    language: English
+    - author: NA
+      url: https://en.wikipedia.org/wiki/Fibonacci_sequence
+      language: English
 ---
 
 # Fibonacci sequence
@@ -12,9 +12,9 @@ It is a sequence in which each element is the sum of the two elements that prece
 
 $$
 F_n =
-	\begin{cases}
-		0                         & n = 0 \\
-		1                         & n = 1 \\
-		F_{ n - 1 } + F_{ n - 2 } & n > 1
-	\end{cases}
+    \begin{cases}
+        0                         & n = 0 \\
+        1                         & n = 1 \\
+        F_{ n - 1 } + F_{ n - 2 } & n > 1
+    \end{cases}
 $$

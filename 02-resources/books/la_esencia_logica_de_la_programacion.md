@@ -90,8 +90,8 @@ A nivel informal la variabilidad de ópticas en cuanto a la concepción del mund
 
 #### Diagramas de flujo
 
-|                                  símbolo                                  |                                        significado                                        |
-|:-------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
+|                                                       símbolo                                                        |                                        significado                                        |
+| :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 | ![flow diagram figure](02-resources/books/assets/la_esencia_logica_de_la_programacion/01_01-flow_diagram_figure.svg) | proceso que no es más que una acción o una orden a ejecutarse de manera clara y concreta. |
 | ![flow diagram figure](02-resources/books/assets/la_esencia_logica_de_la_programacion/01_02-flow_diagram_figure.svg) |                                         decisión.                                         |
 | ![flow diagram figure](02-resources/books/assets/la_esencia_logica_de_la_programacion/01_03-flow_diagram_figure.svg) |                               proceso de entrada o salida.                                |
@@ -118,7 +118,7 @@ Nos permite tener unas herramientas gráficas para representar la solución a un
 #### Cuadro comparativo
 
 | técnica                               |                                                                                                                         ventajas                                                                                                                         |                                                                                                                                                                            desventajas                                                                                                                                                                             |
-|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | diagramas de flujo                    |                 1. Permite visualizar gráficamente el camino que sigue la solución a un problema. <br> 2. Por ser tan simplificado es muy entendible. <br> 3. No se necesitan muchos conocimientos técnicos para utilizar esta técnica.                  | 1. Dado que los flujos (representados con flechas) pueden ir de cualquier lugar a cualquier lugar, el diagrama puede llegar a ser casi inentendible. <br> 2. Deben conocerse bien los símbolos que se van a utilizar. <br> 3. No todos los símbolos están estandarizados. <br> 4. Los ciclos deben ser reinterpretados para poder ser diagramados en esta técnica. |
 | diagramas rectangulares estructurados | 1. Permite tener un marco referencial concreto y definido para la representación de los algoritmos. <br> 2. Solo tiene tres esquemas que le permiten representar las tres estructuras básicas. <br> 3. Exige orden en la representación de un algoritmo. |                                                                                                                                                               1. No es una técnica muy popularizada.                                                                                                                                                               |
 
@@ -159,7 +159,6 @@ Un ciclo puede definirse como una estructura que nos permite repetir o iterar un
 1. El conjunto de instrucciones debe ser finito.
 
 2. La cantidad de veces que se repita dicho conjunto de instrucciones también debe ser finita.
-
     - Una condición es explícita cuando depende solamente de la misma ejecución del programa.
 
     - Una condición es implícita cuando depende de la interacción con el usuario.
@@ -212,4 +211,4 @@ No dé ni un solo paso hasta tanto no tenga una absoluta certeza de lo que usted
 
 ### Acerca de las técnicas de representación de algoritmos
 
-...Las técnicas lo que van a permitir, cada una en su estilo, es colocar a su disposición herramientas para que la representación se haga mucho más sencilla, porque si usted  se detiene a pensar un momento, no es tan fácil representar una idea por su misma naturaleza etérea e intangible. Por este motivo, la explicación de estas técnicas busca que usted pueda tener unos elementos conceptuales que le permitan de una manera sencilla y simplificada representar sus ideas.
+...Las técnicas lo que van a permitir, cada una en su estilo, es colocar a su disposición herramientas para que la representación se haga mucho más sencilla, porque si usted se detiene a pensar un momento, no es tan fácil representar una idea por su misma naturaleza etérea e intangible. Por este motivo, la explicación de estas técnicas busca que usted pueda tener unos elementos conceptuales que le permitan de una manera sencilla y simplificada representar sus ideas.

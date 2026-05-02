@@ -12,11 +12,11 @@ reviewed_on: "2025-10-28"
 
 The most immediately visible part of a programming language is its **syntax**, or notation. A **parser** is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text...
 
-```
+```js
 do(define(x, 10),
-	if(>(x, 5),
-		print("large"),
-		print("small")))
+    if(>(x, 5),
+        print("large"),
+        print("small")))
 ```
 
 The data structure that the parser will use to describe a program consists of expression objects, each of which has a `type` property indicating the kind of expression it is and other properties to describe its content.
@@ -25,12 +25,12 @@ The `>(x, 5)` part of the previous program would be represented like this:
 
 ```json
 {
-	"type": "apply",
-	"operator": { "type": "word", "name": ">" },
-	"args": [
-		{ "type": "word", "name": "x" },
-		{ "type": "value", "value": 5 }
-	]
+    "type": "apply",
+    "operator": { "type": "word", "name": ">" },
+    "args": [
+        { "type": "word", "name": "x" },
+        { "type": "value", "value": 5 }
+    ]
 }
 ```
 

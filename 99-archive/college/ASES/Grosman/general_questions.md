@@ -8,8 +8,8 @@ To answer this questions we will use the following [[personal/math/serie/proofs#
 
 $$
 \begin{align}
-	& \sum_{ i = 0 }^{ 31 } { 2^i } = 2^{ 31 + 1 } - 1 \\
-	& = 4,294,967,295
+    & \sum_{ i = 0 }^{ 31 } { 2^i } = 2^{ 31 + 1 } - 1 \\
+    & = 4,294,967,295
 \end{align}
 $$
 
@@ -26,7 +26,7 @@ File systems define constraints on storage capacity and file handling, including
 - Maximum filename length.
 
 | file system |    max file size    |   max volume size    |
-|:-----------:|:-------------------:|:--------------------:|
+| :---------: | :-----------------: | :------------------: |
 |    FAT32    |    4 GB − 1 byte    |   2 TB (commonly)    |
 |    exFAT    |        16 EB        | 128 PB (theoretical) |
 |    NTFS     | 16 EB (theoretical) |  256 TB (commonly)   |

@@ -23,7 +23,7 @@ Functions that operate on other functions, either by taking them as arguments or
 There is a built-in array method, `forEach`, that provides something like a for/of loop as a higher-order function:
 
 ```javascript
-["A", "B"].forEach(l => console.log(l))
+["A", "B"].forEach((l) => console.log(l));
 // A
 // B
 ```
@@ -32,13 +32,11 @@ There is a built-in array method, `forEach`, that provides something like a for/
 
 ```javascript
 function filter(array, test) {
-	let passed = []
+    let passed = [];
 
-	for (let element of array)
-		if (test(element))
-			passed.push(element)
+    for (let element of array) if (test(element)) passed.push(element);
 
-	return passed
+    return passed;
 }
 ```
 
@@ -50,12 +48,11 @@ The `map` transforms an array by applying a function to all of its elements and 
 
 ```javascript
 function map(array, transform) {
-	let mapped = []
+    let mapped = [];
 
-	for (let element of array)
-		mapped.push(transform(element))
+    for (let element of array) mapped.push(transform(element));
 
-	return mapped
+    return mapped;
 }
 ```
 
@@ -63,12 +60,11 @@ function map(array, transform) {
 
 ```javascript
 function reduce(array, combine, start) {
-	let current = start
+    let current = start;
 
-	for (let element of array)
-		current = combine(current, element)
+    for (let element of array) current = combine(current, element);
 
-	return current
+    return current;
 }
 ```
 

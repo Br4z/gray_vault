@@ -13,7 +13,7 @@ A `class` is a [[personal/systems_engineering/programming_languajes/C_sharp/valu
 ```cs
 class Counter
 {
-	public int Value;
+    public int Value;
 }
 
 var a = new Counter { Value = 1 };
@@ -28,7 +28,7 @@ A `struct` is a [[personal/systems_engineering/programming_languajes/C_sharp/val
 ```cs
 struct Counter
 {
-	public int Value;
+    public int Value;
 }
 
 var a = new Counter { Value = 1 };

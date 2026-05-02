@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-03-18"
 sources:
-  - author: Fazt Code
-    url: https://www.youtube.com/watch?v=N5dkg28jRF0
-    language: Spanish
+    - author: Fazt Code
+      url: https://www.youtube.com/watch?v=N5dkg28jRF0
+      language: Spanish
 ---
 
 # Curso de Prisma ORM
@@ -19,26 +19,25 @@ Prisma ORM (Object-Relational Mapping) is a modern database toolkit for Node.js 
 3. `npm i -D prisma`: install the module `prisma` as a development dependency.
 
 4. `npx prisma init --datasource-provider sqlite`.
+    - Creates a `prisma/` folder containing `schema.prisma`.
 
-	- Creates a `prisma/` folder containing `schema.prisma`.
+        ```js
+        // This is your Prisma schema file,
+        // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-		```
-		// This is your Prisma schema file,
-		// learn more about it in the docs: https://pris.ly/d/prisma-schema
+        generator client {
+            provider = "prisma-client-js"
+        }
 
-		generator client {
-			provider = "prisma-client-js"
-		}
+        datasource db {
+            provider = "sqlite"
+            url      = env("DATABASE_URL")
+        }
+        ```
 
-		datasource db {
-			provider = "sqlite"
-			url      = env("DATABASE_URL")
-		}
-		```
+    - Generates an `.env` file with a `DATABASE_URL` variable.
 
-	- Generates an `.env` file with a `DATABASE_URL` variable.
-
-	- Sets SQLite as the default database.
+    - Sets SQLite as the default database.
 
 ## Models
 
@@ -65,29 +64,26 @@ To create a project that uses TypeScript, we mush follow the following instructi
 1. `npm init -y`.
 
 2. `npm install -D prisma typescript ts-node-dev ts-node @types/node`.
+    - `typescript`: adds TypeScript support.
 
-	- `typescript`: adds TypeScript support.
+    - `ts-node`: allows running TypeScript files directly.
 
-	- `ts-node`: allows running TypeScript files directly.
-
-	- `@types/node`: provides TypeScript definitions for Node.js.
+    - `@types/node`: provides TypeScript definitions for Node.js.
 
 3. `npm install @prisma/client`.
 
 4. `npx tsc --init`: creates `tsconfig.json` (TypeScript settings for the project.
-) file.
+   ) file.
 
 5. Edit `tsconfig.json`.
+    1. `"rootDir" = "./src"`: sets `src/` as the folder for TypeScript files.
 
-	1. `"rootDir" = "./src"`: sets `src/` as the folder for TypeScript files.
-
-	2. `"outDir": "./dist"`: compiled JavaScript files will be placed in `dist/`.
+    2. `"outDir": "./dist"`: compiled JavaScript files will be placed in `dist/`.
 
 6. Edit `package.json`: in scripts, add `"dev": "ts-node-dev -respawn src/index.ts"`.
+    - `ts-node-dev`: runs TypeScript files automatically with hot reloading.
 
-	- `ts-node-dev`: runs TypeScript files automatically with hot reloading.
-
-	- `--respawn`: restarts the process when files change.
+    - `--respawn`: restarts the process when files change.
 
 ## Deploy in external services
 
@@ -95,10 +91,10 @@ When deploying a Prisma project to a production environment, you need to configu
 
 1. Modify `.env` to use a production database instead of a local one.
 
-	For example:
+    For example:
 
-	```
-	DATABASE_URL="postgresql://user:password@your-production-db-host:5432/database"
-	```
+    ```env
+    DATABASE_URL="postgresql://user:password@your-production-db-host:5432/database"
+    ```
 
 2. `npx prisma migrate deploy`: applies all existing migrations to the production database.

@@ -8,8 +8,8 @@ reviewed_on: "2025-08-15"
 
 Subshell uses this syntax:
 
-```
-(<command_1>; <command_2>; ...;<command_n>)
+```bash
+(command_1; command_2; ...;command_n)
 ```
 
 While group commands and subshells look similar and can both be used to combine streams for redirection, there is an important difference between the two. Whereas a [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/06-redirection#Group commands|group command]] executes all of its commands in the current shell, a subshell executes its commands in a child copy of the current shell. This means the environment is copied and given to a new instance of the shell. This copy of the environment is different from the way a child process ordinarily works in that the subshell inherits an entire copy of the parent's environment whereas a child process only inherits exported variables from the parent shell. When the subshell exits, its copy of the environment is lost, so any changes made to the subshell's environment are lost as well.
@@ -20,17 +20,17 @@ Process substitution is expressed in two ways.
 
 For processes that produce standard output, it looks like this:
 
-```
-<(<list>)
+```bash
+<(list)
 ```
 
 or, for processes that intake standard input, it looks like this:
 
-```
->(<list>)
+```bash
+>(list)
 ```
 
-where *list* is a list of commands.
+where _list_ is a list of commands.
 
 ```bash
 # This does not work
@@ -65,67 +65,67 @@ PROGNAME="${0##*/}"
 DICTIONARY=/usr/share/dict/words
 
 useage() {
-	cat <<- EOF
-	Usage: $PROGNAME [-h|--help] [PRINCIPAL INTEREST MONTHS]
-	       $PROGNAME REGEX [+|-CHAR...]
+    cat <<- EOF
+    Usage: $PROGNAME [-h|--help] [PRINCIPAL INTEREST MONTHS]
+           $PROGNAME REGEX [+|-CHAR...]
 
-	OPTIONS:
-		-h   Display this help message.
+    OPTIONS:
+        -h   Display this help message.
 
-	ARGUMENTS:
-		REGEX A five character regular expression at minimum of "....." representing five unknown characters in the answer.
-		[+|-CHAR...] Known character(s) to be either present or absent form the answer. These are expressed as either +CHAR for letter known to be present or -CHAR for letters kwnow to not be in the answer.
+    ARGUMENTS:
+        REGEX A five character regular expression at minimum of "....." representing five unknown characters in the answer.
+        [+|-CHAR...] Known character(s) to be either present or absent form the answer. These are expressed as either +CHAR for letter known to be present or -CHAR for letters kwnow to not be in the answer.
 EOF
 }
 
 plus() {
-	local char="$1"
+    local char="$1"
 
-	echo " | grep $char"
-	return
+    echo " | grep $char"
+    return
 }
 
 minus() {
-	local char="$1"
+    local char="$1"
 
-	echo " | grep -v $char"
-	return
+    echo " | grep -v $char"
+    return
 }
 
 # Parse command-line
 
 if [[ "$1" == "-h" || "$1" == "--help" ]]; then
-	help_message
-	exit 0
+    help_message
+    exit 0
 fi
 
 if (( "${#1}" == 5 )); then
-	known_chars="$1"
-	shift
+    known_chars="$1"
+    shift
 else
-	echo "Error: first argument must be a 5 characters regex" >&2
-	exit 1
+    echo "Error: first argument must be a 5 characters regex" >&2
+    exit 1
 fi
 
 cmd="grep '^.....$' $DICTIONARY \
-	| grep -v '[[:punct:]]' \
-	| grep -v '[[:upper:]]' \
-	| grep '$known_chars'"
+    | grep -v '[[:punct:]]' \
+    | grep -v '[[:upper:]]' \
+    | grep '$known_chars'"
 
 while [[ -n "$1" ]]; do
-	case "$1" in
-		-[[[:alpha:]])
-			cmd="${cmd}$(minus "${1:1}")"
-			;;
-		+[[[:alpha:]])
-			cmd="${cmd}$(plus "${1:1}")"
-			;;
-		*)
-			echo "Error: invalid argument '$1'" >&2
-			exit 1
-			;;
-	esac
-	shift
+    case "$1" in
+        -[[[:alpha:]])
+            cmd="${cmd}$(minus "${1:1}")"
+            ;;
+        +[[[:alpha:]])
+            cmd="${cmd}$(plus "${1:1}")"
+            ;;
+        *)
+            echo "Error: invalid argument '$1'" >&2
+            exit 1
+            ;;
+    esac
+    shift
 done
 
 eval "$cmd | tee >(wc -l)"
@@ -137,11 +137,11 @@ When we design a large, complicated script, it is important to consider what hap
 
 `bash` provided a mechanism for this purpose known as a **trap**. Traps are implemented with `trap`. `trap` uses the following syntax:
 
-```
+```text
 trap ARGUMENT SIGNAL [SIGNAL...]
 ```
 
-where *argument* is a string that will be read and treated as a command and *signal* is the specification of a signal that will trigger the execution of the interpreted command.
+where _argument_ is a string that will be read and treated as a command and _signal_ is the specification of a signal that will trigger the execution of the interpreted command.
 
 Constructing a string to form a useful sequence of commands can be awkward, so it is a common practice to specify a shell function as the command.
 
@@ -215,26 +215,26 @@ In most Unix-like systems, it is possible to create a special type of file calle
 
 Named pipes behave like files but actually form first-in first-out (FIFO) buffers. As with ordinary (unnamed) pipes, data goes in one end and emerges out the other. With named pipes, it is possible to set up something like this:
 
-```
-<process_1> > <named_pipe>
+```bash
+process_1 > named_pipe
 ```
 
 and this:
 
-```
-<process_2> < <named_pipe>
+```bash
+process_2 < named_pipe
 ```
 
 and it will behave like this:
 
-```
-<process_1> | <process_2>
+```bash
+process_1 | process_2
 ```
 
 ### Setting up a named pipe
 
 This is done with `mkfifo`.
 
-```
+```text
 mkfifo NAMED_PIPE
 ```

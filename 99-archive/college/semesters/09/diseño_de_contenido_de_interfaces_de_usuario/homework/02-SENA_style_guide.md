@@ -60,94 +60,78 @@ El tono es la manifestación emocional de la voz y debe adaptarse a los distinto
 
 1. Uso de mayúsculas y minúsculas.
 
-	Utilizar mayúsculas y minúsculas de forma coherente en todos los contenidos:​
+    Utilizar mayúsculas y minúsculas de forma coherente en todos los contenidos:​
+    - Nombres propios e institucionales: emplear mayúsculas en los nombres oficiales de programas, departamentos y títulos específicos.​
+        - Ejemplo correcto: Centro Nacional Colombo Alemán​.
 
-	- Nombres propios e institucionales: emplear mayúsculas en los nombres oficiales de programas, departamentos y títulos específicos.​
+        - Ejemplo incorrecto: centro nacional colombo alemán​.
 
-		- Ejemplo correcto: Centro Nacional Colombo Alemán​.
+    - Títulos y encabezados: aplicar mayúsculas solo en la primera palabra y en nombres propios.​
+        - Ejemplo correcto: Oferta educativa disponible.
 
-		- Ejemplo incorrecto: centro nacional colombo alemán​.
-
-	- Títulos y encabezados: aplicar mayúsculas solo en la primera palabra y en nombres propios.​
-
-		- Ejemplo correcto: Oferta educativa disponible.
-
-		- Ejemplo incorrecto: Oferta Educativa Disponible.
+        - Ejemplo incorrecto: Oferta Educativa Disponible.
 
 2. Puntuación.
 
-	Mantener una puntuación consistente y adecuada para facilitar la comprensión:​
+    Mantener una puntuación consistente y adecuada para facilitar la comprensión:​
+    - Puntos finales: omitir el punto final en títulos, encabezados y elementos de lista que no sean oraciones completas.​
 
-	- Puntos finales: omitir el punto final en títulos, encabezados y elementos de lista que no sean oraciones completas.​
+        Ejemplo correcto:
+        - Programas técnicos​
 
-		Ejemplo correcto:
+        - Formación virtual​
 
-		- Programas técnicos​
+        Ejemplo incorrecto:
+        - Programas técnicos.​
 
-		- Formación virtual​
-
-
-		Ejemplo incorrecto:
-
-		- Programas técnicos.​
-
-		- Formación virtual.​
+        - Formación virtual.​
 
 3. Uso de pronombres personales.
 
-	Dirigirse directamente al usuario para crear una comunicación más cercana:​
+    Dirigirse directamente al usuario para crear una comunicación más cercana:​
+    - Segunda Persona (Tú/Usted): Utilizar "usted" para mantener la formalidad y respeto en la comunicación institucional.​
+        - Ejemplo correcto: En el SENA, usted puede desarrollar sus habilidades profesionales.​
 
-	- Segunda Persona (Tú/Usted): Utilizar "usted" para mantener la formalidad y respeto en la comunicación institucional.​
-
-		- Ejemplo correcto: En el SENA, usted puede desarrollar sus habilidades profesionales.​
-
-		- Ejemplo incorrecto: En el SENA, tú puedes desarrollar tus habilidades profesionales.
+        - Ejemplo incorrecto: En el SENA, tú puedes desarrollar tus habilidades profesionales.
 
 4. Emplear la voz activa y tiempos verbales simples para mayor claridad.
+    - Voz activa: priorizar construcciones en voz activa para enfatizar la acción.​
+        - Ejemplo correcto: El SENA ofrece cursos gratuitos.​
 
-	- Voz activa: priorizar construcciones en voz activa para enfatizar la acción.​
+        - Ejemplo incorrecto: Cursos gratuitos son ofrecidos por el SENA.​
 
-		- Ejemplo correcto: El SENA ofrece cursos gratuitos.​
+    - Tiempos verbales simples: utilizar tiempos presentes para información actual y futuros para acciones por venir.​
+        - Ejemplo correcto: Las inscripciones comienzan el próximo lunes.​
 
-		- Ejemplo incorrecto: Cursos gratuitos son ofrecidos por el SENA.​
-
-	- Tiempos verbales simples: utilizar tiempos presentes para información actual y futuros para acciones por venir.​
-
-		- Ejemplo correcto: Las inscripciones comienzan el próximo lunes.​
-
-		- Ejemplo incorrecto: Las inscripciones estarán comenzando el próximo lunes.
+        - Ejemplo incorrecto: Las inscripciones estarán comenzando el próximo lunes.
 
 5. Formato de textos.
 
-	Aplicar formatos de texto que mejoren la legibilidad y accesibilidad:​
+    Aplicar formatos de texto que mejoren la legibilidad y accesibilidad:​
+    - Negrita para Énfasis: usar negrita para destacar términos clave o acciones importantes.​
 
-	- Negrita para Énfasis: usar negrita para destacar términos clave o acciones importantes.​
+        Ejemplo correcto: Para más información, consulte el **catálogo de cursos**.​
 
-		Ejemplo correcto: Para más información, consulte el **catálogo de cursos**.​
+    - Listas con viñetas o numeradas: organizar información en listas para facilitar la lectura y comprensión.​
 
-	- Listas con viñetas o numeradas: organizar información en listas para facilitar la lectura y comprensión.​
+    - Ejemplo correcto:
 
-	- Ejemplo correcto:
+        Se ofrecen:
+        - Programas técnicos​
 
-		Se ofrecen:
+        - Programas tecnológicos​
 
-		- Programas técnicos​
+        - Cursos complementarios
 
-		- Programas tecnológicos​
-
-		- Cursos complementarios
-
-	- Ejemplo incorrecto: se ofrecen programas técnicos, programas tecnológicos y cursos complementarios.
+    - Ejemplo incorrecto: se ofrecen programas técnicos, programas tecnológicos y cursos complementarios.
 
 6. Terminología consistente.
 
-	Mantener uniformidad en el uso de términos y nombres propios:​
+    Mantener uniformidad en el uso de términos y nombres propios:​
+    - Nombres de programas y servicios: referirse siempre a los programas y servicios con su nombre oficial completo.​
+        - Ejemplo correcto: SENA Sofía Plus​
 
-	- Nombres de programas y servicios: referirse siempre a los programas y servicios con su nombre oficial completo.​
-
-		- Ejemplo correcto: SENA Sofía Plus​
-
-		- Ejemplo incorrecto: Sofía Plus
+        - Ejemplo incorrecto: Sofía Plus
 
 ## Thesaurus
 

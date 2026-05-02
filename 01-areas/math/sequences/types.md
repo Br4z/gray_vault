@@ -22,8 +22,8 @@ The sum of the members of a finite arithmetic progression is called an **arithme
 
 $$
 \begin{align}
-	& S_n = a_1 + a_2 + \dots + a_{ n - 1 } + a_n \quad (1) \\
-	& S_n = a_1 + (a_1 + d) + \dots + (a_1 + (n - 2) d) + (a_1 + (n - 1) d) \quad (2)
+    & S_n = a_1 + a_2 + \dots + a_{ n - 1 } + a_n \quad (1) \\
+    & S_n = a_1 + (a_1 + d) + \dots + (a_1 + (n - 2) d) + (a_1 + (n - 1) d) \quad (2)
 \end{align}
 $$
 
@@ -37,13 +37,13 @@ Adding $(2)$ and $(3)$.
 
 $$
 \begin{align}
-	& \begin{array}{lclllll}
-			S_n   & = & a_1               & + (a_1 + d)         & + \dots & + (a_1 + (n - 2) d) & + (a_1 + (n - 1) d) \\
-			S_n   & = & (a_1 + (n - 1) d) & + (a_1 + (n - 2) d) & + \dots & + (a_1 + d)          & + a_1 \\
-			\hline
-			2 S_n & = & n (2 a_1 + (n - 1) d)
-		\end{array} \\
-	& S_n = \frac{ n }{ 2 } (2 a_1 + (n - 1) d) \quad (4)
+    & \begin{array}{lclllll}
+            S_n   & = & a_1               & + (a_1 + d)         & + \dots & + (a_1 + (n - 2) d) & + (a_1 + (n - 1) d) \\
+            S_n   & = & (a_1 + (n - 1) d) & + (a_1 + (n - 2) d) & + \dots & + (a_1 + d)          & + a_1 \\
+            \hline
+            2 S_n & = & n (2 a_1 + (n - 1) d)
+        \end{array} \\
+    & S_n = \frac{ n }{ 2 } (2 a_1 + (n - 1) d) \quad (4)
 \end{align}
 
 $$
@@ -52,8 +52,8 @@ Rewriting $(4)$.
 
 $$
 \begin{align}
-	& S_n = n \frac{ a_1 + a_1 + (n - 1) d }{ 2 } \\
-	& = n \frac{ a_1 + a_n }{ 2 }
+    & S_n = n \frac{ a_1 + a_1 + (n - 1) d }{ 2 } \\
+    & = n \frac{ a_1 + a_n }{ 2 }
 \end{align}
 
 $$

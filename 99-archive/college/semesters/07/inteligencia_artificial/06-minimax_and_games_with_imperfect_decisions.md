@@ -24,7 +24,7 @@ La mejor opcion para MAX se conoce como la decisión minimax. Se supone que MIN 
 
 > Siempre esperamos el peor de los casos, que el jugador humano haga la mejor jugada posible.
 
-Si la profundidad máxima del árbol es *m* y hay *b* movimientos legales en cada punto, se tiene:
+Si la profundidad máxima del árbol es _m_ y hay _b_ movimientos legales en cada punto, se tiene:
 
 - Complejidad temporal: $O(b^m)$.
 

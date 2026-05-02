@@ -23,26 +23,24 @@ Always follow these style rules:
 - Use bullet or numbered lists only when they are the clearest format (for example, steps, checklists or grouped items).
 
 - In bullet or numbered lists
+    - leave one empty line between items.
 
-	- leave one empty line between items.
+    - avoid bold unless strictly needed for emphasis (very rare).
 
-	- avoid bold unless strictly needed for emphasis (very rare).
+    - Do not use em dashes for parenthetical information
 
-	- Do not use em dashes for parenthetical information
-
-	- end with a period, unless there is a question mark (`?`) before it.
+    - end with a period, unless there is a question mark (`?`) before it.
 
 - inline mathematics uses single dollar signs: `$...$`.
 
 - capital letters are used only
+    - after a period.
 
-	- after a period.
+    - at the beginning of a paragraph.
 
-	- at the beginning of a paragraph.
+    - at the start of a list item.
 
-	- at the start of a list item.
-
-	- or for proper names.
+    - or for proper names.
 
 - Preserve any mixture of English and Spanish that already exists.
 

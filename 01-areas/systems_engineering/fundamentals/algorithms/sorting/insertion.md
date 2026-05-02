@@ -32,16 +32,16 @@ reviewed_on: "2025-05-05"
 
 template <class T>
 void insertion_sort(std::vector <T> &input, int input_length) {
-	for (int i = 1; i < input_length; i++) {
-		T element = input[i];
-		int j = i - 1;
+    for (int i = 1; i < input_length; i++) {
+        T element = input[i];
+        int j = i - 1;
 
-		while (j >= 0 && input[j] > element) {
-			input[j + 1] = input[j];
-			j--;
-		}
+        while (j >= 0 && input[j] > element) {
+            input[j + 1] = input[j];
+            j--;
+        }
 
-		input[j + 1] = element;
-	}
+        input[j + 1] = element;
+    }
 }
 ```

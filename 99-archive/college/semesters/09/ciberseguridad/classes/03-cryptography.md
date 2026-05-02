@@ -1,15 +1,15 @@
 ---
 reviewed_on: "2025-04-16"
 sources:
-  - author: NA
-    url: http://ibm.com/mx-es/topics/cryptography
-    language: Spanish
-  - author: NA
-    url: https://es.wikipedia.org/wiki/Cifrado_por_sustituci%C3%B3n
-    language: Spanish
-  - author: NA
-    url: https://es.wikipedia.org/wiki/Cifrado_de_Vigen%C3%A8re
-    language: Spanish
+    - author: NA
+      url: http://ibm.com/mx-es/topics/cryptography
+      language: Spanish
+    - author: NA
+      url: https://es.wikipedia.org/wiki/Cifrado_por_sustituci%C3%B3n
+      language: Spanish
+    - author: NA
+      url: https://es.wikipedia.org/wiki/Cifrado_de_Vigen%C3%A8re
+      language: Spanish
 ---
 
 # Cryptography
@@ -80,33 +80,33 @@ Se dice que un sistema de cifrado de sustitución simple es polialfabético cuan
 
 1. Asignamos valores numéricos a las letras.
 
-	$$
-	\text{A} = 0,\text{B} = 1,\dots,\text{Z} = 26
-	$$
+    $$
+    \text{A} = 0,\text{B} = 1,\dots,\text{Z} = 26
+    $$
 
 2. Escoge una "clave" y repetirla hasta igualar la longitud del texto plano a cifrar.
 
 3. Cifrar cada letra.
 
-	$$
-	E(X_i) = (X_i + K_i) \mod L
-	$$
+    $$
+    E(X_i) = (X_i + K_i) \mod L
+    $$
 
-	Donde $X_i$ es la letra en la posición $i$ del texto a cifrar, $K_i$ es el carácter de la clave correspondiente a $X_i$, pues se encuentran en la misma posición, y $L$ es el tamaño del alfabeto.
+    Donde $X_i$ es la letra en la posición $i$ del texto a cifrar, $K_i$ es el carácter de la clave correspondiente a $X_i$, pues se encuentran en la misma posición, y $L$ es el tamaño del alfabeto.
 
 Para descifrar realizamos la operación inversa:
 
 - Cuando $(C_i - K_i) \geq 0$.
 
-	$$
-	D(C_i) = (C_i - K_i) \mod L
-	$$
+    $$
+    D(C_i) = (C_i - K_i) \mod L
+    $$
 
 - Cuando $(C_i - K_i) < 0$.
 
-	$$
-	D(C_i) = (C_i - K_i + L) \mod L
-	$$
+    $$
+    D(C_i) = (C_i - K_i + L) \mod L
+    $$
 
 Donde $C_i$ es el carácter en la posición $i$ del texto cifrado, $K_i$ viene siendo el carácter de la clave correspondiente a $C_i$ y $L$ el tamaño del alfabeto.
 

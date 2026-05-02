@@ -11,14 +11,14 @@ A common pattern is to combine `init` with types that are not expected to change
 ```cs
 public class Person
 {
-	public string Name { get; init; } = "";
-	public string Email { get; init; } = "";
+    public string Name { get; init; } = "";
+    public string Email { get; init; } = "";
 }
 
 var person = new Person
 {
-	Name = "name",
-	Email = "test@domain.com"
+    Name = "name",
+    Email = "test@domain.com"
 }
 ```
 
@@ -31,10 +31,10 @@ A `readonly` field can be assigned in the constructor and then not changed later
 ```cs
 public class Person(string name)
 {
-	private readonly string _name = name;
+    private readonly string _name = name;
 
 
-	public string Name => _name;
+    public string Name => _name;
 }
 ```
 
@@ -47,10 +47,10 @@ If internal mutable collections must exist, a read-only interface or wrapper is 
 ```cs
 public class Team
 {
-	private readonly List<string> _members = new();
+    private readonly List<string> _members = new();
 
 
-	public IReadOnlyList<string> Members => _members;
+    public IReadOnlyList<string> Members => _members;
 }
 ```
 
@@ -64,8 +64,8 @@ using System.Collections.Immutable;
 
 public class Team
 {
-	public ImmutableArray<string> Members { get; init; }
-		= ImmutableArray<string>.Empty;
+    public ImmutableArray<string> Members { get; init; }
+        = ImmutableArray<string>.Empty;
 }
 ```
 

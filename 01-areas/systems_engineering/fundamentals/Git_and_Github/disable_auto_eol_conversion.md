@@ -7,4 +7,3 @@ reviewed_on: "2026-04-08"
 ```bash
 git config --global core.autocrlf false`
 ```
-

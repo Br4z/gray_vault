@@ -10,19 +10,19 @@ The process of identifying the top-level steps and developing increasingly detai
 
 ...shell functions are "minimal scripts" that are located inside other scripts and can act as autonomous programs. Shell functions have two common syntactic forms. First, here is the more formal form:
 
-```
-function <name> {
-	<commnads>
-	return
+```bash
+function name {
+    commands
+    return
 }
 ```
 
 Here is a simpler (and generally preferred) form:
 
-```
-<name> () {
-	<commands>
-	return
+```bash
+name () {
+    commands
+    return
 }
 ```
 
@@ -40,7 +40,7 @@ This feature allows shell functions to be written so that they remain independen
 
 With [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/06-redirection#Group commands|Group commands]] we can also do
 
-```
+```bash
 { command_1; command_2; command_3; } < some_input.txt
 ```
 
@@ -63,28 +63,28 @@ CURRENT_TIME="$(date +"%x %r %Z")"
 TIMESTAMP="Generated $CURRENT_TIME, by $USER"
 
 report_uptime () {
-	return
+    return
 }
 
 report_disk_space () {
-	return
+    return
 }
 
 report_home_space () {
-	return
+    return
 }
 cat << _EOF_
 <html>
-	<head>
-		<title>$TITLE</title>
-	</head>
-	<body>
-		<h1>$TITLE</h1>
-		<p>$TIMESTAMP</p>
-		$(report_uptime)
-		$(report_disk_space)
-		$(report_home_space)
-	</body>
+    <head>
+        <title>$TITLE</title>
+    </head>
+    <body>
+        <h1>$TITLE</h1>
+        <p>$TIMESTAMP</p>
+        $(report_uptime)
+        $(report_disk_space)
+        $(report_home_space)
+    </body>
 </html>
 _EOF_
 ```

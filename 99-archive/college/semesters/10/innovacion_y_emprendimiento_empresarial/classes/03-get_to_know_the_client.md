@@ -58,7 +58,7 @@ Su objetivo es comprender cómo actúa realmente un consumidor sin la influencia
 
 ## Jobs to be done
 
-Jobs to be Done (JTBD) es un enfoque que parte del principio de que los clientes no compran productos o servicios por sus características, sino para **resolver tareas específicas o "trabajos" que necesitan cumplir en circunstancias particulares**. Este marco ayuda a los emprendedores a comprender el resultado que el consumidor realmente desea lograr, más allá de **las funcionalidades superficiales del producto**. 
+Jobs to be Done (JTBD) es un enfoque que parte del principio de que los clientes no compran productos o servicios por sus características, sino para **resolver tareas específicas o "trabajos" que necesitan cumplir en circunstancias particulares**. Este marco ayuda a los emprendedores a comprender el resultado que el consumidor realmente desea lograr, más allá de **las funcionalidades superficiales del producto**.
 
 Para aplicarlo en la práctica, es necesario identificar quién es el consumidor específico, cuáles son las tareas prioritarias que necesita resolver, cuál sería la lista de resultados concretos que indicarían que cada tarea se ha cumplido desde el punto de vista del consumidor, y cuáles son las barreras o restricciones que deben considerarse en el diseño de la solución.
 

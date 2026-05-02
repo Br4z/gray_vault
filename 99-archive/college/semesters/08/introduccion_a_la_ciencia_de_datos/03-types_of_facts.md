@@ -32,40 +32,40 @@ En el contexto de un modelo de inventario, usaríamos este tipo de tabla para pr
 
 ```mermaid
 erDiagram
-	FACT_TABLE {
-		int reception_date_key FK
-		int inspection_date_key FK
-		int return_date_key FK
-		int authorization_date_key FK
-		int shelf_placement_date_key FK
-		int sale_date_key FK
-		int product_key FK
+    FACT_TABLE {
+        int reception_date_key FK
+        int inspection_date_key FK
+        int return_date_key FK
+        int authorization_date_key FK
+        int shelf_placement_date_key FK
+        int sale_date_key FK
+        int product_key FK
 
-		int qty_received
-		int qty_inspected
-		int qty_returned
-		int qty_authorized
-		int qty_placed_on_shelves
-		int qty_sold
-	}
+        int qty_received
+        int qty_inspected
+        int qty_returned
+        int qty_authorized
+        int qty_placed_on_shelves
+        int qty_sold
+    }
 
-	DATE {
-		int date_key PK
-		date date_value
-	}
+    DATE {
+        int date_key PK
+        date date_value
+    }
 
-	PRODUCT {
-		int product_key PK
-		string product_name
-	}
+    PRODUCT {
+        int product_key PK
+        string product_name
+    }
 
-	FACT_TABLE ||--o{ DATE: "reception_date_key"
-	FACT_TABLE ||--o{ DATE: "inspection_date_key"
-	FACT_TABLE ||--o{ DATE: "return_date_key"
-	FACT_TABLE ||--o{ DATE: "authorization_date_key"
-	FACT_TABLE ||--o{ DATE: "shelf_placement_date_key"
-	FACT_TABLE ||--o{ DATE: "sale_date_key"
-	FACT_TABLE ||--o{ PRODUCT: "product_key"
+    FACT_TABLE ||--o{ DATE: "reception_date_key"
+    FACT_TABLE ||--o{ DATE: "inspection_date_key"
+    FACT_TABLE ||--o{ DATE: "return_date_key"
+    FACT_TABLE ||--o{ DATE: "authorization_date_key"
+    FACT_TABLE ||--o{ DATE: "shelf_placement_date_key"
+    FACT_TABLE ||--o{ DATE: "sale_date_key"
+    FACT_TABLE ||--o{ PRODUCT: "product_key"
 ```
 
 Cada registro en la tabla de hechos representa una instancia del proceso completo.

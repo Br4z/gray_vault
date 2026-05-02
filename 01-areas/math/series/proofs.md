@@ -10,9 +10,9 @@ reviewed_on: "2025-02-09"
 
 $$
 \begin{align}
-	& \sum_{ i = 0 }^{ n = 0 } { 2^i } = 2^{ n + 1 } - 1 \\
-	& 2^0 = 2^{ 0 + 1 } - 1 \\
-	& 1 = 1
+    & \sum_{ i = 0 }^{ n = 0 } { 2^i } = 2^{ n + 1 } - 1 \\
+    & 2^0 = 2^{ 0 + 1 } - 1 \\
+    & 1 = 1
 \end{align}
 $$
 
@@ -20,10 +20,10 @@ $$
 
 $$
 \begin{align}
-	& \sum_{ i = 0 }^{ n + 1 } { 2^i } = 2^{ (n + 1) + 1 } - 1 \\
-	& 2^0 + 2^1 + \dots + 2^n + 2^{ n + 1 } = 2^{ n + 2 } - 1 \\
-	& \underbrace{ 2^{ n + 1 } - 1 }_{ 2^0 + 2^1 + \dots + 2^n } + 2^{ n + 1 } = (2^{ n + 1 } + 2^{ n + 1 }) - 1 \\
-	& 2^{ n + 1 } (1 + 1) - 1 = 2^{ n + 2 } - 1
+    & \sum_{ i = 0 }^{ n + 1 } { 2^i } = 2^{ (n + 1) + 1 } - 1 \\
+    & 2^0 + 2^1 + \dots + 2^n + 2^{ n + 1 } = 2^{ n + 2 } - 1 \\
+    & \underbrace{ 2^{ n + 1 } - 1 }_{ 2^0 + 2^1 + \dots + 2^n } + 2^{ n + 1 } = (2^{ n + 1 } + 2^{ n + 1 }) - 1 \\
+    & 2^{ n + 1 } (1 + 1) - 1 = 2^{ n + 2 } - 1
 \end{align}
 $$
 
@@ -31,13 +31,13 @@ $$
 
 $$
 \begin{align}
-	& \begin{array}{lcllll}
-			S   & = & 1       & + 2       & + \dots & + (n - 1) + n \\
-			S   & = & (n - 1) & + (n - 2) & + \dots & + (n - (n - 1)) \\
-			\hline
-			2 S & = & n^2 + n
-		\end{array} \\
-	& S = \frac{ n^2 + n }{ 2 } = \frac{ n (n + 1) }{ 2 }
+    & \begin{array}{lcllll}
+            S   & = & 1       & + 2       & + \dots & + (n - 1) + n \\
+            S   & = & (n - 1) & + (n - 2) & + \dots & + (n - (n - 1)) \\
+            \hline
+            2 S & = & n^2 + n
+        \end{array} \\
+    & S = \frac{ n^2 + n }{ 2 } = \frac{ n (n + 1) }{ 2 }
 \end{align}
 $$
 
@@ -47,13 +47,13 @@ $$
 
 $$
 \begin{array}{lcr}
-	k^3 - (k - 1)^3                         & = & (k - (k - 1)) (k^2 + k (k - 1) + (k - 1)^2) \\
-	                                        & = & k^2 + k^2 - k + k^2 - 2 k + 1 \\
-	                                        & = & 3 k^2 - 3 k + 1 \\
-	(k - 1)^3 - ((k -1) - 1)^3              & = & 3 (k - 1)^2 - 3 (k - 1) + 1 \\
-	(k - 2)^3 - ((k -2) - 1)^3              & = & 3 (k - 2)^2 - 3 (k - 2) + 1 \\
-	\vdots                                  &   & \\
-	(k - (k - 1))^3 - ((k - (k - 1)) - 1)^3 & = & 3 (1)^2 - 3 (1) + 1
+    k^3 - (k - 1)^3                         & = & (k - (k - 1)) (k^2 + k (k - 1) + (k - 1)^2) \\
+                                            & = & k^2 + k^2 - k + k^2 - 2 k + 1 \\
+                                            & = & 3 k^2 - 3 k + 1 \\
+    (k - 1)^3 - ((k -1) - 1)^3              & = & 3 (k - 1)^2 - 3 (k - 1) + 1 \\
+    (k - 2)^3 - ((k -2) - 1)^3              & = & 3 (k - 2)^2 - 3 (k - 2) + 1 \\
+    \vdots                                  &   & \\
+    (k - (k - 1))^3 - ((k - (k - 1)) - 1)^3 & = & 3 (1)^2 - 3 (1) + 1
 \end{array}
 $$
 
@@ -61,13 +61,13 @@ If we observe, the second term of the subtraction cancels with the first term of
 
 $$
 \begin{align}
-	& \sum_{ k = 1 }^n k^3 - (k - 1)^3 = n^3 - 0^3 \\
-	& n^3 = 3 \sum_{ k = 1 }^n k^2 - 3 \sum_{ k = 1 }^n k + n \\
-	& \sum_{ k = 1 }^n k^2 = \frac{ 1 }{ 3 } \left (n^3 + 3 \sum_{ k = 1 }^n k - n \right ) \\
-	& = \frac{ n }{ 3 } \left (n^2 + 3 \frac{ (n + 1) }{ 2 } - 1 \right ) \\
-	& = \frac{ n }{ 3 } \left (\frac{ 2 n^2 + 3 n + 3 - 2 }{ 2 } \right ) \\
-	& = \frac{ n }{ 3 } \left (\frac{ (2 n + 1) (n + 1) }{ 2 } \right ) \\
-	& = \frac{ n (2 n + 1) (n + 1) }{ 6 }
+    & \sum_{ k = 1 }^n k^3 - (k - 1)^3 = n^3 - 0^3 \\
+    & n^3 = 3 \sum_{ k = 1 }^n k^2 - 3 \sum_{ k = 1 }^n k + n \\
+    & \sum_{ k = 1 }^n k^2 = \frac{ 1 }{ 3 } \left (n^3 + 3 \sum_{ k = 1 }^n k - n \right ) \\
+    & = \frac{ n }{ 3 } \left (n^2 + 3 \frac{ (n + 1) }{ 2 } - 1 \right ) \\
+    & = \frac{ n }{ 3 } \left (\frac{ 2 n^2 + 3 n + 3 - 2 }{ 2 } \right ) \\
+    & = \frac{ n }{ 3 } \left (\frac{ (2 n + 1) (n + 1) }{ 2 } \right ) \\
+    & = \frac{ n (2 n + 1) (n + 1) }{ 6 }
 \end{align}
 $$
 

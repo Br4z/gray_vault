@@ -6,22 +6,22 @@ reviewed_on: "2025-10-09"
 
 ```mermaid
 graph TD
-	subgraph Client
-		U[User] --> B[Browser]
-	end
+    subgraph Client
+        U[User] --> B[Browser]
+    end
 
-	subgraph "Frontend service"
-		F[Nginx Container :80]
-	end
+    subgraph "Frontend service"
+        F[Nginx Container :80]
+    end
 
-	subgraph "Backend services"
-		D[Django container :8000]
-		P[PostgreSQL container :5432]
-	end
+    subgraph "Backend services"
+        D[Django container :8000]
+        P[PostgreSQL container :5432]
+    end
 
-	B -->|"Loads static assets (HTML, CSS adn JS)"| F
-	B -->|Makes HTTP API requests| D
-	D -->|Connects via Docker Network| P
+    B -->|"Loads static assets (HTML, CSS adn JS)"| F
+    B -->|Makes HTTP API requests| D
+    D -->|Connects via Docker Network| P
 ```
 
 ## Client

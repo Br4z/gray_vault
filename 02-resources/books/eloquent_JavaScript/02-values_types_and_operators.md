@@ -21,7 +21,7 @@ There are three special values in JavaScript that are considered numbers but do 
 When you write something inside `${}` in a **template literal** (backtick-quoted strings), its result will be computed, converted to a string, and included at that position....
 
 ```javascript
-`half of 100 is ${100 / 2}` // half of 100 is 50
+`half of 100 is ${100 / 2}`; // half of 100 is 50
 ```
 
 ## Boolean values
@@ -31,13 +31,13 @@ When you write something inside `${}` in a **template literal** (backtick-quoted
 The way strings are ordered is roughly alphabetic but not really what you would expect to see in a dictionary: uppercase letters are always "less" than lowercase ones, so $\text{Z} < \text{a}$, and nonalphabetic characters (`!`, `-`, and so on) are also included in the ordering. When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
 
 ```javascript
-console.log("Aardvark" < "Zoroaster") // true
+console.log("Aardvark" < "Zoroaster"); // true
 ```
 
 There is only one value in JavaScript that is not equal to itself, and that is `NaN` ("not a number").
 
 ```javascript
-console.log(NaN == NaN) // false
+console.log(NaN == NaN); // false
 ```
 
 ## Empty values

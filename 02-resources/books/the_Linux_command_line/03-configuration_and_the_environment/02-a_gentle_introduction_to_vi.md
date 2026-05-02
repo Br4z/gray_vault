@@ -20,12 +20,12 @@ reviewed_on: "2025-06-30"
 
 `vi` uses an ex command to perform search-and-replace operations (called **substitution** in `vi`) over a range of lines or the entire file...
 
-```
+```text
 :%s/Line/line/g
 ```
 
 |     item      | meaning                                                                                                            |
-|:-------------:|:------------------------------------------------------------------------------------------------------------------ |
+| :-----------: | :----------------------------------------------------------------------------------------------------------------- |
 |      `:`      | starts an **ex** command.                                                                                          |
 |      `%`      | the range of lines for the operation. `%` is a shortcut, meaning from the first line to the last line.             |
 |      `s`      | specifies the operation. In this case, it is substitution.                                                         |
@@ -34,14 +34,14 @@ reviewed_on: "2025-06-30"
 
 A `c` can be added after `g` if you want it to ask for confirmation after each substitution.
 
-```
+```text
 :%s/Line/line/gc
 
 replace with Line (y/n/a/q/l/^E/^Y)?
 ```
 
 |          item          | meaning                                                                       |
-|:----------------------:|:----------------------------------------------------------------------------- |
+| :--------------------: | :---------------------------------------------------------------------------- |
 |          `n`           | skip this instance of the pattern.                                            |
 |          `a`           | perform the substitution on this and all subsequent instances of the pattern. |
 |      `q` or `ESC`      | quit substituting.                                                            |
@@ -56,7 +56,7 @@ vi file1 file2 file3...
 
 ### Switching between files
 
-```
+```text
 :bn Switch from one file to the next
 :bp Move back to the previous file
 :buffers View a list of files being edited
@@ -67,7 +67,7 @@ vi file1 file2 file3...
 
 It is also possible to add files to our current editing session.
 
-```
+```text
 :e file
 ```
 
@@ -75,7 +75,7 @@ It is also possible to add files to our current editing session.
 
 It is also possible to insert an entire file into one we are editing.
 
-```
+```text
 :r file
 ```
 
@@ -91,7 +91,7 @@ The `:w` command may also specify an optional filename. This acts like "save as"
 
 ## `bash` does `vi` too
 
-...bash also supports vi-style command line editing too. This feature is easily activated  with the following command:
+...bash also supports vi-style command line editing too. This feature is easily activated with the following command:
 
 ```bash
 set -o vi

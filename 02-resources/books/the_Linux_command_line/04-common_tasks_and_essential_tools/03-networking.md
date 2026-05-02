@@ -42,7 +42,7 @@ It is a multi-purpose network configuration tool that makes use of the full rang
 
 `ip` is a complicated program with many options and commands. The command syntax consists of:
 
-```
+```text
 ip [-OPTIONS] object [COMMAND]
 ```
 
@@ -58,7 +58,7 @@ It works much like the traditional ftp program but has many additional convenien
 
 ### `curl` transfer a URL
 
-```
+```text
 curl [OPTION]... URL [URL]...
 ```
 
@@ -66,19 +66,19 @@ We specify a URL and `curl` downloads the first page of the URL and outputs it t
 
 `curl` supports most network protocols including HTTP, HTTPS, FTP, IMAP, POP3, SFTP, SMB, and others.
 
-|                  option                   | description                                                             |
-|:-----------------------------------------:|:----------------------------------------------------------------------- |
-|       `-o`, `--ouput` `<filename>`        | send output to the specified file  rather than standard output.         |
-|           `-O`, `--remote-name`           | like `-o` but name local file the same  as the name of the remote file. |
-|             `-s`, `--silent`              | suppress the progress meter and  error messages.                        |
-| `-u`, `--proxy-user`  `<user>:<password>` | specify a user name/password  combination.                              |
-|             `-v`, `--verbose`             | display verbose messages as it  executes.                               |
+|                  option                  | description                                                            |
+| :--------------------------------------: | :--------------------------------------------------------------------- |
+|       `-o`, `--ouput` `<filename>`       | send output to the specified file rather than standard output.         |
+|          `-O`, `--remote-name`           | like `-o` but name local file the same as the name of the remote file. |
+|             `-s`, `--silent`             | suppress the progress meter and error messages.                        |
+| `-u`, `--proxy-user` `<user>:<password>` | specify a user name/password combination.                              |
+|            `-v`, `--verbose`             | display verbose messages as it executes.                               |
 
 ### `wget` non-interactive network downloader
 
 It is useful for downloading content from both web and FTP sites. Single files, multiple files, and even entire sites can be downloaded.
 
-```
+```text
 wget [OPTION]... URL [URL]...
 ```
 

@@ -20,7 +20,7 @@ reviewed_on: "2025-06-30"
 
 - `alias`: create an alias for a command.
 
-	> Executed without arguments, it displays all aliases defined in the environment.
+    > Executed without arguments, it displays all aliases defined in the environment.
 
 ## What exactly are commands?
 
@@ -30,7 +30,7 @@ A command can be one of four different things.
 
 2. A command built into the shell itself.
 
-	> Like `cd` command.
+    > Like `cd` command.
 
 3. A shell function.
 
@@ -113,7 +113,7 @@ mkdir --help
 
 Most executable programs intended for command line use provide a formal piece of documentation called a **manual** or **man page**. A special paging program called "man" is used to view them...
 
-```
+```text
 man <command>
 ```
 
@@ -132,7 +132,7 @@ Man pages vary somewhat in format, but generally contain the following:
 The "manual" that `man` displays is broken into sections and covers not only user commands...
 
 | section | contents                                        |
-|:-------:|:----------------------------------------------- |
+| :-----: | :---------------------------------------------- |
 |    1    | user commands.                                  |
 |    2    | programming interfaces for kernel system calls. |
 |    3    | programming interfaces to the C library.        |
@@ -165,7 +165,7 @@ The first field in each line of output is the name of the man page, and the seco
 
 It displays the name and a one-line description of a man page matching a specified keyword.
 
-```
+```text
 whatis <term>
 ```
 
@@ -181,12 +181,12 @@ The GNU Project provides an alternative to man pages for their programs, called 
 
 `info` reads **info files**, which are tree structured into individual **nodes**, each containing a single topic. Info files contain hyperlinks that can move you from node to node. A hyperlink can be identified by its leading asterisk and is activated by placing the cursor upon it and pressing `ENTER`.
 
-```
+```text
 info <command>
 ```
 
 |          command          | action                                                                   |
-|:-------------------------:|:------------------------------------------------------------------------ |
+| :-----------------------: | :----------------------------------------------------------------------- |
 |            `?`            | display command help.                                                    |
 | `PAGE UP` or `BACKSPACE`  | display previous page.                                                   |
 | `PAGE DOWN` or `SPACEBAR` | display next page.                                                       |
@@ -214,44 +214,44 @@ cd /usr; ls; cd -
 
 1. Name availability verification.
 
-	```bash
-	type test
+    ```bash
+    type test
 
-	# test is a shell builtin
+    # test is a shell builtin
 
-	# ----------------------------------------------------------------------- #
+    # ----------------------------------------------------------------------- #
 
-	type foo
+    type foo
 
-	# bash: type: foo: not found
-	```
+    # bash: type: foo: not found
+    ```
 
 2. Alias creation.
 
-	```bash
-	# alias <name>='<string>'
+    ```bash
+    # alias <name>='<string>'
 
-	# ----------------------------------------------------------------------- #
+    # ----------------------------------------------------------------------- #
 
-	alias foo='cd /usr; ls; cd -'
+    alias foo='cd /usr; ls; cd -'
 
-	# ----------------------------------------------------------------------- #
+    # ----------------------------------------------------------------------- #
 
-	type foo
+    type foo
 
-	# foo is aliased to `cd /usr; ls; cd -'
+    # foo is aliased to `cd /usr; ls; cd -'
     ```
 
 3. Alias removal.
 
-	```bash
-	unalias foo
+    ```bash
+    unalias foo
 
-	# ----------------------------------------------------------------------- #
+    # ----------------------------------------------------------------------- #
 
-	type foo
+    type foo
 
-	bash: type: foo: not found
+    bash: type: foo: not found
     ```
 
 While we purposefully avoided naming our alias with an existing command name, it is not uncommon to do so. This is often done to apply a commonly desired option to each invocation of a common command...

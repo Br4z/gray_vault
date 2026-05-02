@@ -17,8 +17,8 @@ In a way, asynchronicity is **contagious**. Any function that calls a function t
 A **promise** is a receipt representing a value that may not be available yet. It provides a `then` method that allows you to register a function that should be called when the action for which it is waiting finishes. When the promise is **resolved**, meaning its value becomes available, such functions (there can be multiple) are called with the result value.
 
 ```javascript
-let fifteen = Promise.resolve(15)
-fifteen.then(value => console.log(`Got ${value}`)) // Got 15
+let fifteen = Promise.resolve(15);
+fifteen.then((value) => console.log(`Got ${value}`)); // Got 15
 ```
 
 Generally, it is useful to think of a promise as a device that lets code ignore the question of when a value is going to arrive. A normal value has to actually exist before we can reference it. A promised value is a value that **might** already be there or might appear at some point in the future. Computations defined in terms of promises, by wiring them together with `then` calls, are executed asynchronously as their inputs become available.
@@ -53,23 +53,23 @@ Asynchronous behavior happens on its own empty function call stack. This is one 
 
 ```javascript
 try {
-	setTimeout(() => {
-		throw new Error("Woosh")
-	}, 20)
+    setTimeout(() => {
+        throw new Error("Woosh");
+    }, 20);
 } catch (e) {
-	console.log("Caught", e)
+    console.log("Caught", e);
 }
 ```
 
 No matter how closely together events (such as timeouts or incoming requests) happen, a JavaScript environment will run only one program at a time. You can think of this as it running a big loop around your program, called the event loop. When there is nothing to be done, that loop is paused. But as events come in, they are added to a queue, and their code is executed one after the other. Because no two things run at the same time, slow-running code can delay the handling of other events.
 
 ```javascript
-let start = Date.now()
+let start = Date.now();
 setTimeout(() => {
-	console.log("Timeout ran at", Date.now() - start)
-}, 20)
-while (Date.now() < start + 50) { }
-console.log("Wasted time until", Date.now() - start)
+    console.log("Timeout ran at", Date.now() - start);
+}, 20);
+while (Date.now() < start + 50) {}
+console.log("Wasted time until", Date.now() - start);
 // Wasted time until 50
 // Timeout ran at 55
 ```

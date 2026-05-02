@@ -28,11 +28,11 @@ Lo que llamamos un latido es la **contracción** y **relajación** simultánea d
 
 - Diástole: los ventrículos se relajan y las aurículas se contraen.
 
-	> Llenado.
+    > Llenado.
 
 - Sístole: los ventrículos se contraen y las aurículas se relajan.
 
-	> Expulsión.
+    > Expulsión.
 
 ### El sistema eléctrico del corazón
 
@@ -40,13 +40,13 @@ Los impulsos eléctricos coordinan la actividad del corazón.
 
 1. La señal eléctrica comienza en el nodo sinoauricular (seno sinusual o nodo SA).
 
-	> Este es el **marcapasos** natural del corazón y se encuentra en la parte superior de la aurícula derecha.
+    > Este es el **marcapasos** natural del corazón y se encuentra en la parte superior de la aurícula derecha.
 
 2. La señal hace que las aurículas se contraigan, empujando la sangre hacia los ventrículos.
 
 3. El impulso eléctrico luego viaja a un área de celdas en la parte inferior de la aurícula derecha, entre las aurículas y los ventrículos, llamado nodo auriculoventricular (o AV).
 
-	> Estas celdas actúan como un guardián. Coordinan la señal para que las aurículas y los ventrículos no se contraigan al mismo tiempo. Es necesario que haya un pequeño retraso.
+    > Estas celdas actúan como un guardián. Coordinan la señal para que las aurículas y los ventrículos no se contraigan al mismo tiempo. Es necesario que haya un pequeño retraso.
 
 4. La señal viaja a lo largo de las fibras de Purkinje, dentro de las paredes del ventrículo. Las fibras pasan el impulso al músculo cardíaco, haciendo que los ventrículos se contraigan.
 

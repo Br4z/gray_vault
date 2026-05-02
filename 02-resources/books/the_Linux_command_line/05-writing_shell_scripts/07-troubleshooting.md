@@ -45,7 +45,7 @@ Using this features is not recommended. It is better to design proper error hand
 
 `shellcheck` performs analysis of shell scripts and will detect many kinds of faults and poor scripting practices.
 
-```
+```text
 shellcheck SCRIPT
 ```
 
@@ -57,8 +57,8 @@ Unix (and Unix-like operating systems) is extremely permissive about filenames. 
 
 Of particular concern are leading hyphens. They can be interpreted as command options when invoked as an argument.
 
-```
-<command> *
+```bash
+command *
 ```
 
 Using `./` will prevent a filename starting with a hyphen from being interpreted as a command option. As a general rule, always precede wildcards (such as `*` and `?`) with `./` to prevent misinterpretation by commands.

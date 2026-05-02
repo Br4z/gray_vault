@@ -18,15 +18,15 @@ donde:
 
 - $o_{ i,1 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación 1.
 
-	> $-100 \leq o_{ i,1 } \leq 100 \pand o_{ i,1 } \in \mathbb{ Z }$.
+    > $-100 \leq o_{ i,1 } \leq 100 \pand o_{ i,1 } \in \mathbb{ Z }$.
 
 - $o_{ i,2 }$: representa la opinión de cada agente del grupo $i$ sobre la afirmación 2.
 
-	> $-100 \leq o_{ i,2 } \leq 100 \pand o_{ i,2 } \in \mathbb{ Z }$.
+    > $-100 \leq o_{ i,2 } \leq 100 \pand o_{ i,2 } \in \mathbb{ Z }$.
 
 - $r_i$: representa el nivel de rigidez de cada agente del grupo $i$ ($0 \leq i < n$).
 
-	> $0 \leq r_i \leq 1$.
+    > $0 \leq r_i \leq 1$.
 
 El valor de conflicto interno de una red $SN$ se define de la siguiente manera:
 
@@ -92,15 +92,15 @@ sea mínimo.
 
 - Cada grupo de agentes $a_i$ contribuye
 
-	$$
-	n_i * (o_{ i,1 } - o_{ i,2 })^2
-	$$
+    $$
+    n_i * (o_{ i,1 } - o_{ i,2 })^2
+    $$
 
-	al conflicto interno. Si a ese grupo de agentes se le **moderan** $k$ agentes, esta contribución pasa a ser
+    al conflicto interno. Si a ese grupo de agentes se le **moderan** $k$ agentes, esta contribución pasa a ser
 
-	$$
-	(n_i - k) * (o_{ i,1 } - o_{ i,2 })^2
-	$$
+    $$
+    (n_i - k) * (o_{ i,1 } - o_{ i,2 })^2
+    $$
 
 ## Enfoque dinámico
 
@@ -110,9 +110,9 @@ Definimos la notación $\operatorname{ IC }(i,r)$ como el problema de minimizar 
 
 $$
 \operatorname{ modIC }(i,r) = \begin{cases}
-		\langle \rangle                                                             & i = n + 1 \\
-		k_i :: \operatorname{ modIC }(i + 1,r - \operatorname{ e\_effort }(i,k_i))  & i \neq n
-	\end{cases}
+        \langle \rangle                                                             & i = n + 1 \\
+        k_i :: \operatorname{ modIC }(i + 1,r - \operatorname{ e\_effort }(i,k_i))  & i \neq n
+    \end{cases}
 $$
 
 $$
@@ -129,9 +129,9 @@ $$
 
 $$
 \operatorname{ { recIC }_1 }(i,r) = \begin{cases}
-		0                                                                                                                                                                                        & i = 0 \\
-		\min_{ 0 \leq k_i \leq n_i } \left \{ \frac{ (i - 1) \cdot \operatorname{ { recIC }_1 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) }{ i } \right \} & i > 0
-	\end{cases}
+        0                                                                                                                                                                                        & i = 0 \\
+        \min_{ 0 \leq k_i \leq n_i } \left \{ \frac{ (i - 1) \cdot \operatorname{ { recIC }_1 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) }{ i } \right \} & i > 0
+    \end{cases}
 $$
 
 $$
@@ -142,9 +142,9 @@ $$
 
 $$
 \operatorname{ { recIC }_2 }(i,r) = \begin{cases}
-		0                                                                                                                                             & i = 0 \\
-		\min_{ 0 \leq k_i \leq n_i } \{\operatorname{ { recIC }_2 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i)\} & i > 0
-	\end{cases}
+        0                                                                                                                                             & i = 0 \\
+        \min_{ 0 \leq k_i \leq n_i } \{\operatorname{ { recIC }_2 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i)\} & i > 0
+    \end{cases}
 $$
 
 $$
@@ -160,24 +160,23 @@ Ambas formulaciones calculan el mismo valor $\operatorname{ valueIC }(n,R_{ \max
 - Caso base: para $i = 0$, ambas definiciones retornan 0.
 
 - Paso inductivo: supongamos que para $i - 1$, $\operatorname{ { recIC }_1 }(i,r') = \frac{ F(i - 1,r') }{ i - 1 }$ y $\operatorname{ { recIC }_2 }(i,r') =F(i - 1,r')$.
+    - $\operatorname{ { recIC }_1 }$.
 
-	- $\operatorname{ { recIC }_1 }$.
+        $$
+        \begin{align}
+            & \operatorname{ { recIC }_1 }(i,r) = \frac{ (i - 1) \cdot \operatorname{ { recIC }_1 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) }{ i } \\
+            & = \frac{ F(i - 1,r') + \operatorname{ conflict }(i,k_i) }{ i }
+        \end{align}
+        $$
 
-		$$
-		\begin{align}
-			& \operatorname{ { recIC }_1 }(i,r) = \frac{ (i - 1) \cdot \operatorname{ { recIC }_1 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) }{ i } \\
-			& = \frac{ F(i - 1,r') + \operatorname{ conflict }(i,k_i) }{ i }
-		\end{align}
-		$$
+    - $\operatorname{ { recIC }_2 }$.
 
-	- $\operatorname{ { recIC }_2 }$.
-
-		$$
-		\begin{align}
-			& \operatorname{ { recIC }_2 }(i,r) = \operatorname{ { recIC }_2 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) \\
-			& = F(i - 1,r') + \operatorname{ conflict }(i,k_i)
-		\end{align}
-		$$
+        $$
+        \begin{align}
+            & \operatorname{ { recIC }_2 }(i,r) = \operatorname{ { recIC }_2 }(i - 1,r - \operatorname{ e\_effort }(i,k_i)) + \operatorname{ conflict }(i,k_i) \\
+            & = F(i - 1,r') + \operatorname{ conflict }(i,k_i)
+        \end{align}
+        $$
 
 Al final $\operatorname{ valueIC }(n,R_{ \max }) = \frac{ \operatorname{ { recIC }_2 }(n,R_{ \max }) }{ n } = \frac{ F(n,R_{ \max }) }{ n }$, que coincide con $\operatorname{ { recIC }_1 }(n,R_{ \max })$.
 

@@ -26,9 +26,9 @@ $$
 
 $$
 C[i,j] = \begin{cases}
-		0 & S_{ ij } = \emptyset \\
-		\max(c[i,k] + c[k,j] + 1 : a_k \in S_{ ij }) & S_{ ij } \neq \emptyset
-	\end{cases}
+        0 & S_{ ij } = \emptyset \\
+        \max(c[i,k] + c[k,j] + 1 : a_k \in S_{ ij }) & S_{ ij } \neq \emptyset
+    \end{cases}
 $$
 
 ### Enfoque voraz (problema de selección de actividades)

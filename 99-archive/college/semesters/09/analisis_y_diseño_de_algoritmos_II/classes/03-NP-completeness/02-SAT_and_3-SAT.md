@@ -44,14 +44,14 @@ Se crean $k - 3$ variables y $k - 2$ cláusulas.
 
 $$
 \begin{align}
-	& (z_1 \por z_2 \por v_1) \\
-	& \pand (\lnot v_1 \por z_3 \por v_2) \\
-	& \pand (\lnot v_2 \por z_4 \por v_3) \\
-	& \pand \dots \\
-	& \pand (\lnot v_i \por z_{ i + 2 } \por v_{ i + 1 }) \\
-	& \pand \dots \\
-	& \pand (\lnot v_{ k - 4 } \por z_{ k - 2 } \por v_{ k - 3 }) \\
-	& \pand (\lnot v_{ k - 3 } \por z_{ k - 1 } \por z_k)
+    & (z_1 \por z_2 \por v_1) \\
+    & \pand (\lnot v_1 \por z_3 \por v_2) \\
+    & \pand (\lnot v_2 \por z_4 \por v_3) \\
+    & \pand \dots \\
+    & \pand (\lnot v_i \por z_{ i + 2 } \por v_{ i + 1 }) \\
+    & \pand \dots \\
+    & \pand (\lnot v_{ k - 4 } \por z_{ k - 2 } \por v_{ k - 3 }) \\
+    & \pand (\lnot v_{ k - 3 } \por z_{ k - 1 } \por z_k)
 \end{align}
 $$
 

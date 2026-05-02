@@ -26,26 +26,26 @@ reviewed_on: "2025-05-05"
 
 template <class T>
 void swap(std::vector <T> &input, int i, int j) {
-	T temp = input[i];
-	input[i] = input[j];
-	input[j] = temp;
+    T temp = input[i];
+    input[i] = input[j];
+    input[j] = temp;
 }
 
 template <class T>
 void bubble_sort(std::vector <T> &input) {
-	bool swapped;
-	int input_length = input.size();
+    bool swapped;
+    int input_length = input.size();
 
-	for (int i = 0; i < input_length - 1; i++) { // n - 1 passes
-		swapped = false;
-		for (int j = 0; j < input_length - i - 1; j++) // Ensures that j + 1 is in bounds
-			if (input[j] > input[j + 1]) {
-				swap(input, j, j + 1);
-				swapped = true;
-			}
+    for (int i = 0; i < input_length - 1; i++) { // n - 1 passes
+        swapped = false;
+        for (int j = 0; j < input_length - i - 1; j++) // Ensures that j + 1 is in bounds
+            if (input[j] > input[j + 1]) {
+                swap(input, j, j + 1);
+                swapped = true;
+            }
 
-		if (!swapped)
-			break;
-	}
+        if (!swapped)
+            break;
+    }
 }
 ```

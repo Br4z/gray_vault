@@ -20,9 +20,9 @@ Sea $g_j(m)$ el valor de la solución óptima de $\operatorname{knapsack}(1,j,m)
 
 $$
 g_j(m) = \begin{cases}
-		\max(g_{ j - 1 }(m),g_{ j - 1 }(m - w_j) + b_j) & m \geq w_j \\
-		g_{ j - 1 }(m)                                  & m < w_j
-	\end{cases}
+        \max(g_{ j - 1 }(m),g_{ j - 1 }(m - w_j) + b_j) & m \geq w_j \\
+        g_{ j - 1 }(m)                                  & m < w_j
+    \end{cases}
 $$
 
 con el caso base $g_0(m) = 0$ y $g_j(0) = 0$.
@@ -39,17 +39,17 @@ Sea la matriz `B[M, N]` una Matrix y `B[i, j]` contenga el beneficio máximo que
 
 $$
 \operatorname{BMAX}(i,1) =
-	\begin{cases}
-		b_1 & i \geq w_1 \\
-		0   & i < w_1
-	\end{cases}
+    \begin{cases}
+        b_1 & i \geq w_1 \\
+        0   & i < w_1
+    \end{cases}
 $$
 
 $$
 \operatorname{BMAX}(i,j) = \begin{cases}
-	\max(\operatorname{BMAX}(i,j - 1), \operatorname{BMAX}(i - w_j,j - 1) + b_j) & i \geq w_j \\
-	\operatorname{BMAX}(i,j - 1)                                                 & i < w_j
-	\end{cases}
+    \max(\operatorname{BMAX}(i,j - 1), \operatorname{BMAX}(i - w_j,j - 1) + b_j) & i \geq w_j \\
+    \operatorname{BMAX}(i,j - 1)                                                 & i < w_j
+    \end{cases}
 $$
 
 con el caso base $\operatorname{BMAX}(0,j) = 0$.

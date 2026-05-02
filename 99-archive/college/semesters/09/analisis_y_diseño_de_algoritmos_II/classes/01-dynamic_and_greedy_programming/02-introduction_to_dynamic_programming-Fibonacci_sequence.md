@@ -18,12 +18,12 @@ Dynamic programming is essentially a tradeoff of space for time...
 
 ```cpp
 int Fibonacci(int position) {
-	if (position == 0)
-		return 0;
-	else if (position == 1)
-		return 1;
-	else
-		return Fibonacci(position - 1) + Fibonacci(position - 2);
+    if (position == 0)
+        return 0;
+    else if (position == 1)
+        return 1;
+    else
+        return Fibonacci(position - 1) + Fibonacci(position - 2);
 }
 ```
 
@@ -40,20 +40,20 @@ long storage[MAX + 1];
 
 
 int Fibonacci_helper(int position) {
-	if (storage[position] == UNKNOWN)
-		storage[position] = Fibonacci_helper(position - 1) + Fibonacci_helper(position - 2);
+    if (storage[position] == UNKNOWN)
+        storage[position] = Fibonacci_helper(position - 1) + Fibonacci_helper(position - 2);
 
-	return storage[position];
+    return storage[position];
 }
 
 int Fibonacci(int position) {
-	storage[0] = 0;
-	storage[1] = 1;
+    storage[0] = 0;
+    storage[1] = 1;
 
-	for (int i = 2; i < MAX; i++)
-		storage[i] = UNKNOWN;
+    for (int i = 2; i < MAX; i++)
+        storage[i] = UNKNOWN;
 
-	return Fibonacci_helper(position);
+    return Fibonacci_helper(position);
 }
 ```
 
@@ -70,13 +70,13 @@ long storage[MAX + 1];
 
 
 int Fibonacci(int position) {
-	storage[0] = 0;
-	storage[1] = 1;
+    storage[0] = 0;
+    storage[1] = 1;
 
-	for (int i = 2; i <= position; i++)
-		storage[i] = storage[i - 1] + storage[i - 2];
+    for (int i = 2; i <= position; i++)
+        storage[i] = storage[i - 1] + storage[i - 2];
 
-	return storage[position];
+    return storage[position];
 }
 ```
 
@@ -87,21 +87,21 @@ Like the **top-down** version, the time and space complexity is $O(n)$, but we c
 
 
 int Fibonacci(int position) {
-	int a = 0, b = 1;
+    int a = 0, b = 1;
 
-	if (position == 0)
-		return 0; // a
-	else if (position == 1)
-		return 1; // b
-	else {
-		for (int i = 2; i <= position; i++) {
-			int next = a + b;
-			a = b;
-			b = next;
-		}
+    if (position == 0)
+        return 0; // a
+    else if (position == 1)
+        return 1; // b
+    else {
+        for (int i = 2; i <= position; i++) {
+            int next = a + b;
+            a = b;
+            b = next;
+        }
 
-		return b;
-	}
+        return b;
+    }
 }
 ```
 

@@ -47,7 +47,7 @@ ps x # Show the list of processes you own, regardless of whether they have a con
 With the `x` option, a new column called `STAT` is added.
 
 | state | meaning                                                                                                               |
-|:-----:|:--------------------------------------------------------------------------------------------------------------------- |
+| :---: | :-------------------------------------------------------------------------------------------------------------------- |
 |  `R`  | running.                                                                                                              |
 |  `S`  | sleeping.                                                                                                             |
 |  `D`  | uninterruptible sleep. The process is waiting for I/O.                                                                |
@@ -63,7 +63,7 @@ ps aux # Show all processes
 ...Using the options without the leading dash invokes the command with "BSD-style" behavior...
 
 | header  | meaning                                                                         |
-|:-------:|:------------------------------------------------------------------------------- |
+| :-----: | :------------------------------------------------------------------------------ |
 | `USER`  | user ID. This is the owner of the process.                                      |
 | `%CPU`  | CPU.                                                                            |
 | `%MEM`  | memory.                                                                         |
@@ -86,7 +86,7 @@ top
 `top` displays a continuously updating (by default, every three seconds) display of the system processes listed in order of process activity...The `top` display consists of two parts: a system summary at the top of the display, followed by a table of processes sorted by CPU activity.
 
 | row |      field      | meaning                                                                 |
-|:---:|:---------------:|:----------------------------------------------------------------------- |
+| :-: | :-------------: | :---------------------------------------------------------------------- |
 |  1  |      `top`      | name of the program.                                                    |
 |     |   `14:59:20`    | current time of day.                                                    |
 |     |    `up 6:30`    | **uptime**. It is the amount of time since the machine was last booted. |
@@ -226,14 +226,14 @@ kill 28401
 
 ### Sending signals to processes with `kill`
 
-```
+```text
 kill [-SIGNAL] PID...
 ```
 
 If no signal is specified on the command line, then the TERM (terminate) signal is sent by default...
 
 | number | name  | meaning                                                                          |
-|:------:|:-----:|:-------------------------------------------------------------------------------- |
+| :----: | :---: | :------------------------------------------------------------------------------- |
 |   1    |  HUP  | hang up.                                                                         |
 |   2    |  INT  | interrupt.                                                                       |
 |   3    | QUIT  |                                                                                  |

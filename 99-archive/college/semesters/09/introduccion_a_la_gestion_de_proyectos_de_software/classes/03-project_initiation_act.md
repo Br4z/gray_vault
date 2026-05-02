@@ -49,12 +49,11 @@ reviewed_on: "2025-03-10"
 - Restricciones y supuestos.
 
 - Requisitos de aprobación del proyecto, que incluyen:
+    - Qué constituye el éxito del proyecto.
 
-	- Qué constituye el éxito del proyecto.
+    - Quién decide si el proyecto es exitoso.
 
-	- Quién decide si el proyecto es exitoso.
-
-	- Quién firma la aprobación del proyecto.
+    - Quién firma la aprobación del proyecto.
 
 - Información sobre el director del proyecto asignado, su responsabilidad y su nivel de autoridad.
 

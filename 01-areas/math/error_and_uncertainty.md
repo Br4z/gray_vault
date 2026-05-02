@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-02-12"
 sources:
-  - author: NA
-    url: https://www.physics.columbia.edu/sites/default/files/content/Lab%20Resources/Lab%20Guide%201_%20Introduction%20to%20Error%20and%20Uncertainty.pdf
-    language: English
+    - author: NA
+      url: https://www.physics.columbia.edu/sites/default/files/content/Lab%20Resources/Lab%20Guide%201_%20Introduction%20to%20Error%20and%20Uncertainty.pdf
+      language: English
 ---
 
 # Error and uncertainty

@@ -10,9 +10,9 @@ It is a subfield of Artificial Intelligence (AI) that enables machines to **lear
 
 ```mermaid
 flowchart TB
-	data(data) -- selection ---> target_data(target data)
-	target_data -- cleaning --> processed_data(processed data)
-	processed_data -- preprocessing --> transformed_data(transformed data)
-	transformed_data -- data mining --> models(models)
-	models -- interpretation --> knowledge(knowledge)
+    data(data) -- selection ---> target_data(target data)
+    target_data -- cleaning --> processed_data(processed data)
+    processed_data -- preprocessing --> transformed_data(transformed data)
+    transformed_data -- data mining --> models(models)
+    models -- interpretation --> knowledge(knowledge)
 ```

@@ -13,7 +13,7 @@ reviewed_on: "2025-06-30"
 Since the shell uses filenames so much, it provides special characters to help us rapidly specify groups of filenames. These special characters are called **wildcards**. Using wildcards (which is also known as **globbing**) allows us to select filenames based on patterns of characters...
 
 |              wildcard              | meaning                                                     |
-|:----------------------------------:|:----------------------------------------------------------- |
+| :--------------------------------: | :---------------------------------------------------------- |
 |                `*`                 | any characters.                                             |
 |                `?`                 | any single character.                                       |
 |           `[characters]`           | any character that is a member of the set `characters`.     |
@@ -21,7 +21,7 @@ Since the shell uses filenames so much, it provides special characters to help u
 |           `[[:class:]]`            | any character that is a member of the specified class.      |
 
 | character class | meaning                     |
-|:---------------:|:--------------------------- |
+| :-------------: | :-------------------------- |
 |   `[:alnum:]`   | any alphanumeric character. |
 |   `[:alpha:]`   | any alphabetic character.   |
 |   `[:digit:]`   | any numeral.                |
@@ -38,7 +38,7 @@ cp item... directory # Copies multiple items (either files or directories) into 
 ### Useful options (`cp`)
 
 |        option         | meaning                                                                                                                                                                     |
-|:---------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   `-a`, `--archive`   | copy the files and directories and all of their attributes, including ownerships and permissions.                                                                           |
 | `-i`, `--interactive` | before overwriting an existing file, prompt the user for confirmation.                                                                                                      |
 |  `-r`, `--recursive`  | recursively copy directories and their contents.                                                                                                                            |
@@ -55,7 +55,7 @@ mv item... <directory> # Move one or more items from one directory to another.
 ### Useful options (`mv`)
 
 |        option         | meaning                                                                                                                                                                    |
-|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-i`, `--interactive` | before overwriting an existing file, prompt the user for confirmation.                                                                                                     |
 |   `-u`, `--update`    | when moving files from one directory to another, only move files that either do not exist or are newer than the existing corresponding files in the destination directory. |
 |   `-v`, `--verbose`   | display informative messages as the move is performed.                                                                                                                     |
@@ -65,13 +65,13 @@ mv item... <directory> # Move one or more items from one directory to another.
 ### Useful options (`rm`)
 
 |        option         | meaning                                                             |
-|:---------------------:|:------------------------------------------------------------------- |
+| :-------------------: | :------------------------------------------------------------------ |
 | `-i`, `--interactive` | before deleting an existing file, prompt the user for confirmation. |
 |  `-r`, `--recursive`  | recursively delete directories.                                     |
 |    `-f`, `--force`    | ignore nonexistent files and do not prompt.                         |
 |   `-v`, `--verbose`   | display informative messages as the deletion is performed.          |
 
-#### Be carefully with `rm`!
+#### Be carefully with `rm`
 
 Unix-like operating systems such as Linux do not have an undelete command. Once you delete something with `rm`, it is gone. Linux assumes you are smart and you know what you are doing.
 

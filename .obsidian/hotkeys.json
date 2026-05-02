@@ -1,27 +1,21 @@
 {
   "command-palette:open": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "S"
     }
   ],
   "app:open-help": [],
   "languagetool:check": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "T"
     }
   ],
   "workspace:new-tab": [],
   "app:toggle-left-sidebar": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "B"
     }
   ],
@@ -29,10 +23,7 @@
   "editor:toggle-italics": [],
   "app:toggle-right-sidebar": [
     {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
+      "modifiers": ["Mod", "Shift"],
       "key": "B"
     }
   ],
@@ -44,18 +35,13 @@
   "editor:delete-paragraph": [],
   "workspace:next-tab": [
     {
-      "modifiers": [
-        "Ctrl"
-      ],
+      "modifiers": ["Ctrl"],
       "key": "Tab"
     }
   ],
   "workspace:previous-tab": [
     {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
+      "modifiers": ["Ctrl", "Shift"],
       "key": "Tab"
     }
   ],

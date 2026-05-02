@@ -34,11 +34,11 @@ Si $P(c) = 0$, entonces $c$ es una raíz y $z - c$ un factor exacto.
 
 $$
 \begin{align}
-	P_n (z)         & = (z - c_1) q(z) \\
-	q_{ n - 1 } (z) & = (z - c_2) q_{ n - 2 }(z) \\
-	q_{ n - 2 } (z) & = (z - c_3) q_{ n - 3 }(z) \\
-	\vdots \\
-	q_1             & = (z - c_n) q_0
+    P_n (z)         & = (z - c_1) q(z) \\
+    q_{ n - 1 } (z) & = (z - c_2) q_{ n - 2 }(z) \\
+    q_{ n - 2 } (z) & = (z - c_3) q_{ n - 3 }(z) \\
+    \vdots \\
+    q_1             & = (z - c_n) q_0
 \end{align}
 $$
 
@@ -60,9 +60,9 @@ Para analizar las raíces fuera del disco unitario, consideramos
 
 $$
 \begin{align}
-	& S(z) = z^n P \left ( \frac{ 1 }{ z } \right ) \\
-	& = z^n \left [a_n \left ( \frac{ 1 }{ z }\right )^n + a_{ n - 1 } \left ( \frac{ 1 }{ z }\right )^{ n - 1 } + \dots + a_0 \right ] \\
-	& = a_n + a_{ n - 1 } z + a_{ n - 2 } z^2 + \dots + a_0 z^n
+    & S(z) = z^n P \left ( \frac{ 1 }{ z } \right ) \\
+    & = z^n \left [a_n \left ( \frac{ 1 }{ z }\right )^n + a_{ n - 1 } \left ( \frac{ 1 }{ z }\right )^{ n - 1 } + \dots + a_0 \right ] \\
+    & = a_n + a_{ n - 1 } z + a_{ n - 2 } z^2 + \dots + a_0 z^n
 \end{align}
 $$
 
@@ -94,29 +94,29 @@ $$
 
 $$
 \begin{align}
-	b_{ n - 1 } & = a_n \\
-	b_{ n - 2 } & = a_{ n - 1 } + z_0 b_{ n - 1 } \\
-	b_{ n - 3 } & = a_{ n - 2 } + z_0 b_{ n - 2 } \\
-	\vdots \\
-	b_0         & = a_1 + z_0 b_1 \\
-	P(z_0)      & = a_0 + z_0 b_0
+    b_{ n - 1 } & = a_n \\
+    b_{ n - 2 } & = a_{ n - 1 } + z_0 b_{ n - 1 } \\
+    b_{ n - 3 } & = a_{ n - 2 } + z_0 b_{ n - 2 } \\
+    \vdots \\
+    b_0         & = a_1 + z_0 b_1 \\
+    P(z_0)      & = a_0 + z_0 b_0
 \end{align}
 $$
 
 ### Pseudocódigo
 
-```
+```text
 input: p_coefficients, z_0
-	n = len(p_coefficients)
-	b_n = a_n
+    n = len(p_coefficients)
+    b_n = a_n
 
-	for k = n - 1 to 0 step = -1 do
-		b_k = a_k + z_0 b_(k + 1)
-	end do
+    for k = n - 1 to 0 step = -1 do
+        b_k = a_k + z_0 b_(k + 1)
+    end do
 
-	q_z = list(b_i : 1 <= i <= n)
+    q_z = list(b_i : 1 <= i <= n)
 
-	b_0 = p(z_0)
+    b_0 = p(z_0)
 ```
 
 - `p_coefficients` es la lista con los coeficientes del polinomio $P$, en la forma `[a_0,a_1,...,a_n]`.

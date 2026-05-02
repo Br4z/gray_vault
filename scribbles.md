@@ -1,4 +1,4 @@
-```
+```text
 ’|“|”|‘|’
 ```
 
@@ -15,22 +15,21 @@
 - Regex for comments without the beginning space: `[^\s]\\\\`
 
 - Search for spaces in:
+    - `for(`.
 
-	- `for(`.
+    - `while(`
 
-	- `while(`
+    - `switch(`
 
-	- `switch(`
+    - `if(`.
 
-	- `if(`.
+    - `}else`
 
-	- `}else`
+    - `){`.
 
-	- `){`.
-
-	```
-	(for\()|(while\()|(switch\()|(if\()|(\}else)|(\)\{)
-	```
+    ```text
+    (for\()|(while\()|(switch\()|(if\()|(\}else)|(\)\{)
+    ```
 
 ## Useful commands
 
@@ -48,12 +47,12 @@
 
 - Compile and run JavaFX programs.
 
-	```powershell
-	javac -d out --module-path <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml YourApp.java
- $(Get-ChildItem -Filter "*.java" -Recurse)
-	cp src/main/resources/* out
-	java -cp out --module-path  <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml <main>
-	```
+    ```powershell
+    javac -d out --module-path <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml YourApp.java
+    $(Get-ChildItem -Filter "*.java" -Recurse)
+    cp src/main/resources/* out
+    java -cp out --module-path  <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml <main>
+    ```
 
 ## Folders to check
 
@@ -82,71 +81,68 @@
 - Finish the habitica terminal client.
 
 - Program the classic games.
+    - Pacman.
 
-	- Pacman.
+    - Tetris.
 
-	- Tetris.
+    - Sudoku.
 
-	- Sudoku.
+    - Hangman.
 
-	- Hangman.
+6. Exceptions and error patterns
 
+    try/catch/finally, using / await using
 
-6) Exceptions and error patterns
+    When to throw, custom exceptions
 
-try/catch/finally, using / await using
+    “Result” style patterns (when you don’t want exceptions)
 
-When to throw, custom exceptions
+7. Generics and constraints
 
-“Result” style patterns (when you don’t want exceptions)
+    Generic methods/classes
 
-7) Generics and constraints
+    Constraints: where T : class, struct, new(), interface constraints
 
-Generic methods/classes
+    Variance basics: out, in (useful with interfaces/delegates)
 
-Constraints: where T : class, struct, new(), interface constraints
+8. Delegates, events, and lambdas
 
-Variance basics: out, in (useful with interfaces/delegates)
+    Func<>, Action<>, custom delegates
 
-8) Delegates, events, and lambdas
+    Events (event keyword), typical event pattern
 
-Func<>, Action<>, custom delegates
+    Lambdas, closures (common gotchas)
 
-Events (event keyword), typical event pattern
+9. Async/await (the modern C# must-have)
 
-Lambdas, closures (common gotchas)
+    Task / Task<T> / ValueTask (at least know it exists)
 
-9) Async/await (the modern C# must-have)
+    async/await flow, exception behavior
 
-Task / Task<T> / ValueTask (at least know it exists)
+    Cancellation: CancellationToken
 
-async/await flow, exception behavior
+    Common pitfall: blocking with .Result / .Wait()
 
-Cancellation: CancellationToken
+10. Interfaces, DI, and “how C# apps are structured”
 
-Common pitfall: blocking with .Result / .Wait()
+    Interfaces + implementations
 
-10) Interfaces, DI, and “how C# apps are structured”
+    Dependency Injection basics (especially in ASP.NET Core)
 
-Interfaces + implementations
+    Common lifetimes: transient/scoped/singleton (just concepts)
 
-Dependency Injection basics (especially in ASP.NET Core)
+11. Files, IDisposable, and using
 
-Common lifetimes: transient/scoped/singleton (just concepts)
+    IDisposable and why it exists
 
-11) Files, IDisposable, and using
+    using statement vs using declaration
 
-IDisposable and why it exists
+    Streams and basic file I/O
 
-using statement vs using declaration
+12. NuGet + package management
 
-Streams and basic file I/O
+    What NuGet is, adding packages
 
-12) NuGet + package management
+    Semantic versioning idea
 
-What NuGet is, adding packages
-
-Semantic versioning idea
-
-dotnet restore
-
+    dotnet restore

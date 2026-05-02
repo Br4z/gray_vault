@@ -57,4 +57,4 @@ It can be achieved by using line continuations (backslash-linefeed sequences) an
 
 - `:set autoindent`: turns on "auto indent" feature, this causes `vim` to indent a new line the same amount as the line just typed.
 
-	> To stop indentation, press `CTRL + d`.
+    > To stop indentation, press `CTRL + d`.

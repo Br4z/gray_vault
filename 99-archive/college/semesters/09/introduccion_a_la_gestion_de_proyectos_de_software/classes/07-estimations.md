@@ -10,10 +10,10 @@ reviewed_on: "2025-04-07"
 
 ```mermaid
 block-beta
-	columns 3
-	A["presupuesto del proyecto"]:3
-	B["línea base del costo"]:2 C["reserva de gestión"]
-	D["estimación del costo"] E["reserva de contingencia"]
+    columns 3
+    A["presupuesto del proyecto"]:3
+    B["línea base del costo"]:2 C["reserva de gestión"]
+    D["estimación del costo"] E["reserva de contingencia"]
 ```
 
 El presupuesto del proyecto se compone de varios elementos: la línea base del costo, que integra la estimación del costo y actúa como punto de referencia, y dos tipos de reservas, la de gestión y la de contingencia, que sirven para cubrir riesgos no previstos y conocidos respectivamente. Esta estructura asegura que la empresa disponga de la cantidad de dinero necesaria para llevar a cabo el proyecto, considerando tanto los costos estimados como los posibles imprevistos.

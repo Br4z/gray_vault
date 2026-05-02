@@ -8,13 +8,13 @@ reviewed_on: "2025-03-03"
 
 ```mermaid
 flowchart LR
-	analisis --> diseño --> desarrollo --> pruebas --> implantación
+    analisis --> diseño --> desarrollo --> pruebas --> implantación
 ```
 
 La diferencia entre el ciclo de vida de un proyecto y un producto es que para la primera se contemplan fases específicas y gestionadas, mientras que el segundo se enfoca en la operación y mantenimiento continuo.
 
 |   enfoque   | requisitos | actividades                                                             | entrega                               | meta                                                                   |
-|:-----------:|:----------:| ----------------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------- |
+| :---------: | :--------: | ----------------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------- |
 | predictivo  |   fijos    | realizados una vez para todo el proyecto                                | entrega única                         | gestionar costos                                                       |
 |  iterativo  | dinámicos  | repetidos hasta que el producto esté correcto                           | entrega única                         | perfeccionar/corregir la solución                                      |
 | incremental | dinámicos  | realizados una vez por cada incremento                                  | entregas frecuentes y de menor tamaño | aumentar velocidad de entrega                                          |
@@ -26,7 +26,7 @@ Aprovechan las cosas conocidas y probadas. Esta reducción en incertidumbre y co
 
 ```mermaid
 flowchart LR
-	analisis --> ejecución --> pruebas --> entrega
+    analisis --> ejecución --> pruebas --> entrega
 ```
 
 El plan dirige el trabajo. Por adelantado, se realiza tanta planificación como sea posible. Los requisitos son identificados con el mayor detalle posible. El equipo estima cuándo puede entregar qué entregables.
@@ -37,13 +37,13 @@ Permiten obtener retroalimentación sobre trabajo parcialmente terminado o sin t
 
 ```mermaid
 flowchart LR
-	subgraph iteration
-		análisis --> diseño
-		diseño --> desarrollo
-		desarrollo --> pruebas
-		pruebas --> feedback
-		feedback --> análisis
-	end
+    subgraph iteration
+        análisis --> diseño
+        diseño --> desarrollo
+        desarrollo --> pruebas
+        pruebas --> feedback
+        feedback --> análisis
+    end
 ```
 
 Se planifican prototipos y pruebas, pero las salidas pretenden modificar los planes creados al principio. Las revisiones tempranas ayudan a informar sobre el trabajo futuro del proyecto.
@@ -67,36 +67,32 @@ El equipo también planifica y replanifica a medida que se obtiene más informac
 Cinco grupos de procesos, que constituyen etapas secuenciales y lógicas por las que pasa un proyecto:
 
 1. Inicio: definir y autorizar formalmente el proyecto o una fase del mismo.
+    - Identifica stakeholders.
 
-	- Identifica stakeholders.
+    - Acta de constitución del proyecto.
 
-	- Acta de constitución del proyecto.
+    - Identifica riesgos iniciales.
 
-	- Identifica riesgos iniciales.
-
-	- Elección del director del proyecto.
+    - Elección del director del proyecto.
 
 2. Planificación: plan detallado del proyecto que guiará la ejecución y monitoreo y control del mismo.
+    - Definición del alcance, cronograma, presupuesto y calidad.
 
-	- Definición del alcance, cronograma, presupuesto y calidad.
-
-	- Planificación de recursos humanos, comunicaciones, riesgos y adquisiciones.
+    - Planificación de recursos humanos, comunicaciones, riesgos y adquisiciones.
 
 3. Ejecución: coordinar y dirigir los recursos para implementar el plan del proyecto.
+    - Coordinación y dirección de recursos.
 
-	- Coordinación y dirección de recursos.
-
-	- Implementación del plan y aseguramiento de la calidad.
+    - Implementación del plan y aseguramiento de la calidad.
 
 4. Monitoreo y control: medir el desempeño y progreso del proyecto para asegurar el cumplimiento de objetivos.
+    - Seguimiento del desempeño y progreso.
 
-	- Seguimiento del desempeño y progreso.
-
-	- Gestión de cambios, riesgos y control de costos.
+    - Gestión de cambios, riesgos y control de costos.
 
 5. Cierre: formalizar la aceptación del proyecto y cerrar actividades.
 
-	Documentación de lecciones aprendidas y cierre administrativo.
+    Documentación de lecciones aprendidas y cierre administrativo.
 
 > Aunque se presentan de forma secuencial, estos procesos pueden iterar según las necesidades del proyecto.
 

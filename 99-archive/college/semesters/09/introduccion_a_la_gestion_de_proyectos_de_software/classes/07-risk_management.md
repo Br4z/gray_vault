@@ -46,17 +46,17 @@ el PMI propone una estructura de desglose de riesgos (RBS) que clasifica los rie
 
 ```mermaid
 flowchart TD
-	A["planeación (plan de gestión de riesgos)"]
-	B["identificación (registro de riesgos)"]
-	C["análisis (calificación de riesgos)"]
-	D["respuestas (estrategias para mitigar o responder al riesgo)"]
-	E[Seguimiento y control]
+    A["planeación (plan de gestión de riesgos)"]
+    B["identificación (registro de riesgos)"]
+    C["análisis (calificación de riesgos)"]
+    D["respuestas (estrategias para mitigar o responder al riesgo)"]
+    E[Seguimiento y control]
 
-	A --> B
-	B --> C
-	C --> D
-	D --> E
-	E --> A
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> A
 ```
 
 ## Respuesta al riesgo

@@ -26,9 +26,9 @@ For two numbers, $a + b i$, and $c + d i$ when the multiplication is performed, 
 
 $$
 \begin{align}
-	& (a + b i) (c + d i) \\
-	& = a c + a d i + b c i + b d i^2 \\
-	& = (a c - b d) + (a d + b c) i
+    & (a + b i) (c + d i) \\
+    & = a c + a d i + b c i + b d i^2 \\
+    & = (a c - b d) + (a d + b c) i
 \end{align}
 $$
 
@@ -38,9 +38,9 @@ For two numbers, $a + b i$, and $c + d i$ when the division is performed, then t
 
 $$
 \begin{align}
-	& \frac{ a + b i }{ c + d i } \frac{ c - d i }{ c - d i } \\
-	& = \frac{ (a + b i) (c - d i ) }{ c^2 + d^2 } \\
-	& = \frac{ (a c + b d) + (-a d + b c) i }{ c^2 + d^2 } \\
-	& = \frac{ a c + b d }{ c^2 + d^2 } + \frac{ -a d + b c }{ c^2 + d^2 } i
+    & \frac{ a + b i }{ c + d i } \frac{ c - d i }{ c - d i } \\
+    & = \frac{ (a + b i) (c - d i ) }{ c^2 + d^2 } \\
+    & = \frac{ (a c + b d) + (-a d + b c) i }{ c^2 + d^2 } \\
+    & = \frac{ a c + b d }{ c^2 + d^2 } + \frac{ -a d + b c }{ c^2 + d^2 } i
 \end{align}
 $$

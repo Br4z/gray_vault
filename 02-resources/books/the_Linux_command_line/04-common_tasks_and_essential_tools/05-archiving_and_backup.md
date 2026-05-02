@@ -42,18 +42,17 @@ ls -l foo.*
 # -rw-r--r-- 1 me    me    15738 2025-10-14 07:15 foo.txt
 ```
 
-| option |          long option           | description                                                                                                                                                                                                            |
-|:------ |:------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-c`   |   `--stdout`, `--to-stdout`    | write output to standard output and keep the original files.                                                                                                                                                           |
-| `-d`   | `--decompress`, `--uncompress` | causes `gzip` to act like `gunzip`.                                                                                                                                                                                    |
-| `-f`   |           `--force`            | force compression even if a compressed version of the original file already exists.                                                                                                                                    |
-| `-h`   |            `--help`            | display usage information.                                                                                                                                                                                             |
-| `-l`   |            `--list`            | list compression statistics for each file compressed.                                                                                                                                                                  |
-| `-r`   |         `--recursive`          | if one or more arguments on the command line is a directory, recursively compress files contained within them.                                                                                                         |
-| `-t`   |            `--test`            | test the integrity of a compressed file.                                                                                                                                                                               |
-| `-v`   |          `--verbose`           | display verbose messages while compressing.                                                                                                                                                                            |
-| `-<n>` |                                | set amount of compression. *n* is an integer in the range of 1 (fastest, least compression) to 9 (slowest, most compression). The values 1 and 9 may also be expressed as `--fast` and `--best`, respectively. |
-
+| option |          long option           | description                                                                                                                                                                                                    |
+| :----- | :----------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-c`   |   `--stdout`, `--to-stdout`    | write output to standard output and keep the original files.                                                                                                                                                   |
+| `-d`   | `--decompress`, `--uncompress` | causes `gzip` to act like `gunzip`.                                                                                                                                                                            |
+| `-f`   |           `--force`            | force compression even if a compressed version of the original file already exists.                                                                                                                            |
+| `-h`   |            `--help`            | display usage information.                                                                                                                                                                                     |
+| `-l`   |            `--list`            | list compression statistics for each file compressed.                                                                                                                                                          |
+| `-r`   |         `--recursive`          | if one or more arguments on the command line is a directory, recursively compress files contained within them.                                                                                                 |
+| `-t`   |            `--test`            | test the integrity of a compressed file.                                                                                                                                                                       |
+| `-v`   |          `--verbose`           | display verbose messages while compressing.                                                                                                                                                                    |
+| `-<n>` |                                | set amount of compression. _n_ is an integer in the range of 1 (fastest, least compression) to 9 (slowest, most compression). The values 1 and 9 may also be expressed as `--fast` and `--best`, respectively. |
 
 `gunzip` assumes that filenames end in the extension `.gz`, so it is not necessary to specify it, as long as the specified name is not in conflict with an existing uncompressed file.
 
@@ -95,12 +94,12 @@ touch playground/dir-{001..100}/file-{A..Z}
 
 ...Its name, short for **tape archive**, reveals its roots as a tool for making backup tapes...We often see filenames that end with the extension `.tar` or `.tgz`, which indicate a "plain" tar archive and a gzipped archive, respectively. A tar archive can consist of a group of separate files, one or more directory hierarchies, or a mixture of both.
 
-```
+```text
 tar MODE[OPTIONS] PATHNAME...
 ```
 
 | mode | description                                               |
-|:----:|:--------------------------------------------------------- |
+| :--: | :-------------------------------------------------------- |
 | `c`  | create an archive from a list of file and/or directories. |
 | `x`  | extract an archive.                                       |
 | `r`  | append specified pathname to the end of an archive.       |
@@ -130,7 +129,7 @@ find playground -name "file-A" | tar cf - --files-from=- | gzip > playground.tgz
 
 - `-`: tells `tar` to write the archive to standard output instead of a file.
 
-- ` --files-from=-` (also be specified as `-T`): tells `tar` to read the list of files to archive from standard input (the list coming from `find`).
+- `--files-from=-` (also be specified as `-T`): tells `tar` to read the list of files to archive from standard input (the list coming from `find`).
 
 > The `.tgz` extension is the conventional extension given to gzip-compressed tar files. The extension `.tar.gz` is also used some times.
 
@@ -162,7 +161,7 @@ ls
 
 It is both a compression tool and an archiver...
 
-```
+```text
 zip OPTIONS ZIPFILE FILE...
 ```
 
@@ -206,7 +205,7 @@ unzip -p ls-etc.zip | less
 
 In the Unix-like world, the preferred tool for this task is `rsync`. This program can syn­chronize both local and remote directories by using the **rsync remote-update protocol**, which allows `rsync` to quickly detect the differences between two directories and per­form the minimum amount of copying required to bring them into sync...
 
-```
+```text
 rsync OPTIONS SOURCE DESTINATION
 ```
 

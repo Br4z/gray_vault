@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/filter-in-python
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/filter-in-python
+      language: English
 ---
 
 # `filter`
@@ -26,7 +26,7 @@ It returns an iterator that is already filtered.
 
 ```python
 def is_multiple_of_3(number):
-	return number % 3 == 0
+    return number % 3 == 0
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 result = list(filter(lambda x: not is_multiple_of_3(x), numbers))

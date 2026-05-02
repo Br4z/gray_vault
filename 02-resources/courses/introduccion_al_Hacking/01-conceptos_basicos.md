@@ -67,7 +67,7 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 7. Application Layer: is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user.
 
 | layer No |     layer name     |                                            responsibility                                             | information form (data unit) |      device or protocol      |
-|:--------:|:------------------:|:-----------------------------------------------------------------------------------------------------:|:----------------------------:|:----------------------------:|
+| :------: | :----------------: | :---------------------------------------------------------------------------------------------------: | :--------------------------: | :--------------------------: |
 |    7     | Application Layer  |                   Helps in identifying the client and synchronizing communication.                    |           Message            |             SMTP             |
 |    6     | Presentation Layer | Data from the Application Layer is extracted and manipulated in the required format for transmission. |           Message            |       JPEG, MPEG, GIF        |
 |    5     |   Session Layer    |          Establishes connection, maintenance, ensures authentication, and ensures security.           |           Message            |           Gateway            |
@@ -174,7 +174,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 
 - Broadcast address: by putting the host bits as 1 and retaining the network bits as in the IP address (the network address used to send packets to all hosts on the subnet).
 
-	TODO: maybe instead of IP address is network address.
+    TODO: maybe instead of IP address is network address.
 
 - Number of hosts per subnet: $2^{ 32 – \text{given bits for mask} } – 2$.
 
@@ -195,7 +195,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 ### No class and subnet mask `X.0.0.0`
 
 | CIDR |     hosts     |
-|:----:|:-------------:|
+| :--: | :-----------: |
 | `/1` | 2.147.483.648 |
 | `/2` | 1.073.741.824 |
 | `/3` |  536.870.912  |
@@ -208,7 +208,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 ### Class A and subnet mask `255.X.0.0`
 
 | CIDR  |   hosts   |
-|:-----:|:---------:|
+| :---: | :-------: |
 | `/9`  | 8.388.608 |
 | `/10` | 4.194.304 |
 | `/11` | 2.097.152 |
@@ -221,7 +221,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 ### Class B and subnet mask `255.255.X.0`
 
 | CIDR  | hosts  |
-|:-----:|:------:|
+| :---: | :----: |
 | `/17` | 32.768 |
 | `/18` | 16.384 |
 | `/19` | 8.192  |
@@ -234,7 +234,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 ### Class C and subnet mask `255.255.255.X`
 
 | CIDR  | hosts |
-|:-----:|:-----:|
+| :---: | :---: |
 | `/25` |  128  |
 | `/26` |  64   |
 | `/27` |  32   |
@@ -247,7 +247,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 ---
 
 |            CIDR            |  X  |
-|:--------------------------:|:---:|
+| :------------------------: | :-: |
 | `/1`, `/9`, `/17` y `/25`  | 128 |
 | `/2`, `/10`, `/18` y `/26` | 192 |
 | `/3`, `/11`, `/19` y `/27` | 224 |
@@ -262,61 +262,58 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 Exercises
 
 - `13.13.13.13/13`.
+    - Subnet address.
 
-	- Subnet address.
-
-		$$
-        \begin{array}{lllll}
-                &13.  &00001101. &13. &13 \\
-                &255. &11111000. &0.  &0 \\
-            =   &13.  &00001000. &0.  &0 = 13.8.0.0
-        \end{array}
+        $$
+            \begin{array}{lllll}
+                    &13.  &00001101. &13. &13 \\
+                    &255. &11111000. &0.  &0 \\
+                =   &13.  &00001000. &0.  &0 = 13.8.0.0
+            \end{array}
         $$
 
-	- Broadcast address: $13.00001111.255.255 = 13.15.255.255$.
+    - Broadcast address: $13.00001111.255.255 = 13.15.255.255$.
 
-	- Number of hosts per subnet: $524.288$.
+    - Number of hosts per subnet: $524.288$.
 
-	- First Host ID: $13.8.0.1$.
+    - First Host ID: $13.8.0.1$.
 
-	- Last Host ID: $13.15.255.254$.
+    - Last Host ID: $13.15.255.254$.
 
 - `10.10.0.12/15`.
+    - Subnet address.
 
-	- Subnet address.
-
-		$$
-        \begin{array}{lllll}
-                &10.  &00001010. &0. &12 \\
-                &255. &11111110. &0. &0 \\
-            =   &10.  &00001010. &0. &0 = 10.10.0.0
-        \end{array}
+        $$
+            \begin{array}{lllll}
+                    &10.  &00001010. &0. &12 \\
+                    &255. &11111110. &0. &0 \\
+                =   &10.  &00001010. &0. &0 = 10.10.0.0
+            \end{array}
         $$
 
-	- Broadcast address: $10.00001011.255.255 = 10.11.255.255$.
+    - Broadcast address: $10.00001011.255.255 = 10.11.255.255$.
 
-	- Number of hosts per subnet: $131.072$.
+    - Number of hosts per subnet: $131.072$.
 
-	- First Host ID: $10.10.0.1$.
+    - First Host ID: $10.10.0.1$.
 
-	- Last Host ID: $10.11.255.254$.
+    - Last Host ID: $10.11.255.254$.
 
 - `192.168.1.45/29`.
+    - Subnet address.
 
-	- Subnet address.
-
-		$$
-        \begin{array}{lllll}
-                &192. &168.  &1.   &00101101 \\
-                &255. &255.  &255. &11111000 \\
-            =   &192. &168.  &255. &00101000 = 192.168.1.40
-        \end{array}
+        $$
+            \begin{array}{lllll}
+                    &192. &168.  &1.   &00101101 \\
+                    &255. &255.  &255. &11111000 \\
+                =   &192. &168.  &255. &00101000 = 192.168.1.40
+            \end{array}
         $$
 
-	- Broadcast address: $192.168.1.00101111 = 192.168.1.47$.
+    - Broadcast address: $192.168.1.00101111 = 192.168.1.47$.
 
-	- Number of hosts per subnet: 8.
+    - Number of hosts per subnet: 8.
 
-	- First Host ID: $192.168.1.41$.
+    - First Host ID: $192.168.1.41$.
 
-	- Last Host ID: $192.168.1.47$.
+    - Last Host ID: $192.168.1.47$.

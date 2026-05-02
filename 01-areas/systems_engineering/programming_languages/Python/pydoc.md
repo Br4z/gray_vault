@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://docs.python.org/3/library/pydoc.html
-    language: English
+    - author: NA
+      url: https://docs.python.org/3/library/pydoc.html
+      language: English
 ---
 
 # `pydoc`
@@ -20,11 +20,11 @@ python -m pydoc [OPTIONS]... ARGUMENT
 
 - `-k`: search the synopsis lines of all available modules for the keyword given as the argument.
 
-	> The synopsis line of a module is the first line of its documentation string.
+    > The synopsis line of a module is the first line of its documentation string.
 
 - `-n <hostname>`: will start the server listening at the given hostname.
 
-	> By default, the hostname is "localhost".
+    > By default, the hostname is "localhost".
 
 - `-b`: will start the server and additionally open a web browser to a module index page.
 

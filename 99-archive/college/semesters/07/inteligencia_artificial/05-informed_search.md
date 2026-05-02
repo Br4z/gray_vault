@@ -28,7 +28,7 @@ Expandir el nodo con **menor** $h(n)$, este es, aquel que parece estar más cerc
 
 Se puede implementar considerando la lista de nodos a expandir como una **cola de prioridad**, donde la prioridad es el valor de la **heurística**.
 
-### A*
+### A\*
 
 Expandir el nodo con **menor** $f(n)$, este es, aquel con el menor consto estimado para llegar a la solución.
 
@@ -36,7 +36,7 @@ $$
 f(n) = g(n) + h(n)
 $$
 
-#### Implementación (A*)
+#### Implementación (A\*)
 
 Se puede implementar considerando la lista de nodos a expandir como una **cola de prioridad**, donde la prioridad es el valor de **$f(n)$**.
 

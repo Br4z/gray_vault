@@ -26,16 +26,16 @@ The shell makes no distinction between variables and constants; they are mostly 
 
 Variables are assigned values this way:
 
-```
-<variable>=<value>
+```bash
+variable=value
 ```
 
-Where *variable* is the name of the variable and *value* is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. You can force the shell to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
+Where _variable_ is the name of the variable and _value_ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. You can force the shell to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
 
 Multiple variable assignments may be done on a single line.
 
-```
-<variable>=<value> <variable>=<value>...
+```bash
+variable=value variable=value
 ```
 
 During expansion, variable names may be surrounded by optional curly braces (`{` and `}`). This is useful in cases where a variable name becomes ambiguous of its surrounding context.
@@ -54,13 +54,13 @@ mv "$filename" "${filename}1"
 
 A **here document** or **here script** is an additional form of I/O redirection in which we embed a body of text into our script and feed it into the standard input of a command.
 
-```
-<command> << <token>
-<text>
-<token>
+```bash
+command << token
+text
+token
 ```
 
-where *token* is a string used to indicate the end of the embedded text.
+where _token_ is a string used to indicate the end of the embedded text.
 
 A common convention is to use `_EOF_` (meaning **end of file**) as token. Note that the token mush appear alone and that there must not be trailing spaces on the line.
 
@@ -70,7 +70,7 @@ The text within a here document undergoes parameter expansion, command substitut
 
 However when we enclose the starting token in quotes:
 
-```
+```bash
 cat << '_EOF_'
 ```
 
@@ -90,13 +90,13 @@ TIMESTAMP="Generated $CURRENT_TIME, by $USER"
 
 cat << _EOF_
 <html>
-	<head>
-		<title>$TITLE</title>
-	</head>
-	<body>
-		<h1>$TITLE</h1>
-		<p>$TIMESTAMP</p>
-	</body>
+    <head>
+        <title>$TITLE</title>
+    </head>
+    <body>
+        <h1>$TITLE</h1>
+        <p>$TIMESTAMP</p>
+    </body>
 </html>
 _EOF_
 ```

@@ -6,9 +6,9 @@ reviewed_on: "2025-06-21"
 
 - .
 
-	...trabajar a fondo no es una reivindicación nostálgica de escritores y filósofos de comienzos del siglo XX. Es una destreza que tiene gran valor en la vida moderna.
+    ...trabajar a fondo no es una reivindicación nostálgica de escritores y filósofos de comienzos del siglo XX. Es una destreza que tiene gran valor en la vida moderna.
 
-	Dos razones explican este valor. La primera está relacionada con el aprendizaje. Vivimos en una economía de la información que se basa en sistemas complejos que cambian rápidamente...
+    Dos razones explican este valor. La primera está relacionada con el aprendizaje. Vivimos en una economía de la información que se basa en sistemas complejos que cambian rápidamente...
 
 - ...Por lo tanto, para seguir siendo valiosos en nuestra economía, es necesario que dominemos el arte de aprender rápidamente cosas complicadas...
 
@@ -22,9 +22,9 @@ reviewed_on: "2025-06-21"
 
 - .
 
-	**El estado de ocupación como sustituto de la productividad**: A falta de indicadores claros respecto a lo que significa ser productivo y valioso en un empleo, muchos trabajadores del conocimiento acuden a un indicador industrial de la productividad: hacer muchas cosas, de una manera visible.
+    **El estado de ocupación como sustituto de la productividad**: A falta de indicadores claros respecto a lo que significa ser productivo y valioso en un empleo, muchos trabajadores del conocimiento acuden a un indicador industrial de la productividad: hacer muchas cosas, de una manera visible.
 
-	Esta mentalidad es otra explicación para la popularidad de muchos comportamientos que destruyen la profundidad. Si usted envía y responde correos electrónicos a todas horas, si programa reuniones y asiste a ellas constantemente, si envía sus contribuciones en sistemas de mensajería instantánea como Hall pocos segundos después de que alguien plantea una nueva pregunta, o si se pasea por todo el espacio de la oficina abierta lanzando ideas a todas las personas con las que se encuentra, esos comportamientos darán la apariencia pública de que usted está ocupado. Si usted usa ese estado de ocupación como sustituto de la productividad, esos comportamientos le parecerán cruciales para convencerse a sí mismo y a los demás de que está haciendo bien su trabajo.
+    Esta mentalidad es otra explicación para la popularidad de muchos comportamientos que destruyen la profundidad. Si usted envía y responde correos electrónicos a todas horas, si programa reuniones y asiste a ellas constantemente, si envía sus contribuciones en sistemas de mensajería instantánea como Hall pocos segundos después de que alguien plantea una nueva pregunta, o si se pasea por todo el espacio de la oficina abierta lanzando ideas a todas las personas con las que se encuentra, esos comportamientos darán la apariencia pública de que usted está ocupado. Si usted usa ese estado de ocupación como sustituto de la productividad, esos comportamientos le parecerán cruciales para convencerse a sí mismo y a los demás de que está haciendo bien su trabajo.
 
 - Según la crítica de Morozov, hemos convertido "la Internet" en sinónimo del futuro revolucionario de los negocios y el gobierno. Hacer que su empresa esté a tono con "la Internet" equivale a ir con los tiempos e ignorar estas tendencias es como seguir produciendo herraduras en la era del automóvil. Ya no vemos las herramientas de Internet como productos lanzados por compañías que buscan el lucro, financiadas por inversionistas que esperan obtener ganancias y administradas por jóvenes de veintitantos años que muchas veces improvisan. Por el contrario, nos precipitamos a poner en un pedestal esos adminículos digitales como estandartes del progreso y precursores de un nuevo mundo (me atrevo a decir) feliz.
 
@@ -32,19 +32,19 @@ reviewed_on: "2025-06-21"
 
 - ...El psicólogo Mihaly Csikszentmihalyi, a quien retomaremos en la siguiente sección, explícitamente identifica esta ventaja al hablar de cultivar "una concentración tan intensa que no queda espacio para pensar en nada irrelevante ni para preocuparse por otros problemas"...
 
--  ...Cuando usted pierde concentración, su mente tiende a fijarse en lo que no marcha bien en su vida y a pasar por alto lo que sí está bien...
+- ...Cuando usted pierde concentración, su mente tiende a fijarse en lo que no marcha bien en su vida y a pasar por alto lo que sí está bien...
 
-	> Una mente ociosa es el taller del diablo.
+    > Una mente ociosa es el taller del diablo.
 
 - Entre muchos aportes, el trabajo de Csikszentmihalyi con el MME (método de muestreo de experiencias) contribuyó a validar una teoría que venía desarrollando desde un decenio atrás: "Por lo general, los mejores momentos ocurren cuando el cuerpo o la mente de una persona va al punto máximo de sus límites, en un esfuerzo voluntario por lograr algo difícil y que valga la pena"...
 
 - ...Santiago González, donde le describe su trabajo a un entrevistador:
 
-	Un código hermoso es corto y conciso. Si uno le mostrara ese código a otro programador, él diría: "Qué código tan bien escrito". Es como escribir un poema.
+    Un código hermoso es corto y conciso. Si uno le mostrara ese código a otro programador, él diría: "Qué código tan bien escrito". Es como escribir un poema.
 
 - El libro afirma que los programadores de computadores deben ver su trabajo de la misma manera:
 
-	Dentro de la estructura general de un proyecto, siempre hay espacio para la individualidad y la destreza. Dentro de cien años, nuestra ingeniería parecerá tan arcaica como las técnicas de construcción de las catedrales medievales a la luz de la ingeniería civil contemporánea, pero nuestra destreza seguirá siendo tan admirable.
+    Dentro de la estructura general de un proyecto, siempre hay espacio para la individualidad y la destreza. Dentro de cien años, nuestra ingeniería parecerá tan arcaica como las técnicas de construcción de las catedrales medievales a la luz de la ingeniería civil contemporánea, pero nuestra destreza seguirá siendo tan admirable.
 
 - En otras palabras, la voluntad no es una manifestación del carácter, no es un recurso que se pueda desplegar de manera ilimitada; funciona, más bien, como un músculo, que se cansa. Por esta razón a los sujetos del estudio de Hofmann y Baumeister les costaba tanto luchar contra sus deseos. Al cabo del tiempo, estas distracciones agotaban sus reservas finitas de fuerza de voluntad hasta el punto de que ya no podían seguir resistiendo. Lo mismo le ocurrirá a usted, sin importar cuáles sean sus intenciones… a menos que maneje sus hábitos de manera inteligente.
 

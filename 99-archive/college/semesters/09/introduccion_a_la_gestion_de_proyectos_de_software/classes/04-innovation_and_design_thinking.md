@@ -21,7 +21,7 @@ La creatividad consiste en **pensar** nuevas ideas, mientras que la innovación 
 ## Niveles o grados de innovación
 
 | grado de innovación | descripción                                                                        |
-|:-------------------:|:---------------------------------------------------------------------------------- |
+| :-----------------: | :--------------------------------------------------------------------------------- |
 |    Incremental.     | Pequeños cambios que mejoran lo que ya existe. Es lo mismo que la mejora continua. |
 |      Radical.       | Cambios significativos sobre lo que ya existe.                                     |
 |  Transformacional.  | Cambios que transforman completamente lo que ya existe.                            |
@@ -70,19 +70,19 @@ Es un proceso creativo de resolución de problemas enfocado en comprender las ne
 
 1. Defina el problema.
 
-	Elija el problema correcto para resolver para facilitar la vida de los clientes, luego enmarque el problema de una manera que invite a soluciones creativas.
+    Elija el problema correcto para resolver para facilitar la vida de los clientes, luego enmarque el problema de una manera que invite a soluciones creativas.
 
 2. Genere y analice muchas soluciones.
 
-	Reunir ideas de múltiples disciplinas en un entorno libre de juicios proporcionará una gama más amplia de ideas.
+    Reunir ideas de múltiples disciplinas en un entorno libre de juicios proporcionará una gama más amplia de ideas.
 
 3. Refina y mejora las ideas seleccionadas.
 
-	Es posible que haya que repetir esta etapa muchas veces hasta que aparezca la idea correcta.
+    Es posible que haya que repetir esta etapa muchas veces hasta que aparezca la idea correcta.
 
 4. Elige la mejor solución y ejecuta.
 
-	Compromete recursos para que la idea seleccionada sea exitosa.
+    Compromete recursos para que la idea seleccionada sea exitosa.
 
 ### Etapas
 

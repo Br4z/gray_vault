@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-30"
 sources:
-  - author: NA
-    url: https://www.gitkraken.com/learn/git/git-flow
-    language: English
+    - author: NA
+      url: https://www.gitkraken.com/learn/git/git-flow
+      language: English
 ---
 
 # GitFlow
@@ -50,25 +50,24 @@ The base of the hotfix branch should be your main branch and should be merged ba
 
 2. Feature creation: `git flow feature start <name>`.
 
-	This will create a new branch based on **develop** and switch to it automatically.
+    This will create a new branch based on **develop** and switch to it automatically.
 
 3. Feature finalization: `git flow feature finish <feature name`.
 
-	This merges the changes from the **feature** branch to **develop** and deletes the feature branch.
+    This merges the changes from the **feature** branch to **develop** and deletes the feature branch.
 
 4. Release creation: `git flow release start <version>`.
 
-	This creates a new **release** branch from the **develop** branch.
+    This creates a new **release** branch from the **develop** branch.
 
 5. Release finalization: `git flow release finish <release version>`.
 
-	This merges the **release** branch to **main** and **develop**, tags the **main** branch and deletes the **release** branch.
+    This merges the **release** branch to **main** and **develop**, tags the **main** branch and deletes the **release** branch.
 
 6. Hotfix creation: `git flow hotfix start <version>`.
 
-
-	This creates a new **hotfix** branch from **main** and switch to it automatically.
+    This creates a new **hotfix** branch from **main** and switch to it automatically.
 
 7. Hotfix finalization: `git flow finish <hotfix version>`.
 
-	This merges the **hotfix** branch to **main** and **develop**, tags the **main** branch and deletes the **hotfix** branch.
+    This merges the **hotfix** branch to **main** and **develop**, tags the **main** branch and deletes the **hotfix** branch.

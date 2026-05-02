@@ -15,7 +15,7 @@ Utilizar para el cambio la moneda de la más alta denominación posible y repeti
 La estrategia voraz es óptima si las denominaciones cumplen propiedades específicas:
 
 - Subestructura óptima: una solución óptima para $P$ incluye soluciones óptimas para $M - d_i$.
-​
+  ​
 - Propiedad de elección voraz: existe al menos una solución óptima que incluye la moneda de mayor denominación posible.
 
 Es decir, la optimalidad depende de la estructura de las denominaciones. Este algoritmo funciona para secuencias donde cada denominación es múltiplo de la anterior o cumple relaciones aditivas específicas.

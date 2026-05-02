@@ -8,12 +8,12 @@ reviewed_on: "2025-01-07"
 
 ```mermaid
 mindmap
-	root((big data))
-		volume
-		velocity
-		variety
-		veracity
-		value
+    root((big data))
+        volume
+        velocity
+        variety
+        veracity
+        value
 ```
 
 Entre sus características encontramos:
@@ -36,9 +36,9 @@ Integración y tratamiento de los **datos** para **convertirlos** en **informaci
 
 ```mermaid
 flowchart LR
-	operational_applications["operational applications"] -->|ETL| data_staging_area["data staging area"]
-	data_staging_area -->|ETL| data_warehouse["data warehouse"]
-	data_warehouse["data warehouse"] -->|ETL| data_marts["data marts"]
+    operational_applications["operational applications"] -->|ETL| data_staging_area["data staging area"]
+    data_staging_area -->|ETL| data_warehouse["data warehouse"]
+    data_warehouse["data warehouse"] -->|ETL| data_marts["data marts"]
 ```
 
 > ETL son las siglas de extraction, transformation y load.
@@ -47,23 +47,23 @@ flowchart LR
 
 1. Sistemas operacionales fuentes (operation source system).
 
-	La fuente de los datos que se desean integrar y generalmente son sistemas legados que manejan la información con tecnología heterogénea.
+    La fuente de los datos que se desean integrar y generalmente son sistemas legados que manejan la información con tecnología heterogénea.
 
-	> Un sistema legado es un sistema informático o una aplicación de software que sigue en uso dentro de una organización, pero que fue desarrollado con tecnologías, lenguajes de programación o plataformas que ya están obsoletas o discontinuadas.
-
-	> Las tecnologías heterogéneas se refieren a un conjunto de tecnologías que, aunque son diferentes en su origen, diseño, o funcionamiento, se combinan o se utilizan juntas para cumplir un objetivo común.
+    > Un sistema legado es un sistema informático o una aplicación de software que sigue en uso dentro de una organización, pero que fue desarrollado con tecnologías, lenguajes de programación o plataformas que ya están obsoletas o discontinuadas.
+    >
+    > Las tecnologías heterogéneas se refieren a un conjunto de tecnologías que, aunque son diferentes en su origen, diseño, o funcionamiento, se combinan o se utilizan juntas para cumplir un objetivo común.
 
 2. Área de preparación de datos (data staging area).
 
-	Herramientas ETL.
+    Herramientas ETL.
 
 3. Área de presentación de datos (data presentation).
 
-	Donde la información se organiza, almacena y se hace disponible para los usuarios. El área de presentación de datos frecuentemente se representa mediante un conjunto de **data marts** que están integrados.
+    Donde la información se organiza, almacena y se hace disponible para los usuarios. El área de presentación de datos frecuentemente se representa mediante un conjunto de **data marts** que están integrados.
 
 4. Herramienta de acceso a los datos (visualización).
 
-	Se ofrecen herramientas a los usuarios para hacer consultas, sacar reportes, imprimir informes.
+    Se ofrecen herramientas a los usuarios para hacer consultas, sacar reportes, imprimir informes.
 
 ## ETL
 
@@ -82,7 +82,7 @@ Se guardan los datos en el **data warehouse**, por lo general corren procesos qu
 ## Online transation processing (OLTP) vs. online analytical processing (OLAP)
 
 |       OLTP       |                  OLAP                   |
-|:----------------:|:---------------------------------------:|
+| :--------------: | :-------------------------------------: |
 | actualizaciones. | lecturas, consultas complejas y largas. |
 | datos vigentes.  |         información histórica.          |
 

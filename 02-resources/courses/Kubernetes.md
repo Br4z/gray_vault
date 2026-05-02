@@ -72,11 +72,11 @@ It is a separate command-line tool that allows you to connect to a specific Kube
 
 - `minikube ip`: shows the Kubernetes node IP.
 
--  `ssh docker@<Kubernetes node IP>`: logs into the Kubernetes node.
+- `ssh docker@<Kubernetes node IP>`: logs into the Kubernetes node.
 
-	> This only works if a driver other than `docker` is selected.
-
-	> The default password is `tcuser`.
+    > This only works if a driver other than `docker` is selected.
+    >
+    > The default password is `tcuser`.
 
 - `kubectl cluster-info`: shows cluster info.
 
@@ -86,11 +86,11 @@ It is a separate command-line tool that allows you to connect to a specific Kube
 
 - `kubectl get pods`: shows running pods.
 
-	> `-A` we can list all podes (independetly of their namesapce).
-
-	> `--namespace=<namespace>` we can list the pods in the specified namespace.
-
-	> `-o wide` we can list more information about the pods.
+    > `-A` we can list all podes (independetly of their namesapce).
+    >
+    > `--namespace=<namespace>` we can list the pods in the specified namespace.
+    >
+    > `-o wide` we can list more information about the pods.
 
 ## Creating just a single Pod
 
@@ -126,7 +126,7 @@ A ClusterIP service facilitates internal communication within the Kubernetes clu
 
 - `minikube service <deployment name>`: exposes a Kubernetes deployment as a service and opens the service in a web browser or outputs the service URL.
 
-	> `--url` to prevent Minikube from opening the URL.
+    > `--url` to prevent Minikube from opening the URL.
 
 ## Creating LoadBalancer service
 

@@ -19,9 +19,9 @@ reviewed_on: "2025-09-14"
 In JavaScript, just about everything **can** be changed, so working with values that are supposed to be persistent requires some restraint. There is `Object.freeze` that changes an object so that writing to its properties is ignored.
 
 ```javascript
-let object = Object.freeze({ value: 5 })
-object.value = 10
-console.log(object.value) // 5
+let object = Object.freeze({ value: 5 });
+object.value = 10;
+console.log(object.value); // 5
 ```
 
 Unfortunately, although understanding a system built on persistent data structures is easier, **designing** one, especially when your programming language is not helping, can be a little harder.

@@ -11,7 +11,7 @@ A field is a variable stored inside a type. fields are often used for internal s
 ```cs
 public class counter
 {
-	private int _value;
+    private int _value;
 }
 ```
 
@@ -24,13 +24,13 @@ A property is a member that looks like a field from the outside, but actually ru
 ```cs
 public class Counter
 {
-	private int _value;
-	
-	public int Value
-	{
-		get { return _value; }
-		set { _value = value; }
-	}
+    private int _value;
+
+    public int Value
+    {
+        get { return _value; }
+        set { _value = value; }
+    }
 }
 ```
 
@@ -43,8 +43,8 @@ When no extra logic is needed, an auto-property is usually preferred. The compil
 ```cs
 public class Person
 {
-	public string Name { get; set; } = "";
-	public int Age { get; set; }
+    public string Name { get; set; } = "";
+    public int Age { get; set; }
 }
 ```
 
@@ -55,8 +55,8 @@ Auto-properties can also be read-only or [[personal/systems_engineering/programm
 ```cs
 public class Person
 {
-	public string Name { get; } = "unknown";
-	public int Age { get; init; }
+    public string Name { get; } = "unknown";
+    public int Age { get; init; }
 }
 ```
 
@@ -67,21 +67,21 @@ A getter returns the current value. A setter assigns a new value. Accessor bodie
 ```cs
 public class BankAccount
 {
-	private decimal _balance;
-	
-	public decimal Balance
-	{
-		get { return _balance; }
-		set
-		{
-			if (value < 0)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
-	
-			_balance = value;
-		}
-	}
+    private decimal _balance;
+
+    public decimal Balance
+    {
+        get { return _balance; }
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            _balance = value;
+        }
+    }
 }
 ```
 
@@ -90,12 +90,12 @@ A setter can also be restricted with an access modifier.
 ```cs
 public class User
 {
-	public string Name { get; private set; } = "";
-	
-	public User(string name)
-	{
-		this.Name = name;
-	}
+    public string Name { get; private set; } = "";
+
+    public User(string name)
+    {
+        this.Name = name;
+    }
 }
 ```
 
@@ -106,12 +106,12 @@ It applies to fields. It means the field can be assigned only at its declaration
 ```cs
 public class Person
 {
-	private readonly string _id;
-	
-	public Person(string id)
-	{
-		_id = id;
-	}
+    private readonly string _id;
+
+    public Person(string id)
+    {
+        _id = id;
+    }
 }
 ```
 
@@ -123,7 +123,6 @@ A `readonly` field is not the same as deep immutability. If the field refers to 
 private readonly List<int> _items = new();
 ```
 
-
 ## `const`
 
 It declares a compile-time constant. It must be assigned immediately and its value cannot change.
@@ -131,7 +130,7 @@ It declares a compile-time constant. It must be assigned immediately and its val
 ```cs
 public class MathInfo
 {
-	public const double PI = 3.1415926535897931;
+    public const double PI = 3.1415926535897931;
 }
 ```
 
@@ -144,9 +143,9 @@ It is a short form used when the body is a single expression. It is often used f
 ```cs
 public class circle
 {
-	public double Radius { get; set; }
-	
-	public double area => Math.PI * radius * radius;
+    public double Radius { get; set; }
+
+    public double area => Math.PI * radius * radius;
 }
 ```
 
@@ -165,8 +164,8 @@ private string _name = "";
 
 public string Name
 {
-	get => _name;
-	set => _name = value;
+    get => _name;
+    set => _name = value;
 }
 ```
 

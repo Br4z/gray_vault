@@ -58,7 +58,7 @@ The following list includes the modified bindings; the default bindings are not 
 
 ## Save the world
 
-### Weapon
+### Weapon (save the world)
 
 - Consumible slot: `CTRL`
 
@@ -68,7 +68,7 @@ The following list includes the modified bindings; the default bindings are not 
 
 - Use: `y`.
 
-### Building
+### Building (save the world)
 
 - trap picker: `NUMPAD 5`.
 

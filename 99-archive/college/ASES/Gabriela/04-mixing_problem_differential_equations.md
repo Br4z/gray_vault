@@ -20,8 +20,8 @@ Additionally:
 
 $$
 \begin{align}
-	& v_i = \text{rate of air entry } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon entry} \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
-	& v_o = \text{rate of air exit } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon exit } \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
+    & v_i = \text{rate of air entry } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon entry} \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
+    & v_o = \text{rate of air exit } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon exit } \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
 \end{align}
 $$
 
@@ -29,11 +29,11 @@ $$
 
 - If we assume that the mixture in the room is homogeneous, the concentration of the output is equal to the concentration in the room.
 
-	$$
-	C(t) = \frac{ x(t) }{ V(t) } \quad (2)
-	$$
+    $$
+    C(t) = \frac{ x(t) }{ V(t) } \quad (2)
+    $$
 
-	Where $x(t)$ is the amount of substance at time $t$ and $V(t)$ is the total volume in the room at that time $t$.
+    Where $x(t)$ is the amount of substance at time $t$ and $V(t)$ is the total volume in the room at that time $t$.
 
 $$
 C(t) = \frac{ x(t) }{ 50 \text{m}^3 }
@@ -41,9 +41,9 @@ $$
 
 $$
 \begin{align}
-	& v_i = \frac{ 2 \text{m}^3 }{ \text{min} } * 0 = 0 \\
-	& v_o = \frac{ 2 \text{m}^3 }{ \text{min} } \frac{ x(t) }{ 50 \text{m}^3 } \\
-	& = \frac{ x(t) }{ 25 \text{min} \text{m}^3 }
+    & v_i = \frac{ 2 \text{m}^3 }{ \text{min} } * 0 = 0 \\
+    & v_o = \frac{ 2 \text{m}^3 }{ \text{min} } \frac{ x(t) }{ 50 \text{m}^3 } \\
+    & = \frac{ x(t) }{ 25 \text{min} \text{m}^3 }
 \end{align}
 $$
 
@@ -53,11 +53,11 @@ Using $(2)$ in $(1)$.
 
 $$
 \begin{align}
-	& \frac{ dx }{ dt } = -\frac{ 1 }{ 25 } x(t) \\
-	& \int \frac{ dx }{ x } = \int { -\frac{ 1 }{ 25 } dt } \\
-	& \ln | x | = -\frac{ 1 }{ 25 } t + C \\
-	& x = e^{ -\frac{ 1 }{ 25 } t + C } \\
-	& = Ce^{ -\frac{ 1 }{ 25 } t } \quad (3)
+    & \frac{ dx }{ dt } = -\frac{ 1 }{ 25 } x(t) \\
+    & \int \frac{ dx }{ x } = \int { -\frac{ 1 }{ 25 } dt } \\
+    & \ln | x | = -\frac{ 1 }{ 25 } t + C \\
+    & x = e^{ -\frac{ 1 }{ 25 } t + C } \\
+    & = Ce^{ -\frac{ 1 }{ 25 } t } \quad (3)
 \end{align}
 $$
 
@@ -67,8 +67,8 @@ We also know that:
 
 $$
 \begin{align}
-	& x(0) = 50 \frac{ 0.2 }{ 100 } \\
-	& = \frac{ 1 }{ 10 } \quad (4)
+    & x(0) = 50 \frac{ 0.2 }{ 100 } \\
+    & = \frac{ 1 }{ 10 } \quad (4)
 \end{align}
 $$
 
@@ -87,9 +87,9 @@ $$
 
 $$
 \begin{align}
-	& \frac{ 1 }{ 10 } e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 20 } \\
-	& e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 2 } \\
-	& -\frac{ 1 }{ 25 } t = \ln \frac{ 1 }{ 2 } \\
-	& t = -25 \ln \frac{ 1 }{ 2 } \approx 17.33 \; \text{min}
+    & \frac{ 1 }{ 10 } e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 20 } \\
+    & e^{ -\frac{ 1 }{ 25 } t } = \frac{ 1 }{ 2 } \\
+    & -\frac{ 1 }{ 25 } t = \ln \frac{ 1 }{ 2 } \\
+    & t = -25 \ln \frac{ 1 }{ 2 } \approx 17.33 \; \text{min}
 \end{align}
 $$

@@ -26,6 +26,6 @@ A subset of edges $E^\prime \subseteq E$ that forms a spanning tree $T = (V,E^\p
 
 2. Minimum weight: the sum of the weights of all edges in $E^\prime$ in minimized.
 
-	$$
-	\sum_{ e \in E^\prime } w(e) \; \text{is minimal}
-	$$
+    $$
+    \sum_{ e \in E^\prime } w(e) \; \text{is minimal}
+    $$

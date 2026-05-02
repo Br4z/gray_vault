@@ -35,7 +35,6 @@ It is a collection of software that contains precompiled packages, installation 
     > This command can be used with the `-y` to avoid confirmation.
 
 - Uninstalling a package.
-
     - Without removing its configuration files: `sudo apt remove <installed package name>`.
 
     - Removing its configuration files: `sudo apt purge <installed package name>`.
@@ -47,7 +46,6 @@ It is a collection of software that contains precompiled packages, installation 
 - Installing a package: `dpkg -i <deb package>`.
 
 - Uninstalling a package.
-
     - Without removing its configuration files: `dpkg -r <installed package name>`.
 
     - Removing its configuration files: `dpkg -P <installed package name>`.

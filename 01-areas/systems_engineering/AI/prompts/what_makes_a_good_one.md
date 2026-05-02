@@ -8,7 +8,7 @@ reviewed_on: "2026-02-21"
 
 - Role and tone: guide the model to generate a response appropriate to your audience or purpose.
 
-	> If tone is unclear, try defining the audience instead.
+    > If tone is unclear, try defining the audience instead.
 
 - Open questions: invite explanation, reasoning, description, or argumentation instead of a short answer.
 

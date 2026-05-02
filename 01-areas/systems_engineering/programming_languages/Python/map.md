@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/python-map-function
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/python-map-function
+      language: English
 ---
 
 # `map`
@@ -18,7 +18,7 @@ map(function, sequences)
 
 - `function`: function that transforms an element or elements.
 
-	> The function must accept as many arguments as there are sequences.
+    > The function must accept as many arguments as there are sequences.
 
 - `sequences`: one or more sequences that need to be mapped. These can be lists, tuples, sets, or any other iterable.
 

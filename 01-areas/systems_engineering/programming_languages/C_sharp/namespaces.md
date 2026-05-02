@@ -16,7 +16,7 @@ Two common namespace declaration styles exist.
 // block-scoped
 namespace myapp.data
 {
-	public class UserRepository { }
+    public class UserRepository { }
 }
 
 // file-scoped
@@ -49,7 +49,7 @@ namespace myapp;
 
 public class Demo
 {
-	public list<int> Values = new();
+    public list<int> Values = new();
 }
 ```
 
@@ -68,15 +68,15 @@ namespace myapp;
 
 public class Demo
 {
-	public text.stringbuilder sb = new();
+    public text.stringbuilder sb = new();
 
-	public double r = sqrt(9);
+    public double r = sqrt(9);
 }
 ```
 
 It is useful to distinguish `using` directives from the `using` statement, which controls resource disposal.
 
-``` 
+```cs
 using var stream = system.io.file.openread("data.bin");
 // stream is disposed at end of scope
 ```
@@ -93,14 +93,14 @@ namespace myapp;
 
 public class Demo
 {
-	public list<int> Values = new();
+    public list<int> Values = new();
 }
 ```
 
 In many modern .NET templates, global usings are generated automatically when implicit usings are enabled in the project file. when enabled, the build may generate a file under `obj/` (often named similarly to `GlobalUsings.g.cs`) that contains `global using` directives. These generated directives can be supplemented with explicit `global using` directives in source, or disabled by turning off implicit usings.
 
-``` 
+```xml
 <PropertyGroup>
-	<ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
 </PropertyGroup>
 ```

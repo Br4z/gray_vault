@@ -22,7 +22,7 @@ flowchart TB
 ### Clustering
 
 **Divide un conjunto de datos en grupos**
- de tal forma que los elementos en un grupo sean similares y los elementos en grupos diferentes tengan la menor similitud posible.
+de tal forma que los elementos en un grupo sean similares y los elementos en grupos diferentes tengan la menor similitud posible.
 
 ### Clasificación
 
@@ -109,7 +109,6 @@ Es una técnica utilizada para evaluar los resultados de un modelo predictivo y 
 2. Entrenamiento y validación.
 
     Para cada una de las $k$ iteraciones:
-
     - Se toma uno de los $k$ folds como conjunto de validación.
 
     - Los $k - 1$ folds restantes se usan como conjunto de entrenamiento.

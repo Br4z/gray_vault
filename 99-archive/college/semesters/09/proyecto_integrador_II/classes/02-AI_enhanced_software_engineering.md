@@ -9,7 +9,7 @@ Es la integración de técnicas de inteligencia artificial en el ciclo de desarr
 ## Evolución del ciclo de vida del desarrollo con IA
 
 |             fase             | ágil tradicional                                                                        | ágil con IA                                                                                                                                       |
-|:----------------------------:|:--------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :--------------------------: | :-------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
 | recopilación de requisitos.  | Reuniones, entrevistas, talleres, prototipos y revisión de documentos.                  | Generan, analizan y priorizan requisitos automáticamente, detectando inconsistencias y dependencias.                                              |
 | planificación y estimación.  | Forma iterativa en reuniones de sprint con técnicas como póker de estimación.           | Estima esfuerzo basado en datos históricos, asigna tareas automáticamente y optimiza la planificación de sprints.                                 |
 |     diseño y desarrollo.     | Basado en la experiencia del equipo y revisiones manuales.                              | Genera automáticamente diseños de arquitecturas e interfaces, asiste en la creación de código y revisa en tiempo real.                            |
@@ -64,4 +64,3 @@ El **Smart Product Backlog** es una versión mejorada del backlog tradicional de
 - Generación de HU mediante IA, reduciendo la carga de trabajo de los equipos de desarrollo y asegurando una mejor alineación con los objetivos del proyecto.
 
 - Optimización del sprint planning, asignando tareas de manera más eficiente según las capacidades del equipo y la disponibilidad de recursos.
-

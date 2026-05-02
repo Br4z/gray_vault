@@ -16,9 +16,9 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 - Commit.
 
-	Componentes básicos de la línea del tiempo de un proyecto de Git. Son como un registro o "foto" del estado de un proyecto en un momento específico.
+    Componentes básicos de la línea del tiempo de un proyecto de Git. Son como un registro o "foto" del estado de un proyecto en un momento específico.
 
-	> El nombre de un commit debe ser bastante informativo, sin ser muy largo, es decir, conciso.
+    > El nombre de un commit debe ser bastante informativo, sin ser muy largo, es decir, conciso.
 
 - Rama (branch): es una línea independiente de desarrollo en el repositorio.
 
@@ -28,7 +28,7 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 - Correo: `git config --goblal user.email "<user email>"`.
 
-	> Es recomendable no poner un correo personal, sino uno que te proporciona GitHub.
+    > Es recomendable no poner un correo personal, sino uno que te proporciona GitHub.
 
 > Si queremos hacer la configuración para un repositorio en específico, quitamos la flag `--global`.
 
@@ -50,37 +50,37 @@ Dependiendo del área en la que está un archivo, nos referiremos a su estado de
 
 1. Directorio de trabajo.
 
-	La carpeta del proyecto que contiene los archivos y el directorio `.git` del repositorio.
+    La carpeta del proyecto que contiene los archivos y el directorio `.git` del repositorio.
 
-	Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está modificada (modified).
+    Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está modificada (modified).
 
 2. Área de preparación.
 
-	Conjunto de archivos y cambios que serán incluidos en el próximo **commit**.
+    Conjunto de archivos y cambios que serán incluidos en el próximo **commit**.
 
-	> En inglés **staging area**.
+    > En inglés **staging area**.
 
-	Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está preparada (staged).
+    Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está preparada (staged).
 
 3. Repositorio (directorio `.git`).
 
-	Directorio que contiene los metadatos y las versiones de tu proyecto.
+    Directorio que contiene los metadatos y las versiones de tu proyecto.
 
-	Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está confirmada (committed).
+    Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está confirmada (committed).
 
 ### Estados de un archivo
 
 - Modificado.
 
-	Si la versión del archivo contiene cambios que **no** son parte del repositorio y **no** se han añadido al área de preparación.
+    Si la versión del archivo contiene cambios que **no** son parte del repositorio y **no** se han añadido al área de preparación.
 
 - Preparado.
 
-	Si la versión del archivo contiene cambios que **no** son parte del repositorio, pero fue añadido al área de preparación.
+    Si la versión del archivo contiene cambios que **no** son parte del repositorio, pero fue añadido al área de preparación.
 
 - Confirmada.
 
-	Si la versión ya se encuentra en el directorio de Git.
+    Si la versión ya se encuentra en el directorio de Git.
 
 ## Git status
 
@@ -118,23 +118,23 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 - `git config --global core.editor "<editor>"`: configurar un editor predeterminado para Git.
 
-	> Para VSC se pone `code --wait`.
-	>
-	> El `--wait` es para que Git espere a que el archivo se guarde y se cierre antes de realizar cualquier acción.
+    > Para VSC se pone `code --wait`.
+    >
+    > El `--wait` es para que Git espere a que el archivo se guarde y se cierre antes de realizar cualquier acción.
 
 ## Modificar un commit
 
 - `git commit --amend`: cambiar el mensaje del último commit hecho.
 
-	> Este proceso puede ser arriesgado si lo hacemos sobre repositorios remotos (ya que puedan estar siendo usados por otras personas).
+    > Este proceso puede ser arriesgado si lo hacemos sobre repositorios remotos (ya que puedan estar siendo usados por otras personas).
 
 ## Deshacer el último commit
 
 - `git reset --soft HEAD~1`: deshacer el último commit hecho, dejando los cambios de ese commit (entre el último y el penúltimo) en el área de preparación.
 
-	> `--soft` hace que solo se deshaga el registro del commit y no cambie (modificar o eliminar) archivos.
-
-	> `HEAD~1` hace referencia al último commit.
+    > `--soft` hace que solo se deshaga el registro del commit y no cambie (modificar o eliminar) archivos.
+    >
+    > `HEAD~1` hace referencia al último commit.
 
 ## Crear una rama en Git
 
@@ -146,7 +146,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 - `git checkout "<name>"`: cambiar a la rama llamada `<name>`.
 
-	> Con el flag `-b` se creará y cambiará a la rama llamada `<name>`.
+    > Con el flag `-b` se creará y cambiará a la rama llamada `<name>`.
 
 ## Cambiar el nombre de una rama
 
@@ -160,7 +160,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 - `git branch -d "<branch name>"`: eliminar la rama llamada `<branch name>`.
 
-	> `-d` de delete.
+    > `-d` de delete.
 
 ## Git log para ramas
 
@@ -194,7 +194,7 @@ Crear una copia local de un repositorio remoto, incluyendo sus versiones e histo
 
 - `git remote`: ver el nombre asociado al repositorio remoto.
 
-	> `-v` para ver las direcciones asociadas a las operaciones **fetch** (traer cambios) y **push** (enviar cambios).
+    > `-v` para ver las direcciones asociadas a las operaciones **fetch** (traer cambios) y **push** (enviar cambios).
 
 ## Enviar cambios a GitHub (push)
 
@@ -220,11 +220,11 @@ En `Settings > Developer settings > Personal access tokes > Tokens` podemos crea
 
 - `git fetch <source>`.
 
-	**Verificar** los cambios realizados en el repositorio remoto sin combinar esos cambios con el repositorio local.
+    **Verificar** los cambios realizados en el repositorio remoto sin combinar esos cambios con el repositorio local.
 
-	Te permite saber **si se han realizado cambios** en el repositorio remoto desde la última vez que actualizaste tu repositorio local con **git pull**.
+    Te permite saber **si se han realizado cambios** en el repositorio remoto desde la última vez que actualizaste tu repositorio local con **git pull**.
 
-	Podremos ver los cambios (si lo hay) accediendo a la rama remota.
+    Podremos ver los cambios (si lo hay) accediendo a la rama remota.
 
 ## Enviar repositorio local a GitHub
 

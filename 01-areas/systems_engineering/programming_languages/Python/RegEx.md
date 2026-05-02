@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/python-regex
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/python-regex
+      language: English
 ---
 
 # RegEx

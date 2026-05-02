@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-12"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/namespace-in-c
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/namespace-in-c
+      language: English
 ---
 
 # `namespace`
@@ -22,7 +22,7 @@ A namespace definition begins with the namespace keyword followed by the namespa
 
 ```c++
 namespace  namespace_name {
-	// Code declarations
+    // Code declarations
 }
 ```
 
@@ -45,26 +45,26 @@ using namespace <namespace>;
 #include <string>
 
 namespace first_namespace {
-	void func() {
-		std::cout << "Inside first_namespace" << std::endl;
-	}
+    void func() {
+        std::cout << "Inside first_namespace" << std::endl;
+    }
 
-	namespace second_space {
-		void func() {
-			std::cout << "Inside second_namespace" << std::endl;
-		}
-	}
+    namespace second_space {
+        void func() {
+            std::cout << "Inside second_namespace" << std::endl;
+        }
+    }
 
-	void cout(std::string text) {
-		std::cout << text << std::endl;
-	}
+    void cout(std::string text) {
+        std::cout << text << std::endl;
+    }
 }
 
 using namespace first_namespace::second_space;
 int main () {
-	func();
-	first_namespace::cout("text");
+    func();
+    first_namespace::cout("text");
 
-	return 0;
+    return 0;
 }
 ```

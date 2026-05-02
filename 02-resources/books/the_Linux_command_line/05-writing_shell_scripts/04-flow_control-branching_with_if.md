@@ -6,13 +6,13 @@ reviewed_on: "2025-07-28"
 
 The `if` compound has the following syntax:
 
-```
-if <commands>; then
-	<commands>
-[elif <commands>; then
-	<commands>...]
+```bash
+if commands; then
+    commands
+[elif commands; then
+    commands]
 [else
-	<commands]
+    commands]
 fi
 ```
 
@@ -30,79 +30,79 @@ What `if` really does is evaluate the success or failure of commands. If a list 
 
 By far, the command used most frequently with `if` is `test`. `test` performs a variety of checks and comparisons. In has two equivalent forms.
 
-```
+```text
 test EXPRESSION
 [ EXPRESSION ] # The most pupular
 ```
 
-where *expression* is an expression that is evaluated as either true or false. `test` returns an exit status of 0 when the expression is true and a status of 1 when the expression is false.
+where _expression_ is an expression that is evaluated as either true or false. `test` returns an exit status of 0 when the expression is true and a status of 1 when the expression is false.
 
 It is interesting to note that both `test` and `[` are actually commands. In `bash` they are built-ins, but they also exists as programs in `/usr/bin` for use with other shells. The expression is actually just its arguments with the `[` command requiring that the `]` character be provided as its final argument.
 
 ### File expressions
 
 |       expression        |                                                is true if                                                 |
-|:-----------------------:|:---------------------------------------------------------------------------------------------------------:|
-| `<file_1> -ef <file_2>` | *file_1* and *file_2* have the same inode numbers (the two files refer to the same file by hard linking). |
-| `<file_1> -nt <file_2>` |                                     *file_1* is newer than *file_2*.                                      |
-| `<file_1> -ot <file_2>` |                                     *file_1* is older than *file_2*.                                      |
-|       `-b <file>`       |                            *file* exists and is a block-special (device) file.                            |
-|       `-c <file>`       |                                     *file* exists and is a directory.                                     |
-|       `-e <file>`       |                                              *file* exists.                                               |
-|       `-f <file>`       |                                   *file* exists and is a regular file.                                    |
-|       `-g <file>`       |                                    *file* exists and is set-group-ID.                                     |
-|       `-G <file>`       |                           *file* exists and is owned by the effective group ID.                           |
-|       `-k <file>`       |                                *file* exists and has its "sticky bit" set.                                |
-|       `-L <file>`       |                                   *file* exists and is a symbolic link.                                   |
-|       `-O <file>`       |                           *file* exists and is owned by the effective user ID.                            |
-|       `-p <file>`       |                                    *file* exists and is a named pipe.                                     |
-|       `-r <file>`       |              *file* exists and is readable (has readable permission for the effective user).              |
-|       `-s <file>`       |                             *file* exists and has a length greater than zero.                             |
-|       `-S <file>`       |                                *file* exists and and is a network socket.                                 |
-|        `-t <fd>`        |                         *fd* is a file descriptor directed to/from the terminal.                          |
-|       `-u <file>`       |                                       *file* exists and is setuid.                                        |
-|       `-w <file>`       |               *file* exists and is writable (has write permission for the effective user).                |
-|       `-x <file>`       |          *file* exists and is executable (has execute/search permission for the effective user).          |
+| :---------------------: | :-------------------------------------------------------------------------------------------------------: |
+| `<file_1> -ef <file_2>` | _file_1_ and _file_2_ have the same inode numbers (the two files refer to the same file by hard linking). |
+| `<file_1> -nt <file_2>` |                                     _file_1_ is newer than _file_2_.                                      |
+| `<file_1> -ot <file_2>` |                                     _file_1_ is older than _file_2_.                                      |
+|       `-b <file>`       |                            _file_ exists and is a block-special (device) file.                            |
+|       `-c <file>`       |                                     _file_ exists and is a directory.                                     |
+|       `-e <file>`       |                                              _file_ exists.                                               |
+|       `-f <file>`       |                                   _file_ exists and is a regular file.                                    |
+|       `-g <file>`       |                                    _file_ exists and is set-group-ID.                                     |
+|       `-G <file>`       |                           _file_ exists and is owned by the effective group ID.                           |
+|       `-k <file>`       |                                _file_ exists and has its "sticky bit" set.                                |
+|       `-L <file>`       |                                   _file_ exists and is a symbolic link.                                   |
+|       `-O <file>`       |                           _file_ exists and is owned by the effective user ID.                            |
+|       `-p <file>`       |                                    _file_ exists and is a named pipe.                                     |
+|       `-r <file>`       |              _file_ exists and is readable (has readable permission for the effective user).              |
+|       `-s <file>`       |                             _file_ exists and has a length greater than zero.                             |
+|       `-S <file>`       |                                _file_ exists and and is a network socket.                                 |
+|        `-t <fd>`        |                         _fd_ is a file descriptor directed to/from the terminal.                          |
+|       `-u <file>`       |                                       _file_ exists and is setuid.                                        |
+|       `-w <file>`       |               _file_ exists and is writable (has write permission for the effective user).                |
+|       `-x <file>`       |          _file_ exists and is executable (has execute/search permission for the effective user).          |
 
 ### String expressions
 
 |                       expression                        | is true if                                   |
-|:-------------------------------------------------------:|:-------------------------------------------- |
-|                       `<string>`                        | *string* is not null.                        |
-|                      `-n <string>`                      | the length of *string* is greater than zero. |
-| `<string_1> = <string_2>`<br>`<string_1> == <string_2>` | *string_1* and *string_2* are equal.         |
-|               `<string_1> != <string_2>`                | *string_1* and *string_2* are not equal.     |
-|                `<string_1> > <string_2>`                | *string_1* sorts after *string_2*.           |
-|                `<string_1> < <string_2>`                | *string_1* sorts before *string_2*.          |
+| :-----------------------------------------------------: | :------------------------------------------- |
+|                       `<string>`                        | _string_ is not null.                        |
+|                      `-n <string>`                      | the length of _string_ is greater than zero. |
+| `<string_1> = <string_2>`<br>`<string_1> == <string_2>` | _string_1_ and _string_2_ are equal.         |
+|               `<string_1> != <string_2>`                | _string_1_ and _string_2_ are not equal.     |
+|                `<string_1> > <string_2>`                | _string_1_ sorts after _string_2_.           |
+|                `<string_1> < <string_2>`                | _string_1_ sorts before _string_2_.          |
 
 > The `<` and `>` expression must be quoted (os escaped with a backslash) when used with `test`. If they are not, they will be interpreted by the shell as redirection operators, with potentially destructive results.
 
 ### Integer expressions
 
 |          expression           | is true if                                           |
-|:-----------------------------:|:---------------------------------------------------- |
-| `<integer_1> -eq <integer_2>` | *integer_1* is equal to *integer_2*.                 |
-| `<integer_1> -ne <integer_2>` | *integer_1* is not equal to *integer_2*.             |
-| `<integer_1> -le <integer_2>` | *integer_1* is less than or equal to *integer_2*.    |
-| `<integer_1> -lt <integer_2>` | *integer_1* is less than to *integer_2*.             |
-| `<integer_1> -ge <integer_2>` | *integer_1* is greater than or equal to *integer_2*. |
-| `<integer_1> -gt <integer_2>` | *integer_1* is greater than *integer_2*.             |
+| :---------------------------: | :--------------------------------------------------- |
+| `<integer_1> -eq <integer_2>` | _integer_1_ is equal to _integer_2_.                 |
+| `<integer_1> -ne <integer_2>` | _integer_1_ is not equal to _integer_2_.             |
+| `<integer_1> -le <integer_2>` | _integer_1_ is less than or equal to _integer_2_.    |
+| `<integer_1> -lt <integer_2>` | _integer_1_ is less than to _integer_2_.             |
+| `<integer_1> -ge <integer_2>` | _integer_1_ is greater than or equal to _integer_2_. |
+| `<integer_1> -gt <integer_2>` | _integer_1_ is greater than _integer_2_.             |
 
 ## A more modern version of `test`
 
 Modern version of `bash` include a compound command that acts as an enhanced replacement for `test`. It uses the following syntax:
 
-```
-[[ <expression ]]
-```
-
-where, like `test`, *expression* is an expression that evaluates to either a true or false result. The `[[ ]]` is similar to `test` (it supports all of its expressions), but adds an important new string expression.
-
-```
-<string> =~ <regex>
+```bash
+[[ expression ]]
 ```
 
-This returns true if *string* is matched by te extended regular expression *regex*...
+where, like `test`, _expression_ is an expression that evaluates to either a true or false result. The `[[ ]]` is similar to `test` (it supports all of its expressions), but adds an important new string expression.
+
+```bash
+string =~ regex
+```
+
+This returns true if _string_ is matched by te extended regular expression _regex_...
 
 Another added feature of `[[ ]]` is that the `==` supports pattern matching the same way [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/04-manipulating_files_and_directories.md#Wildcards|pathname expansion]] does.
 
@@ -115,7 +115,7 @@ Since it is part of the shell syntax (this means `bash` has special parsing rule
 ## Combining expressions
 
 | operation | `test` | `[[ ]]` and `(( ))` |
-|:---------:|:------:|:-------------------:|
+| :-------: | :----: | :-----------------: |
 |    AND    |  `-a`  |        `&&`         |
 |    OR     |  `-o`  |        \|\|         |
 |    NOT    |  `!`   |         `!`         |
@@ -124,14 +124,14 @@ Since it is part of the shell syntax (this means `bash` has special parsing rule
 
 `bash` provides two control operator that can perform branching. `&&` (AND) and `||` (OR) operators work like the logical operators in `[[ ]]` compound command.
 
-```
-<command_1> && <command_2>
-<command_1> || <command_2>
+```bash
+command_1 && command_2
+command_1 || command_2
 ```
 
-With `&&`, *command_1* is always executed and *command_2* is executed if, **and only if**, *command\1* is successful. With `||`, *command_1* is always executed and *command_2* is executed if, **and only if**, *command_1* is unsuccessful.
+With `&&`, _command_1_ is always executed and _command_2_ is executed if, **and only if**, _command_1_ is successful. With `||`, _command_1_ is always executed and _command_2_ is executed if, **and only if**, _command_1_ is unsuccessful.
 
-A *command* can be a compound command (`{ }`).
+A _command_ can be a compound command (`{ }`).
 
 > A compound command return the exit status of the last command in it.
 
@@ -146,45 +146,45 @@ CURRENT_TIME="$(date +"%x %r %Z")"
 TIMESTAMP="Generated $CURRENT_TIME, by $USER"
 
 report_uptime () {
-	cat << _EOF_
-			<h2>System uptime</h2>
-			<pre>$(uptime)</pre>
+    cat << _EOF_
+            <h2>System uptime</h2>
+            <pre>$(uptime)</pre>
 _EOF_
 }
 
 report_disk_space () {
-	cat << _EOF_
-			<h2>Disk space</h2>
-			<pre>$(df -h)</pre>
+    cat << _EOF_
+            <h2>Disk space</h2>
+            <pre>$(df -h)</pre>
 _EOF_
 }
 
 report_home_space () {
-	if [[ "$(id -u)" -eq 0 ]]; then
-			cat << _EOF_
-					<h2>Home space (all users)</h2>
-					<pre>$(du -sh /home/*)</pre>
+    if [[ "$(id -u)" -eq 0 ]]; then
+            cat << _EOF_
+                    <h2>Home space (all users)</h2>
+                    <pre>$(du -sh /home/*)</pre>
 _EOF_
-	else
-			cat << _EOF_
-					<h2>Home space ($USER)</h2>
-					<pre>$(du -sh $HOME)</pre>
+    else
+            cat << _EOF_
+                    <h2>Home space ($USER)</h2>
+                    <pre>$(du -sh $HOME)</pre>
 _EOF_
-	fi
+    fi
 }
 
 cat << _EOF_
 <html>
-		<head>
-				<title>$TITLE</title>
-		</head>
-		<body>
-				<h1>$TITLE</h1>
-				<p>$TIMESTAMP</p>
-				$(report_uptime)
-				$(report_disk_space)
-				$(report_home_space)
-		</body>
+        <head>
+                <title>$TITLE</title>
+        </head>
+        <body>
+                <h1>$TITLE</h1>
+                <p>$TIMESTAMP</p>
+                $(report_uptime)
+                $(report_disk_space)
+                $(report_home_space)
+        </body>
 </html>
 _EOF_
 ```

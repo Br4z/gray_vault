@@ -70,7 +70,7 @@ It is done through the `\lstset` command.
 
 ```LaTex
 \lstset {
-	% Options
+    % Options
 }
 ```
 
@@ -80,7 +80,7 @@ It is done through the `\lstdefinestyle` command.
 
 ```LaTex
 \lstdefinestyle{<style name>} {
-	% Options
+    % Options
 }
 ```
 
@@ -88,17 +88,17 @@ It is done through the `\lstdefinestyle` command.
 
 - `backgroundcolor`: color for the background.
 
-	> External color or "xcolor" package is needed.
+    > External color or "xcolor" package is needed.
 
 - `commentstyle`: style of comments in source language.
 
 - `basicstyle`: font size/family/etc.
 
-	> E.g. `basicstyle=\ttfamily\small`.
+    > E.g. `basicstyle=\ttfamily\small`.
 
 - `keywordstyle`: style of keywords in source language.
 
-	> E.g. `keywordstyle=\color{red}`.
+    > E.g. `keywordstyle=\color{red}`.
 
 - `numberstyle`: style used for line numbers
 
@@ -108,31 +108,31 @@ It is done through the `\lstdefinestyle` command.
 
 - `showspaces`: emphasize spaces in code.
 
-	> true/false.
+    > true/false.
 
 - `showstringspaces`: emphasize spaces in strings.
 
-	> true/false.
+    > true/false.
 
 - `showtabs`: emphasize tabulators in code.
 
-	> true/false.
+    > true/false.
 
 - `numbers`: position of line numbers.
 
-	> left/right/none.
+    > left/right/none.
 
 - `prebreak`: displaying mark on the end of breaking line.
 
-	> E.g. `prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}`.
+    > E.g. `prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}`.
 
 - `captionpos`: position of caption.
 
-	> t/b.
+    > t/b.
 
 - `frame`: showing frame outside code.
 
-	> none/leftline/topline/bottomline/lines/single/shadowbox.
+    > none/leftline/topline/bottomline/lines/single/shadowbox.
 
 - `breakatwhitespace`: sets if automatic breaks should only happen at whitespaces.
 
@@ -144,7 +144,7 @@ It is done through the `\lstdefinestyle` command.
 
 - `escapeinside`: specify characters to escape from source code to LaTeX.
 
-	> E.g. `escapeinside={\%*}{*)}`.
+    > E.g. `escapeinside={\%*}{*)}`.
 
 - `rulecolor`: specify the color of the frame box.
 
@@ -161,22 +161,22 @@ It is done through the `\lstdefinestyle` command.
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
-	backgroundcolor=\color{backcolour},
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{magenta},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\ttfamily\footnotesize,
-	breakatwhitespace=false,
-	breaklines=true,
-	captionpos=b,
-	keepspaces=true,
-	numbers=left,
-	numbersep=5pt,
-	showspaces=false,
-	showstringspaces=false,
-	showtabs=false,
-	tabsize=2
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
 }
 
 \lstset{style=mystyle}

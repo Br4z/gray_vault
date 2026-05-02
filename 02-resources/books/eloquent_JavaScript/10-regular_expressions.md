@@ -5,7 +5,7 @@ reviewed_on: "2025-10-02"
 # Regular expressions
 
 > "Some people, when confronted with a problem, think 'I know, I will use regular expressions.' Now they have two problems." - Jamie Zawinski.
-
+>
 > "When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed." - Master Yuan-Ma, The Book of Programming.
 
 Regular expressions are both terribly awkward and extremely useful. Their syntax is cryptic and the programming interface JavaScript provides for them is clumsy. But they are a powerful tool for inspecting and processing strings. Properly understanding regular expressions will make you a more effective programmer.
@@ -15,8 +15,8 @@ Regular expressions are both terribly awkward and extremely useful. Their syntax
 A regular expression is a type of object. It can be either constructed with the `RegExp` constructor or written as a literal value by enclosing a pattern in forward slash (`/`) characters.
 
 ```javascript
-let re_1 = new RegExp("abc")
-let re_2 = /abc/
+let re_1 = new RegExp("abc");
+let re_2 = /abc/;
 ```
 
 ## Testing for matches
@@ -24,8 +24,8 @@ let re_2 = /abc/
 Regular expression objects have a number of methods. The simplest one is `test`. If you pass it a string, it will return a Boolean telling you whether the string contains a match of the pattern in the expression.
 
 ```javascript
-console.log(/abc/.test("abcde")) // true
-console.log(/abc/.test("abxde")) // false
+console.log(/abc/.test("abcde")); // true
+console.log(/abc/.test("abxde")); // false
 ```
 
 ## Sets of characters
@@ -35,7 +35,7 @@ In a regular expression, putting a set of characters between square brackets mak
 A number of common character groups have their own built-in shortcuts.
 
 |      |                         meaning                          |
-|:----:|:--------------------------------------------------------:|
+| :--: | :------------------------------------------------------: |
 | `\d` |                          digit.                          |
 | `\w` |                      alphanumeric.                       |
 | `\s` | whitespace character (space, tab, newline, and similar). |
@@ -55,9 +55,9 @@ To **invert** a set of characters (that is, to express that you want to match an
 `test` is the absolute simplest way to match a regular expression. It tells you only whether it matched and nothing else. Regular expressions also have an `exec` (execute) that will return `null` if no match was found and return an object with information about the match otherwise.
 
 ```javascript
-let match = /\d+/.exec("one two 100")
-console.log(match) // ["100"]
-console.log(match.index) // 8
+let match = /\d+/.exec("one two 100");
+console.log(match); // ["100"]
+console.log(match.index); // 8
 ```
 
 When the regular expression contains subexpressions grouped with parentheses, the text that matched those groups will also show up in the array.
@@ -65,15 +65,15 @@ When the regular expression contains subexpressions grouped with parentheses, th
 If you want to use parentheses purely for grouping, without having them show up in the array of matches, you can put `?:` after the opening parenthesis.
 
 ```javascript
-console.log(/(?:na)+/.exec("banana")) // ["nana"]
+console.log(/(?:na)+/.exec("banana")); // ["nana"]
 ```
 
 ## The `Date` class
 
 ```javascript
-console.log(new Date()) // Fri Feb 02 2024 18:03:06 GMT+0100 (CET)
-console.log(new Date(2009, 11, 9)) // Wed Dec 09 2009 00:00:00 GMT+0100 (CET)
-console.log(new Date(2009, 11, 9, 12, 59, 59, 999)) // Wed Dec 09 2009 12:59:59 GMT+0100 (CET)
+console.log(new Date()); // Fri Feb 02 2024 18:03:06 GMT+0100 (CET)
+console.log(new Date(2009, 11, 9)); // Wed Dec 09 2009 00:00:00 GMT+0100 (CET)
+console.log(new Date(2009, 11, 9, 12, 59, 59, 999)); // Wed Dec 09 2009 12:59:59 GMT+0100 (CET)
 ```
 
 JavaScript uses a convention where month numbers start at zero (so December is 11), yet day numbers start at one.
@@ -93,8 +93,8 @@ Note that these boundary markers do not match any actual characters. They just e
 - `?!`: specifies a group that can not match after the main expresion (if it matches, the result is discared).
 
 ```javascript
-console.log(/a(?=e)/.exec("braeburn")) // ["a"]
-console.log(/a(?! )/.exec("a b")) // null
+console.log(/a(?=e)/.exec("braeburn")); // ["a"]
+console.log(/a(?! )/.exec("a b")); // null
 ```
 
 ## The mechanics of matching
@@ -111,9 +111,11 @@ The real power of using regular expressions with replace comes from the fact tha
 
 ```javascript
 console.log(
-	"Liskov, Barbara\nMcCarthy, John\nMilner, Robin"
-		.replace(/(\p{L}+), (\p{L}+)/gu, "$2 $1")
-)
+    "Liskov, Barbara\nMcCarthy, John\nMilner, Robin".replace(
+        /(\p{L}+), (\p{L}+)/gu,
+        "$2 $1",
+    ),
+);
 // Barbara Liskov
 // John McCarthy
 // Robin Milner
@@ -132,23 +134,22 @@ Regular expression objects have properties. One is `source`, which contains the 
 Those circumstances are that the regular expression must have the global (`g`) or sticky (`y`) option enabled, and the match must happen through `exec`.
 
 ```javascript
-let pattern = /y/g
-pattern.lastIndex = 3
-let match = pattern.exec("xyzzy")
-console.log(match.index) // 4
-console.log(pattern.lastIndex) // 5
+let pattern = /y/g;
+pattern.lastIndex = 3;
+let match = pattern.exec("xyzzy");
+console.log(match.index); // 4
+console.log(pattern.lastIndex); // 5
 ```
 
 The difference between the global and the sticky options is that when sticky is enabled, the match will succeed only if it starts directly at `lastIndex`, whereas with global, it will search ahead for a position where a match can start.
 
 ```javascript
-let global = /abc/g
-console.log(global.exec("xyz abc")) // [ 'abc', index: 4, input: 'xyz abc', groups: undefined ]
-let sticky = /abc/y
-console.log(sticky.exec("xyz abc")) // null
-sticky.lastIndex = 4
-console.log(sticky.exec("xyz abc")) // [ 'abc', index: 4, input: 'xyz abc', groups: undefined ]
-
+let global = /abc/g;
+console.log(global.exec("xyz abc")); // [ 'abc', index: 4, input: 'xyz abc', groups: undefined ]
+let sticky = /abc/y;
+console.log(sticky.exec("xyz abc")); // null
+sticky.lastIndex = 4;
+console.log(sticky.exec("xyz abc")); // [ 'abc', index: 4, input: 'xyz abc', groups: undefined ]
 ```
 
 When using a shared regular expression value for multiple `exec` calls, these automatic updates to the `lastIndex` property can cause problems...

@@ -125,14 +125,13 @@ reviewed_on: "2024-12-31"
 - Cualquier hábito puede dividirse en un circuito de retroalimentación que incluye cuatro pasos: señal, anhelo, respuesta y recompensa.
 
 - Las cuatro leyes del cambio de conducta son un simple conjunto de reglas que puedes usar para construir mejores hábitos. Las reglas son:
+    1. Hacerlo obvio.
 
-	1. Hacerlo obvio.
+    2. Hacerlo atractivo.
 
-	2. Hacerlo atractivo.
+    3. Hacerlo sencillo.
 
-	3. Hacerlo sencillo.
-
-	4. Hacerlo satisfactorio.
+    4. Hacerlo satisfactorio.
 
 ### El hombre que no se veía bien
 
@@ -205,10 +204,9 @@ reviewed_on: "2024-12-31"
 - Tendemos a imitar los hábitos de tres grupos sociales: el cercano (familia y amigos), el amplio (la tribu) y el poderoso (aquellos que cuentan con un estatus elevado y prestigio).
 
 - Una de las estrategias más efectivas que puedes seguir para construir mejores hábitos consiste en unirte a un ambiente donde:
+    1. Tu conducta deseada sea un comportamiento normal.
 
-	1. Tu conducta deseada sea un comportamiento normal.
-
-	2. Tengas algo en común con el grupo.
+    2. Tengas algo en común con el grupo.
 
 - El comportamiento normal de la tribu con frecuencia prevalece sobre el comportamiento deseado del individuo. Muchas veces preferimos pertenecer aunque estemos equivocados, que estar solos y en lo correcto.
 

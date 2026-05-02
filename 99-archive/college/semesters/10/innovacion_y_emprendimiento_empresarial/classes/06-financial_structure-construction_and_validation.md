@@ -35,7 +35,7 @@ Debe cumplir tres condiciones:
 ### Categorías
 
 |    categoría     | descripción                                        |          impacto en flujo de caja (liquidez)          |
-|:----------------:| -------------------------------------------------- |:-----------------------------------------------------:|
+| :--------------: | -------------------------------------------------- | :---------------------------------------------------: |
 |      costos      | ligados directamente a la producción.              |                         alto                          |
 |      gastos      | ventas, distribución y administración.             |                         alto                          |
 | no operacionales | intereses financieros, depreciación, amortización. | mixto (la depreciación es contable, no saca efectivo) |

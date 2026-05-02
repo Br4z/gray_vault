@@ -39,7 +39,7 @@ One element of the environment that neither `set` nor `printenv` displays is ali
 ### Some interesting variables
 
 | variable  | contents                                                                                              |
-|:---------:|:----------------------------------------------------------------------------------------------------- |
+| :-------: | :---------------------------------------------------------------------------------------------------- |
 | `DISPLAY` | name of the display if we are running a graphical environment.                                        |
 | `EDITOR`  | name of the program to be used for text editing.                                                      |
 |  `SHELL`  | name of the user's default shell program.                                                             |
@@ -48,7 +48,7 @@ One element of the environment that neither `set` nor `printenv` displays is ali
 | `OLDPWD`  | previos working directory.                                                                            |
 |  `PAGER`  | name of the program to be used for paging output.                                                     |
 |  `PATH`   | colon-separated list of directories that are searched when we enter the name of a executable program. |
-|   `PS1`   | stands for "prompt string 1".                                                                       |
+|   `PS1`   | stands for "prompt string 1".                                                                         |
 |   `PWD`   | current working directory.                                                                            |
 |  `TERM`   | name of your terminal type.                                                                           |
 |   `TZ`    | specifies our time zone.                                                                              |
@@ -65,7 +65,7 @@ When we log on to the system, `bash` starts and reads a series of configuration 
 Login shells read one or more startup files as shown in the following table:
 
 |       file        | contents                                                                                      |
-|:-----------------:|:--------------------------------------------------------------------------------------------- |
+| :---------------: | :-------------------------------------------------------------------------------------------- |
 |  `/etc/profile`   | a global configuration script that applies to all users.                                      |
 | `~/.bash_profile` | a user's personal startup file.                                                               |
 |  `~/.bash_login`  | if `~/.bash_profile` is no found, `bash` attempts to read this script.                        |
@@ -74,7 +74,7 @@ Login shells read one or more startup files as shown in the following table:
 Non-login shells read one or more startup files as shown in the following table:
 
 |      file      | contents                                                 |
-|:--------------:|:-------------------------------------------------------- |
+| :------------: | :------------------------------------------------------- |
 | `/etc/profile` | a global configuration script that applies to all users. |
 |   `~/bashrc`   | a user's personal startup file.                          |
 
@@ -86,7 +86,7 @@ In addition to reading the startup files in the above table, non-login shells in
 # .bash_profile
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi
 # User specific environment and startup programs
 PATH=$PATH:$HOME/bin
@@ -95,9 +95,9 @@ export PATH
 
 The first conditional is call an **if compound command**, an can be translate into:
 
-```
+```text
 If the file "~/.bashrc" exists, then
-	read the "~/.bashrc" file.
+    read the "~/.bashrc" file.
 ```
 
 The `export` command tells the shell to make the contents of `PATH` available to child processes of this shell. In a sense, it converts a shell variable into an environment variable.

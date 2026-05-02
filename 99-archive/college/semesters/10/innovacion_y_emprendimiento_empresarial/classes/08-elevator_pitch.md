@@ -34,7 +34,7 @@ Atrae la atención desde el primer segundo. No empieces con "Hola, soy...". Se d
 
 Di quién eres y qué problema resuelves. Se debe conectar la identidad con la solución.
 
-> Ejemplo: "soy Ana, ingeniera de sistemas, y creamos *nombre*, una app que...".
+> Ejemplo: "soy Ana, ingeniera de sistemas, y creamos _nombre_, una app que...".
 
 ### Paso 3: ¿cómo funciona?
 

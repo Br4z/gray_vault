@@ -4,8 +4,6 @@ reviewed_on: 2026-02-25
 
 # Drawbacks
 
-### drawbacks
-
 BDD can be harder to adopt if the team lacks prior experience with [[personal/systems_engineering/fundametals/agile/test_driven_development/definition|TDD]], because the practice still relies on disciplined test-first thinking and tight feedback loops.
 
 It also fits poorly with a waterfall approach, since BDD expects ongoing collaboration and iterative refinement rather than fixed, sequential handoffs.

@@ -10,8 +10,8 @@ A function $f$ is called one-to-one or injective if and only if each associated 
 
 $$
 \begin{align}
-	& \forall a,b \quad (f(a) = f(b) \implies a = b) \\
-	& \forall a,b \quad (a \neq b \implies f(a) \neq f(b))
+    & \forall a,b \quad (f(a) = f(b) \implies a = b) \\
+    & \forall a,b \quad (a \neq b \implies f(a) \neq f(b))
 \end{align}
 $$
 

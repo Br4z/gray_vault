@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-01-10"
 sources:
-  - author: NA
-    url: https://www.geeksforgeeks.org/generators-in-python
-    language: English
+    - author: NA
+      url: https://www.geeksforgeeks.org/generators-in-python
+      language: English
 ---
 
 # Generator
@@ -26,7 +26,7 @@ They are another way of writing the generator function. It uses the list compreh
 generator_expression = (i * 5 for i in range(5) if i % 2 == 0)
 
 for i in generator_expression:
-	print(i)
+    print(i)
 ```
 
 ## Advantages
@@ -39,11 +39,11 @@ for i in generator_expression:
 
 ```python
 def fib(limit):
-	a, b = 0, 1
+    a, b = 0, 1
 
-	while a < limit:
-		yield a
-		a, b = b, a + b
+    while a < limit:
+        yield a
+        a, b = b, a + b
 
 generator_object = fib(5)
 print(next(generator_object)) # 0
@@ -53,5 +53,5 @@ print(next(generator_object)) # 2
 print(next(generator_object)) # 3
 
 for i in fib(5): # 0 1 1 2 3
-	print(i, end=" ")
+    print(i, end=" ")
 ```

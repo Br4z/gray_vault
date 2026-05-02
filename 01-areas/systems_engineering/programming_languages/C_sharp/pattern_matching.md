@@ -13,7 +13,7 @@ object value = getValue();
 
 if (value is string text)
 {
-	Console.WriteLine(text.Length);
+    Console.WriteLine(text.Length);
 }
 ```
 
@@ -22,12 +22,12 @@ Null patterns express null checks in a consistent form
 ```cs
 if (value is null)
 {
-	Console.WriteLine("missing");
+    Console.WriteLine("missing");
 }
 
 if (value is not null)
 {
-	Console.WriteLine("present");
+    Console.WriteLine("present");
 }
 ```
 
@@ -38,7 +38,7 @@ int? maybe = getNumber();
 
 if (maybe is int n)
 {
-	Console.WriteLine(n + 1);
+    Console.WriteLine(n + 1);
 }
 ```
 
@@ -49,7 +49,7 @@ They match an exact value.
 ```cs
 if (status is 0)
 {
-	Console.WriteLine("ok");
+    Console.WriteLine("ok");
 }
 ```
 
@@ -62,7 +62,7 @@ order? order = getOrder();
 
 if (order is { Customer.Address.City: "bogota" })
 {
-	Console.WriteLine("local order");
+    Console.WriteLine("local order");
 }
 ```
 
@@ -76,20 +76,20 @@ object value = getValue();
 switch (value)
 {
 case null:
-	Console.WriteLine("missing");
-	break;
+    Console.WriteLine("missing");
+    break;
 case int n when n < 0:
-	Console.WriteLine("negative");
-	break;
+    Console.WriteLine("negative");
+    break;
 case int n:
-	Console.WriteLine($"int {n}");
-	break;
+    Console.WriteLine($"int {n}");
+    break;
 case string s:
-	Console.WriteLine($"string {s.Length}");
-	break;
+    Console.WriteLine($"string {s.Length}");
+    break;
 default:
-	Console.WriteLine("other");
-	break;
+    Console.WriteLine("other");
+    break;
 }
 ```
 
@@ -100,10 +100,10 @@ object value = getValue();
 
 string label = value switch
 {
-	null => "missing",
-	int n when n < 0 => "negative int",
-	int => "int",
-	string => "string",
-	_ => "other"
+    null => "missing",
+    int n when n < 0 => "negative int",
+    int => "int",
+    string => "string",
+    _ => "other"
 };
 ```

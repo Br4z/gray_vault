@@ -40,10 +40,10 @@ El desarrollo de un prototipo exitoso no es lineal, sino que sigue un ciclo cont
 
 ```mermaid
 flowchart LR
-	validación --> retroalimentación
-	retroalimentación --> análisis
-	análisis --> adaptación
-	adaptación --> validación
+    validación --> retroalimentación
+    retroalimentación --> análisis
+    análisis --> adaptación
+    adaptación --> validación
 ```
 
 Este ciclo se repite múltiples veces, y cada iteración acerca el producto a la solución óptima para el mercado objetivo.

@@ -34,7 +34,8 @@ $$
 
 La fórmula resultante es
 
-$$ [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \pand p \pand \neg s
+$$
+[(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \pand p \pand \neg s
 $$
 
 ## Descomponiendo los condicionales

@@ -26,7 +26,7 @@ Un proyecto:
 
 ---
 
-Cuando se es asignado a un proyecto, es necesario entender el proyecto y su entorno (negocio) 
+Cuando se es asignado a un proyecto, es necesario entender el proyecto y su entorno (negocio)
 
 ## ¿Qué es gestionar un proyecto?
 

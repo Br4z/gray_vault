@@ -13,7 +13,7 @@ $$
 Para el siguiente conjunto de datos:
 
 | $x$ | $y$ |
-|:---:|:---:|
+| :-: | :-: |
 |  1  |  1  |
 |  2  | 1.5 |
 |  3  |  2  |
@@ -148,7 +148,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
 Para el siguiente conjunto de datos:
 
 | $x$  | $y$ |
-|:----:|:---:|
+| :--: | :-: |
 | 2.5  | 13  |
 | 3.5  | 11  |
 |  5   | 8.5 |
@@ -273,7 +273,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ co
 Para el siguiente conjunto de datos:
 
 | $x$ | $y$ |
-|:---:|:---:|
+| :-: | :-: |
 |  3  | 1.6 |
 |  4  | 3.6 |
 |  5  | 4.4 |
@@ -402,7 +402,7 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
 Use funciones de spline cúbico para generar la curva que pasa por los siguientes datos:
 
 | $x$ | $y$ |
-|:---:|:---:|
+| :-: | :-: |
 |  0  |  1  |
 |  1  | 1.5 |
 |  2  | 1.6 |

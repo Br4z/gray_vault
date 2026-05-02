@@ -74,12 +74,10 @@ I interpret this observation as referring specifically to the technical strategy
 
 Regarding the mention of "multimodal LLMs," I reiterate the clarification made in the previous point: the scope is strictly limited to text-based processing. However, I acknowledge that the current document lacks direct academic precedents supporting the specific architecture of "LLM as a Natural Language Interface (NLI) for APIs."
 
-#### Proposed fix (se reportan antecedentes claves relacionados con el objeto de estudio y con la estrategia propuesta)
+### Proposed fix (se reportan antecedentes claves relacionados con el objeto de estudio y con la estrategia propuesta)
 
 I will expand the State of the Art (Section 6.2) to include a subsection on "LLM-based Query Generation." This section will cite precedents in Text-to-SQL and Text-to-API research (e.g., studies where LLMs translate user intent into structured queries). This will provide the "direct precedents" required to sustain the proposed technical architecture, validating the decision to use a text-only LLM as a translation layer.
 
-
 "To implement a data collection module featuring a Natural Language Interface (NLI) that utilizes a pre-trained Large Language Model (LLM) to validate and translate user requests into structured YouTube Data API query parameters".
-
 
 > It processes informal natural language user queries, extracts search parameters (keywords, date ranges, content filters), validates extracted parameters against YouTube API constraints, and generates well-formed YouTube Data API queries.

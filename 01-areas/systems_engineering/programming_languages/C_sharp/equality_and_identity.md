@@ -13,7 +13,7 @@ It is mainly relevant for [[personal/systems_engineering/programming_languajes/C
 ```cs
 class Person
 {
-	public string Name = "";
+    public string Name = "";
 }
 
 var a = new person { Name = "ana" };
@@ -77,13 +77,13 @@ If equality says two keys are equal, the hash code must agree, or lookups can be
 ```cs
 public sealed class Product(string sku)
 {
-	public string Sku { get; } = sku
+    public string Sku { get; } = sku
 
-	public override bool Equals(object? obj)
-		=> obj is product other && sku == other.sku;
+    public override bool Equals(object? obj)
+        => obj is product other && sku == other.sku;
 
-	public override int GetHashCode()
-		=> sku.GetHashCode();
+    public override int GetHashCode()
+        => sku.GetHashCode();
 }
 
 var p1 = new Product("abc");

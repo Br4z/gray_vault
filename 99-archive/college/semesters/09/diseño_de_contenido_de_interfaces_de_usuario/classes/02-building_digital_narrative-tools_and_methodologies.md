@@ -8,32 +8,32 @@ reviewed_on: "2025-03-10"
 
 ```mermaid
 flowchart LR
-	subgraph fase previa
-		A[contextualización]
-		B[investigación]
-		C[análisis de información]
-		D[conceptualización]
-		A --> B --> C --> D
-	end
+    subgraph fase previa
+        A[contextualización]
+        B[investigación]
+        C[análisis de información]
+        D[conceptualización]
+        A --> B --> C --> D
+    end
 
-	subgraph ejecución
-		E[creación]
-	end
+    subgraph ejecución
+        E[creación]
+    end
 
-	subgraph revisión y pruebas
-		F[verificación]
-		G[aplicación de mejoras]
-		H[entrega]
-		F --> G --> H
-	end
+    subgraph revisión y pruebas
+        F[verificación]
+        G[aplicación de mejoras]
+        H[entrega]
+        F --> G --> H
+    end
 
-	subgraph mantenimiento
-		I[seguimiento y evolución]
-	end
+    subgraph mantenimiento
+        I[seguimiento y evolución]
+    end
 
-	D --> E
-	E --> F
-	H --> I
+    D --> E
+    E --> F
+    H --> I
 ```
 
 ## Modos de trabajo
@@ -46,7 +46,7 @@ Es una metodología que prioriza la creación de contenido antes de desarrollar 
 
 > Primero definimos el mensaje y luego cómo se presenta.
 
-#### Beneficios
+#### Beneficios (content first)
 
 - Claridad: contenido enfocado y relevante que comunica eficazmente.
 
@@ -54,7 +54,7 @@ Es una metodología que prioriza la creación de contenido antes de desarrollar 
 
 - Eficiencia: evita rediseños costosos al tener bien definido el mensaje desde el inicio.
 
-#### Retos
+#### Retos (content first)
 
 - Expertise: requiere que el equipo tenga un dominio teórico y práctico muy alto.
 
@@ -96,7 +96,7 @@ Las acciones que se hacen en esta fase son:
 
 Es una metodología orientada a corregir lo que no funciona, adoptando un enfoque más reactivo. Se adapta a una interfaz o canal ya existente, con definiciones particulares preestablecidas.
 
-#### Beneficios
+#### Beneficios (refinamiento)
 
 - Reglas predefinidas: se cuenta con lineamientos claros sobre cómo y dónde estructurar el contenido.
 
@@ -104,7 +104,7 @@ Es una metodología orientada a corregir lo que no funciona, adoptando un enfoqu
 
 - Operatividad: puede ser ejecutada por roles junior, al tener procesos ya establecidos.
 
-#### Retos
+#### Retos (refinamiento)
 
 - Alcance limitado: si existen fallas en la experiencia, resulta difícil proponer o implementar mejoras sustanciales.
 

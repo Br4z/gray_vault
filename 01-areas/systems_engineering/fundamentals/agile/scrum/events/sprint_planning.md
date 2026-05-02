@@ -27,4 +27,3 @@ Sprint planning addresses the following topics:
 ## Output
 
 The result is a clear plan for the sprint (the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/sprint_backlog|**sprint backlog**]]) created by the entire Scrum team.
-

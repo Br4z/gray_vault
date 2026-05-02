@@ -1,9 +1,9 @@
 ---
 reviewed_on: "2025-03-18"
 sources:
-  - author: HolaMundo
-    url: https://www.youtube.com/watch?v=4Dko5W96WHg
-    language: Spanish
+    - author: HolaMundo
+      url: https://www.youtube.com/watch?v=4Dko5W96WHg
+      language: Spanish
 ---
 
 # Aprende Docker ahora
@@ -179,9 +179,13 @@ Con el fin de tener una [aplicación](https://github.com/nschurmann/mongoapp-cur
 2. Cambiar la ruta donde hacemos la conexión a la base de datos.
 
     ```js
-    mongoose.connect('mongodb://nico:password@localhost:27017/miapp?authSource=admin')
+    mongoose.connect(
+        "mongodb://nico:password@localhost:27017/miapp?authSource=admin",
+    );
 
-    mongoose.connect('mongodb://nico:password@monguito:27017/miapp?authSource=admin')
+    mongoose.connect(
+        "mongodb://nico:password@monguito:27017/miapp?authSource=admin",
+    );
     ```
 
 3. Construimos la imagen para nuestra aplicación: `docker built -t miapp:1 .`

@@ -18,17 +18,17 @@ Con los siguientes datos:
 
 1. Realice un forward pass para calcular la salida de la red para esta entrada.
 
-	$$
-	y = f(1 (1) + 0 (-1)) = 1
-	$$
+    $$
+    y = f(1 (1) + 0 (-1)) = 1
+    $$
 
 2. Calcule el error usando el error cuadrático medio (MSE).
 
-	> $\operatorname{ MSE }(\hat{ y }) = \frac{ 1 }{ 2 } (\hat{ y } - y)^2$
+    > $\operatorname{ MSE }(\hat{ y }) = \frac{ 1 }{ 2 } (\hat{ y } - y)^2$
 
-	$$
-	\operatorname{ MSE }(1) = \frac{ 1 }{ 2 } (1 - 2)^2 = \frac{ 1 }{ 2 }
-	$$
+    $$
+    \operatorname{ MSE }(1) = \frac{ 1 }{ 2 } (1 - 2)^2 = \frac{ 1 }{ 2 }
+    $$
 
 3. Use backpropagation para calcular los gradientes de los pesos.
 
@@ -40,9 +40,9 @@ Solucione el sistema de ecuaciones y justifique la elección del método. Usé u
 
 $$
 \begin{cases}
-	10 x_1 & + 2 x_2 & - x_3   & = 27 \\
-	-3 x_1 & - 6 x_2 & + 2 x_3 & = -61.5 \\
-	x_1    & + x_2   & + 5 x_3 & = -21.5
+    10 x_1 & + 2 x_2 & - x_3   & = 27 \\
+    -3 x_1 & - 6 x_2 & + 2 x_3 & = -61.5 \\
+    x_1    & + x_2   & + 5 x_3 & = -21.5
 \end{cases}
 $$
 
@@ -52,23 +52,23 @@ Verifique la convergencia de los siguientes sistemas de ecuaciones:
 
 1. .
 
-	$$
-	\begin{cases}
-		-3 x_1 & + 4 x_2 & + 5 x_3 & = 6 \\
-		-2 x_1 & + 2 x_2 & - 3 x_3 & = -3 \\
-		       & 2 x_2   & - 1 x_3 & = 1
-	\end{cases}
-	$$
+    $$
+    \begin{cases}
+        -3 x_1 & + 4 x_2 & + 5 x_3 & = 6 \\
+        -2 x_1 & + 2 x_2 & - 3 x_3 & = -3 \\
+               & 2 x_2   & - 1 x_3 & = 1
+    \end{cases}
+    $$
 
 2. .
 
-	$$
-	\begin{cases}
-		9 x_1  & + 3 x_2 & + 1 x_3 & = 13 \\
-		-6 x_1 &         & + 8 x_3 & = 2 \\
-		2 x    & + 5 x_2 & - 1 x_3 & = 6
-	\end{cases}
-	$$
+    $$
+    \begin{cases}
+        9 x_1  & + 3 x_2 & + 1 x_3 & = 13 \\
+        -6 x_1 &         & + 8 x_3 & = 2 \\
+        2 x    & + 5 x_2 & - 1 x_3 & = 6
+    \end{cases}
+    $$
 
 ## 4
 

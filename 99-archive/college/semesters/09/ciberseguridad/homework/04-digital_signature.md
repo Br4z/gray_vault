@@ -40,23 +40,22 @@ Para asegurar la integridad, autenticidad y no repudio de un documento electrón
 
 1. Generación del resumen (Hash).
 
-	Cuando se desea firmar un documento, primero se aplica una función hash al contenido completo. Esto produce un valor de longitud fija que representa de forma única el documento.
+    Cuando se desea firmar un documento, primero se aplica una función hash al contenido completo. Esto produce un valor de longitud fija que representa de forma única el documento.
 
 2. Certificado de clave pública (PKI).
 
-	El firmante posee un par de claves: privada y pública. Su clave pública está incluida en un certificado digital emitido por una autoridad de certificación (CA). Este certificado, parte de la infraestructura de clave pública (PKI), vincula la identidad del firmante con su clave pública y garantiza que quien recibe el documento pueda confiar en dicha asociación.
+    El firmante posee un par de claves: privada y pública. Su clave pública está incluida en un certificado digital emitido por una autoridad de certificación (CA). Este certificado, parte de la infraestructura de clave pública (PKI), vincula la identidad del firmante con su clave pública y garantiza que quien recibe el documento pueda confiar en dicha asociación.
 
 3. Creación de la firma digital.
 
-	El resumen obtenido en el paso 1 se cifra utilizando la **clave privada** del firmante. El resultado cifrado es la firma digital. Al adjuntar esta firma al documento junto con el certificado digital del firmante, se proporciona tanto la prueba de integridad (gracias al hash) como la garantía de identidad (gracias al certificado PKI).
+    El resumen obtenido en el paso 1 se cifra utilizando la **clave privada** del firmante. El resultado cifrado es la firma digital. Al adjuntar esta firma al documento junto con el certificado digital del firmante, se proporciona tanto la prueba de integridad (gracias al hash) como la garantía de identidad (gracias al certificado PKI).
 
 4. Verificación por el receptor.
+    1. El receptor aplica la misma función hash al documento recibido para obtener su propio resumen.
 
-	1. El receptor aplica la misma función hash al documento recibido para obtener su propio resumen.
+    2. Con la clave pública extraída del certificado digital del firmante, descifra la firma digital y recupera el resumen original cifrado.
 
-	2. Con la clave pública extraída del certificado digital del firmante, descifra la firma digital y recupera el resumen original cifrado.
-
-	3. Compara ambos resúmenes, si coinciden, el documento no ha sido alterado y la identidad del firmante queda verificada; si difieren, se detecta manipulación o un certificado no válido.
+    3. Compara ambos resúmenes, si coinciden, el documento no ha sido alterado y la identidad del firmante queda verificada; si difieren, se detecta manipulación o un certificado no válido.
 
 ## Metadato
 

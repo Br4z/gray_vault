@@ -21,7 +21,7 @@ Most commands use options which consist of a single character preceded by a dash
 `ls` has numerous possible options:
 
 | option |    long option     | description                                                                                                      |
-|:------:|:------------------:|:---------------------------------------------------------------------------------------------------------------- |
+| :----: | :----------------: | :--------------------------------------------------------------------------------------------------------------- |
 |  `-a`  |      `--all`       | list all files.                                                                                                  |
 |  `-A`  |   `--almost-all`   | like the `-a` option, except it does not list `.` and `..`.                                                      |
 |  `-d`  |   `--directory`    | ordinarily, if a directory is specified, `ls` will list the contents of the directory, not the directory itself. |
@@ -41,7 +41,7 @@ The long format contains a great deal of useful information. Here is an example 
 ```
 
 |       field        | meaning                                        |
-|:------------------:|:---------------------------------------------- |
+| :----------------: | :--------------------------------------------- |
 |    `-rw-r-r--`     | access rights to the file.                     |
 |        `1`         | file's number of hard links.                   |
 |       `root`       | the username of the file's owner.              |
@@ -71,7 +71,7 @@ Some of these representation systems are very complex (such as compressed video 
 Once started, the `less` allows us to scroll forward and backward through a text file.
 
 |        command         | action                                                 |
-|:----------------------:|:------------------------------------------------------ |
+| :--------------------: | :----------------------------------------------------- |
 |    `PAGE UP` or `b`    | scroll back one page.                                  |
 | `PAGE DOWN` or `SPACE` | scroll forward one page.                               |
 |       `UP ARROW`       | scroll up one line.                                    |
@@ -94,7 +94,7 @@ The less program was designed as an improved replacement of an earlier Unix prog
 The file system layout on a Linux system is much like that found on other Unix-like systems. The design is actually specified in a published standard called the **Linux Filesystem Hierarchy Standard**. Not all Linux distributions conform to the standard exactly, but most come pretty close.
 
 |         directory          | description                                                                                                                                                                            |
-|:--------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |            `/`             | root directory.                                                                                                                                                                        |
 |           `/bin`           | contains binaries (programs) that must be present for the system to boot and run.                                                                                                      |
 |          `/boot`           | contains the Linux kernel, initial RAM disk image (for drivers needed at boot time), and the bootloader.                                                                               |
