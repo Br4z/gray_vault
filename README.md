@@ -371,6 +371,18 @@ These are the rules of the vault:
 
 9. The system should stay simple enough to maintain with plain text tools.
 
+## Tooling
+
+This vault uses my own [`style_config`](https://github.com/braz9LKDI/style_config) kit to keep notes consistent, specifically its `markdown/` stack:
+
+- Prettier handles prose wrapping, code block formatting and table alignment.
+
+- markdownlint catches structural issues like inconsistent list indentation, broken headings or stray HTML.
+
+- EditorConfig sets editor-level basics: indent style, line endings and final newline.
+
+Every config in the root of this vault (`.prettierrc.json`, `.markdownlint.jsonc`, `.editorconfig`, `.vscode/`) is a direct copy from that stack. The same setup can be adopted in any notes or documentation repository by copying the `markdown/` folder and following its README.
+
 ## Contributing
 
 Pull requests are welcome, as long as they follow the [style guidelines](style_guide.md).

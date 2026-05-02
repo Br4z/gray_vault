@@ -6,7 +6,7 @@ reviewed_on: "2025-02-08"
 
 ## 1
 
-![neural network](99-archive/college/semesters/08/assets/simulacion_y_computacion_numerica/03_02_01-neural_network_diagram.svg)
+![neural network](99-archive/college/semesters/08/simulacion_y_computacion_numerica/assets/3_02_01-neural_network_diagram.svg)
 
 La siguiente es una red neuronal simple de una sola capa con una capa de entrada de dos neuronas que reciben las entradas $x_1$ y $x_2$ y una capa de salida con una neurona que tiene la función de activación lineal ($f(h) = h$). Los pesos iniciales de la red son $w_1 = 1$ y $w_2 = -1$.
 

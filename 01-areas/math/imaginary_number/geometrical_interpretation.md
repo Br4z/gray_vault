@@ -8,4 +8,4 @@ We usually represent a complex number $a + b i$ by a point $(a,b)$ in the **comp
 
 In this representation, multiplication by $i$ corresponds to a counterclockwise rotation of 90 degrees about the origin, which is a quarter of a circle. Multiplication by $−i$ corresponds to a clockwise rotation of 90 degrees about the origin.
 
-![Rotations on the complex plane](01-areas/math/assets/imaginary_number/rotations_on_the_complex_plane.svg)
+![Rotations on the complex plane](01-areas/math/imaginary_number/assets/rotations_on_the_complex_plane.svg)

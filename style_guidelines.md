@@ -1,5 +1,5 @@
 ---
-reviewed_on: 2026-04-25
+reviewed_on: 2026-05-02
 ---
 
 # Style guidelines
@@ -280,4 +280,132 @@ Capital letters are used only in the following cases:
 
     ```md
     Obsidian, Linux, GitHub and Python are proper names.
+    ```
+
+## Assets
+
+- Asset file names use lowercase snake case after the numeric prefix.
+
+    Bad:
+
+    ```text
+    01-Neural Network Diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    01-neural_network_diagram.svg
+    ```
+
+- Simple notes use the `XX-name_of_the_image` convention.
+
+    The `XX` value represents the image number inside the note.
+
+    Bad:
+
+    ```text
+    graph.svg
+    ```
+
+    Bad:
+
+    ```text
+    1-graph.svg
+    ```
+
+    Good:
+
+    ```text
+    01-graph.svg
+    ```
+
+    Good:
+
+    ```text
+    02-neural_network_diagram.svg
+    ```
+
+- College notes use the `X_XX_XX-name_of_the_image` convention.
+
+    The first `X` represents the note type.
+
+    ```text
+    1 = class
+    2 = homework
+    3 = exam
+    ```
+
+    The following `XX` represents the note number.
+
+    The last `XX` represents the image number inside that note.
+
+    Bad:
+
+    ```text
+    class_03_01-neural_network_diagram.svg
+    ```
+
+    Bad:
+
+    ```text
+    1_3_1-neural_network_diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    1_03_01-neural_network_diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    2_04_02-error_graph.svg
+    ```
+
+    Good:
+
+    ```text
+    3_01_01-midterm_problem.png
+    ```
+
+- A hyphen separates the numeric prefix from the descriptive name.
+
+    Bad:
+
+    ```text
+    01_neural_network_diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    01-neural_network_diagram.svg
+    ```
+
+- The descriptive name explains the image content, not only the note where it appears.
+
+    Bad:
+
+    ```text
+    01-image.svg
+    ```
+
+    Bad:
+
+    ```text
+    01-class_diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    01-neural_network_diagram.svg
+    ```
+
+    Good:
+
+    ```text
+    02-linux_directory_structure.png
     ```

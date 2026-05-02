@@ -40,4 +40,4 @@ Permite compartir datos entre aplicaciones. Mediante estos componentes es posibl
 
 ## Ciclo de vida de una actividad
 
-![life cycle of an activity](99-archive/college/semesters/08/assets/desarrollo_de_aplicaciones_para_dispositivos_moviles/01_01-life_cycle_of_an_activity.svg)
+![life cycle of an activity](99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/assets/01_01-life_cycle_of_an_activity.svg)

@@ -36,7 +36,7 @@ The `>(x, 5)` part of the previous program would be represented like this:
 
 Such a data structure is called a **syntax tree**. If you imagine the objects as dots and the links between them as lines between those dots, as shown in the following diagram, the structure has a treelike shape. The fact that expressions contain other expressions, which in turn might contain more expressions, is similar to the way tree branches split and split again.
 
-![syntax tree example](02-resources/books/assets/eloquent_JavaScript/13_01-syntax_tree_example.svg)
+![syntax tree example](02-resources/books/eloquent_JavaScript/assets/13_01-syntax_tree_example.svg)
 
 ## Special forms
 

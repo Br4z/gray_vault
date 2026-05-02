@@ -54,7 +54,7 @@ El clustering basado en centroides es un tipo de método de clustering que divid
 
 #### Método de las K-medias
 
-![K-means algorithm](99-archive/college/semesters/08/assets/introduccion_a_la_ciencia_de_datos/08_01-K-means_algorithm.svg)
+![K-means algorithm](99-archive/college/semesters/08/introduccion_a_la_ciencia_de_datos/assets/08_01-K-means_algorithm.svg)
 
 El método asume que el centro de cada clúster define el clúster utilizando una medida de distancia, normalmente la distancia euclidiana, al centroide. Para inicializar el clustering, se proporciona un número de clústeres esperados, que representa la $K$ medias, y el algoritmo intenta encontrar clusters razonables a través de los datos para que coincidan con ese número. Los $k$ clústeres óptimos de un conjunto de datos determinado se identifican minimizando de forma iterativa la distancia total entre cada punto y su centroide de clúster asignado.
 

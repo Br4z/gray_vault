@@ -4,7 +4,7 @@ reviewed_on: 2025-01-04
 
 # Environmental issues and sustainable development
 
-![culture as a system](99-archive/college/semesters/08/assets/impactos_ambientales/02_01-culture_as_a_system.svg)
+![culture as a system](99-archive/college/semesters/08/impactos_ambientales/assets/02_01-culture_as_a_system.svg)
 
 ## PPA (principales problemas ambientales)
 
@@ -99,7 +99,7 @@ El proceso de desarrollo económico y social del país se orientará según los 
 
 Se entiende por desarrollo sostenible: el que conduzca al crecimiento económico, a la elevación de la calidad de la vida y al bienestar social, sin agotar la base de recursos naturales en que se sustenta, ni deteriorar el medio ambiente o el derecho de las generaciones futuras a utilizarlo para la satisfacción de sus propias necesidades.
 
-![sustainable development venn diagram](99-archive/college/semesters/08/assets/impactos_ambientales/02_02-sustainable_development_venn_diagram.svg)
+![sustainable development venn diagram](99-archive/college/semesters/08/impactos_ambientales/assets/02_02-sustainable_development_venn_diagram.svg)
 
 ## Desarrollo a escala humana
 

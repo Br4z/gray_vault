@@ -53,7 +53,7 @@
 
 4. María tiene una hoja de cartulina con el largo igual al doble de su ancho. Si recorta un cuadrado de 3 pulgadas de lado en cada esquina y dobla los lados hacia arriba para formar una caja sin tapa, tendrá una caja con un volumen de 140 pulgadas cúbicas. Halle las dimensiones de la hoja de cartulina original.
 
-    ![4th problem](99-archive/college/ASES/assets/Sara/matematicas_basicas/03_01-problem.png)
+    ![4th problem](99-archive/college/ASES/Sara/matematicas_basicas/assets/03_01-problem.png)
 
     $$
     \begin{align}
@@ -73,7 +73,7 @@
     y = x - \frac{ 9.8 }{ { v_0 }^2 } x^2
     $$
 
-    ![5th problem](99-archive/college/ASES/assets/Sara/matematicas_basicas/03_02-problem.png)
+    ![5th problem](99-archive/college/ASES/Sara/matematicas_basicas/assets/03_02-problem.png)
     - Si una fuente arroja agua con un ángulo de $45 \degree$ y una velocidad de $7 \frac{ \text{m} }{ \text{s} }$, ¿a qué distancia del chorro caerá el agua sobre la pileta?
 
         $$

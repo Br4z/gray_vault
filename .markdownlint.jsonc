@@ -1,9 +1,10 @@
 {
-  // https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+  // For more information about these rules see
+  // https://github.com/braz9LKDI/style_config/blob/main/markdown/docs/markdownlint.md
   "default": true,
-  "MD007": { "indent": 4 }, // Unordered list indentation
+  "MD007": { "indent": 4 },
   "MD010": { "spaces_per_tab": 4 },
-  "MD013": false, // Line length, let Prettier handle wrapping
+  "MD013": false,
   "MD033": { "allowed_elements": ["br"] },
-  "MD041": false, // First line does not have to be a top-level heading
+  "MD041": false,
 }

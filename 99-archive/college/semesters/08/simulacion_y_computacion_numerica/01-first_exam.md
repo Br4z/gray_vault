@@ -8,11 +8,11 @@ reviewed_on: "2025-02-08"
 
 ¿Cuál de las siguientes afirmaciones  describen mejor la relación entre las diferencias finitas y la serie de Taylor?
 
-- [] Las diferencias finitas no están relacionadas con la serie de Taylor porque se usan para otros tipos de métodos numéricos y no aproximaciones.
+- [ ] Las diferencias finitas no están relacionadas con la serie de Taylor porque se usan para otros tipos de métodos numéricos y no aproximaciones.
 
 - [x] Las diferencias finitas se derivan truncando la expansión de Taylor, y la precisión de la aproximación depende del grado de la derivada considerada en la serie de Taylor.
 
-- [] Las diferencias finitas se calculan usando directamente la función original sin hacer uso de la serie de Taylor.
+- [ ] Las diferencias finitas se calculan usando directamente la función original sin hacer uso de la serie de Taylor.
 
 ## 2
 
@@ -56,7 +56,7 @@ Ha sido entrenada una arquitectura de red neuronal especializada en detectar si 
 
 Por función de activación consideré la siguiente:
 
-![neural network diagram](99-archive/college/semesters/08/assets/simulacion_y_computacion_numerica/03_01_01-neural_network_diagram.svg)
+![neural network diagram](99-archive/college/semesters/08/simulacion_y_computacion_numerica/assets/3_01_01-neural_network_diagram.svg)
 
 $$
 myActivation(x) =
@@ -115,7 +115,7 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
 
 ## 5
 
-![bar](99-archive/college/semesters/08/assets/simulacion_y_computacion_numerica/03_01_02-bar.svg)
+![bar](99-archive/college/semesters/08/simulacion_y_computacion_numerica/assets/3_01_02-bar.svg)
 
 Hay una fuente de calor en un extremo de una barra de ancho 1 como se muestra a continuación:
 

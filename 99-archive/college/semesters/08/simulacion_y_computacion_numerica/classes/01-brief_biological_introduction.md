@@ -6,7 +6,7 @@ reviewed_on: "2025-02-06"
 
 Un científico español llamado Santiago Ramón y Cajal, a finales del siglo XIX, logró descubrir que el cerebro humano estaba compuesto de una red de células llamadas neuronas, cuya estructura sigue la siguiente:
 
-![neuron structure](99-archive/college/semesters/08/assets/simulacion_y_computacion_numerica/01_01_01-neuron_structure.svg)
+![neuron structure](99-archive/college/semesters/08/simulacion_y_computacion_numerica/assets/1_01_01-neuron_structure.svg)
 
 - Dendritas: reciben y procesan la información entrante.
 
