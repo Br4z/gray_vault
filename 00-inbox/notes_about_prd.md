@@ -46,7 +46,7 @@ My suggestion is to use personal accounts instead. Verónica can have her own ac
 
 ## Undefined concepts
 
-The PRD uses concepts such as "workspace", "workflow", "workflow status", "linked evidence", "trend", "incident", and "follow-up actions." Some of these ideas may be useful, but I am not completely sure we all mean the same thing when we use them.
+The PRD uses concepts such as "workspace", "workflow", "workflow status", "linked evidence", "trend", "incident", and "follow-up", and "follow-up actions". Some of these ideas may be useful, but I am not completely sure we all mean the same thing when we use them.
 
 My suggestion is to either define these terms in a small glossary or simplify them. For the MVP, every concept should map to something concrete in the app, the database, or the user flow. If we cannot explain a concept clearly, we should validate it before making it a requirement.
 

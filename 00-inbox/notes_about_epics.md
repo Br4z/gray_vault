@@ -4,9 +4,9 @@ reviewed_on: 2026-05-05
 
 # Notes about epics
 
-My main concern is that the backlog is still too ambitious for the MVP timeline. It contains many valuable ideas, but several of them look more like a mature product vision than the first version we can realistically build and understand.
+My main concern is that the backlog is still too ambitious for the MVP timeline. It contains many valuable ideas, but several of them look more like a mature product vision than the first version we can realistically build, validate and understand.
 
-I think the MVP should prioritize the core value already validated with Verónica: reducing manual Excel work, automating the calculations, validating results against the current workbooks and giving users a clear way to see the results. Some governance, traceability and audit features should remain in the data model or logs, but not necessarily as independent user-facing screens in the first release.
+I think the MVP should prioritize the core value already validated with Veronica: reducing manual Excel work, automating the calculations, validating results against the current workbooks and giving users a clear way to see the results. Some governance, traceability and audit features should remain in the data model or logs, but not necessarily as independent user-facing screens in the first release.
 
 ## Epic 8 (evidence, traceability and audit)
 
@@ -26,17 +26,25 @@ My suggestion is to keep the backend foundations for traceability, but avoid bui
 
 - This is useful for a mature system, but too large if the MVP goal is to prove calculation, controlled loading and result visibility first.
 
+### Outcome (epic 8)
+
+The team agreed to drop these user stories from the MVP as independent user-facing functionality.
+
 ## Database and ORM portability
 
-I am worried that the backlog treats the PostgreSQL DDL as if it were the final persistence contract. My understanding is different: we created the PostgreSQL DDL as a guidance artifact to understand the data model, relationships, and possible structure, not because the MVP requires PostgreSQL-specific features.
+I am worried that the backlog treats the PostgreSQL DDL as if it were the final persistence contract. My understanding is different: we created the PostgreSQL DDL as a guidance artifact to understand the data model, relationships and possible structure, not because the MVP requires PostgreSQL-specific features.
 
-For the MVP, I think the database model should be represented mainly through the ORM. The domain model, entities, relationships, and constraints should live in the application through EF Core mappings and migrations. The DDL can still be useful as a reference, but it should not force us into PostgreSQL-specific implementation decisions.
+For the MVP, I think the database model should be represented mainly through the ORM. The domain model, entities, relationships and constraints should live in the application through EF Core mappings and migrations. The DDL can still be useful as a reference, but it should not force us into PostgreSQL-specific implementation decisions.
 
 My suggestion is:
 
 - Use EF Core as the primary way to represent the persistence model.
 
-- Do not describe the DDL as "authoritative" unless the team has validated that decision.
+- Treat the DDL as a reference artifact, not as the final source of truth.
+
+- Avoid PostgreSQL-specific features unless we explicitly validate that we need them.
+
+- Do not describe the DDL as "authoritative" unless the team has agreed on that decision.
 
 ### Backlog source (database and ORM portability)
 
@@ -46,13 +54,27 @@ My suggestion is:
 
 - AR6 says the system should use one primary `DbContext` with explicit mappings and avoid generic repository layers.
 
-- So the realistic concern is not "make it database-agnostic now", but "do not leak PostgreSQL-specific persistence details into business logic".
+- This makes the backlog sound PostgreSQL-first and DDL-first. If the DDL was only intended as guidance, the backlog should be adjusted so the ORM model becomes the implementation source of truth.
+
+### Outcome (database and ORM portability)
+
+The team agreed that the DDL was only a guide. We do not need PostgreSQL-specific features at this point.
 
 ## Migration should be a Python worker / script feature, not a normal API feature
 
-I would manage migration as a Python worker or controlled script feature, not as a normal API/product workflow.
+I would manage migration as a Python worker task or controlled script, not as a normal API or product workflow.
 
-The migration process is supposed to run once, or only in exceptional controlled cases. If we expose too much migration behavior through the application backend. That would confuse the product model.
+The migration process is supposed to run once, or only in exceptional controlled cases. If we expose too much migration behavior through the application backend, it may look like migration is a normal business operation. That would confuse the product model.
+
+My suggestion is to treat migration as a developer-controlled process:
+
+- Migration scripts should be executed by the development team.
+
+- The API should not expose migration as a normal runtime feature.
+
+- The product should only show migrated data after the migration has been completed and validated.
+
+- Reconciliation checks are still important, but they should support the migration process rather than become a full migration framework.
 
 ### Backlog source (migration should be a Python worker / script feature, not a normal API feature)
 
@@ -62,9 +84,13 @@ The migration process is supposed to run once, or only in exceptional controlled
 
 - Story 10.1 allows migration through a controlled CLI or admin-only API endpoint, but the key point is that it should remain a controlled activity, not a normal operational workflow.
 
+### Outcome (migration should be a Python worker / script feature, not a normal API feature)
+
+The team agreed that migration should not appear as a normal backend/product feature. It should live as a script or controlled developer process.
+
 ## Roles, permissions and the generic VIEWER role
 
-Reading the user stories, I am realizing that `VIEWER` is treated as a generic role for the whole app. At the same time, the backlog also says permissions can be assigned by user, module and capability. That feels a little contradictory.
+Reading the user stories, I realized that `VIEWER` is treated as a generic role for the whole app. At the same time, the backlog also says permissions can be assigned by user, module and capability. That feels a little contradictory.
 
 If permissions are managed per user, then some people may not fit cleanly into a formal role. In that case, `VIEWER` should probably be treated as a simple MVP permission preset, not as a fully validated business role.
 
@@ -80,6 +106,12 @@ If permissions are managed per user, then some people may not fit cleanly into a
 
 - This suggests that `VIEWER` should be treated as a useful MVP preset, not necessarily as a final formal business role.
 
+### Outcome (roles, permissions and the generic VIEWER role)
+
+The team agreed that the current roles are mostly formal labels at this stage. They are useful to describe access behavior, but they should not be treated as fully validated business roles yet.
+
+We also discussed the possibility of adding a `CONTRIBUTOR` role. This role could apply to any user who has contribution permissions in at least one module or indicator. However, this still needs more discussion before we include it in the backlog.
+
 ## Story 1.5 (audit history baseline for authentication and access-change events)
 
 For the moment, I think we can defer the **user-facing audit history view** from Story 1.5.
@@ -88,7 +120,13 @@ I know audit history is important. However, we do not have time to build a full 
 
 My suggestion is:
 
-- Avoid spending MVP time on a screen Verónica probably does not care about right now.
+- Keep simple created by, updated by, created at and updated at fields where useful.
+
+- Keep basic backend logging for relevant actions.
+
+- Avoid spending MVP time on an audit menu, audit panel or audit center.
+
+- Focus on Veronica's current pain point instead of overwhelming her with governance screens.
 
 ### Backlog source (story 1.5)
 
@@ -96,13 +134,17 @@ My suggestion is:
 
 - NFR8 requires sensitive actions to create audit records with actor, timestamp and action context.
 
+### Outcome (story 1.5)
+
+The team agreed that we will not implement an audit menu or audit panel in the MVP. Anything beyond simple created by, updated by, timestamps and similar record-level fields will be deferred. The priority is solving Veronica's current pain, not overwhelming her with extra governance features.
+
 ## Story 2.9 (responsive design baseline)
 
-If Story 2.9 becomes too expensive, I think we should prioritize desktop/laptop only.
+If Story 2.9 becomes too expensive, I think we should prioritize desktop and laptop only.
 
-This product is mainly an internal operational tool. Verónica's workflow is Excel-heavy, table-heavy and review-heavy. That kind of work is naturally better on desktop. Tablet support is nice, but it should not block the MVP.
+This product is mainly an internal operational tool. Veronica's workflow is Excel-heavy, table-heavy and review-heavy. That kind of work is naturally better on desktop. Tablet support is nice, but it should not block the MVP.
 
-### Backlog source (story 2.9 )
+### Backlog source (story 2.9)
 
 - Story 2.9 requires desktop, laptop, tablet and graceful degradation below 768px.
 
@@ -110,11 +152,15 @@ This product is mainly an internal operational tool. Verónica's workflow is Exc
 
 - UX-DR24 asks for tablet usability from 768px to 1279px, while UX-DR25 says sub-768px is not part of release approval.
 
+### Outcome (story 2.9)
+
+The team agreed that we will only support a basic desktop and laptop experience for the MVP.
+
 ## Story 2.11 (Spanish localization scaffold)
 
 Story 2.11 makes it look like we are supporting localization. I think the whole app should simply be in Spanish for the MVP.
 
-If the localization scaffold is easy, we can keep it because it helps avoid hardcoded strings. But we should not build a multi-language feature, language selector, or translation workflow unless someone explicitly asks for it.
+If the localization scaffold is easy, we can keep it because it helps avoid hardcoded strings. However, we should not build a multi-language feature, language selector or translation workflow unless someone explicitly asks for it.
 
 ### Backlog source (story 2.11)
 
@@ -124,19 +170,23 @@ If the localization scaffold is easy, we can keep it because it helps avoid hard
 
 - This does not necessarily mean multi-language support. It can simply mean Spanish-first UI with maintainable string management.
 
+### Outcome (story 2.11)
+
+The team agreed that this can stay only if it does not add much development complexity. The MVP should be Spanish-first, not multilingual.
+
 ## Epic 3 (definition governance engine)
 
-The strongest measure against our time problem would be to drop **epic 3 as user-facing functionality** from the MVP.
+The strongest measure against our timeline problem would be to drop **Epic 3 as user-facing functionality** from the MVP.
 
-I think we should keep the database open for this logic, but we should not expose draft/validate/approve/publish/supersede/retire definition management to Verónica right now. That workflow is powerful, but it is also complex. It introduces concepts such as formula templates, reusable metrics, source bindings, internal test cases, approval evidence and publication states.
+I think we should keep the database open for this logic, but we should not expose draft, validate, approve, publish, supersede or retire definition management to Veronica right now. That workflow is powerful, but it is also complex. It introduces concepts such as formula templates, reusable metrics, source bindings, internal test cases, approval evidence and publication states.
 
-For the MVP, Verónica probably needs reliable formulas, not a formula-governance product.
+For the MVP, Veronica probably needs reliable formulas, not a formula-governance product.
 
 My suggestion is:
 
 - Keep indicator definitions and formula versions in the database.
 
-- Seed the approved formulas from code, configuration, or migration scripts.
+- Seed the approved formulas from code, configuration or migration scripts.
 
 - Show the active formula/version as read-only metadata.
 
@@ -150,21 +200,29 @@ My suggestion is:
 
 - FR16 and FR17 define draft/edit/validate/approve/publish/supersede/retire behavior for indicator-definition versions.
 
-- Epic 3 is dedicated to the definition governance engine.
+- Epic 3 is dedicated to the Definition Governance Engine.
 
 - Story 3.2 requires creating draft indicator-definition versions from approved formula templates and reusable metrics.
 
 - This is excellent for a mature system, but it is probably too much user-facing governance for this MVP.
 
+### Outcome (epic 3)
+
+The team agreed to defer this as user-facing functionality.
+
+Our plan is to keep the required structure in the database so future iterations can implement this feature properly. However, we will not build the user-facing menu now.
+
+If we eventually commit to implementing this feature, we should also commit to building a very clear UI and a user manual for non-technical users like Veronica. If we cannot guarantee a good UI and clear documentation, we should not expose this feature yet.
+
 ## Story 3.2 (drafting new indicator-definition versions)
 
 I would reconsider how formulas will be updated.
 
-I do not think Verónica is willing to learn how to use an "engine" for formula templates, reusable metrics and internal test cases. This is a good technical capability, but it should not be a user-facing feature right now.
+I do not think Veronica is willing to learn how to use an "engine" for formula templates, reusable metrics and internal test cases. This is a good technical capability, but it should not be a user-facing feature right now.
 
 My suggestion is:
 
-- Formula changes should be handled by the development team or a controlled admin script during MVP.
+- Formula changes should be handled by the development team or through a controlled admin script during the MVP.
 
 - The UI should show formula/version information as read-only.
 
@@ -176,29 +234,39 @@ My suggestion is:
 
 - Story 3.3 adds internal test cases for draft formula validation.
 
-- The PRD describes the administrator drafting a new definition version, attaching validation rules and internal test cases, approving and publishing it without disturbing prior results.
+- The PRD describes the administrator drafting a new definition version, attaching validation rules and internal test cases, approving it and publishing it without disturbing prior results.
 
 - This is powerful, but it may confuse the main user and expand MVP scope too much.
 
+### Outcome (story 3.2)
+
+According to the previous outcome, we would drop this as user-facing functionality too.
+
 ## Story 4.3 (recalculation after every source-record change)
 
-Story 4.3 says the Absenteeism indicator is recalculated whenever a source record is created, updated, or deleted. I am not sure this is the behavior we want.
+Story 4.3 says the Absenteeism indicator is recalculated whenever a source record is created, updated or deleted. I am not sure this is the behavior we want.
 
 If every record change creates a new calculated result and the previous result is superseded, we may end up with many previous calculated results for the same period. That can make the history noisy and harder to understand.
 
 ### Backlog source (story 4.3)
 
-- Story 4.3 says a calculation work item is enqueued whenever a relevant absence record is created, updated, or deleted.
+- Story 4.3 says a calculation work item is enqueued whenever a relevant absence record is created, updated or deleted.
 
 - The same story says any prior calculated result for the same period transitions to a superseded state after successful calculation.
 
 - This supports using an internal recalculation mechanism, but not necessarily recalculating and superseding on every minor edit.
 
+### Outcome (story 4.3)
+
+The team agreed that this could generate too much noise in the result history. We do not have a final solution yet, but we should revise this behavior before implementation.
+
+A possible direction is to mark the affected period as pending recalculation and only create a new official result when the user explicitly recalculates, reviews, publishes or closes the period.
+
 ## Story 4.8 (absenteeism continuity across periods)
 
 Story 4.8 sounds like it is about carrying unresolved follow-up items into the next period. I initially thought it might explain how overlapping absence records are managed, but I do not think that is what it actually does.
 
-Overlapping absence records should be solved by calculation logic, not by a user action. If an absence crosses months, the system should allocate days to the correct month automatically. Verónica should not need to manually "resolve" a carry-forward action unless there is a real data-quality issue.
+Overlapping absence records should be solved by calculation logic, not by a user action. If an absence crosses months, the system should allocate days to the correct month automatically. Veronica should not need to manually "resolve" a carry-forward action unless there is a real data-quality issue.
 
 ### Backlog source (story 4.8)
 
@@ -206,9 +274,15 @@ Overlapping absence records should be solved by calculation logic, not by a user
 
 - So the overlap problem should primarily belong to calculation/validation logic, while carry-forward should only exist for real unresolved exceptions.
 
+### Outcome (story 4.8)
+
+Llano raised an important question: can an "incapacidad" exist without an end date?
+
+If that is possible, those records may be the real meaning of "carry-forward" in this context. However, we need to validate this with Veronica before modeling it.
+
 ## Story 5.8 (re-evaluation flow after correction for FA, SA and PAM)
 
-Story 5.8 expects a full operational accident-event model. I am not sure we actually have that source database and from the available materials it looks like we probably will not have it for MVP.
+Story 5.8 expects a full operational accident-event model. I am not sure we actually have that source database and from the available materials it looks like we probably will not have it for the MVP.
 
 For accidents, I think the MVP should be simpler: controlled monthly input or controlled event capture only when an event occurs, plus explicit zero-event confirmation when there are no accidents.
 
@@ -228,7 +302,7 @@ For accidents, I think the MVP should be simpler: controlled monthly input or co
 
 I would avoid trying to recreate Excel inside the application. Against Excel, we cannot win if we copy it cell by cell.
 
-A guided monthly grid is useful, but it should not become a full spreadsheet clone. The app should provide a better structured workflow: sections, monthly planned/executed totals, validation and calculation. The "activity" mentioned in the user story may actually be closer to a work-plan section.
+A guided monthly grid is useful, but it should not become a full spreadsheet clone. The app should provide a better structured workflow: sections, monthly planned/executed totals, validation, filtering and calculation. The "activity" mentioned in the user story may actually be closer to a work-plan section in some cases.
 
 ### Backlog source (story 6.2)
 
@@ -236,9 +310,15 @@ A guided monthly grid is useful, but it should not become a full spreadsheet clo
 
 - UX-DR10 also describes the Annual Plan Execution workspace as a guided grid with rows by activity and monthly P/E/evidence columns.
 
+### Outcome (story 6.2)
+
+The team concluded that many fields from the Excel file will inevitably appear in the UI. However, we should still offer a better experience than Excel, especially through filtering, structure and clearer navigation.
+
+The user story must also reflect the difference between a work-plan section and a work-plan activity.
+
 ## Story 6.3 (activity execution recording with evidence linking)
 
-I do not think Verónica currently links evidence for every activity in the actual workflow. The annual plan workbook tracks planned and executed values, but evidence may live elsewhere or may not be consistently attached to each activity.
+I do not think Veronica currently links evidence for every activity in the actual workflow. The annual plan workbook tracks planned and executed values, but evidence may live elsewhere or may not be consistently attached to each activity.
 
 For MVP, I would avoid making evidence mandatory for every activity unless stakeholders confirm it is required.
 
@@ -252,6 +332,10 @@ For MVP, I would avoid making evidence mandatory for every activity unless stake
 
 - This suggests evidence should be optional or configurable in MVP, not universally required.
 
+### Outcome (story 6.3)
+
+The team agreed that we will not implement evidence handling for the MVP.
+
 ## Story 6.8 (annual Plan continuity across years)
 
 I am not fully sure what "carry-forward" means in the context of the annual work plan.
@@ -264,9 +348,13 @@ I am not fully sure what "carry-forward" means in the context of the annual work
 
 - The work-plan documentation says the format is generally stable, but activities can change year by year due to legal changes or annual planning decisions.
 
+### Outcome (story 6.8)
+
+The team agreed that this story does not make sense for the MVP and should be dropped.
+
 ## Story 7.4 (review states before close)
 
-Story 7.4 defines a workflow process with states like `draft → in review → approved` before close. I am not sure this is necessary for every module or every period.
+Story 7.4 defines a workflow process with states like `draft -> in review -> approved` before close. I am not sure this is necessary for every module or every period.
 
 If "workflow" means the process of opening and closing a reporting period, then maybe we do not need draft and review states. We may only need simple states such as open, ready to close, closed and blocked.
 
@@ -279,3 +367,81 @@ If "workflow" means the process of opening and closing a reporting period, then 
 - Story 7.4 gives `draft -> in review -> approved` as an example of workflow transitions before close.
 
 - This may be more governance than the MVP needs if the real user goal is simply to validate calculated results and close the period.
+
+### Outcome (story 7.4)
+
+Llano pointed out that this user story seems to be talking about a record, not even a closing period. That feels overkill for the MVP.
+
+Even for period closing, I think this may be too much. The team agreed to keep the idea only for final comments or final review notes, not as a full review-state workflow.
+
+## Story 8.9 (sensitive access boundary indicator)
+
+I think we can keep Story 8.9. I like the idea of letting the user know when data is unavailable because of access scope, rather than making it look like the data is missing.
+
+This feature is small but valuable because it improves user understanding without exposing restricted information.
+
+## Story 10.1 (controlled migration scripts and reconciliation framework)
+
+The idea should not be to build a full "migration framework". That would be out of scope.
+
+I see migration as a **one-time process** executed by the development team. I agree that we need checks to ensure parity with the current Excel logic, but those checks should support the migration process, not become a product module.
+
+## Story 10.2 (one-time historical spreadsheet migration execution)
+
+This phase should occur before any normal UX usage.
+
+Users should not interact with a migration workflow. They should only use the application once the data has already been migrated, validated and reconciled.
+
+## Story 10.3 (reconciliation against approved spreadsheet logic and stakeholder examples)
+
+As mentioned before, Veronica should not need to care about migration details. Migration and reconciliation are responsibilities of the development team.
+
+Veronica may help validate whether final results match the expected business behavior, but she should not operate a migration feature.
+
+## Epic 10 (migration records and dedicated views)
+
+I agree that migration records should be distinguished somehow, but only with a very basic distinction.
+
+For example, we can mark records as migrated or created inside the application. However, I do not think we need a dedicated migration view. For this reason, most Epic 10 stories can probably be dropped or reduced.
+
+## Undefined concepts
+
+As in the PRD notes, I think we should define concepts like "workspace", "workflow", "workflow status", "linked evidence", "trend", "incident", "follow-up" and "follow-up actions".
+
+If we cannot explain these concepts clearly, we should not build features around them yet.
+
+## Story 11.3 (governance settings for retention and incident handling)
+
+We can drop Story 11.3. I do not see a strong reason to care about retention and incident-handling governance in this MVP unless the mentors explicitly require it.
+
+## Story 11.4 (monitor workflow execution issues)
+
+For the MVP, the only issue that would realistically block something is missing data.
+
+Most of the other workflow execution issues described in the backlog will not exist if we simplify the scope. This story should be reduced to basic missing-data visibility.
+
+## Story 11.6 (monitor compliance and follow-up issues)
+
+We can drop this user story from the MVP. It belongs to a more mature governance/control version of the product.
+
+## Story 11.8 (active-vs-deferred control inventory by module)
+
+I do not think we should spend time tracking later-phase controls inside the product right now.
+
+We can keep deferred features documented in the backlog or decision log, but we do not need a user-facing inventory for them.
+
+## Story 5.5 (hallucinated requirement)
+
+Llano pointed out that Story 5.5 looks like a complete hallucination. After reviewing it, I agree: the story does not seem related to the indicator it claims to support.
+
+This story should be removed or rewritten from the actual indicator documentation.
+
+## Final recommendation
+
+My final recommendation to the team is to keep the MVP simple.
+
+We are building this to solve Veronica's real pain points, not to list features for the sake of having a large backlog. The goal should be a working, understandable product that automates the most painful calculation and reconciliation work.
+
+Also, when working with AI, we should move step by step. Do not let AI "work alone" on the codebase or backlog. It can introduce assumptions we did not ask for and once those assumptions enter the codebase, future AI-assisted work may build even more assumptions on top of them.
+
+AI should help us accelerate, but we should remain the owners of the scope, decisions, architecture and implementation.
