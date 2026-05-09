@@ -165,20 +165,25 @@ A good index may include:
 
 ## Main topics
 
-- [[algorithms/dynamic_programming]]
-- [[problems/knapsack]]
-- [[web/REST_API]]
-- [[programming_languages/Python/module]]
+- [[algorithms/dynamic_programming]].
+
+- [[problems/knapsack]].
+
+- [[web/REST_API]].
+
+- [[programming_languages/Python/module]].
 
 ## Useful references
 
-- [[git/commit_message_conventions]]
-- [[linux/useful_commands_for_creating_scripts]]
-- [[latex/cheatsheet]]
+- [[git/commit_message_conventions]].
+
+- [[linux/useful_commands_for_creating_scripts]].
+
+- [[latex/cheatsheet]].
 
 ## Notes that need work
 
-- [[some_unfinished_note]]
+- [[some_unfinished_note]].
 ```
 
 The purpose of an index is to make navigation easier without depending only on search.
