@@ -763,7 +763,7 @@ $$
 
 ### Representación gráfica de un punto en el espacio
 
-![representación gráfica de un punto en el espacio](02-resources/books/assets/algebra_3o_y_4o_enseñanza_media/02-epresentacion_grafica_de_un_punto_en_el_espacio.svg)
+![representación gráfica de un punto en el espacio](02-resources/books/assets/algebra_3o_y_4o_enseñanza_media/02-representacion_grafica_de_un_punto_en_el_espacio.svg)
 
 ...**abscisa** de un punto es la distancia al plano $yz$. **Ordenada** de un punto es la distancia al plano $xz$. **Cota** de un punto es la distancia al plano $xy$.
 
