@@ -18,11 +18,11 @@
 
 The OSI protocol stack is complex, and the TCP and IP protocols are widely used in the industry. Therefore, the TCP/IP reference model has become the mainstream reference model of the Internet.
 
-![TCP/IP reference model](02-resources/courses/HCIA-Datacom/assets/02_01-TCP_IP_reference_model.jpg)
+![TCP/IP reference model](02-resources/courses/hcia-datacom/assets/02_01-tcp_ip_reference_model.jpg)
 
 ### Common TCP/IP protocols
 
-![common TCP/IP protocols](02-resources/courses/HCIA-Datacom/assets/02_02-common_TCP_IP_protocols.jpg)
+![common TCP/IP protocols](02-resources/courses/hcia-datacom/assets/02_02-common_tcp_ip_protocols.jpg)
 
 ### Common protocol standardization organizations
 
@@ -60,7 +60,7 @@ It receives data from an application layer protocol, encapsulates the data with 
 
 ### TCP and UDP header formats
 
-![TCP and UDP header formats](02-resources/courses/HCIA-Datacom/assets/02_03-TCP_and_UDP_header_formats.jpg)
+![TCP and UDP header formats](02-resources/courses/hcia-datacom/assets/02_03-tcp_and_udp_header_formats.jpg)
 
 #### TCP header
 
@@ -100,7 +100,7 @@ It receives data from an application layer protocol, encapsulates the data with 
 
 Before sending data, a TCP-based application needs to establish a connection through three-way handshake.
 
-![three-way handshake example](02-resources/courses/HCIA-Datacom/assets/02_04-three-way_handshake_example.jpg)
+![three-way handshake example](02-resources/courses/hcia-datacom/assets/02_04-three-way_handshake_example.jpg)
 
 The TCP connection setup process is as follows:
 

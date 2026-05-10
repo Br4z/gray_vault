@@ -8,13 +8,13 @@ reviewed_on: "2025-08-17"
 
 A continuación se presentan la gráfica de las funciones $f_1(x) = 2^x$, $f_2(x) = 3^x$, $f_3(x) = 4^x$, $f_4(x) = \left (\frac{ 1 }{ 4 } \right )^x$, $f_5(x) = \left (\frac{ 1 }{ 2 } \right )^x$ y $f_6(x) = \left (\frac{ 3 }{ 4 } \right )^x$. Identifique cada una.
 
-![graph](99-archive/college/semesters/01/assets/calculo_I/2_06_01-graph.svg)
+![graph](99-archive/college/semesters/01/assets/calculo_i/2_06_01-graph.svg)
 
 ## 2
 
 A continuación se dan las gráficas de dos funciones de tipo exponencial de la forma $Ca^x$, donde $C$ es una constante. Halle las funciones $f$ y $g$ indicando su dominio y rango.
 
-![graphs](99-archive/college/semesters/01/assets/calculo_I/2_06_02-graphs.svg)
+![graphs](99-archive/college/semesters/01/assets/calculo_i/2_06_02-graphs.svg)
 
 $$
 \begin{align}
@@ -202,7 +202,7 @@ $$
 
 A continuación se presentan la grafica de las funciones $f_1(x) = \plog[2]{ x }$, $f_2(x) = \plog[3]{ x }$, $f_3(x) = \plog[4]{ x }$, $f_4(x) = \plog[ \rac{ 1 }{ 4 } ]{ x }$, $f_5(x) = \plog[ \rac{ 1 }{ 2 } ]{ x }$ y $f_6(x) = \plog[ \rac{ 3 }{ 4 } ]{ x }$. Identifique cada una.
 
-![graph](99-archive/college/semesters/01/assets/calculo_I/2_06_03-graphs.svg)
+![graph](99-archive/college/semesters/01/assets/calculo_i/2_06_03-graphs.svg)
 
 ## 8
 

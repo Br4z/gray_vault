@@ -108,4 +108,4 @@ Si podemos reducir un problema $C$ que ya sabemos que es $\mathrm{NP}\text{-comp
 
 También conocido como el problema de satisfactibilidad booleana, fue el **primer problema que se demostró ser $\mathrm{NP}\text{-complete}$**. Esta demostración fue realizada por Stephen Cook en 1971.
 
-![[01-areas/systems_engineering/problems/SAT|SAT]]
+![[01-areas/systems_engineering/problems/sat|sat]]

@@ -38,7 +38,7 @@ This feature allows shell functions to be written so that they remain independen
 
 ## Shell functions and redirection
 
-With [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/06-redirection#Group commands|Group commands]] we can also do
+With [[02-resources/books/the_linux_command_line/02-learning_the_shell/06-redirection#Group commands|Group commands]] we can also do
 
 ```bash
 { command_1; command_2; command_3; } < some_input.txt

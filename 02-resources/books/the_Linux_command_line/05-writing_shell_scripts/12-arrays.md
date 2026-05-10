@@ -94,7 +94,7 @@ printf "\nTotal files = %d\n" "$count"
 
 ### Outputting the entire contents of an array
 
-The subscripts `*` and `@` can be used to access every element in an array. As with [[02-resources/books/the_Linux_command_line/05-writing_shell_scripts/09-positional_parameters|positional parameters]], the `@` is the more useful of the two.
+The subscripts `*` and `@` can be used to access every element in an array. As with [[02-resources/books/the_linux_command_line/05-writing_shell_scripts/09-positional_parameters|positional parameters]], the `@` is the more useful of the two.
 
 ```bash
 "${array[@]}"
@@ -181,7 +181,7 @@ done
 
 ### Slicing an array
 
-There is a form of [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Parameter expansion|parameter expansion]] we can use to extract a group of contiguous elements called a **slice** from an array.
+There is a form of [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Parameter expansion|parameter expansion]] we can use to extract a group of contiguous elements called a **slice** from an array.
 
 ```bash
 ${array[@]:start_index:elements} # This return a new array

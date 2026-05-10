@@ -4,7 +4,7 @@ reviewed_on: "2025-08-10"
 
 # Physics problem
 
-![graph](99-archive/college/ASES/Jairo/assets/01_01-velocity_graph.jpg)
+![graph](99-archive/college/ases/jairo/assets/01_01-velocity_graph.jpg)
 
 Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2$, el segundo de $t = 2$ a $t = 6$ y el tercero de $t = 6$ a $t = 8$.
 
@@ -70,7 +70,7 @@ Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2
 
     Graficando esta función tenemos:
 
-    ![$x(t)$](99-archive/college/ASES/Jairo/assets/01_02-distance_graph.jpg) TODO
+    ![$x(t)$](99-archive/college/ases/jairo/assets/01_02-distance_graph.jpg) TODO
 
 2. Dibuje la gráfica aceleración-tiempo con valores numéricos.
 
@@ -82,7 +82,7 @@ Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2
         \end{cases}
     $$
 
-    ![$a(t)$](99-archive/college/ASES/Jairo/assets/01_03-acceleration_graph.jpg) TODO
+    ![$a(t)$](99-archive/college/ases/jairo/assets/01_03-acceleration_graph.jpg) TODO
 
 3. Calcule la distancia total recorrida por la partícula.
 

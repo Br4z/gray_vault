@@ -4,7 +4,7 @@ reviewed_on: 2026-03-16
 
 # REST API
 
-It is an application programming interface that applies [[01-areas/systems_engineering/web/REST|REST]] principles through HTTP. In practice, it exposes application resources through endpoints and allows them to be created, read, updated or deleted through standard HTTP methods.
+It is an application programming interface that applies [[01-areas/systems_engineering/web/rest|rest]] principles through HTTP. In practice, it exposes application resources through endpoints and allows them to be created, read, updated or deleted through standard HTTP methods.
 
 ## Common HTTP methods
 

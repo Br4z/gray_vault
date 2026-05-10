@@ -24,7 +24,7 @@
 
 - [Source](https://hack4u.io/cursos/introduccion-al-hacking).
 
-## [Aprende a programar con Processing](02-resources/courses/aprende_a_programar_con_Processing.md)
+## [Aprende a programar con Processing](02-resources/courses/aprende_a_programar_con_processing.md)
 
 - Author: Daniel Marcial.
 
@@ -32,7 +32,7 @@
 
 - [Source](https://www.youtube.com/playlist?list=PLFXPMjONHtCSUiJ6NPq5S7JJ9CUjk5W8d).
 
-## [Aprende Git y GitHub](02-resources/courses/aprende_Git_y_GitHub.md)
+## [Aprende Git y GitHub](02-resources/courses/aprende_git_y_github.md)
 
 - Author: Estefania Cassingena Navone.
 
@@ -40,7 +40,7 @@
 
 - [Source](https://www.youtube.com/watch?v=mBYSUUnMt9M).
 
-## [Building web applications in Java with Spring Boot 3](02-resources/courses/building_web_applications_in_Java_with_Spring_Boot_3.md)
+## [Building web applications in Java with Spring Boot 3](02-resources/courses/building_web_applications_in_java_with_spring_boot_3.md)
 
 - Author: Dan Vega.
 
@@ -48,7 +48,7 @@
 
 - [Source](https://www.youtube.com/watch?v=31KTdfRH6nY).
 
-## [HTML5 desde cero](02-resources/courses/HTML5_desde_cero.md)
+## [HTML5 desde cero](02-resources/courses/html5_desde_cero.md)
 
 - Author: Dorian Desings.
 
@@ -56,7 +56,7 @@
 
 - [Source](https://www.youtube.com/playlist?list=PLROIqh_5RZeB92ME1GFyeqDVOa-gL0Ybd).
 
-## [Kubernetes](02-resources/courses/Kubernetes.md)
+## [kubernetes](02-resources/courses/kubernetes.md)
 
 - Author: Bogdan Stashchuk.
 
@@ -64,7 +64,7 @@
 
 - [Source](https://www.youtube.com/watch?v=d6WC5n9G_sM).
 
-## [Linux para principiantes](02-resources/courses/Linux_para_principiantes.md)
+## [Linux para principiantes](02-resources/courses/linux_para_principiantes.md)
 
 - Author: DeciLearn.
 
@@ -72,7 +72,7 @@
 
 - [Source](https://www.youtube.com/watch?v=jVQKk8IB9pA).
 
-## [Personalización de entorno en Linux](02-resources/courses/Linux_para_principiantes.md)
+## [Personalización de entorno en Linux](02-resources/courses/linux_para_principiantes.md)
 
 - Author: Marcelo Vázquez.
 

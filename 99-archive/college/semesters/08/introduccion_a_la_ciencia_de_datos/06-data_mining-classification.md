@@ -12,15 +12,15 @@ reviewed_on: "2025-02-03"
 
 ## Matriz de confusión
 
-![[01-areas/systems_engineering/AI/machine_learning/confusion_matrix|definition]]
+![[01-areas/systems_engineering/ai/machine_learning/confusion_matrix|definition]]
 
-[[01-areas/systems_engineering/AI/machine_learning/metrics|useful metrics of a confusion matrix]]
+[[01-areas/systems_engineering/ai/machine_learning/metrics|useful metrics of a confusion matrix]]
 
 ## Técnicas (clasificación)
 
 ### Árboles de decisión
 
-![[01-areas/systems_engineering/AI/machine_learning/algorithms/supervised_learning/decision_trees|árboles de decisión]]
+![[01-areas/systems_engineering/ai/machine_learning/algorithms/supervised_learning/decision_trees|árboles de decisión]]
 
 ### Clasificación Naïve Bayes
 
@@ -40,4 +40,4 @@ $$
 
 #### Teorema de Bayes
 
-![[01-areas/statistics/Bayes_theorem|teorema de Bayes]]
+![[01-areas/statistics/bayes_theorem|teorema de Bayes]]

@@ -8,7 +8,7 @@ reviewed_on: "2025-08-31"
 
 Dada la gráfica de la función $f$, calcule los siguientes limites:
 
-![graph](99-archive/college/semesters/01/assets/calculo_I/2_08_01-graph.jpg)
+![graph](99-archive/college/semesters/01/assets/calculo_i/2_08_01-graph.jpg)
 
 1. $\lim_{ x \to -4^+ } f(x) = -7$.
 

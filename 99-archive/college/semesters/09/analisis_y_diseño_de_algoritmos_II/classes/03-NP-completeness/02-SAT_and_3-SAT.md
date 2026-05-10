@@ -6,7 +6,7 @@ reviewed_on: "2025-08-03"
 
 ## 3-SAT
 
-![[01-areas/systems_engineering/problems/SAT#Special case 3-SAT|3-SAT]]
+![[01-areas/systems_engineering/problems/sat#Special case 3-SAT|3-SAT]]
 
 ## $\text{3-SAT} \in \mathrm{NP}$
 

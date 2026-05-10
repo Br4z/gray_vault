@@ -36,6 +36,6 @@ Models that **predict a label, value or action** rather than generating rich new
 
 Explicit human-written rules.
 
-## Learning-based ([[01-areas/systems_engineering/AI/machine_learning/definition|machine learning]])
+## Learning-based ([[01-areas/systems_engineering/ai/machine_learning/definition|machine learning]])
 
 Learns from data rather than fixed ruled.

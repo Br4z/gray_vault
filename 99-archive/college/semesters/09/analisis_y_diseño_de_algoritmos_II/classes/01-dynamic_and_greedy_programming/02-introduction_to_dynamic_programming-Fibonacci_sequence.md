@@ -14,7 +14,7 @@ Dynamic programming is essentially a tradeoff of space for time...
 
 #### 10.1.1 Fibonacci numbers by recursion
 
-![[01-areas/systems_engineering/problems/Fibonacci_sequence|Fibonacci_sequence]]
+![[01-areas/systems_engineering/problems/fibonacci_sequence|fibonacci_sequence]]
 
 ```cpp
 int Fibonacci(int position) {

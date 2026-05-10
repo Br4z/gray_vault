@@ -16,6 +16,6 @@ ASGI extends the older request-response model so that data can be sent and recei
 
 ASGI fits applications that need asynchronous handling, streaming, or long-lived connections. It is commonly used when real-time features or concurrent I/O are important.
 
-## Relation with [[01-areas/systems_engineering/web/WSGI|WSGI]]
+## Relation with [[01-areas/systems_engineering/web/wsgi|wsgi]]
 
 ASGI goes beyond the model used by WSGI. WSGI is centered on one HTTP request and one response, while ASGI supports message-based communication over a longer-lived connection when needed.

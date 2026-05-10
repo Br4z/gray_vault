@@ -319,7 +319,7 @@ In Linux/Unix operating system, everything is a file; even directories are files
 
 - Devices files.
 
-![Linux directory structure](02-resources/courses/assets/courses/introduccion_a_Linux/01_01-Linux_directory_structure.png)
+![Linux directory structure](02-resources/courses/assets/courses/introduccion_a_linux/01_01-linux_directory_structure.png)
 
 The Linux/Unix file system hierarchy base begins at the root, and everything starts with the root directory.
 
@@ -567,7 +567,7 @@ It is an encoding scheme that converts binary data into text format so that enco
 
 ## 31 - Cifrado césar y uso de `tr` para la traducción de caracteres
 
-![`tr` description](01-areas/systems_engineering/Linux/useful_commands_for_creating_scripts.md#tr)
+![`tr` description](01-areas/systems_engineering/linux/useful_commands_for_creating_scripts.md#tr)
 
 ### Bandit level 12
 

@@ -8,7 +8,7 @@ reviewed_on: "2025-08-15"
 
 Considere las gráficas de las funciones $f$ y $g$.
 
-![graphs](99-archive/college/semesters/01/assets/calculo_I/2_03_01-graphs.jpg)
+![graphs](99-archive/college/semesters/01/assets/calculo_i/2_03_01-graphs.jpg)
 
 1. Determine él
     - dominio de $g$:
@@ -308,7 +308,7 @@ Se dispone de $1,000$ metros de cerca para construir un corral rectangular, part
 
 TODO: redo the image.
 
-![corral](99-archive/college/semesters/01/assets/calculo_I/2_03_02-corral.jpg)
+![corral](99-archive/college/semesters/01/assets/calculo_i/2_03_02-corral.jpg)
 
 $$
 \begin{align}

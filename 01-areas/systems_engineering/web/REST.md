@@ -6,7 +6,7 @@ reviewed_on: 2026-03-16
 
 It is an architectural style for designing distributed systems. It describes a set of constraints that make communication between clients and servers more consistent, scalable and easier to maintain.
 
-> The important point is that rest is not an API by itself. It is the design model or style behind many web APIs. A [[01-areas/systems_engineering/web/REST_API|REST API]] is therefore one possible implementation of rest principles.
+> The important point is that rest is not an API by itself. It is the design model or style behind many web APIs. A [[01-areas/systems_engineering/web/rest_api|REST API]] is therefore one possible implementation of rest principles.
 
 In REST, the system is organized around resources. A resource can be anything meaningful in the application, such as a user, a product or an order. Each resource is identified through a URL, and the client interacts with it through standard HTTP methods.
 

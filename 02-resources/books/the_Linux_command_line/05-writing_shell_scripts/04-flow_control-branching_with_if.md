@@ -104,7 +104,7 @@ string =~ regex
 
 This returns true if _string_ is matched by te extended regular expression _regex_...
 
-Another added feature of `[[ ]]` is that the `==` supports pattern matching the same way [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/04-manipulating_files_and_directories#Wildcards|pathname expansion]] does.
+Another added feature of `[[ ]]` is that the `==` supports pattern matching the same way [[02-resources/books/the_linux_command_line/02-learning_the_shell/04-manipulating_files_and_directories#Wildcards|pathname expansion]] does.
 
 ## `(( ))` designed for integers
 

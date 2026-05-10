@@ -57,7 +57,7 @@ esac
 
 ### Patterns
 
-The patterns used by `case` are the same as those used by [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]], so [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/04-manipulating_files_and_directories#Wildcards|wildcards]] are allowed. Patterns are terminated with `)`.
+The patterns used by `case` are the same as those used by [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]], so [[02-resources/books/the_linux_command_line/02-learning_the_shell/04-manipulating_files_and_directories#Wildcards|wildcards]] are allowed. Patterns are terminated with `)`.
 
 It is also possible to combine multiple patterns using `|` as a separator. This creates an "or" conditional pattern. This is useful for such things as handling both uppercase and lowercase characters.
 

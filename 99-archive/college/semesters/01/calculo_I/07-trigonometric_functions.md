@@ -73,7 +73,7 @@ Halle:
 
 Un ángulo $\theta$ se encuentra en posición estándar. Si el lado terminal de $\theta$ esta en el segundo cuadrante sobre la recta $y = -4 x$, determine los valores de las funciones trigonométricas.
 
-![graph](99-archive/college/semesters/01/assets/calculo_I/2_07_01-graph.svg)
+![graph](99-archive/college/semesters/01/assets/calculo_i/2_07_01-graph.svg)
 
 TODO: create a standard angle link.
 
@@ -566,7 +566,7 @@ Resuelva las siguientes ecuaciones:
 
 8. Desde la punta de un edificio que ve hacia el mar, una persona observa un bote que navega directamente hacia ella. Si se encuentra a 100 pies sobre el nivel del mar y el ángulo de depresión del bote cambia de $25 \degree$ a $40 \degree$ durante el periodo de observación, hallar la distancia aproximada que ha recorrido el bote durante ese tiempo.
 
-    ![problem](99-archive/college/semesters/01/assets/calculo_I/2_07_02-problem.jpg) TODO
+    ![problem](99-archive/college/semesters/01/assets/calculo_i/2_07_02-problem.jpg) TODO
 
     Del primer triangulo, sabemos que:
 

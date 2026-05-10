@@ -67,7 +67,7 @@ ${parameter#pattern}
 ${parameter##pattern}
 ```
 
-These expansions remove a leading portion of the string contained in _parameter_ defined by _pattern_. _pattern_ is a wildcard patter like those use in [[02-resources/books/the_Linux_command_line/02-learning_the_Shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
+These expansions remove a leading portion of the string contained in _parameter_ defined by _pattern_. _pattern_ is a wildcard patter like those use in [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
 
 ```bash
 ${parameter%pattern}
