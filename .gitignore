@@ -3,4 +3,5 @@ node_modules/
 .obsidian/community-plugins.json
 .obsidian/plugins/obsidian-discordrpc/
 .obsidian/plugins/obsidian-wakatime/
-journal.md
+/journal.md
+/to_export.md
