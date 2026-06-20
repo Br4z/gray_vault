@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-29
 ---
 
-# Amazon EC2 pricing
+# EC2 pricing
 
 Amazon EC2 pricing is based on the type of instance used, how long it runs, the selected region, the operating system, storage, data transfer and the pricing option selected.
 

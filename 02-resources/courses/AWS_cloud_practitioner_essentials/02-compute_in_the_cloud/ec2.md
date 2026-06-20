@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-26
 ---
 
-# Amazon EC2
+# EC2
 
 Amazon EC2 stands for **Amazon elastic compute cloud**. It is an AWS service that provides virtual servers in the cloud.
 

@@ -6,7 +6,7 @@ reviewed_on: 2026-06-02
 
 Messaging and queues help application components communicate without needing every component to be directly connected at the same time.
 
-In AWS, the main services for this topic are [[02-resources/courses/AWS_cloud_practitioner_essentials/introduction_to_the_cloud/amazon_eventbridge|Amazon EventBridge]], [[02-resources/courses/AWS_cloud_practitioner_essentials/introduction_to_the_cloud/amazon_sqs|Amazon SQS]] and [[02-resources/courses/AWS_cloud_practitioner_essentials/introduction_to_the_cloud/amazon_sns|Amazon SNS]].
+In AWS, the main services for this topic are [[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/eventbridge|Amazon EventBridge]], [[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/sqs|Amazon SQS]] and [[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/sns|Amazon SNS]].
 
 Amazon EventBridge is used to route events from sources to targets based on rules.
 

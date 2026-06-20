@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-26
 ---
 
-# AWS regions and availability zones
+# Regions and availability zones
 
 AWS infrastructure is organized into regions and availability zones. This structure helps applications run closer to users, improve reliability and support disaster recovery.
 

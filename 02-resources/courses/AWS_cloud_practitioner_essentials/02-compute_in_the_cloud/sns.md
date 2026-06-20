@@ -2,9 +2,9 @@
 reviewed_on: 2026-06-02
 ---
 
-# Amazon SNS
+# SNS
 
-Amazon SNS, or **Amazon simple notification service**, is a publish-subscribe messaging service.
+Amazon SNS stands for **Amazon simple notification service**. It is a publish-subscribe messaging service.
 
 A publisher sends a message to a topic. A topic acts as a communication channel. Subscribers receive messages from the topic.
 

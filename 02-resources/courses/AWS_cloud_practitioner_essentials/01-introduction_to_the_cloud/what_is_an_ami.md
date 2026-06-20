@@ -4,7 +4,7 @@ reviewed_on: 2026-05-29
 
 # What is an AMI?
 
-An AMI, or **Amazon machine image**, is a template used to launch Amazon EC2 instances.
+An AMI stands for **Amazon machine image**. It is a template used to launch [[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]] instances.
 
 An AMI contains the information needed to create a virtual server, such as the operating system, application software and configuration settings. When an EC2 instance is launched, an AMI is selected first. Then the instance type, storage, networking and security settings are configured.
 

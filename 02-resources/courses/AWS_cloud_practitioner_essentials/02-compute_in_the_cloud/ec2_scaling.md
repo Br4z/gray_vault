@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-29
 ---
 
-# Amazon EC2 scaling
+# EC2 scaling
 
 Amazon EC2 scaling means adjusting compute capacity based on application demand. Scaling helps keep applications available when traffic increases and helps reduce cost when demand decreases.
 

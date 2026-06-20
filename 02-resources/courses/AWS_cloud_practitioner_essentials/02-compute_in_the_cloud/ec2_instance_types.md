@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-26
 ---
 
-# Amazon EC2 instance types
+# EC2 instance types
 
 Amazon EC2 instance types define the hardware profile of an EC2 instance. Each instance type provides a different combination of CPU, memory, storage and networking capacity.
 

@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-26
 ---
 
-# AWS shared responsibility model
+# Shared responsibility model
 
 The AWS shared responsibility model explains how security and compliance responsibilities are divided between AWS and the customer.
 

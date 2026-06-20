@@ -2,7 +2,7 @@
 reviewed_on: 2026-06-17
 ---
 
-# AWS IAM
+# IAM
 
 AWS IAM stands for **AWS identity and access management**, is a service used to control access to AWS resources.
 
