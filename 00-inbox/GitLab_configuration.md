@@ -1,5 +1,5 @@
 ---
-reviewed_on: 2026-04-06
+reviewed_on: 2026-07-09
 ---
 
 # GitLab configuration
@@ -18,7 +18,7 @@ A solid project-level setup is this:
 
 ## Configure merge request approvals
 
-Required approval rules are a Premium/Ultimate feature; on GitLab Free, approvals are optional and do not block merging.
+Required approval rules are a premium/ultimate feature; on GitLab free, approvals are optional and do not block merging.
 
 1. Go to "Project" -> "Settings" -> "Merge requests" -> "Merge request approvals" -> "Add approval rule".
 
@@ -50,4 +50,4 @@ Required approval rules are a Premium/Ultimate feature; on GitLab Free, approval
 
 ---
 
-If you want to test the merged result before merging, enable merged results pipelines under Settings -> Merge requests -> Merge options; this is Premium/Ultimate. If you use third-party controls, GitLab Ultimate also supports external status checks, and you can block merges unless those checks pass by enabling Status checks must succeed.
+If you want to test the merged result before merging, enable merged results pipelines under "Settings" -> "Merge requests" -> "Merge options"; this is premium/ultimate. If you use third-party controls, GitLab Ultimate also supports external status checks, and you can block merges unless those checks pass by enabling "Status checks must succeed".
