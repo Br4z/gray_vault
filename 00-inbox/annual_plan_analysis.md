@@ -10,17 +10,7 @@ The annual plan spreadsheet is primarily organized around two worksheets:
 
 - **PDT**: the main plan containing the higher-level activities.
 
-- **CRON**: the detailed sub-schedules that feed or support specific activities in the PDT.
-
-### What must be validated
-
-The spreadsheet structure needs to be analyzed to determine:
-
-1. How each CRON record is connected to a PDT activity.
-
-2. Whether the connection is represented by a stable identifier, a title, a row position, or another field.
-
-Without clearly defined relationships, automatically importing and grouping the spreadsheet data would be unreliable.
+- **CRON**: the **optional** detailed sub-schedules that feed or support specific activities in the PDT.
 
 ## Current application workflow
 
@@ -47,46 +37,6 @@ The demonstrated workflow is:
 The annual plan is managed by year, while its indicator calculations are performed monthly.
 
 The calculation history provides traceability by showing which records contributed to a result. When an activity is corrected, the application creates a new recalculation entry and retains evidence of the change.
-
-## Main stakeholder feedback.
-
-Her main concern was the **annual plan module**, which requires additional refinement because the source spreadsheet contains:
-
-- A main PDT plan.
-
-- Sub-schedules in CRON.
-
-- Connections between the main plan and the sub-schedules.
-
-- A large amount of information.
-
-Therefore, the issue is not necessarily that the application is fundamentally incorrect. The main risk is that the current representation may not yet capture all the relationships and levels of detail present in the operational spreadsheet.
-
-## Key design questions
-
-### Relationship between PDT and CRON
-
-The application needs a clear business rule for connecting a detailed CRON activity to its corresponding PDT activity.
-
-Questions to validate include:
-
-- Is every CRON activity required to belong to a PDT activity?
-
-- Can a PDT activity exist without a CRON sub-schedule?
-
-- Are there sub-schedules below the CRON level?
-
-## Possible improvement to the annual plan interface
-
-A possible improvement would be to represent the annual plan hierarchically:
-
-```text
-Annual plan
-└── PDT activity
-    ├── CRON sub-schedule
-    │   ├── Detailed activity
-    └── └── Detailed activity
-```
 
 ## Import and automation considerations
 
